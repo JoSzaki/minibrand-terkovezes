@@ -1,0 +1,504 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Térkövezés Referenciák Budapest | Elkészült Projektek Galéria";
+const description = "Térkövezés referenciák Budapest ✓ Kocsibeálló ✓ Terasz ✓ Kerti utak ✓ Elkészült projektek ✓ Galéria ✓ Inspirációk ✓ MiniBrand Térkövezés munkái";
+const canonicalURL = "https://minibrand-terkovezes.hu/referenciak";
+
+// Térkövezési referencia képek - duplikációk nélkül, 9 egyedi kép
+const referenceImages = [
+  // Kocsibeálló kategória (2 kép)
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4",
+    alt: "Elegáns térkövezett kocsibeálló kovácsoltvas kapuval - MiniBrand Térkövezés referencia",
+    category: "Kocsibeálló",
+    description: "Precízen kivitelezett térkőburkolat strapabíró és esztétikus megoldással."
+  },
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8",
+    alt: "Térkövezett kocsibeálló kovácsoltvas kapu előtt - professzionális térkövezés",
+    category: "Kocsibeálló",
+    description: "Strapabíró térkő burkolat, ellenáll az időjárás hatásainak."
+  },
+  
+  // Kerti járda kategória (2 kép)
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q",
+    alt: "Természetes hatású térkövezett kerti járda - harmonikus kertépítés",
+    category: "Kerti járda",
+    description: "Természetes kőmintázatú burkolat, harmonikusan illeszkedik a környező növényzethez."
+  },
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/oszko-gyorgy-terkovezes-qhld8u75js",
+    alt: "Műfű és térköves járda kombinációja - modern kerti megoldás",
+    category: "Kerti járda",
+    description: "Gondozásmentes kert műfűvel és térkő burkolattal."
+  },
+  
+  // Udvar kategória (2 kép)
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb",
+    alt: "Nagy felületű térkőburkolat természetes árnyalatokkal - udvari térkövezés",
+    category: "Udvar",
+    description: "Nagy felületű burkolat természetes árnyalatokkal, ideális pihenőterületekhez."
+  },
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/general-kivitelezes-felujitas-epuletbontas-terkovezes-4km426cyqk",
+    alt: "Letisztult térkőburkolat udvarokhoz és kerti utakhoz - időtálló megoldás",
+    category: "Udvar",
+    description: "Gondosan lerakott térkőburkolat természetes árnyalatokkal."
+  },
+  
+  // Lépcső kategória (1 kép)
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-6fssowa8pu",
+    alt: "Kültéri lépcső térkő burkolattal és íves korláttal - stílusos megoldás",
+    category: "Lépcső",
+    description: "Tartós térkő burkolatú lépcső időjárásálló és esztétikus megoldással."
+  },
+  
+  // Terasz kategória (2 kép)
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-nxozuex45t",
+    alt: "Színes térkő burkolat fedett teraszon - harmonikus színvilág",
+    category: "Terasz",
+    description: "Vörös, barna és sárga árnyalatok harmonikus összhatása."
+  },
+  {
+    src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m",
+    alt: "Természetes hatású teraszburkolat íves kialakítással - elegáns design",
+    category: "Terasz",
+    description: "Tágas terasz világos, természetes kőhatású burkolattal."
+  }
+];
+
+// Kibővített referencia képek
+const allImages = referenceImages;
+const categories = [...new Set(allImages.map(img => img.category))];
+---
+
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ImageGallery",
+        "@id": `${canonicalURL}#gallery`,
+        "name": "Térkövezés Referenciák Galéria",
+        "description": "MiniBrand Térkövezés elkészült projektjei Budapest és környékén. Kocsibeállók, teraszok, kerti utak és udvari burkolatok.",
+        "about": {
+          "@type": "Service",
+          "name": "Térkövezés Budapest",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://minibrand-terkovezes.hu#business",
+            "name": "MiniBrand Térkövezés"
+          }
+        },
+        "associatedMedia": allImages.map((img, index) => ({
+          "@type": "ImageObject",
+          "contentUrl": img.src,
+          "name": img.alt,
+          "description": img.description,
+          "keywords": `térkövezés, ${img.category.toLowerCase()}, Budapest, térkő`,
+          "creator": {
+            "@type": "Organization",
+            "name": "MiniBrand Térkövezés"
+          }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://minibrand-terkovezes.hu"
+          },
+          {
+            "@type": "ListItem", 
+            "position": 2,
+            "name": "Referenciák",
+            "item": canonicalURL
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <Header />
+  
+  <main class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Térkövezés
+            <span class="text-orange-400">Referenciáink</span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
+            Több mint 500 sikeres projekt Budapest és környékén - Inspirálódjon befejezett munkáinkból
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/kapcsolat" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+              Ingyenes Ajánlatkérés
+            </a>
+            <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+              Hívj minket azonnal
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategóriák Filter -->
+    <section class="py-8 bg-white sticky top-0 z-40 border-b border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="filter-btn active px-6 py-3 rounded-full bg-orange-500 text-white font-semibold transition-all duration-300 hover:bg-orange-600" data-category="all">
+            Összes ({allImages.length})
+          </button>
+          {categories.map(category => {
+            const count = allImages.filter(img => img.category === category).length;
+            return (
+              <button key={category} class={`filter-btn px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-semibold transition-all duration-300 hover:bg-orange-500 hover:text-white`} data-category={category}>
+                {category} ({count})
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencia Galéria -->
+    <section id="galeria" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Elkészült Projektek Galériája
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            25 év tapasztalat, több mint 500 sikeres projekt. Tekintse meg referenciáinkat és inspirálódjon!
+          </p>
+        </div>
+        
+        <!-- Pinterest-style Masonry Grid -->
+        <div class="masonry-grid" id="gallery-grid">
+          {allImages.map((image, index) => (
+            <div key={index} class={`masonry-item gallery-item cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl`} data-category={image.category} data-index={index}>
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="relative overflow-hidden">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt}
+                    class="w-full h-auto object-cover transition-transform duration-300 hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div class="absolute top-4 left-4">
+                    <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {image.category}
+                    </span>
+                  </div>
+                  <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                    <button class="bg-white text-gray-900 px-4 py-2 rounded-lg font-semibold transform scale-90 hover:scale-100 transition-transform">
+                      🔍 Nagyítás
+                    </button>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-gray-900 mb-2 line-clamp-2">{image.alt}</h3>
+                  <p class="text-gray-600 text-sm line-clamp-2">{image.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
+          <div class="relative max-w-4xl max-h-full">
+            <button id="close-lightbox" class="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
+              ✕
+            </button>
+            <img id="lightbox-image" src="" alt="" class="max-w-full max-h-screen object-contain rounded-lg">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 text-white">
+              <h3 id="lightbox-title" class="text-xl font-bold mb-2"></h3>
+              <p id="lightbox-description" class="text-gray-300"></p>
+            </div>
+            <!-- Navigation arrows -->
+            <button id="prev-image" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
+              ‹
+            </button>
+            <button id="next-image" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
+              ›
+            </button>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+          <p class="text-gray-600 mb-6">
+            Több mint 500 befejezett projekt! További referenciáinkért keressen minket bizalommal.
+          </p>
+          <a href="tel:+36301234567" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
+            📞 További Referenciák Kérése
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statisztikák Section -->
+    <section class="py-16 bg-slate-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Számokban
+          </h2>
+          <p class="text-xl text-gray-300">
+            25 év tapasztalat Budapest és környékén
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="bg-slate-800 rounded-lg p-8">
+            <div class="text-4xl font-bold text-orange-400 mb-2">500+</div>
+            <div class="text-gray-300">Befejezett projekt</div>
+          </div>
+          <div class="bg-slate-800 rounded-lg p-8">
+            <div class="text-4xl font-bold text-orange-400 mb-2">25</div>
+            <div class="text-gray-300">Év tapasztalat</div>
+          </div>
+          <div class="bg-slate-800 rounded-lg p-8">
+            <div class="text-4xl font-bold text-orange-400 mb-2">100%</div>
+            <div class="text-gray-300">Elégedett ügyfél</div>
+          </div>
+          <div class="bg-slate-800 rounded-lg p-8">
+            <div class="text-4xl font-bold text-orange-400 mb-2">2 év</div>
+            <div class="text-gray-300">Garancia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Legyen Ön a következő elégedett ügyfelünk!
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Ingyenes helyszíni felmérés és árajánlat 48 órán belül. 
+                25 év tapasztalat, 2 év garancia minden munkára.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ajánlatkérés
+                </a>
+                <a href="tel:+36301234567" class="bg-red-600 border border-red-600 text-white hover:bg-red-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Kérj árajánlatot telefonon
+          </a>
+        </div>
+        <div class="mt-8 text-lg">
+          <p class="mb-2">🚀 <strong>Gyors reakció:</strong> 2 órán belül visszahívjuk</p>
+          <p class="mb-2">📍 <strong>Helyszíni felmérés:</strong> Budapest és 30 km-es körzetben</p>
+          <p>✅ <strong>Garancia:</strong> 2 év minden munkánkra</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Masonry Grid Layout */
+  .masonry-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .masonry-grid {
+      column-count: 4;
+    }
+  }
+  
+  .masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    break-inside: avoid;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .filter-btn.active {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .gallery-item.hidden {
+    display: none;
+  }
+  
+  /* Smooth transitions */
+  .gallery-item {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+</style>
+
+<script is:inline define:vars={{ allImages }}>
+  // Gallery filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDescription = document.getElementById('lightbox-description');
+    const closeLightbox = document.getElementById('close-lightbox');
+    const prevImage = document.getElementById('prev-image');
+    const nextImage = document.getElementById('next-image');
+    
+    let currentImages = allImages;
+    let currentIndex = 0;
+    
+    // Filter functionality
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Filter items with animation
+        galleryItems.forEach(item => {
+          const itemCategory = item.getAttribute('data-category');
+          
+          if (category === 'all' || itemCategory === category) {
+            item.classList.remove('fade-out');
+            setTimeout(() => {
+              item.classList.remove('hidden');
+            }, 150);
+          } else {
+            item.classList.add('fade-out');
+            setTimeout(() => {
+              item.classList.add('hidden');
+            }, 300);
+          }
+        });
+        
+        // Update current images for lightbox navigation
+        updateCurrentImages(category);
+      });
+    });
+    
+    // Lightbox functionality
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        const imageIndex = parseInt(item.getAttribute('data-index'));
+        openLightbox(imageIndex);
+      });
+    });
+    
+    function updateCurrentImages(category) {
+      if (category === 'all') {
+        currentImages = allImages;
+      } else {
+        currentImages = allImages.filter(img => img.category === category);
+      }
+    }
+    
+    function openLightbox(index) {
+      currentIndex = currentImages.findIndex(img => allImages.indexOf(img) === index);
+      if (currentIndex === -1) currentIndex = 0;
+      
+      showImage(currentIndex);
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function showImage(index) {
+      const image = currentImages[index];
+      if (image) {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxTitle.textContent = image.alt;
+        lightboxDescription.textContent = image.description;
+      }
+    }
+    
+    function closeLightboxModal() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+    
+    function nextImageFunc() {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      showImage(currentIndex);
+    }
+    
+    function prevImageFunc() {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      showImage(currentIndex);
+    }
+    
+    // Event listeners for lightbox
+    closeLightbox.addEventListener('click', closeLightboxModal);
+    nextImage.addEventListener('click', nextImageFunc);
+    prevImage.addEventListener('click', prevImageFunc);
+    
+    // Close lightbox on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightboxModal();
+      }
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('hidden')) {
+        switch(e.key) {
+          case 'Escape':
+            closeLightboxModal();
+            break;
+          case 'ArrowRight':
+            nextImageFunc();
+            break;
+          case 'ArrowLeft':
+            prevImageFunc();
+            break;
+        }
+      }
+    });
+  });
+</script>

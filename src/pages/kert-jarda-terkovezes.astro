@@ -1,0 +1,587 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Kert és járda térkövezés Budapest - Természetközeli megoldások 2025" description="Kert és járda térkövezés Budapest ✓ Kerti utak ✓ Járófelületek ✓ Természetes anyagok ✓ Ökológiai megoldások ✓ 15+ év tapasztalat ✓ Ingyenes tervezés">
+    <Header />
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Kert és járda térkövezés Budapest",
+        "description": "Professzionális kerti utak és járda térkövezési szolgáltatások Budapesten. Természetközeli anyagok, ökológiai megoldások.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Térkövezés Budapest",
+            "@id": "https://terkovezes-budapest.hu",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Budapest",
+                "addressCountry": "HU"
+            },
+            "telephone": "+36-30-123-4567",
+            "email": "info@terkovezes-budapest.hu",
+            "url": "https://terkovezes-budapest.hu",
+            "priceRange": "10000-22000 HUF per m²",
+            "areaServed": {
+                "@type": "City",
+                "name": "Budapest"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Kert és járda térkövezés szolgáltatások",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Kerti út térkövezés",
+                            "description": "Természetes kő vagy térkő kerti utak kialakítása"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "10000-16000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Járda térkövezés",
+                            "description": "Csúszásmentes járófelületek kialakítása"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "12000-18000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    }
+                ]
+            }
+        },
+        "serviceType": "Kert és járda térkövezés",
+        "category": "Landscaping",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "HUF",
+            "price": "10000-22000",
+            "unitText": "per m²",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2025-01-01",
+            "areaServed": {
+                "@type": "City", 
+                "name": "Budapest"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "83",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Főoldal",
+                "item": "https://terkovezes-budapest.hu/"
+            },
+            {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "Szolgáltatások",
+                "item": "https://terkovezes-budapest.hu/szolgaltatasok"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kert és járda térkövezés",
+                "item": "https://terkovezes-budapest.hu/kert-jarda-terkovezes"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Mennyibe kerül a kerti út térkövezés?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kerti út térkövezés ára 10.000-16.000 Ft/m². Természetes kő 14.000-22.000 Ft/m², standard térkő 10.000-14.000 Ft/m². Az ár függ az anyagtól, szélesség\u0151l és terepviszonyoktól."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Milyen anyagokat ajánlanak kerti úthoz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kerti úthoz ajánljuk: természetes köveket (gránit, andezit, homokkő), antik térköveket, vízáteresztő térköveket, földes színű térköveket. Minden anyag harmonikusan illeszkedik a természetes környezethez."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hogyan építenek fel egy kerti utat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kerti út felépítése: 1) Útvonal kitűzése, 2) 20-30 cm mély ásás, 3) Tömörítés, 4) Vízáteresztő alapanyag, 5) Szegélykövek, 6) Ágyelő réteg, 7) Térkövek lerakása, 8) Természetes fugázás."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mennyi ideig tart egy kerti út kivitelezése?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "50-100 méter hosszú kerti út kivitelezése 3-5 nap. Beletartozik a tervezés, ásás, alapozás, térkőlerakás. Bonyolult terepviszonyok vagy speciális minták esetén 1-2 nappal hosszabb lehet."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <nav class="text-sm mb-6" aria-label="Breadcrumb">
+                        <ol class="flex space-x-2 text-concrete-600">
+                            <li><a href="/" class="hover:text-primary-600">Főoldal</a></li>
+                            <li>/</li>
+                            <li><a href="/" class="hover:text-primary-600">Szolgáltatások</a></li>
+                            <li>/</li>
+                            <li class="text-concrete-800 font-medium">Kert és járda térkövezés</li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+                        <span class="text-primary-600">Kert és járda</span> térkövezés
+                    </h1>
+                    <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+                        Természetközeli kerti utak és járófelületek térkövezése. 
+                        Ökológiai anyagok, vízáteresztő megoldások, harmonikus illeszkedés a kerthez.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Ingyenes Tervezés
+                        </a>
+                        <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Hívj minket azonnal
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
+                        <picture>
+                            <source srcset="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" type="image/webp">
+                            <img 
+                                src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" 
+                                alt="Természetes kő kerti út térkövezés Budapest - harmonikus illeszkedés a kerthez"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                                width="600"
+                                height="400"
+                            >
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Types -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Kerti és járda térkövezés szolgáltatásaink
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Változatos megoldások minden kerti és járófelület igényhez
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kerti utak -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Kerti utak térkövezése</h3>
+                    <p class="text-concrete-600 mb-6">Természetközeli kerti sétautak kialakítása. Vízáteresztő, környezetbarát anyagokkal.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ Természetes kövek</li>
+                        <li>✓ Vízáteresztő fugázás</li>
+                        <li>✓ Ívelt útvonalak</li>
+                        <li>✓ Növényzet-barát</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">10.000-16.000 Ft/m²</div>
+                </div>
+
+                <!-- Járófelületek -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h3v-5a1 1 0 011-1h4a1 1 0 011 1v5h3a1 1 0 001-1V7l-7-5zM9 15v-2h2v2H9z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Járófelületek kialakítása</h3>
+                    <p class="text-concrete-600 mb-6">Csúszásmentes és biztonságos járófelületek kerti környezetben.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ Csúszásmentes felület</li>
+                        <li>✓ Akadálymentes tervezés</li>
+                        <li>✓ Biztonságos szélek</li>
+                        <li>✓ Kellemes tapintás</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">12.000-18.000 Ft/m²</div>
+                </div>
+
+                <!-- Díszburkolatok -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Díszburkolatok</h3>
+                    <p class="text-concrete-600 mb-6">Különleges mintázatú és színű térkövezések kerti díszterületekhez.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ Mozaik minták</li>
+                        <li>✓ Színes kombinációk</li>
+                        <li>✓ Egyedi formák</li>
+                        <li>✓ Művészi megjelenés</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">16.000-22.000 Ft/m²</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Természetközeli anyagok
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Harmonikus illeszkedés a természetes környezethez
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-6 mt-1">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-concrete-800 mb-2">Természetes kövek</h3>
+                                <p class="text-concrete-600">Gránit, andezit, homokkő - időtálló és esztétikus megoldások kerti környezethez.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-6 mt-1">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-concrete-800 mb-2">Ökológiai térköök</h3>
+                                <p class="text-concrete-600">Vízáteresztő térkövek, amelyek segítik a természetes vízkörforgást és növényzetet.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-6 mt-1">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-concrete-800 mb-2">Antik térkövek</h3>
+                                <p class="text-concrete-600">Koptatott felületű térkövek, amelyek természetes, időben patinásodott megjelenést biztosítanak.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-6 mt-1">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-concrete-800 mb-2">Földes színek</h3>
+                                <p class="text-concrete-600">Barna, bézs, okker árnyalatok, amelyek tökéletesen harmonizálnak a természettel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m" 
+                        alt="Természetes kő kerti út - gránit térkövezés"
+                        class="rounded-lg shadow-md"
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                    >
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb" 
+                        alt="Antik térkő járófelület - koptatott természetes megjelenés"
+                        class="rounded-lg shadow-md"
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                    >
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q" 
+                        alt="Vízáteresztő térkövezés - ökológiai megoldás"
+                        class="rounded-lg shadow-md"
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                    >
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/nagy-sandor-kft-burkolokovo-2kfwfqv8fm" 
+                        alt="Földes színű térkövezés - harmonikus kerti környezet"
+                        class="rounded-lg shadow-md"
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Kerti út kivitelezési folyamat
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Környezetkímélő kivitelezés 6 szakmai lépésben
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Útvonal tervezése</h3>
+                    <p class="text-concrete-600 text-sm">Terepbejárás, útvonal optimalizálás, természetes adottságokhoz illeszkedő tervezés.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Környezetkímélő földmunka</h3>
+                    <p class="text-concrete-600 text-sm">Növényzet védelme, precíz ásás, talaj megőrzése a kert többi részén.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Vízáteresztő alapozás</h3>
+                    <p class="text-concrete-600 text-sm">Drénező anyagok, természetes vízelvezetés biztosítása, talajerózió megelőzése.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Szegélyezés</h3>
+                    <p class="text-concrete-600 text-sm">Természetes vagy antik szegélykövek, harmonikus átmenet a füves területekhez.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">5</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Térkőlerakás</h3>
+                    <p class="text-concrete-600 text-sm">Természetes mintázat kialakítása, egyenletes fugák, stabil felület biztosítása.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">6</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Ökológiai befejezés</h3>
+                    <p class="text-concrete-600 text-sm">Természetes fugázás, növényzet helyreállítása, környezet rendbetétele.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-6">
+                        Miért válassza a térkövezett kerti utat?
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Természetbarát megoldás</h3>
+                                <p class="text-concrete-600 text-sm">Vízáteresztő felület, nem akadályozza a természetes vízkörforgást.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Időjárásálló</h3>
+                                <p class="text-concrete-600 text-sm">Fagyálló anyagok, nem károsodik télen, nyáron nem olvad fel.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Alacsony karbantartás</h3>
+                                <p class="text-concrete-600 text-sm">Évekig szép marad, alkalmi seprés és gyomirtás elegendő.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Biztonságos járás</h3>
+                                <p class="text-concrete-600 text-sm">Egyenletes, csúszásmentes felület, biztonságos közlekedés minden időben.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Ingatlanérték növelés</h3>
+                                <p class="text-concrete-600 text-sm">Esztétikus kerti utak jelentősen növelik az ingatlan értékét.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8" 
+                        alt="Térkövezett kerti út előnyei - természetbarát és tartós megoldás"
+                        class="rounded-xl shadow-lg w-full"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Gyakran ismételt kérdések
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Válaszok a kerti térkövezéssel kapcsolatos leggyakoribb kérdésekre
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-concrete-50 rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyibe kerül a kerti út térkövezés?</h3>
+                        <p class="text-concrete-600">Kerti út térkövezés ára 10.000-16.000 Ft/m². Természetes kő 14.000-22.000 Ft/m², standard térkő 10.000-14.000 Ft/m². Az ár függ az anyagtól, szélességtől és terepviszonyoktól.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-concrete-50 rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Milyen anyagokat ajánlanak kerti úthoz?</h3>
+                        <p class="text-concrete-600">Kerti úthoz ajánljuk: természetes köveket (gránit, andezit, homokkő), antik térköveket, vízáteresztő térköveket, földes színű térköveket. Minden anyag harmonikusan illeszkedik a természetes környezethez.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-concrete-50 rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Hogyan építenek fel egy kerti utat?</h3>
+                        <p class="text-concrete-600">Kerti út felépítése: 1) Útvonal kitűzése, 2) 20-30 cm mély ásás, 3) Tömörítés, 4) Vízáteresztő alapanyag, 5) Szegélykövek, 6) Ágyelő réteg, 7) Térkövek lerakása, 8) Természetes fugázás.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-concrete-50 rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyi ideig tart egy kerti út kivitelezése?</h3>
+                        <p class="text-concrete-600">50-100 méter hosszú kerti út kivitelezése 3-5 nap. Beletartozik a tervezés, ásás, alapozás, térkőlerakás. Bonyolult terepviszonyok vagy speciális minták esetén 1-2 nappal hosszabb lehet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-green-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Álmodja meg kertje tökéletes útjait
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Ingyenes helyszíni tervezés és konzultáció. Természetbarát megoldásokkal 
+                harmonikus kerti környezetet alakítunk ki.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/kapcsolat" class="bg-white text-green-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ingyenes Tervezés Kérése
+                </a>
+                <a href="tel:+36301234567" class="border-2 border-white text-white hover:bg-white hover:text-green-600 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    +36 30 123 4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

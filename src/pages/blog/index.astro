@@ -1,0 +1,171 @@
+---
+import Layout from '../../components/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CTA from '../../components/CTA.astro';
+import { blogPosts, getCategories, getLatestPosts } from '../../data/blogPosts.js';
+
+// Import getBlogPostImage from blogPosts.js
+import { getBlogPostImage } from '../../data/blogPosts.js';
+
+// Get latest blog posts for display
+const latestBlogPosts = getLatestPosts(12);
+const categories = getCategories();
+
+// Function to get appropriate alt text for blog post images - now using JóSzaki images
+function getBlogPostImageAlt(category, title) {
+  const altTextMap = {
+    // Térkövezési kategóriák
+    'Kocsibeálló térkövezés': `Kocsibeálló térkövezés - ${title}`,
+    'Terasz térkövezés': `Terasz térkövezés - ${title}`,
+    'Kert és járda térkövezés': `Kerti térkövezés - ${title}`,
+    'Térkő típusok': `Térkő típusok - ${title}`,
+    'Tervezés és tanácsadás': `Térkövezési tervezés - ${title}`,
+    
+    // Általános kategóriák
+    'Téli munkák': `Téli térkövezési munkálatok - ${title}`,
+    'Szakmai tudás': `Szakmai térkövezési tudás - ${title}`, 
+    'Környezetvédelem': `Környezetbarát térkövezési megoldások - ${title}`,
+    'Minőségbiztosítás': `Térkövezési minőségbiztosítás - ${title}`,
+    'Költségoptimalizálás': `Térkövezési költségoptimalizálás - ${title}`,
+    'Felújítás': `Térkő rehabilitáció és felújítás - ${title}`,
+    'Hibaelhárítás': `Térkövezési hibaelhárítás - ${title}`,
+    'Dekorációs': `Dekoratív térkövezési megoldások - ${title}`,
+    'Vízgazdálkodás': `Térkövezési vízgazdálkodás - ${title}`,
+    'Javítás': `Térkő szerkezet javítás - ${title}`,
+    'Alapozás': `Térkövezési alapozási munkálatok - ${title}`,
+    'Vízszigetelés': `Térkő vízszigetelési megoldások - ${title}`,
+    'Ipari megoldások': `Ipari térkövezési megoldások - ${title}`,
+    'Általános': `Általános térkövezési szolgáltatások - ${title}`,
+    'Aljzatkészítés': `Térkőaljzat készítés - ${title}`,
+    'Speciális térköövek': `Speciális térkőtípusok - ${title}`,
+    'Felületkezelés': `Térkőfelület kezelés - ${title}`,
+    'Technológiák': `Modern térkövezési technológiák - ${title}`
+  };
+  
+  return altTextMap[category] || `Térkövezési szakértelem - ${title}`;
+}
+---
+
+<Layout title="Blog - Betonozás Budapest" description="Hasznos cikkek, tippek és útmutatók betonozásról. Szakértői tanácsok és praktikus információk építési projektjeidhez.">
+    <Header />
+    
+    <!-- Blog Header -->
+    <section class="relative bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-20 overflow-hidden">
+        <div class="absolute inset-0">
+            <picture>
+                <source srcset="/images/blog/blog-hero.webp" type="image/webp">
+                <img 
+                    src="/images/blog/blog-hero.jpg" 
+                    alt="Betonozási munkálatok - Szakértői blog" 
+                    class="w-full h-full object-cover opacity-20"
+                    loading="eager"
+                    width="1200"
+                    height="600"
+                >
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-br from-concrete-50/90 to-concrete-100/80"></div>
+        </div>
+        <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-concrete-800 font-heading mb-6">
+                    Térkövezési Blog
+                </h1>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Szakértői tanácsok, praktikus útmutatók és hasznos tippek térkövezési projektjeidhez
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                {latestBlogPosts.map((post) => {
+                    const imageData = getBlogPostImage(post.category, post.slug);
+                    return (
+                    <article class="bg-white border border-concrete-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="relative h-48 overflow-hidden">
+                            <picture>
+                                <source srcset={imageData.src} type="image/webp">
+                                <img 
+                                    src={imageData.src} 
+                                    alt={imageData.alt}
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                    loading="lazy"
+                                    width="400"
+                                    height="300"
+                                >
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="bg-primary-100 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full">
+                                    {post.category}
+                                </span>
+                                <time class="text-sm text-concrete-500" datetime={post.date}>
+                                    {new Date(post.date).toLocaleDateString('hu-HU')}
+                                </time>
+                            </div>
+                            <h2 class="text-xl font-semibold text-concrete-800 mb-3 hover:text-primary-600 transition-colors">
+                                <a href={`/${post.slug}`}>
+                                    {post.title}
+                                </a>
+                            </h2>
+                            <p class="text-concrete-600 mb-4 line-clamp-3">
+                                {post.excerpt}
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <a href={`/${post.slug}`} class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center">
+                                    Tovább olvasom
+                                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                                <span class="text-xs text-concrete-500">{post.readTime}</span>
+                            </div>
+                        </div>
+                    </article>
+                    );
+                })}
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <CTA 
+        title="Kérd be térkövezési árajánlatodat!"
+        description="Professzionális térkövezési szolgáltatások Budapesten és környékén. Ingyenes helyszíni felmérés és részletes árajánlat."
+    />
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 lg:py-20 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 font-heading">
+                    Iratkozz fel hírlevelünkre
+                </h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Kapd meg elsőként az új cikkeinket és szakértői tippjeinket!
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    <input 
+                        type="email" 
+                        placeholder="E-mail címed" 
+                        class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-primary-300 focus:outline-none"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                    >
+                        Feliratkozás
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

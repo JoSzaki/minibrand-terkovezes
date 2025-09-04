@@ -1,0 +1,19 @@
+{
+  "name": "minibrand-terkovezes",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.5",
+    "astro": "^5.13.5",
+    "flowbite": "^3.1.2",
+    "jiti": "1.21.7",
+    "playwright": "^1.55.0",
+    "tailwindcss": "^3.4.17"
+  }
+}

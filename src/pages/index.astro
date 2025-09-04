@@ -1,0 +1,190 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Térkövezés Budapest - Professzionális Szolgáltatások" description="Minőségi térkövezési szolgáltatások Budapesten. Kocsibeálló, terasz, kert térkövezés. Megbízható kivitelezés, versenyképes árak.">
+    <Header />
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+                        Professzionális <span class="text-primary-600">Térkövezés</span>
+                    </h1>
+                    <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+                        Minőségi térkövezési szolgáltatások magánszemélyek és vállalkozások számára. 
+                        Tapasztalt csapatunk garantálja a tartós és gyönyörű térkövezett felületeket.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Ingyenes Ajánlatkérés
+                        </a>
+                        <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Hívj minket azonnal
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
+                        <picture>
+                            <img 
+                                src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" 
+                                alt="Elegáns térkövezett kocsibeálló kovácsoltvas kapuval - Professzionális térkövezés Budapest"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                                width="600"
+                                height="400"
+                            >
+                        </picture>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Szolgáltatásaink
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Komplex betonozási megoldások minden igényre, a tervezéstől a kivitelezésig
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Kocsibeálló Térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Tartós és gyönyörű kocsibeállók térkövezése professzionális alapozással és vízelvezetéssel.</p>
+                    <a href="/kocsibeallo-terkovezes/" class="text-primary-600 hover:text-primary-700 font-semibold">Részletek →</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Terasz Térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Elegáns teraszok térkövezése, különböző stílusok és minták szerint.</p>
+                    <a href="/terasz-terkovezes/" class="text-primary-600 hover:text-primary-700 font-semibold">Részletek →</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Kert és Járda Térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Kerti utak, járdák és járófelületek térkövezése funció és esztétika egységében.</p>
+                    <a href="/kert-jarda-terkovezes/" class="text-primary-600 hover:text-primary-700 font-semibold">Részletek →</a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Térkő Típusok</h3>
+                    <p class="text-concrete-600 mb-6">Beton, természetes kő és speciális térkövek, minden stílushoz és igényhez.</p>
+                    <a href="/terko-tipusok/" class="text-primary-600 hover:text-primary-700 font-semibold">Részletek →</a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Tervezés és Tanácsadás</h3>
+                    <p class="text-concrete-600 mb-6">Szakmai tervezés, helyszíni felmérés és árajnélatkeret.</p>
+                    <a href="/tervezes-tanacsadas/" class="text-primary-600 hover:text-primary-700 font-semibold">Részletek →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Miért válassz minket?
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">15+ év tapasztalat</h3>
+                    <p class="text-concrete-600">Több évtizedes szakmai tapasztalat és több száz sikeres térkövezési projekt</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Minőségi anyagok</h3>
+                    <p class="text-concrete-600">Csak a legjobb minőségű térkövek és adalik anyagok használata</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h3v-5a1 1 0 011-1h4a1 1 0 011 1v5h3a1 1 0 001-1V7l-7-5zM9 15v-2h2v2H9z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Garanciális szolgáltatás</h3>
+                    <p class="text-concrete-600">Minden térkövezési munkánkra garanciát vállalunk a teljes körű biztosítás mellett</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Készen állsz a projektre?
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Kérj ingyenes ajánlatot és tapasztald meg a professzionális térkövezési szolgáltatásainkat!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ajánlatkérés
+                </a>
+                <a href="tel:+36301234567" class="bg-green-600 border border-green-600 text-white hover:bg-green-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Kérj árajánlatot telefonon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

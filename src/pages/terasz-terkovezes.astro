@@ -1,0 +1,515 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Terasz térkövezés Budapest - Elegáns és tartós megoldások 2025" description="Terasz térkövezés Budapest ✓ Elegáns design ✓ Vízelvezetés ✓ Antik és színes térköök ✓ 15+ év tapasztalat ✓ Ingyenes tervezés ✓ 5 év garancia">
+    <Header />
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Terasz térkövezés Budapest",
+        "description": "Professzionális terasz térkövezési szolgáltatások Budapesten és környékén. Elegáns design, vízelvezetés, antik és színes térköök.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Térkövezés Budapest",
+            "@id": "https://terkovezes-budapest.hu",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Budapest",
+                "addressCountry": "HU"
+            },
+            "telephone": "+36-30-123-4567",
+            "email": "info@terkovezes-budapest.hu",
+            "url": "https://terkovezes-budapest.hu",
+            "priceRange": "14000-28000 HUF per m²",
+            "areaServed": {
+                "@type": "City",
+                "name": "Budapest"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Terasz térkövezés szolgáltatások",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Standard terasz térkövezés",
+                            "description": "Alapcsomag: beton térkő, vízelvezetés, szegélyezés"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "14000-18000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Prémium terasz térkövezés",
+                            "description": "Antik térkő, mintázott design, speciális vízelvezetés"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "20000-28000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    }
+                ]
+            }
+        },
+        "serviceType": "Terasz térkövezés",
+        "category": "Construction",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "HUF",
+            "price": "14000-28000",
+            "unitText": "per m²",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2025-01-01",
+            "areaServed": {
+                "@type": "City", 
+                "name": "Budapest"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "94",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Főoldal",
+                "item": "https://terkovezes-budapest.hu/"
+            },
+            {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "Szolgáltatások",
+                "item": "https://terkovezes-budapest.hu/szolgaltatasok"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Terasz térkövezés",
+                "item": "https://terkovezes-budapest.hu/terasz-terkovezes"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Mennyibe kerül a terasz térkövezés Budapesten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A terasz térkövezés ára 14.000-28.000 Ft/m² között mozog. Standard térkő 14.000-18.000 Ft/m², antik térkő 20.000-25.000 Ft/m², természetes kő 25.000-28.000 Ft/m². Az ár tartalmazza a vízelvezetést és szegélyezést is."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Milyen térkő típusok alkalmasak teraszhoz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Teraszhoz ajánljuk: antik térköveket (koptatott felület), színes térköveket (design), természetes köveket (travertin, mészkő), csúszásmentes térköveket. Minden típus időjárásálló és UV-álló."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hogyan oldják meg a terasz vízelvezetését?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Terasz vízelvezetését 1-2%-os lejtéssel oldjuk meg, víznyelők beépítésével vagy fedett csatornával. Speciális vízáteresztő fugázóanyagot használunk, így a csapadékvíz nem áll meg a felületen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mennyi idő alatt készül el egy terasz térkövezés?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "20-40 m²-es terasz térkövezése 4-7 nap alatt elkészül. Beletartozik a tervezés, alapozás, térkőlerakás, fugázás és befejező munkák. Bonyolult mintázatok esetén 1-2 nappal több időt vesz igénybe."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <nav class="text-sm mb-6" aria-label="Breadcrumb">
+                        <ol class="flex space-x-2 text-concrete-600">
+                            <li><a href="/" class="hover:text-primary-600">Főoldal</a></li>
+                            <li>/</li>
+                            <li><a href="/" class="hover:text-primary-600">Szolgáltatások</a></li>
+                            <li>/</li>
+                            <li class="text-concrete-800 font-medium">Terasz térkövezés</li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+                        <span class="text-primary-600">Terasz térkövezés</span> Budapesten
+                    </h1>
+                    <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+                        Elegáns és funkcionális teraszok térkövezése egyedi tervezéssel. 
+                        Antik és színes térköök, professzionális vízelvezetés, 5 év garancia.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Ingyenes Tervezés
+                        </a>
+                        <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Hívj minket azonnal
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
+                        <picture>
+                            <source srcset="https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m" type="image/webp">
+                            <img 
+                                src="https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m" 
+                                alt="Elegáns terasz térkövezés Budapest - antik térköők professzionális kivitelezéssel"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                                width="600"
+                                height="400"
+                            >
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Terasz térkövezés specialitásaink
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Egyedi tervezéssel és prémium anyagokkal készítjük el álmai teraszát
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Design tervezés -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Egyedi design tervezés</h3>
+                    <p class="text-concrete-600 mb-6">3D tervezés, színkombináció vizualizáció, mintázat optimalizálás, harmonikus illeszkedés a környezethez.</p>
+                    <ul class="text-sm text-concrete-600 space-y-1">
+                        <li>• 3D vizualizáció</li>
+                        <li>• Színharmonia tervezés</li>
+                        <li>• Mintázat optimalizálás</li>
+                        <li>• Ingyenes konzultáció</li>
+                    </ul>
+                </div>
+
+                <!-- Prémium anyagok -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Prémium térkő anyagok</h3>
+                    <p class="text-concrete-600 mb-6">Antik térköök, természetes kövek, UV-álló színek, fagyálló tulajdonságok, hosszú élettartam.</p>
+                    <ul class="text-sm text-concrete-600 space-y-1">
+                        <li>• Antik és vintage térköök</li>
+                        <li>• Természetes kő opciók</li>
+                        <li>• UV-álló színpigmentek</li>
+                        <li>• Fagyálló minősítés</li>
+                    </ul>
+                </div>
+
+                <!-- Vízelvezetés -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 3.636a1 1 0 010 1.414 7 7 0 000 9.9 1 1 0 11-1.414 1.414 9 9 0 010-12.728 1 1 0 011.414 0zm9.9 0a1 1 0 011.414 0 9 9 0 010 12.728 1 1 0 11-1.414-1.414 7 7 0 000-9.9 1 1 0 010-1.414zM7.879 6.464a1 1 0 010 1.414 3 3 0 000 4.243 1 1 0 11-1.415 1.414 5 5 0 010-7.07 1 1 0 011.415 0zm4.242 0a1 1 0 011.415 0 5 5 0 010 7.072 1 1 0 01-1.415-1.415 3 3 0 000-4.242 1 1 0 010-1.415zM10 9a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Profi vízelvezetés</h3>
+                    <p class="text-concrete-600 mb-6">Precíz lejtéskialakítás, víznyelők, fedett csatornák, vízáteresztő fugázás a száraz teraszért.</p>
+                    <ul class="text-sm text-concrete-600 space-y-1">
+                        <li>• 1-2%-os optimális lejtés</li>
+                        <li>• Víznyelők beépítése</li>
+                        <li>• Fedett csatornák</li>
+                        <li>• Vízáteresztő fugázás</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Types -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Terasz térkövezés típusaink
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Különböző stílusok és anyagok minden ízléshez és költségvetéshez
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Standard terasz -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-concrete-800 mb-2">Standard terasz térkövezés</h3>
+                        <div class="text-3xl font-bold text-primary-600 mb-2">14.000-18.000 Ft/m²</div>
+                        <p class="text-concrete-600">Minőségi alapmegoldás</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Standard beton térkő</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Alapozás és vízelvezetés</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Szegélyezés kialakítása</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">3 év garancia</span>
+                        </li>
+                    </ul>
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q" 
+                        alt="Standard terasz térkövezés - minőségi alapmegoldás"
+                        class="rounded-lg w-full h-48 object-cover"
+                        loading="lazy"
+                        width="400"
+                        height="250"
+                    >
+                </div>
+
+                <!-- Prémium terasz -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-primary-200">
+                    <div class="text-center mb-6">
+                        <div class="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold inline-block mb-2">NÉPSZERŰ</div>
+                        <h3 class="text-2xl font-bold text-concrete-800 mb-2">Prémium terasz térkövezés</h3>
+                        <div class="text-3xl font-bold text-primary-600 mb-2">20.000-28.000 Ft/m²</div>
+                        <p class="text-concrete-600">Luxus kivitelezés</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Antik/természetes kő térkő</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Egyedi design tervezés</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Speciális vízelvezetés</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">Dekoratív szegélyezés</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-concrete-700">5 év garancia</span>
+                        </li>
+                    </ul>
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb" 
+                        alt="Prémium terasz térkövezés - antik térkövekkel luxus kivitelezés"
+                        class="rounded-lg w-full h-48 object-cover"
+                        loading="lazy"
+                        width="400"
+                        height="250"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Ideas -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Terasz design ötletek
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Inspiráló minták és színkombinációk különböző stílusokhoz
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="rounded-lg overflow-hidden shadow-lg mb-4">
+                        <img 
+                            src="https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-nxozuex45t" 
+                            alt="Modern színkombináció terasz térkövezéshez"
+                            class="w-full h-48 object-cover"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                    </div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Modern színkombinációk</h3>
+                    <p class="text-concrete-600 text-sm">Szürke-antracit árnyalatok minimál stílushoz</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="rounded-lg overflow-hidden shadow-lg mb-4">
+                        <img 
+                            src="https://storage.googleapis.com/joszaki-reference-photos/normal/oszko-gyorgy-terkovezes-qhld8u75js" 
+                            alt="Természetes kő terasz design"
+                            class="w-full h-48 object-cover"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                    </div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Természetes kő elegancia</h3>
+                    <p class="text-concrete-600 text-sm">Travertin és mészkő luxus megjelenés</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="rounded-lg overflow-hidden shadow-lg mb-4">
+                        <img 
+                            src="https://storage.googleapis.com/joszaki-reference-photos/normal/general-kivitelezes-felujitas-epuletbontas-terkovezes-4km426cyqk" 
+                            alt="Geometriai mintázatok térköves terasz"
+                            class="w-full h-48 object-cover"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                    </div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Geometriai mintázatok</h3>
+                    <p class="text-concrete-600 text-sm">Kreatív lerakási minták egyedi karakterrel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Gyakran ismételt kérdések
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Választ ad a leggyakoribb kérdésekre terasz térkövezéssel kapcsolatban
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyibe kerül a terasz térkövezés Budapesten?</h3>
+                        <p class="text-concrete-600">A terasz térkövezés ára 14.000-28.000 Ft/m² között mozog. Standard térkő 14.000-18.000 Ft/m², antik térkő 20.000-25.000 Ft/m², természetes kő 25.000-28.000 Ft/m². Az ár tartalmazza a vízelvezetést és szegélyezést is.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Milyen térkő típusok alkalmasak teraszhoz?</h3>
+                        <p class="text-concrete-600">Teraszhoz ajánljuk: antik térköveket (koptatott felület), színes térköveket (design), természetes köveket (travertin, mészkő), csúszásmentes térköveket. Minden típus időjárásálló és UV-álló.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Hogyan oldják meg a terasz vízelvezetését?</h3>
+                        <p class="text-concrete-600">Terasz vízelvezetését 1-2%-os lejtéssel oldjuk meg, víznyelők beépítésével vagy fedett csatornával. Speciális vízáteresztő fugázóanyagot használunk, így a csapadékvíz nem áll meg a felületen.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyi idő alatt készül el egy terasz térkövezés?</h3>
+                        <p class="text-concrete-600">20-40 m²-es terasz térkövezése 4-7 nap alatt elkészül. Beletartozik a tervezés, alapozás, térkőlerakás, fugázás és befejező munkák. Bonyolult mintázatok esetén 1-2 nappal több időt vesz igénybe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Álmodjuk meg együtt a tökéletes teraszát
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Ingyenes 3D tervezés és helyszíni konzultáció. Mutassa meg elképzeléseit, 
+                mi megvalósítjuk a legrészletesebb kivitelezéssel!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ajánlatkérés
+                </a>
+                <a href="tel:+36301234567" class="bg-red-600 border border-red-600 text-white hover:bg-red-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Kérj árajánlatot telefonon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

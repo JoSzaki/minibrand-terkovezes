@@ -1,0 +1,491 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Kocsibeálló térkövezés Budapest - Szakszerű kivitelezés 2025" description="Kocsibeálló térkövezés Budapest ✓ Tart\u00f3s térkövek ✓ Professzionális alapozás ✓ Vízelvezetés ✓ 15+ év tapasztalat ✓ Ingyenes ajánlat ✓ Garancia">
+    <Header />
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Kocsibeálló térkövezés Budapest",
+        "description": "Professzionális kocsibeálló térkövezési szolgáltatások Budapesten és környékén. Tartós térkövek, szakszerű alapozás, vízelvezetés.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Térkövezés Budapest",
+            "@id": "https://terkovezes-budapest.hu",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Budapest",
+                "addressCountry": "HU"
+            },
+            "telephone": "+36-30-123-4567",
+            "email": "info@terkovezes-budapest.hu",
+            "url": "https://terkovezes-budapest.hu",
+            "priceRange": "12000-25000 HUF per m²",
+            "areaServed": {
+                "@type": "City",
+                "name": "Budapest"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Kocsibeálló térkövezés szolgáltatások",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Standard kocsibeálló térkövezés",
+                            "description": "Alapcsomag: standard beton térkő, 15 cm alapozás, szegélykő"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "12000-15000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Prémium kocsibeálló térkövezés",
+                            "description": "Antik térkő, 20 cm alapozás, vízelvezetés, díszszegély"
+                        },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "16000-22000",
+                            "priceCurrency": "HUF",
+                            "unitText": "per m²"
+                        }
+                    }
+                ]
+            }
+        },
+        "serviceType": "Kocsibeálló térkövezés",
+        "category": "Construction",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "HUF",
+            "price": "12000-25000",
+            "unitText": "per m²",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2025-01-01",
+            "areaServed": {
+                "@type": "City", 
+                "name": "Budapest"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Főoldal",
+                "item": "https://terkovezes-budapest.hu/"
+            },
+            {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "Szolgáltatások",
+                "item": "https://terkovezes-budapest.hu/szolgaltatasok"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kocsibeálló térkövezés",
+                "item": "https://terkovezes-budapest.hu/kocsibeallo-terkovezes"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Mennyibe kerül a kocsibeálló térkövezés Budapest\u00e9n?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A kocsibeálló térkövezés ára 12.000-25.000 Ft/m² között mozog. Az alapcsomag (standard térkő) 12.000-15.000 Ft/m², a prémium (antik térkő) 16.000-22.000 Ft/m², míg az exkluzív (természetes kő) 25.000+ Ft/m²."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Milyen térkő típusokat ajánlanak kocsibeállóhoz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kocsibeállóhoz ajánlunk: beton térköveket (standard, antik, színes), természetes köveket (gránit, andezit), valamint nagy teherbírású speciális térköveket. Minden típus alkalmas járművek terhelésére."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mennyi idő alatt készül el egy kocsibeálló térkövezés?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Egy átlagos méretű (30-50 m²) kocsibeálló térkövezése 3-5 nap alatt elkészül. Ez magában foglalja a földmunkát, alapozást, térkőlerakást és fugázást. Az időjárási viszonyok befolyásolhatják a kivitelezési időt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Milyen garanci\u00e1t vállalnak a kocsibeálló térkövezésre?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minden kocsibeálló térkövezésre 3-5 év garanci\u00e1t vállalunk a csomag függvényében. A garancia kiterjed az alapozásra, térkövekre és a kivitelezési munkára. Ingyenes karbantartási tanácsadást is biztosítunk."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <nav class="text-sm mb-6" aria-label="Breadcrumb">
+                        <ol class="flex space-x-2 text-concrete-600">
+                            <li><a href="/" class="hover:text-primary-600">Főoldal</a></li>
+                            <li>/</li>
+                            <li><a href="/" class="hover:text-primary-600">Szolgáltatások</a></li>
+                            <li>/</li>
+                            <li class="text-concrete-800 font-medium">Kocsibeálló térkövezés</li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+                        <span class="text-primary-600">Kocsibeálló térkövezés</span>
+                    </h1>
+                    <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+                        Tartós és esztétikus kocsibeállók térkövezése professzionális kivitelezéssel. 
+                        Nagy teherbírású térkövek, szakszerű alapozás, vízelvezetés. 15+ év tapasztalat.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Ingyenes Ajánlatkérés
+                        </a>
+                        <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+                            Hívj minket azonnal
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
+                        <picture>
+                            <img 
+                                src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" 
+                                alt="Professzionális kocsibeálló térkövezés Budapest - tartós térkövek szakszerű lerakással"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                                width="600"
+                                height="400"
+                            >
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Kocsibeálló térkövezés szolgáltatásaink
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Minden méretű és típusú kocsibeálló térkövezését vállaljuk, a tervezéstől a kivitelezésig
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard kocsibeálló -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Standard kocsibeálló térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Egyautós és kétautós kocsibeállók térkövezése standard beton térkővel. Megfizethető árón, tartós megoldással.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ 15 cm-es alapozás</li>
+                        <li>✓ Standard beton térkő</li>
+                        <li>✓ Szegélykő beépítése</li>
+                        <li>✓ 3 év garancia</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">12.000-15.000 Ft/m²</div>
+                </div>
+
+                <!-- Prémium kocsibeálló -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Prémium kocsibeálló térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Antik vagy színes térkővel, megerősített alapozással. Esztétikus megjelenés, hosszú élettartam.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ 20 cm-es megerősített alapozás</li>
+                        <li>✓ Antik vagy színes térkő</li>
+                        <li>✓ Díszszegély kialakítása</li>
+                        <li>✓ Vízelvezetés megoldása</li>
+                        <li>✓ 5 év garancia</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">16.000-22.000 Ft/m²</div>
+                </div>
+
+                <!-- Nagy teherbírású -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h3v-5a1 1 0 011-1h4a1 1 0 011 1v5h3a1 1 0 001-1V7l-7-5zM9 15v-2h2v2H9z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-4">Nagy teherbírású térkövezés</h3>
+                    <p class="text-concrete-600 mb-6">Nehéz járművekhez, kamionokhoz alkalmas térkövezés. Speciális térkövek, vasalt alapozás.</p>
+                    <ul class="text-sm text-concrete-600 space-y-2 mb-6">
+                        <li>✓ 25-30 cm vasalt alapozás</li>
+                        <li>✓ Nagy teherbírású térkővek</li>
+                        <li>✓ Ipari vízelvezetés</li>
+                        <li>✓ Nehéz járművekre tervezett</li>
+                        <li>✓ 10 év garancia</li>
+                    </ul>
+                    <div class="text-primary-600 font-semibold">25.000-35.000 Ft/m²</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Kocsibeálló térkövezés folyamata
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Professzionális kivitelezés 7 lépésben, a tervezéstől a befejezésig
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Helyszíni felmérés</h3>
+                    <p class="text-concrete-600 text-sm">Ingyenes felmérés, méretek felvétele, talajviszonyok vizsgálata, árajánlat készítése.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Tervezés</h3>
+                    <p class="text-concrete-600 text-sm">Térkő típus kiválasztása, mintázat tervezése, vízelvezetés megtervezése.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Földmunka</h3>
+                    <p class="text-concrete-600 text-sm">Területek kijelölése, földkiás, talaj tömörítése, magasságok beállítása.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Alapozás</h3>
+                    <p class="text-concrete-600 text-sm">Alapanyag beszórása, tömörítése, lejtések kialakítása, szegélykövek elhelyezése.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">5</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Térkőlerakás</h3>
+                    <p class="text-concrete-600 text-sm">Ágyelő homok terítése, térkövek precíz lerakása, mintázat kialakítása.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">6</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Fugázás</h3>
+                    <p class="text-concrete-600 text-sm">Fugahomok beszórása, söprése, tömörítése, többszöri átjárás.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">7</div>
+                    <h3 class="text-lg font-semibold text-concrete-800 mb-2">Befejezés</h3>
+                    <p class="text-concrete-600 text-sm">Takarítás, minőségellenőrzés, átadás, garancialevél kiállítása.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-6">
+                        Miért válassza térkövezett kocsibeállót?
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Hosszú élettartam</h3>
+                                <p class="text-concrete-600 text-sm">Megfelelően kivitelezett térkövezett kocsibeálló 20-30 évig szolgál karbantartás nélkül.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Esztétikus megjelenés</h3>
+                                <p class="text-concrete-600 text-sm">Változatos színek és minták, harmonikus illeszkedés az épület stílusához.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Könnyű karbantartás</h3>
+                                <p class="text-concrete-600 text-sm">Szennyeződések egyszerűen eltávolíthatók, egyedi kövek cserélhetők.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Vízáteresztő</h3>
+                                <p class="text-concrete-600 text-sm">Fugák révén a csapadékvíz elszivárog, nincs víztócsa képződés.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-concrete-800 mb-2">Javítható</h3>
+                                <p class="text-concrete-600 text-sm">Sérült térkövet egyszerűen ki lehet cserélni a teljes felület bontása nélkül.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img 
+                        src="https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8" 
+                        alt="Térkövezett kocsibeálló előnyei - tartós és esztétikus megoldás"
+                        class="rounded-xl shadow-lg w-full"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 lg:py-24 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    Gyakran ismételt kérdések
+                </h2>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    A leggyakrabban felmerülő kérdések kocsibeálló térkövezéssel kapcsolatban
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyibe kerül a kocsibeálló térkövezés Budapestén?</h3>
+                        <p class="text-concrete-600">A kocsibeálló térkövezés ára 12.000-25.000 Ft/m² között mozog. Az alapcsomag (standard térkő) 12.000-15.000 Ft/m², a prémium (antik térkő) 16.000-22.000 Ft/m², míg az exkluzív (természetes kő) 25.000+ Ft/m². Az ár tartalmazza az alapozást, anyagot és munkadíjat.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Milyen térkő típusokat ajánlanak kocsibeállóhoz?</h3>
+                        <p class="text-concrete-600">Kocsibeállóhoz ajánlunk: beton térköveket (standard, antik, színes), természetes köveket (gránit, andezit), valamint nagy teherbírású speciális térköveket. Minden típus alkalmas járművek terhelésére és fagyálló tulajdonságokkal rendelkezik.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Mennyi idő alatt készül el egy kocsibeálló térkövezés?</h3>
+                        <p class="text-concrete-600">Egy átlagos méretű (30-50 m²) kocsibeálló térkövezése 3-5 nap alatt elkészül. Ez magában foglalja a földmunkát, alapozást, térkőlerakást és fugázást. Az időjárási viszonyok és a terület összetettsége befolyásolhatják a kivitelezési időt.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-concrete-800 mb-3">Milyen garanciát vállalnak a kocsibeálló térkövezésre?</h3>
+                        <p class="text-concrete-600">Minden kocsibeálló térkövezésre 3-5 év garanciát vállalunk a csomag függvényében. A garancia kiterjed az alapozásra, térkövekre és a kivitelezési munkára. Ingyenes karbantartási tanácsadást és utókövetést is biztosítunk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Kérjen ingyenes árajánlatot kocsibeálló térkövezéshez
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Szakértő csapatunk ingyenes helyszíni felméréssel és részletes árajánlattal segíti Önt. 
+                Hívjon most vagy küldje el kérését online!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ajánlatkérés
+                </a>
+                <a href="tel:+36301234567" class="bg-green-600 border border-green-600 text-white hover:bg-green-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Kérj árajánlatot telefonon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

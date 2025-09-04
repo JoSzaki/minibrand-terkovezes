@@ -1,0 +1,531 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Térkövezés Tervezés és Tanácsadás Budapest | Szakértői Konzultáció";
+const description = "Professzionális térkövezés tervezés és tanácsadás Budapest ✓ 3D vizualizáció ✓ Költségbecslés ✓ Anyagválasztás ✓ Engedélyeztetés ✓ 25 év tapasztalat ✓ Ingyenes helyszíni felmérés";
+const canonicalURL = "https://minibrand-terkovezes.hu/tervezes-tanacsadas";
+---
+
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${canonicalURL}#service`,
+        "name": "Térkövezés Tervezés és Tanácsadás",
+        "description": "Professzionális térkövezés tervezési és tanácsadási szolgáltatások Budapest és környékén. 3D vizualizáció, költségbecslés, anyagválasztás és teljes körű szakértői támogatás.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "@id": "https://minibrand-terkovezes.hu#business",
+          "name": "MiniBrand Térkövezés",
+          "image": "https://minibrand-terkovezes.hu/logo.png",
+          "telephone": "+36-30-123-4567",
+          "email": "info@minibrand-terkovezes.hu",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Példa utca 123",
+            "addressLocality": "Budapest",
+            "postalCode": "1051",
+            "addressCountry": "HU"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.4979,
+            "longitude": 19.0402
+          },
+          "areaServed": [
+            "Budapest",
+            "Pest megye",
+            "Budaörs",
+            "Szentendre",
+            "Gödöllő",
+            "Vác"
+          ],
+          "priceRange": "$$-$$$",
+          "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+          "currenciesAccepted": "HUF",
+          "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-15:00"
+        },
+        "serviceType": "Térkövezés Tervezés",
+        "category": "Construction Planning",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Térkövezés Tervezési Szolgáltatások",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "3D Vizualizáció és Tervezés",
+                "description": "Fotorealisztikus 3D modellek és vizualizációk készítése a tervezett térkövezett felületekről"
+              }
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Költségbecslés és Árajánlat",
+                "description": "Részletes költségkalkuláció anyagokra, munkadíjra és kiegészítő munkálatokra"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service", 
+                "name": "Anyagválasztási Tanácsadás",
+                "description": "Szakértői segítség a megfelelő térkő típus és színkombináció kiválasztásában"
+              }
+            }
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "HUF",
+          "price": "25000",
+          "description": "Ingyenes helyszíni felmérés, tervezési díj 25.000 Ft-tól"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://minibrand-terkovezes.hu"
+          },
+          {
+            "@type": "ListItem", 
+            "position": 2,
+            "name": "Tervezés és Tanácsadás",
+            "item": `${canonicalURL}`
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Mennyibe kerül a térkövezés tervezése?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A tervezési díj 25.000 Ft-tól kezdődik, amely tartalmazza a helyszíni felmérést, alaprajzot és anyagjavaslatot. A 3D vizualizáció további 15.000-30.000 Ft."
+            }
+          },
+          {
+            "@type": "Question", 
+            "name": "Mennyi időt vesz igénybe a tervezés?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Egy átlagos projekt tervezése 5-10 munkanapot vesz igénybe. Összetett projektek esetén ez 2-3 hétre is kinyúlhat."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Milyen engedélyek szükségesek térkövezéshez?",
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "Általában építési engedély nem szükséges, de nagyobb területeknél vagy közterülethez kapcsolódó munkáknál építési hatósági engedély lehet szükséges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hogyan választom ki a megfelelő térkő típust?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A választásnál figyelembe vesszük a terhelést, használatot, környezetet és esztétikai igényeket. Személyes konzultáció során segítünk a legjobb megoldás megtalálásában."
+            }
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <Header />
+  
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Professzionális Térkövezés
+            <span class="text-orange-400">Tervezés és Tanácsadás</span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
+            25 év tapasztalat, 3D vizualizáció és szakértői tanácsadás - a tökéletes térkövezett felület megvalósításához
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/kapcsolat" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+              💰 Árajánlat kérés
+            </a>
+            <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+              Hívj minket azonnal
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Szolgáltatások Áttekintése -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Tervezési és Tanácsadási Szolgáltatásaink
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Teljes körű szakértői támogatás a projekt tervezésétől a megvalósításig
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Helyszíni Felmérés</h3>
+            <ul class="text-gray-600 space-y-2">
+              <li>✓ Pontos területmérés</li>
+              <li>✓ Talajvizsgálat</li>
+              <li>✓ Lejtésviszonyok felmérése</li>
+              <li>✓ Környezeti tényezők</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="text-4xl mb-4">📐</div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">3D Tervezés</h3>
+            <ul class="text-gray-600 space-y-2">
+              <li>✓ Fotorealisztikus vizualizáció</li>
+              <li>✓ Különböző variációk</li>
+              <li>✓ Anyag és szín kombinációk</li>
+              <li>✓ Műszaki rajzok</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="text-4xl mb-4">💡</div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">Szakértői Tanácsadás</h3>
+            <ul class="text-gray-600 space-y-2">
+              <li>✓ Anyagválasztási segítség</li>
+              <li>✓ Költségoptimalizálás</li>
+              <li>✓ Engedélyeztetési információk</li>
+              <li>✓ Kivitelezési ütemezés</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tervezési Folyamat -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          Tervezési Folyamatunk
+        </h2>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="space-y-8">
+            <div class="flex items-start gap-6">
+              <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Első Konzultáció és Igényfelmérés</h3>
+                <p class="text-gray-600">Telefonos vagy személyes egyeztetés során megbeszéljük az elképzeléseket, funkciókat és költségkereteket.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-6">
+              <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Helyszíni Felmérés</h3>
+                <p class="text-gray-600">Szakembereink felmérik a területet, dokumentálják a jelenlegi állapotot és rögzítik a műszaki adatokat.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-6">
+              <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Koncepció és Vázlatterv</h3>
+                <p class="text-gray-600">Elkészítjük az első tervvázlatokat és anyagjavaslatokat az egyeztetett igények alapján.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-6">
+              <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">3D Vizualizáció</h3>
+                <p class="text-gray-600">Fotorealisztikus 3D modell készítése, amely bemutatja a végleges eredményt különböző nézőpontokból.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-6">
+              <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Végleges Terv és Árajánlat</h3>
+                <p class="text-gray-600">A jóváhagyott 3D terv alapján elkészítjük a részletes műszaki dokumentációt és pontos költségkalkulációt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anyagválasztási Tanácsadás -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          Anyagválasztási Tanácsadás
+        </h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900">Szakértői Segítség a Választásban</h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-orange-500 font-bold">✓</span>
+                <p class="text-gray-600"><strong>Térkő típusok:</strong> Beton, természetes kő, antik térkő jellemzői és alkalmazási területei</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-500 font-bold">✓</span>
+                <p class="text-gray-600"><strong>Színkombinációk:</strong> Harmonikus színösszeállítások és design trendek</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-500 font-bold">✓</span>
+                <p class="text-gray-600"><strong>Terhelhetőség:</strong> Megfelelő teherbírás kiválasztása a használat alapján</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-500 font-bold">✓</span>
+                <p class="text-gray-600"><strong>Költségoptimalizálás:</strong> Ár-érték arány szerinti ajánlások</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-500 font-bold">✓</span>
+                <p class="text-gray-600"><strong>Karbantartás:</strong> Hosszú távú fenntarthatóság és ápolási igények</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h4 class="text-xl font-bold mb-4 text-gray-900">Ingyenes Anyagminta Service</h4>
+            <p class="text-gray-600 mb-6">
+              Kérjen ingyenes anyagmintákat otthonába, hogy a természetes fényben is láthassa a kiválasztott térköveket!
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li>• 5 különböző térkő minta</li>
+              <li>• Színkombinációs javaslatok</li>
+              <li>• Személyes konzultáció</li>
+              <li>• 14 napos próbaidő</li>
+            </ul>
+            <a href="tel:+36301234567" class="block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors">
+              Mintarendelés: +36-30-123-4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engedélyeztetési Információk -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          Engedélyeztetési Információk
+        </h2>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+              <h3 class="text-xl font-bold mb-4 text-green-800">Engedély NINCS szükséges:</h3>
+              <ul class="space-y-2 text-green-700">
+                <li>✓ Saját telken belüli kocsibeálló</li>
+                <li>✓ Kerti utak és teraszok</li>
+                <li>✓ Udvari térkövezés</li>
+                <li>✓ Kisebb felületek (50 m² alatt)</li>
+              </ul>
+            </div>
+            
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h3 class="text-xl font-bold mb-4 text-yellow-800">Engedély SZÜKSÉGES lehet:</h3>
+              <ul class="space-y-2 text-yellow-700">
+                <li>⚠️ Közterülethez kapcsolódó munkák</li>
+                <li>⚠️ Járda csatlakozások</li>
+                <li>⚠️ Nagyobb felületek (200 m² felett)</li>
+                <li>⚠️ Vízelvezetés módosítása</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+            <h4 class="text-lg font-bold mb-2 text-blue-800">Engedélyeztetési Segítség</h4>
+            <p class="text-blue-700">
+              Segítünk az engedélyek beszerzésében és a hatósági ügyintézésben. 
+              Kapcsolataink révén gyors és hatékony ügyintézést biztosítunk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Költségbecslés -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Tervezési Díjaink
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+            <h3 class="text-xl font-bold mb-4 text-orange-400">Alapcsomag</h3>
+            <div class="text-3xl font-bold mb-4">25.000 Ft</div>
+            <ul class="space-y-2 mb-6">
+              <li>✓ Helyszíni felmérés</li>
+              <li>✓ Alaprajzi terv</li>
+              <li>✓ Anyagjavaslat</li>
+              <li>✓ Alapvető költségbecslés</li>
+            </ul>
+            <p class="text-sm text-gray-400">Egyszerű projektekhez</p>
+          </div>
+          
+          <div class="bg-orange-500 rounded-lg p-8 transform scale-105">
+            <div class="bg-orange-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold mb-4 inline-block">LEGNÉPSZERŰBB</div>
+            <h3 class="text-xl font-bold mb-4">Prémium csomag</h3>
+            <div class="text-3xl font-bold mb-4">45.000 Ft</div>
+            <ul class="space-y-2 mb-6">
+              <li>✓ Minden az alapcsomagból</li>
+              <li>✓ 3D vizualizáció</li>
+              <li>✓ 3 különböző variáció</li>
+              <li>✓ Részletes költségkalkuláció</li>
+              <li>✓ Anyagminták biztosítása</li>
+            </ul>
+            <p class="text-sm">Átlagos projektekhez</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+            <h3 class="text-xl font-bold mb-4 text-orange-400">Teljes csomag</h3>
+            <div class="text-3xl font-bold mb-4">75.000 Ft</div>
+            <ul class="space-y-2 mb-6">
+              <li>✓ Minden a prémium csomagból</li>
+              <li>✓ Műszaki dokumentáció</li>
+              <li>✓ Engedélyeztetési segítség</li>
+              <li>✓ Kivitelezés koordináció</li>
+              <li>✓ 1 év garancia a tervre</li>
+            </ul>
+            <p class="text-sm text-gray-400">Komplex projektekhez</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <p class="text-lg mb-6">
+            A tervezési díj <strong>beszámításra kerül</strong> a kivitelezési költségbe!
+          </p>
+          <a href="#ajanlat" class="bg-white text-gray-900 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg text-lg transition-colors">
+            Ingyenes Konzultáció Kérése
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gyakori Kérdések -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          Gyakori Kérdések
+        </h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          <details class="bg-white rounded-lg shadow-md p-6">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer">
+              Mennyibe kerül a térkövezés tervezése?
+            </summary>
+            <p class="mt-4 text-gray-600">
+              A tervezési díj 25.000 Ft-tól kezdődik, amely tartalmazza a helyszíni felmérést, alaprajzot és anyagjavaslatot. 
+              A 3D vizualizáció további 15.000-30.000 Ft. A tervezési díj beszámításra kerül a kivitelezés költségébe.
+            </p>
+          </details>
+          
+          <details class="bg-white rounded-lg shadow-md p-6">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer">
+              Mennyi időt vesz igénybe a tervezés?
+            </summary>
+            <p class="mt-4 text-gray-600">
+              Egy átlagos projekt (50-200 m²) tervezése 5-10 munkanapot vesz igénybe a helyszíni felméréstől a végleges tervekig. 
+              Összetett vagy nagyobb projektek esetén ez 2-3 hétre is kinyúlhat.
+            </p>
+          </details>
+          
+          <details class="bg-white rounded-lg shadow-md p-6">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer">
+              Milyen engedélyek szükségesek térkövezéshez?
+            </summary>
+            <p class="mt-4 text-gray-600">
+              Saját telken belüli térkövezéshez általában nincs szükség engedélyre. Közterülethez kapcsolódó munkáknál, 
+              járda csatlakozásoknál vagy nagyobb felületeknél (200 m² felett) építési hatósági engedély lehet szükséges.
+            </p>
+          </details>
+          
+          <details class="bg-white rounded-lg shadow-md p-6">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer">
+              Hogyan választom ki a megfelelő térkő típust?
+            </summary>
+            <p class="mt-4 text-gray-600">
+              A választásnál figyelembe vesszük a terhelést, használati módot, környezetet és esztétikai igényeket. 
+              Személyes konzultáció során segítünk megtalálni a legmegfelelőbb megoldást, figyelembe véve a költségkeretet is.
+            </p>
+          </details>
+          
+          <details class="bg-white rounded-lg shadow-md p-6">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer">
+              Mit tartalmaz a 3D vizualizáció?
+            </summary>
+            <p class="mt-4 text-gray-600">
+              A 3D vizualizáció fotorealisztikus képeket tartalmaz különböző nézőpontokból, napszakokból és időjárási körülmények között. 
+              Bemutatjuk a különböző anyag- és színkombinációkat is, hogy könnyebben dönthessen.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="ajanlat" class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+                Kérjen Ingyenes Konzultációt még ma!
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Tapasztalt szakembereink segítenek megtervezni álmai térkövezett felületét. 
+                Helyszíni felmérés és részletes árajánlat 48 órán belül.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Ajánlatkérés
+                </a>
+                <a href="tel:+36301234567" class="bg-red-600 border border-red-600 text-white hover:bg-red-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+                    Kérj árajánlatot telefonon
+          </a>
+        </div>
+        <div class="mt-8 text-lg">
+          <p class="mb-2">🚀 <strong>Gyors reakció:</strong> 2 órán belül visszahívjuk</p>
+          <p class="mb-2">📍 <strong>Helyszíni felmérés:</strong> Budapest és 30 km-es körzetben</p>
+          <p>✅ <strong>Garancia:</strong> 2 év minden munkánkra</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  details summary {
+    outline: none;
+  }
+  details[open] summary ~ * {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
