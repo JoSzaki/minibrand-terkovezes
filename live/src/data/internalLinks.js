@@ -4,12 +4,12 @@
 export const contentRelationships = {
   // Kocsibeálló térkövezés kapcsolatok
   "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": {
-    mainTopics: ["hogyan-valasszunk-terkovet-kocsibeallohol", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
+    mainTopics: ["hogyan-valasszunk-terkovet", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
     related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkovezes-tervezes-alapjai"],
     supporting: ["beton-vs-termeszetes-ko-terkovek", "terkovezes-koltsegkalkulator-2025"]
   },
   
-  "hogyan-valasszunk-terkovet-kocsibeallohol": {
+  "hogyan-valasszunk-terkovet": {
     mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "beton-vs-termeszetes-ko-terkovek"],
     related: ["antik-terko-jellemzoi-felhasznalasa", "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas"],
     supporting: ["terkovezes-tervezes-alapjai", "terkovezes-koltsegkalkulator-2025"]
@@ -23,7 +23,7 @@ export const contentRelationships = {
 
   "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": {
     mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "beton-vs-termeszetes-ko-terkovek"],
-    related: ["hogyan-valasszunk-terkovet-kocsibeallohol", "terkovezes-koltsegkalkulator-2025"],
+    related: ["hogyan-valasszunk-terkovet", "terkovezes-koltsegkalkulator-2025"],
     supporting: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"]
   },
 
@@ -56,14 +56,14 @@ export const contentRelationships = {
   // Térkő típusok kapcsolatok
   "beton-vs-termeszetes-ko-terkovek": {
     mainTopics: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"],
-    related: ["hogyan-valasszunk-terkovet-kocsibeallohol", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
+    related: ["hogyan-valasszunk-terkovet", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
     supporting: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkovezes-koltsegkalkulator-2025"]
   },
   
   "antik-terko-jellemzoi-felhasznalasa": {
     mainTopics: ["beton-vs-termeszetes-ko-terkovek", "szines-terkovek-kreativ-mintak-kombinaciok"],
     related: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
-    supporting: ["hogyan-valasszunk-terkovet-kocsibeallohol", "terkovezes-tervezes-alapjai"]
+    supporting: ["hogyan-valasszunk-terkovet", "terkovezes-tervezes-alapjai"]
   },
   
   "szines-terkovek-kreativ-mintak-kombinaciok": {
@@ -76,13 +76,26 @@ export const contentRelationships = {
   "terkovezes-tervezes-alapjai": {
     mainTopics: ["terkovezes-koltsegkalkulator-2025", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
     related: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "diy-terasz-terkovezes-lepesrol-lepesre"],
-    supporting: ["hogyan-valasszunk-terkovet-kocsibeallohol", "beton-vs-termeszetes-ko-terkovek"]
+    supporting: ["hogyan-valasszunk-terkovet", "beton-vs-termeszetes-ko-terkovek"]
   },
   
   "terkovezes-koltsegkalkulator-2025": {
     mainTopics: ["terkovezes-tervezes-alapjai", "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"],
-    related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "hogyan-valasszunk-terkovet-kocsibeallohol"],
+    related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "hogyan-valasszunk-terkovet"],
     supporting: ["beton-vs-termeszetes-ko-terkovek", "diy-terasz-terkovezes-lepesrol-lepesre"]
+  },
+
+  // Új blog bejegyzések kapcsolatok
+  "terkovezes-karbantartas-javitas-szakertoi-tippek": {
+    mainTopics: ["terkozott-jardak-karbantartasa-evszakonkent", "beton-vs-termeszetes-ko-terkovek"],
+    related: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "hogyan-valasszunk-terkovet"],
+    supporting: ["antik-terko-jellemzoi-felhasznalasa", "terkovezes-tervezes-alapjai"]
+  },
+
+  "modern-terkovezes-trendek-design-otletek-2025": {
+    mainTopics: ["szines-terkovek-kreativ-mintak-kombinaciok", "terasz-terkovezes-trendek-2025"],
+    related: ["antik-terko-jellemzoi-felhasznalasa", "beton-vs-termeszetes-ko-terkovek"],
+    supporting: ["diy-terasz-terkovezes-lepesrol-lepesre", "terkovezes-tervezes-alapjai"]
   }
 };
 
@@ -109,7 +122,7 @@ export function getContextualLinks(slug) {
 // SEO-friendly anchor text suggestions for internal links
 export const anchorTexts = {
   "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": ["kocsibeálló térkövezés árak", "térkövezés kivitelezés", "kocsibeálló térkő árak"],
-  "hogyan-valasszunk-terkovet-kocsibeallohol": ["térkő választás", "kocsibeálló térkő típusok", "térkő kiválasztás"],
+  "hogyan-valasszunk-terkovet": ["térkő választás", "kocsibeálló térkő típusok", "térkő kiválasztás"],
   "kocsibeallo-vizellevezetes-terkovezes-rendszerek": ["vízelvezetés térkövezéssel", "térkövezés vízelvezetés", "vízelvezetési rendszerek"],
   "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": ["térkő vs aszfalt", "burkolat összehasonlítás", "kocsibeálló burkolatok"],
   "terasz-terkovezes-trendek-2025": ["terasz térkövezés trendek", "modern térkövezés", "térkő trendek 2025"],
@@ -120,7 +133,9 @@ export const anchorTexts = {
   "antik-terko-jellemzoi-felhasznalasa": ["antik térkő", "klasszikus térkő", "antik térkő tulajdonságai"],
   "szines-terkovek-kreativ-mintak-kombinaciok": ["színes térkövek", "térkő minták", "kreatív térkövezés"],
   "terkovezes-tervezes-alapjai": ["térkövezés tervezés", "térkövezési alapelvek", "térkövezés megtervezése"],
-  "terkovezes-koltsegkalkulator-2025": ["térkövezés költségek", "térkő árak 2025", "térkövezés kalkulátor"]
+  "terkovezes-koltsegkalkulator-2025": ["térkövezés költségek", "térkő árak 2025", "térkövezés kalkulátor"],
+  "terkovezes-karbantartas-javitas-szakertoi-tippek": ["térkövezés karbantartás", "térkő javítás", "térkő ápolás szakértői tippek"],
+  "modern-terkovezes-trendek-design-otletek-2025": ["modern térkövezés trendek", "térkő design ötletek", "2025 térkövezési trendek"]
 };
 
 // Function to get anchor text for a link

@@ -211,7 +211,7 @@ export const blogPosts = [
     }
   },
   {
-    slug: "hogyan-valasszunk-terkovet-kocsibeallohol",
+    slug: "hogyan-valasszunk-terkovet",
     title: "Hogyan válasszunk térkövet kocsibeállóhoz? Praktikus útmutató",
     description: "Térkő választás kocsibeállóhoz ✓ Teherbírás ✓ Csúszásmentesség ✓ Fagyállóság ✓ Karbantartás ✓ Költségek ✓ Szakértői tippek autósoknak.",
     excerpt: "Praktikus útmutató térkő választáshoz kocsibeállókhoz. Teherbírás, csúszásmentesség, karbantartás - minden, amit tudni kell a megfelelő döntéshez.",
@@ -944,6 +944,479 @@ export const blogPosts = [
             { value: "normal", label: "Normál (tavaszi nagytakarítás)" },
             { value: "active", label: "Aktív (rendszeres ápolás)" }
           ]
+        }
+      ]
+    }
+  },
+
+  // Térkő karbantartás és javítás témák
+  {
+    slug: "terkovezes-karbantartas-javitas-szakertoi-tippek",
+    title: "Térkövezés karbantartás és javítás: Szakértői tippek 2025-ben",
+    description: "Térkövezés karbantartás ✓ Javítás ✓ Tisztítás ✓ Mohásodás ✓ Repedt térköök cseréje ✓ Fugák felújítása ✓ Évszakos ápolás ✓ DIY tippek ✓ Költségek",
+    excerpt: "Komplett útmutató térkövezés karbantartásához és javításához. Tisztítás, mohásodás megelőzése, repedt kövek cseréje és fugák felújítása szakértői tippekkel.",
+    date: "2025-03-18",
+    category: "Kocsibeálló térkövezés",
+    readTime: "16 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/terkovezes-karbantartas.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        alt: "Térkövezés karbantartás és javítás",
+        caption: "Professzionális térkövezés karbantartás - hosszú élettartam biztosítása"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "Térkövezés Karbantartásának Alapjai",
+          content: `<p>A <strong>térkövezés rendszeres karbantartása</strong> kulcsfontosságú a hosszú élettartam biztosítására. A helyes ápolással 20-30 évig is szolgálhat problémamentesen a térköves felület.</p>
+          
+          <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
+            <h4 class="font-semibold text-blue-800 mb-3">🔧 Karbantartási gyakoriság ajánlások:</h4>
+            <ul class="text-blue-700 space-y-1">
+              <li><strong>Alapos tisztítás:</strong> évente 2x (tavasz, ősz)</li>
+              <li><strong>Fugák ellenőrzése:</strong> félévente</li>
+              <li><strong>Mohásodás eltávolítás:</strong> szükség szerint</li>
+              <li><strong>Impregnálás:</strong> 3-5 évente</li>
+              <li><strong>Sérülések javítása:</strong> azonnal</li>
+            </ul>
+          </div>
+          
+          <p>A <em>megelőzés mindig olcsóbb</em> mint a teljes felújítás - egy jól karbantartott térkövezés akár 50%-kal hosszabb élettartamú lehet!</p>`,
+          infographic: {
+            title: "Karbantartás vs Felújítás Költségei",
+            items: [
+              {
+                icon: "🧽",
+                title: "Rendszeres tisztítás",
+                description: "Évente 2x alapos tisztítás",
+                value: "5.000-10.000 Ft/év"
+              },
+              {
+                icon: "🔧",
+                title: "Kisebb javítások",
+                description: "Fugák, egyesek cseréje",
+                value: "15.000-30.000 Ft/5 év"
+              },
+              {
+                icon: "💧",
+                title: "Impregnálás",
+                description: "Védőréteg felvitel",
+                value: "1.500-3.000 Ft/m²/5 év"
+              },
+              {
+                icon: "🚨",
+                title: "Teljes felújítás",
+                description: "Elhanyagolt térkövezés",
+                value: "8.000-15.000 Ft/m²"
+              }
+            ]
+          }
+        },
+        {
+          title: "Különböző Térkő Típusok Karbantartása",
+          content: `<p>Minden <strong>térkő típus más-más karbantartási igényű</strong>:</p>`,
+          table: {
+            title: "Térkő Típusok Karbantartási Útmutatója",
+            headers: ["Térkő típus", "Tisztítás gyakorisága", "Speciális kezelés", "Impregnálás szüksége", "Nehézségi fok"],
+            rows: [
+              ["Beton térkő", "6 havonta", "Nyomás alatti mosás", "Ajánlott", "Könnyű"],
+              ["Természetes kő", "3 havonta", "pH-semleges szer", "Kötelező", "Közepes"],
+              ["Antik térkő", "4 havonta", "Kíméletes tisztítás", "Ajánlott", "Közepes"],
+              ["Színes térkő", "4 havonta", "Színvédő impregnálás", "Fontos", "Könnyű"],
+              ["Porózus térkő", "3 havonta", "Mélytisztítás", "Kötelező", "Nehéz"]
+            ]
+          },
+          infographic: {
+            title: "Évszakos Karbantartási Naptár",
+            items: [
+              {
+                icon: "🌸",
+                title: "Tavasz",
+                description: "Téli károk felmérése, alapos tisztítás",
+                value: "Március-április"
+              },
+              {
+                icon: "☀️",
+                title: "Nyár", 
+                description: "Gyomirtás, impregnálás",
+                value: "Június-július"
+              },
+              {
+                icon: "🍂",
+                title: "Ősz",
+                description: "Levelek eltávolítása, felkészülés",
+                value: "Október-november"
+              },
+              {
+                icon: "❄️",
+                title: "Tél",
+                description: "Síkosságmentesítés, hóeltakarítás",
+                value: "December-február"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    howTo: {
+      title: "DIY Térkövezés Karbantartás Lépésről Lépésre",
+      steps: [
+        {
+          title: "Felkészülés és eszközök összegyűjtése",
+          description: "Gyűjtsük össze a szükséges eszközöket: magasnyomású mosó, kemény kefe, semleges pH-jú tisztítószer, fugakapa.",
+          tips: "Ne használjunk agresszív vegyszereket, mert károsíthatják a térköveket!"
+        },
+        {
+          title: "Durva szennyeződések eltávolítása",
+          description: "Távolítsuk el a leveleket, ágakat és egyéb durva szennyeződéseket. Kapáljuk ki a gyomokat a fugákból.",
+          tips: "A gyomirtást legjobb nedves időben végezni, amikor könnyebben kijönnek a gyökerek."
+        },
+        {
+          title: "Alapos vizes mosás",
+          description: "Mossuk le a térköveket magasnyomású mosóval vagy kerti csappal. Kezdjük felülről lefelé.",
+          tips: "A magasnyomású mosónál ügyeljünk arra, hogy ne legyen túl közel, mert megsértheti a fugákat!"
+        },
+        {
+          title: "Makacs foltok kezelése",
+          description: "A makacs foltokat (olaj, rozsda) kezeljük speciális tisztítószerekkel és kemény kefével.",
+          tips: "Mindig próbáljuk ki a tisztítószert egy láthatatlan részen először!"
+        },
+        {
+          title: "Fugák karbantartása",
+          description: "Ellenőrizzük a fugákat, szükség esetén pótoljuk a hiányzó fugahomokot vagy fugázóanyagot.",
+          tips: "A fugázás után ne használjuk a felületet 24 óráig, amíg nem szilárdul meg!"
+        },
+        {
+          title: "Befejező lépések és védelem",
+          description: "Szükség esetén vigyük fel az impregnáló szert a tiszta, száraz felületre egyenletes rétegben.",
+          tips: "Az impregnálást csak napos, száraz időben végezzük, amikor 24 órán át nem várható eső!"
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Milyen gyakran kell tisztítani a térkövezést?",
+        answer: "Alapos tisztításra évente 2x van szükség (tavasz és ősz), de kisebb tisztítást (söprés, levéleltávolítás) heti rendszerességgel érdemes végezni."
+      },
+      {
+        question: "Milyen tisztítószert használjak?",
+        answer: "Semleges pH-jú (6-8) tisztítószereket használjon. Kerülje a savas (sósav) és lúgos tisztítószereket, mert károsíthatják a térköveket és fugákat."
+      },
+      {
+        question: "Hogyan távolítsam el a mohát a térkövekről?",
+        answer: "Mohásodás ellen használjon speciális mohamentesítő szert vagy 10%-os háztartási ecetet. Nagyobb felületeknél érdemes szakemberre bízni."
+      },
+      {
+        question: "Mikor kell cserélni a repedt térkövet?",
+        answer: "A kisebb repedéseket javítani lehet, de ha a térkő több darabra tört vagy instabil, akkor cserélni kell a biztonság és esztétika miatt."
+      },
+      {
+        question: "Mennyibe kerül a térkövezés karbantartása?",
+        answer: "Saját munka esetén 1.000-3.000 Ft/m²/év, szakember bevonásával 3.000-8.000 Ft/m²/év a rendszeres karbantartás költsége."
+      },
+      {
+        question: "Lehet télen is karbantartani a térkövezést?",
+        answer: "Télen csak a hóeltakarítás és jégmentesítés ajánlott. Az alapos tisztítást és javításokat tavasszal végezzük, amikor nincs fagy."
+      }
+    ],
+    calculator: {
+      title: "Térkövezés Karbantartás Költségkalkulátor",
+      description: "Számítsa ki térkövezése éves karbantartási költségeit!",
+      inputs: [
+        {
+          name: "area",
+          label: "Térkövezett terület (m²)",
+          type: "number",
+          placeholder: "pl. 50",
+          min: 5,
+          max: 1000
+        },
+        {
+          name: "stoneType",
+          label: "Térkő típusa",
+          type: "select",
+          options: [
+            { value: "concrete", label: "Beton térkő (könnyű karbantartás)" },
+            { value: "natural", label: "Természetes kő (intenzív karbantartás)" },
+            { value: "antique", label: "Antik térkő (közepes karbantartás)" },
+            { value: "colored", label: "Színes térkő (speciális kezelés)" }
+          ]
+        },
+        {
+          name: "condition",
+          label: "Jelenlegi állapot",
+          type: "select",
+          options: [
+            { value: "excellent", label: "Kiváló (új, jól karbantartott)" },
+            { value: "good", label: "Jó (kisebb karbantartási igény)" },
+            { value: "fair", label: "Közepes (rendszeres karbantartás kell)" },
+            { value: "poor", label: "Rossz (javításra szorul)" }
+          ]
+        },
+        {
+          name: "diyLevel",
+          label: "Saját munka mértéke",
+          type: "select",
+          options: [
+            { value: "full", label: "Teljes saját munka" },
+            { value: "partial", label: "Részben saját, részben szakember" },
+            { value: "none", label: "Teljes szakemberre bízás" }
+          ]
+        },
+        {
+          name: "hasProblems",
+          label: "Speciális problémák",
+          type: "checkbox",
+          description: "Mohásodás, olajfoltok, sérülések"
+        }
+      ]
+    }
+  },
+
+  // Térkő trendek és design témák
+  {
+    slug: "modern-terkovezes-trendek-design-otletek-2025",
+    title: "Modern térkövezés trendek és design ötletek 2025-ben",
+    description: "Modern térkövezés trendek 2025 ✓ Design ötletek ✓ Színkombinációk ✓ Mintázatok ✓ Stílusirányzatok ✓ Fenntarthatóság ✓ Smart megoldások ✓ Inspirációk",
+    excerpt: "2025 legújabb térkövezési trendjei: modern design ötletek, színkombinációk, mintázatok és fenntartható megoldások. Inspirációk minden stílushoz.",
+    date: "2025-03-16",
+    category: "Terasz térkövezés",
+    readTime: "14 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/modern-terkovezes-trendek.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        alt: "Modern térkövezés trendek 2025",
+        caption: "A legújabb térkövezési trendek és design ötletek 2025-ben"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "2025 Top Térkövezési Trendjei",
+          content: `<p>A <strong>2025-ös év legmeghatározóbb trendjei</strong> a fenntarthatóság, a természetesség és a technológiai fejlődés találkozásáról szólnak. Íme a legfontosabb irányzatok:</p>
+          
+          <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 my-6">
+            <h4 class="font-semibold text-green-800 mb-3">🌟 2025 Kiemelt Trendek:</h4>
+            <ul class="text-green-700 space-y-2">
+              <li><strong>🌱 Biophilic Design</strong> - Természetközeli színek és formák</li>
+              <li><strong>♻️ Újrahasznosított anyagok</strong> - Környezettudatos megoldások</li>
+              <li><strong>📱 Smart térkövezés</strong> - LED beépítés, fűtött felületek</li>
+              <li><strong>🎨 Nagyméretű térkövek</strong> - Minimális fugaképpel</li>
+              <li><strong>🌈 Természetes árnyalatok</strong> - Föld színek dominanciája</li>
+            </ul>
+          </div>
+          
+          <p>Ezek a trendek nem csak esztétikai szempontból fontosak, hanem <em>gyakorlati előnyöket</em> is jelentenek: könnyebb karbantartás, jobb tartósság és alacsonyabb környezeti terhelés.</p>`,
+          infographic: {
+            title: "Legnépszerűbb Térkő Stílusok 2025-ben",
+            items: [
+              {
+                icon: "🌿",
+                title: "Természetes",
+                description: "Kő textúra, natúr színek",
+                value: "35% népszerűség"
+              },
+              {
+                icon: "⬛",
+                title: "Minimalista",
+                description: "Egyszínű, nagy méretű elemek",
+                value: "28% népszerűség"
+              },
+              {
+                icon: "🎨",
+                title: "Mintázatos",
+                description: "Geometriai formák, színjáték",
+                value: "22% népszerűség"
+              },
+              {
+                icon: "🏛️",
+                title: "Klasszikus",
+                description: "Antik hatás, időtálló elegancia",
+                value: "15% népszerűség"
+              }
+            ]
+          }
+        },
+        {
+          title: "Színkombinációk és Mintázatok",
+          content: `<p>A <strong>színválasztás</strong> döntő szerepet játszik a térkövezés sikerében. 2025-ben a természetes harmónia és a merész kontrasztok egyaránt népszerűek:</p>`,
+          table: {
+            title: "2025 Legnépszerűbb Színkombinációk",
+            headers: ["Stílus", "Fő szín", "Kiegészítő szín", "Alkalmazási terület", "Hangulat"],
+            rows: [
+              ["Skandináv", "Világosszürke", "Fehér", "Teraszok, járdák", "Tiszta, modern"],
+              ["Mediterranean", "Meleg bézs", "Terrakotta", "Udvarok, kertek", "Barátságos, otthonos"],
+              ["Urban Industrial", "Sötétszürke", "Antracit", "Kocsibeállók, bejáratok", "Elegáns, maskulin"],
+              ["Garden Natural", "Homokszín", "Zöld árnyalat", "Kerti utak, pihenők", "Természetes, harmonikus"],
+              ["Contemporary Bold", "Fekete", "Fehér kontraszt", "Modern építészet", "Drámai, letisztult"]
+            ]
+          },
+          infographic: {
+            title: "Mintázatok Népszerűsége 2025-ben",
+            items: [
+              {
+                icon: "⬜",
+                title: "Futókötés",
+                description: "Klasszikus, sokoldalú mintázat",
+                value: "40% választás"
+              },
+              {
+                icon: "🔷",
+                title: "Halszálka",
+                description: "Elegáns, dinamikus hatás",
+                value: "25% választás"
+              },
+              {
+                icon: "🔲",
+                title: "Római kötés",
+                description: "Hagyományos, időtálló",
+                value: "20% választás"
+              },
+              {
+                icon: "◆",
+                title: "Szabálytalan",
+                description: "Modern, egyedi megjelenés",
+                value: "15% választás"
+              }
+            ]
+          }
+        },
+        {
+          title: "Fenntartható és Smart Megoldások",
+          content: `<p>A <strong>fenntarthatóság és technológia</strong> egyre nagyobb szerepet játszik a térkövezésben:</p>
+          
+          <div class="grid md:grid-cols-2 gap-6 my-6">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-3">🌱 Eco-friendly megoldások:</h4>
+              <ul class="text-green-700 text-sm space-y-1">
+                <li>Újrahasznosított anyagokból készült térkövek</li>
+                <li>Permeable (vízáteresztő) térkövezés</li>
+                <li>Helyi kőbányákból származó anyagok</li>
+                <li>Alacsony CO₂ kibocsátású gyártás</li>
+                <li>Hosszú élettartamú, újrahasznosítható termékek</li>
+              </ul>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4 class="font-semibold text-blue-800 mb-3">📱 Smart technológiák:</h4>
+              <ul class="text-blue-700 text-sm space-y-1">
+                <li>LED világítás beépítése</li>
+                <li>Fűtött térkövezés téli használatra</li>
+                <li>Intelligens öntözőrendszer integráció</li>
+                <li>Napelemes világítási megoldások</li>
+                <li>Vezeték nélküli töltési pontok</li>
+              </ul>
+            </div>
+          </div>`
+        }
+      ]
+    },
+    howTo: {
+      title: "Modern Térkövezés Tervezése Lépésről Lépésre",
+      steps: [
+        {
+          title: "Stílus és inspiráció meghatározása",
+          description: "Gyűjtsünk inspirációkat a 2025-ös trendekből és határozzuk meg a kívánt stílust az épület és környezet figyelembevételével.",
+          tips: "Pinterest és Instagram kiváló források inspirációkért - készítsünk mood board-ot!"
+        },
+        {
+          title: "Színpaletta kiválasztása",
+          description: "Válasszunk 2-3 harmonizáló színt, figyelembe véve az épület homlokzatát, a környező növényzetet és a meglévő elemeket.",
+          tips: "Vegyünk mintákat és teszteljük őket természetes fényben különböző napszakokban!"
+        },
+        {
+          title: "Mintázat és térkő méret meghatározása",
+          description: "A terület mérete és funkciója alapján válasszuk ki a megfelelő térkő méretet és lerakási mintázatot.",
+          tips: "Kis terülten kerüljük a túl sok különböző méretet - ez nyugtalanná teheti a felületet!"
+        },
+        {
+          title: "Funkcionális elemek tervezése",
+          description: "Tervezzük be a vízelvezetést, világítást, növényzeti elemeket és egyéb funkcionális megoldásokat.",
+          tips: "A vízelvezetés tervezését bízzuk szakemberre - ez a legfontosabb műszaki elem!"
+        },
+        {
+          title: "Költségvetés és anyagszükséglet kalkulálása",
+          description: "Számítsuk ki a szükséges anyagmennyiséget 10% tartalékkal és kérjünk árajánlatokat több forrásból.",
+          tips: "Vegyük figyelembe a kiegészítő anyagokat is: kavics, homok, szegélykövek, fugaanyag!"
+        },
+        {
+          title: "Kivitelezés tervezése és koordinálása",
+          description: "Ütemezzük a munkálatokat az időjárás és egyéb építési munkák figyelembevételével.",
+          tips: "Tavaszi-nyári időszakban tervezzük a kivitelezést, amikor nincs fagy veszélye!"
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Melyek a 2025-ös év legnépszerűbb térkő színei?",
+        answer: "A természetes árnyalatok dominálnak: meleg szürkék, bézs tónusok, homok színek. Népszerűek még a sötét antracit és a klasszikus fekete-fehér kombinációk."
+      },
+      {
+        question: "Érdemes-e nagyméretű térköveket választani?",
+        answer: "Igen, a nagyméretű térkövek modern megjelenést biztosítanak, kevesebb fugával könnyebb a karbantartás, és vizuálisan nagyobbnak tűnik a terület."
+      },
+      {
+        question: "Mik a smart térkövezés előnyei?",
+        answer: "LED világítás biztonsági és esztétikai előnyöket nyújt, a fűtött térkövezés télen használhatóvá teszi a területet, a napelemes megoldások pedig energiatakarékosak."
+      },
+      {
+        question: "Mennyivel drágábbak a fenntartható megoldások?",
+        answer: "10-30%-kal magasabb lehet a kezdeti beruházás, de hosszú távon megtérül a jobb tartósság, alacsonyabb karbantartási költség és környezeti előnyök miatt."
+      },
+      {
+        question: "Hogyan kombinálhatók a modern trendek a klasszikus épületekkel?",
+        answer: "Válasszunk időtálló színeket és mintázatokat, kerüljük a túl merész kontrasztokat. A természetes anyagok és földszínek mindig harmonizálnak a klasszikus stílussal."
+      }
+    ],
+    calculator: {
+      title: "Design Költség Kalkulátor",
+      description: "Számítsa ki modern térkövezési projektje költségeit a választott stílus alapján!",
+      inputs: [
+        {
+          name: "area",
+          label: "Térkövezendő terület (m²)",
+          type: "number",
+          placeholder: "pl. 40",
+          min: 5,
+          max: 500
+        },
+        {
+          name: "style",
+          label: "Választott stílus",
+          type: "select",
+          options: [
+            { value: "natural", label: "Természetes (közepes ár)" },
+            { value: "minimalist", label: "Minimalista (magasabb ár)" },
+            { value: "patterned", label: "Mintázatos (közepes ár)" },
+            { value: "classic", label: "Klasszikus (alacsonyabb ár)" }
+          ]
+        },
+        {
+          name: "stoneSize",
+          label: "Térkő mérete",
+          type: "select",
+          options: [
+            { value: "small", label: "Kis méretű (10-20 cm)" },
+            { value: "medium", label: "Közepes méretű (20-40 cm)" },
+            { value: "large", label: "Nagy méretű (40+ cm)" },
+            { value: "mixed", label: "Vegyes méretű" }
+          ]
+        },
+        {
+          name: "smartFeatures",
+          label: "Smart funkciók",
+          type: "checkbox", 
+          description: "LED világítás, fűtés, stb."
+        },
+        {
+          name: "sustainability",
+          label: "Fenntartható megoldások",
+          type: "checkbox",
+          description: "Újrahasznosított anyagok, permeable térkövek"
         }
       ]
     }

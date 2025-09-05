@@ -17,14 +17,61 @@ export async function getStaticPaths() {
 const { title, description, date, category, author, readTime, excerpt, slug, content, images, faq, tables, howTo, infographics, calculator } = Astro.props;
 const metaDescription = description;
 
-// Generate schemas for blog post
-const blogSchemas = generateSchemasForPage('blog', {
+// Generate schemas for blog post with FAQ and HowTo data
+const schemaData = {
     headline: title,
     description: excerpt,
     datePublished: date,
+    dateModified: date,
     author: { name: author },
-    publisher: { name: "Betonozás Budapest" }
-});
+    publisher: { 
+        name: "Térkövezés Budapest",
+        logo: {
+            url: "https://joszaki.github.io/minibrand-terkovezes/favicon.svg"
+        }
+    },
+    mainEntityOfPage: {
+        "@id": `https://joszaki.github.io/minibrand-terkovezes/blog/${slug}/`
+    },
+    image: {
+        url: images?.hero?.src || "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        width: 1200,
+        height: 630
+    }
+};
+
+// Add FAQ data if available
+if (faq && faq.length > 0) {
+    schemaData.faq = {
+        mainEntity: faq.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+}
+
+// Add HowTo data if available
+if (howTo && howTo.steps && howTo.steps.length > 0) {
+    schemaData.howto = {
+        name: howTo.title || title,
+        description: howTo.description || excerpt,
+        image: images?.hero?.src || "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        totalTime: "PT" + (readTime || "15") + "M",
+        step: howTo.steps.map((step, index) => ({
+            "@type": "HowToStep",
+            "position": index + 1,
+            "name": step.title,
+            "text": step.description,
+            "tip": step.tips || ""
+        }))
+    };
+}
+
+const blogSchemas = generateSchemasForPage('blog', schemaData);
 ---
 
 <Layout title={title + " - Betonozás Budapest"} description={metaDescription}>
