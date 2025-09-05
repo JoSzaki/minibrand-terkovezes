@@ -2,7 +2,7 @@
 export const blogPosts = [
   // Kocsibeálló térkövezés témák (3 blog)
   {
-    slug: "kocsibeallo-terkovezes-arak-tipusok-kivitelezés",
+    slug: "kocsibeallo-terkovezes-arak-tipusok-kivitelezes",
     title: "Kocsibeálló térkövezés 2025: Árak, típusok, kivitelezés",
     description: "Kocsibeálló térkövezés 2025 ✓ Árak ✓ Térkő típusok ✓ Kivitelezési lépések ✓ Alapozás ✓ Vízelvezetés ✓ Szakértői tanácsok ✓ Ingyenes ajánlat.",
     excerpt: "Teljes útmutató kocsibeálló térkövezéshez 2025-ben. Árak, térkőtípusok, kivitelezés lépésről lépésre. Milyen térkövet válasszunk autónk számára?",
