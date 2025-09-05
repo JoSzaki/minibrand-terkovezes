@@ -14,7 +14,7 @@ export async function getStaticPaths() {
     }));
 }
 
-const { title, description, date, category, author, readTime, excerpt, slug } = Astro.props;
+const { title, description, date, category, author, readTime, excerpt, slug, content, images, faq, tables, howTo, infographics, calculator } = Astro.props;
 const metaDescription = description;
 
 // Generate schemas for blog post
@@ -83,15 +83,183 @@ const blogSchemas = generateSchemasForPage('blog', {
             </div>
         </header>
 
+        <!-- Hero Image -->
+        {images && images.hero && (
+            <div class="mb-8">
+                <img src={images.hero.src} alt={images.hero.alt} class="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg">
+                {images.hero.caption && <p class="text-sm text-concrete-500 mt-2 text-center">{images.hero.caption}</p>}
+            </div>
+        )}
+
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none">
             <div class="blog-content">
-                <p class="text-lg leading-relaxed mb-6">{excerpt}</p>
+                <p class="text-lg leading-relaxed mb-8">{excerpt}</p>
                 
-                <div class="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-lg p-8 text-center">
-                    <h3 class="text-2xl font-bold mb-4">Betonozásra van Szüksége?</h3>
+                <!-- Main Content Sections -->
+                {content && content.sections && content.sections.map(section => (
+                    <section class="mb-12">
+                        <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-6">{section.title}</h2>
+                        
+                        {section.content && (
+                            <div class="mb-6" set:html={section.content}></div>
+                        )}
+                        
+                        {section.image && (
+                            <div class="my-8">
+                                <img src={section.image.src} alt={section.image.alt} class="w-full rounded-lg shadow-md">
+                                {section.image.caption && <p class="text-sm text-concrete-500 mt-2 text-center">{section.image.caption}</p>}
+                            </div>
+                        )}
+                        
+                        {section.infographic && (
+                            <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-8 my-8">
+                                <h3 class="text-xl font-bold text-primary-800 mb-4 text-center">{section.infographic.title}</h3>
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    {section.infographic.items.map(item => (
+                                        <div class="bg-white rounded-lg p-6 text-center shadow-sm">
+                                            <div class="text-4xl mb-4">{item.icon}</div>
+                                            <h4 class="font-semibold text-concrete-800 mb-2">{item.title}</h4>
+                                            <p class="text-concrete-600 text-sm">{item.description}</p>
+                                            {item.value && <div class="text-2xl font-bold text-primary-600 mt-3">{item.value}</div>}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                        
+                        {section.table && (
+                            <div class="overflow-x-auto my-8">
+                                <table class="min-w-full bg-white border border-concrete-200 rounded-lg overflow-hidden">
+                                    <thead class="bg-concrete-50">
+                                        <tr>
+                                            {section.table.headers.map(header => (
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-concrete-500 uppercase tracking-wider">{header}</th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-concrete-200">
+                                        {section.table.rows.map(row => (
+                                            <tr>
+                                                {row.map(cell => (
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-concrete-900">{cell}</td>
+                                                ))}
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+                    </section>
+                ))}
+                
+                <!-- How-to Section -->
+                {howTo && (
+                    <section class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 my-12">
+                        <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-6 flex items-center">
+                            <span class="text-4xl mr-3">📋</span>
+                            {howTo.title}
+                        </h2>
+                        <div class="space-y-6">
+                            {howTo.steps.map((step, index) => (
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">
+                                        {index + 1}
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-lg font-semibold text-concrete-800 mb-2">{step.title}</h3>
+                                        <p class="text-concrete-700 mb-3">{step.description}</p>
+                                        {step.tips && (
+                                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                                                <p class="text-yellow-800 font-medium">💡 Profi tipp: {step.tips}</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                )}
+                
+                <!-- FAQ Section -->
+                {faq && (
+                    <section class="my-12">
+                        <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-8 text-center">
+                            ❓ Gyakran Ismételt Kérdések
+                        </h2>
+                        <div class="space-y-4">
+                            {faq.map((item, index) => (
+                                <details class="bg-white border border-concrete-200 rounded-lg shadow-sm">
+                                    <summary class="px-6 py-4 cursor-pointer hover:bg-concrete-50 font-medium text-concrete-800">
+                                        {item.question}
+                                    </summary>
+                                    <div class="px-6 pb-4 text-concrete-600 border-t border-concrete-100" set:html={item.answer}></div>
+                                </details>
+                            ))}
+                        </div>
+                    </section>
+                )}
+                
+                <!-- Calculator Section -->
+                {calculator && (
+                    <section class="bg-primary-50 rounded-xl p-8 my-12">
+                        <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-6 text-center flex items-center justify-center">
+                            <span class="text-4xl mr-3">🧮</span>
+                            {calculator.title}
+                        </h2>
+                        <div class="max-w-md mx-auto bg-white rounded-lg p-6 shadow-lg">
+                            <div class="space-y-4">
+                                {calculator.inputs.map(input => (
+                                    <div>
+                                        <label class="block text-sm font-medium text-concrete-700 mb-2">{input.label}</label>
+                                        {input.type === 'select' ? (
+                                            <select 
+                                                id={input.id}
+                                                class="w-full px-3 py-2 border border-concrete-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                            >
+                                                {input.options && input.options.map(option => (
+                                                    <option value={option.value}>{option.label}</option>
+                                                ))}
+                                            </select>
+                                        ) : input.type === 'checkbox' ? (
+                                            <label class="flex items-center">
+                                                <input 
+                                                    type="checkbox" 
+                                                    id={input.id}
+                                                    class="mr-2 h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                                                >
+                                                <span class="text-sm text-concrete-700">Igen, vízelvezetés szükséges (+3.000 Ft/m²)</span>
+                                            </label>
+                                        ) : (
+                                            <input 
+                                                type={input.type || 'number'} 
+                                                id={input.id}
+                                                placeholder={input.placeholder}
+                                                class="w-full px-3 py-2 border border-concrete-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                            >
+                                        )}
+                                        {input.unit && input.type !== 'checkbox' && <span class="text-sm text-concrete-500 ml-2">{input.unit}</span>}
+                                    </div>
+                                ))}
+                                <button 
+                                    onclick={calculator.script}
+                                    class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                                >
+                                    Számítás
+                                </button>
+                                <div id="calculator-result" class="mt-4 p-4 bg-green-50 border-l-4 border-green-400 rounded hidden">
+                                    <div class="font-semibold text-green-800"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                )}
+                
+                <!-- CTA Section -->
+                <div class="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-xl p-8 text-center my-12">
+                    <h3 class="text-2xl font-bold mb-4">Térkövezésre van Szüksége?</h3>
                     <p class="text-xl mb-8 opacity-90">
-                        15+ év tapasztalattal segítünk minden betonozási projektben 
+                        15+ év tapasztalattal segítünk minden térkövezési projektben 
                         professzionális megoldást nyújtani!
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -108,16 +276,6 @@ const blogSchemas = generateSchemasForPage('blog', {
                             📞 Hívjon Azonnal
                         </a>
                     </div>
-                </div>
-                
-                <div class="mt-8 bg-concrete-50 border border-concrete-200 rounded-lg p-6 text-center">
-                    <h4 class="text-lg font-semibold text-concrete-800 mb-3">Teljes cikk elolvasása</h4>
-                    <p class="text-concrete-600 mb-4 text-sm">
-                        Részletes szakmai információk és gyakorlati tanácsok.
-                    </p>
-                    <a href={`/${slug}`} class="bg-concrete-600 hover:bg-concrete-700 text-white font-medium py-2 px-5 rounded-lg transition-colors duration-200 inline-block">
-                        Teljes cikk →
-                    </a>
                 </div>
             </div>
         </div>
