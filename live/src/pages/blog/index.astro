@@ -8,8 +8,8 @@ import { blogPosts, getCategories, getLatestPosts } from '../../data/blogPosts.j
 // Import getBlogPostImage from blogPosts.js
 import { getBlogPostImage } from '../../data/blogPosts.js';
 
-// Get latest blog posts for display
-const latestBlogPosts = getLatestPosts(12);
+// Get all blog posts for display
+const latestBlogPosts = getLatestPosts(25);
 const categories = getCategories();
 
 // Function to get appropriate alt text for blog post images - now using JóSzaki images
@@ -47,7 +47,7 @@ function getBlogPostImageAlt(category, title) {
 }
 ---
 
-<Layout title="Blog - Betonozás Budapest" description="Hasznos cikkek, tippek és útmutatók betonozásról. Szakértői tanácsok és praktikus információk építési projektjeidhez.">
+<Layout title="Blog - Térkövezés Budapest" description="Hasznos cikkek, tippek és útmutatók térkövezésről. Szakértői tanácsok és praktikus információk térkövezési projektjeidhez.">
     <Header />
     
     <!-- Blog Header -->
@@ -57,7 +57,7 @@ function getBlogPostImageAlt(category, title) {
                 <source srcset="/images/blog/blog-hero.webp" type="image/webp">
                 <img 
                     src="/images/blog/blog-hero.jpg" 
-                    alt="Betonozási munkálatok - Szakértői blog" 
+                    alt="Térkövezési munkálatok - Szakértői blog" 
                     class="w-full h-full object-cover opacity-20"
                     loading="eager"
                     width="1200"

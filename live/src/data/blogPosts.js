@@ -742,13 +742,13 @@ export const blogPosts = [
                 icon: "🧱",
                 title: "Térkő",
                 description: "Beruházás + karbantartás",
-                value: "1.800.000 Ft"
+                value: "1.500.000 Ft"
               },
               {
                 icon: "🏗️", 
                 title: "Vasbeton",
                 description: "Beruházás + felújítások",
-                value: "1.400.000 Ft"
+                value: "1.700.000 Ft"
               },
               {
                 icon: "🛣️",
@@ -760,7 +760,7 @@ export const blogPosts = [
                 icon: "📊",
                 title: "Gazdaságossági sorrend",
                 description: "20 éves távlatban",
-                value: "1. Beton 2. Aszfalt 3. Térkő"
+                value: "1. Térkő 2. Aszfalt 3. Beton"
               }
             ]
           }
@@ -870,7 +870,7 @@ export const blogPosts = [
     faq: [
       {
         question: "Melyik a leggazdaságosabb hosszú távon?",
-        answer: "20-30 éves távlatban a vasbeton a leggazdaságosabb, de a térkő is versenyképes, ha figyelembe vesszük a javíthatóságot és esztétikai értéket."
+        answer: "20-30 éves távlatban a térkő a leggazdaságosabb választás, ha figyelembe vesszük a javíthatóságot, esztétikai értéket és az ingatlan értékét növelő hatást."
       },
       {
         question: "Mi a helyzet a téli csúszósságal?",
@@ -878,7 +878,7 @@ export const blogPosts = [
       },
       {
         question: "Melyik tűri jobban a nehéz járműveket?",
-        answer: "Vasbeton tűri a legjobban a nehéz terhelést, térkő közepes (8 cm vastag), aszfalt a legkevésbé alkalmas nehéz járművekre."
+        answer: "8 cm vastag térkő kiválóan tűri a személyautók terhelését és praktikusabb választás. Vasbeton ugyan erősebb, de nem javítható részlegesen sérülés esetén."
       },
       {
         question: "Milyen gyorsan lehet használni az új burkolatot?",
@@ -886,7 +886,7 @@ export const blogPosts = [
       },
       {
         question: "Melyik a legkönnyebb karbantartani?",
-        answer: "Vasbeton (mosás), térkő (fugák gyomlálása, esetleges csere), aszfalt (repedések javítása, újraaszfaltozás)."
+        answer: "Térkő a legkönnyebb karbantartani: fugák gyomlálása évente, sérült kövek cseréje. Vasbeton nehezen javítható, aszfalt teljes felújítást igényel."
       },
       {
         question: "Lehet-e kombinálni a különböző megoldásokat?",

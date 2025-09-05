@@ -30,7 +30,7 @@ export const contentRelationships = {
   // Terasz térkövezés kapcsolatok
   "terasz-terkovezes-trendek-2025": {
     mainTopics: ["diy-terasz-terkovezes-lepesrol-lepesre", "szines-terkovek-kreativ-mintak-kombinaciok"],
-    related: ["terasz-betonozas-budapest", "beton-vagy-termeszetes-ko-terkovek"],
+    related: ["terasz-terkovezes-trendek-2025", "beton-vagy-termeszetes-ko-terkovek"],
     supporting: ["terkovezes-tervezes-alapjai", "antik-terko-jellemzoi-felhasznalasa"]
   },
   
