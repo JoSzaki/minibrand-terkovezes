@@ -8,9 +8,7 @@ export default defineConfig({
   base: '/minibrand-terkovezes/',
   output: 'static',
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    })
+    tailwind()
   ],
   build: {
     inlineStylesheets: 'auto',
