@@ -109,6 +109,19 @@ export const contentRelationships = {
     mainTopics: ["beton-vs-termeszetes-ko-terkovek", "modern-terkovezes-trendek-design-otletek-2025"],
     related: ["kocsibeallo-vizellevezetes-terkovezes-rendszerek", "terkovezes-tervezes-alapjai"],
     supporting: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"]
+  },
+
+  // Batch 5 SEO posts
+  "terkovezes-hibak-problemak-megoldasok-budapest": {
+    mainTopics: ["profi-terkovezes-kivitelezes-lepesek-hibak", "terkovezes-karbantartas-javitas-szakertoi-tippek"],
+    related: ["terkovezes-koltsegkalkulator-2025", "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"],
+    supporting: ["terkovezes-tervezes-alapjai", "beton-vs-termeszetes-ko-terkovek"]
+  },
+
+  "terkovezes-budapest-keruletek-arak-szolgaltatasok": {
+    mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "terkovezes-koltsegkalkulator-2025"],
+    related: ["profi-terkovezes-kivitelezes-lepesek-hibak", "hogyan-valasszunk-terkovet"],
+    supporting: ["terkovezes-tervezes-alapjai", "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas"]
   }
 };
 
@@ -150,7 +163,9 @@ export const anchorTexts = {
   "terkovezes-karbantartas-javitas-szakertoi-tippek": ["térkövezés karbantartás", "térkő javítás", "térkő ápolás szakértői tippek"],
   "modern-terkovezes-trendek-design-otletek-2025": ["modern térkövezés trendek", "térkő design ötletek", "2025 térkövezési trendek"],
   "profi-terkovezes-kivitelezes-lepesek-hibak": ["professzionális térkövezés", "térkövezés kivitelezés", "térkövezési hibák elkerülése"],
-  "kornyezetbarat-terkovezes-megoldasok-2025": ["környezetbarát térkövezés", "vízáteresztő térkő", "öko térkövezés megoldások"]
+  "kornyezetbarat-terkovezes-megoldasok-2025": ["környezetbarát térkövezés", "vízáteresztő térkő", "öko térkövezés megoldások"],
+  "terkovezes-hibak-problemak-megoldasok-budapest": ["térkövezés hibák javítása", "térkő problémák Budapest", "térkövezési javítás költségek"],
+  "terkovezes-budapest-keruletek-arak-szolgaltatasok": ["térkövezés Budapest árak", "kerületi térkövezés", "budapesti térkövező vállalkozók"]
 };
 
 // Function to get anchor text for a link

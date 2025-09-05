@@ -1958,6 +1958,90 @@ export const blogPosts = [
       ],
       calculate: "calculateEcoPayback"
     }
+  },
+  
+  // Batch 5 - SEO optimalized posts (simplified)
+  {
+    slug: "terkovezes-hibak-problemak-megoldasok-budapest",
+    title: "Térkövezés hibák és problémák: Megoldások Budapesten 2025",
+    description: "Térkövezési hibák javítása Budapest ✓ Süllyedés ✓ Repedés ✓ Gyomosodás ✓ Fagykár ✓ Szakértői megoldások ✓ Javítási költségek ✓ Megelőzés.",
+    excerpt: "Térkövezési problémák és hibák javítása Budapesten. Süllyedés, repedés, gyomosodás megoldása. Szakértői tanácsok és javítási költségek 2025-ben.",
+    date: "2025-04-12",
+    category: "Tervezés és tanácsadás",
+    readTime: "12 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/terkovezes-hibak-javitas.jpg",
+    content: {
+      sections: [
+        {
+          title: "Leggyakoribb térkövezési problémák",
+          content: `<p>A <strong>térkövezési hibák</strong> többsége megelőzhető lenne megfelelő tervezéssel és kivitelezéssel. Budapesten a leggyakoribb problémák a süllyedés (40%), repedések (25%), gyomosodás (20%) és fagykárok (15%).</p>
+          
+          <p>A <strong>süllyedés</strong> általában gyenge alapozás vagy nem megfelelő tömörítés miatt jelentkezik. A térkövek egyenetlenné válnak, víz gyűlik meg alattuk, ami további károkat okoz.</p>`
+        },
+        {
+          title: "Javítási módszerek és költségek",
+          content: `<p>A <strong>térkő javítás</strong> költsége 3.000-8.000 Ft/m² között mozog Budapesten, a hiba típusától függően. Kisebb javítások esetén gyakran elég a térkövek újra lerakása megfelelő ágyazásra.</p>
+          
+          <p>Nagyobb hibáknál az <strong>alapozás felújítása</strong> is szükséges lehet, ami 12.000-18.000 Ft/m² költségvonzattal járhat. A megelőzés mindig olcsóbb, mint a javítás.</p>`
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Mennyibe kerül a térkő javítás Budapesten?",
+        answer: "A térkő javítás költsége 3.000-15.000 Ft/m² között változik a hiba típusától függően. Kisebb javítások 3.000-6.000 Ft/m², míg teljes felújítás 12.000-18.000 Ft/m² lehet."
+      },
+      {
+        question: "Mikor kell szakembert hívni térkő javításhoz?",
+        answer: "Szakembert kell hívni, ha a süllyedés meghaladja az 1-2 cm-t, repedések jelentkeznek, vagy nagyobb területen billegnek a térkövek. Korai beavatkozással sokszor olcsóbban megoldható a probléma."
+      },
+      {
+        question: "Hogyan lehet megelőzni a térkövezési hibákat?",
+        answer: "Megfelelő alapozással, szakszerű tömörítéssel, jó vízelvezetéssel és rendszeres karbantartással. Az éves szintfelmérés és fugák tisztítása sokat segíthet."
+      }
+    ]
+  },
+  {
+    slug: "terkovezes-budapest-keruletek-arak-szolgaltatasok",
+    title: "Térkövezés Budapest kerületekben: Árak és szolgáltatások 2025",
+    description: "Térkövezés Budapest összes kerület ✓ Árak kerületenként ✓ Helyi vállalkozók ✓ Engedélyek ✓ Referenciák ✓ Ingyenes felmérés ✓ Gyors kivitelezés.",
+    excerpt: "Térkövezési szolgáltatások Budapest mind a 23 kerületében. Árak, helyi vállalkozók, engedélyek és referenciák kerületenként 2025-ben.",
+    date: "2025-04-15",
+    category: "Kocsibeálló térkövezés",
+    readTime: "14 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/budapest-keruletek-terkovezes.jpg",
+    content: {
+      sections: [
+        {
+          title: "Budapest térkövezés árak kerületenként",
+          content: `<p><strong>Budapest belvárosában</strong> (I., V., VI. kerület) a térkövezés árak 15-25%-kal magasabbak az átlagnál a nehezebb megközelíthetőség és parkolási problémák miatt. Átlagosan 12.000-22.000 Ft/m² munkadíjjal együtt.</p>
+          
+          <p>A <strong>külső kerületekben</strong> (XIII-XXIII.) kedvezőbbek az árak, 8.000-15.000 Ft/m² között mozognak. Itt könnyebb a anyagszállítás és több a rendelkezésre álló munkaterület.</p>`
+        },
+        {
+          title: "Kerületi szabályozások és engedélyek",
+          content: `<p>Egyes Budapest kerületekben <strong>településképi bejelentés</strong> szükséges 20 m² feletti térkövezéshez. A II., XII., és III. kerületben szigorúbbak az előírások a védett területek miatt.</p>
+          
+          <p>A <strong>közterületi munkavégzési engedély</strong> 15.000-35.000 Ft között kerül kerületenként. Tapasztalt kivitelezők intézik az ügyintézést is.</p>`
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Melyik budapesti kerületben a legolcsóbb a térkövezés?",
+        answer: "A külső kerületekben (XV-XXIII.) általában 20-30%-kal kedvezőbbek az árak. Különösen XVIII-XXIII. kerületben, ahol 8.000-12.000 Ft/m² körül mozognak az árak."
+      },
+      {
+        question: "Szükséges engedély térkövezéshez Budapesten?",
+        answer: "20 m² felett általában településképi bejelentés szükséges. I-III. és XII. kerületben szigorúbbak az előírások. A kivitelező általában intézi az engedélyeztetést."
+      },
+      {
+        question: "Mennyi idő alatt készül el egy térkövezés Budapesten?",
+        answer: "Egy átlagos kocsibeálló (40 m²) 3-7 nap alatt elkészül, ha nincs engedélyeztetési csúszás. Belvárosi projekteken 1-2 nappal több idő szükséges."
+      }
+    ]
   }
 ];
 
