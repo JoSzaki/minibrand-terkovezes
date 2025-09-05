@@ -8,6 +8,35 @@ export default defineConfig({
   base: '/minibrand-terkovezes/',
   output: 'static',
   integrations: [
-    tailwind()
-  ]
+    tailwind({
+      applyBaseStyles: false,
+    })
+  ],
+  build: {
+    inlineStylesheets: 'auto',
+    assets: '_astro'
+  },
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor': ['flowbite']
+          },
+          assetFileNames: 'assets/[name].[hash][extname]'
+        }
+      },
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true
+        }
+      }
+    },
+    ssr: {
+      noExternal: ['flowbite']
+    }
+  }
 });

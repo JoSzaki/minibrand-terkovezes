@@ -1,4 +1,6 @@
 ---
+import criticalCSS from '../styles/critical.css?raw';
+
 export interface Props {
   title: string;
   description?: string;
@@ -17,16 +19,58 @@ const { title, description = "Professzionális betonozási szolgáltatások Buda
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     
-    <!-- Fonts -->
+    <!-- Inline Critical CSS for immediate rendering -->
+    <style set:html={criticalCSS}></style>
+    
+    <!-- Critical Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://storage.googleapis.com">
+    <link rel="dns-prefetch" href="https://storage.googleapis.com">
     
-    <!-- Flowbite -->
-    <script>
-        if (typeof window !== 'undefined') {
-            import('flowbite');
+    <!-- Optimized Font Loading with font-display: swap -->
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
         }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+        }
+    </style>
+    
+    <!-- Defer Non-Critical Scripts -->
+    <script type="module">
+        // Lazy load Flowbite after interaction
+        let flowbiteLoaded = false;
+        const loadFlowbite = () => {
+            if (!flowbiteLoaded) {
+                flowbiteLoaded = true;
+                import('flowbite');
+            }
+        };
+        
+        // Load on first interaction
+        ['scroll', 'touchstart', 'click'].forEach(event => {
+            window.addEventListener(event, loadFlowbite, { once: true, passive: true });
+        });
+        
+        // Or load after 3 seconds if no interaction
+        setTimeout(loadFlowbite, 3000);
     </script>
 </head>
 <body class="font-sans text-gray-900 bg-white">

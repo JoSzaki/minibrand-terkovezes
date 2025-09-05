@@ -1,0 +1,66 @@
+---
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  loading?: 'eager' | 'lazy';
+  class?: string;
+  sizes?: string;
+}
+
+const { 
+  src, 
+  alt, 
+  width = 800, 
+  height = 600, 
+  loading = 'lazy', 
+  class: className = '',
+  sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px'
+} = Astro.props;
+
+// Generate optimized srcset for responsive images
+const generateSrcSet = (baseUrl: string) => {
+  const widths = [320, 640, 960, 1280, 1920];
+  return widths.map(w => `${baseUrl}?w=${w} ${w}w`).join(', ');
+};
+
+// Check if it's a critical image (above the fold)
+const isCritical = loading === 'eager';
+---
+
+<picture>
+  {/* WebP format for modern browsers */}
+  <source 
+    type="image/webp"
+    srcset={generateSrcSet(src.replace(/\.(jpg|jpeg|png)$/i, '.webp'))}
+    sizes={sizes}
+  />
+  
+  {/* Original format fallback */}
+  <source 
+    srcset={generateSrcSet(src)}
+    sizes={sizes}
+  />
+  
+  {/* Fallback img with proper attributes */}
+  <img
+    src={`${src}?w=${width}`}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    decoding="async"
+    fetchpriority={isCritical ? 'high' : 'auto'}
+    class={className}
+    style={`aspect-ratio: ${width}/${height};`}
+  />
+</picture>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>

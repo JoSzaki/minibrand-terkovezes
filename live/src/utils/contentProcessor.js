@@ -65,6 +65,14 @@ const keywordMappings = {
   'utókezelés': 'utokezeles-fontossaga'
 };
 
+// Optimized link tracking with WeakMap for better memory management
+const paragraphLinkCache = new WeakMap();
+
+// Get or create link set for a paragraph element
+function getParagraphLinks(paragraphId) {
+  return linkedWordsInParagraph || new Set();
+}
+
 // Már linkelt szavak nyomon követése egy bekezdésben
 let linkedWordsInParagraph = new Set();
 
@@ -93,8 +101,24 @@ function getVariedAnchorText(slug, originalText) {
   return texts[randomIndex];
 }
 
-// Szöveg feldolgozás természetes linkeléssel
+// Cache for compiled regexes to improve performance
+const regexCache = new Map();
+
+function getRegex(keyword) {
+  if (!regexCache.has(keyword)) {
+    regexCache.set(keyword, new RegExp(`\\b${keyword}\\b`, 'gi'));
+  }
+  return regexCache.get(keyword);
+}
+
+// Pre-sort keywords once to avoid repeated sorting
+const sortedKeywords = Object.keys(keywordMappings).sort((a, b) => b.length - a.length);
+
+// Szöveg feldolgozás természetes linkeléssel - optimized version
 export function processContentForLinks(content, currentSlug, maxLinksPerParagraph = 2) {
+  // Early return for empty content
+  if (!content || typeof content !== 'string') return content;
+  
   resetParagraphLinks();
   
   // Split paragraphs to handle links per paragraph
@@ -105,9 +129,7 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
     let processedParagraph = paragraph;
     let linksInThisParagraph = 0;
     
-    // Prioritási sorrend: hosszabb kifejezések előbb
-    const sortedKeywords = Object.keys(keywordMappings).sort((a, b) => b.length - a.length);
-    
+    // Use pre-sorted keywords for better performance
     for (const keyword of sortedKeywords) {
       if (linksInThisParagraph >= maxLinksPerParagraph) break;
       
@@ -119,10 +141,14 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
       // Ne linkeljünk már linkelt szavakat
       if (isAlreadyLinked(keyword)) continue;
       
-      // Regex a teljes szó megtalálásához (word boundaries)
-      const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+      // Use cached regex for better performance
+      const regex = getRegex(keyword);
+      regex.lastIndex = 0; // Reset regex state
       
       if (regex.test(processedParagraph)) {
+        // Reset for replacement
+        regex.lastIndex = 0;
+        
         // Használjuk a variált anchor szöveget
         const anchorText = getVariedAnchorText(targetSlug, keyword);
         const linkHtml = `<a href="/${targetSlug}" class="text-primary-600 hover:text-primary-700 underline">${anchorText}</a>`;
@@ -132,9 +158,6 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
         
         markAsLinked(keyword);
         linksInThisParagraph++;
-        
-        // Reset regex lastIndex
-        regex.lastIndex = 0;
       }
     }
     

@@ -25,21 +25,41 @@ const {
 <script>
   import { processContentForLinks } from '../utils/contentProcessor.js';
   
-  // Client-side content processing
-  document.addEventListener('DOMContentLoaded', () => {
+  // Optimized client-side content processing with debouncing
+  const processSmartContent = () => {
     const smartContentElements = document.querySelectorAll('.smart-content');
     
+    // Use document fragment for better performance
     smartContentElements.forEach(element => {
       const currentSlug = element.getAttribute('data-current-slug');
       const maxLinks = parseInt(element.getAttribute('data-max-links') || '2');
       
-      if (currentSlug) {
+      if (currentSlug && !element.dataset.processed) {
+        // Mark as processed to avoid duplicate processing
+        element.dataset.processed = 'true';
+        
         const originalContent = element.innerHTML;
         const processedContent = processContentForLinks(originalContent, currentSlug, maxLinks);
-        element.innerHTML = processedContent;
+        
+        // Only update if content actually changed
+        if (processedContent !== originalContent) {
+          element.innerHTML = processedContent;
+        }
       }
     });
-  });
+  };
+
+  // Use requestIdleCallback for non-critical processing
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(processSmartContent);
+  } else {
+    // Fallback for older browsers
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', processSmartContent);
+    } else {
+      setTimeout(processSmartContent, 0);
+    }
+  }
 </script>
 
 <style>

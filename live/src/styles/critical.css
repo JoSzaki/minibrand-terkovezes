@@ -1,0 +1,83 @@
+/* Critical CSS for Above-the-Fold Content */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111827;
+  background: #ffffff;
+}
+
+.font-heading {
+  font-family: Poppins, system-ui, sans-serif;
+}
+
+/* Critical layout styles */
+.max-w-screen-xl {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+
+@media (min-width: 640px) {
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .lg\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+  .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Critical typography */
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+
+@media (min-width: 1024px) {
+  .lg\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
+/* Critical colors */
+.text-primary-600 { color: #2563eb; }
+.bg-primary-600 { background-color: #2563eb; }
+.text-white { color: #ffffff; }
+.bg-white { background-color: #ffffff; }
+
+/* Critical grid and flex */
+.grid { display: grid; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.gap-12 { gap: 3rem; }
+
+/* Critical button styles */
+.rounded-lg { border-radius: 0.5rem; }
+.transition-colors { transition-property: color, background-color; }
+.duration-200 { transition-duration: 200ms; }
+
+/* Hide elements until JS loads */
+.js-only { display: none; }
+.js-loaded .js-only { display: block; }
+
+/* Prevent layout shift for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Aspect ratio for hero image */
+.aspect-ratio-4-3 {
+  aspect-ratio: 4/3;
+}
