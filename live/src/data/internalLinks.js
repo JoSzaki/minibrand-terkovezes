@@ -1,162 +1,88 @@
-// Internal linking structure for cross-referencing content
-// Based on blogPosts.js and all_links.txt analysis
+// Internal linking structure for cross-referencing paving content
+// Based on blogPosts.js and paving industry topics
 
 export const contentRelationships = {
-  // Alapozás kategória kapcsolatok
-  "alapozas-budapest": {
-    mainTopics: ["lemezalapok-budapest", "pontalapok-budapest", "savalapok-budapest"],
-    related: ["aljzatbetonozas-budapest", "betonozasi-technologiak", "zsaluzas-budapest"],
-    supporting: ["alapozas-lepései", "betonelem-gyartas"]
+  // Kocsibeálló térkövezés kapcsolatok
+  "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": {
+    mainTopics: ["hogyan-valasszunk-terkovet-kocsibeallohol", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
+    related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkovezes-tervezes-alapjai"],
+    supporting: ["beton-vs-termeszetes-ko-terkovek", "terkovezes-koltsegkalkulator-2025"]
   },
   
-  "lemezalapok-budapest": {
-    mainTopics: ["pontalapok-budapest", "savalapok-budapest"],
-    related: ["alapozas-budapest", "aljzatbetonozas-budapest", "zsaluzas-budapest"],
-    supporting: ["alapozas-lepései", "dilatacios-hezagok"]
-  },
-  
-  "pontalapok-budapest": {
-    mainTopics: ["lemezalapok-budapest", "savalapok-budapest"], 
-    related: ["alapozas-budapest", "betonozasi-technologiak"],
-    supporting: ["alapozas-lepései", "betonelem-gyartas"]
-  },
-  
-  "savalapok-budapest": {
-    mainTopics: ["alapozas-budapest", "lemezalapok-budapest", "pontalapok-budapest"],
-    related: ["aljzatbetonozas-budapest", "zsaluzas-budapest"],
-    supporting: ["alapozas-lepései", "dilatacios-hezagok"]
+  "hogyan-valasszunk-terkovet-kocsibeallohol": {
+    mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "beton-vs-termeszetes-ko-terkovek"],
+    related: ["antik-terko-jellemzoi-felhasznalasa", "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas"],
+    supporting: ["terkovezes-tervezes-alapjai", "terkovezes-koltsegkalkulator-2025"]
   },
 
-  // Aljzatkészítés kapcsolatok
-  "aljzatbetonozas-budapest": {
-    mainTopics: ["estrich-aljzat-budapest", "padlofutes-aljzat-budapest"],
-    related: ["alapozas-budapest", "ipari-padlobetonozas-budapest"],
-    supporting: ["padlofutes-betonozas", "betoncsiszolas-budapest"]
-  },
-  
-  "estrich-aljzat-budapest": {
-    mainTopics: ["aljzatbetonozas-budapest", "padlofutes-aljzat-budapest"],
-    related: ["ipari-padlobetonozas-budapest", "betoncsiszolas-budapest"],
-    supporting: ["padlofutes-betonozas", "betonozasi-technologiak"]
-  },
-  
-  "padlofutes-aljzat-budapest": {
-    mainTopics: ["estrich-aljzat-budapest", "padlofutes-betonozas"],
-    related: ["aljzatbetonozas-budapest", "ipari-padlobetonozas-budapest"],
-    supporting: ["betonozasi-technologiak", "dilatacios-hezagok"]
+  "kocsibeallo-vizellevezetes-terkovezes-rendszerek": {
+    mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "terkovezes-tervezes-alapjai"],
+    related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkozott-jardak-karbantartasa-evszakonkent"],
+    supporting: ["kerti-utak-tervezese-terko-vs-termeszetes-ko", "diy-terasz-terkovezes-lepesrol-lepesre"]
   },
 
-  // Ipari megoldások
-  "ipari-padlobetonozas-budapest": {
-    mainTopics: ["ipari-padlobetonok", "ipari-padloburkolatok"],
-    related: ["aljzatbetonozas-budapest", "estrich-aljzat-budapest"],
-    supporting: ["betoncsiszolas-budapest", "specialis-betonozas-budapest"]
+  "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": {
+    mainTopics: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "beton-vs-termeszetes-ko-terkovek"],
+    related: ["hogyan-valasszunk-terkovet-kocsibeallohol", "terkovezes-koltsegkalkulator-2025"],
+    supporting: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"]
   },
 
-  // Speciális betonok
-  "specialis-betonozas-budapest": {
-    mainTopics: ["gyorskoto-beton-budapest", "konnyubeton-budapest", "vizallo-beton-budapest"],
-    related: ["betonozasi-technologiak", "ipari-padlobetonozas-budapest"],
-    supporting: ["beton-adalekanyagok", "betonkeveres-titkai"]
+  // Terasz térkövezés kapcsolatok
+  "terasz-terkovezes-trendek-2025": {
+    mainTopics: ["diy-terasz-terkovezes-lepesrol-lepesre", "szines-terkovek-kreativ-mintak-kombinaciok"],
+    related: ["terasz-betonozas-budapest", "beton-vs-termeszetes-ko-terkovek"],
+    supporting: ["terkovezes-tervezes-alapjai", "antik-terko-jellemzoi-felhasznalasa"]
   },
   
-  "gyorskoto-beton-budapest": {
-    mainTopics: ["konnyubeton-budapest", "vizallo-beton-budapest"],
-    related: ["specialis-betonozas-budapest", "betonpumpa-szolgaltatas-budapest"],
-    supporting: ["beton-adalekanyagok", "teli-betonozas"]
-  },
-  
-  "konnyubeton-budapest": {
-    mainTopics: ["gyorskoto-beton-budapest", "vizallo-beton-budapest"],
-    related: ["specialis-betonozas-budapest", "betonozasi-technologiak"],
-    supporting: ["beton-adalekanyagok", "betonelem-gyartas"]
-  },
-  
-  "vizallo-beton-budapest": {
-    mainTopics: ["gyorskoto-beton-budapest", "konnyubeton-budapest"],
-    related: ["specialis-betonozas-budapest", "vizszigeteles-betonozas"],
-    supporting: ["beton-adalekanyagok", "kulso-beton-feluletek-vedjetek"]
+  "diy-terasz-terkovezes-lepesrol-lepesre": {
+    mainTopics: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
+    related: ["terkovezes-tervezes-alapjai", "terkozott-jardak-karbantartasa-evszakonkent"],
+    supporting: ["beton-vs-termeszetes-ko-terkovek", "terkovezes-koltsegkalkulator-2025"]
   },
 
-  // Technológiák
-  "betonozasi-technologiak": {
-    mainTopics: ["zsaluzas-budapest", "betonpumpa-szolgaltatas-budapest"],
-    related: ["alapozas-budapest", "specialis-betonozas-budapest"],
-    supporting: ["betonelem-gyartas", "nagy-magassagu-betonozas"]
+  // Kert és járda térkövezés kapcsolatok
+  "kerti-utak-tervezese-terko-vs-termeszetes-ko": {
+    mainTopics: ["terkozott-jardak-karbantartasa-evszakonkent", "beton-vs-termeszetes-ko-terkovek"],
+    related: ["diy-terasz-terkovezes-lepesrol-lepesre", "szines-terkovek-kreativ-mintak-kombinaciok"],
+    supporting: ["terkovezes-tervezes-alapjai", "antik-terko-jellemzoi-felhasznalasa"]
   },
   
-  "zsaluzas-budapest": {
-    mainTopics: ["betonozasi-technologiak", "zsaluzat-anyagok-osszehasonlitas"],
-    related: ["alapozas-budapest", "betoncsiszolas-budapest"],
-    supporting: ["betonelem-gyartas", "dilatacios-hezagok"]
+  "terkozott-jardak-karbantartasa-evszakonkent": {
+    mainTopics: ["kerti-utak-tervezese-terko-vs-termeszetes-ko", "diy-terasz-terkovezes-lepesrol-lepesre"],
+    related: ["kocsibeallo-vizellevezetes-terkovezes-rendszerek", "beton-vs-termeszetes-ko-terkovek"],
+    supporting: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"]
   },
 
-  // Általános szolgáltatások
-  "jarda-betonozas-budapest": {
-    mainTopics: ["terasz-betonozas-budapest", "udvar-betonozas-budapest"],
-    related: ["kocsibeallo-betonozas-budapest", "kulso-beton-feluletek-vedjetek"],
-    supporting: ["vizelvezetes-betonozott-teruleten", "beton-csuszasmentesites"]
+  // Térkő típusok kapcsolatok
+  "beton-vs-termeszetes-ko-terkovek": {
+    mainTopics: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"],
+    related: ["hogyan-valasszunk-terkovet-kocsibeallohol", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
+    supporting: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkovezes-koltsegkalkulator-2025"]
   },
   
-  "terasz-betonozas-budapest": {
-    mainTopics: ["terasz-betonozas", "terasz-tervezes"],
-    related: ["jarda-betonozas-budapest", "udvar-betonozas-budapest"],
-    supporting: ["vizelvezetes-betonozott-teruleten", "kulso-beton-feluletek-vedjetek"]
+  "antik-terko-jellemzoi-felhasznalasa": {
+    mainTopics: ["beton-vs-termeszetes-ko-terkovek", "szines-terkovek-kreativ-mintak-kombinaciok"],
+    related: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
+    supporting: ["hogyan-valasszunk-terkovet-kocsibeallohol", "terkovezes-tervezes-alapjai"]
   },
   
-  "udvar-betonozas-budapest": {
-    mainTopics: ["jarda-betonozas-budapest", "terasz-betonozas-budapest"],
-    related: ["kocsibeallo-betonozas-budapest", "vizelvezetes-betonozott-teruleten"],
-    supporting: ["dilatacios-hezagok", "kulso-beton-feluletek-vedjetek"]
-  },
-  
-  "kocsibeallo-betonozas-budapest": {
-    mainTopics: ["kocsibeallo-meretek", "jarda-betonozas-budapest"],
-    related: ["terasz-betonozas-budapest", "udvar-betonozas-budapest"],
-    supporting: ["alapozas-budapest", "dilatacios-hezagok"]
+  "szines-terkovek-kreativ-mintak-kombinaciok": {
+    mainTopics: ["antik-terko-jellemzoi-felhasznalasa", "beton-vs-termeszetes-ko-terkovek"],
+    related: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
+    supporting: ["diy-terasz-terkovezes-lepesrol-lepesre", "terkovezes-tervezes-alapjai"]
   },
 
-  // Blog posts kapcsolatok
-  "teli-betonozas": {
-    mainTopics: ["nyari-betonozas-vedelem", "kulso-beton-feluletek-vedjetek"],
-    related: ["gyorskoto-beton-budapest", "beton-adalekanyagok"],
-    supporting: ["betonkeveres-titkai", "minosegbiztositas"]
+  // Tervezés és tanácsadás kapcsolatok
+  "terkovezes-tervezes-alapjai": {
+    mainTopics: ["terkovezes-koltsegkalkulator-2025", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
+    related: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "diy-terasz-terkovezes-lepesrol-lepesre"],
+    supporting: ["hogyan-valasszunk-terkovet-kocsibeallohol", "beton-vs-termeszetes-ko-terkovek"]
   },
   
-  "betonkeveres-titkai": {
-    mainTopics: ["beton-adalekanyagok", "minosegbiztositas"],
-    related: ["teli-betonozas", "specialis-betonozas-budapest"],
-    supporting: ["szerkezeti-problemak"]
-  },
-  
-  "beton-adalekanyagok": {
-    mainTopics: ["betonkeveres-titkai", "specialis-betonozas-budapest"],
-    related: ["gyorskoto-beton-budapest", "vizallo-beton-budapest"],
-    supporting: ["minosegbiztositas", "utokezeles-fontossaga"]
-  },
-  
-  "repedesek-okai": {
-    mainTopics: ["szerkezeti-problemak", "beton-javitas"],
-    related: ["rehabilitacio-megerosites", "dilatacios-hezagok"],
-    supporting: ["minosegbiztositas", "utokezeles-fontossaga"]
-  },
-  
-  "szerkezeti-problemak": {
-    mainTopics: ["repedesek-okai", "beton-javitas"],
-    related: ["rehabilitacio-megerosites", "minosegbiztositas"],
-    supporting: ["betonkeveres-titkai", "utokezeles-fontossaga"]
-  },
-  
-  "beton-javitas": {
-    mainTopics: ["rehabilitacio-megerosites", "repedesek-okai"],
-    related: ["szerkezeti-problemak", "minosegbiztositas"],
-    supporting: ["beton-adalekanyagok", "dilatacios-hezagok"]
-  },
-  
-  "rehabilitacio-megerosites": {
-    mainTopics: ["beton-javitas", "szerkezeti-problemak"],
-    related: ["repedesek-okai", "minosegbiztositas"],
-    supporting: ["betonelem-gyartas", "koltsegoptimalizalas"]
+  "terkovezes-koltsegkalkulator-2025": {
+    mainTopics: ["terkovezes-tervezes-alapjai", "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"],
+    related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "hogyan-valasszunk-terkovet-kocsibeallohol"],
+    supporting: ["beton-vs-termeszetes-ko-terkovek", "diy-terasz-terkovezes-lepesrol-lepesre"]
   }
 };
 
@@ -182,22 +108,19 @@ export function getContextualLinks(slug) {
 
 // SEO-friendly anchor text suggestions for internal links
 export const anchorTexts = {
-  "alapozas-budapest": ["alapozási szolgáltatások", "szakértő alapozás", "budapesti alapozás"],
-  "lemezalapok-budapest": ["lemezalap készítés", "monolit lemezalapok", "lemezalapos alapozás"],
-  "pontalapok-budapest": ["pontalap készítés", "fúrt pontalapok", "mélység alapozás"],
-  "savalapok-budapest": ["sávalapos alapozás", "hagyományos sávalapok", "falazó alapok"],
-  "aljzatbetonozas-budapest": ["aljzat betonozás", "sima aljzatok", "burkolható aljzat"],
-  "estrich-aljzat-budapest": ["estrich aljzat", "önterülő estrich", "cementestrich"],
-  "padlofutes-aljzat-budapest": ["padlófűtés aljzat", "fűtött aljzat", "hővezető aljzat"],
-  "specialis-betonozas-budapest": ["speciális betonozás", "egyedi betonmegoldások", "különleges betonok"],
-  "gyorskoto-beton-budapest": ["gyorskötő beton", "gyors betonozás", "sürgősségi betonozás"],
-  "vizallo-beton-budapest": ["vízálló beton", "víztiszta betonok", "medence betonozás"],
-  "betonozasi-technologiak": ["modern betonozási technológiák", "professzionális betonozás", "betonozási eljárások"],
-  "zsaluzas-budapest": ["zsaluzási szolgáltatások", "rendszerzsaluzás", "beton zsaluzás"],
-  "repedesek-okai": ["betonrepedések okai", "repedések megelőzése", "beton repedés"],
-  "beton-javitas": ["betonjavítás", "szerkezet javítás", "beton helyreállítás"],
-  "betonkeveres-titkai": ["helyes betonkeverés", "tökéletes betonkeverék", "keverési technikák"],
-  "beton-adalekanyagok": ["beton adalékanyagok", "betonkeverék javítás", "speciális adalékok"]
+  "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": ["kocsibeálló térkövezés árak", "térkövezés kivitelezés", "kocsibeálló térkő árak"],
+  "hogyan-valasszunk-terkovet-kocsibeallohol": ["térkő választás", "kocsibeálló térkő típusok", "térkő kiválasztás"],
+  "kocsibeallo-vizellevezetes-terkovezes-rendszerek": ["vízelvezetés térkövezéssel", "térkövezés vízelvezetés", "vízelvezetési rendszerek"],
+  "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": ["térkő vs aszfalt", "burkolat összehasonlítás", "kocsibeálló burkolatok"],
+  "terasz-terkovezes-trendek-2025": ["terasz térkövezés trendek", "modern térkövezés", "térkő trendek 2025"],
+  "diy-terasz-terkovezes-lepesrol-lepesre": ["DIY térkövezés", "térkövezés lépésről lépésre", "saját kezű térkövezés"],
+  "kerti-utak-tervezese-terko-vs-termeszetes-ko": ["kerti utak térkő", "térkő vs természetes kő", "kerti út tervezés"],
+  "terkozott-jardak-karbantartasa-evszakonkent": ["térkő karbantartás", "járda karbantartás", "térkövezett felület ápolás"],
+  "beton-vs-termeszetes-ko-terkovek": ["beton vs természetes kő", "térkő típusok", "térkő összehasonlítás"],
+  "antik-terko-jellemzoi-felhasznalasa": ["antik térkő", "klasszikus térkő", "antik térkő tulajdonságai"],
+  "szines-terkovek-kreativ-mintak-kombinaciok": ["színes térkövek", "térkő minták", "kreatív térkövezés"],
+  "terkovezes-tervezes-alapjai": ["térkövezés tervezés", "térkövezési alapelvek", "térkövezés megtervezése"],
+  "terkovezes-koltsegkalkulator-2025": ["térkövezés költségek", "térkő árak 2025", "térkövezés kalkulátor"]
 };
 
 // Function to get anchor text for a link

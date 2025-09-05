@@ -497,6 +497,458 @@ export const blogPosts = [
     image: "/blog/vizelvezetés-kocsibeallo.jpg"
   },
 
+  // Kocsibeálló vízelvezetés témák
+  {
+    slug: "kocsibeallo-vizellevezetes-terkovezes-rendszerek",
+    title: "Kocsibeálló vízelvezetés térkövezéssel: Rendszerek és megoldások 2025",
+    description: "Kocsibeálló vízelvezetés térkövezéssel ✓ Rendszerek ✓ Lejtések ✓ Vízelvezető árkok ✓ Infographic útmutatók ✓ Árak ✓ Karbantartás ✓ Szakértői tanácsok",
+    excerpt: "Professzionális vízelvezetési rendszerek kocsibeállóhoz térkövezéssel. Lejtések, árkok, megoldások, árak és karbantartási tippek 2025-ben.",
+    date: "2025-03-15",
+    category: "Kocsibeálló térkövezés",
+    readTime: "18 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/vizelelvezetes-terkovezes.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        alt: "Kocsibeálló vízelvezetés térkövezéssel",
+        caption: "Professzionális vízelvezetési rendszer térkövezett kocsibeállóban"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "Vízelvezetés Fontossága Térkövezésnél",
+          content: `<p>A <strong>vízelvezetés</strong> az egyik legkritikusabb szempont térkövezett kocsibeállók esetében. A helytelen vízelvezetés következményei súlyosak lehetnek:</p>
+          
+          <ul>
+            <li>🚨 <strong>Fagykárok</strong>: télen a felszín alatt rekedt víz megfagyva szétrepeszti a térköveket</li>
+            <li>💧 <strong>Víztelenedés</strong>: a térkövek alatt gyűlő víz kimossa az aljzatot</li>
+            <li>🏠 <strong>Épületkárok</strong>: rossz lejtés esetén víz folyhat az épület felé</li>
+            <li>🦟 <strong>Egészségügyi problémák</strong>: álló víz szúnyogokat és baktériumokat vonz</li>
+          </ul>
+          
+          <div class="bg-red-50 border-l-4 border-red-400 p-4 my-6">
+            <p class="text-red-700"><strong>⚠️ Fontos:</strong> Egy rosszul megoldott vízelvezetés 3-5 év alatt teljesen tönkreteheti a térkövezést!</p>
+          </div>`,
+          infographic: {
+            title: "Vízelvezetési Problémák és Költségek",
+            items: [
+              {
+                icon: "❄️",
+                title: "Fagykárok",
+                description: "Télen berekesztett víz kárai",
+                value: "300.000-800.000 Ft"
+              },
+              {
+                icon: "🏠",
+                title: "Épületkárok",
+                description: "Rossz lejtés miatti vízkárok",
+                value: "500.000-2.000.000 Ft"
+              },
+              {
+                icon: "🔧",
+                title: "Utólagos javítás",
+                description: "Térkövezés teljes felújítása",
+                value: "15.000-30.000 Ft/m²"
+              },
+              {
+                icon: "💡",
+                title: "Megelőzés",
+                description: "Helyes vízelvezetés költsége",
+                value: "2.000-5.000 Ft/m²"
+              }
+            ]
+          }
+        },
+        {
+          title: "Vízelvezetési Rendszerek Típusai",
+          content: `<p>Különböző <strong>vízelvezetési megoldások</strong> állnak rendelkezésre, mindegyiknek megvannak a maga előnyei:</p>`,
+          table: {
+            title: "Vízelvezetési Rendszerek Összehasonlítása",
+            headers: ["Rendszer típusa", "Költség", "Hatékonyság", "Karbantartás", "Élettartam"],
+            rows: [
+              ["Természetes lejtés", "Alacsony (1-3 eFt/m²)", "Közepes", "Minimális", "20+ év"],
+              ["Vízelvezető árkok", "Közepes (3-7 eFt/m²)", "Magas", "Évente 1x", "15-20 év"],
+              ["Drénrendszer", "Magas (5-12 eFt/m²)", "Kiváló", "3 évente", "25-30 év"],
+              ["Kombinált rendszer", "Közepes (4-8 eFt/m²)", "Kiváló", "Évente 1x", "20-25 év"]
+            ]
+          },
+          infographic: {
+            title: "Vízelvezetési Megoldások 2025-ben",
+            items: [
+              {
+                icon: "📐",
+                title: "Természetes lejtés",
+                description: "2% lejtés minden irányban",
+                value: "Legegyszerűbb"
+              },
+              {
+                icon: "🏗️",
+                title: "Lineáris elvezető",
+                description: "Rácsos vízelvezetési csatorna",
+                value: "Hatékony"
+              },
+              {
+                icon: "🕳️",
+                title: "Pontelvezetés",
+                description: "Üllők és csatornák",
+                value: "Precíz"
+              },
+              {
+                icon: "🌊",
+                title: "Drénrendszer",
+                description: "Földalatti vízelvezetés",
+                value: "Professzionális"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    howTo: {
+      title: "Vízelvezetés Tervezése és Kivitelezése",
+      steps: [
+        {
+          title: "Terepviszonyok felmérése",
+          description: "Első lépésként mérjük fel a terepviszonyokat, természetes lejtéseket és a víz természetes folyásirányát.",
+          tips: "Esős időben figyeljük meg, merre folyik a víz - ez segít a tervezésben!"
+        },
+        {
+          title: "Lejtések megtervezése",
+          description: "Minimum 2% lejtést kell biztosítani minden irányban. Kocsibeállóknál 2,5-3% lejtés az optimális.",
+          tips: "Túl meredek lejtés (5% felett) csúszóssá teheti a felületet!"
+        },
+        {
+          title: "Vízelvezetési pontok meghatározása",
+          description: "Határozzuk meg, hová vezessük el a vizet: közcsatorna, esővíz-elvezető vagy szikkasztó árok.",
+          tips: "Győződjünk meg róla, hogy a szomszédos telkekre nem vezetjük a vizet!"
+        },
+        {
+          title: "Alapozás és drén építése",
+          description: "A megfelelő alapozás (15-20 cm kavics) és esetleg dréncsövek fektetése a víz elvezetésére.",
+          tips: "A dréncsöveket minimum 40 cm mélyen kell fektetni a fagymentes zónába!"
+        },
+        {
+          title: "Térkövek lerakása és fugázása",
+          description: "A térkövek lerakása során különös figyelmet fordítsunk a lejtések megtartására.",
+          tips: "Vízileg ellenőrizzük a lejtéseket minden 2-3 méterenként!"
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Mekkora lejtés szükséges kocsibeállónál?",
+        answer: "Minimum 2% lejtés szükséges, de az optimális 2,5-3%. Ez azt jelenti, hogy 10 méter hosszon 25-30 cm szintkülönbség kell."
+      },
+      {
+        question: "Drágább a vízelvezetéssel együtt a térkövezés?",
+        answer: "Igen, 20-40%-kal drágább, de ez megtérül. A vízelvezetés nélküli térkövezés 3-5 év alatt tönkremehet, míg a jól megoldott vízelvezetéssel 20-30 évig szolgál."
+      },
+      {
+        question: "Lehet utólag vízelvezetést építeni?",
+        answer: "Igen, de sokkal drágább. A térkövezést fel kell bontani, ami a teljes költség 60-80%-át teszi ki. Ezért érdemes rögtön jól megcsinálni."
+      },
+      {
+        question: "Milyen gyakran kell karbantartani a vízelvezetést?",
+        answer: "Évente egyszer ellenőrizzük a lefolyókat, eltávolítjuk a leveleket és törmeléket. Drénrendszert 3-5 évente érdemes átmosni."
+      },
+      {
+        question: "Mi a különbség a lineáris és pontszerű vízelvezetés között?",
+        answer: "A lineáris elvezető hosszú csatornákban gyűjti a vizet (hatékonyabb), a pontszerű különálló gullyk segítségével (olcsóbb, de kevésbé hatékony)."
+      }
+    ],
+    calculator: {
+      title: "Vízelvezetés Költségkalkulátor",
+      description: "Számítsa ki térkövezett kocsibeálló vízelvezetésének költségét!",
+      inputs: [
+        {
+          name: "area",
+          label: "Kocsibeálló területe (m²)",
+          type: "number",
+          placeholder: "pl. 30",
+          min: 10,
+          max: 500
+        },
+        {
+          name: "drainageType",
+          label: "Vízelvezetési rendszer típusa",
+          type: "select",
+          options: [
+            { value: "natural", label: "Természetes lejtés (legolcsóbb)" },
+            { value: "linear", label: "Lineáris elvezető rendszer" },
+            { value: "point", label: "Pontszerű elvezető rendszer" },
+            { value: "drain", label: "Drénrendszer (legdrágább)" }
+          ]
+        },
+        {
+          name: "terrainDifficulty",
+          label: "Terep nehézsége",
+          type: "select",
+          options: [
+            { value: "easy", label: "Egyszerű (sík terep)" },
+            { value: "medium", label: "Közepes (enyhe lejtés)" },
+            { value: "hard", label: "Nehéz (meredek/egyenetlen)" }
+          ]
+        },
+        {
+          name: "hasBasement",
+          label: "Van pince/alagsor az épületben?",
+          type: "checkbox",
+          description: "Fokozott vízelvezetési igény"
+        }
+      ]
+    }
+  },
+
+  // Térkő vs egyéb burkolatok
+  {
+    slug: "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas",
+    title: "Térkő vs aszfalt vs beton kocsibeállók: Részletes összehasonlítás 2025",
+    description: "Térkő vs aszfalt vs beton kocsibeállók ✓ Költségek ✓ Tartósság ✓ Karbantartás ✓ Esztétika ✓ Környezetvédelem ✓ Szakértői választási útmutató 2025",
+    excerpt: "Részletes összehasonlítás térkő, aszfalt és beton kocsibeállók között. Költségek, tartósság, karbantartás és környezeti hatások elemzése 2025-ben.",
+    date: "2025-03-12",
+    category: "Kocsibeálló térkövezés", 
+    readTime: "20 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/terko-vs-asszfalt-beton.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/hero-terkovezes.jpg",
+        alt: "Térkő vs aszfalt vs beton kocsibeállók összehasonlítása",
+        caption: "Burkolattípusok összehasonlítása kocsibeállókhoz - melyik a legjobb választás?"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "Kezdeti Beruházási Költségek 2025-ben",
+          content: `<p>A <strong>kezdeti költségek</strong> gyakran a legfontosabb szempont a döntéshozatalban. 2025-ben a következő árakkal számolhatunk:</p>
+          
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+            <h4 class="font-semibold text-blue-800 mb-3">💰 Beruházási költségek munkadíjjal együtt:</h4>
+            <ul class="text-blue-700 space-y-1">
+              <li><strong>Térkő:</strong> 12.000-25.000 Ft/m² (minőségtől függően)</li>
+              <li><strong>Beton:</strong> 8.000-15.000 Ft/m² (vasbeton alapozással)</li>
+              <li><strong>Aszfalt:</strong> 6.000-12.000 Ft/m² (stabil aljzattal)</li>
+            </ul>
+          </div>
+          
+          <p>A kezdeti költségeknél azonban fontos figyelembe venni a <em>teljes életciklus költségét</em> is!</p>`,
+          infographic: {
+            title: "20 Éves Teljes Költség Összehasonlítás (100 m² területre)",
+            items: [
+              {
+                icon: "🧱",
+                title: "Térkő",
+                description: "Beruházás + karbantartás",
+                value: "1.800.000 Ft"
+              },
+              {
+                icon: "🏗️", 
+                title: "Vasbeton",
+                description: "Beruházás + felújítások",
+                value: "1.400.000 Ft"
+              },
+              {
+                icon: "🛣️",
+                title: "Aszfalt",
+                description: "Beruházás + újraaszfaltozások",
+                value: "1.600.000 Ft"
+              },
+              {
+                icon: "📊",
+                title: "Gazdaságossági sorrend",
+                description: "20 éves távlatban",
+                value: "1. Beton 2. Aszfalt 3. Térkő"
+              }
+            ]
+          }
+        },
+        {
+          title: "Tartósság és Élettartam Elemzés",
+          content: `<p>A <strong>tartósság</strong> kulcskérdés a hosszú távú gazdaságosság szempontjából:</p>`,
+          table: {
+            title: "Burkolattípusok Részletes Összehasonlítása",
+            headers: ["Tulajdonság", "Térkő", "Vasbeton", "Aszfalt", "Nyertes"],
+            rows: [
+              ["Élettartam", "25-30 év", "30-40 év", "15-20 év", "Vasbeton"],
+              ["Fagyállóság", "Kiváló", "Jó*", "Közepes", "Térkő"],
+              ["Javíthatóság", "Egyszerű", "Nehéz", "Közepes", "Térkő"],
+              ["Terhelhetőség", "Magas", "Nagyon magas", "Közepes", "Vasbeton"],
+              ["Vízelvezetés", "Kiváló", "Problémás", "Problémás", "Térkő"],
+              ["Esztétika", "Változatos", "Korlátozott", "Egyszerű", "Térkő"],
+              ["Környezetvédelem", "Jó", "Közepes", "Rossz", "Térkő"],
+              ["Karbantartás", "Közepes", "Alacsony", "Magas", "Vasbeton"]
+            ]
+          },
+          infographic: {
+            title: "Tartóssági Mutatók Összevetése",
+            items: [
+              {
+                icon: "🏆",
+                title: "Legtartósabb",
+                description: "Vasbeton megfelelő kivitelezéssel",
+                value: "30-40 év"
+              },
+              {
+                icon: "🎨",
+                title: "Legszebb",
+                description: "Térkő változatos mintázattal",
+                value: "Korlátlan design"
+              },
+              {
+                icon: "🔧",
+                title: "Legjavíthatóbb", 
+                description: "Térkő cserélhető elemekkel",
+                value: "Egyszerű javítás"
+              },
+              {
+                icon: "💧",
+                title: "Legjobb vízelvezetés",
+                description: "Térkő permeábilis szerkezettel",
+                value: "Természetes szikkasztás"
+              }
+            ]
+          }
+        },
+        {
+          title: "Környezeti Hatások és Fenntarthatóság",
+          content: `<p>A <strong>környezeti szempontok</strong> egyre fontosabbak a modern építészetben:</p>
+          
+          <div class="grid md:grid-cols-2 gap-6 my-6">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-3">🌿 Környezetbarát megoldások:</h4>
+              <ul class="text-green-700 text-sm space-y-1">
+                <li><strong>Térkő:</strong> újrahasznosítható, szikkasztó</li>
+                <li><strong>Beton:</strong> hosszú élettartam</li>
+                <li><strong>Geopolimer beton:</strong> alacsony CO₂</li>
+              </ul>
+            </div>
+            <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+              <h4 class="font-semibold text-orange-800 mb-3">🏭 Környezeti terhelés:</h4>
+              <ul class="text-orange-700 text-sm space-y-1">
+                <li><strong>Aszfalt:</strong> kőolajszármazék, káros anyagok</li>
+                <li><strong>Régi beton:</strong> magas CO₂ lábnyom</li>
+                <li><strong>Szállítás:</strong> helyi anyagok előnye</li>
+              </ul>
+            </div>
+          </div>`
+        }
+      ]
+    },
+    howTo: {
+      title: "Burkolat Kiválasztási Útmutató",
+      steps: [
+        {
+          title: "Költségvetés és prioritások meghatározása",
+          description: "Határozzuk meg a rendelkezésre álló költségvetést és a legfontosabb elvárásainkat (ár, esztétika, tartósság).",
+          tips: "20-30 éves távlatban gondolkodjunk - a drágább megoldás gyakran gazdaságosabb!"
+        },
+        {
+          title: "Használati igények felmérése",
+          description: "Elemezzük a terhelési viszonyokat: csak személyautók, vagy nehéz járművek is használják?",
+          tips: "Lakókocsik, kisteherautók már megnövelik a terhelési igényeket!"
+        },
+        {
+          title: "Terepviszonyok és környezeti adottságok",
+          description: "Vizsgáljuk meg a talajviszonyokat, lejtéseket és vízelvezetési lehetőségeket.",
+          tips: "Rossz vízelvezetési lehetőségek esetén a térkő előnyösebb lehet!"
+        },
+        {
+          title: "Esztétikai és építészeti megfontolások", 
+          description: "Vegyük figyelembe az épület stílusát és a környező burkolatokat.",
+          tips: "A térkő illeszkedik a legtöbb építészeti stílushoz!"
+        },
+        {
+          title: "Döntés és tervezés",
+          description: "A fenti szempontok alapján válasszuk ki a legmegfelelőbb megoldást és tervezzük meg a kivitelezést.",
+          tips: "Kérjünk több árajánlatot és referenciákat a kivitelezőktől!"
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Melyik a leggazdaságosabb hosszú távon?",
+        answer: "20-30 éves távlatban a vasbeton a leggazdaságosabb, de a térkő is versenyképes, ha figyelembe vesszük a javíthatóságot és esztétikai értéket."
+      },
+      {
+        question: "Mi a helyzet a téli csúszósságal?",
+        answer: "Térkő: jó (egyenetlen felület), vasbeton: közepes (síkos lehet), aszfalt: jó (de kopik). Mindegyiknél ajánlott a téli síkosságmentesítés."
+      },
+      {
+        question: "Melyik tűri jobban a nehéz járműveket?",
+        answer: "Vasbeton tűri a legjobban a nehéz terhelést, térkő közepes (8 cm vastag), aszfalt a legkevésbé alkalmas nehéz járművekre."
+      },
+      {
+        question: "Milyen gyorsan lehet használni az új burkolatot?",
+        answer: "Térkő: azonnal, vasbeton: 7-28 nap (szilárdulási idő), aszfalt: 1-2 nap hűlési idő után."
+      },
+      {
+        question: "Melyik a legkönnyebb karbantartani?",
+        answer: "Vasbeton (mosás), térkő (fugák gyomlálása, esetleges csere), aszfalt (repedések javítása, újraaszfaltozás)."
+      },
+      {
+        question: "Lehet-e kombinálni a különböző megoldásokat?",
+        answer: "Igen! Például vasbeton alap térkő felülettel, vagy aszfalt főfelület térkő szegéllyel. Ez kombinálhatja az előnyöket."
+      }
+    ],
+    calculator: {
+      title: "Burkolat Összehasonlító Kalkulátor",
+      description: "Hasonlítsa össze a különböző burkolattípusok költségeit és tulajdonságait!",
+      inputs: [
+        {
+          name: "area", 
+          label: "Kocsibeálló területe (m²)",
+          type: "number",
+          placeholder: "pl. 40",
+          min: 10,
+          max: 500
+        },
+        {
+          name: "usage",
+          label: "Használat intenzitása",
+          type: "select",
+          options: [
+            { value: "light", label: "Könnyű (csak személyautók)" },
+            { value: "medium", label: "Közepes (+ kisebb haszongépjármű)" },
+            { value: "heavy", label: "Nehéz (lakókocsi, kisteherautó)" }
+          ]
+        },
+        {
+          name: "timeFrame",
+          label: "Tervezési időhorizont",
+          type: "select", 
+          options: [
+            { value: "short", label: "5-10 év (rövid távú)" },
+            { value: "medium", label: "10-20 év (középtávú)" },
+            { value: "long", label: "20+ év (hosszú távú)" }
+          ]
+        },
+        {
+          name: "aesthetics",
+          label: "Esztétika fontossága",
+          type: "select",
+          options: [
+            { value: "low", label: "Nem fontos (csak funkcionális)" },
+            { value: "medium", label: "Közepes (szép és praktikus)" },
+            { value: "high", label: "Nagyon fontos (reprezentatív)" }
+          ]
+        },
+        {
+          name: "maintenance",
+          label: "Karbantartási hajlandóság",
+          type: "select",
+          options: [
+            { value: "minimal", label: "Minimális (évente 1 mosás)" },
+            { value: "normal", label: "Normál (tavaszi nagytakarítás)" },
+            { value: "active", label: "Aktív (rendszeres ápolás)" }
+          ]
+        }
+      ]
+    }
+  },
+
   // Terasz térkövezés témák (2 blog)
   {
     slug: "terasz-terkovezes-trendek-2025",
