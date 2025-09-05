@@ -27,6 +27,7 @@
     "glob": "^11.0.3",
     "puppeteer-core": "^24.19.0",
     "rollup-plugin-terser": "^7.0.2",
+    "sharp": "^0.34.3",
     "terser": "^5.44.0",
     "vite-plugin-compression": "^0.5.1",
     "webpack-bundle-analyzer": "^4.10.2"

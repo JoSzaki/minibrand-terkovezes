@@ -32,10 +32,21 @@ import Footer from '../components/Footer.astro';
                     <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
                         <picture>
                             <source 
-                                srcset="https://storage.googleapis.com/joszaki-reference-photos/webp/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4.webp"
-                                type="image/webp">
+                                type="image/webp"
+                                srcset="/minibrand-terkovezes/images/hero-terkovezes-320w.webp 320w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-640w.webp 640w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-800w.webp 800w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-1200w.webp 1200w"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px">
+                            <source 
+                                type="image/jpeg"
+                                srcset="/minibrand-terkovezes/images/hero-terkovezes-320w.jpg 320w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-640w.jpg 640w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-800w.jpg 800w,
+                                        /minibrand-terkovezes/images/hero-terkovezes-1200w.jpg 1200w"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px">
                             <img 
-                                src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" 
+                                src="/minibrand-terkovezes/images/hero-terkovezes.jpg" 
                                 alt="Elegáns térkövezett kocsibeálló - Professzionális térkövezés"
                                 class="w-full h-full object-cover"
                                 loading="eager"
