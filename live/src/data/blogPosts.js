@@ -1472,15 +1472,69 @@ export const blogPosts = [
 
   // Térkő típusok témák (3 blog)
   {
-    slug: "beton-vs-termeszetes-ko-terkovek",
-    title: "Beton vs természetes kő térköövek - Melyiket válasszuk?",
-    description: "Beton vs természetes kő térköövek ✓ Előnyök ✓ Hátrányok ✓ Árak ✓ Tartósság ✓ Karbantartás ✓ Esztétika ✓ Környezetbarát ✓ Választási útmutató.",
-    excerpt: "Beton vagy természetes kő térkövek? Részletes összehasonlítás árak, tartósság, karbantartás és környezeti hatás szempontjából.",
+    slug: "beton-vagy-termeszetes-ko-terkovek",
+    title: "Beton vagy természetes kő térkövek - Melyiket válasszuk 2025?",
+    description: "Beton vagy természetes kő térkövek ✓ Előnyök ✓ Hátrányok ✓ Árak ✓ Tartósság ✓ Karbantartás ✓ Esztétika ✓ Környezetbarát ✓ Választási útmutató.",
+    excerpt: "Beton vagy természetes kő térkövek? Részletes összehasonlítás árak, tartósság, karbantartás és környezeti hatás szempontjából 2025-ben.",
     date: "2025-02-28",
     category: "Térkő típusok",
     readTime: "16 perc",
     author: "Térkövezés Budapest",
-    image: "/blog/beton-vs-termeszetes-ko.jpg"
+    image: "/blog/beton-vagy-termeszetes-ko.jpg",
+    content: {
+      sections: [
+        {
+          title: "Beton térkövek előnyei és hátrányai",
+          content: `<p>A <strong>beton térkövek</strong> népszerűsége az utóbbi években jelentősen megnőtt. Elsősorban <strong>kedvező áruk</strong> (3.500-8.000 Ft/m²) és sokoldalú felhasználhatóságuk miatt választják őket sokan.</p>
+          
+          <p><strong>Előnyök:</strong> egységes minőség, számos szín és forma, könnyű utánpótlás, gyors szállítás, precíz méretek. A modern gyártástechnológia révén kiváló fagyállósággal és kopásállósággal rendelkeznek.</p>
+          
+          <p><strong>Hátrányok:</strong> kevésbé egyedi megjelenés, hosszú távon fakul a színe, nehezebb javítani sérülés esetén.</p>`
+        },
+        {
+          title: "Természetes kő térkövek jellemzői",
+          content: `<p>A <strong>természetes kő térkövek</strong> (gránit, mészkő, homokkő, bazalt) prémium kategóriás megoldást jelentenek. Áraik 8.000-25.000 Ft/m² között mozognak.</p>
+          
+          <p><strong>Előnyök:</strong> egyedi megjelenés, természetes színek és textúrák, évszázados tartósság, értéktartó befektetés, környezetbarát. Minden darab egyedi, ami különleges karaktert ad a burkolatnak.</p>
+          
+          <p><strong>Hátrányok:</strong> magasabb beszerzési költség, korlátozott választék, változó méretek, nehezebb szállítás és beépítés.</p>`
+        },
+        {
+          title: "Árak és költségek összehasonlítása 2025",
+          content: `<p>2025-ben a <strong>beton térkövek</strong> átlagos ára munkadíjjal együtt 8.000-15.000 Ft/m², míg a <strong>természetes kő</strong> 15.000-35.000 Ft/m² között mozog.</p>
+          
+          <p>Hosszú távon azonban a természetes kő lehet költséghatékonyabb a minimális karbantartási igény és az értékmegőrzés miatt. 20-30 év távlatában a teljes életciklus költség akár azonos is lehet.</p>`
+        },
+        {
+          title: "Karbantartás és tartósság",
+          content: `<p>A <strong>beton térkövek</strong> rendszeres tisztítást igényelnek, 15-20 évente felújítás szükséges. A fugázás évente karbantartandó.</p>
+          
+          <p>A <strong>természetes kő térkövek</strong> minimális karbantartást igényelnek. Évente egyszer alapos tisztítás, 3-5 évente impregnálás elegendő. Élettartamuk 50-100 év is lehet.</p>`
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Melyik térkő típus a tartósabb hosszú távon?",
+        answer: "A természetes kő térkövek jelentősen tartósabbak - 50-100 éves élettartammal, míg a beton térkövek 15-25 év után javításra szorulnak. A természetes kő idővel szépül, a beton idővel kopik."
+      },
+      {
+        question: "Mennyivel drágább a természetes kő térkő?",
+        answer: "A kezdeti beruházás 1,5-3x drágabb lehet, de az alacsony karbantartási költség és hosszú élettartam miatt 20-30 év alatt hasonló összköltségű. Értéktartó befektetés ingatlanoknál."
+      },
+      {
+        question: "Melyik környezetbarátkább választás?",
+        answer: "A természetes kő környezetbarátkobb - helyi bányákból, minimális feldolgozással. A beton térkő gyártása több energiát igényel, de újrahasznosítható variánsai is léteznek."
+      },
+      {
+        question: "Családi házhoz melyiket ajánlja?",
+        answer: "Családi házhoz ajánlott a természetes kő, ha a költségkeret engedi - tartós, szép, értéktartó. Beton térkő jó választás szűkös költségkeret esetén vagy nagyobb területekhez."
+      },
+      {
+        question: "Van-e különbség a téli viselkedésben?",
+        answer: "Mindkét típus fagyálló, de a természetes kő természetesen csúszásmentes. A beton térkő síkosabb lehet, ezért télen fokozott óvatosság szükséges."
+      }
+    ]
   },
   {
     slug: "antik-terko-jellemzoi-felhasznalasa",
