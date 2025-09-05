@@ -1527,6 +1527,437 @@ export const blogPosts = [
     readTime: "15 perc",
     author: "Térkövezés Budapest",
     image: "/blog/koltsegkalkulator-2025.jpg"
+  },
+  
+  // Batch 4 - Professzionális kivitelezés és környezetbarát megoldások
+  {
+    slug: "profi-terkovezes-kivitelezes-lepesek-hibak",
+    title: "Professzionális térkövezés kivitelezés: Lépések és gyakori hibák",
+    description: "Profi térkövezés kivitelezés 2025 ✓ Lépésről-lépésre útmutató ✓ Gyakori hibák elkerülése ✓ Alapozási titkok ✓ Minőségi munka garanciával.",
+    excerpt: "Hogyan történik egy professzionális térkövezés? Milyen lépéseket követnek a szakemberek és milyen hibákat kerülnek el? Teljes szakmai útmutató.",
+    date: "2025-04-05",
+    category: "Tervezés és tanácsadás",
+    readTime: "18 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/profi-terkovezes-kivitelezes.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/profi-kivitelezes.jpg",
+        alt: "Professzionális térkövezés kivitelezés",
+        caption: "Szakszerű térkövezés lépésről-lépésre"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "Előkészítési munkálatok",
+          content: `<p>A professzionális térkövezés sikere már az előkészítésnél eldől. A <strong>terület felmérése és tervezése</strong> kritikus fontosságú a hosszú távú eredményességhez. Szakembereink minden projektet geodéziai felméréssel kezdenek.</p>
+          
+          <p>A megfelelő <strong>lejtésviszonyok kialakítása</strong> (1,5-2%) és a vízelvezetési rendszer megtervezése alapvető követelmény. Az előkészítés során figyelembe vesszük a talaj típusát, teherbírását és a várható terhelést.</p>`,
+          infographic: {
+            title: "Kivitelezési Folyamat",
+            items: [
+              {
+                icon: "📏",
+                title: "Felmérés & Tervezés",
+                description: "Geodéziai mérés, CAD tervezés",
+                value: "1-2 nap"
+              },
+              {
+                icon: "🚜",
+                title: "Földmunkák",
+                description: "Ásás, tömörítés, szintezés",
+                value: "2-3 nap"
+              },
+              {
+                icon: "🏗️",
+                title: "Alapozás",
+                description: "Kavicságy, homokágy készítése",
+                value: "1-2 nap"
+              },
+              {
+                icon: "🧱",
+                title: "Térkövezés",
+                description: "Lerakás, vágás, illesztés",
+                value: "3-5 nap"
+              }
+            ]
+          }
+        },
+        {
+          title: "Alapozási technikák",
+          content: `<p>A <strong>rétegrend kialakítása</strong> szakmai tudást és precizitást igényel. Standard kocsibeállónál 30-40 cm mélységű alapozás szükséges, míg nehéz járműveknél ez 50-60 cm is lehet.</p>
+          
+          <p>Az alaprétegek tömörítése <strong>vibrációs lappal vagy hengerrel</strong> történik, minden réteg után ellenőrizve a tömörségi fokot (min. 95% Trρ). A homokágy finomszintezése lézerszintezővel történik.</p>`,
+          table: {
+            title: "Alapozási rétegrend specifikációk",
+            headers: ["Réteg", "Vastagság", "Anyag", "Tömörítés", "Funkció"],
+            rows: [
+              ["Tükör", "30-60 cm", "Eredeti talaj", "95% Trρ", "Teherhordó alap"],
+              ["Fagyvédő", "20-30 cm", "Murva 0/56", "98% Trρ", "Fagyvédelem, teherelosztás"],
+              ["Kiegyenlítő", "10-15 cm", "Zúzottkő 0/32", "98% Trρ", "Szintezés, stabilizálás"],
+              ["Ágyazat", "3-5 cm", "Homok 0/4", "Nem tömörített", "Finom szintezés"],
+              ["Térkő", "6-10 cm", "Választott térkő", "-", "Burkolat"]
+            ]
+          }
+        },
+        {
+          title: "Gyakori kivitelezési hibák",
+          content: `<p>A leggyakoribb hiba a <strong>nem megfelelő alapozás</strong>, ami később süllyedéshez, hullámosodáshoz vezet. Sok kivitelező spórol az alapanyagokon vagy kihagyja a tömörítési lépéseket.</p>
+          
+          <p>További tipikus hibák: <strong>rossz lejtés</strong> (víz megáll), <strong>hiányzó szegélyek</strong> (térkő szétcsúszik), <strong>nem megfelelő fugázás</strong> (gyomosodás), és a <strong>dilatációs hézagok hiánya</strong> (repedések).</p>`,
+          infographic: {
+            title: "Hibák és következményeik",
+            items: [
+              {
+                icon: "⚠️",
+                title: "Gyenge alapozás",
+                description: "Süllyedés, deformáció 1-2 év után",
+                value: "45% esetek"
+              },
+              {
+                icon: "💧",
+                title: "Rossz vízelvezetés",
+                description: "Pocsolyák, fagykárok, kimosódás",
+                value: "30% esetek"
+              },
+              {
+                icon: "🔧",
+                title: "Hibás fugázás",
+                description: "Gyomosodás, térkő elmozdulás",
+                value: "15% esetek"
+              },
+              {
+                icon: "📐",
+                title: "Pontatlan kivitelezés",
+                description: "Esztétikai hibák, egyenetlen felület",
+                value: "10% esetek"
+              }
+            ]
+          }
+        },
+        {
+          title: "Minőségbiztosítás és garancia",
+          content: `<p>Professzionális kivitelezőként <strong>5 év garanciát</strong> vállalunk munkáinkra. Ez magában foglalja az anyaghibákat, kivitelezési hibákat és a természetes kopást meghaladó elváltozásokat.</p>
+          
+          <p>Minden projekt után <strong>átadási jegyzőkönyvet</strong> készítünk fotódokumentációval, műszaki paraméterekkel és karbantartási útmutatóval. Évente ingyenes állapotfelmérést biztosítunk.</p>`
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Mennyi ideig tart egy átlagos kocsibeálló térkövezése?",
+        answer: "Egy 30-40 m²-es kocsibeálló teljes kivitelezése általában 5-7 munkanapot vesz igénybe, beleértve az előkészítést, alapozást és térkövezést. Az időjárás és a talajviszonyok befolyásolhatják az ütemtervet."
+      },
+      {
+        question: "Milyen garanciát adnak a profi kivitelezők?",
+        answer: "Szakszerű kivitelezés esetén minimum 2-3 év, de sok esetben 5 év teljes körű garanciát vállalunk. Ez kiterjed az anyaghibákra, kivitelezési hibákra és a normál használat melletti meghibásodásokra is."
+      },
+      {
+        question: "Hogyan ellenőrizhetem a kivitelezés minőségét?",
+        answer: "Kérjen átadási jegyzőkönyvet fotókkal, ellenőrizze a lejtést (víz lefolyik), a fugák egyenletességét, a térkövek stabilitását (nem billegnek), és kérje el a beépített anyagok minőségi tanúsítványait."
+      },
+      {
+        question: "Mi a különbség a profi és az amatőr kivitelezés között?",
+        answer: "A profi kivitelezés geodéziai felméréssel, megfelelő gépparkkal, szakképzett munkaerővel, minőségi anyagokkal és garanciával történik. Az ár 20-30%-kal magasabb lehet, de a végeredmény 20-30 évig problémamentes."
+      },
+      {
+        question: "Szükséges-e építési engedély térkövezéshez?",
+        answer: "Általában nem, de 20 m² felett településképi bejelentés szükséges lehet. Védett területeken, műemléki környezetben vagy közterület határán minden esetben egyeztetni kell az önkormányzattal."
+      }
+    ],
+    howTo: {
+      title: "Hogyan válasszunk megbízható térkövező szakembert?",
+      description: "Útmutató a megfelelő kivitelező kiválasztásához",
+      totalTime: "PT30M",
+      estimatedCost: "Ingyenes",
+      difficulty: "Könnyű",
+      tools: [],
+      materials: [
+        "Referencia lista",
+        "Árajánlatok",
+        "Szerződés tervezet"
+      ],
+      steps: [
+        {
+          name: "Referenciák ellenőrzése",
+          description: "Kérjen minimum 3-5 korábbi munkáról referenciát fotókkal és elérhetőséggel. Lehetőség szerint nézzen meg személyesen 1-2 éves munkákat.",
+          duration: "PT10M"
+        },
+        {
+          name: "Árajánlatok bekérése",
+          description: "Kérjen részletes, tételes árajánlatot minimum 3 kivitelezőtől. Az árajánlat tartalmazza az anyagokat, munkadíjat, garanciát és ütemtervet.",
+          duration: "PT5M"
+        },
+        {
+          name: "Szakmai kompetencia felmérése",
+          description: "Kérdezzen rá a tervezett rétegrendre, tömörítési technológiára, vízelvezetési megoldásokra. A profi kivitelező részletes választ ad.",
+          duration: "PT5M"
+        },
+        {
+          name: "Szerződéskötés",
+          description: "Kössön részletes vállalkozási szerződést, ami tartalmazza a műszaki tartalmat, ütemtervet, fizetési feltételeket és garanciális feltételeket.",
+          duration: "PT10M"
+        }
+      ]
+    },
+    calculator: {
+      title: "Kivitelezési költség kalkulátor",
+      description: "Számítsa ki térkövezési projektje várható költségét",
+      inputs: [
+        {
+          name: "area",
+          label: "Terület (m²)",
+          type: "number",
+          defaultValue: 40,
+          min: 10,
+          max: 500
+        },
+        {
+          name: "complexity",
+          label: "Komplexitás",
+          type: "select",
+          options: [
+            { value: "simple", label: "Egyszerű (egyenes vonalak)" },
+            { value: "medium", label: "Közepes (íves részek)" },
+            { value: "complex", label: "Komplex (minták, több szín)" }
+          ],
+          defaultValue: "medium"
+        },
+        {
+          name: "foundation",
+          label: "Alapozás mélysége",
+          type: "select",
+          options: [
+            { value: "standard", label: "Standard (30-40 cm)" },
+            { value: "reinforced", label: "Megerősített (40-50 cm)" },
+            { value: "heavy", label: "Nehéz teher (50-60 cm)" }
+          ],
+          defaultValue: "standard"
+        }
+      ],
+      calculate: "calculateProfessionalCost"
+    }
+  },
+  {
+    slug: "kornyezetbarat-terkovezes-megoldasok-2025",
+    title: "Környezetbarát térkövezés: Fenntartható megoldások 2025",
+    description: "Öko térkövezés 2025 ✓ Vízáteresztő térköves ✓ Újrahasznosított anyagok ✓ Zöld technológiák ✓ Fenntartható kivitelezés ✓ Környezettudatos választás.",
+    excerpt: "Környezetbarát térkövezési megoldások 2025-ben. Vízáteresztő térkövek, újrahasznosított anyagok, fenntartható technológiák a klímaváltozás ellen.",
+    date: "2025-04-08",
+    category: "Térkő típusok",
+    readTime: "15 perc",
+    author: "Térkövezés Budapest",
+    image: "/blog/kornyezetbarat-terkovezes.jpg",
+    images: {
+      hero: {
+        src: "/minibrand-terkovezes/images/oko-terkovezes.jpg",
+        alt: "Környezetbarát vízáteresztő térkövezés",
+        caption: "Fenntartható térkövezési megoldások a jövő városaiért"
+      }
+    },
+    content: {
+      sections: [
+        {
+          title: "Vízáteresztő térkövezési rendszerek",
+          content: `<p>A <strong>vízáteresztő térkövezés</strong> forradalmi megoldás a városi vízelvezetési problémákra. Ezek a rendszerek 80-90%-ban átengedik a csapadékot, így csökkentik az árvízveszélyt és feltöltik a talajvízkészletet.</p>
+          
+          <p>A technológia lényege a <strong>speciális fugaanyag és rétegrend</strong>, ami lehetővé teszi a víz beszivárgását, miközben kiszűri a szennyeződéseket. Ideális parkolók, sétányok és kertek burkolására.</p>`,
+          infographic: {
+            title: "Vízáteresztő rendszer előnyei",
+            items: [
+              {
+                icon: "💧",
+                title: "Vízgazdálkodás",
+                description: "90% csapadék beszivárgás",
+                value: "5-10 l/s/ha"
+              },
+              {
+                icon: "🌡️",
+                title: "Hősziget-hatás",
+                description: "Hőmérséklet csökkentés",
+                value: "-3-5°C"
+              },
+              {
+                icon: "🌱",
+                title: "Ökológia",
+                description: "Természetes vízforgalom",
+                value: "100% fenntartható"
+              },
+              {
+                icon: "💰",
+                title: "Költséghatékony",
+                description: "Nincs csatornázási díj",
+                value: "-30% üzemeltetés"
+              }
+            ]
+          }
+        },
+        {
+          title: "Újrahasznosított és környezetbarát anyagok",
+          content: `<p>Az <strong>újrahasznosított betonból</strong> készült térkövek 40% építési törmelékből készülnek, miközben ugyanolyan tartósak, mint a hagyományos termékek. A gyártás 50%-kal kevesebb CO₂ kibocsátással jár.</p>
+          
+          <p>Egyre népszerűbbek a <strong>természetes, helyi anyagokból</strong> készült térkövek, amelyek szállítási távolsága minimális. A mészkő, homokkő és gránit helyi bányákból származó változatai kiváló választások.</p>`,
+          table: {
+            title: "Környezetbarát térkő típusok összehasonlítása",
+            headers: ["Típus", "Újrahasznosított tartalom", "CO₂ lábnyom", "Vízáteresztés", "Ár (Ft/m²)"],
+            rows: [
+              ["Öko-beton térkő", "40-60%", "-50%", "Közepes", "4,500-6,500"],
+              ["Vízáteresztő térkő", "20-30%", "-30%", "Magas", "5,500-8,500"],
+              ["Újrahasznosított műkő", "60-80%", "-60%", "Alacsony", "3,500-5,500"],
+              ["Természetes helyi kő", "0%", "-70% (szállítás)", "Változó", "6,500-12,000"],
+              ["Fű-rács térkő", "30-40%", "-40%", "Nagyon magas", "3,000-4,500"]
+            ]
+          }
+        },
+        {
+          title: "Zöld technológiák a térkövezésben",
+          content: `<p>A <strong>fűrácsos térkövezés</strong> egyesíti a zöldfelület és a járható felület előnyeit. 40-60% zöldfelület aránnyal számolhatunk, ami jelentősen javítja a mikroklímát és az esztétikát.</p>
+          
+          <p>A <strong>napelemes LED világítással</strong> kombinált térkövezés energiafüggetlen megoldást nyújt. A speciális térkövekbe integrált napelemek nappal töltődnek, éjjel világítanak.</p>`,
+          infographic: {
+            title: "Zöld technológiák hatása",
+            items: [
+              {
+                icon: "🌿",
+                title: "Zöldfelület arány",
+                description: "Fűrácsos rendszerrel",
+                value: "40-60%"
+              },
+              {
+                icon: "☀️",
+                title: "Megújuló energia",
+                description: "Napelemes világítás",
+                value: "100% öko"
+              },
+              {
+                icon: "🔄",
+                title: "Újrahasznosítás",
+                description: "Anyagtartalom",
+                value: "60-80%"
+              },
+              {
+                icon: "📉",
+                title: "Karbon lábnyom",
+                description: "CO₂ csökkentés",
+                value: "-50-70%"
+              }
+            ]
+          }
+        },
+        {
+          title: "Fenntartható karbantartás",
+          content: `<p>A környezetbarát térkövezés karbantartása is <strong>ökológiai szemléletű</strong>. Mechanikus tisztítás, környezetbarát tisztítószerek és esővíz-hasznosítás jellemzi a modern megközelítést.</p>
+          
+          <p>A <strong>biológiai fugázás</strong> speciális, szárazságtűrő növényekkel (pl. kakukkfű, varjúháj) történik, ami természetes szűrőként működik és nem igényel vegyszerezést.</p>`
+        }
+      ]
+    },
+    faq: [
+      {
+        question: "Mennyivel drágább a vízáteresztő térkövezés?",
+        answer: "A vízáteresztő térkövezés kezdeti költsége 15-25%-kal magasabb, de a csatornázási díj megtakarítás és az alacsonyabb karbantartási költség miatt 5-7 év alatt megtérül a befektetés."
+      },
+      {
+        question: "Milyen tartós az újrahasznosított térkő?",
+        answer: "Az újrahasznosított anyagokból készült térkövek ugyanolyan tartósak, mint a hagyományosak. A modern gyártástechnológia garantálja a 25-30 éves élettartamot és a fagyállóságot."
+      },
+      {
+        question: "Hogyan működik a vízáteresztő térkövezés télen?",
+        answer: "A vízáteresztő rendszerek fagyálló kialakításúak. A speciális rétegrend és a nagyobb hézagok megakadályozzák a víz felfagyását. A só használata minimalizálható vagy teljesen mellőzhető."
+      },
+      {
+        question: "Alkalmas-e a fűrácsos térkő autók parkolására?",
+        answer: "Igen, a modern fűrácsos rendszerek 35-40 tonnás terhelést is kibírnak. Személyautók és kisteherautók számára tökéletesen alkalmasak, miközben 40-60% zöldfelületet biztosítanak."
+      },
+      {
+        question: "Milyen támogatások érhetők el öko-térkövezéshez?",
+        answer: "2025-ben több önkormányzati és állami pályázat támogatja a vízáteresztő burkolatok létesítését. A támogatás mértéke 30-50% lehet, elsősorban csapadékvíz-gazdálkodási projektekhez."
+      }
+    ],
+    howTo: {
+      title: "Vízáteresztő térkövezés házilag",
+      description: "Kisebb felületek környezetbarát burkolása",
+      totalTime: "PT2D",
+      estimatedCost: "80,000-120,000 Ft (20 m²)",
+      difficulty: "Közepes",
+      tools: [
+        "Ásó, lapát",
+        "Vibrációs lap vagy döngölő",
+        "Vízmérték",
+        "Gumikalapács",
+        "Gyorsmetszet vagy flex"
+      ],
+      materials: [
+        "Vízáteresztő térkő",
+        "Durva kavics (16/32)",
+        "Középszemű kavics (8/16)",
+        "Zúzalék (2/5)",
+        "Geotextília"
+      ],
+      steps: [
+        {
+          name: "Terület előkészítése",
+          description: "Kiásás 40-50 cm mélységig, lejtés kialakítása (1-2%). Geotextília fektetése az altalajra a rétegek keveredésének megakadályozására.",
+          duration: "PT4H"
+        },
+        {
+          name: "Alsó szűrő-tároló réteg",
+          description: "20-25 cm vastag durva kavics (16/32) terítése és tömörítése. Ez szolgál víztárolóként és szűrőként.",
+          duration: "PT3H"
+        },
+        {
+          name: "Középső ágyazó réteg",
+          description: "10-15 cm középszemű kavics (8/16) terítése és tömörítése. Erre kerül közvetlenül a térkő.",
+          duration: "PT2H"
+        },
+        {
+          name: "Térkő lerakása",
+          description: "Vízáteresztő térkő lerakása 5-8 mm fugahézaggal. Szegélykövek beállítása, szintezés.",
+          duration: "PT6H"
+        },
+        {
+          name: "Fugázás",
+          description: "Fugahézagok kitöltése 2/5 zúzalékkal, besöprés, tömörítés, utántöltés. Növényi fugázásnál speciális keverék használata.",
+          duration: "PT2H"
+        }
+      ]
+    },
+    calculator: {
+      title: "Öko-térkövezés megtérülés kalkulátor",
+      description: "Számítsa ki a környezetbarát megoldás megtérülését",
+      inputs: [
+        {
+          name: "area",
+          label: "Terület (m²)",
+          type: "number",
+          defaultValue: 50,
+          min: 20,
+          max: 500
+        },
+        {
+          name: "ecoType",
+          label: "Öko megoldás típusa",
+          type: "select",
+          options: [
+            { value: "permeable", label: "Vízáteresztő térkő" },
+            { value: "recycled", label: "Újrahasznosított térkő" },
+            { value: "grassGrid", label: "Fűrácsos rendszer" },
+            { value: "combined", label: "Kombinált öko-megoldás" }
+          ],
+          defaultValue: "permeable"
+        },
+        {
+          name: "waterSaving",
+          label: "Csapadékvíz díj (Ft/m³)",
+          type: "number",
+          defaultValue: 150,
+          min: 0,
+          max: 500
+        }
+      ],
+      calculate: "calculateEcoPayback"
+    }
   }
 ];
 

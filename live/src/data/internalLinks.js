@@ -96,6 +96,19 @@ export const contentRelationships = {
     mainTopics: ["szines-terkovek-kreativ-mintak-kombinaciok", "terasz-terkovezes-trendek-2025"],
     related: ["antik-terko-jellemzoi-felhasznalasa", "beton-vs-termeszetes-ko-terkovek"],
     supporting: ["diy-terasz-terkovezes-lepesrol-lepesre", "terkovezes-tervezes-alapjai"]
+  },
+
+  // Új batch 4 blog bejegyzések kapcsolatok
+  "profi-terkovezes-kivitelezes-lepesek-hibak": {
+    mainTopics: ["terkovezes-tervezes-alapjai", "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"],
+    related: ["terkovezes-koltsegkalkulator-2025", "hogyan-valasszunk-terkovet"],
+    supporting: ["kocsibeallo-vizellevezetes-terkovezes-rendszerek", "beton-vs-termeszetes-ko-terkovek"]
+  },
+
+  "kornyezetbarat-terkovezes-megoldasok-2025": {
+    mainTopics: ["beton-vs-termeszetes-ko-terkovek", "modern-terkovezes-trendek-design-otletek-2025"],
+    related: ["kocsibeallo-vizellevezetes-terkovezes-rendszerek", "terkovezes-tervezes-alapjai"],
+    supporting: ["terasz-terkovezes-trendek-2025", "kerti-utak-tervezese-terko-vs-termeszetes-ko"]
   }
 };
 
@@ -135,7 +148,9 @@ export const anchorTexts = {
   "terkovezes-tervezes-alapjai": ["térkövezés tervezés", "térkövezési alapelvek", "térkövezés megtervezése"],
   "terkovezes-koltsegkalkulator-2025": ["térkövezés költségek", "térkő árak 2025", "térkövezés kalkulátor"],
   "terkovezes-karbantartas-javitas-szakertoi-tippek": ["térkövezés karbantartás", "térkő javítás", "térkő ápolás szakértői tippek"],
-  "modern-terkovezes-trendek-design-otletek-2025": ["modern térkövezés trendek", "térkő design ötletek", "2025 térkövezési trendek"]
+  "modern-terkovezes-trendek-design-otletek-2025": ["modern térkövezés trendek", "térkő design ötletek", "2025 térkövezési trendek"],
+  "profi-terkovezes-kivitelezes-lepesek-hibak": ["professzionális térkövezés", "térkövezés kivitelezés", "térkövezési hibák elkerülése"],
+  "kornyezetbarat-terkovezes-megoldasok-2025": ["környezetbarát térkövezés", "vízáteresztő térkő", "öko térkövezés megoldások"]
 };
 
 // Function to get anchor text for a link
