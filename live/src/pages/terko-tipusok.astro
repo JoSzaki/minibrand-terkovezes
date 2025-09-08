@@ -116,6 +116,104 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
+    <!-- Interaktív Térkő Ajánló Tool -->
+    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">🎯 Térkő Ajánló Tool</h2>
+                <p class="text-xl opacity-90">Találja meg a tökéletes térkövet projektjéhez 3 lépésben!</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 text-concrete-800">
+                <div id="terko-ajánló" class="space-y-6">
+                    <!-- 1. lépés: Használat célja -->
+                    <div class="step" id="step-1">
+                        <h3 class="text-xl font-semibold mb-4">1. lépés: Mi a használat célja?</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="kocsibeallo">
+                                <div class="text-3xl mb-2">🚗</div>
+                                <div class="font-semibold">Kocsibeálló</div>
+                                <div class="text-sm text-concrete-600">Nagy terhelés</div>
+                            </button>
+                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="terasz">
+                                <div class="text-3xl mb-2">🏡</div>
+                                <div class="font-semibold">Terasz/Kert</div>
+                                <div class="text-sm text-concrete-600">Esztétikum</div>
+                            </button>
+                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="jarda">
+                                <div class="text-3xl mb-2">🚶</div>
+                                <div class="font-semibold">Járda/Út</div>
+                                <div class="text-sm text-concrete-600">Kopásállóság</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. lépés: Költségvetés -->
+                    <div class="step hidden" id="step-2">
+                        <h3 class="text-xl font-semibold mb-4">2. lépés: Mekkora a költségvetés?</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="low">
+                                <div class="text-3xl mb-2">💰</div>
+                                <div class="font-semibold">Gazdaságos</div>
+                                <div class="text-sm text-concrete-600">9.000-17.000 Ft/m²</div>
+                            </button>
+                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="medium">
+                                <div class="text-3xl mb-2">💰💰</div>
+                                <div class="font-semibold">Közepes</div>
+                                <div class="text-sm text-concrete-600">17.000-25.000 Ft/m²</div>
+                            </button>
+                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="high">
+                                <div class="text-3xl mb-2">💰💰💰</div>
+                                <div class="font-semibold">Prémium</div>
+                                <div class="text-sm text-concrete-600">25.000+ Ft/m²</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. lépés: Stílus preferencia -->
+                    <div class="step hidden" id="step-3">
+                        <h3 class="text-xl font-semibold mb-4">3. lépés: Milyen stílust preferál?</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="klasszikus">
+                                <div class="text-3xl mb-2">🏛️</div>
+                                <div class="font-semibold">Klasszikus</div>
+                                <div class="text-sm text-concrete-600">Időtálló, rusztikus</div>
+                            </button>
+                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="modern">
+                                <div class="text-3xl mb-2">🏠</div>
+                                <div class="font-semibold">Modern</div>
+                                <div class="text-sm text-concrete-600">Clean, minimál</div>
+                            </button>
+                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="kreatív">
+                                <div class="text-3xl mb-2">🎨</div>
+                                <div class="font-semibold">Kreatív</div>
+                                <div class="text-sm text-concrete-600">Színes, egyedi</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Eredmény -->
+                    <div class="result hidden" id="result">
+                        <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-green-800 mb-4">🎉 A tökéletes térkő az Ön számára:</h3>
+                            <div id="recommendation" class="space-y-4">
+                                <!-- Itt jelenik meg az ajánlás -->
+                            </div>
+                            <div class="flex gap-4 mt-6">
+                                <button id="restart-btn" class="bg-concrete-500 hover:bg-concrete-600 text-white px-6 py-2 rounded-lg transition-colors">
+                                    🔄 Újraindítás
+                                </button>
+                                <a href="/minibrand-terkovezes/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors">
+                                    💬 Ajánlatkérés
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Tartalomjegyzék -->
     <section class="py-12 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1175,3 +1273,208 @@ import Footer from '../components/Footer.astro';
 
     <Footer />
 </Layout>
+
+<style>
+  /* Tool styles */
+  .selected {
+    border-color: #2563eb !important;
+    background-color: #eff6ff;
+  }
+</style>
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function() {
+    let selections = {
+        useCase: '',
+        budget: '',
+        style: ''
+    };
+
+    // Térkő adatbázis
+    const terkoDatabase = {
+        // Antik térkő ajánlások
+        'kocsibeallo-low-klasszikus': {
+            type: 'Antik Térkő',
+            price: '12.000-17.000 Ft/m²',
+            description: 'Klasszikus koptatott felület, nagy terhelhetőség, tartós megoldás kocsibeállóhoz.',
+            pros: ['Nagy terhelhetőség', 'Csúszásmentes', 'Időtálló megjelenés', 'Kedvező ár-érték arány'],
+            icon: '🏛️'
+        },
+        'kocsibeallo-medium-klasszikus': {
+            type: 'Prémium Antik Térkő',
+            price: '15.000-20.000 Ft/m²',
+            description: 'Kiváló minőségű antik térkő, hosszú élettartam, kocsibeállóhoz optimalizálva.',
+            pros: ['Maximális tartósság', 'Prémium minőség', 'Klasszikus elegancia', '25-30 év élettartam'],
+            icon: '🏛️'
+        },
+        'kocsibeallo-high-klasszikus': {
+            type: 'Gránit Térkő',
+            price: '22.000-40.000 Ft/m²',
+            description: 'Természetes gránit, a legmagasabb minőség, évtizedekig tartó befektetés.',
+            pros: ['100+ év élettartam', 'Természetes szépség', 'Maximális keménység', 'Értéknövelő'],
+            icon: '💎'
+        },
+        
+        // Terasz/kert ajánlások
+        'terasz-low-modern': {
+            type: 'Modern Beton Térkő',
+            price: '11.500-17.500 Ft/m²',
+            description: 'Sima felületű, nagyméretű lapok modern teraszokhoz, tiszta vonalak.',
+            pros: ['Elegáns megjelenés', 'Nagy lapok', 'Könnyű tisztítás', 'Modern design'],
+            icon: '🏠'
+        },
+        'terasz-medium-modern': {
+            type: 'Prémium Modern Térkő',
+            price: '16.000-22.000 Ft/m²',
+            description: 'Kiváló minőségű modern térkő, tökéletes teraszokhoz és kertekhez.',
+            pros: ['Prémium minőség', 'Változatos méretek', 'UV-álló', 'Hosszú garancia'],
+            icon: '🏠'
+        },
+        'terasz-high-modern': {
+            type: 'Mészkő Burkolat',
+            price: '17.000-31.000 Ft/m²',
+            description: 'Természetes mészkő, meleg tónusok, gyönyörű patina az idő múlásával.',
+            pros: ['Természetes szépség', 'Egyedi mintázat', 'Idővel szépül', 'Prémium minőség'],
+            icon: '🌿'
+        },
+
+        // Kreatív/színes ajánlások
+        'terasz-low-kreatív': {
+            type: 'Színes Térkő Mix',
+            price: '11.500-17.500 Ft/m²',
+            description: 'Változatos színű térkövek kreatív kombinációkhoz, egyedi minták.',
+            pros: ['Széles színpaletta', 'Kreatív lehetőségek', 'Egyedi design', 'Jó ár-érték arány'],
+            icon: '🎨'
+        },
+        'terasz-medium-kreatív': {
+            type: 'Designer Térkő Kollekció',
+            price: '15.000-22.000 Ft/m²',
+            description: 'Speciális színek és minták, designer kollekció egyedi projektekhez.',
+            pros: ['Exkluzív színek', 'Különleges textúrák', 'Design kollekció', 'UV-álló pigmentek'],
+            icon: '🎨'
+        },
+
+        // Járda/út ajánlások  
+        'jarda-low-klasszikus': {
+            type: 'Andezit Térkő',
+            price: '19.000-33.000 Ft/m²',
+            description: 'Magyar vulkanikus kő, kiváló kopásállóság, csúszásmentes felület.',
+            pros: ['Magyar eredetű', 'Kopásálló', 'Csúszásmentes', 'Környezetbarát'],
+            icon: '🗻'
+        },
+        'jarda-medium-klasszikus': {
+            type: 'Prémium Andezit',
+            price: '25.000-35.000 Ft/m²',
+            description: 'Kiváló minőségű andezit, közterületi használatra optimalizálva.',
+            pros: ['Közterületi minőség', 'Hosszú élettartam', 'Kiváló tapadás', 'Minimál karbantartás'],
+            icon: '🗻'
+        },
+        'jarda-high-klasszikus': {
+            type: 'Prémium Gránit',
+            price: '30.000-45.000 Ft/m²',
+            description: 'Csúcsminőségű gránit közterületekhez, történelmi központokhoz.',
+            pros: ['Történelmi tartósság', 'Reprezentatív', 'Időjárásálló', 'Befektetés'],
+            icon: '💎'
+        }
+    };
+
+    // Event listeners
+    document.querySelectorAll('.use-case-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            selections.useCase = this.dataset.value;
+            selectButton(this, 'use-case-btn');
+            showNextStep('step-2');
+        });
+    });
+
+    document.querySelectorAll('.budget-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            selections.budget = this.dataset.value;
+            selectButton(this, 'budget-btn');
+            showNextStep('step-3');
+        });
+    });
+
+    document.querySelectorAll('.style-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            selections.style = this.dataset.value;
+            selectButton(this, 'style-btn');
+            showResult();
+        });
+    });
+
+    document.getElementById('restart-btn').addEventListener('click', function() {
+        restartTool();
+    });
+
+    function selectButton(selectedBtn, className) {
+        document.querySelectorAll('.' + className).forEach(btn => btn.classList.remove('selected'));
+        selectedBtn.classList.add('selected');
+    }
+
+    function showNextStep(stepId) {
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById(stepId).classList.remove('hidden');
+    }
+
+    function showResult() {
+        // Kulcs generálása az ajánláshoz
+        const key = `${selections.useCase}-${selections.budget}-${selections.style}`;
+        let recommendation = terkoDatabase[key];
+        
+        // Fallback logika ha nincs pontos egyezés
+        if (!recommendation) {
+            // Alapértelmezett ajánlások használat alapján
+            if (selections.useCase === 'kocsibeallo') {
+                if (selections.budget === 'low') recommendation = terkoDatabase['kocsibeallo-low-klasszikus'];
+                else if (selections.budget === 'medium') recommendation = terkoDatabase['kocsibeallo-medium-klasszikus'];
+                else recommendation = terkoDatabase['kocsibeallo-high-klasszikus'];
+            } else if (selections.useCase === 'terasz') {
+                if (selections.budget === 'low') recommendation = terkoDatabase['terasz-low-modern'];
+                else if (selections.budget === 'medium') recommendation = terkoDatabase['terasz-medium-modern'];
+                else recommendation = terkoDatabase['terasz-high-modern'];
+            } else if (selections.useCase === 'jarda') {
+                if (selections.budget === 'low') recommendation = terkoDatabase['jarda-low-klasszikus'];
+                else if (selections.budget === 'medium') recommendation = terkoDatabase['jarda-medium-klasszikus'];
+                else recommendation = terkoDatabase['jarda-high-klasszikus'];
+            }
+        }
+
+        // Ajánlás megjelenítése
+        if (recommendation) {
+            const recommendationHTML = `
+                <div class="bg-white rounded-lg p-6 border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">${recommendation.icon}</span>
+                        <div>
+                            <h4 class="text-2xl font-bold text-concrete-800">${recommendation.type}</h4>
+                            <p class="text-lg font-semibold text-primary-600">${recommendation.price}</p>
+                        </div>
+                    </div>
+                    <p class="text-concrete-700 mb-4">${recommendation.description}</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-semibold mb-2">✅ Előnyök:</h5>
+                            <ul class="text-sm space-y-1">
+                                ${recommendation.pros.map(pro => `<li>• ${pro}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('recommendation').innerHTML = recommendationHTML;
+        }
+
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById('result').classList.remove('hidden');
+    }
+
+    function restartTool() {
+        selections = { useCase: '', budget: '', style: '' };
+        document.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById('result').classList.add('hidden');
+        document.getElementById('step-1').classList.remove('hidden');
+    }
+});
+</script>
