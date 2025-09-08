@@ -4446,7 +4446,43 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
           defaultValue: "standard"
         }
       ],
-      calculate: "calculateProfessionalCost"
+      script: `
+        function calculateCost() {
+          const area = parseFloat(document.querySelector('[name="area"]').value) || 0;
+          const complexity = document.querySelector('[name="complexity"]').value || 'medium';
+          const foundation = document.querySelector('[name="foundation"]').value || 'standard';
+          
+          if (area <= 0) {
+            alert('Kérem adja meg a terület méretét!');
+            return;
+          }
+          
+          // Complexity multipliers
+          const complexityPrices = {
+            simple: 12000, medium: 15000, complex: 20000
+          };
+          
+          // Foundation multipliers
+          const foundationMultipliers = {
+            standard: 1.0, reinforced: 1.25, heavy: 1.5
+          };
+          
+          let basePrice = complexityPrices[complexity] * area;
+          let totalPrice = basePrice * foundationMultipliers[foundation];
+          
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült kivitelezési költség: ' + 
+            Math.round(totalPrice).toLocaleString('hu-HU') + ' Ft</div>' +
+            '<div class="text-sm text-green-600 mt-2">*Professzionális kivitelezés garanciával</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+            '⚠️ Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
+            '<div class="mt-4 text-center">' +
+            '<a href="/minibrand-terkovezes/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+            'Pontos Árajánlat Kérése' +
+            '</a></div>';
+          resultDiv.classList.remove('hidden');
+        }
+      `
     }
   },
   {
