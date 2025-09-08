@@ -187,6 +187,11 @@ export const blogPosts = [
           const paverType = document.getElementById('paverType').value || 'basic';
           const needsDrainage = document.getElementById('drainage').checked;
           
+          if (area <= 0) {
+            alert('Kérem adja meg a terület méretét!');
+            return;
+          }
+          
           const prices = {
             basic: 8000,
             thick: 11000,  
@@ -202,11 +207,22 @@ export const blogPosts = [
           let maxPrice = totalPrice * 1.1;
           
           const resultDiv = document.getElementById('calculator-result');
-          resultDiv.innerHTML: '<divclass: "font-semibold text-green-800">Becsült költség: ' + 
-            Math.round(minPrice).toLocaleString() + ' - ' + 
-            Math.round(maxPrice).toLocaleString() + ' Ft</div>' +
-            '<divclass: "text-sm text-green-600 mt-2">*Az ár tartalmazza az anyagot és a munkadíjat</div>';
+          resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült költség: ' + 
+            Math.round(minPrice).toLocaleString('hu-HU') + ' - ' + 
+            Math.round(maxPrice).toLocaleString('hu-HU') + ' Ft</div>' +
+            '<div class="text-sm text-green-600 mt-2">*Az ár tartalmazza az anyagot és a munkadíjat</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+            '⚠️ Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
+            '<div class="mt-4 text-center">' +
+            '<a href="/minibrand-terkovezes/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+            'Pontos Árajánlat Kérése' +
+            '</a></div>';
           resultDiv.classList.remove('hidden');
+          
+          // Scroll to result
+          setTimeout(() => {
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
         }`
     }
   },
