@@ -202,10 +202,10 @@ export const blogPosts = [
           let maxPrice = totalPrice * 1.1;
           
           const resultDiv = document.getElementById('calculator-result');
-          resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült költség: ' + 
+          resultDiv.innerHTML: '<divclass: "font-semibold text-green-800">Becsült költség: ' + 
             Math.round(minPrice).toLocaleString() + ' - ' + 
             Math.round(maxPrice).toLocaleString() + ' Ft</div>' +
-            '<div class="text-sm text-green-600 mt-2">*Az ár tartalmazza az anyagot és a munkadíjat</div>';
+            '<divclass: "text-sm text-green-600 mt-2">*Az ár tartalmazza az anyagot és a munkadíjat</div>';
           resultDiv.classList.remove('hidden');
         }`
     }
@@ -311,9 +311,9 @@ export const blogPosts = [
           title: "Gránit Térkő - A Prémium Megoldás",
           content: `<p>A <strong>gránit térkő</strong> a legmagasabb minőségi kategóriát képviseli:</p>
           
-          <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-            <h4 class="font-semibold text-blue-800 mb-2">🌟 Gránit térkő előnyei:</h4>
-            <ul class="text-blue-700">
+          <divclass: "bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+            <h4class: "font-semibold text-blue-800 mb-2">🌟 Gránit térkő előnyei:</h4>
+            <ulclass: "text-blue-700">
               <li>Gyakorlatilag elpusztíthatatlan (50+ év)</li>
               <li>Kiváló fagyállóság és vegyszerállóság</li>
               <li>Természetes szépség és egyediség</li>
@@ -322,9 +322,9 @@ export const blogPosts = [
             </ul>
           </div>
           
-          <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
-            <h4 class="font-semibold text-orange-800 mb-2">⚠️ Figyelembe veendő hátrányok:</h4>
-            <ul class="text-orange-700">
+          <divclass: "bg-orange-50 border-l-4 border-orange-400 p-4">
+            <h4class: "font-semibold text-orange-800 mb-2">⚠️ Figyelembe veendő hátrányok:</h4>
+            <ulclass: "text-orange-700">
               <li>Magas beszerzési költség (8.000-18.000 Ft/m²)</li>
               <li>Nehezebb megmunkálás, drágább építés</li>
               <li>Korlátozott színválaszték</li>
@@ -477,42 +477,42 @@ export const blogPosts = [
           const budget = document.getElementById('budget').value;
           const style = document.getElementById('style').value;
           
-          let recommendation = '';
-          let thickness = '6 cm';
-          let paverType = '';
+          letrecommendation: '';
+          letthickness: '6 cm';
+          letpaverType: '';
           
           // Determine thickness based on usage
           if (usage === 'truck') {
-            thickness = '8 cm (kötelező)';
+thickness: '8 cm (kötelező)';
           } else if (usage === 'van') {
-            thickness = '8 cm (ajánlott)';
+thickness: '8 cm (ajánlott)';
           } else if (usage === 'suv') {
-            thickness = '6-8 cm';
+thickness: '6-8 cm';
           } else {
-            thickness = '6 cm';
+thickness: '6 cm';
           }
           
           // Determine paver type based on budget and style
           if (budget === 'high') {
             if (style === 'modern') {
-              paverType = 'Gránit térkő vagy prémium betontérkő';
+paverType: 'Gránit térkő vagy prémium betontérkő';
             } else if (style === 'rustic') {
-              paverType = 'Természetes kő vagy antik térkő';
+paverType: 'Természetes kő vagy antik térkő';
             } else {
-              paverType = 'Gránit térkő';
+paverType: 'Gránit térkő';
             }
           } else if (budget === 'mid') {
             if (style === 'rustic') {
-              paverType = 'Antik térkő vagy klinkertégla';
+paverType: 'Antik térkő vagy klinkertégla';
             } else {
-              paverType = 'Prémium betontérkő';
+paverType: 'Prémium betontérkő';
             }
           } else {
-            paverType = 'Betontérkő (F150 fagyállóság)';
+paverType: 'Betontérkő (F150 fagyállóság)';
           }
           
-          recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megoldás:</h4>' +
-            '<ul class="text-green-700 space-y-2">' +
+recommendation: '<h4class: "font-semibold text-green-800 mb-3">Ajánlott megoldás:</h4>' +
+            '<ulclass: "text-green-700 space-y-2">' +
             '<li><strong>Térkő típus:</strong> ' + paverType + '</li>' +
             '<li><strong>Vastagság:</strong> ' + thickness + '</li>' +
             '<li><strong>Kötelező:</strong> Min. F150 fagyállóság</li>' +
@@ -568,8 +568,8 @@ export const blogPosts = [
             <li>🦟 <strong>Egészségügyi problémák</strong>: álló víz szúnyogokat és baktériumokat vonz</li>
           </ul>
           
-          <div class="bg-red-50 border-l-4 border-red-400 p-4 my-6">
-            <p class="text-red-700"><strong>⚠️ Fontos:</strong> Egy rosszul megoldott vízelvezetés 3-5 év alatt teljesen tönkreteheti a térkövezést!</p>
+          <divclass: "bg-red-50 border-l-4 border-red-400 p-4 my-6">
+            <pclass: "text-red-700"><strong>⚠️ Fontos:</strong> Egy rosszul megoldott vízelvezetés 3-5 év alatt teljesen tönkreteheti a térkövezést!</p>
           </div>`,
           infographic: {
             title: "Vízelvezetési Problémák és Költségek",
@@ -765,9 +765,9 @@ export const blogPosts = [
           title: "Kezdeti Beruházási Költségek 2025-ben",
           content: `<p>A <strong>kezdeti költségek</strong> gyakran a legfontosabb szempont a döntéshozatalban. 2025-ben a következő árakkal számolhatunk:</p>
           
-          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
-            <h4 class="font-semibold text-blue-800 mb-3">💰 Beruházási költségek munkadíjjal együtt:</h4>
-            <ul class="text-blue-700 space-y-1">
+          <divclass: "bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+            <h4class: "font-semibold text-blue-800 mb-3">💰 Beruházási költségek munkadíjjal együtt:</h4>
+            <ulclass: "text-blue-700 space-y-1">
               <li><strong>Térkő:</strong> 12.000-25.000 Ft/m² (minőségtől függően)</li>
               <li><strong>Beton:</strong> 8.000-15.000 Ft/m² (vasbeton alapozással)</li>
               <li><strong>Aszfalt:</strong> 6.000-12.000 Ft/m² (stabil aljzattal)</li>
@@ -856,18 +856,18 @@ export const blogPosts = [
           title: "Környezeti Hatások és Fenntarthatóság",
           content: `<p>A <strong>környezeti szempontok</strong> egyre fontosabbak a modern építészetben:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">🌿 Környezetbarát megoldások:</h4>
-              <ul class="text-green-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-3">🌿 Környezetbarát megoldások:</h4>
+              <ulclass: "text-green-700 text-sm space-y-1">
                 <li><strong>Térkő:</strong> újrahasznosítható, szikkasztó</li>
                 <li><strong>Beton:</strong> hosszú élettartam</li>
                 <li><strong>Geopolimer beton:</strong> alacsony CO₂</li>
               </ul>
             </div>
-            <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
-              <h4 class="font-semibold text-orange-800 mb-3">🏭 Környezeti terhelés:</h4>
-              <ul class="text-orange-700 text-sm space-y-1">
+            <divclass: "bg-orange-50 border border-orange-200 rounded-lg p-4">
+              <h4class: "font-semibold text-orange-800 mb-3">🏭 Környezeti terhelés:</h4>
+              <ulclass: "text-orange-700 text-sm space-y-1">
                 <li><strong>Aszfalt:</strong> kőolajszármazék, káros anyagok</li>
                 <li><strong>Régi beton:</strong> magas CO₂ lábnyom</li>
                 <li><strong>Szállítás:</strong> helyi anyagok előnye</li>
@@ -1013,9 +1013,9 @@ export const blogPosts = [
           title: "Térkövezés Karbantartásának Alapjai",
           content: `<p>A <strong>térkövezés rendszeres karbantartása</strong> kulcsfontosságú a hosszú élettartam biztosítására. A helyes ápolással 20-30 évig is szolgálhat problémamentesen a térköves felület.</p>
           
-          <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
-            <h4 class="font-semibold text-blue-800 mb-3">🔧 Karbantartási gyakoriság ajánlások:</h4>
-            <ul class="text-blue-700 space-y-1">
+          <divclass: "bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
+            <h4class: "font-semibold text-blue-800 mb-3">🔧 Karbantartási gyakoriság ajánlások:</h4>
+            <ulclass: "text-blue-700 space-y-1">
               <li><strong>Alapos tisztítás:</strong> évente 2x (tavasz, ősz)</li>
               <li><strong>Fugák ellenőrzése:</strong> félévente</li>
               <li><strong>Mohásodás eltávolítás:</strong> szükség szerint</li>
@@ -1240,9 +1240,9 @@ export const blogPosts = [
           title: "2025 Top Térkövezési Trendjei",
           content: `<p>A <strong>2025-ös év legmeghatározóbb trendjei</strong> a fenntarthatóság, a természetesség és a technológiai fejlődés találkozásáról szólnak. Íme a legfontosabb irányzatok:</p>
           
-          <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 my-6">
-            <h4 class="font-semibold text-green-800 mb-3">🌟 2025 Kiemelt Trendek:</h4>
-            <ul class="text-green-700 space-y-2">
+          <divclass: "bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 my-6">
+            <h4class: "font-semibold text-green-800 mb-3">🌟 2025 Kiemelt Trendek:</h4>
+            <ulclass: "text-green-700 space-y-2">
               <li><strong>🌱 Biophilic Design</strong> - Természetközeli színek és formák</li>
               <li><strong>♻️ Újrahasznosított anyagok</strong> - Környezettudatos megoldások</li>
               <li><strong>📱 Smart térkövezés</strong> - LED beépítés, fűtött felületek</li>
@@ -1330,10 +1330,10 @@ export const blogPosts = [
           title: "Fenntartható és Smart Megoldások",
           content: `<p>A <strong>fenntarthatóság és technológia</strong> egyre nagyobb szerepet játszik a térkövezésben:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">🌱 Eco-friendly megoldások:</h4>
-              <ul class="text-green-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-3">🌱 Eco-friendly megoldások:</h4>
+              <ulclass: "text-green-700 text-sm space-y-1">
                 <li>Újrahasznosított anyagokból készült térkövek</li>
                 <li>Permeable (vízáteresztő) térkövezés</li>
                 <li>Helyi kőbányákból származó anyagok</li>
@@ -1341,9 +1341,9 @@ export const blogPosts = [
                 <li>Hosszú élettartamú, újrahasznosítható termékek</li>
               </ul>
             </div>
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 class="font-semibold text-blue-800 mb-3">📱 Smart technológiák:</h4>
-              <ul class="text-blue-700 text-sm space-y-1">
+            <divclass: "bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4class: "font-semibold text-blue-800 mb-3">📱 Smart technológiák:</h4>
+              <ulclass: "text-blue-700 text-sm space-y-1">
                 <li>LED világítás beépítése</li>
                 <li>Fűtött térkövezés téli használatra</li>
                 <li>Intelligens öntözőrendszer integráció</li>
@@ -1744,14 +1744,14 @@ export const blogPosts = [
           
           document.getElementById('calculator-result').innerHTML = \`
             <h4>Trendkövető Terasz Költségbecslés</h4>
-            <div class="result-breakdown">
+            <divclass: "result-breakdown">
               <p><strong>Térkövezés alapár:</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${hasLighting ? \`<p><strong>LED világítás:</strong> \${lightingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               \${edgePrice > 0 ? \`<p><strong>Szegélyezés:</strong> \${edgePrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               <hr>
               <h5>Becsült összköltség: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class="calculator-note">
+              <divclass: "calculator-note">
                 <small>📊 <strong>2025-ös trendek szerinti</strong> kalkuláció. A végső ár függ a konkrét anyagválasztástól és helyi adottságoktól.</small>
               </div>
             </div>
@@ -2060,7 +2060,7 @@ export const blogPosts = [
           
           document.getElementById('calculator-result').innerHTML = \`
             <h4>DIY Terasz Költségbecslés</h4>
-            <div class="result-breakdown">
+            <divclass: "result-breakdown">
               <p><strong>Térkő anyagköltség:</strong> \${paverCost.toLocaleString('hu-HU')} Ft</p>
               <p><strong>Alapanyagok:</strong> \${foundationCost.toLocaleString('hu-HU')} Ft</p>
               <p><strong>Eszközök:</strong> \${toolCost.toLocaleString('hu-HU')} Ft</p>
@@ -2069,7 +2069,7 @@ export const blogPosts = [
               <h5>DIY összköltség: \${totalCost.toLocaleString('hu-HU')} Ft</h5>
               <p><em>Profi ár: \${professionalCost.toLocaleString('hu-HU')} Ft</em></p>
               <p><strong>💰 Megtakarítás: \${savings.toLocaleString('hu-HU')} Ft (\${Math.round((savings/professionalCost)*100)}%)</strong></p>
-              <div class="calculator-note">
+              <divclass: "calculator-note">
                 <small>⏱️ Becsült munkaidő: \${Math.round(area * 2.5)} óra (\${Math.ceil(area * 2.5 / 8)} munkanap)</small>
               </div>
             </div>
@@ -2135,7 +2135,7 @@ export const blogPosts = [
                 icon: "🏔️",
                 title: "Tartósság",
                 description: "Térkő: 20-30 év, Természetes: 50+ év",
-                value = "Természetes nyer"
+                value: "Természetes nyer"
               },
               {
                 icon: "🌱",
@@ -2192,7 +2192,7 @@ export const blogPosts = [
               {
                 icon: "🏖️",
                 title: "Homokkő",
-                description = "Meleg tónusok, könnyen munkálható",
+                description: "Meleg tónusok, könnyen munkálható",
                 value: "15-25k Ft/m²"
               },
               {
@@ -2205,7 +2205,7 @@ export const blogPosts = [
                 icon: "🎯",
                 title: "Kvarc",
                 description: "Csillogó felület, dekoratív",
-                value = "30-45k Ft/m²"
+                value: "30-45k Ft/m²"
               }
             ]
           }
@@ -2247,7 +2247,7 @@ export const blogPosts = [
         {
           title: "3. Használati igények elemzése",
           description: "Gondoljuk végig, hogy milyen intenzitással használjuk majd a kerti utat. Gyakori használat esetén a tartósság fontosabb lehet az esztétikánál.",
-          tips = "Gyerekek, háziállatok jelenléte jelentősen befolyásolja az anyagválasztást."
+          tips: "Gyerekek, háziállatok jelenléte jelentősen befolyásolja az anyagválasztást."
         },
         {
           title: "4. Klimatikus viszonyok vizsgálata",
@@ -2277,7 +2277,7 @@ export const blogPosts = [
       },
       {
         question: "Melyiket könnyebb karbantartani?",
-        answer = "A <strong>térkő karbantartása egyszerűbb</strong>: rendszeres söprés, évente 1-2x magasnyomású mosás. A természetes kő több figyelmet igényel: mohásodás elleni védekezés, fugázás, esetenként impregnálás szükséges."
+        answer: "A <strong>térkő karbantartása egyszerűbb</strong>: rendszeres söprés, évente 1-2x magasnyomású mosás. A természetes kő több figyelmet igényel: mohásodás elleni védekezés, fugázás, esetenként impregnálás szükséges."
       },
       {
         question: "Kis kerti uthoz melyik anyagot válasszam?",
@@ -2303,7 +2303,7 @@ export const blogPosts = [
           type: "select",
           options: [
             { value: "basic_paver", label: "Alapvető térkő", price: 10000 },
-            { value: "premium_paver", label = "Prémium térkő (antik hatású)", price: 15000 },
+            { value: "premium_paver", label: "Prémium térkő (antik hatású)", price: 15000 },
             { value: "large_paver", label: "Nagyméretű térkő lapok", price: 21000 },
             { value: "sandstone", label: "Homokkő (természetes)", price: 20000 },
             { value: "limestone", label: "Mészkő (természetes)", price: 24000 },
@@ -2316,7 +2316,7 @@ export const blogPosts = [
           label: "Út bonyolultsága",
           type: "select",
           options: [
-            { value = "straight", label: "Egyenes út", multiplier: 1.0 },
+            {value: "straight", label: "Egyenes út", multiplier: 1.0 },
             { value: "curved", label: "Kanyargós út", multiplier: 1.2 },
             { value: "complex", label: "Komplex forma, lépcsők", multiplier: 1.5 }
           ]
@@ -2327,7 +2327,7 @@ export const blogPosts = [
           type: "checkbox"
         },
         {
-          id = "maintenanceLevel",
+          id: "maintenanceLevel",
           label: "Karbantartási hajlandóság",
           type: "select",
           options: [
@@ -2374,17 +2374,17 @@ export const blogPosts = [
           
           document.getElementById('calculator-result').innerHTML = \`
             <h4>Kerti Út Költségbecslés - \${materialName}</h4>
-            <div class="result-breakdown">
+            <divclass: "result-breakdown">
               <p><strong>Alapár (\${materialName}):</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsEdging ? \`<p><strong>Szegélyezés:</strong> \${edgingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               <hr>
               <h5>Telepítési költség: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class="lifecycle-cost">
+              <divclass: "lifecycle-cost">
                 <p><strong>🔧 10 éves karbantartás:</strong> \${tenYearMaintenance.toLocaleString('hu-HU')} Ft</p>
                 <p><strong>💰 Teljes životciklus költség:</strong> \${totalLifecycleCost.toLocaleString('hu-HU')} Ft</p>
               </div>
-              <div class="material-benefits">
+              <divclass: "material-benefits">
                 <small>
                   <strong>\${materialName} jellemzők:</strong><br>
                   \${isNaturalStone ? 
@@ -2686,19 +2686,19 @@ export const blogPosts = [
           title: "Mi az antik térkő és milyen jellemzői vannak?",
           content: `<p>Az <strong>antik térkő</strong> a klasszikus építészet modern interpretációja, amely ötvözi a történelmi megjelenést a mai kor technikai elvárásaival:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
-              <h4 class="font-semibold text-amber-800 mb-3">🏛️ Vizuális jellemzők:</h4>
-              <ul class="text-amber-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <h4class: "font-semibold text-amber-800 mb-3">🏛️ Vizuális jellemzők:</h4>
+              <ulclass: "text-amber-700 text-sm space-y-1">
                 <li><strong>Felület:</strong> kopott, természetesen öregedett hatás</li>
                 <li><strong>Élek:</strong> lekerekített, nem éles sarkok</li>
                 <li><strong>Textúra:</strong> durva, csúszásmentes felület</li>
                 <li><strong>Színezet:</strong> természetes, fakult tónusok</li>
               </ul>
             </div>
-            <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
-              <h4 class="font-semibold text-stone-800 mb-3">🔧 Technikai tulajdonságok:</h4>
-              <ul class="text-stone-700 text-sm space-y-1">
+            <divclass: "bg-stone-50 border border-stone-200 rounded-lg p-4">
+              <h4class: "font-semibold text-stone-800 mb-3">🔧 Technikai tulajdonságok:</h4>
+              <ulclass: "text-stone-700 text-sm space-y-1">
                 <li><strong>Nyomószilárdság:</strong> 35-50 MPa</li>
                 <li><strong>Fagyállóság:</strong> F150-F200 ciklus</li>
                 <li><strong>Vízfelszívás:</strong> <6%</li>
@@ -2738,28 +2738,28 @@ export const blogPosts = [
           title: "Antik térkő felhasználási területei",
           content: `<p>Az antik térkő <strong>sokoldalú felhasználhatósága</strong> miatt számos területen alkalmazható:</p>
           
-          <div class="grid md:grid-cols-3 gap-4 my-6">
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 class="font-semibold text-blue-800 mb-2">🏠 Lakóházak</h4>
-              <ul class="text-blue-700 text-xs space-y-1">
+          <divclass: "grid md:grid-cols-3 gap-4 my-6">
+            <divclass: "bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4class: "font-semibold text-blue-800 mb-2">🏠 Lakóházak</h4>
+              <ulclass: "text-blue-700 text-xs space-y-1">
                 <li>• Kocsibeállók</li>
                 <li>• Bejárati utak</li>
                 <li>• Teraszok</li>
                 <li>• Kerti járdák</li>
               </ul>
             </div>
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-2">🌳 Közterek</h4>
-              <ul class="text-green-700 text-xs space-y-1">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-2">🌳 Közterek</h4>
+              <ulclass: "text-green-700 text-xs space-y-1">
                 <li>• Főterek</li>
                 <li>• Sétálóutcák</li>
                 <li>• Parkokban</li>
                 <li>• Közintézmények</li>
               </ul>
             </div>
-            <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
-              <h4 class="font-semibold text-purple-800 mb-2">🏛️ Történelmi épületek</h4>
-              <ul class="text-purple-700 text-xs space-y-1">
+            <divclass: "bg-purple-50 border border-purple-200 rounded-lg p-4">
+              <h4class: "font-semibold text-purple-800 mb-2">🏛️ Történelmi épületek</h4>
+              <ulclass: "text-purple-700 text-xs space-y-1">
                 <li>• Műemlékek</li>
                 <li>• Várak, kastélyok</li>
                 <li>• Templomok</li>
@@ -2783,10 +2783,10 @@ export const blogPosts = [
           title: "Antik térkő előnyei és hátrányai",
           content: `<p>Az antik térkő választása előtt fontos <strong>mérlegelni az előnyöket és hátrányokat</strong>:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">✅ Előnyök:</h4>
-              <ul class="text-green-700 text-sm space-y-2">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-3">✅ Előnyök:</h4>
+              <ulclass: "text-green-700 text-sm space-y-2">
                 <li><strong>Esztétika:</strong> klasszikus, időtálló megjelenés</li>
                 <li><strong>Tartósság:</strong> akár 50-80 év élettartam</li>
                 <li><strong>Csúszásmentes:</strong> biztonságos járható felület</li>
@@ -2795,9 +2795,9 @@ export const blogPosts = [
                 <li><strong>Értékállóság:</strong> ingatlan értékét növeli</li>
               </ul>
             </div>
-            <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
-              <h4 class="font-semibold text-orange-800 mb-3">⚠️ Hátrányok:</h4>
-              <ul class="text-orange-700 text-sm space-y-2">
+            <divclass: "bg-orange-50 border border-orange-200 rounded-lg p-4">
+              <h4class: "font-semibold text-orange-800 mb-3">⚠️ Hátrányok:</h4>
+              <ulclass: "text-orange-700 text-sm space-y-2">
                 <li><strong>Ár:</strong> drágább mint a sima térkő</li>
                 <li><strong>Tisztítás:</strong> durva felület nehezebben tisztítható</li>
                 <li><strong>Színválaszték:</strong> limitáltabb mint modern térköveknél</li>
@@ -2811,20 +2811,20 @@ export const blogPosts = [
           title: "Antik térkő árak és beszerzési tippek",
           content: `<p>Az antik térkő ára <strong>többféle tényezőtől függ</strong>, így érdemes körültekintően választani:</p>
           
-          <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-4">
-            <h4 class="font-semibold text-yellow-800 mb-2">💰 Árak 2025-ben (Ft/m²):</h4>
-            <div class="grid md:grid-cols-2 gap-4">
+          <divclass: "bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-4">
+            <h4class: "font-semibold text-yellow-800 mb-2">💰 Árak 2025-ben (Ft/m²):</h4>
+            <divclass: "grid md:grid-cols-2 gap-4">
               <div>
-                <p class="text-sm text-yellow-700"><strong>Belföldi gyártású:</strong></p>
-                <ul class="text-xs text-yellow-600">
+                <pclass: "text-sm text-yellow-700"><strong>Belföldi gyártású:</strong></p>
+                <ulclass: "text-xs text-yellow-600">
                   <li>• Alapszínű antik: 3.500-4.500 Ft/m²</li>
                   <li>• Színezett antik: 4.200-5.800 Ft/m²</li>
                   <li>• Prémium antik: 5.500-7.200 Ft/m²</li>
                 </ul>
               </div>
               <div>
-                <p class="text-sm text-yellow-700"><strong>Import (német, osztrák):</strong></p>
-                <ul class="text-xs text-yellow-600">
+                <pclass: "text-sm text-yellow-700"><strong>Import (német, osztrák):</strong></p>
+                <ulclass: "text-xs text-yellow-600">
                   <li>• Standard antik: 6.500-8.500 Ft/m²</li>
                   <li>• Design antik: 8.800-12.000 Ft/m²</li>
                   <li>• Exkluzív antik: 12.500-18.000 Ft/m²</li>
@@ -3062,19 +3062,19 @@ export const blogPosts = [
           title: "Színes térkövet választása - alapok és lehetőségek",
           content: `<p>A <strong>színes térkövek</strong> egyedi karaktert adnak minden kültéri térnek, legyen szó teraszról, kocsibeállóról vagy kerti útról:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-rainbow-50 border border-indigo-200 rounded-lg p-4">
-              <h4 class="font-semibold text-indigo-800 mb-3">🎨 Színpaletta opciók:</h4>
-              <ul class="text-indigo-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-rainbow-50 border border-indigo-200 rounded-lg p-4">
+              <h4class: "font-semibold text-indigo-800 mb-3">🎨 Színpaletta opciók:</h4>
+              <ulclass: "text-indigo-700 text-sm space-y-1">
                 <li><strong>Természetes színek:</strong> szürke, bézs, barna árnyalatok</li>
                 <li><strong>Meleg tónusok:</strong> vörös, narancs, sárga</li>
                 <li><strong>Hideg színek:</strong> kék, zöld, lila árnyalatok</li>
                 <li><strong>Kontrasztos párok:</strong> fekete-fehér, sötét-világos</li>
               </ul>
             </div>
-            <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
-              <h4 class="font-semibold text-purple-800 mb-3">📐 Mintázat típusok:</h4>
-              <ul class="text-purple-700 text-sm space-y-1">
+            <divclass: "bg-purple-50 border border-purple-200 rounded-lg p-4">
+              <h4class: "font-semibold text-purple-800 mb-3">📐 Mintázat típusok:</h4>
+              <ulclass: "text-purple-700 text-sm space-y-1">
                 <li><strong>Geometriai:</strong> négyzetek, rombuszok, hexagonok</li>
                 <li><strong>Organikus:</strong> hullámos, természetes formák</li>
                 <li><strong>Klasszikus:</strong> futókötés, körköz, térköz</li>
@@ -3114,28 +3114,28 @@ export const blogPosts = [
           title: "Kreatív mintázatok és layout technikák",
           content: `<p>A <strong>mintázatok tervezése</strong> során kombinálhatjuk a különböző színeket és formákat:</p>
           
-          <div class="grid md:grid-cols-3 gap-4 my-6">
-            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h4 class="font-semibold text-red-800 mb-2">🔥 Dinamikus minták</h4>
-              <ul class="text-red-700 text-xs space-y-1">
+          <divclass: "grid md:grid-cols-3 gap-4 my-6">
+            <divclass: "bg-red-50 border border-red-200 rounded-lg p-4">
+              <h4class: "font-semibold text-red-800 mb-2">🔥 Dinamikus minták</h4>
+              <ulclass: "text-red-700 text-xs space-y-1">
                 <li>• Cikk-cakk vonalak</li>
                 <li>• Spirálok</li>
                 <li>• Hullámos sávok</li>
                 <li>• Sugárirányú elrendezés</li>
               </ul>
             </div>
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-2">🌿 Természetes formák</h4>
-              <ul class="text-green-700 text-xs space-y-1">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-2">🌿 Természetes formák</h4>
+              <ulclass: "text-green-700 text-xs space-y-1">
                 <li>• Levél mintázatok</li>
                 <li>• Virágmotívumok</li>
                 <li>• Kőszemcsés elrendezés</li>
                 <li>• Organikus átmenetek</li>
               </ul>
             </div>
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 class="font-semibold text-blue-800 mb-2">📏 Geometrikus rendek</h4>
-              <ul class="text-blue-700 text-xs space-y-1">
+            <divclass: "bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4class: "font-semibold text-blue-800 mb-2">📏 Geometrikus rendek</h4>
+              <ulclass: "text-blue-700 text-xs space-y-1">
                 <li>• Sakktábla minta</li>
                 <li>• Rombusz rácsos</li>
                 <li>• Koncentrikus körök</li>
@@ -3159,19 +3159,19 @@ export const blogPosts = [
           title: "Színkombinációs stratégiák különböző térfajtákhoz",
           content: `<p>Minden <strong>térkövezett felület más és más színstratégiát</strong> kíván a funkciójának megfelelően:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
-              <h4 class="font-semibold text-amber-800 mb-3">🏡 Lakóterületek:</h4>
-              <ul class="text-amber-700 text-sm space-y-2">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <h4class: "font-semibold text-amber-800 mb-3">🏡 Lakóterületek:</h4>
+              <ulclass: "text-amber-700 text-sm space-y-2">
                 <li><strong>Kocsibeálló:</strong> konzervatív színek (szürke + antracit)</li>
                 <li><strong>Terasz:</strong> meleg tónusok (bézs + terrakotta)</li>
                 <li><strong>Kerti út:</strong> természetes harmónia (zöld + barna)</li>
                 <li><strong>Bejárat:</strong> reprezentatív (kék + fehér)</li>
               </ul>
             </div>
-            <div class="bg-teal-50 border border-teal-200 rounded-lg p-4">
-              <h4 class="font-semibold text-teal-800 mb-3">🏢 Közterületek:</h4>
-              <ul class="text-teal-700 text-sm space-y-2">
+            <divclass: "bg-teal-50 border border-teal-200 rounded-lg p-4">
+              <h4class: "font-semibold text-teal-800 mb-3">🏢 Közterületek:</h4>
+              <ulclass: "text-teal-700 text-sm space-y-2">
                 <li><strong>Főtér:</strong> hagyományos (szürke + vörös)</li>
                 <li><strong>Sétálóutca:</strong> élénk akcentusok (színes csíkok)</li>
                 <li><strong>Park:</strong> természetközelі (zöld árnyalatok)</li>
@@ -3211,20 +3211,20 @@ export const blogPosts = [
           title: "Praktikus tippek a színes térkő projekthez",
           content: `<p>A <strong>sikeres színes térkövezés</strong> tervezéséhez és kivitelezéséhez:</p>
           
-          <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
-            <h4 class="font-semibold text-indigo-800 mb-2">💡 Tervezési tippek:</h4>
-            <div class="grid md:grid-cols-2 gap-4">
+          <divclass: "bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
+            <h4class: "font-semibold text-indigo-800 mb-2">💡 Tervezési tippek:</h4>
+            <divclass: "grid md:grid-cols-2 gap-4">
               <div>
-                <p class="text-sm text-indigo-700"><strong>Előkészítés:</strong></p>
-                <ul class="text-xs text-indigo-600">
+                <pclass: "text-sm text-indigo-700"><strong>Előkészítés:</strong></p>
+                <ulclass: "text-xs text-indigo-600">
                   <li>• Rajzolj tervet léptékkel</li>
                   <li>• Készíts színmintákat</li>
                   <li>• Számold ki a színenkénti mennyiségeket</li>
                 </ul>
               </div>
               <div>
-                <p class="text-sm text-indigo-700"><strong>Kivitelezés:</strong></p>
-                <ul class="text-xs text-indigo-600">
+                <pclass: "text-sm text-indigo-700"><strong>Kivitelezés:</strong></p>
+                <ulclass: "text-xs text-indigo-600">
                   <li>• Jelöld ki a mintát madzaggal</li>
                   <li>• Válaszd szét színek szerint a köveket</li>
                   <li>• Dolgozz szekciókban</li>
@@ -3235,26 +3235,26 @@ export const blogPosts = [
           
           <p><strong>Költség-optimalizálás</strong> színes térkövezésnél:</p>
           
-          <div class="grid md:grid-cols-3 gap-4 my-4">
-            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-              <h5 class="font-semibold text-green-800 text-sm mb-2">💰 Költségkímélő</h5>
-              <ul class="text-xs text-green-700">
+          <divclass: "grid md:grid-cols-3 gap-4 my-4">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-3">
+              <h5class: "font-semibold text-green-800 text-sm mb-2">💰 Költségkímélő</h5>
+              <ulclass: "text-xs text-green-700">
                 <li>• 60% alapszín + 40% akcentus</li>
                 <li>• Belföldi gyártású térkő</li>
                 <li>• Egyszerű minták</li>
               </ul>
             </div>
-            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-              <h5 class="font-semibold text-yellow-800 text-sm mb-2">⚖️ Kiegyensúlyozott</h5>
-              <ul class="text-xs text-yellow-700">
+            <divclass: "bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <h5class: "font-semibold text-yellow-800 text-sm mb-2">⚖️ Kiegyensúlyozott</h5>
+              <ulclass: "text-xs text-yellow-700">
                 <li>• 3 szín egyenlő arányban</li>
                 <li>• Európai minőség</li>
                 <li>• Közepes bonyolultság</li>
               </ul>
             </div>
-            <div class="bg-purple-50 border border-purple-200 rounded-lg p-3">
-              <h5 class="font-semibold text-purple-800 text-sm mb-2">🌟 Prémium</h5>
-              <ul class="text-xs text-purple-700">
+            <divclass: "bg-purple-50 border border-purple-200 rounded-lg p-3">
+              <h5class: "font-semibold text-purple-800 text-sm mb-2">🌟 Prémium</h5>
+              <ulclass: "text-xs text-purple-700">
                 <li>• 5+ szín komplex mintázat</li>
                 <li>• Importált dizájner térkő</li>
                 <li>• Egyedi tervezés</li>
@@ -3496,19 +3496,19 @@ export const blogPosts = [
           title: "Térkövezés tervezés alapelvei és előzetes felmérés",
           content: `<p>A <strong>sikeres térkövezés tervezés</strong> alapja a körültekintő előkészítés és az összes tényező gondos mérlegelése:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-6">
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 class="font-semibold text-blue-800 mb-3">🔍 Helyszín felmérése:</h4>
-              <ul class="text-blue-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-6">
+            <divclass: "bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <h4class: "font-semibold text-blue-800 mb-3">🔍 Helyszín felmérése:</h4>
+              <ulclass: "text-blue-700 text-sm space-y-1">
                 <li><strong>Terepviszonyok:</strong> természetes lejtés, szintkülönbségek</li>
                 <li><strong>Talajminőség:</strong> teherbírás, vízelvezetés</li>
                 <li><strong>Megközelíthetőség:</strong> gépek és anyagok szállítása</li>
                 <li><strong>Közmű-vezetékek:</strong> elektromos, víz, gáz, internet</li>
               </ul>
             </div>
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">📐 Funkcionális tervezés:</h4>
-              <ul class="text-green-700 text-sm space-y-1">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-3">📐 Funkcionális tervezés:</h4>
+              <ulclass: "text-green-700 text-sm space-y-1">
                 <li><strong>Használat:</strong> gyalogos vs. autós forgalom</li>
                 <li><strong>Terhelés:</strong> várható súlyok, gyakoriság</li>
                 <li><strong>Karbantartás:</strong> hozzáférhetőség, tisztíthatóság</li>
@@ -3548,20 +3548,20 @@ export const blogPosts = [
           title: "Méretezés, lejtések és vízelvezetési tervezés",
           content: `<p>A <strong>megfelelő méretezés és vízelvezetés</strong> kritikus a tartós térkövezett felülethez:</p>
           
-          <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
-            <h4 class="font-semibold text-yellow-800 mb-2">⚠️ Kritikus méretek:</h4>
-            <div class="grid md:grid-cols-2 gap-4">
+          <divclass: "bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+            <h4class: "font-semibold text-yellow-800 mb-2">⚠️ Kritikus méretek:</h4>
+            <divclass: "grid md:grid-cols-2 gap-4">
               <div>
-                <p class="text-sm text-yellow-700"><strong>Lejtésszögek:</strong></p>
-                <ul class="text-xs text-yellow-600">
+                <pclass: "text-sm text-yellow-700"><strong>Lejtésszögek:</strong></p>
+                <ulclass: "text-xs text-yellow-600">
                   <li>• Min. lejtés: 1% (vízelfolyás biztosítása)</li>
                   <li>• Optimális: 1,5-2% (járhatóság + vízelvezetés)</li>
                   <li>• Max. lejtés: 3% (csúszásmentes marad)</li>
                 </ul>
               </div>
               <div>
-                <p class="text-sm text-yellow-700"><strong>Szintkülönbségek:</strong></p>
-                <ul class="text-xs text-yellow-600">
+                <pclass: "text-sm text-yellow-700"><strong>Szintkülönbségek:</strong></p>
+                <ulclass: "text-xs text-yellow-600">
                   <li>• Lépcsők: min. 15 cm, max. 18 cm</li>
                   <li>• Rampa: max. 8% emelkedő</li>
                   <li>• Szegély magasság: 8-12 cm</li>
@@ -3585,28 +3585,28 @@ export const blogPosts = [
           title: "Anyagválasztás és minőségi követelmények",
           content: `<p>A <strong>helyes anyagválasztás</strong> döntő befolyásolja a térkövezés élettartamát és megjelenését:</p>
           
-          <div class="grid md:grid-cols-3 gap-4 my-6">
-            <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
-              <h4 class="font-semibold text-stone-800 mb-2">🧱 Térkő kiválasztás</h4>
-              <ul class="text-stone-700 text-xs space-y-1">
+          <divclass: "grid md:grid-cols-3 gap-4 my-6">
+            <divclass: "bg-stone-50 border border-stone-200 rounded-lg p-4">
+              <h4class: "font-semibold text-stone-800 mb-2">🧱 Térkő kiválasztás</h4>
+              <ulclass: "text-stone-700 text-xs space-y-1">
                 <li>• Nyomószilárdság: min. 35 MPa</li>
                 <li>• Fagyállóság: F150-F200</li>
                 <li>• Vízfelszívás: <6%</li>
                 <li>• CE jelölés megléte</li>
               </ul>
             </div>
-            <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
-              <h4 class="font-semibold text-amber-800 mb-2">🏗️ Alapanyagok</h4>
-              <ul class="text-amber-700 text-xs space-y-1">
+            <divclass: "bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <h4class: "font-semibold text-amber-800 mb-2">🏗️ Alapanyagok</h4>
+              <ulclass: "text-amber-700 text-xs space-y-1">
                 <li>• Zúzottkő: törött kőanyag</li>
                 <li>• Szitált homok: 0-4 mm</li>
                 <li>• Szegélykő: fagyálló</li>
                 <li>• Fugázó: kvarchomok</li>
               </ul>
             </div>
-            <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
-              <h4 class="font-semibold text-purple-800 mb-2">🔧 Segédanyagok</h4>
-              <ul class="text-purple-700 text-xs space-y-1">
+            <divclass: "bg-purple-50 border border-purple-200 rounded-lg p-4">
+              <h4class: "font-semibold text-purple-800 mb-2">🔧 Segédanyagok</h4>
+              <ulclass: "text-purple-700 text-xs space-y-1">
                 <li>• Geotextília: gyökérálló</li>
                 <li>• Betonkeverék: C12/15</li>
                 <li>• Vízzáró fólia: opcionális</li>
@@ -3646,20 +3646,20 @@ export const blogPosts = [
           title: "Költségtervezés és engedélyeztetési folyamat",
           content: `<p>A <strong>költséghatékony tervezés</strong> és a szabályos engedélyeztetés alapvető a sikeres projekthez:</p>
           
-          <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
-            <h4 class="font-semibold text-indigo-800 mb-2">💰 Költségkalkuláció elemei:</h4>
-            <div class="grid md:grid-cols-2 gap-4">
+          <divclass: "bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
+            <h4class: "font-semibold text-indigo-800 mb-2">💰 Költségkalkuláció elemei:</h4>
+            <divclass: "grid md:grid-cols-2 gap-4">
               <div>
-                <p class="text-sm text-indigo-700"><strong>Alapköltségek (60-70%):</strong></p>
-                <ul class="text-xs text-indigo-600">
+                <pclass: "text-sm text-indigo-700"><strong>Alapköltségek (60-70%):</strong></p>
+                <ulclass: "text-xs text-indigo-600">
                   <li>• Térkövek anyagköltsége</li>
                   <li>• Alapanyagok (homok, zúzalék)</li>
                   <li>• Szegély és kiegészítő elemek</li>
                 </ul>
               </div>
               <div>
-                <p class="text-sm text-indigo-700"><strong>Munkadíj (25-35%):</strong></p>
-                <ul class="text-xs text-indigo-600">
+                <pclass: "text-sm text-indigo-700"><strong>Munkadíj (25-35%):</strong></p>
+                <ulclass: "text-xs text-indigo-600">
                   <li>• Földmunkák, aljzatkészítés</li>
                   <li>• Térkőlerakás, fugázás</li>
                   <li>• Szegélyezés, befejezés</li>
@@ -3670,19 +3670,19 @@ export const blogPosts = [
           
           <p><strong>Engedélyeztetési követelmények</strong>:</p>
           
-          <div class="grid md:grid-cols-2 gap-6 my-4">
-            <div class="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h4 class="font-semibold text-red-800 mb-3">⚠️ Engedély szükséges:</h4>
-              <ul class="text-red-700 text-sm space-y-1">
+          <divclass: "grid md:grid-cols-2 gap-6 my-4">
+            <divclass: "bg-red-50 border border-red-200 rounded-lg p-4">
+              <h4class: "font-semibold text-red-800 mb-3">⚠️ Engedély szükséges:</h4>
+              <ulclass: "text-red-700 text-sm space-y-1">
                 <li>• Közterületi térkövezés</li>
                 <li>• Építési telekhatár módosítás</li>
                 <li>• Közmű-vezetékek érintése</li>
                 <li>• Műemléki környezetben</li>
               </ul>
             </div>
-            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">✅ Engedély nem szükséges:</h4>
-              <ul class="text-green-700 text-sm space-y-1">
+            <divclass: "bg-green-50 border border-green-200 rounded-lg p-4">
+              <h4class: "font-semibold text-green-800 mb-3">✅ Engedély nem szükséges:</h4>
+              <ulclass: "text-green-700 text-sm space-y-1">
                 <li>• Saját telken belüli munkák</li>
                 <li>• Kocsibeálló térkövezés</li>
                 <li>• Terasz- és járdaburkolás</li>
@@ -4197,7 +4197,7 @@ export const blogPosts = [
           
           document.getElementById('calculator-result').innerHTML = \`
             <h4>Költségkalkuláció Eredménye</h4>
-            <div class="result-breakdown">
+            <divclass: "result-breakdown">
               <p><strong>Térkövezés alapár:</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsDrainage ? \`<p><strong>Vízelvezetés:</strong> \${drainagePrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               \${edging > 0 ? \`<p><strong>Szegélyezés:</strong> \${edgingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
@@ -4205,7 +4205,7 @@ export const blogPosts = [
               <hr>
               <h5>Becsült végösszeg: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class="calculator-note">
+              <divclass: "calculator-note">
                 <small>⚠️ Ez egy <strong>becslés</strong>. A pontos ár függ a helyi adottságoktól, hozzáférhetőségtől és a projekt részleteitől. Kérjen részletes árajánlatot!</small>
               </div>
             </div>
