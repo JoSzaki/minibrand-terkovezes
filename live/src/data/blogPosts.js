@@ -488,7 +488,7 @@ export const blogPosts = [
         }
       ],
       script: `
-        function calculateRecommendation() {
+        function calculateCost() {
           const usage = document.getElementById('usage').value;
           const budget = document.getElementById('budget').value;
           const style = document.getElementById('style').value;
