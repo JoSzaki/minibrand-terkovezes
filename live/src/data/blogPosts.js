@@ -1758,20 +1758,22 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
           let edgePrice = area * 0.4 * edgePrices[edgeType]; // 40% of perimeter estimate
           let totalPrice = basePrice + lightingPrice + edgePrice;
           
-          document.getElementById('calculator-result').innerHTML = \`
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML = \`
             <h4>Trendkövető Terasz Költségbecslés</h4>
-            <div class= "result-breakdown">
+            <div class="result-breakdown">
               <p><strong>Térkövezés alapár:</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${hasLighting ? \`<p><strong>LED világítás:</strong> \${lightingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               \${edgePrice > 0 ? \`<p><strong>Szegélyezés:</strong> \${edgePrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               <hr>
               <h5>Becsült összköltség: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class= "calculator-note">
+              <div class="calculator-note">
                 <small>📊 <strong>2025-ös trendek szerinti</strong> kalkuláció. A végső ár függ a konkrét anyagválasztástól és helyi adottságoktól.</small>
               </div>
             </div>
           \`;
+          resultDiv.classList.remove('hidden');
         }
       `
     }
@@ -2074,9 +2076,10 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
           let professionalCost = area * 12000; // Professional equivalent
           let savings = professionalCost - totalCost;
           
-          document.getElementById('calculator-result').innerHTML = \`
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML = \`
             <h4>DIY Terasz Költségbecslés</h4>
-            <div class= "result-breakdown">
+            <div class="result-breakdown">
               <p><strong>Térkő anyagköltség:</strong> \${paverCost.toLocaleString('hu-HU')} Ft</p>
               <p><strong>Alapanyagok:</strong> \${foundationCost.toLocaleString('hu-HU')} Ft</p>
               <p><strong>Eszközök:</strong> \${toolCost.toLocaleString('hu-HU')} Ft</p>
@@ -2085,11 +2088,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
               <h5>DIY összköltség: \${totalCost.toLocaleString('hu-HU')} Ft</h5>
               <p><em>Profi ár: \${professionalCost.toLocaleString('hu-HU')} Ft</em></p>
               <p><strong>💰 Megtakarítás: \${savings.toLocaleString('hu-HU')} Ft (\${Math.round((savings/professionalCost)*100)}%)</strong></p>
-              <div class= "calculator-note">
+              <div class="calculator-note">
                 <small>⏱️ Becsült munkaidő: \${Math.round(area * 2.5)} óra (\${Math.ceil(area * 2.5 / 8)} munkanap)</small>
               </div>
             </div>
           \`;
+          resultDiv.classList.remove('hidden');
         }
       `
     }
@@ -2388,19 +2392,20 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
           let tenYearMaintenance = annualMaintenance * 10;
           let totalLifecycleCost = totalPrice + tenYearMaintenance;
           
-          document.getElementById('calculator-result').innerHTML = \`
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML = \`
             <h4>Kerti Út Költségbecslés - \${materialName}</h4>
-            <div class= "result-breakdown">
+            <div class="result-breakdown">
               <p><strong>Alapár (\${materialName}):</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsEdging ? \`<p><strong>Szegélyezés:</strong> \${edgingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               <hr>
               <h5>Telepítési költség: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class= "lifecycle-cost">
+              <div class="lifecycle-cost">
                 <p><strong>🔧 10 éves karbantartás:</strong> \${tenYearMaintenance.toLocaleString('hu-HU')} Ft</p>
                 <p><strong>💰 Teljes životciklus költség:</strong> \${totalLifecycleCost.toLocaleString('hu-HU')} Ft</p>
               </div>
-              <div class= "material-benefits">
+              <div class="material-benefits">
                 <small>
                   <strong>\${materialName} jellemzők:</strong><br>
                   \${isNaturalStone ? 
@@ -2411,6 +2416,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
               </div>
             </div>
           \`;
+          resultDiv.classList.remove('hidden');
         }
       `
     }
