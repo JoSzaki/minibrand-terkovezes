@@ -4211,9 +4211,10 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
           let subtotal = basePrice + drainagePrice + edgingPrice;
           let totalPrice = subtotal * seasonDiscounts[season];
           
-          document.getElementById('calculator-result').innerHTML = \`
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML = \`
             <h4>Költségkalkuláció Eredménye</h4>
-            <div class= "result-breakdown">
+            <div class="result-breakdown">
               <p><strong>Térkövezés alapár:</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsDrainage ? \`<p><strong>Vízelvezetés:</strong> \${drainagePrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               \${edging > 0 ? \`<p><strong>Szegélyezés:</strong> \${edgingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
@@ -4221,11 +4222,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megol
               <hr>
               <h5>Becsült végösszeg: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
               <p><em>(\${(totalPrice/area).toLocaleString('hu-HU')} Ft/m²)</em></p>
-              <div class= "calculator-note">
+              <div class="calculator-note">
                 <small>⚠️ Ez egy <strong>becslés</strong>. A pontos ár függ a helyi adottságoktól, hozzáférhetőségtől és a projekt részleteitől. Kérjen részletes árajánlatot!</small>
               </div>
             </div>
           \`;
+          resultDiv.classList.remove('hidden');
         }
       `
     }
