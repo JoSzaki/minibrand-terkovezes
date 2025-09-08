@@ -1,0 +1,354 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { generateSchemasForPage } from '../schema-config.js';
+
+const title = "Gyakori Kérdések - Térkövezés Budapest | GYIK";
+const description = "Gyakori kérdések térkövezésről: árak, kivitelezés, tartósság, karbantartás. Minden amit tudni kell a térkövezési projektekről.";
+
+// Generate FAQ schema
+const faqSchemas = generateSchemasForPage('faq', {
+    title: title,
+    description: description
+});
+---
+
+<Layout title={title} description={description}>
+    <!-- FAQ Schema -->
+    {faqSchemas.map(schema => (
+        <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    ))}
+
+    <!-- FAQ Page Specific Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Mennyibe kerül egy kocsibeálló térkövezése?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kocsibeálló térkövezés átlagosan 12.000-25.000 Ft/m² között mozog, a térkő típusától és a terep előkészítésétől függően. Standard betontérkő esetén 12.000-15.000 Ft/m², prémium anyagoknál 20.000-25.000 Ft/m² a várható költség."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "Mennyi idő alatt készül el egy térkövezési projekt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Egy átlagos méretű kocsibeálló (30-50 m²) térkövezése 3-5 munkanap alatt elkészül. Nagyobb projektek esetén (100+ m²) 1-2 hét szükséges. Az időtartam függ a terület méretétől, a talaj állapotától és az időjárástól."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <Header />
+    
+    <!-- Breadcrumb -->
+    <nav class="bg-concrete-50 py-4">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ol class="flex items-center space-x-2 text-sm text-concrete-600">
+                <li><a href="/minibrand-terkovezes/" class="hover:text-primary-600">Főoldal</a></li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-concrete-800 font-medium">Gyakori Kérdések</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary-600 to-primary-800 py-16 lg:py-24">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-white font-heading mb-6">
+                    Gyakori Kérdések
+                </h1>
+                <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Minden amit tudni kell a térkövezésről. Ha nem találja a válaszát, 
+                    vegye fel velünk a kapcsolatot!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Kocsibeálló Térkövezés -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mr-4">
+                        Kocsibeálló Térkövezés
+                    </h2>
+                    <a href="/minibrand-terkovezes/kocsibeallo-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200">
+                        Részletek →
+                    </a>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mennyibe kerül egy kocsibeálló térkövezése?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Kocsibeálló térkövezés átlagosan <strong>12.000-25.000 Ft/m²</strong> között mozog, a térkő típusától és a terep előkészítésétől függően. Standard betontérkő esetén 12.000-15.000 Ft/m², prémium anyagoknál 20.000-25.000 Ft/m² a várható költség. Az ár tartalmazza az alapozást, anyagot és munkadíjat.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen alapozás szükséges kocsibeállóhoz?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Kocsibeálló esetén <strong>15-20 cm vastag</strong> tömörített kavics alapozás szükséges az autók súlyának elbírásához. A talaj típusától függően geotextíliát is alkalmazunk. Megfelelő vízelvezetés biztosítása elengedhetetlen a tartósság érdekében.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mekkora lejtést kell tervezni kocsibeállónál?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Optimális lejtés <strong>1-2%</strong> a vízelvezetés érdekében. Túl nagy lejtés (5% felett) csúszóssá teheti a felületet, míg túl kicsi (<0.5%) pangó vizet eredményez. A lejtés irányát a telek adottságaihoz igazítjuk.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mennyi idő alatt készül el egy kocsibeálló?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Átlagos méretű kocsibeálló (30-50 m²) <strong>3-5 munkanap</strong> alatt elkészül normál körülmények között. Bonyolultabb terepviszonyok, nagyobb terület vagy speciális minták esetén 1-2 hét szükséges. Az időjárás jelentősen befolyásolja a munkavégzést.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terasz Térkövezés -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mr-4">
+                        Terasz Térkövezés
+                    </h2>
+                    <a href="/minibrand-terkovezes/terasz-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200">
+                        Részletek →
+                    </a>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen térkő ajánlott teraszhoz?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Teraszhoz <strong>nagyobb méretű, síma felületű</strong> térkövek ajánlottak a kényelmes közlekedés érdekében. Népszerűek a 40x40 cm vagy 60x40 cm méretű lapok. Színben harmonizáljon a ház homlokzatával. Csúszásgátló felület fontos nedves időben.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Szükséges-e vízszigetelés terasz alatt?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Igen, különösen <strong>pince vagy lakótér feletti terasz</strong> esetén elengedhetetlen a vízszigetelés. Használjunk bitumenes lemez vagy folyékony vízszigetelést, majd védőréteget a térkő alá. Megfelelő lejtés biztosítása szintén kulcsfontosságú.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Hogyan oldható meg a terasz vízelvezetése?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Terasz vízelvezetését <strong>lineáris lefolyókkal</strong> vagy szegélyben elhelyezett víznyelőkkel oldjuk meg. Minimum 1-2% lejtés szükséges a fal felől kifelé. Fontos a csapadékvíz elvezetése az alapoktól távol.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mikor lehet használni a terászt térkövezés után?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            A terasz <strong>24-48 óra múlva</strong> óvatosan járható, de teljes terheléssel csak 7 nap után ajánljuk használni. Ez idő alatt a homokágy és az alapozás teljesen tömörödik. Esős időben hosszabb várakozási idő szükséges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kert és Járda Térkövezés -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mr-4">
+                        Kert és Járda Térkövezés
+                    </h2>
+                    <a href="/minibrand-terkovezes/kert-jarda-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200">
+                        Részletek →
+                    </a>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen széles legyen egy kerti út?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Kerti séta úton <strong>80-100 cm</strong> elegendő, főútvonalakon 120-150 cm ajánlott a kényelmes közlekedéshez. Kétirányú forgalomhoz minimum 180 cm szükséges. A szélesség függjön a kert méretétől és a használat gyakoriságától.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Hogyan akadályozzuk meg a gyomosodást?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Geotextília alkalmazása</strong> az alapozás alatt megakadályozza a gyomok átnövését. Fugahomok helyett polimer fugázó anyag használata is hatékony. Rendszeres karbantartás és évente 1-2x fugák feltöltése szükséges.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen mintázat ajánlott kerti útra?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            Természetes hatáshoz <strong>szabálytalan kőmintázat</strong> vagy rómaikötés ajánlott. Egyenes vonalú kerthez geometrikus minták (parkett, halszálka) illeszkednek. Színkombinációkkal érdekes hatások érhetők el.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Szükséges-e szegélykő kerti útnál?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Igen, elengedhetetlen</strong> a térkövek helyzetének rögzítéséhez. Járdakő szegély (6x20 cm) vagy természetes kő szegély alkalmazható. A szegély betonágyba fektetendő és megfelelő magasságban rögzítendő.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Térkő Típusok -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mr-4">
+                        Térkő Típusok
+                    </h2>
+                    <a href="/minibrand-terkovezes/terko-tipusok" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200">
+                        Részletek →
+                    </a>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mi a különbség a beton és természetes kő térkovek között?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Betontérkő</strong> olcsóbb, egyenletes minőségű, könnyebben cserélhető. <strong>Természetes kő</strong> drágább, de tartósabb, egyedi mintázatú és természetes színű. A választás függ a költségvetéstől és esztétikai igényektől.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen térkő a legtartósabb?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Gránit térkovek</strong> a legtartósabbak (50+ év), de drágák. Jó kompromisszum a <strong>prémium betontérkő</strong> (20-30 év) megfelelő vastagságban. A tartósság függ a minőségtől, vastagságtól és a helyes kivitelezéstől.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen vastagságú térkő szükséges?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Gyalogos forgalomhoz</strong> 4-5 cm, <strong>kocsibeállóhoz</strong> 6-8 cm vastagság szükséges. Nehéz teherforgalomhoz minimum 8-10 cm. A vastagabb térkő tartósabb, de drágább. Megfelelő alapozással vékonyabb is elegendő lehet.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Hogyan válasszuk ki a megfelelő színt?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            A színválasztás <strong>harmonizáljon az épület homlokzatával</strong> és a környezettel. Világos színek kisebbnek mutatják a területet, sötét színek melegebbek. Vegyes színezés természetes hatást kelt. Mindig kérjen mintát a döntés előtt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Általános Kérdések -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-8">
+                    Általános Kérdések
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mikor a legjobb időszak térkövezésre?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Április-október</strong> között ideális a térkövezés, amikor nincs fagyveszély. Legjobb a tavaszi és őszi időszak, amikor nem túl meleg. Télen csak fűtött területen dolgozunk. Esős időszakban szünetel a munka.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Mennyi idő alatt térül meg a térkövezés?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            A térkövezés <strong>hosszú távú befektetés</strong>. Az ingatlan értékét 5-15%-kal növeli. Karbantartási költségek alacsonyak, 20-30 évig tart megfelelő kivitelezés mellett. Összehasonlítva más burkolatokkal, középtávon költséghatékony.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Hogyan tartsuk karban a térkövezett felületet?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>Rendszeres söprés</strong> és évente 1-2x magasnyomású mosás elegendő. Fugák feltöltése szükség szerint. Télen síkosság-mentesítő só helyett homokot használjunk. Olajos szennyeződések azonnali eltávolítása fontos.
+                        </p>
+                    </div>
+
+                    <div class="bg-concrete-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-concrete-800 mb-3">
+                            Milyen garanciát vállalnak a munkára?
+                        </h3>
+                        <p class="text-concrete-700 leading-relaxed">
+                            <strong>2 év garancia</strong> minden térkövezési munkára anyag- és kivitelezési hibákra. Ez magában foglalja a süllyedést, repedéseket, térkő elmozdulását. Rendszeres karbantartás és rendeltetésszerű használat mellett érvényes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary-600 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white font-heading mb-4">
+                Nem találta a választ?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8">
+                Vegye fel velünk a kapcsolatot, szívesen válaszolunk minden kérdésére!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/minibrand-terkovezes/kapcsolat" class="bg-white hover:bg-concrete-50 text-primary-600 font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+                    Kapcsolat felvétel
+                </a>
+                <a href="tel:+36301234567" class="bg-primary-800 hover:bg-primary-900 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+                    +36 30 123 4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
