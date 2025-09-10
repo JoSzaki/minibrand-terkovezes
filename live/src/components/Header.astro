@@ -76,3 +76,41 @@
 
 <!-- Spacer for fixed header -->
 <div class="h-20"></div>
+
+<script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('[data-collapse-toggle="navbar-cta"]');
+        const mobileMenu = document.getElementById('navbar-cta');
+        
+        if (mobileMenuButton && mobileMenu) {
+            console.log('📱 Mobile menu initialized');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                console.log('🖱️ Mobile menu button clicked');
+                
+                // Toggle the hidden class
+                mobileMenu.classList.toggle('hidden');
+                
+                // Update aria-expanded
+                const isExpanded = !mobileMenu.classList.contains('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', isExpanded.toString());
+                
+                console.log(`📋 Menu is now ${isExpanded ? 'open' : 'closed'}`);
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                        console.log('📱 Menu closed by clicking outside');
+                    }
+                }
+            });
+        } else {
+            console.error('❌ Mobile menu elements not found');
+        }
+    });
+</script>
