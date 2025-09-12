@@ -7,6 +7,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
     "perf:test": "node performance-test.js",
     "perf:lighthouse": "lhci autorun",
     "perf:bundle": "npm run build && node bundle-analysis.js",
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.55.0",
     "glob": "^11.0.3",
     "puppeteer-core": "^24.19.0",
     "rollup-plugin-terser": "^7.0.2",
