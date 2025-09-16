@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import { FaGem, FaHome, FaIndustry, FaPalette, FaLeaf } from 'react-icons/fa';
 
 interface TerkoOption {
@@ -6,7 +6,7 @@ interface TerkoOption {
   title: string;
   description: string;
   image: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   details: {
     price: string;
     durability: string;
