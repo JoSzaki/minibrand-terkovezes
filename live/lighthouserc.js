@@ -3,14 +3,14 @@ export default {
     collect: {
       // Test against localhost development server
       url: [
-        'http://localhost:4324/minibrand-terkovezes/',
-        'http://localhost:4324/minibrand-terkovezes/kocsibeallo-terkovezes/',
-        'http://localhost:4324/minibrand-terkovezes/terasz-terkovezes/',
-        'http://localhost:4324/minibrand-terkovezes/kert-jarda-terkovezes/',
-        'http://localhost:4324/minibrand-terkovezes/blog/',
-        'http://localhost:4324/minibrand-terkovezes/kapcsolat/',
-        'http://localhost:4324/minibrand-terkovezes/arak/',
-        'http://localhost:4324/minibrand-terkovezes/referenciak/'
+        'http://localhost:4324/',
+        'http://localhost:4324/kocsibeallo-terkovezes/',
+        'http://localhost:4324/terasz-terkovezes/',
+        'http://localhost:4324/kert-jarda-terkovezes/',
+        'http://localhost:4324/blog/',
+        'http://localhost:4324/kapcsolat/',
+        'http://localhost:4324/arak/',
+        'http://localhost:4324/referenciak/'
       ],
       numberOfRuns: 3,
       settings: {

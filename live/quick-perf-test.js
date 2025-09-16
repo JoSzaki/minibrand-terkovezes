@@ -8,7 +8,7 @@ async function quickPerformanceTest() {
   
   try {
     const startTime = Date.now();
-    await page.goto('http://localhost:4324/minibrand-terkovezes/', { 
+    await page.goto('http://localhost:4324/', { 
       waitUntil: 'networkidle',
       timeout: 30000 
     });

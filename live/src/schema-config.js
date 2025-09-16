@@ -1,4 +1,4 @@
-// Schema konfigur√°ci√≥s f√°jl - automatikus bet√∂lt√©s a Cloud sz√°m√°ra
+// Schema konfigur·ciÛs f·jl - automatikus betˆltÈs a Cloud sz·m·ra
 export const SCHEMAS = {
   // Local Business Schema
   LOCAL_BUSINESS: {
@@ -61,7 +61,7 @@ export const SCHEMAS = {
     }
   },
 
-  // FAQ How-to Schema kombin√°ci√≥
+  // FAQ How-to Schema kombin·ciÛ
   FAQ_HOWTO: {
     "faq": {
       "@context": "https://schema.org",
@@ -83,51 +83,51 @@ export const SCHEMAS = {
   }
 };
 
-// Oldalt√≠pusok √©s hozz√°juk tartoz√≥ schema konfigur√°ci√≥k
+// OldaltÌpusok Ès hozz·juk tartozÛ schema konfigur·ciÛk
 export const PAGE_TYPE_SCHEMAS = {
-  // Szolg√°ltat√°s oldalak - teljes schema lefedetts√©g
+  // Szolg·ltat·s oldalak - teljes schema lefedettsÈg
   "service": [SCHEMAS.LOCAL_BUSINESS, SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq],
   
-  // Blog bejegyz√©sek - minden blog gyakorlati √∫tmutat√≥ FAQ-val
+  // Blog bejegyzÈsek - minden blog gyakorlati ˙tmutatÛ FAQ-val
   "blog": [SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq, SCHEMAS.FAQ_HOWTO.howto],
   
-  // √ötmutat√≥/Tutorial oldalak - l√©p√©sr≈ël l√©p√©sre + FAQ
+  // ⁄tmutatÛ/Tutorial oldalak - lÈpÈsrıl lÈpÈsre + FAQ
   "tutorial": [SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq, SCHEMAS.FAQ_HOWTO.howto],
   
-  // FAQ oldalak - tiszt√°n GYIK
+  // FAQ oldalak - tiszt·n GYIK
   "faq": [SCHEMAS.FAQ_HOWTO.faq],
   
-  // Komplex √∫tmutat√≥k - teljes schema spektrum
+  // Komplex ˙tmutatÛk - teljes schema spektrum
   "guide": [SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq, SCHEMAS.FAQ_HOWTO.howto],
   
-  // Helyi szolg√°ltat√°s oldalak - helyi √ºzlet + gyakorlati tan√°csok
+  // Helyi szolg·ltat·s oldalak - helyi ¸zlet + gyakorlati tan·csok
   "local-service": [SCHEMAS.LOCAL_BUSINESS, SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq, SCHEMAS.FAQ_HOWTO.howto],
   
-  // Term√©k/szolg√°ltat√°s bemutat√≥ - √ºzleti + tartalmi
+  // TermÈk/szolg·ltat·s bemutatÛ - ¸zleti + tartalmi
   "product": [SCHEMAS.LOCAL_BUSINESS, SCHEMAS.ARTICLE, SCHEMAS.FAQ_HOWTO.faq],
   
-  // √Åltal√°nos tartalmi oldalak - csak cikk
+  // ¡ltal·nos tartalmi oldalak - csak cikk
   "content": [SCHEMAS.ARTICLE],
   
-  // Kapcsolat/El√©rhet≈ës√©g oldalak - helyi √ºzlet info
+  // Kapcsolat/ElÈrhetısÈg oldalak - helyi ¸zlet info
   "contact": [SCHEMAS.LOCAL_BUSINESS]
 };
 
-// Schema gener√°l√≥ f√ºggv√©ny
+// Schema gener·lÛ f¸ggvÈny
 export function getSchemas(pageType) {
   const schemas = PAGE_TYPE_SCHEMAS[pageType];
   if (!schemas) {
-    console.warn(`Ismeretlen oldalt√≠pus: ${pageType}. Alap√©rtelmezett Article schema haszn√°lata.`);
+    console.warn(`Ismeretlen oldaltÌpus: ${pageType}. AlapÈrtelmezett Article schema haszn·lata.`);
     return [SCHEMAS.ARTICLE];
   }
   return schemas;
 }
 
-// Schema kit√∂lt≈ë f√ºggv√©ny
+// Schema kitˆltı f¸ggvÈny
 export function fillSchema(schemaTemplate, data) {
   const schema = JSON.parse(JSON.stringify(schemaTemplate));
   
-  // Rekurz√≠v kit√∂lt√©s
+  // RekurzÌv kitˆltÈs
   function fillRecursive(obj, dataObj) {
     for (const key in obj) {
       if (typeof obj[key] === "object" && obj[key] !== null) {
@@ -148,7 +148,7 @@ export function fillSchema(schemaTemplate, data) {
   return schema;
 }
 
-// Automatikus schema gener√°l√°s oldalt√≠pus alapj√°n
+// Automatikus schema gener·l·s oldaltÌpus alapj·n
 export function generateSchemasForPage(pageType, contentData) {
   const requiredSchemas = getSchemas(pageType);
   const filledSchemas = [];
@@ -161,7 +161,7 @@ export function generateSchemasForPage(pageType, contentData) {
   return filledSchemas;
 }
 
-// Export a Cloud sz√°m√°ra
+// Export a Cloud sz·m·ra
 export default {
   SCHEMAS,
   PAGE_TYPE_SCHEMAS,

@@ -78,11 +78,11 @@ class SpeedTestRunner {
 
   async checkDevServer() {
     try {
-      const response = await fetch('http://localhost:4324/minibrand-terkovezes/');
+      const response = await fetch('http://localhost:4324/');
       if (!response.ok) {
         throw new Error(`Server responded with ${response.status}`);
       }
-      console.log('✅ Development server is running on http://localhost:4324/minibrand-terkovezes/\n');
+      console.log('✅ Development server is running on http://localhost:4324/\n');
     } catch (error) {
       throw new Error('❌ Development server is not running. Please start it with "npm run dev" first.');
     }

@@ -15,7 +15,7 @@ const {
   className = ''
 } = Astro.props;
 
-// Tartalom feldolgoz√°sa term√©szetes linkekkel
+// Tartalom feldolgoz·sa termÈszetes linkekkel
 const processedContent = processContentForLinks(content, currentSlug, maxLinksPerParagraph);
 ---
 
@@ -31,7 +31,7 @@ const processedContent = processContentForLinks(content, currentSlug, maxLinksPe
     @apply decoration-2;
   }
   
-  /* Gondoskodunk r√≥la, hogy a gener√°lt linkek j√≥l n√©zzenek ki */
+  /* Gondoskodunk rÛla, hogy a gener·lt linkek jÛl nÈzzenek ki */
   .enhanced-content :global(p) {
     @apply mb-6 leading-relaxed;
   }

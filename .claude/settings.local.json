@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx playwright test:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npm test)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run preview:*)",
+      "Bash(npm run build:*)",
+      "WebSearch"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -2,7 +2,7 @@
 // Based on blogPosts.js and paving industry topics
 
 export const contentRelationships = {
-  // KocsibeÃ¡llÃ³ tÃ©rkÃ¶vezÃ©s kapcsolatok
+  // Kocsibeálló térkövezés kapcsolatok
   "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": {
     mainTopics: ["hogyan-valasszunk-terkovet", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
     related: ["terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas", "terkovezes-tervezes-alapjai"],
@@ -27,7 +27,7 @@ export const contentRelationships = {
     supporting: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"]
   },
 
-  // Terasz tÃ©rkÃ¶vezÃ©s kapcsolatok
+  // Terasz térkövezés kapcsolatok
   "terasz-terkovezes-trendek-2025": {
     mainTopics: ["diy-terasz-terkovezes-lepesrol-lepesre", "szines-terkovek-kreativ-mintak-kombinaciok"],
     related: ["terasz-terkovezes-trendek-2025", "beton-vagy-termeszetes-ko-terkovek"],
@@ -40,7 +40,7 @@ export const contentRelationships = {
     supporting: ["beton-vagy-termeszetes-ko-terkovek", "terkovezes-koltsegkalkulator-2025"]
   },
 
-  // Kert Ã©s jÃ¡rda tÃ©rkÃ¶vezÃ©s kapcsolatok
+  // Kert és járda térkövezés kapcsolatok
   "kerti-utak-tervezese-terko-vs-termeszetes-ko": {
     mainTopics: ["terkozott-jardak-karbantartasa-evszakonkent", "beton-vagy-termeszetes-ko-terkovek"],
     related: ["diy-terasz-terkovezes-lepesrol-lepesre", "szines-terkovek-kreativ-mintak-kombinaciok"],
@@ -53,7 +53,7 @@ export const contentRelationships = {
     supporting: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"]
   },
 
-  // TÃ©rkÅ‘ tÃ­pusok kapcsolatok
+  // Térkõ típusok kapcsolatok
   "beton-vagy-termeszetes-ko-terkovek": {
     mainTopics: ["antik-terko-jellemzoi-felhasznalasa", "szines-terkovek-kreativ-mintak-kombinaciok"],
     related: ["hogyan-valasszunk-terkovet", "kerti-utak-tervezese-terko-vs-termeszetes-ko"],
@@ -72,7 +72,7 @@ export const contentRelationships = {
     supporting: ["diy-terasz-terkovezes-lepesrol-lepesre", "terkovezes-tervezes-alapjai"]
   },
 
-  // TervezÃ©s Ã©s tanÃ¡csadÃ¡s kapcsolatok
+  // Tervezés és tanácsadás kapcsolatok
   "terkovezes-tervezes-alapjai": {
     mainTopics: ["terkovezes-koltsegkalkulator-2025", "kocsibeallo-vizellevezetes-terkovezes-rendszerek"],
     related: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "diy-terasz-terkovezes-lepesrol-lepesre"],
@@ -85,7 +85,7 @@ export const contentRelationships = {
     supporting: ["beton-vagy-termeszetes-ko-terkovek", "diy-terasz-terkovezes-lepesrol-lepesre"]
   },
 
-  // Ãšj blog bejegyzÃ©sek kapcsolatok
+  // Új blog bejegyzések kapcsolatok
   "terkovezes-karbantartas-javitas-szakertoi-tippek": {
     mainTopics: ["terkozott-jardak-karbantartasa-evszakonkent", "beton-vagy-termeszetes-ko-terkovek"],
     related: ["kocsibeallo-terkovezes-arak-tipusok-kivitelezes", "hogyan-valasszunk-terkovet"],
@@ -98,7 +98,7 @@ export const contentRelationships = {
     supporting: ["diy-terasz-terkovezes-lepesrol-lepesre", "terkovezes-tervezes-alapjai"]
   },
 
-  // Ãšj batch 4 blog bejegyzÃ©sek kapcsolatok
+  // Új batch 4 blog bejegyzések kapcsolatok
   "profi-terkovezes-kivitelezes-lepesek-hibak": {
     mainTopics: ["terkovezes-tervezes-alapjai", "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"],
     related: ["terkovezes-koltsegkalkulator-2025", "hogyan-valasszunk-terkovet"],
@@ -147,25 +147,25 @@ export function getContextualLinks(slug) {
 
 // SEO-friendly anchor text suggestions for internal links
 export const anchorTexts = {
-  "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": ["kocsibeÃ¡llÃ³ tÃ©rkÃ¶vezÃ©s Ã¡rak", "tÃ©rkÃ¶vezÃ©s kivitelezÃ©s", "kocsibeÃ¡llÃ³ tÃ©rkÅ‘ Ã¡rak"],
-  "hogyan-valasszunk-terkovet": ["tÃ©rkÅ‘ vÃ¡lasztÃ¡s", "kocsibeÃ¡llÃ³ tÃ©rkÅ‘ tÃ­pusok", "tÃ©rkÅ‘ kivÃ¡lasztÃ¡s"],
-  "kocsibeallo-vizellevezetes-terkovezes-rendszerek": ["vÃ­zelvezetÃ©s tÃ©rkÃ¶vezÃ©ssel", "tÃ©rkÃ¶vezÃ©s vÃ­zelvezetÃ©s", "vÃ­zelvezetÃ©si rendszerek"],
-  "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": ["tÃ©rkÅ‘ vs aszfalt", "burkolat Ã¶sszehasonlÃ­tÃ¡s", "kocsibeÃ¡llÃ³ burkolatok"],
-  "terasz-terkovezes-trendek-2025": ["terasz tÃ©rkÃ¶vezÃ©s trendek", "modern tÃ©rkÃ¶vezÃ©s", "tÃ©rkÅ‘ trendek 2025"],
-  "diy-terasz-terkovezes-lepesrol-lepesre": ["DIY tÃ©rkÃ¶vezÃ©s", "tÃ©rkÃ¶vezÃ©s lÃ©pÃ©srÅ‘l lÃ©pÃ©sre", "sajÃ¡t kezÅ± tÃ©rkÃ¶vezÃ©s"],
-  "kerti-utak-tervezese-terko-vs-termeszetes-ko": ["kerti utak tÃ©rkÅ‘", "tÃ©rkÅ‘ vs termÃ©szetes kÅ‘", "kerti Ãºt tervezÃ©s"],
-  "terkozott-jardak-karbantartasa-evszakonkent": ["tÃ©rkÅ‘ karbantartÃ¡s", "jÃ¡rda karbantartÃ¡s", "tÃ©rkÃ¶vezett felÃ¼let Ã¡polÃ¡s"],
-  "beton-vagy-termeszetes-ko-terkovek": ["beton vagy termÃ©szetes kÅ‘", "tÃ©rkÅ‘ tÃ­pusok", "tÃ©rkÅ‘ Ã¶sszehasonlÃ­tÃ¡s"],
-  "antik-terko-jellemzoi-felhasznalasa": ["antik tÃ©rkÅ‘", "klasszikus tÃ©rkÅ‘", "antik tÃ©rkÅ‘ tulajdonsÃ¡gai"],
-  "szines-terkovek-kreativ-mintak-kombinaciok": ["szÃ­nes tÃ©rkÃ¶vek", "tÃ©rkÅ‘ mintÃ¡k", "kreatÃ­v tÃ©rkÃ¶vezÃ©s"],
-  "terkovezes-tervezes-alapjai": ["tÃ©rkÃ¶vezÃ©s tervezÃ©s", "tÃ©rkÃ¶vezÃ©si alapelvek", "tÃ©rkÃ¶vezÃ©s megtervezÃ©se"],
-  "terkovezes-koltsegkalkulator-2025": ["tÃ©rkÃ¶vezÃ©s kÃ¶ltsÃ©gek", "tÃ©rkÅ‘ Ã¡rak 2025", "tÃ©rkÃ¶vezÃ©s kalkulÃ¡tor"],
-  "terkovezes-karbantartas-javitas-szakertoi-tippek": ["tÃ©rkÃ¶vezÃ©s karbantartÃ¡s", "tÃ©rkÅ‘ javÃ­tÃ¡s", "tÃ©rkÅ‘ Ã¡polÃ¡s szakÃ©rtÅ‘i tippek"],
-  "modern-terkovezes-trendek-design-otletek-2025": ["modern tÃ©rkÃ¶vezÃ©s trendek", "tÃ©rkÅ‘ design Ã¶tletek", "2025 tÃ©rkÃ¶vezÃ©si trendek"],
-  "profi-terkovezes-kivitelezes-lepesek-hibak": ["professzionÃ¡lis tÃ©rkÃ¶vezÃ©s", "tÃ©rkÃ¶vezÃ©s kivitelezÃ©s", "tÃ©rkÃ¶vezÃ©si hibÃ¡k elkerÃ¼lÃ©se"],
-  "kornyezetbarat-terkovezes-megoldasok-2025": ["kÃ¶rnyezetbarÃ¡t tÃ©rkÃ¶vezÃ©s", "vÃ­zÃ¡teresztÅ‘ tÃ©rkÅ‘", "Ã¶ko tÃ©rkÃ¶vezÃ©s megoldÃ¡sok"],
-  "terkovezes-hibak-problemak-megoldasok-budapest": ["tÃ©rkÃ¶vezÃ©s hibÃ¡k javÃ­tÃ¡sa", "tÃ©rkÅ‘ problÃ©mÃ¡k Budapest", "tÃ©rkÃ¶vezÃ©si javÃ­tÃ¡s kÃ¶ltsÃ©gek"],
-  "terkovezes-budapest-keruletek-arak-szolgaltatasok": ["tÃ©rkÃ¶vezÃ©s Budapest Ã¡rak", "kerÃ¼leti tÃ©rkÃ¶vezÃ©s", "budapesti tÃ©rkÃ¶vezÅ‘ vÃ¡llalkozÃ³k"]
+  "kocsibeallo-terkovezes-arak-tipusok-kivitelezes": ["kocsibeálló térkövezés árak", "térkövezés kivitelezés", "kocsibeálló térkõ árak"],
+  "hogyan-valasszunk-terkovet": ["térkõ választás", "kocsibeálló térkõ típusok", "térkõ kiválasztás"],
+  "kocsibeallo-vizellevezetes-terkovezes-rendszerek": ["vízelvezetés térkövezéssel", "térkövezés vízelvezetés", "vízelvezetési rendszerek"],
+  "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas": ["térkõ vs aszfalt", "burkolat összehasonlítás", "kocsibeálló burkolatok"],
+  "terasz-terkovezes-trendek-2025": ["terasz térkövezés trendek", "modern térkövezés", "térkõ trendek 2025"],
+  "diy-terasz-terkovezes-lepesrol-lepesre": ["DIY térkövezés", "térkövezés lépésrõl lépésre", "saját kezû térkövezés"],
+  "kerti-utak-tervezese-terko-vs-termeszetes-ko": ["kerti utak térkõ", "térkõ vs természetes kõ", "kerti út tervezés"],
+  "terkozott-jardak-karbantartasa-evszakonkent": ["térkõ karbantartás", "járda karbantartás", "térkövezett felület ápolás"],
+  "beton-vagy-termeszetes-ko-terkovek": ["beton vagy természetes kõ", "térkõ típusok", "térkõ összehasonlítás"],
+  "antik-terko-jellemzoi-felhasznalasa": ["antik térkõ", "klasszikus térkõ", "antik térkõ tulajdonságai"],
+  "szines-terkovek-kreativ-mintak-kombinaciok": ["színes térkövek", "térkõ minták", "kreatív térkövezés"],
+  "terkovezes-tervezes-alapjai": ["térkövezés tervezés", "térkövezési alapelvek", "térkövezés megtervezése"],
+  "terkovezes-koltsegkalkulator-2025": ["térkövezés költségek", "térkõ árak 2025", "térkövezés kalkulátor"],
+  "terkovezes-karbantartas-javitas-szakertoi-tippek": ["térkövezés karbantartás", "térkõ javítás", "térkõ ápolás szakértõi tippek"],
+  "modern-terkovezes-trendek-design-otletek-2025": ["modern térkövezés trendek", "térkõ design ötletek", "2025 térkövezési trendek"],
+  "profi-terkovezes-kivitelezes-lepesek-hibak": ["professzionális térkövezés", "térkövezés kivitelezés", "térkövezési hibák elkerülése"],
+  "kornyezetbarat-terkovezes-megoldasok-2025": ["környezetbarát térkövezés", "vízáteresztõ térkõ", "öko térkövezés megoldások"],
+  "terkovezes-hibak-problemak-megoldasok-budapest": ["térkövezés hibák javítása", "térkõ problémák Budapest", "térkövezési javítás költségek"],
+  "terkovezes-budapest-keruletek-arak-szolgaltatasok": ["térkövezés Budapest árak", "kerületi térkövezés", "budapesti térkövezõ vállalkozók"]
 };
 
 // Function to get anchor text for a link

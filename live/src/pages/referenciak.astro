@@ -3,78 +3,78 @@ import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = "Térkövezés Referenciák Budapest | Elkészült Projektek Galéria";
-const description = "Térkövezés referenciák Budapest ✓ Kocsibeálló ✓ Terasz ✓ Kerti utak ✓ Elkészült projektek ✓ Galéria ✓ Inspirációk ✓ MiniBrand Térkövezés munkái";
+const title = "T�rk�vez�s Referenci�k Budapest | Elk�sz�lt Projektek Gal�ria";
+const description = "T�rk�vez�s referenci�k Budapest ? Kocsibe�ll� ? Terasz ? Kerti utak ? Elk�sz�lt projektek ? Gal�ria ? Inspir�ci�k ? MiniBrand T�rk�vez�s munk�i";
 const canonicalURL = "https://minibrand-terkovezes.hu/referenciak";
 
-// Térkövezési referencia képek - duplikációk nélkül, 9 egyedi kép
+// T�rk�vez�si referencia k�pek - duplik�ci�k n�lk�l, 9 egyedi k�p
 const referenceImages = [
-  // Kocsibeálló kategória (2 kép)
+  // Kocsibe�ll� kateg�ria (2 k�p)
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4",
-    alt: "Elegáns térkövezett kocsibeálló kovácsoltvas kapuval - MiniBrand Térkövezés referencia",
-    category: "Kocsibeálló",
-    description: "Precízen kivitelezett térkőburkolat strapabíró és esztétikus megoldással."
+    alt: "Eleg�ns t�rk�vezett kocsibe�ll� kov�csoltvas kapuval - MiniBrand T�rk�vez�s referencia",
+    category: "Kocsibe�ll�",
+    description: "Prec�zen kivitelezett t�rk�burkolat strapab�r� �s eszt�tikus megold�ssal."
   },
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8",
-    alt: "Térkövezett kocsibeálló kovácsoltvas kapu előtt - professzionális térkövezés",
-    category: "Kocsibeálló",
-    description: "Strapabíró térkő burkolat, ellenáll az időjárás hatásainak."
+    alt: "T�rk�vezett kocsibe�ll� kov�csoltvas kapu el�tt - professzion�lis t�rk�vez�s",
+    category: "Kocsibe�ll�",
+    description: "Strapab�r� t�rk� burkolat, ellen�ll az id�j�r�s hat�sainak."
   },
   
-  // Kerti járda kategória (2 kép)
+  // Kerti j�rda kateg�ria (2 k�p)
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q",
-    alt: "Természetes hatású térkövezett kerti járda - harmonikus kertépítés",
-    category: "Kerti járda",
-    description: "Természetes kőmintázatú burkolat, harmonikusan illeszkedik a környező növényzethez."
+    alt: "Term�szetes hat�s� t�rk�vezett kerti j�rda - harmonikus kert�p�t�s",
+    category: "Kerti j�rda",
+    description: "Term�szetes k�mint�zat� burkolat, harmonikusan illeszkedik a k�rnyez� n�v�nyzethez."
   },
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/oszko-gyorgy-terkovezes-qhld8u75js",
-    alt: "Műfű és térköves járda kombinációja - modern kerti megoldás",
-    category: "Kerti járda",
-    description: "Gondozásmentes kert műfűvel és térkő burkolattal."
+    alt: "M�f� �s t�rk�ves j�rda kombin�ci�ja - modern kerti megold�s",
+    category: "Kerti j�rda",
+    description: "Gondoz�smentes kert m�f�vel �s t�rk� burkolattal."
   },
   
-  // Udvar kategória (2 kép)
+  // Udvar kateg�ria (2 k�p)
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb",
-    alt: "Nagy felületű térkőburkolat természetes árnyalatokkal - udvari térkövezés",
+    alt: "Nagy fel�let� t�rk�burkolat term�szetes �rnyalatokkal - udvari t�rk�vez�s",
     category: "Udvar",
-    description: "Nagy felületű burkolat természetes árnyalatokkal, ideális pihenőterületekhez."
+    description: "Nagy fel�let� burkolat term�szetes �rnyalatokkal, ide�lis pihen�ter�letekhez."
   },
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/general-kivitelezes-felujitas-epuletbontas-terkovezes-4km426cyqk",
-    alt: "Letisztult térkőburkolat udvarokhoz és kerti utakhoz - időtálló megoldás",
+    alt: "Letisztult t�rk�burkolat udvarokhoz �s kerti utakhoz - id�t�ll� megold�s",
     category: "Udvar",
-    description: "Gondosan lerakott térkőburkolat természetes árnyalatokkal."
+    description: "Gondosan lerakott t�rk�burkolat term�szetes �rnyalatokkal."
   },
   
-  // Lépcső kategória (1 kép)
+  // L�pcs� kateg�ria (1 k�p)
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-6fssowa8pu",
-    alt: "Kültéri lépcső térkő burkolattal és íves korláttal - stílusos megoldás",
-    category: "Lépcső",
-    description: "Tartós térkő burkolatú lépcső időjárásálló és esztétikus megoldással."
+    alt: "K�lt�ri l�pcs� t�rk� burkolattal �s �ves korl�ttal - st�lusos megold�s",
+    category: "L�pcs�",
+    description: "Tart�s t�rk� burkolat� l�pcs� id�j�r�s�ll� �s eszt�tikus megold�ssal."
   },
   
-  // Terasz kategória (2 kép)
+  // Terasz kateg�ria (2 k�p)
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-nxozuex45t",
-    alt: "Színes térkő burkolat fedett teraszon - harmonikus színvilág",
+    alt: "Sz�nes t�rk� burkolat fedett teraszon - harmonikus sz�nvil�g",
     category: "Terasz",
-    description: "Vörös, barna és sárga árnyalatok harmonikus összhatása."
+    description: "V�r�s, barna �s s�rga �rnyalatok harmonikus �sszhat�sa."
   },
   {
     src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m",
-    alt: "Természetes hatású teraszburkolat íves kialakítással - elegáns design",
+    alt: "Term�szetes hat�s� teraszburkolat �ves kialak�t�ssal - eleg�ns design",
     category: "Terasz",
-    description: "Tágas terasz világos, természetes kőhatású burkolattal."
+    description: "T�gas terasz vil�gos, term�szetes k�hat�s� burkolattal."
   }
 ];
 
-// Kibővített referencia képek
+// Kib�v�tett referencia k�pek
 const allImages = referenceImages;
 const categories = [...new Set(allImages.map(img => img.category))];
 ---
@@ -86,15 +86,15 @@ const categories = [...new Set(allImages.map(img => img.category))];
       {
         "@type": "ImageGallery",
         "@id": `${canonicalURL}#gallery`,
-        "name": "Térkövezés Referenciák Galéria",
-        "description": "MiniBrand Térkövezés elkészült projektjei Budapest és környékén. Kocsibeállók, teraszok, kerti utak és udvari burkolatok.",
+        "name": "T�rk�vez�s Referenci�k Gal�ria",
+        "description": "MiniBrand T�rk�vez�s elk�sz�lt projektjei Budapest �s k�rny�k�n. Kocsibe�ll�k, teraszok, kerti utak �s udvari burkolatok.",
         "about": {
           "@type": "Service",
-          "name": "Térkövezés Budapest",
+          "name": "T�rk�vez�s Budapest",
           "provider": {
             "@type": "LocalBusiness",
             "@id": "https://minibrand-terkovezes.hu#business",
-            "name": "MiniBrand Térkövezés"
+            "name": "MiniBrand T�rk�vez�s"
           }
         },
         "associatedMedia": allImages.map((img, index) => ({
@@ -102,10 +102,10 @@ const categories = [...new Set(allImages.map(img => img.category))];
           "contentUrl": img.src,
           "name": img.alt,
           "description": img.description,
-          "keywords": `térkövezés, ${img.category.toLowerCase()}, Budapest, térkő`,
+          "keywords": `t�rk�vez�s, ${img.category.toLowerCase()}, Budapest, t�rk�`,
           "creator": {
             "@type": "Organization",
-            "name": "MiniBrand Térkövezés"
+            "name": "MiniBrand T�rk�vez�s"
           }
         }))
       },
@@ -115,13 +115,13 @@ const categories = [...new Set(allImages.map(img => img.category))];
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Főoldal",
+            "name": "F�oldal",
             "item": "https://minibrand-terkovezes.hu"
           },
           {
             "@type": "ListItem", 
             "position": 2,
-            "name": "Referenciák",
+            "name": "Referenci�k",
             "item": canonicalURL
           }
         ]
@@ -135,12 +135,12 @@ const categories = [...new Set(allImages.map(img => img.category))];
   <nav class="bg-concrete-50 py-4">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <ol class="flex items-center space-x-2 text-sm text-concrete-600">
-        <li><a href="/minibrand-terkovezes/" class="hover:text-primary-600">Főoldal</a></li>
+        <li><a href="/" class="hover:text-primary-600">F�oldal</a></li>
         <li class="flex items-center">
           <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
           </svg>
-          <span class="text-concrete-800 font-medium">Referenciák</span>
+          <span class="text-concrete-800 font-medium">Referenci�k</span>
         </li>
       </ol>
     </div>
@@ -152,30 +152,30 @@ const categories = [...new Set(allImages.map(img => img.category))];
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Térkövezés
-            <span class="text-orange-400">Referenciáink</span>
+            T�rk�vez�s
+            <span class="text-orange-400">Referenci�ink</span>
           </h1>
           <p class="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
-            Több mint 500 sikeres projekt Budapest és környékén - Inspirálódjon befejezett munkáinkból
+            T�bb mint 500 sikeres projekt Budapest �s k�rny�k�n - Inspir�l�djon befejezett munk�inkb�l
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`${import.meta.env.BASE_URL}kapcsolat`} class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
-              Ingyenes Ajánlatkérés
+              Ingyenes Aj�nlatk�r�s
             </a>
             <a href="tel:+36301234567" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
-              Hívj minket azonnal
+              H�vj minket azonnal
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Kategóriák Filter -->
+    <!-- Kateg�ri�k Filter -->
     <section class="py-8 bg-white sticky top-0 z-40 border-b border-gray-200">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-center gap-4">
           <button class="filter-btn active px-6 py-3 rounded-full bg-orange-500 text-white font-semibold transition-all duration-300 hover:bg-orange-600" data-category="all">
-            Összes ({allImages.length})
+            �sszes ({allImages.length})
           </button>
           {categories.map(category => {
             const count = allImages.filter(img => img.category === category).length;
@@ -189,15 +189,15 @@ const categories = [...new Set(allImages.map(img => img.category))];
       </div>
     </section>
 
-    <!-- Referencia Galéria -->
+    <!-- Referencia Gal�ria -->
     <section id="galeria" class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Elkészült Projektek Galériája
+            Elk�sz�lt Projektek Gal�ri�ja
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            25 év tapasztalat, több mint 500 sikeres projekt. Tekintse meg referenciáinkat és inspirálódjon!
+            25 �v tapasztalat, t�bb mint 500 sikeres projekt. Tekintse meg referenci�inkat �s inspir�l�djon!
           </p>
         </div>
         
@@ -220,7 +220,7 @@ const categories = [...new Set(allImages.map(img => img.category))];
                   </div>
                   <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
                     <button class="bg-white text-gray-900 px-4 py-2 rounded-lg font-semibold transform scale-90 hover:scale-100 transition-transform">
-                      🔍 Nagyítás
+                      ?? Nagy�t�s
                     </button>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ const categories = [...new Set(allImages.map(img => img.category))];
         <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
           <div class="relative max-w-4xl max-h-full">
             <button id="close-lightbox" class="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
-              ✕
+              ?
             </button>
             <img id="lightbox-image" src="" alt="" class="max-w-full max-h-screen object-contain rounded-lg">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 text-white">
@@ -246,10 +246,10 @@ const categories = [...new Set(allImages.map(img => img.category))];
             </div>
             <!-- Navigation arrows -->
             <button id="prev-image" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
-              ‹
+              �
             </button>
             <button id="next-image" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-bold hover:text-orange-400 transition-colors">
-              ›
+              �
             </button>
           </div>
         </div>
@@ -257,24 +257,24 @@ const categories = [...new Set(allImages.map(img => img.category))];
         <!-- Load More Button -->
         <div class="text-center mt-12">
           <p class="text-gray-600 mb-6">
-            Több mint 500 befejezett projekt! További referenciáinkért keressen minket bizalommal.
+            T�bb mint 500 befejezett projekt! Tov�bbi referenci�ink�rt keressen minket bizalommal.
           </p>
           <a href="tel:+36301234567" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
-            📞 További Referenciák Kérése
+            ?? Tov�bbi Referenci�k K�r�se
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Statisztikák Section -->
+    <!-- Statisztik�k Section -->
     <section class="py-16 bg-slate-900 text-white">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Számokban
+            Sz�mokban
           </h2>
           <p class="text-xl text-gray-300">
-            25 év tapasztalat Budapest és környékén
+            25 �v tapasztalat Budapest �s k�rny�k�n
           </p>
         </div>
         
@@ -285,14 +285,14 @@ const categories = [...new Set(allImages.map(img => img.category))];
           </div>
           <div class="bg-slate-800 rounded-lg p-8">
             <div class="text-4xl font-bold text-orange-400 mb-2">25</div>
-            <div class="text-gray-300">Év tapasztalat</div>
+            <div class="text-gray-300">�v tapasztalat</div>
           </div>
           <div class="bg-slate-800 rounded-lg p-8">
             <div class="text-4xl font-bold text-orange-400 mb-2">100%</div>
-            <div class="text-gray-300">Elégedett ügyfél</div>
+            <div class="text-gray-300">El�gedett �gyf�l</div>
           </div>
           <div class="bg-slate-800 rounded-lg p-8">
-            <div class="text-4xl font-bold text-orange-400 mb-2">2 év</div>
+            <div class="text-4xl font-bold text-orange-400 mb-2">2 �v</div>
             <div class="text-gray-300">Garancia</div>
           </div>
         </div>
@@ -303,24 +303,24 @@ const categories = [...new Set(allImages.map(img => img.category))];
     <section class="py-16 lg:py-24 bg-primary-600 text-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
-                Legyen Ön a következő elégedett ügyfelünk!
+                Legyen �n a k�vetkez� el�gedett �gyfel�nk!
             </h2>
             <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Ingyenes helyszíni felmérés és árajánlat 48 órán belül. 
-                25 év tapasztalat, 2 év garancia minden munkára.
+                Ingyenes helysz�ni felm�r�s �s �raj�nlat 48 �r�n bel�l. 
+                25 �v tapasztalat, 2 �v garancia minden munk�ra.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href={`${import.meta.env.BASE_URL}kapcsolat`} class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
-                    Ajánlatkérés
+                    Aj�nlatk�r�s
                 </a>
                 <a href="tel:+36301234567" class="bg-red-600 border border-red-600 text-white hover:bg-red-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
-                    Kérj árajánlatot telefonon
+                    K�rj �raj�nlatot telefonon
           </a>
         </div>
         <div class="mt-8 text-lg">
-          <p class="mb-2">🚀 <strong>Gyors reakció:</strong> 2 órán belül visszahívjuk</p>
-          <p class="mb-2">📍 <strong>Helyszíni felmérés:</strong> Budapest és 30 km-es körzetben</p>
-          <p>✅ <strong>Garancia:</strong> 2 év minden munkánkra</p>
+          <p class="mb-2">?? <strong>Gyors reakci�:</strong> 2 �r�n bel�l visszah�vjuk</p>
+          <p class="mb-2">?? <strong>Helysz�ni felm�r�s:</strong> Budapest �s 30 km-es k�rzetben</p>
+          <p>? <strong>Garancia:</strong> 2 �v minden munk�nkra</p>
         </div>
       </div>
     </section>

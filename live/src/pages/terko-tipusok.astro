@@ -2,23 +2,24 @@
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import TerkoInteractiveSelector from '../components/ui/terko-interactive-selector.tsx';
 ---
 
-<Layout title="TÃ©rkÅ‘ TÃ­pusok Budapest - ÃštmutatÃ³ a MegfelelÅ‘ VÃ¡lasztÃ¡shoz 2025" description="Komplett tÃ©rkÅ‘ tÃ­pusok ÃºtmutatÃ³: beton tÃ©rkÃ¶veĞº, termÃ©szetes kÃ¶vek, speciÃ¡lis burkolatok. SzakÃ©rtÅ‘i tanÃ¡csok a vÃ¡lasztÃ¡shoz Ã©s hasznÃ¡lathoz. Ingyenes konzultÃ¡ciÃ³!">
+<Layout title="Térkõ Típusok Budapest - Útmutató a Megfelelõ Választáshoz 2025" description="Komplett térkõ típusok útmutató: beton térköve?, természetes kövek, speciális burkolatok. Szakértõi tanácsok a választáshoz és használathoz. Ingyenes konzultáció!">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" is:inline>
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "TÃ©rkÅ‘ TÃ­pusok ÃštmutatÃ³ja - Minden Amit Tudni Kell 2025",
-        "description": "ÃtfogÃ³ ÃºtmutatÃ³ a kÃ¼lÃ¶nbÃ¶zÅ‘ tÃ©rkÅ‘ tÃ­pusokrÃ³l, hasznÃ¡latukrÃ³l Ã©s vÃ¡lasztÃ¡sukrÃ³l. SzakÃ©rtÅ‘i tanÃ¡csok Ã©s gyakorlati informÃ¡ciÃ³k.",
+        "headline": "Térkõ Típusok Útmutatója - Minden Amit Tudni Kell 2025",
+        "description": "Átfogó útmutató a különbözõ térkõ típusokról, használatukról és választásukról. Szakértõi tanácsok és gyakorlati információk.",
         "author": {
             "@type": "Organization",
-            "name": "TÃ©rkÃ¶vezÃ©s Budapest"
+            "name": "Térkövezés Budapest"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "TÃ©rkÃ¶vezÃ©s Budapest",
+            "name": "Térkövezés Budapest",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://terkovezes-budapest.hu/logo.png"
@@ -31,18 +32,18 @@ import Footer from '../components/Footer.astro';
             "@id": "https://terkovezes-budapest.hu/terko-tipusok"
         },
         "image": "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4",
-        "articleSection": "ÃštmutatÃ³k",
-        "keywords": "tÃ©rkÅ‘ tÃ­pusok, beton tÃ©rkÃ¶vek, termÃ©szetes kÅ‘, tÃ©rkÃ¶vezÃ©s, burkolat, kocsibeÃ¡llÃ³, terasz",
+        "articleSection": "Útmutatók",
+        "keywords": "térkõ típusok, beton térkövek, természetes kõ, térkövezés, burkolat, kocsibeálló, terasz",
         "about": [
             {
                 "@type": "Thing",
-                "name": "Beton TÃ©rkÃ¶vek",
-                "description": "TartÃ³s Ã©s sokoldalÃº tÃ©rkÅ‘ megoldÃ¡sok"
+                "name": "Beton Térkövek",
+                "description": "Tartós és sokoldalú térkõ megoldások"
             },
             {
                 "@type": "Thing", 
-                "name": "TermÃ©szetes KÅ‘ Burkolatok",
-                "description": "PrÃ©mium minÅ‘sÃ©gÅ± termÃ©szetes kÃ¶vek"
+                "name": "Természetes Kõ Burkolatok",
+                "description": "Prémium minõségû természetes kövek"
             }
         ]
     }
@@ -53,10 +54,10 @@ import Footer from '../components/Footer.astro';
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "TÃ©rkÃ¶vezÃ©s Budapest",
+        "name": "Térkövezés Budapest",
         "url": "https://terkovezes-budapest.hu",
         "logo": "https://terkovezes-budapest.hu/logo.png",
-        "description": "ProfesszionÃ¡lis tÃ©rkÃ¶vezÃ©si szolgÃ¡ltatÃ¡sok Budapesten Ã©s kÃ¶rnyÃ©kÃ©n",
+        "description": "Professzionális térkövezési szolgáltatások Budapesten és környékén",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Budapest",
@@ -79,12 +80,12 @@ import Footer from '../components/Footer.astro';
     <nav class="bg-concrete-50 py-4">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <ol class="flex items-center space-x-2 text-sm text-concrete-600">
-                <li><a href="/minibrand-terkovezes/" class="hover:text-primary-600">FÅ‘oldal</a></li>
+                <li><a href="/" class="hover:text-primary-600">Fõoldal</a></li>
                 <li class="flex items-center">
                     <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                     </svg>
-                    <span class="text-concrete-800 font-medium">TÃ©rkÅ‘ tÃ­pusok</span>
+                    <span class="text-concrete-800 font-medium">Térkõ típusok</span>
                 </li>
             </ol>
         </div>
@@ -95,204 +96,109 @@ import Footer from '../components/Footer.astro';
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
-                    <span class="text-primary-600">TÃ©rkÅ‘ TÃ­pusok</span>
+                    <span class="text-primary-600">Térkõ Típusok</span>
                 </h1>
                 <p class="text-xl text-concrete-600 mb-8 leading-relaxed max-w-4xl mx-auto">
-                    Komplett szakÃ©rtÅ‘i ÃºtmutatÃ³ a tÃ©rkÅ‘vezÃ©s vilÃ¡gÃ¡hoz: beton tÃ©rkÃ¶vek, termÃ©szetes kÃ¶vek, speciÃ¡lis burkolatok. 
-                    Minden amit tudnia kell a megfelelÅ‘ tÃ©rkÅ‘ kivÃ¡lasztÃ¡sÃ¡hoz Ã©s hasznÃ¡latÃ¡hoz.
+                    Komplett szakértõi útmutató a térkõvezés világához: beton térkövek, természetes kövek, speciális burkolatok. 
+                    Minden amit tudnia kell a megfelelõ térkõ kiválasztásához és használatához.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- InteraktÃ­v TÃ©rkÅ‘ AjÃ¡nlÃ³ Tool -->
-    <section class="py-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4"></h2>
-                <p class="text-xl opacity-90">TalÃ¡lja meg a tÃ¶kÃ©letes tÃ©rkÃ¶vet projektjÃ©hez 3 lÃ©pÃ©sben!</p>
-            </div>
-
-            <div class="bg-white rounded-xl p-8 text-concrete-800">
-                <div id="terko-ajÃ¡nlÃ³" class="space-y-6">
-                    <!-- 1. lÃ©pÃ©s: HasznÃ¡lat cÃ©lja -->
-                    <div class="step" id="step-1">
-                        <h3 class="text-xl font-semibold mb-4">1. lÃ©pÃ©s: Mi a hasznÃ¡lat cÃ©lja?</h3>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="kocsibeallo">
-                                <div class="text-3xl mb-2">ğŸš—</div>
-                                <div class="font-semibold">KocsibeÃ¡llÃ³</div>
-                                <div class="text-sm text-concrete-600">Nagy terhelÃ©s</div>
-                            </button>
-                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="terasz">
-                                <div class="text-3xl mb-2">ğŸ¡</div>
-                                <div class="font-semibold">Terasz/Kert</div>
-                                <div class="text-sm text-concrete-600">EsztÃ©tikum</div>
-                            </button>
-                            <button class="use-case-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="jarda">
-                                <div class="text-3xl mb-2">ğŸš¶</div>
-                                <div class="font-semibold">JÃ¡rda/Ãšt</div>
-                                <div class="text-sm text-concrete-600">KopÃ¡sÃ¡llÃ³sÃ¡g</div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 2. lÃ©pÃ©s: KÃ¶ltsÃ©gvetÃ©s -->
-                    <div class="step hidden" id="step-2">
-                        <h3 class="text-xl font-semibold mb-4">2. lÃ©pÃ©s: Mekkora a kÃ¶ltsÃ©gvetÃ©s?</h3>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="low">
-                                <div class="text-3xl mb-2">ğŸ’°</div>
-                                <div class="font-semibold">GazdasÃ¡gos</div>
-                                <div class="text-sm text-concrete-600">9.000-17.000 Ft/mÂ²</div>
-                            </button>
-                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="medium">
-                                <div class="text-3xl mb-2">ğŸ’°ğŸ’°</div>
-                                <div class="font-semibold">KÃ¶zepes</div>
-                                <div class="text-sm text-concrete-600">17.000-25.000 Ft/mÂ²</div>
-                            </button>
-                            <button class="budget-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="high">
-                                <div class="text-3xl mb-2">ğŸ’°ğŸ’°ğŸ’°</div>
-                                <div class="font-semibold">PrÃ©mium</div>
-                                <div class="text-sm text-concrete-600">25.000+ Ft/mÂ²</div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 3. lÃ©pÃ©s: StÃ­lus preferencia -->
-                    <div class="step hidden" id="step-3">
-                        <h3 class="text-xl font-semibold mb-4">3. lÃ©pÃ©s: Milyen stÃ­lust preferÃ¡l?</h3>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="klasszikus">
-                                <div class="text-3xl mb-2">ğŸ›ï¸</div>
-                                <div class="font-semibold">Klasszikus</div>
-                                <div class="text-sm text-concrete-600">IdÅ‘tÃ¡llÃ³, rusztikus</div>
-                            </button>
-                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="modern">
-                                <div class="text-3xl mb-2">ğŸ </div>
-                                <div class="font-semibold">Modern</div>
-                                <div class="text-sm text-concrete-600">Clean, minimÃ¡l</div>
-                            </button>
-                            <button class="style-btn p-4 border-2 border-concrete-200 rounded-lg hover:border-primary-500 transition-colors text-center" data-value="kreatÃ­v">
-                                <div class="text-3xl mb-2">ğŸ¨</div>
-                                <div class="font-semibold">KreatÃ­v</div>
-                                <div class="text-sm text-concrete-600">SzÃ­nes, egyedi</div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- EredmÃ©ny -->
-                    <div class="result hidden" id="result">
-                        <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6">
-                            <h3 class="text-2xl font-bold text-green-800 mb-4">ğŸ‰ A tÃ¶kÃ©letes tÃ©rkÅ‘ az Ã–n szÃ¡mÃ¡ra:</h3>
-                            <div id="recommendation" class="space-y-4">
-                                <!-- Itt jelenik meg az ajÃ¡nlÃ¡s -->
-                            </div>
-                            <div class="flex gap-4 mt-6">
-                                <button id="restart-btn" class="bg-concrete-500 hover:bg-concrete-600 text-white px-6 py-2 rounded-lg transition-colors">
-                                    ğŸ”„ ÃšjraindÃ­tÃ¡s
-                                </button>
-                                <a href="/minibrand-terkovezes/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors">
-                                    ğŸ’¬ AjÃ¡nlatkÃ©rÃ©s
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Interaktív Térkõ Típus Explorer -->
+    <TerkoInteractiveSelector client:load />
 
 
 
-    <!-- Beton TÃ©rkÃ¶vek Section -->
+    <!-- Beton Térkövek Section -->
     <section id="beton-terkovek" class="py-16 lg:py-24 bg-concrete-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ§± Beton TÃ©rkÃ¶vek - A LegsokoldalÃºbb MegoldÃ¡s
+                    ?? Beton Térkövek - A Legsokoldalúbb Megoldás
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto mb-8">
-                    A beton tÃ©rkÃ¶vek a leggyakrabban hasznÃ¡lt burkolÃ³anyagok, melyek Ã¶tvÃ¶zik a tartÃ³ssÃ¡got, 
-                    a megfizethetÅ‘ Ã¡rakat Ã©s a szinte korlÃ¡tlan designlehetÅ‘sÃ©geket.
+                    A beton térkövek a leggyakrabban használt burkolóanyagok, melyek ötvözik a tartósságot, 
+                    a megfizethetõ árakat és a szinte korlátlan designlehetõségeket.
                 </p>
                 
-                <!-- Beton tÃ©rkÅ‘ elÅ‘nyei infografika -->
+                <!-- Beton térkõ elõnyei infografika -->
                 <div class="bg-white rounded-xl p-8 shadow-lg mb-12">
-                    <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸ“ˆ MiÃ©rt nÃ©pszerÅ±ek a beton tÃ©rkÃ¶vek?</h3>
+                    <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Miért népszerûek a beton térkövek?</h3>
                     <div class="grid md:grid-cols-4 gap-6">
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ’°</span>
+                                <span class="text-2xl">??</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">MegfizethetÅ‘</div>
-                            <div class="text-sm text-concrete-600">3.500-8.000 Ft/mÂ²</div>
+                            <div class="text-lg font-semibold text-concrete-800">Megfizethetõ</div>
+                            <div class="text-sm text-concrete-600">3.500-8.000 Ft/m2</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ—ï¸</span>
+                                <span class="text-2xl">???</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">TartÃ³s</div>
-                            <div class="text-sm text-concrete-600">20-30 Ã©v Ã©lettartam</div>
+                            <div class="text-lg font-semibold text-concrete-800">Tartós</div>
+                            <div class="text-sm text-concrete-600">20-30 év élettartam</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ¨</span>
+                                <span class="text-2xl">??</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">VÃ¡ltozatos</div>
-                            <div class="text-sm text-concrete-600">SokfÃ©le szÃ­n Ã©s forma</div>
+                            <div class="text-lg font-semibold text-concrete-800">Változatos</div>
+                            <div class="text-sm text-concrete-600">Sokféle szín és forma</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">âš¡</span>
+                                <span class="text-2xl">?</span>
                             </div>
                             <div class="text-lg font-semibold text-concrete-800">Gyors</div>
-                            <div class="text-sm text-concrete-600">KÃ¶nnyÅ± telepÃ­tÃ©s</div>
+                            <div class="text-sm text-concrete-600">Könnyû telepítés</div>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
-                <!-- Antik TÃ©rkÅ‘ -->
+                <!-- Antik Térkõ -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4" 
-                         alt="Antik tÃ©rkÅ‘ mintÃ¡ja - klasszikus koptatott felÃ¼let" class="w-full h-48 object-cover">
+                         alt="Antik térkõ mintája - klasszikus koptatott felület" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-concrete-800">Antik TÃ©rkÅ‘</h3>
+                            <h3 class="text-xl font-semibold text-concrete-800">Antik Térkõ</h3>
                             <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full">
-                                NÃ©pszerÅ±
+                                Népszerû
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            Klasszikus megjelenÃ©s koptatott felÃ¼lettel. TÃ¶kÃ©letes hagyomÃ¡nyos stÃ­lusÃº projektekhez, 
-                            kÃ¼lÃ¶nÃ¶sen csalÃ¡di hÃ¡zak bejÃ¡rÃ³jÃ¡hoz Ã©s kertjÃ©hez.
+                            Klasszikus megjelenés koptatott felülettel. Tökéletes hagyományos stílusú projektekhez, 
+                            különösen családi házak bejárójához és kertjéhez.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… JellemzÅ‘k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Jellemzõk:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ Koptatott, rusztikus felÃ¼let</li>
-                                    <li>â€¢ VÃ¡ltozatos szÃ­nek: szÃ¼rke, barna, vÃ¶rÃ¶s</li>
-                                    <li>â€¢ 6-8 cm vastagsÃ¡g</li>
-                                    <li>â€¢ CsÃºszÃ¡smentes textÃºra</li>
+                                    <li>• Koptatott, rusztikus felület</li>
+                                    <li>• Változatos színek: szürke, barna, vörös</li>
+                                    <li>• 6-8 cm vastagság</li>
+                                    <li>• Csúszásmentes textúra</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">KocsibeÃ¡llÃ³</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Kocsibeálló</span>
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Terasz</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">JÃ¡rda</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Járda</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">4.500-6.500 Ft</span>
                                 </div>
                             </div>
@@ -300,45 +206,45 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </div>
 
-                <!-- Modern TÃ©rkÅ‘ -->
+                <!-- Modern Térkõ -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8" 
-                         alt="Modern tÃ©rkÅ‘ mintÃ¡ja - egyenes vonalÃº elegÃ¡ns burkolat" class="w-full h-48 object-cover">
+                         alt="Modern térkõ mintája - egyenes vonalú elegáns burkolat" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-concrete-800">Modern TÃ©rkÅ‘</h3>
+                            <h3 class="text-xl font-semibold text-concrete-800">Modern Térkõ</h3>
                             <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
                                 Trend
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            Sima, egyenletes felÃ¼let modern Ã©pÃ­tÃ©szeti stÃ­lushoz. MinimÃ¡l design kedvelÅ‘inek, 
-                            nagymÃ©retÅ± lapokkal tiszta vonalakat biztosÃ­t.
+                            Sima, egyenletes felület modern építészeti stílushoz. Minimál design kedvelõinek, 
+                            nagyméretû lapokkal tiszta vonalakat biztosít.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… JellemzÅ‘k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Jellemzõk:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ Sima, egyenletes felÃ¼let</li>
-                                    <li>â€¢ Nagy mÃ©retÅ± lapok (40Ã—40, 60Ã—30 cm)</li>
-                                    <li>â€¢ 5-6 cm vastagsÃ¡g</li>
-                                    <li>â€¢ Semleges szÃ­npaletta</li>
+                                    <li>• Sima, egyenletes felület</li>
+                                    <li>• Nagy méretû lapok (40×40, 60×30 cm)</li>
+                                    <li>• 5-6 cm vastagság</li>
+                                    <li>• Semleges színpaletta</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Terasz</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">BejÃ¡rÃ³</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Bejáró</span>
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Pool deck</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">5.500-8.000 Ft</span>
                                 </div>
                             </div>
@@ -346,45 +252,45 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </div>
 
-                <!-- SzÃ­nes TÃ©rkÅ‘ -->
+                <!-- Színes Térkõ -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb" 
-                         alt="SzÃ­nes tÃ©rkÅ‘ mintÃ¡ja - Ã©lÃ©nk szÃ­nek kreatÃ­v mintÃ¡zatokhoz" class="w-full h-48 object-cover">
+                         alt="Színes térkõ mintája - élénk színek kreatív mintázatokhoz" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-concrete-800">SzÃ­nes TÃ©rkÅ‘</h3>
+                            <h3 class="text-xl font-semibold text-concrete-800">Színes Térkõ</h3>
                             <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">
-                                KreatÃ­v
+                                Kreatív
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            Ã‰lÃ©nk szÃ­nekkel kÃ©szÃ¼lt tÃ©rkÃ¶vek kreatÃ­v mintÃ¡zatok Ã©s kombinÃ¡ciÃ³k kialakÃ­tÃ¡sÃ¡hoz. 
-                            Egyedi designlehetÅ‘sÃ©gek korlÃ¡tlan szÃ¡mban.
+                            Élénk színekkel készült térkövek kreatív mintázatok és kombinációk kialakításához. 
+                            Egyedi designlehetõségek korlátlan számban.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… JellemzÅ‘k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Jellemzõk:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ SzÃ©les szÃ­npaletta (10+ szÃ­n)</li>
-                                    <li>â€¢ Egyedi mintÃ¡k lehetÅ‘sÃ©ge</li>
-                                    <li>â€¢ TartÃ³s UV-Ã¡llÃ³ pigmentezÃ©s</li>
-                                    <li>â€¢ KÃ¼lÃ¶nbÃ¶zÅ‘ felÃ¼letkezelÃ©sek</li>
+                                    <li>• Széles színpaletta (10+ szín)</li>
+                                    <li>• Egyedi minták lehetõsége</li>
+                                    <li>• Tartós UV-álló pigmentezés</li>
+                                    <li>• Különbözõ felületkezelések</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Kerti utak</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">JÃ¡tszÃ³tÃ©r</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">DÃ­szÃ­tÃ©s</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Játszótér</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Díszítés</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">4.000-7.000 Ft</span>
                                 </div>
                             </div>
@@ -393,52 +299,52 @@ import Footer from '../components/Footer.astro';
                 </div>
             </div>
 
-            <!-- Beton tÃ©rkÅ‘ tÃ­pusok rÃ©szletes Ã¶sszehasonlÃ­tÃ¡sa -->
+            <!-- Beton térkõ típusok részletes összehasonlítása -->
             <div class="bg-white rounded-xl p-8 shadow-lg mb-12">
-                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸ“Š Beton TÃ©rkÅ‘ TÃ­pusok Ã–sszehasonlÃ­tÃ¡sa</h3>
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Beton Térkõ Típusok Összehasonlítása</h3>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
                         <thead>
                             <tr class="border-b-2 border-concrete-200">
-                                <th class="text-left py-3 px-4 font-semibold text-concrete-800">TulajdonsÃ¡g</th>
+                                <th class="text-left py-3 px-4 font-semibold text-concrete-800">Tulajdonság</th>
                                 <th class="text-center py-3 px-4 font-semibold text-concrete-800">Antik</th>
                                 <th class="text-center py-3 px-4 font-semibold text-concrete-800">Modern</th>
-                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">SzÃ­nes</th>
+                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">Színes</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">TartÃ³ssÃ¡g (Ã©v)</td>
+                                <td class="py-3 px-4 font-medium">Tartósság (év)</td>
                                 <td class="text-center py-3 px-4">25-30</td>
                                 <td class="text-center py-3 px-4">20-25</td>
                                 <td class="text-center py-3 px-4">20-25</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">KarbantartÃ¡s</td>
+                                <td class="py-3 px-4 font-medium">Karbantartás</td>
                                 <td class="text-center py-3 px-4">Alacsony</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">CsÃºszÃ¡smentessÃ©g</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­</td>
+                                <td class="py-3 px-4 font-medium">Csúszásmentesség</td>
+                                <td class="text-center py-3 px-4">?????</td>
+                                <td class="text-center py-3 px-4">???</td>
+                                <td class="text-center py-3 px-4">????</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">Design variÃ¡ciÃ³k</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
+                                <td class="py-3 px-4 font-medium">Design variációk</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
                                 <td class="text-center py-3 px-4">Alacsony</td>
                                 <td class="text-center py-3 px-4">Magas</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">TelepÃ­tÃ©s nehÃ©zsÃ©ge</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
-                                <td class="text-center py-3 px-4">KÃ¶nnyÅ±</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
+                                <td class="py-3 px-4 font-medium">Telepítés nehézsége</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
+                                <td class="text-center py-3 px-4">Könnyû</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
                             </tr>
                             <tr>
-                                <td class="py-3 px-4 font-medium">ÃtlagÃ¡r (Ft/mÂ²)</td>
+                                <td class="py-3 px-4 font-medium">Átlagár (Ft/m2)</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">4.500-6.500</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">5.500-8.000</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">4.000-7.000</td>
@@ -450,105 +356,105 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-    <!-- TermÃ©szetes KÅ‘ Section -->
+    <!-- Természetes Kõ Section -->
     <section id="termeszetes-ko" class="py-16 lg:py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ”ï¸ TermÃ©szetes KÅ‘ Burkolatok - PrÃ©mium MegoldÃ¡sok
+                    ??? Természetes Kõ Burkolatok - Prémium Megoldások
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto mb-8">
-                    A termÃ©szetes kÅ‘ burkolatok a legprÃ©miumabb Ã©s legtartÃ³sabb megoldÃ¡sok kÃ¶zÃ© tartoznak. 
-                    Egyedi karakterÃ¼kkel Ã©s termÃ©szetes szÃ©psÃ©gÃ¼kkel Ã©vtizedekre szÃ³lÃ³ Ã©rtÃ©ket kÃ©pviselnek.
+                    A természetes kõ burkolatok a legprémiumabb és legtartósabb megoldások közé tartoznak. 
+                    Egyedi karakterükkel és természetes szépségükkel évtizedekre szóló értéket képviselnek.
                 </p>
                 
-                <!-- TermÃ©szetes kÅ‘ elÅ‘nyei -->
+                <!-- Természetes kõ elõnyei -->
                 <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 shadow-lg mb-12">
-                    <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸŒ MiÃ©rt vÃ¡lassza a termÃ©szetes kÃ¶vet?</h3>
+                    <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Miért válassza a természetes követ?</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="text-center">
                             <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">â™»ï¸</span>
+                                <span class="text-2xl">??</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">KÃ¶rnyezetbarÃ¡t</div>
-                            <div class="text-sm text-concrete-600">100% termÃ©szetes anyag</div>
+                            <div class="text-lg font-semibold text-concrete-800">Környezetbarát</div>
+                            <div class="text-sm text-concrete-600">100% természetes anyag</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ›ï¸</span>
+                                <span class="text-2xl">???</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">IdÅ‘tÃ¡llÃ³</div>
-                            <div class="text-sm text-concrete-600">50-100+ Ã©v Ã©lettartam</div>
+                            <div class="text-lg font-semibold text-concrete-800">Idõtálló</div>
+                            <div class="text-sm text-concrete-600">50-100+ év élettartam</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ’</span>
+                                <span class="text-2xl">??</span>
                             </div>
                             <div class="text-lg font-semibold text-concrete-800">Egyedi</div>
-                            <div class="text-sm text-concrete-600">Minden darab mÃ¡s</div>
+                            <div class="text-sm text-concrete-600">Minden darab más</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span class="text-2xl">ğŸ“ˆ</span>
+                                <span class="text-2xl">??</span>
                             </div>
-                            <div class="text-lg font-semibold text-concrete-800">Ã‰rtÃ©knÃ¶velÅ‘</div>
-                            <div class="text-sm text-concrete-600">NÃ¶veli az ingatlan Ã©rtÃ©kÃ©t</div>
+                            <div class="text-lg font-semibold text-concrete-800">Értéknövelõ</div>
+                            <div class="text-sm text-concrete-600">Növeli az ingatlan értékét</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- TermÃ©szetes kÅ‘ tÃ­pusok rÃ©szletesen -->
+            <!-- Természetes kõ típusok részletesen -->
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
-                <!-- GrÃ¡nit -->
+                <!-- Gránit -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q" 
-                         alt="GrÃ¡nit burkolat - tartÃ³s Ã©s fagyÃ¡llÃ³ termÃ©szetes kÅ‘" class="w-full h-48 object-cover">
+                         alt="Gránit burkolat - tartós és fagyálló természetes kõ" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-concrete-800">GrÃ¡nit</h3>
+                            <h3 class="text-xl font-semibold text-concrete-800">Gránit</h3>
                             <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">
-                                LegkemÃ©nyebb
+                                Legkeményebb
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            A grÃ¡nit az egyik legkemÃ©nyebb Ã©s legtartÃ³sabb termÃ©szetes kÅ‘. RendkÃ­vÃ¼li ellenÃ¡llÃ³ kÃ©pessÃ©ge miatt 
-                            ideÃ¡lis vÃ¡lasztÃ¡s nagy forgalmÃº terÃ¼letekre.
+                            A gránit az egyik legkeményebb és legtartósabb természetes kõ. Rendkívüli ellenálló képessége miatt 
+                            ideális választás nagy forgalmú területekre.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… TulajdonsÃ¡gok:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Tulajdonságok:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ Mohs kemÃ©nysÃ©g: 6-7</li>
-                                    <li>â€¢ FagyÃ¡llÃ³ Ã©s idÅ‘jÃ¡rÃ¡sÃ¡llÃ³</li>
-                                    <li>â€¢ Sav- Ã©s lÃºgÃ¡llÃ³</li>
-                                    <li>â€¢ Alacsony vÃ­znyelÃ©s (0.4%)</li>
+                                    <li>• Mohs keménység: 6-7</li>
+                                    <li>• Fagyálló és idõjárásálló</li>
+                                    <li>• Sav- és lúgálló</li>
+                                    <li>• Alacsony víznyelés (0.4%)</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¨ SzÃ­nvariÃ¡ciÃ³k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Színvariációk:</h4>
                                 <div class="flex flex-wrap gap-1 mb-2">
-                                    <span class="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded">SzÃ¼rke</span>
-                                    <span class="px-2 py-1 bg-red-200 text-red-800 text-xs rounded">VÃ¶rÃ¶s</span>
-                                    <span class="px-2 py-1 bg-pink-200 text-pink-800 text-xs rounded">RÃ³zsaszÃ­n</span>
-                                    <span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-xs rounded">SÃ¡rga</span>
+                                    <span class="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded">Szürke</span>
+                                    <span class="px-2 py-1 bg-red-200 text-red-800 text-xs rounded">Vörös</span>
+                                    <span class="px-2 py-1 bg-pink-200 text-pink-800 text-xs rounded">Rózsaszín</span>
+                                    <span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-xs rounded">Sárga</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">KocsibeÃ¡llÃ³</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">KÃ¶zterÃ¼let</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">LÃ©pcsÅ‘k</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Kocsibeálló</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Közterület</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Lépcsõk</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">12.000-25.000 Ft</span>
                                 </div>
                             </div>
@@ -556,45 +462,45 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </div>
 
-                <!-- MÃ©szkÅ‘ -->
+                <!-- Mészkõ -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8" 
-                         alt="MÃ©szkÅ‘ burkolat - termÃ©szetes patina Ã©s meleg tÃ³nusok" class="w-full h-48 object-cover">
+                         alt="Mészkõ burkolat - természetes patina és meleg tónusok" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-concrete-800">MÃ©szkÅ‘</h3>
+                            <h3 class="text-xl font-semibold text-concrete-800">Mészkõ</h3>
                             <span class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
                                 Klasszikus
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            A mÃ©szkÅ‘ termÃ©szetes elegÃ¡ciÃ¡val Ã©s meleg tÃ³nusokkal rendelkezik. 
-                            IdÅ‘vel gyÃ¶nyÃ¶rÅ± patinÃ¡t kÃ©pez, egyre szebben Ã¶regszik.
+                            A mészkõ természetes elegáciával és meleg tónusokkal rendelkezik. 
+                            Idõvel gyönyörû patinát képez, egyre szebben öregszik.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… TulajdonsÃ¡gok:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Tulajdonságok:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ Mohs kemÃ©nysÃ©g: 3-4</li>
-                                    <li>â€¢ TermÃ©szetes patina-kÃ©pzÃ©s</li>
-                                    <li>â€¢ JÃ³ hÅ‘szigetelÅ‘</li>
-                                    <li>â€¢ KÃ¶zepes vÃ­znyelÃ©s (2-5%)</li>
+                                    <li>• Mohs keménység: 3-4</li>
+                                    <li>• Természetes patina-képzés</li>
+                                    <li>• Jó hõszigetelõ</li>
+                                    <li>• Közepes víznyelés (2-5%)</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¨ SzÃ­nvariÃ¡ciÃ³k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Színvariációk:</h4>
                                 <div class="flex flex-wrap gap-1 mb-2">
-                                    <span class="px-2 py-1 bg-amber-200 text-amber-800 text-xs rounded">BÃ©zs</span>
-                                    <span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-xs rounded">KrÃ©m</span>
+                                    <span class="px-2 py-1 bg-amber-200 text-amber-800 text-xs rounded">Bézs</span>
+                                    <span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-xs rounded">Krém</span>
                                     <span class="px-2 py-1 bg-orange-200 text-orange-800 text-xs rounded">Okker</span>
-                                    <span class="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded">SzÃ¼rke</span>
+                                    <span class="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded">Szürke</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Terasz</span>
                                     <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Kerti utak</span>
@@ -604,7 +510,7 @@ import Footer from '../components/Footer.astro';
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">8.000-18.000 Ft</span>
                                 </div>
                             </div>
@@ -615,7 +521,7 @@ import Footer from '../components/Footer.astro';
                 <!-- Andezit -->
                 <div class="bg-white border border-concrete-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                     <img src="https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb" 
-                         alt="Andezit burkolat - magyar eredetÅ± tartÃ³s vulkanikus kÅ‘" class="w-full h-48 object-cover">
+                         alt="Andezit burkolat - magyar eredetû tartós vulkanikus kõ" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-3">
                             <h3 class="text-xl font-semibold text-concrete-800">Andezit</h3>
@@ -624,42 +530,42 @@ import Footer from '../components/Footer.astro';
                             </span>
                         </div>
                         <p class="text-concrete-600 mb-4 text-sm leading-relaxed">
-                            Magyar vulkanikus kÅ‘, kitÅ±nÅ‘ tapadÃ¡si tulajdonsÃ¡gokkal. 
-                            KivÃ¡lÃ³ vÃ¡lasztÃ¡s jÃ¡rÃ³felÃ¼letekhez a csÃºszÃ¡smentessÃ©g miatt.
+                            Magyar vulkanikus kõ, kitûnõ tapadási tulajdonságokkal. 
+                            Kiváló választás járófelületekhez a csúszásmentesség miatt.
                         </p>
                         
                         <div class="space-y-3">
                             <div>
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">âœ… TulajdonsÃ¡gok:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">? Tulajdonságok:</h4>
                                 <ul class="text-xs text-concrete-600 space-y-1">
-                                    <li>â€¢ Mohs kemÃ©nysÃ©g: 5-6</li>
-                                    <li>â€¢ KivÃ¡lÃ³ tapadÃ¡s</li>
-                                    <li>â€¢ FagyÃ¡llÃ³ Ã©s kopÃ¡sÃ¡llÃ³</li>
-                                    <li>â€¢ KÃ¶zepes vÃ­znyelÃ©s (1-3%)</li>
+                                    <li>• Mohs keménység: 5-6</li>
+                                    <li>• Kiváló tapadás</li>
+                                    <li>• Fagyálló és kopásálló</li>
+                                    <li>• Közepes víznyelés (1-3%)</li>
                                 </ul>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¨ SzÃ­nvariÃ¡ciÃ³k:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Színvariációk:</h4>
                                 <div class="flex flex-wrap gap-1 mb-2">
-                                    <span class="px-2 py-1 bg-gray-300 text-gray-800 text-xs rounded">SÃ¶tÃ©tszÃ¼rke</span>
+                                    <span class="px-2 py-1 bg-gray-300 text-gray-800 text-xs rounded">Sötétszürke</span>
                                     <span class="px-2 py-1 bg-slate-300 text-slate-800 text-xs rounded">Antracit</span>
                                     <span class="px-2 py-1 bg-zinc-300 text-zinc-800 text-xs rounded">Fekete</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
-                                <h4 class="font-medium text-concrete-800 text-sm mb-2">ğŸ¯ AjÃ¡nlott hasznÃ¡lat:</h4>
+                                <h4 class="font-medium text-concrete-800 text-sm mb-2">?? Ajánlott használat:</h4>
                                 <div class="flex flex-wrap gap-1">
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Ãštburkolat</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">JÃ¡rda</span>
-                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Ipari terÃ¼let</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Útburkolat</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Járda</span>
+                                    <span class="px-2 py-1 bg-concrete-100 text-concrete-700 text-xs rounded">Ipari terület</span>
                                 </div>
                             </div>
                             
                             <div class="border-t pt-3">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm font-medium text-concrete-800">Ãr/mÂ²:</span>
+                                    <span class="text-sm font-medium text-concrete-800">Ár/m2:</span>
                                     <span class="text-lg font-bold text-primary-600">10.000-20.000 Ft</span>
                                 </div>
                             </div>
@@ -668,52 +574,52 @@ import Footer from '../components/Footer.astro';
                 </div>
             </div>
 
-            <!-- TermÃ©szetes kÅ‘ Ã¶sszehasonlÃ­tÃ³ tÃ¡bla -->
+            <!-- Természetes kõ összehasonlító tábla -->
             <div class="bg-gradient-to-br from-stone-50 to-slate-50 rounded-xl p-8 shadow-lg mb-12">
-                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸ“Š TermÃ©szetes KÃ¶vek Ã–sszehasonlÃ­tÃ¡sa</h3>
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Természetes Kövek Összehasonlítása</h3>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
                         <thead>
                             <tr class="border-b-2 border-stone-200">
-                                <th class="text-left py-3 px-4 font-semibold text-concrete-800">TulajdonsÃ¡g</th>
-                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">GrÃ¡nit</th>
-                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">MÃ©szkÅ‘</th>
+                                <th class="text-left py-3 px-4 font-semibold text-concrete-800">Tulajdonság</th>
+                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">Gránit</th>
+                                <th class="text-center py-3 px-4 font-semibold text-concrete-800">Mészkõ</th>
                                 <th class="text-center py-3 px-4 font-semibold text-concrete-800">Andezit</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-stone-100">
-                                <td class="py-3 px-4 font-medium">KemÃ©nysÃ©g (Mohs)</td>
+                                <td class="py-3 px-4 font-medium">Keménység (Mohs)</td>
                                 <td class="text-center py-3 px-4 font-bold text-blue-600">6-7</td>
                                 <td class="text-center py-3 px-4 font-bold text-amber-600">3-4</td>
                                 <td class="text-center py-3 px-4 font-bold text-green-600">5-6</td>
                             </tr>
                             <tr class="border-b border-stone-100">
-                                <td class="py-3 px-4 font-medium">Ã‰lettartam (Ã©v)</td>
+                                <td class="py-3 px-4 font-medium">Élettartam (év)</td>
                                 <td class="text-center py-3 px-4">100+</td>
                                 <td class="text-center py-3 px-4">50-80</td>
                                 <td class="text-center py-3 px-4">80-100</td>
                             </tr>
                             <tr class="border-b border-stone-100">
-                                <td class="py-3 px-4 font-medium">FagyÃ¡llÃ³sÃ¡g</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­â­</td>
+                                <td class="py-3 px-4 font-medium">Fagyállóság</td>
+                                <td class="text-center py-3 px-4">?????</td>
+                                <td class="text-center py-3 px-4">???</td>
+                                <td class="text-center py-3 px-4">?????</td>
                             </tr>
                             <tr class="border-b border-stone-100">
-                                <td class="py-3 px-4 font-medium">CsÃºszÃ¡smentessÃ©g</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­</td>
-                                <td class="text-center py-3 px-4">â­â­â­â­â­</td>
+                                <td class="py-3 px-4 font-medium">Csúszásmentesség</td>
+                                <td class="text-center py-3 px-4">????</td>
+                                <td class="text-center py-3 px-4">???</td>
+                                <td class="text-center py-3 px-4">?????</td>
                             </tr>
                             <tr class="border-b border-stone-100">
-                                <td class="py-3 px-4 font-medium">KarbantartÃ¡s</td>
-                                <td class="text-center py-3 px-4">MinimÃ¡lis</td>
-                                <td class="text-center py-3 px-4">KÃ¶zepes</td>
+                                <td class="py-3 px-4 font-medium">Karbantartás</td>
+                                <td class="text-center py-3 px-4">Minimális</td>
+                                <td class="text-center py-3 px-4">Közepes</td>
                                 <td class="text-center py-3 px-4">Alacsony</td>
                             </tr>
                             <tr>
-                                <td class="py-3 px-4 font-medium">ÃtlagÃ¡r (Ft/mÂ²)</td>
+                                <td class="py-3 px-4 font-medium">Átlagár (Ft/m2)</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">12.000-25.000</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">8.000-18.000</td>
                                 <td class="text-center py-3 px-4 font-bold text-primary-600">10.000-20.000</td>
@@ -725,147 +631,147 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-    <!-- SpeciÃ¡lis anyagok -->
+    <!-- Speciális anyagok -->
     <section id="specialisanyagok" class="py-16 lg:py-20 bg-concrete-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸš€ SpeciÃ¡lis TÃ©rkÅ‘ Anyagok Ã©s InnovÃ¡ciÃ³k
+                    ?? Speciális Térkõ Anyagok és Innovációk
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto">
-                    A modern technolÃ³gia Ãºjabb lehetÅ‘sÃ©geket kÃ­nÃ¡l: kÃ¶rnyezetbarÃ¡t, okos Ã©s speciÃ¡lis tulajdonsÃ¡gokkal 
-                    rendelkezÅ‘ tÃ©rkÃ¶vek a jÃ¶vÅ‘ Ã©pÃ­tÃ©szete szÃ¡mÃ¡ra.
+                    A modern technológia újabb lehetõségeket kínál: környezetbarát, okos és speciális tulajdonságokkal 
+                    rendelkezõ térkövek a jövõ építészete számára.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 mb-16">
-                <!-- Ã–ntÃ¶ttvas rÃ¡cs tÃ©rkÃ¶vek -->
+                <!-- Öntöttvas rács térkövek -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ”§</span>
+                            <span class="text-2xl">??</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-concrete-800">RÃ¡csos TÃ©rkÃ¶vek</h3>
-                            <p class="text-sm text-concrete-600">VÃ­zelvezetÃ©s Ã©s stabilitÃ¡s</p>
+                            <h3 class="text-xl font-semibold text-concrete-800">Rácsos Térkövek</h3>
+                            <p class="text-sm text-concrete-600">Vízelvezetés és stabilitás</p>
                         </div>
                     </div>
                     <ul class="space-y-3 text-sm text-concrete-600">
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>VÃ­zelvezetÃ©s:</strong> TermÃ©szetes vÃ­zelevezetÃ©s a rÃ¡csos szerkezetnek kÃ¶szÃ¶nhetÅ‘en</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Vízelvezetés:</strong> Természetes vízelevezetés a rácsos szerkezetnek köszönhetõen</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>KÃ¶rnyezetbarÃ¡t:</strong> CsapadÃ©kvÃ­z termÃ©szetes beszivÃ¡rgÃ¡sa</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Környezetbarát:</strong> Csapadékvíz természetes beszivárgása</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>HasznÃ¡lat:</strong> ParkolÃ³k, utak, teherviselÅ‘ felÃ¼letek</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Használat:</strong> Parkolók, utak, teherviselõ felületek</span>
                         </li>
                     </ul>
                     <div class="mt-4 pt-4 border-t">
                         <div class="flex justify-between items-center">
-                            <span class="font-medium">Ãr/mÂ²:</span>
+                            <span class="font-medium">Ár/m2:</span>
                             <span class="font-bold text-primary-600">6.000-12.000 Ft</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- PermeÃ¡bilis beton tÃ©rkÅ‘ -->
+                <!-- Permeábilis beton térkõ -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ’§</span>
+                            <span class="text-2xl">??</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-concrete-800">PermeÃ¡bilis TÃ©rkÅ‘</h3>
-                            <p class="text-sm text-concrete-600">VÃ­zÃ¡teresztÅ‘ Ã©s kÃ¶rnyezetbarÃ¡t</p>
+                            <h3 class="text-xl font-semibold text-concrete-800">Permeábilis Térkõ</h3>
+                            <p class="text-sm text-concrete-600">Vízáteresztõ és környezetbarát</p>
                         </div>
                     </div>
                     <ul class="space-y-3 text-sm text-concrete-600">
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>VÃ­zÃ¡teresztÅ‘:</strong> 15-20% pÃ³rustÃ©rfogat a gyors vÃ­zelvezetÃ©sÃ©rt</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Vízáteresztõ:</strong> 15-20% pórustérfogat a gyors vízelvezetésért</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>KÃ¶rnyezetvÃ©delem:</strong> CsÃ¶kkenti a felszÃ­ni vÃ­zelfolyÃ¡st</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Környezetvédelem:</strong> Csökkenti a felszíni vízelfolyást</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>SzabÃ¡lyozÃ¡s:</strong> MegfelelÅ‘ a zÃ¶ldÃ­tÃ©si szabÃ¡lyozÃ¡soknak</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Szabályozás:</strong> Megfelelõ a zöldítési szabályozásoknak</span>
                         </li>
                     </ul>
                     <div class="mt-4 pt-4 border-t">
                         <div class="flex justify-between items-center">
-                            <span class="font-medium">Ãr/mÂ²:</span>
+                            <span class="font-medium">Ár/m2:</span>
                             <span class="font-bold text-primary-600">7.000-15.000 Ft</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- LED-es tÃ©rkÅ‘ -->
+                <!-- LED-es térkõ -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ’¡</span>
+                            <span class="text-2xl">??</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-concrete-800">LED TÃ©rkÃ¶vek</h3>
-                            <p class="text-sm text-concrete-600">Okos vilÃ¡gÃ­tÃ¡s Ã©s biztonsÃ¡g</p>
+                            <h3 class="text-xl font-semibold text-concrete-800">LED Térkövek</h3>
+                            <p class="text-sm text-concrete-600">Okos világítás és biztonság</p>
                         </div>
                     </div>
                     <ul class="space-y-3 text-sm text-concrete-600">
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>VilÃ¡gÃ­tÃ¡s:</strong> BeÃ©pÃ­tett LED vilÃ¡gÃ­tÃ¡s Ã©jszakai hasznÃ¡lathoz</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Világítás:</strong> Beépített LED világítás éjszakai használathoz</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>BiztonsÃ¡g:</strong> Fokozza a jÃ¡rÃ³felÃ¼letek biztonsÃ¡gÃ¡t</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Biztonság:</strong> Fokozza a járófelületek biztonságát</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>Design:</strong> Modern, lÃ¡tvÃ¡nyos megjelenÃ©s</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Design:</strong> Modern, látványos megjelenés</span>
                         </li>
                     </ul>
                     <div class="mt-4 pt-4 border-t">
                         <div class="flex justify-between items-center">
-                            <span class="font-medium">Ãr/mÂ²:</span>
+                            <span class="font-medium">Ár/m2:</span>
                             <span class="font-bold text-primary-600">25.000-50.000 Ft</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- ÃšjrahasznosÃ­tott tÃ©rkÅ‘ -->
+                <!-- Újrahasznosított térkõ -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">â™»ï¸</span>
+                            <span class="text-2xl">??</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-concrete-800">ÃšjrahasznosÃ­tott TÃ©rkÅ‘</h3>
-                            <p class="text-sm text-concrete-600">FenntarthatÃ³ Ã©s gazdasÃ¡gos</p>
+                            <h3 class="text-xl font-semibold text-concrete-800">Újrahasznosított Térkõ</h3>
+                            <p class="text-sm text-concrete-600">Fenntartható és gazdaságos</p>
                         </div>
                     </div>
                     <ul class="space-y-3 text-sm text-concrete-600">
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>FenntarthatÃ³:</strong> ÃšjrahasznosÃ­tott anyagokbÃ³l kÃ©szÃ¼lt</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Fenntartható:</strong> Újrahasznosított anyagokból készült</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>GazdasÃ¡gos:</strong> KedvezÅ‘ Ã¡r-Ã©rtÃ©k arÃ¡ny</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Gazdaságos:</strong> Kedvezõ ár-érték arány</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-green-500 mr-2">âœ“</span>
-                            <span><strong>KÃ¶rnyezetbarÃ¡t:</strong> CsÃ¶kkenti a hulladÃ©k mennyisÃ©gÃ©t</span>
+                            <span class="text-green-500 mr-2">?</span>
+                            <span><strong>Környezetbarát:</strong> Csökkenti a hulladék mennyiségét</span>
                         </li>
                     </ul>
                     <div class="mt-4 pt-4 border-t">
                         <div class="flex justify-between items-center">
-                            <span class="font-medium">Ãr/mÂ²:</span>
+                            <span class="font-medium">Ár/m2:</span>
                             <span class="font-bold text-primary-600">3.000-6.000 Ft</span>
                         </div>
                     </div>
@@ -874,91 +780,91 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-    <!-- VÃ¡lasztÃ¡s szempontjai -->
+    <!-- Választás szempontjai -->
     <section id="valasztas-szempontok" class="py-16 lg:py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ¯ TÃ©rkÅ‘ VÃ¡lasztÃ¡si ÃštmutatÃ³ - Mire Figyeljen?
+                    ?? Térkõ Választási Útmutató - Mire Figyeljen?
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto">
-                    A megfelelÅ‘ tÃ©rkÅ‘ kivÃ¡lasztÃ¡sa kulcsfontossÃ¡gÃº a projekt sikerÃ©hez. 
-                    Ãme a legfontosabb szempontok, amelyeket figyelembe kell venni.
+                    A megfelelõ térkõ kiválasztása kulcsfontosságú a projekt sikeréhez. 
+                    Íme a legfontosabb szempontok, amelyeket figyelembe kell venni.
                 </p>
             </div>
 
-            <!-- DÃ¶ntÃ©si fa diagram -->
+            <!-- Döntési fa diagram -->
             <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 shadow-lg mb-12">
-                <h3 class="text-2xl font-semibold text-concrete-800 mb-8 text-center">ğŸŒ³ DÃ¶ntÃ©si Fa - Melyik TÃ©rkÅ‘ a MegfelelÅ‘?</h3>
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-8 text-center">?? Döntési Fa - Melyik Térkõ a Megfelelõ?</h3>
                 <div class="space-y-8">
-                    <!-- HasznÃ¡lat tÃ­pusa -->
+                    <!-- Használat típusa -->
                     <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">1ï¸âƒ£ Mi a hasznÃ¡lat cÃ©lja?</h4>
+                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">1?? Mi a használat célja?</h4>
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="bg-blue-50 p-4 rounded-lg">
-                                <div class="font-medium text-blue-800 mb-2">ğŸš— KocsibeÃ¡llÃ³</div>
+                                <div class="font-medium text-blue-800 mb-2">?? Kocsibeálló</div>
                                 <div class="text-sm text-blue-700">
-                                    <strong>AjÃ¡nlott:</strong> Antik tÃ©rkÅ‘, GrÃ¡nit<br>
-                                    <strong>VastagsÃ¡g:</strong> 6-8 cm<br>
-                                    <strong>TerhelhetÅ‘sÃ©g:</strong> Nagy
+                                    <strong>Ajánlott:</strong> Antik térkõ, Gránit<br>
+                                    <strong>Vastagság:</strong> 6-8 cm<br>
+                                    <strong>Terhelhetõség:</strong> Nagy
                                 </div>
                             </div>
                             <div class="bg-green-50 p-4 rounded-lg">
-                                <div class="font-medium text-green-800 mb-2">ğŸ¡ Terasz/Kert</div>
+                                <div class="font-medium text-green-800 mb-2">?? Terasz/Kert</div>
                                 <div class="text-sm text-green-700">
-                                    <strong>AjÃ¡nlott:</strong> Modern, MÃ©szkÅ‘<br>
-                                    <strong>VastagsÃ¡g:</strong> 4-6 cm<br>
-                                    <strong>EsztÃ©tika:</strong> Fontos
+                                    <strong>Ajánlott:</strong> Modern, Mészkõ<br>
+                                    <strong>Vastagság:</strong> 4-6 cm<br>
+                                    <strong>Esztétika:</strong> Fontos
                                 </div>
                             </div>
                             <div class="bg-purple-50 p-4 rounded-lg">
-                                <div class="font-medium text-purple-800 mb-2">ğŸš¶ JÃ¡rda/Ãšt</div>
+                                <div class="font-medium text-purple-800 mb-2">?? Járda/Út</div>
                                 <div class="text-sm text-purple-700">
-                                    <strong>AjÃ¡nlott:</strong> Andezit, GrÃ¡nit<br>
-                                    <strong>VastagsÃ¡g:</strong> 6-10 cm<br>
-                                    <strong>KopÃ¡sÃ¡llÃ³sÃ¡g:</strong> Kritikus
+                                    <strong>Ajánlott:</strong> Andezit, Gránit<br>
+                                    <strong>Vastagság:</strong> 6-10 cm<br>
+                                    <strong>Kopásállóság:</strong> Kritikus
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- KÃ¶ltsÃ©gvetÃ©s -->
+                    <!-- Költségvetés -->
                     <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">2ï¸âƒ£ Mennyi a kÃ¶ltsÃ©gvetÃ©s?</h4>
+                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">2?? Mennyi a költségvetés?</h4>
                         <div class="space-y-3">
                             <div class="flex items-center justify-between bg-red-50 p-3 rounded-lg">
-                                <span class="font-medium text-red-800">ğŸ’° Alacsony (3.000-6.000 Ft/mÂ²)</span>
-                                <span class="text-sm text-red-700">ÃšjrahasznosÃ­tott, AlapvetÅ‘ beton tÃ©rkÃ¶vek</span>
+                                <span class="font-medium text-red-800">?? Alacsony (3.000-6.000 Ft/m2)</span>
+                                <span class="text-sm text-red-700">Újrahasznosított, Alapvetõ beton térkövek</span>
                             </div>
                             <div class="flex items-center justify-between bg-yellow-50 p-3 rounded-lg">
-                                <span class="font-medium text-yellow-800">ğŸ’°ğŸ’° KÃ¶zepes (6.000-12.000 Ft/mÂ²)</span>
-                                <span class="text-sm text-yellow-700">Antik, Modern, SzÃ­nes tÃ©rkÃ¶vek</span>
+                                <span class="font-medium text-yellow-800">???? Közepes (6.000-12.000 Ft/m2)</span>
+                                <span class="text-sm text-yellow-700">Antik, Modern, Színes térkövek</span>
                             </div>
                             <div class="flex items-center justify-between bg-green-50 p-3 rounded-lg">
-                                <span class="font-medium text-green-800">ğŸ’°ğŸ’°ğŸ’° Magas (12.000+ Ft/mÂ²)</span>
-                                <span class="text-sm text-green-700">TermÃ©szetes kÃ¶vek, SpeciÃ¡lis tÃ©rkÃ¶vek</span>
+                                <span class="font-medium text-green-800">?????? Magas (12.000+ Ft/m2)</span>
+                                <span class="text-sm text-green-700">Természetes kövek, Speciális térkövek</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- KarbantartÃ¡s -->
+                    <!-- Karbantartás -->
                     <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">3ï¸âƒ£ Mennyi karbantartÃ¡st vÃ¡llal?</h4>
+                        <h4 class="text-lg font-semibold text-concrete-800 mb-4">3?? Mennyi karbantartást vállal?</h4>
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="bg-green-50 p-4 rounded-lg text-center">
-                                <div class="text-2xl mb-2">ğŸ˜Œ</div>
-                                <div class="font-medium text-green-800 mb-2">MinimÃ¡lis</div>
-                                <div class="text-sm text-green-700">GrÃ¡nit, Antik tÃ©rkÅ‘<br>Ã‰vente 1-2 tisztÃ­tÃ¡s</div>
+                                <div class="text-2xl mb-2">??</div>
+                                <div class="font-medium text-green-800 mb-2">Minimális</div>
+                                <div class="text-sm text-green-700">Gránit, Antik térkõ<br>Évente 1-2 tisztítás</div>
                             </div>
                             <div class="bg-yellow-50 p-4 rounded-lg text-center">
-                                <div class="text-2xl mb-2">ğŸ› ï¸</div>
-                                <div class="font-medium text-yellow-800 mb-2">KÃ¶zepes</div>
-                                <div class="text-sm text-yellow-700">Modern, SzÃ­nes tÃ©rkÅ‘<br>FÃ©lÃ©ves takarÃ­tÃ¡s</div>
+                                <div class="text-2xl mb-2">???</div>
+                                <div class="font-medium text-yellow-800 mb-2">Közepes</div>
+                                <div class="text-sm text-yellow-700">Modern, Színes térkõ<br>Féléves takarítás</div>
                             </div>
                             <div class="bg-red-50 p-4 rounded-lg text-center">
-                                <div class="text-2xl mb-2">ğŸ§½</div>
+                                <div class="text-2xl mb-2">??</div>
                                 <div class="font-medium text-red-800 mb-2">Rendszeres</div>
-                                <div class="text-sm text-red-700">MÃ©szkÅ‘, LED tÃ©rkÅ‘<br>Havonta</div>
+                                <div class="text-sm text-red-700">Mészkõ, LED térkõ<br>Havonta</div>
                             </div>
                         </div>
                     </div>
@@ -967,112 +873,112 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-    <!-- HasznÃ¡lati terÃ¼letek -->
+    <!-- Használati területek -->
     <section id="hasznalati-teruletek" class="py-16 lg:py-20 bg-concrete-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ—ï¸ HasznÃ¡lati TerÃ¼letek Ã©s AlkalmazÃ¡sok
+                    ??? Használati Területek és Alkalmazások
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto">
-                    A tÃ©rkÃ¶vek sokfÃ©le terÃ¼leten hasznÃ¡lhatÃ³k. Minden alkalmazÃ¡shoz mÃ¡s-mÃ¡s tÃ­pus Ã©s tulajdonsÃ¡g optimÃ¡lis.
+                    A térkövek sokféle területen használhatók. Minden alkalmazáshoz más-más típus és tulajdonság optimális.
                 </p>
             </div>
 
-            <!-- AlkalmazÃ¡si terÃ¼letek -->
+            <!-- Alkalmazási területek -->
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- LakÃ³terÃ¼letek -->
+                <!-- Lakóterületek -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ </span>
+                            <span class="text-2xl">??</span>
                         </div>
-                        <h3 class="text-xl font-semibold text-concrete-800">LakÃ³terÃ¼leti AlkalmazÃ¡sok</h3>
+                        <h3 class="text-xl font-semibold text-concrete-800">Lakóterületi Alkalmazások</h3>
                     </div>
                     <div class="space-y-4">
                         <div class="border-l-4 border-blue-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">KocsibeÃ¡llÃ³k Ã©s BejÃ¡rÃ³k</h4>
-                            <p class="text-sm text-concrete-600">Antik tÃ©rkÅ‘, 6-8 cm vastagsÃ¡g, nagy terhelhetÅ‘sÃ©g</p>
+                            <h4 class="font-medium text-concrete-800">Kocsibeállók és Bejárók</h4>
+                            <p class="text-sm text-concrete-600">Antik térkõ, 6-8 cm vastagság, nagy terhelhetõség</p>
                         </div>
                         <div class="border-l-4 border-green-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">Teraszok Ã©s ErkÃ©lyek</h4>
-                            <p class="text-sm text-concrete-600">Modern tÃ©rkÅ‘, mÃ©szkÅ‘, esztÃ©tikai szempontok</p>
+                            <h4 class="font-medium text-concrete-800">Teraszok és Erkélyek</h4>
+                            <p class="text-sm text-concrete-600">Modern térkõ, mészkõ, esztétikai szempontok</p>
                         </div>
                         <div class="border-l-4 border-purple-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">Kerti Utak Ã©s JÃ¡rÃ³lapok</h4>
-                            <p class="text-sm text-concrete-600">SzÃ­nes tÃ©rkÅ‘, dekoratÃ­v elemek</p>
+                            <h4 class="font-medium text-concrete-800">Kerti Utak és Járólapok</h4>
+                            <p class="text-sm text-concrete-600">Színes térkõ, dekoratív elemek</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kereskedelmi terÃ¼letek -->
+                <!-- Kereskedelmi területek -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ¢</span>
+                            <span class="text-2xl">??</span>
                         </div>
-                        <h3 class="text-xl font-semibold text-concrete-800">Kereskedelmi AlkalmazÃ¡sok</h3>
+                        <h3 class="text-xl font-semibold text-concrete-800">Kereskedelmi Alkalmazások</h3>
                     </div>
                     <div class="space-y-4">
                         <div class="border-l-4 border-blue-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">BevÃ¡sÃ¡rlÃ³kÃ¶zpontok</h4>
-                            <p class="text-sm text-concrete-600">GrÃ¡nit, nagy forgalom, kopÃ¡sÃ¡llÃ³sÃ¡g</p>
+                            <h4 class="font-medium text-concrete-800">Bevásárlóközpontok</h4>
+                            <p class="text-sm text-concrete-600">Gránit, nagy forgalom, kopásállóság</p>
                         </div>
                         <div class="border-l-4 border-green-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">ParkolÃ³k Ã©s RaktÃ¡rak</h4>
-                            <p class="text-sm text-concrete-600">Ipari tÃ©rkÅ‘, rÃ¡csos tÃ©rkÅ‘, nagy terhelhetÅ‘sÃ©g</p>
+                            <h4 class="font-medium text-concrete-800">Parkolók és Raktárak</h4>
+                            <p class="text-sm text-concrete-600">Ipari térkõ, rácsos térkõ, nagy terhelhetõség</p>
                         </div>
                         <div class="border-l-4 border-purple-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">IrodahÃ¡zak Ã©s SzÃ¡llodÃ¡k</h4>
-                            <p class="text-sm text-concrete-600">PrÃ©mium termÃ©szetes kÅ‘, reprezentatÃ­v megjelenÃ©s</p>
+                            <h4 class="font-medium text-concrete-800">Irodaházak és Szállodák</h4>
+                            <p class="text-sm text-concrete-600">Prémium természetes kõ, reprezentatív megjelenés</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- KÃ¶zterÃ¼letek -->
+                <!-- Közterületek -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸ›ï¸</span>
+                            <span class="text-2xl">???</span>
                         </div>
-                        <h3 class="text-xl font-semibold text-concrete-800">KÃ¶zterÃ¼leti AlkalmazÃ¡sok</h3>
+                        <h3 class="text-xl font-semibold text-concrete-800">Közterületi Alkalmazások</h3>
                     </div>
                     <div class="space-y-4">
                         <div class="border-l-4 border-blue-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">KÃ¶zparkok Ã©s Terek</h4>
-                            <p class="text-sm text-concrete-600">Andezit, termÃ©szetes kÅ‘, idÅ‘jÃ¡rÃ¡sÃ¡llÃ³sÃ¡g</p>
+                            <h4 class="font-medium text-concrete-800">Közparkok és Terek</h4>
+                            <p class="text-sm text-concrete-600">Andezit, természetes kõ, idõjárásállóság</p>
                         </div>
                         <div class="border-l-4 border-green-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">Gyalogos Ã–vezetek</h4>
-                            <p class="text-sm text-concrete-600">KÃ¼lÃ¶nleges mintÃ¡k, esztÃ©tikai funkciÃ³</p>
+                            <h4 class="font-medium text-concrete-800">Gyalogos Övezetek</h4>
+                            <p class="text-sm text-concrete-600">Különleges minták, esztétikai funkció</p>
                         </div>
                         <div class="border-l-4 border-purple-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">TÃ¶rtÃ©nelmi KÃ¶zpontok</h4>
-                            <p class="text-sm text-concrete-600">TermÃ©szetes kÅ‘, hagyomÃ¡nyos megjelenÃ©s</p>
+                            <h4 class="font-medium text-concrete-800">Történelmi Központok</h4>
+                            <p class="text-sm text-concrete-600">Természetes kõ, hagyományos megjelenés</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- SpeciÃ¡lis terÃ¼letek -->
+                <!-- Speciális területek -->
                 <div class="bg-white rounded-xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-2xl">ğŸš€</span>
+                            <span class="text-2xl">??</span>
                         </div>
-                        <h3 class="text-xl font-semibold text-concrete-800">SpeciÃ¡lis AlkalmazÃ¡sok</h3>
+                        <h3 class="text-xl font-semibold text-concrete-800">Speciális Alkalmazások</h3>
                     </div>
                     <div class="space-y-4">
                         <div class="border-l-4 border-blue-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">MedencÃ©kÃ¶rnyezet</h4>
-                            <p class="text-sm text-concrete-600">CsÃºszÃ¡smentes, kloridÃ¡llÃ³ tÃ©rkÃ¶vek</p>
+                            <h4 class="font-medium text-concrete-800">Medencékörnyezet</h4>
+                            <p class="text-sm text-concrete-600">Csúszásmentes, kloridálló térkövek</p>
                         </div>
                         <div class="border-l-4 border-green-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">Ipari LÃ©tesÃ­tmÃ©nyek</h4>
-                            <p class="text-sm text-concrete-600">Fokozott terhelhetÅ‘sÃ©g, vegyi Ã¡llÃ³sÃ¡g</p>
+                            <h4 class="font-medium text-concrete-800">Ipari Létesítmények</h4>
+                            <p class="text-sm text-concrete-600">Fokozott terhelhetõség, vegyi állóság</p>
                         </div>
                         <div class="border-l-4 border-purple-300 pl-4">
-                            <h4 class="font-medium text-concrete-800">Sport- Ã©s RekreÃ¡ciÃ³s</h4>
-                            <p class="text-sm text-concrete-600">SpeciÃ¡lis csÃºszÃ¡smentessÃ©g, Ã¼tÃ©sÃ¡llÃ³</p>
+                            <h4 class="font-medium text-concrete-800">Sport- és Rekreációs</h4>
+                            <p class="text-sm text-concrete-600">Speciális csúszásmentesség, ütésálló</p>
                         </div>
                     </div>
                 </div>
@@ -1080,64 +986,64 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-    <!-- Ãrak Ã©s karbantartÃ¡s -->
+    <!-- Árak és karbantartás -->
     <section id="arak-osszehasonlitas" class="py-16 lg:py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ’° TÃ©rkÅ‘ Ãrak Ã©s KÃ¶ltsÃ©gkalkulÃ¡ciÃ³ 2025
+                    ?? Térkõ Árak és Költségkalkuláció 2025
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto">
-                    ÃtfogÃ³ Ã¡rkÃ©pzÃ©si ÃºtmutatÃ³ a tÃ©rkÃ¶vezÃ©si projektekhez. 
-                    Minden kÃ¶ltsÃ©get figyelembe vevÅ‘ kalkulÃ¡ciÃ³ a tervezÃ©shez.
+                    Átfogó árképzési útmutató a térkövezési projektekhez. 
+                    Minden költséget figyelembe vevõ kalkuláció a tervezéshez.
                 </p>
             </div>
 
-            <!-- RÃ©szletes Ã¡rtÃ¡bla -->
+            <!-- Részletes ártábla -->
             <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8 shadow-lg mb-12">
-                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸ“Š Komplett KÃ¶ltsÃ©gkalkulÃ¡ciÃ³</h3>
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Komplett Költségkalkuláció</h3>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
                         <thead>
                             <tr class="border-b-2 border-concrete-300">
-                                <th class="text-left py-4 px-4 font-semibold text-concrete-800">TÃ©rkÅ‘ TÃ­pus</th>
-                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Alapanyag (Ft/mÂ²)</th>
-                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">MunkadÃ­j (Ft/mÂ²)</th>
-                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">AlapozÃ¡s (Ft/mÂ²)</th>
-                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Ã–sszesen (Ft/mÂ²)</th>
+                                <th class="text-left py-4 px-4 font-semibold text-concrete-800">Térkõ Típus</th>
+                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Alapanyag (Ft/m2)</th>
+                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Munkadíj (Ft/m2)</th>
+                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Alapozás (Ft/m2)</th>
+                                <th class="text-center py-4 px-4 font-semibold text-concrete-800">Összesen (Ft/m2)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">ÃšjrahasznosÃ­tott</td>
+                                <td class="py-3 px-4 font-medium">Újrahasznosított</td>
                                 <td class="text-center py-3 px-4">3.000-6.000</td>
                                 <td class="text-center py-3 px-4">4.000-6.000</td>
                                 <td class="text-center py-3 px-4">2.000-3.000</td>
                                 <td class="text-center py-3 px-4 font-bold text-green-600">9.000-15.000</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">Antik TÃ©rkÅ‘</td>
+                                <td class="py-3 px-4 font-medium">Antik Térkõ</td>
                                 <td class="text-center py-3 px-4">4.500-6.500</td>
                                 <td class="text-center py-3 px-4">5.000-7.000</td>
                                 <td class="text-center py-3 px-4">2.500-3.500</td>
                                 <td class="text-center py-3 px-4 font-bold text-blue-600">12.000-17.000</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">Modern TÃ©rkÅ‘</td>
+                                <td class="py-3 px-4 font-medium">Modern Térkõ</td>
                                 <td class="text-center py-3 px-4">5.500-8.000</td>
                                 <td class="text-center py-3 px-4">5.500-7.500</td>
                                 <td class="text-center py-3 px-4">2.500-3.500</td>
                                 <td class="text-center py-3 px-4 font-bold text-blue-600">13.500-19.000</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">SzÃ­nes TÃ©rkÅ‘</td>
+                                <td class="py-3 px-4 font-medium">Színes Térkõ</td>
                                 <td class="text-center py-3 px-4">4.000-7.000</td>
                                 <td class="text-center py-3 px-4">5.000-7.000</td>
                                 <td class="text-center py-3 px-4">2.500-3.500</td>
                                 <td class="text-center py-3 px-4 font-bold text-blue-600">11.500-17.500</td>
                             </tr>
                             <tr class="border-b border-concrete-100">
-                                <td class="py-3 px-4 font-medium">MÃ©szkÅ‘</td>
+                                <td class="py-3 px-4 font-medium">Mészkõ</td>
                                 <td class="text-center py-3 px-4">8.000-18.000</td>
                                 <td class="text-center py-3 px-4">6.000-9.000</td>
                                 <td class="text-center py-3 px-4">3.000-4.000</td>
@@ -1151,7 +1057,7 @@ import Footer from '../components/Footer.astro';
                                 <td class="text-center py-3 px-4 font-bold text-red-600">19.000-33.000</td>
                             </tr>
                             <tr>
-                                <td class="py-3 px-4 font-medium">GrÃ¡nit</td>
+                                <td class="py-3 px-4 font-medium">Gránit</td>
                                 <td class="text-center py-3 px-4">12.000-25.000</td>
                                 <td class="text-center py-3 px-4">7.000-10.000</td>
                                 <td class="text-center py-3 px-4">3.000-5.000</td>
@@ -1161,57 +1067,57 @@ import Footer from '../components/Footer.astro';
                     </table>
                 </div>
                 <div class="mt-4 text-sm text-concrete-600">
-                    <p>* Az Ã¡rak tÃ¡jÃ©koztatÃ³ jellegÅ±ek Ã©s a projekt bonyolultsÃ¡gÃ¡tÃ³l fÃ¼ggÅ‘en vÃ¡ltozhatnak.</p>
-                    <p>* Az Ã¡rak tartalmazzÃ¡k az alapanyag, munkadÃ­j Ã©s alapozÃ¡s kÃ¶ltsÃ©geit.</p>
+                    <p>* Az árak tájékoztató jellegûek és a projekt bonyolultságától függõen változhatnak.</p>
+                    <p>* Az árak tartalmazzák az alapanyag, munkadíj és alapozás költségeit.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- KarbantartÃ¡si ÃºtmutatÃ³ -->
+    <!-- Karbantartási útmutató -->
     <section id="karbantartas" class="py-16 lg:py-20 bg-concrete-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    ğŸ§½ TÃ©rkÅ‘ KarbantartÃ¡si ÃštmutatÃ³
+                    ?? Térkõ Karbantartási Útmutató
                 </h2>
                 <p class="text-xl text-concrete-600 max-w-4xl mx-auto">
-                    A megfelelÅ‘ karbantartÃ¡ssal jelentÅ‘sen meghosszabbÃ­thatja a tÃ©rkÃ¶vek Ã©lettartamÃ¡t 
-                    Ã©s megÅ‘rizheti eredeti szÃ©psÃ©gÃ¼ket.
+                    A megfelelõ karbantartással jelentõsen meghosszabbíthatja a térkövek élettartamát 
+                    és megõrizheti eredeti szépségüket.
                 </p>
             </div>
 
 
-            <!-- KarbantartÃ¡si tippek -->
+            <!-- Karbantartási tippek -->
             <div class="bg-white rounded-xl p-8 shadow-lg">
-                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">ğŸ’¡ SzakÃ©rtÅ‘i KarbantartÃ¡si Tippek</h3>
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-6">?? Szakértõi Karbantartási Tippek</h3>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
                         <h4 class="font-semibold text-concrete-800 mb-4 flex items-center">
-                            <span class="text-green-500 mr-2">âœ…</span>
+                            <span class="text-green-500 mr-2">?</span>
                             Mit TEGYEN
                         </h4>
                         <ul class="space-y-2 text-concrete-600">
-                            <li>â€¢ HasznÃ¡ljon pH-semleges tisztÃ­tÃ³szert</li>
-                            <li>â€¢ TÃ¡volÃ­tsa el azonnal a foltokat</li>
-                            <li>â€¢ HasznÃ¡ljon lÃ¡gy sÃ¶rtÃ©jÅ± kefÃ©t</li>
-                            <li>â€¢ Rendszeresen ellenÅ‘rizze a fugÃ¡kat</li>
-                            <li>â€¢ Alkalmazzon impregnÃ¡lÃ³szert Ã©vente</li>
-                            <li>â€¢ BiztosÃ­tsa a megfelelÅ‘ vÃ­zelvezetÃ©st</li>
+                            <li>• Használjon pH-semleges tisztítószert</li>
+                            <li>• Távolítsa el azonnal a foltokat</li>
+                            <li>• Használjon lágy sörtéjû kefét</li>
+                            <li>• Rendszeresen ellenõrizze a fugákat</li>
+                            <li>• Alkalmazzon impregnálószert évente</li>
+                            <li>• Biztosítsa a megfelelõ vízelvezetést</li>
                         </ul>
                     </div>
                     <div>
                         <h4 class="font-semibold text-concrete-800 mb-4 flex items-center">
-                            <span class="text-red-500 mr-2">âŒ</span>
+                            <span class="text-red-500 mr-2">?</span>
                             Mit NE tegyen
                         </h4>
                         <ul class="space-y-2 text-concrete-600">
-                            <li>â€¢ Ne hasznÃ¡ljon savas tisztÃ­tÃ³szereket</li>
-                            <li>â€¢ Ne hasznÃ¡ljon magasnyomÃ¡sÃº mosÃ³t tÃºl kÃ¶zelbÅ‘l</li>
-                            <li>â€¢ Ne hagyja a foltokat megszÃ¡radni</li>
-                            <li>â€¢ Ne hasznÃ¡ljon fÃ©msÃ¶rtÃ©jÅ± kefÃ©t</li>
-                            <li>â€¢ Ne hagyja figyelmen kÃ­vÃ¼l a repedÃ©seket</li>
-                            <li>â€¢ Ne hasznÃ¡ljon sÃ³t jeges idÅ‘ben</li>
+                            <li>• Ne használjon savas tisztítószereket</li>
+                            <li>• Ne használjon magasnyomású mosót túl közelbõl</li>
+                            <li>• Ne hagyja a foltokat megszáradni</li>
+                            <li>• Ne használjon fémsörtéjû kefét</li>
+                            <li>• Ne hagyja figyelmen kívül a repedéseket</li>
+                            <li>• Ne használjon sót jeges idõben</li>
                         </ul>
                     </div>
                 </div>
@@ -1223,17 +1129,17 @@ import Footer from '../components/Footer.astro';
     <section class="py-16 lg:py-24 bg-primary-600 text-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
-                SegÃ­tÃ¼nk kivÃ¡lasztani a tÃ¶kÃ©letes tÃ©rkÃ¶vet
+                Segítünk kiválasztani a tökéletes térkövet
             </h2>
             <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Ingyenes konzultÃ¡ciÃ³ Ã©s helyszÃ­ni felmÃ©rÃ©s. SzakÃ©rtÅ‘ tanÃ¡csadÃ¡ssal a legjobb megoldÃ¡shoz juthat.
+                Ingyenes konzultáció és helyszíni felmérés. Szakértõ tanácsadással a legjobb megoldáshoz juthat.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href={`${import.meta.env.BASE_URL}kapcsolat`} class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
-                    AjÃ¡nlatkÃ©rÃ©s
+                    Ajánlatkérés
                 </a>
                 <a href="tel:+36301234567" class="bg-red-600 border border-red-600 text-white hover:bg-red-700 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
-                    KÃ©rj Ã¡rajÃ¡nlatot telefonon
+                    Kérj árajánlatot telefonon
                 </a>
             </div>
         </div>
@@ -1258,91 +1164,91 @@ document.addEventListener('DOMContentLoaded', function() {
         style: ''
     };
 
-    // TÃ©rkÅ‘ adatbÃ¡zis
+    // Térkõ adatbázis
     const terkoDatabase = {
-        // Antik tÃ©rkÅ‘ ajÃ¡nlÃ¡sok
+        // Antik térkõ ajánlások
         'kocsibeallo-low-klasszikus': {
-            type: 'Antik TÃ©rkÅ‘',
-            price: '12.000-17.000 Ft/mÂ²',
-            description: 'Klasszikus koptatott felÃ¼let, nagy terhelhetÅ‘sÃ©g, tartÃ³s megoldÃ¡s kocsibeÃ¡llÃ³hoz.',
-            pros: ['Nagy terhelhetÅ‘sÃ©g', 'CsÃºszÃ¡smentes', 'IdÅ‘tÃ¡llÃ³ megjelenÃ©s', 'KedvezÅ‘ Ã¡r-Ã©rtÃ©k arÃ¡ny'],
-            icon: 'ğŸ›ï¸'
+            type: 'Antik Térkõ',
+            price: '12.000-17.000 Ft/m2',
+            description: 'Klasszikus koptatott felület, nagy terhelhetõség, tartós megoldás kocsibeállóhoz.',
+            pros: ['Nagy terhelhetõség', 'Csúszásmentes', 'Idõtálló megjelenés', 'Kedvezõ ár-érték arány'],
+            icon: '???'
         },
         'kocsibeallo-medium-klasszikus': {
-            type: 'PrÃ©mium Antik TÃ©rkÅ‘',
-            price: '15.000-20.000 Ft/mÂ²',
-            description: 'KivÃ¡lÃ³ minÅ‘sÃ©gÅ± antik tÃ©rkÅ‘, hosszÃº Ã©lettartam, kocsibeÃ¡llÃ³hoz optimalizÃ¡lva.',
-            pros: ['MaximÃ¡lis tartÃ³ssÃ¡g', 'PrÃ©mium minÅ‘sÃ©g', 'Klasszikus elegancia', '25-30 Ã©v Ã©lettartam'],
-            icon: 'ğŸ›ï¸'
+            type: 'Prémium Antik Térkõ',
+            price: '15.000-20.000 Ft/m2',
+            description: 'Kiváló minõségû antik térkõ, hosszú élettartam, kocsibeállóhoz optimalizálva.',
+            pros: ['Maximális tartósság', 'Prémium minõség', 'Klasszikus elegancia', '25-30 év élettartam'],
+            icon: '???'
         },
         'kocsibeallo-high-klasszikus': {
-            type: 'GrÃ¡nit TÃ©rkÅ‘',
-            price: '22.000-40.000 Ft/mÂ²',
-            description: 'TermÃ©szetes grÃ¡nit, a legmagasabb minÅ‘sÃ©g, Ã©vtizedekig tartÃ³ befektetÃ©s.',
-            pros: ['100+ Ã©v Ã©lettartam', 'TermÃ©szetes szÃ©psÃ©g', 'MaximÃ¡lis kemÃ©nysÃ©g', 'Ã‰rtÃ©knÃ¶velÅ‘'],
-            icon: 'ğŸ’'
+            type: 'Gránit Térkõ',
+            price: '22.000-40.000 Ft/m2',
+            description: 'Természetes gránit, a legmagasabb minõség, évtizedekig tartó befektetés.',
+            pros: ['100+ év élettartam', 'Természetes szépség', 'Maximális keménység', 'Értéknövelõ'],
+            icon: '??'
         },
         
-        // Terasz/kert ajÃ¡nlÃ¡sok
+        // Terasz/kert ajánlások
         'terasz-low-modern': {
-            type: 'Modern Beton TÃ©rkÅ‘',
-            price: '11.500-17.500 Ft/mÂ²',
-            description: 'Sima felÃ¼letÅ±, nagymÃ©retÅ± lapok modern teraszokhoz, tiszta vonalak.',
-            pros: ['ElegÃ¡ns megjelenÃ©s', 'Nagy lapok', 'KÃ¶nnyÅ± tisztÃ­tÃ¡s', 'Modern design'],
-            icon: 'ğŸ '
+            type: 'Modern Beton Térkõ',
+            price: '11.500-17.500 Ft/m2',
+            description: 'Sima felületû, nagyméretû lapok modern teraszokhoz, tiszta vonalak.',
+            pros: ['Elegáns megjelenés', 'Nagy lapok', 'Könnyû tisztítás', 'Modern design'],
+            icon: '??'
         },
         'terasz-medium-modern': {
-            type: 'PrÃ©mium Modern TÃ©rkÅ‘',
-            price: '16.000-22.000 Ft/mÂ²',
-            description: 'KivÃ¡lÃ³ minÅ‘sÃ©gÅ± modern tÃ©rkÅ‘, tÃ¶kÃ©letes teraszokhoz Ã©s kertekhez.',
-            pros: ['PrÃ©mium minÅ‘sÃ©g', 'VÃ¡ltozatos mÃ©retek', 'UV-Ã¡llÃ³', 'HosszÃº garancia'],
-            icon: 'ğŸ '
+            type: 'Prémium Modern Térkõ',
+            price: '16.000-22.000 Ft/m2',
+            description: 'Kiváló minõségû modern térkõ, tökéletes teraszokhoz és kertekhez.',
+            pros: ['Prémium minõség', 'Változatos méretek', 'UV-álló', 'Hosszú garancia'],
+            icon: '??'
         },
         'terasz-high-modern': {
-            type: 'MÃ©szkÅ‘ Burkolat',
-            price: '17.000-31.000 Ft/mÂ²',
-            description: 'TermÃ©szetes mÃ©szkÅ‘, meleg tÃ³nusok, gyÃ¶nyÃ¶rÅ± patina az idÅ‘ mÃºlÃ¡sÃ¡val.',
-            pros: ['TermÃ©szetes szÃ©psÃ©g', 'Egyedi mintÃ¡zat', 'IdÅ‘vel szÃ©pÃ¼l', 'PrÃ©mium minÅ‘sÃ©g'],
-            icon: 'ğŸŒ¿'
+            type: 'Mészkõ Burkolat',
+            price: '17.000-31.000 Ft/m2',
+            description: 'Természetes mészkõ, meleg tónusok, gyönyörû patina az idõ múlásával.',
+            pros: ['Természetes szépség', 'Egyedi mintázat', 'Idõvel szépül', 'Prémium minõség'],
+            icon: '??'
         },
 
-        // KreatÃ­v/szÃ­nes ajÃ¡nlÃ¡sok
-        'terasz-low-kreatÃ­v': {
-            type: 'SzÃ­nes TÃ©rkÅ‘ Mix',
-            price: '11.500-17.500 Ft/mÂ²',
-            description: 'VÃ¡ltozatos szÃ­nÅ± tÃ©rkÃ¶vek kreatÃ­v kombinÃ¡ciÃ³khoz, egyedi mintÃ¡k.',
-            pros: ['SzÃ©les szÃ­npaletta', 'KreatÃ­v lehetÅ‘sÃ©gek', 'Egyedi design', 'JÃ³ Ã¡r-Ã©rtÃ©k arÃ¡ny'],
-            icon: 'ğŸ¨'
+        // Kreatív/színes ajánlások
+        'terasz-low-kreatív': {
+            type: 'Színes Térkõ Mix',
+            price: '11.500-17.500 Ft/m2',
+            description: 'Változatos színû térkövek kreatív kombinációkhoz, egyedi minták.',
+            pros: ['Széles színpaletta', 'Kreatív lehetõségek', 'Egyedi design', 'Jó ár-érték arány'],
+            icon: '??'
         },
-        'terasz-medium-kreatÃ­v': {
-            type: 'Designer TÃ©rkÅ‘ KollekciÃ³',
-            price: '15.000-22.000 Ft/mÂ²',
-            description: 'SpeciÃ¡lis szÃ­nek Ã©s mintÃ¡k, designer kollekciÃ³ egyedi projektekhez.',
-            pros: ['ExkluzÃ­v szÃ­nek', 'KÃ¼lÃ¶nleges textÃºrÃ¡k', 'Design kollekciÃ³', 'UV-Ã¡llÃ³ pigmentek'],
-            icon: 'ğŸ¨'
+        'terasz-medium-kreatív': {
+            type: 'Designer Térkõ Kollekció',
+            price: '15.000-22.000 Ft/m2',
+            description: 'Speciális színek és minták, designer kollekció egyedi projektekhez.',
+            pros: ['Exkluzív színek', 'Különleges textúrák', 'Design kollekció', 'UV-álló pigmentek'],
+            icon: '??'
         },
 
-        // JÃ¡rda/Ãºt ajÃ¡nlÃ¡sok  
+        // Járda/út ajánlások  
         'jarda-low-klasszikus': {
-            type: 'Andezit TÃ©rkÅ‘',
-            price: '19.000-33.000 Ft/mÂ²',
-            description: 'Magyar vulkanikus kÅ‘, kivÃ¡lÃ³ kopÃ¡sÃ¡llÃ³sÃ¡g, csÃºszÃ¡smentes felÃ¼let.',
-            pros: ['Magyar eredetÅ±', 'KopÃ¡sÃ¡llÃ³', 'CsÃºszÃ¡smentes', 'KÃ¶rnyezetbarÃ¡t'],
-            icon: 'ğŸ—»'
+            type: 'Andezit Térkõ',
+            price: '19.000-33.000 Ft/m2',
+            description: 'Magyar vulkanikus kõ, kiváló kopásállóság, csúszásmentes felület.',
+            pros: ['Magyar eredetû', 'Kopásálló', 'Csúszásmentes', 'Környezetbarát'],
+            icon: '??'
         },
         'jarda-medium-klasszikus': {
-            type: 'PrÃ©mium Andezit',
-            price: '25.000-35.000 Ft/mÂ²',
-            description: 'KivÃ¡lÃ³ minÅ‘sÃ©gÅ± andezit, kÃ¶zterÃ¼leti hasznÃ¡latra optimalizÃ¡lva.',
-            pros: ['KÃ¶zterÃ¼leti minÅ‘sÃ©g', 'HosszÃº Ã©lettartam', 'KivÃ¡lÃ³ tapadÃ¡s', 'MinimÃ¡l karbantartÃ¡s'],
-            icon: 'ğŸ—»'
+            type: 'Prémium Andezit',
+            price: '25.000-35.000 Ft/m2',
+            description: 'Kiváló minõségû andezit, közterületi használatra optimalizálva.',
+            pros: ['Közterületi minõség', 'Hosszú élettartam', 'Kiváló tapadás', 'Minimál karbantartás'],
+            icon: '??'
         },
         'jarda-high-klasszikus': {
-            type: 'PrÃ©mium GrÃ¡nit',
-            price: '30.000-45.000 Ft/mÂ²',
-            description: 'CsÃºcsminÅ‘sÃ©gÅ± grÃ¡nit kÃ¶zterÃ¼letekhez, tÃ¶rtÃ©nelmi kÃ¶zpontokhoz.',
-            pros: ['TÃ¶rtÃ©nelmi tartÃ³ssÃ¡g', 'ReprezentatÃ­v', 'IdÅ‘jÃ¡rÃ¡sÃ¡llÃ³', 'BefektetÃ©s'],
-            icon: 'ğŸ’'
+            type: 'Prémium Gránit',
+            price: '30.000-45.000 Ft/m2',
+            description: 'Csúcsminõségû gránit közterületekhez, történelmi központokhoz.',
+            pros: ['Történelmi tartósság', 'Reprezentatív', 'Idõjárásálló', 'Befektetés'],
+            icon: '??'
         }
     };
 
@@ -1386,13 +1292,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showResult() {
-        // Kulcs generÃ¡lÃ¡sa az ajÃ¡nlÃ¡shoz
+        // Kulcs generálása az ajánláshoz
         const key = `${selections.useCase}-${selections.budget}-${selections.style}`;
         let recommendation = terkoDatabase[key];
         
-        // Fallback logika ha nincs pontos egyezÃ©s
+        // Fallback logika ha nincs pontos egyezés
         if (!recommendation) {
-            // AlapÃ©rtelmezett ajÃ¡nlÃ¡sok hasznÃ¡lat alapjÃ¡n
+            // Alapértelmezett ajánlások használat alapján
             if (selections.useCase === 'kocsibeallo') {
                 if (selections.budget === 'low') recommendation = terkoDatabase['kocsibeallo-low-klasszikus'];
                 else if (selections.budget === 'medium') recommendation = terkoDatabase['kocsibeallo-medium-klasszikus'];
@@ -1408,7 +1314,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        // AjÃ¡nlÃ¡s megjelenÃ­tÃ©se
+        // Ajánlás megjelenítése
         if (recommendation) {
             const recommendationHTML = `
                 <div class="bg-white rounded-lg p-6 border-l-4 border-green-500">
@@ -1422,9 +1328,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="text-concrete-700 mb-4">${recommendation.description}</p>
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <h5 class="font-semibold mb-2">âœ… ElÅ‘nyÃ¶k:</h5>
+                            <h5 class="font-semibold mb-2">? Elõnyök:</h5>
                             <ul class="text-sm space-y-1">
-                                ${recommendation.pros.map(pro => `<li>â€¢ ${pro}</li>`).join('')}
+                                ${recommendation.pros.map(pro => `<li>• ${pro}</li>`).join('')}
                             </ul>
                         </div>
                     </div>

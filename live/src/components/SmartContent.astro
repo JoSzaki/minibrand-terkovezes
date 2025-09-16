@@ -1,5 +1,5 @@
 ---
-// Intelligens tartalom komponens, amely automatikusan feldolgozza a slotb√≥l √©rkez≈ë tartalmat
+// Intelligens tartalom komponens, amely automatikusan feldolgozza a slotbÛl Èrkezı tartalmat
 import { processContentForLinks } from '../utils/contentProcessor.js';
 
 export interface Props {
@@ -14,8 +14,8 @@ const {
   className = 'space-y-6 text-lg text-concrete-600'
 } = Astro.props;
 
-// A slot tartalm√°t nem tudjuk itt feldolgozni server-side,
-// ez√©rt egy wrapper komponenst k√©sz√≠t√ºnk, amely client-side dolgozza fel
+// A slot tartalm·t nem tudjuk itt feldolgozni server-side,
+// ezÈrt egy wrapper komponenst kÈszÌt¸nk, amely client-side dolgozza fel
 ---
 
 <div class={`smart-content ${className}`} data-current-slug={currentSlug} data-max-links={maxLinksPerParagraph}>

@@ -1,225 +1,225 @@
-// KeresztlinkelÃ©si StratÃ©giai Terv
-// TÃ©rkÃ¶vezÃ©s Debrecen Topical Authority Projekt
+// Keresztlinkelési Stratégiai Terv
+// Térkövezés Debrecen Topical Authority Projekt
 
 export const CROSSLINKING_STRATEGY = {
-  // 1. PILLAR OLDAL - KÃ¶zponti hub
+  // 1. PILLAR OLDAL - Központi hub
   pillar: {
     url: "/terkovezes-debrecen",
-    title: "TÃ©rkÃ¶vezÃ©s Debrecen - SzakÃ©rtÅ‘ SzolgÃ¡ltatÃ¡s",
+    title: "Térkövezés Debrecen - Szakértõ Szolgáltatás",
     type: "service",
-    linkingPower: 100, // Legmagasabb prioritÃ¡s
+    linkingPower: 100, // Legmagasabb prioritás
     internalLinksFrom: "ALL", // Minden oldal linkel ide
     internalLinksTo: [
-      "supporting-articles", // Minden tÃ¡mogatÃ³ cikkhez
+      "supporting-articles", // Minden támogató cikkhez
       "contact", // Kapcsolat oldalhoz
-      "portfolio" // ReferenciÃ¡khoz
+      "portfolio" // Referenciákhoz
     ]
   },
 
-  // 2. TÃMOGATÃ“ CIKKEK - Topical Cluster
+  // 2. TÁMOGATÓ CIKKEK - Topical Cluster
   supportingArticles: [
     {
       url: "/terkovezes-arak-debrecen",
-      title: "TÃ©rkÃ¶vezÃ©s Ã¡rak Debrecenben 2025",
+      title: "Térkövezés árak Debrecenben 2025",
       type: "blog",
-      keywords: ["tÃ©rkÃ¶vezÃ©s Ã¡r", "tÃ©rkÃ¶vezÃ©s kÃ¶ltsÃ©g", "debrecen Ã¡rak"],
-      linksTo: ["pillar", "kovezes-tipusok", "beruhazas-megtÃ©rÃ¼lÃ©s"],
+      keywords: ["térkövezés ár", "térkövezés költség", "debrecen árak"],
+      linksTo: ["pillar", "kovezes-tipusok", "beruhazas-megtérülés"],
       linksFrom: ["pillar", "anyagok", "kivitelezes"]
     },
     {
       url: "/terkovezes-anyagok-tipusok",
-      title: "TÃ©rkÃ¶vezÃ©s anyagok Ã©s tÃ­pusok ÃºtmutatÃ³ja",
+      title: "Térkövezés anyagok és típusok útmutatója",
       type: "guide", 
-      keywords: ["tÃ©rkÃ¶ves tÃ­pusok", "jÃ¡rÃ³lapok", "kÅ‘ anyagok"],
+      keywords: ["térköves típusok", "járólapok", "kõ anyagok"],
       linksTo: ["pillar", "arak", "karbantartas"],
       linksFrom: ["pillar", "kivitelezes", "beruhazas"]
     },
     {
       url: "/terkovezes-kivitelezes-lepesek",
-      title: "TÃ©rkÃ¶vezÃ©s kivitelezÃ©se lÃ©pÃ©srÅ‘l lÃ©pÃ©sre",
+      title: "Térkövezés kivitelezése lépésrõl lépésre",
       type: "tutorial",
-      keywords: ["tÃ©rkÃ¶vezÃ©s folyamat", "kivitelezÃ©s", "Ã©pÃ­tÃ©s lÃ©pÃ©sek"],
+      keywords: ["térkövezés folyamat", "kivitelezés", "építés lépések"],
       linksTo: ["pillar", "anyagok", "beruhazas"],
       linksFrom: ["pillar", "arak", "hibak"]
     },
     {
       url: "/terkovezes-karbantartas-tippek",
-      title: "TÃ©rkÃ¶vezÃ©s karbantartÃ¡sa - Gyakorlati tippek",
+      title: "Térkövezés karbantartása - Gyakorlati tippek",
       type: "blog",
-      keywords: ["tÃ©rkÅ‘ tisztÃ­tÃ¡s", "karbantartÃ¡s", "felÃºjÃ­tÃ¡s"],
+      keywords: ["térkõ tisztítás", "karbantartás", "felújítás"],
       linksTo: ["pillar", "anyagok", "hibak"],
       linksFrom: ["pillar", "arak", "kivitelezes"]
     },
     {
-      url: "/terkovezes-beruhazas-megtÃ©rÃ¼lÃ©s",
-      title: "TÃ©rkÃ¶vezÃ©s mint befektetÃ©s - MegtÃ©rÃ¼lÃ©si szÃ¡mÃ­tÃ¡s",
+      url: "/terkovezes-beruhazas-megtérülés",
+      title: "Térkövezés mint befektetés - Megtérülési számítás",
       type: "blog",
-      keywords: ["ingatlan Ã©rtÃ©k", "befektetÃ©s megtÃ©rÃ¼lÃ©s", "ROI"],
+      keywords: ["ingatlan érték", "befektetés megtérülés", "ROI"],
       linksTo: ["pillar", "arak", "anyagok"],
       linksFrom: ["pillar", "kivitelezes", "hibak"]
     },
     {
       url: "/gyakori-terkovezes-hibak-elkeruelse",
-      title: "7 gyakori tÃ©rkÃ¶vezÃ©si hiba Ã©s elkerÃ¼lÃ©sÃ¼k",
+      title: "7 gyakori térkövezési hiba és elkerülésük",
       type: "blog",
-      keywords: ["tÃ©rkÃ¶vezÃ©s hibÃ¡k", "rossz kivitelezÃ©s", "problÃ©mÃ¡k"],
+      keywords: ["térkövezés hibák", "rossz kivitelezés", "problémák"],
       linksTo: ["pillar", "kivitelezes", "karbantartas"],
       linksFrom: ["pillar", "beruhazas", "anyagok"]
     },
     {
-      url: "/terkovezes-engedelyezes-hatosagi-ugyintÃ©zes",
-      title: "TÃ©rkÃ¶vezÃ©s engedÃ©lyezÃ©se Ã©s hatÃ³sÃ¡gi Ã¼gyintÃ©zÃ©s",
+      url: "/terkovezes-engedelyezes-hatosagi-ugyintézes",
+      title: "Térkövezés engedélyezése és hatósági ügyintézés",
       type: "guide",
-      keywords: ["Ã©pÃ­tÃ©si engedÃ©ly", "hatÃ³sÃ¡g", "Ã¼gyintÃ©zÃ©s"],
+      keywords: ["építési engedély", "hatóság", "ügyintézés"],
       linksTo: ["pillar", "kivitelezes", "beruhazas"],
       linksFrom: ["pillar", "arak", "hibak"]
     },
     {
       url: "/modern-terkovezes-trendek-2025",
-      title: "Modern tÃ©rkÃ¶vezÃ©si trendek 2025-ben",
+      title: "Modern térkövezési trendek 2025-ben",
       type: "blog",
-      keywords: ["tÃ©rkÃ¶vezÃ©s trendek", "modern design", "Ãºj anyagok"],
+      keywords: ["térkövezés trendek", "modern design", "új anyagok"],
       linksTo: ["pillar", "anyagok", "beruhazas"],
       linksFrom: ["pillar", "karbantartas", "arak"]
     },
     {
       url: "/terkovezes-vs-egyeb-burkolatok",
-      title: "TÃ©rkÃ¶vezÃ©s vs. egyÃ©b udvari burkolatok Ã¶sszehasonlÃ­tÃ¡sa",
+      title: "Térkövezés vs. egyéb udvari burkolatok összehasonlítása",
       type: "guide",
-      keywords: ["burkolat tÃ­pusok", "Ã¶sszehasonlÃ­tÃ¡s", "vÃ¡lasztÃ¡s"],
+      keywords: ["burkolat típusok", "összehasonlítás", "választás"],
       linksTo: ["pillar", "anyagok", "arak"],
       linksFrom: ["pillar", "beruhazas", "trendek"]
     },
     {
-      url: "/terkovezes-debrecen-referenciÃ¡k-esettanulmÃ¡nyok",
-      title: "Debreceni tÃ©rkÃ¶vezÃ©si referenciÃ¡k Ã©s esettanulmÃ¡nyok",
+      url: "/terkovezes-debrecen-referenciák-esettanulmányok",
+      title: "Debreceni térkövezési referenciák és esettanulmányok",
       type: "content",
-      keywords: ["referenciÃ¡k", "projektek", "esettanulmÃ¡nyok"],
+      keywords: ["referenciák", "projektek", "esettanulmányok"],
       linksTo: ["pillar", "beruhazas", "trendek"],
       linksFrom: ["pillar", "arak", "anyagok"]
     }
   ],
 
-  // 3. TÃMOGATÃ“ OLDALAK
+  // 3. TÁMOGATÓ OLDALAK
   supportingPages: [
     {
       url: "/kapcsolat",
-      title: "Kapcsolat - TÃ©rkÃ¶vezÃ©s Debrecen",
+      title: "Kapcsolat - Térkövezés Debrecen",
       type: "contact",
       linksTo: ["pillar"],
-      linksFrom: ["pillar", "ALL_ARTICLES"] // Minden cikkbÅ‘l
+      linksFrom: ["pillar", "ALL_ARTICLES"] // Minden cikkbõl
     },
     {
-      url: "/galeria-referenciÃ¡k",
-      title: "GalÃ©ria Ã©s referenciÃ¡k",
+      url: "/galeria-referenciák",
+      title: "Galéria és referenciák",
       type: "content", 
-      linksTo: ["pillar", "referenciÃ¡k"],
+      linksTo: ["pillar", "referenciák"],
       linksFrom: ["pillar", "beruhazas", "trendek"]
     }
   ]
 };
 
-// 4. KERESZTLINKELÃ‰SI SZABÃLYOK
+// 4. KERESZTLINKELÉSI SZABÁLYOK
 export const LINKING_RULES = {
-  // Anchor text variÃ¡ciÃ³k
+  // Anchor text variációk
   anchorTextVariations: {
     pillar: [
-      "tÃ©rkÃ¶vezÃ©s Debrecen",
-      "szakÃ©rtÅ‘ tÃ©rkÃ¶vezÃ©si szolgÃ¡ltatÃ¡s",
-      "tÃ©rkÃ¶vezÃ©s Debrecenben",
-      "megbÃ­zhatÃ³ tÃ©rkÃ¶vezÅ‘",
-      "tÃ©rkÃ¶vezÃ©si szakÃ©rtÅ‘"
+      "térkövezés Debrecen",
+      "szakértõ térkövezési szolgáltatás",
+      "térkövezés Debrecenben",
+      "megbízható térkövezõ",
+      "térkövezési szakértõ"
     ],
     price: [
-      "tÃ©rkÃ¶vezÃ©s Ã¡rak",
-      "kÃ¶ltsÃ©gkalkulÃ¡ciÃ³", 
-      "Ã¡r informÃ¡ciÃ³",
-      "Ã¡rajÃ¡nlat kÃ©rÃ©s"
+      "térkövezés árak",
+      "költségkalkuláció", 
+      "ár információ",
+      "árajánlat kérés"
     ],
     materials: [
-      "tÃ©rkÅ‘ tÃ­pusok",
+      "térkõ típusok",
       "burkolati anyagok",
-      "jÃ¡rÃ³lap vÃ¡lasztÃ©k",
-      "kÅ‘ anyagok"
+      "járólap választék",
+      "kõ anyagok"
     ],
     process: [
-      "kivitelezÃ©si folyamat",
-      "tÃ©rkÃ¶vezÃ©s lÃ©pÃ©sei", 
-      "munkafÃ¡zisok",
-      "Ã©pÃ­tÃ©si folyamat"
+      "kivitelezési folyamat",
+      "térkövezés lépései", 
+      "munkafázisok",
+      "építési folyamat"
     ],
     maintenance: [
-      "karbantartÃ¡si tippek",
-      "tisztÃ­tÃ¡si mÃ³dszerek",
-      "felÃºjÃ­tÃ¡s",
-      "megÃ³vÃ¡s"
+      "karbantartási tippek",
+      "tisztítási módszerek",
+      "felújítás",
+      "megóvás"
     ]
   },
 
-  // Link elhelyezÃ©si stratÃ©gia
+  // Link elhelyezési stratégia
   linkPlacement: {
-    introduction: "1-2 link a bevezetÅ‘ bekezdÃ©sben",
-    body: "3-5 kontextuÃ¡lis link a tÃ¶rzsszÃ¶vegben", 
-    conclusion: "1-2 Ã¶sszefoglalÃ³ link",
-    sidebar: "KapcsolÃ³dÃ³ cikkek widget",
-    footerCTA: "TovÃ¡bbi informÃ¡ciÃ³ call-to-action"
+    introduction: "1-2 link a bevezetõ bekezdésben",
+    body: "3-5 kontextuális link a törzsszövegben", 
+    conclusion: "1-2 összefoglaló link",
+    sidebar: "Kapcsolódó cikkek widget",
+    footerCTA: "További információ call-to-action"
   },
 
-  // Link tÃ­pusok
+  // Link típusok
   linkTypes: {
-    contextual: "TermÃ©szetes szÃ¶vegkÃ¶rnyezetben",
-    navigational: "NavigÃ¡ciÃ³s menÃ¼ben", 
-    related: "KapcsolÃ³dÃ³ cikkek szekciÃ³ban",
+    contextual: "Természetes szövegkörnyezetben",
+    navigational: "Navigációs menüben", 
+    related: "Kapcsolódó cikkek szekcióban",
     cta: "Call-to-action gombokban",
-    breadcrumb: "Breadcrumb navigÃ¡ciÃ³ban"
+    breadcrumb: "Breadcrumb navigációban"
   }
 };
 
-// 5. LINK BUILDING PRIORITÃS
+// 5. LINK BUILDING PRIORITÁS
 export const PRIORITY_MATRIX = {
   high: [
-    "Minden cikk â†’ Pillar oldal",
-    "Pillar â†’ Top 3 tÃ¡mogatÃ³ cikk",
-    "Ãrak â†” Anyagok â†” KivitelezÃ©s (hÃ¡romszÃ¶g)"
+    "Minden cikk › Pillar oldal",
+    "Pillar › Top 3 támogató cikk",
+    "Árak - Anyagok - Kivitelezés (háromszög)"
   ],
   medium: [
-    "TÃ¡mogatÃ³ cikkek egymÃ¡s kÃ¶zÃ¶tt (topical clustering)",
-    "ReferenciÃ¡k â†’ Pillar",
-    "Kapcsolat minden cikkbÅ‘l"
+    "Támogató cikkek egymás között (topical clustering)",
+    "Referenciák › Pillar",
+    "Kapcsolat minden cikkbõl"
   ],
   low: [
-    "KiegÃ©szÃ­tÅ‘ oldalak egymÃ¡s kÃ¶zÃ¶tt",
-    "SzezonÃ¡lis cross-linking"
+    "Kiegészítõ oldalak egymás között",
+    "Szezonális cross-linking"
   ]
 };
 
 // 6. SEO LINK JUICE FLOW MODELL
 export const LINK_AUTHORITY_FLOW = {
   pillarPage: {
-    receives: "100% kÃ¼lsÅ‘ link authority",
+    receives: "100% külsõ link authority",
     distributes: "60% supporting articles, 30% key pages, 10% utility"
   },
   supportingArticles: {
-    receives: "Authority pillarbÅ‘l + kÃ¼lsÅ‘ linkek",
-    distributes: "20% vissza pillarhez, 80% kÃ¶zÃ¶tt elosztva"
+    receives: "Authority pillarbõl + külsõ linkek",
+    distributes: "20% vissza pillarhez, 80% között elosztva"
   },
   crossLinkingDensity: {
-    pillar: "8-12 belsÅ‘ link",
-    supporting: "5-8 belsÅ‘ link", 
-    utility: "2-4 belsÅ‘ link"
+    pillar: "8-12 belsõ link",
+    supporting: "5-8 belsõ link", 
+    utility: "2-4 belsõ link"
   }
 };
 
-// 7. AUTOMATIZÃLÃSI SZABÃLYOK
+// 7. AUTOMATIZÁLÁSI SZABÁLYOK
 export const AUTOMATION_RULES = {
-  // Ãšj cikk hozzÃ¡adÃ¡sakor
+  // Új cikk hozzáadásakor
   newArticle: {
     autoLinkTo: ["pillar", "topRelevantArticles"],
     autoLinkFrom: ["pillar", "relatedByKeywords"],
     anchorTextGeneration: "contextualKeywordMatch"
   },
   
-  // Link karbantartÃ¡s
+  // Link karbantartás
   maintenance: {
     brokenLinkCheck: "weekly",
     anchorTextDiversity: "monthly audit", 
@@ -230,16 +230,16 @@ export const AUTOMATION_RULES = {
   schemaLinking: {
     breadcrumb: "automatikus hierarchia",
     sitelinks: "pillar + top supporting",
-    faq: "kereszthivatkozÃ¡sok FAQ vÃ¡laszokban"
+    faq: "kereszthivatkozások FAQ válaszokban"
   }
 };
 
-// 8. HASZNÃLAT
+// 8. HASZNÁLAT
 export function generateCrossLinks(currentPage, allPages) {
   const strategy = CROSSLINKING_STRATEGY;
   const rules = LINKING_RULES;
   
-  // Logika a relevÃ¡ns linkek generÃ¡lÃ¡sÃ¡ra
+  // Logika a releváns linkek generálására
   return {
     outboundLinks: getRelevantOutboundLinks(currentPage, allPages),
     anchorTexts: generateAnchorTexts(currentPage, rules.anchorTextVariations),

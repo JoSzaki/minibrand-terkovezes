@@ -1,68 +1,68 @@
 import { contentRelationships, anchorTexts } from '../data/internalLinks.js';
 
-// Kulcsszavak √©s a hozz√°juk tartoz√≥ slug-ok
+// Kulcsszavak Ès a hozz·juk tartozÛ slug-ok
 const keywordMappings = {
-  // Alapoz√°s kateg√≥ria
-  'alapoz√°s': 'alapozas-budapest',
-  'alapoz√°si': 'alapozas-budapest',
-  'alapoz√°si szolg√°ltat√°sok': 'alapozas-budapest',
+  // Alapoz·s kategÛria
+  'alapoz·s': 'alapozas-budapest',
+  'alapoz·si': 'alapozas-budapest',
+  'alapoz·si szolg·ltat·sok': 'alapozas-budapest',
   'lemezalap': 'lemezalapok-budapest',
   'lemezalapok': 'lemezalapok-budapest',
   'lemezalapos': 'lemezalapok-budapest',
   'pontalap': 'pontalapok-budapest',
   'pontalapok': 'pontalapok-budapest',
   'pont alapok': 'pontalapok-budapest',
-  's√°valapos': 'savalapok-budapest',
-  's√°valapok': 'savalapok-budapest',
-  's√°v alapok': 'savalapok-budapest',
+  's·valapos': 'savalapok-budapest',
+  's·valapok': 'savalapok-budapest',
+  's·v alapok': 'savalapok-budapest',
   
-  // Aljzat kateg√≥ria
-  'aljzat betonoz√°s': 'aljzatbetonozas-budapest',
+  // Aljzat kategÛria
+  'aljzat betonoz·s': 'aljzatbetonozas-budapest',
   'aljzatok': 'aljzatbetonozas-budapest',
   'estrich': 'estrich-aljzat-budapest',
   'estrich aljzat': 'estrich-aljzat-budapest',
-  'padl√≥f≈±t√©s aljzat': 'padlofutes-aljzat-budapest',
-  'padl√≥f≈±t√©ses aljzat': 'padlofutes-aljzat-budapest',
+  'padlÛf˚tÈs aljzat': 'padlofutes-aljzat-budapest',
+  'padlÛf˚tÈses aljzat': 'padlofutes-aljzat-budapest',
   
-  // Speci√°lis betonok
-  'speci√°lis betonoz√°s': 'specialis-betonozas-budapest',
-  'gyorsk√∂t≈ë beton': 'gyorskoto-beton-budapest',
-  'gyorsk√∂t≈ë': 'gyorskoto-beton-budapest',
-  'k√∂nny≈±beton': 'konnyubeton-budapest',
-  'k√∂nny≈± beton': 'konnyubeton-budapest',
-  'v√≠z√°ll√≥ beton': 'vizallo-beton-budapest',
-  'v√≠z√°ll√≥': 'vizallo-beton-budapest',
+  // Speci·lis betonok
+  'speci·lis betonoz·s': 'specialis-betonozas-budapest',
+  'gyorskˆtı beton': 'gyorskoto-beton-budapest',
+  'gyorskˆtı': 'gyorskoto-beton-budapest',
+  'kˆnny˚beton': 'konnyubeton-budapest',
+  'kˆnny˚ beton': 'konnyubeton-budapest',
+  'vÌz·llÛ beton': 'vizallo-beton-budapest',
+  'vÌz·llÛ': 'vizallo-beton-budapest',
   
-  // Technol√≥gi√°k
-  'betonoz√°si technol√≥gi√°k': 'betonozasi-technologiak',
-  'betonoz√°si technol√≥gia': 'betonozasi-technologiak',
-  'zsaluz√°s': 'zsaluzas-budapest',
+  // TechnolÛgi·k
+  'betonoz·si technolÛgi·k': 'betonozasi-technologiak',
+  'betonoz·si technolÛgia': 'betonozasi-technologiak',
+  'zsaluz·s': 'zsaluzas-budapest',
   'zsaluzat': 'zsaluzas-budapest',
   'betonpumpa': 'betonpumpa-szolgaltatas-budapest',
   
-  // Szolg√°ltat√°sok
-  'j√°rda betonoz√°s': 'jarda-betonozas-budapest',
-  'terasz betonoz√°s': 'terasz-betonozas-budapest',
-  'udvar betonoz√°s': 'udvar-betonozas-budapest',
-  'kocsibe√°ll√≥ betonoz√°s': 'kocsibeallo-betonozas-budapest',
-  'ipari padl√≥': 'ipari-padlobetonozas-budapest',
-  'ipari padl√≥k': 'ipari-padlobetonozas-budapest',
+  // Szolg·ltat·sok
+  'j·rda betonoz·s': 'jarda-betonozas-budapest',
+  'terasz betonoz·s': 'terasz-betonozas-budapest',
+  'udvar betonoz·s': 'udvar-betonozas-budapest',
+  'kocsibe·llÛ betonoz·s': 'kocsibeallo-betonozas-budapest',
+  'ipari padlÛ': 'ipari-padlobetonozas-budapest',
+  'ipari padlÛk': 'ipari-padlobetonozas-budapest',
   
-  // Blog t√©m√°k
-  't√©li betonoz√°s': 'teli-betonozas',
-  'betonkever√©s': 'betonkeveres-titkai',
-  'beton adal√©kanyagok': 'beton-adalekanyagok',
-  'adal√©kanyagok': 'beton-adalekanyagok',
-  'reped√©sek': 'repedesek-okai',
-  'beton reped√©sek': 'repedesek-okai',
-  'szerkezeti probl√©m√°k': 'szerkezeti-problemak',
-  'beton jav√≠t√°s': 'beton-javitas',
-  'betonjav√≠t√°s': 'beton-javitas',
-  'rehabilit√°ci√≥': 'rehabilitacio-megerosites',
-  'dilat√°ci√≥s h√©zagok': 'dilatacios-hezagok',
-  'h√©zagok': 'dilatacios-hezagok',
-  'min≈ës√©gbiztos√≠t√°s': 'minosegbiztositas',
-  'ut√≥kezel√©s': 'utokezeles-fontossaga'
+  // Blog tÈm·k
+  'tÈli betonoz·s': 'teli-betonozas',
+  'betonkeverÈs': 'betonkeveres-titkai',
+  'beton adalÈkanyagok': 'beton-adalekanyagok',
+  'adalÈkanyagok': 'beton-adalekanyagok',
+  'repedÈsek': 'repedesek-okai',
+  'beton repedÈsek': 'repedesek-okai',
+  'szerkezeti problÈm·k': 'szerkezeti-problemak',
+  'beton javÌt·s': 'beton-javitas',
+  'betonjavÌt·s': 'beton-javitas',
+  'rehabilit·ciÛ': 'rehabilitacio-megerosites',
+  'dilat·ciÛs hÈzagok': 'dilatacios-hezagok',
+  'hÈzagok': 'dilatacios-hezagok',
+  'minısÈgbiztosÌt·s': 'minosegbiztositas',
+  'utÛkezelÈs': 'utokezeles-fontossaga'
 };
 
 // Optimized link tracking with WeakMap for better memory management
@@ -73,30 +73,30 @@ function getParagraphLinks(paragraphId) {
   return linkedWordsInParagraph || new Set();
 }
 
-// M√°r linkelt szavak nyomon k√∂vet√©se egy bekezd√©sben
+// M·r linkelt szavak nyomon kˆvetÈse egy bekezdÈsben
 let linkedWordsInParagraph = new Set();
 
-// Reset a bekezd√©s elej√©n
+// Reset a bekezdÈs elejÈn
 export function resetParagraphLinks() {
   linkedWordsInParagraph.clear();
 }
 
-// Ellen≈ërzi, hogy egy sz√≥ m√°r linkelt-e ebben a bekezd√©sben
+// Ellenırzi, hogy egy szÛ m·r linkelt-e ebben a bekezdÈsben
 function isAlreadyLinked(word) {
   return linkedWordsInParagraph.has(word.toLowerCase());
 }
 
-// Megjel√∂li egy sz√≥t linkeltk√©nt
+// Megjelˆli egy szÛt linkeltkÈnt
 function markAsLinked(word) {
   linkedWordsInParagraph.add(word.toLowerCase());
 }
 
-// Anchor sz√∂veg gener√°l√°s v√°ltozatoss√°ggal
+// Anchor szˆveg gener·l·s v·ltozatoss·ggal
 function getVariedAnchorText(slug, originalText) {
   const texts = anchorTexts[slug];
   if (!texts) return originalText;
   
-  // Random kiv√°laszt√°s a 3 vari√°ci√≥ k√∂z√ºl
+  // Random kiv·laszt·s a 3 vari·ciÛ kˆz¸l
   const randomIndex = Math.floor(Math.random() * texts.length);
   return texts[randomIndex];
 }
@@ -114,7 +114,7 @@ function getRegex(keyword) {
 // Pre-sort keywords once to avoid repeated sorting
 const sortedKeywords = Object.keys(keywordMappings).sort((a, b) => b.length - a.length);
 
-// Sz√∂veg feldolgoz√°s term√©szetes linkel√©ssel - optimized version
+// Szˆveg feldolgoz·s termÈszetes linkelÈssel - optimized version
 export function processContentForLinks(content, currentSlug, maxLinksPerParagraph = 2) {
   // Early return for empty content
   if (!content || typeof content !== 'string') return content;
@@ -135,10 +135,10 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
       
       const targetSlug = keywordMappings[keyword];
       
-      // Ne linkelj√ºk √∂nmagunkra
+      // Ne linkelj¸k ˆnmagunkra
       if (targetSlug === currentSlug) continue;
       
-      // Ne linkelj√ºnk m√°r linkelt szavakat
+      // Ne linkelj¸nk m·r linkelt szavakat
       if (isAlreadyLinked(keyword)) continue;
       
       // Use cached regex for better performance
@@ -149,11 +149,11 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
         // Reset for replacement
         regex.lastIndex = 0;
         
-        // Haszn√°ljuk a vari√°lt anchor sz√∂veget
+        // Haszn·ljuk a vari·lt anchor szˆveget
         const anchorText = getVariedAnchorText(targetSlug, keyword);
         const linkHtml = `<a href="/${targetSlug}" class="text-primary-600 hover:text-primary-700 underline">${anchorText}</a>`;
         
-        // Csak az els≈ë el≈ëfordul√°st cser√©lj√ºk le
+        // Csak az elsı elıfordul·st cserÈlj¸k le
         processedParagraph = processedParagraph.replace(regex, linkHtml);
         
         markAsLinked(keyword);
@@ -165,7 +165,7 @@ export function processContentForLinks(content, currentSlug, maxLinksPerParagrap
   }).join('\n\n');
 }
 
-// Kapcsol√≥d√≥ cikkek lek√©r√©se egy adott slug-hoz
+// KapcsolÛdÛ cikkek lekÈrÈse egy adott slug-hoz
 export function getRelatedArticles(currentSlug, limit = 3) {
   const relationships = contentRelationships[currentSlug];
   if (!relationships) return [];
@@ -181,7 +181,7 @@ export function getRelatedArticles(currentSlug, limit = 3) {
   }));
 }
 
-// Kontextu√°lis linkek beszerz√©se (sidebar vagy kapcsol√≥d√≥ tartalom blokkokhoz)
+// Kontextu·lis linkek beszerzÈse (sidebar vagy kapcsolÛdÛ tartalom blokkokhoz)
 export function getContextualLinkSuggestions(currentSlug, type = 'related') {
   const relationships = contentRelationships[currentSlug];
   if (!relationships || !relationships[type]) return [];
@@ -194,14 +194,14 @@ export function getContextualLinkSuggestions(currentSlug, type = 'related') {
   }));
 }
 
-// Smart link density sz√°m√≠t√°s (ne t√∫l sok link legyen)
+// Smart link density sz·mÌt·s (ne t˙l sok link legyen)
 export function calculateOptimalLinkCount(textLength) {
-  // Kb. 150-200 sz√≥k√©nt 1 link
-  const words = textLength / 6; // √Åtlagos sz√≥hossz becsl√©s
+  // Kb. 150-200 szÛkÈnt 1 link
+  const words = textLength / 6; // ¡tlagos szÛhossz becslÈs
   return Math.max(1, Math.floor(words / 175));
 }
 
-// Debug funkci√≥ - melyik kulcsszavak tal√°lhat√≥k egy sz√∂vegben
+// Debug funkciÛ - melyik kulcsszavak tal·lhatÛk egy szˆvegben
 export function findPotentialLinks(content) {
   const foundKeywords = [];
   
