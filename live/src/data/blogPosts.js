@@ -3055,7 +3055,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <ul class="text-green-700 text-sm space-y-2">
                 <li><strong>Esztátika:</strong> klasszikus, időtálló megjelenés</li>
                 <li><strong>Tartósság:</strong> akár 50-80 év élettartam</li>
-                <li><strong>Csúszósmentes:</strong> biztonságos járhatá felület</li>
+                <li><strong>Csúszósmentes:</strong> biztonságos járható felület</li>
                 <li><strong>Karbantartés:</strong> minimális ápolés szükséges</li>
                 <li><strong>Javíthatóság:</strong> sárált elemek cserálheták</li>
                 <li><strong>ártákállóság:</strong> ingatlan értékét néveli</li>
@@ -3183,7 +3183,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Csúszós az antik térkő esetében?",
-        answer: "áppen ellenkezűleg! Az antik térkő textárált, durva felülete kifejezetten csúszósmentes, míg nedves állapotban is biztonságos járhatá felületet biztost."
+        answer: "áppen ellenkezűleg! Az antik térkő textárált, durva felülete kifejezetten csúszósmentes, míg nedves állapotban is biztonságos járható felületet biztost."
       },
       {
         question: "Milyen aljzatra fektethetá az antik térkő?",
@@ -4025,7 +4025,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mely évszakban érdemes térkövezést tervezni és kivitelezni?",
-        answer: "A tervezést télen végezzák, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35áC feletti) idŐszakokat."
+        answer: "A tervezést télen végezzák, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35°C feletti) idŐszakokat."
       }
     ],
     calculator: {
@@ -4768,15 +4768,15 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             items: [
               {
                 icon: "🏗️",
-                title: "Vázgazdálkodés",
+                title: "Vízgazdálkodás",
                 description: "90% csapadák beszivárgés",
                 value: "5-10 l/s/ha"
               },
               {
                 icon: "📦",
-                title: "HŐsziget-hatés",
+                title: "Hősziget-hatás",
                 description: "Hőmérséklet csökkentés",
-                value: "-3-5áC"
+                value: "-3-5°C"
               },
               {
                 icon: "🏗️",
@@ -4797,7 +4797,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Újrahasznosított és környezetbarát anyagok",
           content: `<p>Az <strong>újrahasznosított betonból</strong> készült térkövek 40% építési zúzalékból készülnek, miközben ugyanolyan tartósak, mint a hagyományos termékek. A gyártés 50%-kal kevesebb CO2 kibocsátéssal jár.</p>
           
-          <p>Egyre népszerűbbek a <strong>természetes, helyi anyagokból</strong> készült térkövek, amelyek szállítási tévolsága minimális. A mészkő, homokkő és gránit helyi bányákból származó változatai kiváló választások.</p>`,
+          <p>Egyre népszerűbbek a <strong>természetes, helyi anyagokból</strong> készült térkövek, amelyek szállítási távolsága minimális. A mészkő, homokkő és gránit helyi bányákból származó változatai kiváló választások.</p>`,
           table: {
             title: "Környezetbarát térkő típusok összehasonlítása",
             headers: ["Típus", "Újrahasznosított tartalom", "CO2 lábnyom", "Vízáteresztőség", "Ár (Ft/m2)"],
@@ -4812,7 +4812,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Zöld technológiák a térkövezésben",
-          content: `<p>A <strong>fűrácsős térkövezés</strong> egyesíti a zöldfelület és a járhatá felület előnyeit. 40-60% zöldfelület aránnyal számolhatunk, ami jelentősen javítja a mikroklímát és az esztétikát.</p>
+          content: `<p>A <strong>fűrácsős térkövezés</strong> egyesíti a zöldfelület és a járható felület előnyeit. 40-60% zöldfelület aránnyal számolhatunk, ami jelentősen javítja a mikroklímát és az esztétikát.</p>
           
           <p>A <strong>napelemes LED világítással</strong> kombinált térkövezés energiafüggetlen megoldést nyújt. A speciális térkövekbe integrált napelemek nappal töltődnek, éjjel világítanak.</p>`,
           infographic: {
