@@ -12,42 +12,42 @@ import { getBlogPostImage } from '../../data/blogPosts.js';
 const latestBlogPosts = getLatestPosts(25);
 const categories = getCategories();
 
-// Function to get appropriate alt text for blog post images - now using JóSzaki images
+// Function to get appropriate alt text for blog post images - now using JÃ¡Szaki images
 function getBlogPostImageAlt(category, title) {
   const altTextMap = {
-    // Térkövezési kategóriák
-    'Kocsibeálló térkövezés': `Kocsibeálló térkövezés - ${title}`,
-    'Terasz térkövezés': `Terasz térkövezés - ${title}`,
-    'Kert és járda térkövezés': `Kerti térkövezés - ${title}`,
-    'Térkõ típusok': `Térkõ típusok - ${title}`,
-    'Tervezés és tanácsadás': `Térkövezési tervezés - ${title}`,
+    // TÃ©rkÃ¶vezÃ©si kategÃ³riÃ¡k
+    'KocsibeÃ¡llÃ³ tÃ©rkÃ¶vezÃ©s': `KocsibeÃ¡llÃ³ tÃ©rkÃ¶vezÃ©s - ${title}`,
+    'Terasz tÃ©rkÃ¶vezÃ©s': `Terasz tÃ©rkÃ¶vezÃ©s - ${title}`,
+    'Kert Ã©s jÃ¡rda tÃ©rkÃ¶vezÃ©s': `Kerti tÃ©rkÃ¶vezÃ©s - ${title}`,
+    'TÃ©rkÅ‘ tÃ­pusok': `TÃ©rkÅ‘ tÃ­pusok - ${title}`,
+    'TervezÃ©s Ã©s tanÃ¡csadÃ¡s': `TÃ©rkÃ¶vezÃ©si tervezÃ©s - ${title}`,
     
-    // Általános kategóriák
-    'Téli munkák': `Téli térkövezési munkálatok - ${title}`,
-    'Szakmai tudás': `Szakmai térkövezési tudás - ${title}`, 
-    'Környezetvédelem': `Környezetbarát térkövezési megoldások - ${title}`,
-    'Minõségbiztosítás': `Térkövezési minõségbiztosítás - ${title}`,
-    'Költségoptimalizálás': `Térkövezési költségoptimalizálás - ${title}`,
-    'Felújítás': `Térkõ rehabilitáció és felújítás - ${title}`,
-    'Hibaelhárítás': `Térkövezési hibaelhárítás - ${title}`,
-    'Dekorációs': `Dekoratív térkövezési megoldások - ${title}`,
-    'Vízgazdálkodás': `Térkövezési vízgazdálkodás - ${title}`,
-    'Javítás': `Térkõ szerkezet javítás - ${title}`,
-    'Alapozás': `Térkövezési alapozási munkálatok - ${title}`,
-    'Vízszigetelés': `Térkõ vízszigetelési megoldások - ${title}`,
-    'Ipari megoldások': `Ipari térkövezési megoldások - ${title}`,
-    'Általános': `Általános térkövezési szolgáltatások - ${title}`,
-    'Aljzatkészítés': `Térkõaljzat készítés - ${title}`,
-    'Speciális térköövek': `Speciális térkõtípusok - ${title}`,
-    'Felületkezelés': `Térkõfelület kezelés - ${title}`,
-    'Technológiák': `Modern térkövezési technológiák - ${title}`
+    // ÃltalÃ¡nos kategÃ³riÃ¡k
+    'TÃ©li munkÃ¡k': `TÃ©li tÃ©rkÃ¶vezÃ©si munkÃ¡latok - ${title}`,
+    'Szakmai tudÃ¡s': `Szakmai tÃ©rkÃ¶vezÃ©si tudÃ¡s - ${title}`, 
+    'KÃ¶rnyezetvÃ©delem': `KÃ¶rnyezetbarÃ¡t tÃ©rkÃ¶vezÃ©si megoldÃ¡sok - ${title}`,
+    'MinÅ‘sÃ©gbiztosÃ­tÃ¡s': `TÃ©rkÃ¶vezÃ©si minÅ‘sÃ©gbiztosÃ­tÃ¡s - ${title}`,
+    'KÃ¶ltsÃ©goptimalizÃ¡lÃ¡s': `TÃ©rkÃ¶vezÃ©si kÃ¶ltsÃ©goptimalizÃ¡lÃ¡s - ${title}`,
+    'FelÃºjÃ­tÃ¡s': `TÃ©rkÅ‘ rehabilitÃ¡ciÃ³ Ã©s felÃºjÃ­tÃ¡s - ${title}`,
+    'HibaelhÃ¡rÃ­tÃ¡s': `TÃ©rkÃ¶vezÃ©si hibaelhÃ¡rÃ­tÃ¡s - ${title}`,
+    'DekorÃ¡ciÃ³s': `DekoratÃ­v tÃ©rkÃ¶vezÃ©si megoldÃ¡sok - ${title}`,
+    'VÃ­zgazdÃ¡lkodÃ¡s': `TÃ©rkÃ¶vezÃ©si vÃ­zgazdÃ¡lkodÃ¡s - ${title}`,
+    'JavÃ­tÃ¡s': `TÃ©rkÅ‘ szerkezet javÃ­tÃ¡s - ${title}`,
+    'AlapozÃ¡s': `TÃ©rkÃ¶vezÃ©si alapozÃ¡si munkÃ¡latok - ${title}`,
+    'VÃ­zszigetelÃ©s': `TÃ©rkÅ‘ vÃ­zszigetelÃ©si megoldÃ¡sok - ${title}`,
+    'Ipari megoldÃ¡sok': `Ipari tÃ©rkÃ¶vezÃ©si megoldÃ¡sok - ${title}`,
+    'ÃltalÃ¡nos': `ÃltalÃ¡nos tÃ©rkÃ¶vezÃ©si szolgÃ¡ltatÃ¡sok - ${title}`,
+    'AljzatkÃ©szÃ­tÃ©s': `TÃ©rkÅ‘aljzat kÃ©szÃ­tÃ©s - ${title}`,
+    'SpeciÃ¡lis tÃ©rkÃ¶vek': `SpeciÃ¡lis tÃ©rkÅ‘tÃ­pusok - ${title}`,
+    'FelÃ¼letkezelÃ©s': `TÃ©rkÅ‘felÃ¼let kezelÃ©s - ${title}`,
+    'TechnolÃ³giÃ¡k': `Modern tÃ©rkÃ¶vezÃ©si technolÃ³giÃ¡k - ${title}`
   };
   
-  return altTextMap[category] || `Térkövezési szakértelem - ${title}`;
+  return altTextMap[category] || `TÃ©rkÃ¶vezÃ©si szakÃ©rtelem - ${title}`;
 }
 ---
 
-<Layout title="Blog - Térkövezés Budapest" description="Hasznos cikkek, tippek és útmutatók térkövezésrõl. Szakértõi tanácsok és praktikus információk térkövezési projektjeidhez.">
+<Layout title="Blog - TÃ©rkÃ¶vezÃ©s Budapest" description="Hasznos cikkek, tippek Ã©s ÃºtmutatÃ³k tÃ©rkÃ¶vezÃ©srÅ‘l. SzakÃ©rtÅ‘i tanÃ¡csok Ã©s praktikus informÃ¡ciÃ³k tÃ©rkÃ¶vezÃ©si projektjeidhez.">
     <Header />
     
     <!-- Blog Header -->
@@ -57,7 +57,7 @@ function getBlogPostImageAlt(category, title) {
                 <source srcset="/images/blog/blog-hero.webp" type="image/webp">
                 <img 
                     src="/images/blog/blog-hero.jpg" 
-                    alt="Térkövezési munkálatok - Szakértõi blog" 
+                    alt="TÃ©rkÃ¶vezÃ©si munkÃ¡latok - SzakÃ©rtÅ‘i blog" 
                     class="w-full h-full object-cover opacity-20"
                     loading="eager"
                     width="1200"
@@ -69,10 +69,10 @@ function getBlogPostImageAlt(category, title) {
         <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl lg:text-5xl font-bold text-concrete-800 font-heading mb-6">
-                    Térkövezési Blog
+                    TÃ©rkÃ¶vezÃ©si Blog
                 </h1>
                 <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
-                    Szakértõi tanácsok, praktikus útmutatók és hasznos tippek térkövezési projektjeidhez
+                    SzakÃ©rtÅ‘i tanÃ¡csok, praktikus ÃºtmutatÃ³k Ã©s hasznos tippek tÃ©rkÃ¶vezÃ©si projektjeidhez
                 </p>
             </div>
         </div>
@@ -118,7 +118,7 @@ function getBlogPostImageAlt(category, title) {
                             </p>
                             <div class="flex items-center justify-between">
                                 <a href={`/blog/${post.slug}`} class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center">
-                                    Tovább olvasom
+                                    TovÃ¡bb olvasom
                                     <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                                     </svg>
@@ -135,8 +135,8 @@ function getBlogPostImageAlt(category, title) {
 
     <!-- Call to Action -->
     <CTA 
-        title="Kérd be térkövezési árajánlatodat!"
-        description="Professzionális térkövezési szolgáltatások Budapesten és környékén. Ingyenes helyszíni felmérés és részletes árajánlat."
+        title="KÃ©rd be tÃ©rkÃ¶vezÃ©si Ã¡rajÃ¡nlatodat!"
+        description="ProfesszionÃ¡lis tÃ©rkÃ¶vezÃ©si szolgÃ¡ltatÃ¡sok Budapesten Ã©s kÃ¶rnyÃ©kÃ©n. Ingyenes helyszÃ­ni felmÃ©rÃ©s Ã©s rÃ©szletes Ã¡rajÃ¡nlat."
     />
 
     <!-- Newsletter CTA -->
@@ -144,15 +144,15 @@ function getBlogPostImageAlt(category, title) {
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl mx-auto text-center">
                 <h2 class="text-3xl lg:text-4xl font-bold mb-4 font-heading">
-                    Iratkozz fel hírlevelünkre
+                    Iratkozz fel hÃ­rlevelÃ¼nkre
                 </h2>
                 <p class="text-xl mb-8 opacity-90">
-                    Kapd meg elsõként az új cikkeinket és szakértõi tippjeinket!
+                    Kapd meg elsÅ‘kÃ©nt az Ãºj cikkeinket Ã©s szakÃ©rtÅ‘i tippjeinket!
                 </p>
                 <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                     <input 
                         type="email" 
-                        placeholder="E-mail címed" 
+                        placeholder="E-mail cÃ­med" 
                         class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-primary-300 focus:outline-none"
                         required
                     >
@@ -160,7 +160,7 @@ function getBlogPostImageAlt(category, title) {
                         type="submit" 
                         class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                     >
-                        Feliratkozás
+                        FeliratkozÃ¡s
                     </button>
                 </form>
             </div>
