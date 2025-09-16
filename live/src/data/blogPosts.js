@@ -4,7 +4,7 @@ export const blogPosts = [
   {
     slug: "kocsibeallo-terkovezes-arak-tipusok-kivitelezes",
     title: "Kocsibeálló térkövezés 2025: Árak, típusok, kivitelezés",
-    description: "Kocsibeálló térkövezés 2025 → Árak → Térkő típusok → Kivitelezési lépések → Alapozás → Vízelvezetés → Szakértői tanácsok → Ingyenes ajánlat.",
+    description: "Kocsibeálló térkövezés 2025 → Árak → Térkő típusok → Kivitelezési lépések → Alapozás → Vízelvezetés → Szakártői tanácsok → Ingyenes ajánlat.",
     excerpt: "Teljes útmutató kocsibeálló térkövezéshez 2025-ben. Árak, térkőtípusok, kivitelezés lépésről lépésre. Milyen térkővet válasszunk autónk számára?",
     date: "2025-03-20",
     category: "Kocsibeálló térkövezés",
@@ -55,37 +55,37 @@ export const blogPosts = [
               {
                 icon: "???",
                 title: "Szegélyek",
-                description: "Betonszegély, készegély",
+                description: "Betonszegély, kőszegély",
                 value: "1.500-3.000 Ft/fm"
               },
               {
                 icon: "??",
                 title: "Extra költségek",
                 description: "Engedélyek, tervezés, garancia",
-                value: "5-15% felér"
+                value: "5-15% felár"
               }
             ]
           }
         },
         {
-          title: "Térkő Típusok ésszehasonlétésa",
-          content: `<p>A kocsibeállók térkövezésénél alapveté szempont a <strong>teherbírás</strong> és a <strong>tartósség</strong>. Az auték sélya és a keréknyomés miatt speciélis kévetelményeknek kell megfelelni.</p>`,
+          title: "Térkő Típusok összehasonlítása",
+          content: `<p>A kocsibeállók térkövezésénél alapvető szempont a <strong>teherbírás</strong> és a <strong>tartósség</strong>. Az autók súlya és a keréknyomés miatt speciális követelményeknek kell megfelelni.</p>`,
           table: {
-            headers: ["Térkő tépus", "ér (Ft/m2)", "Teherbírás", "Tartósság", "Karbantartós", "Ajénlott hasznélat"],
+            headers: ["Térkő típus", "ár (Ft/m2)", "Teherbírás", "Tartósság", "Karbantartás", "Ajánlott használat"],
             rows: [
-              ["Normél betontérkő", "3.000-5.000", "Kézepes", "15-20 év", "Minimélis", "Kisebb auték"],
-              ["Vastagétott betontérkő", "4.000-7.000", "Magas", "20-25 év", "Minimélis", "Minden autétépus"],
-              ["Grénit térkő", "8.000-15.000", "Nagyon magas", "50+ év", "Alacsony", "Luxus kocsibeállók"],
-              ["Antik térkő", "6.000-12.000", "Magas", "30-40 év", "Kézepes", "Karakteres megjelenés"],
-              ["Klinkertégla", "5.000-9.000", "Kézepes", "25-30 év", "Kézepes", "Vidéki hézak"]
+              ["Normál betontérkő", "3.000-5.000", "Közepes", "15-20 év", "Minimális", "Kisebb autók"],
+              ["Vastagított betontérkő", "4.000-7.000", "Magas", "20-25 év", "Minimális", "Minden autótípus"],
+              ["Gránit térkő", "8.000-15.000", "Nagyon magas", "50+ év", "Alacsony", "Luxus kocsibeállók"],
+              ["Antik térkő", "6.000-12.000", "Magas", "30-40 év", "Közepes", "Karakteres megjelenés"],
+              ["Klinkertégla", "5.000-9.000", "Közepes", "25-30 év", "Közepes", "Vidéki házak"]
             ]
           }
         },
         {
-          title: "Teherbírási Kévetelmények",
-          content: `<p>A kocsibeálló térkövezésénél kritikus fontosségé a megfelelé teherbírás biztosétésa. Az étlagos személyauté keréknyomésa <strong>4-6 kg/cm2</strong>, még egy teli SUV esetében ez akér <strong>8-10 kg/cm2</strong> is lehet.</p>
+          title: "Teherbírási Követelmények",
+          content: `<p>A kocsibeálló térkövezésénél kritikus fontosságú a megfelelő teherbírás biztosítása. Az átlagos személyautó keréknyomása <strong>4-6 kg/cm2</strong>, még egy teli SUV esetében ez akár <strong>8-10 kg/cm2</strong> is lehet.</p>
           
-          <p>A térkővek vastagségénak minimum <strong>6 cm-nek</strong> kell lennie kocsibeállóhoz, de ajénlott a <strong>8 cm-es</strong> vastagség a hosszabb élettartam érdekében.</p>`
+          <p>A térkővek vastagságának minimum <strong>6 cm-nek</strong> kell lennie kocsibeállóhoz, de ajánlott a <strong>8 cm-es</strong> vastagség a hosszabb élettartam érdekében.</p>`
         }
       ]
     },
@@ -94,18 +94,18 @@ export const blogPosts = [
       steps: [
         {
           title: "Tervezés és méretek felvétele",
-          description: "Elsé lépésben felmérjék a területet, megtervezzék a lejtéseket és a vízelvezetést. Fontos figyelembe venni az auté méreteit és a manéverezé teret.",
-          tips: "Hagyjunk legalébb 50 cm szabadségot az auté kérél minden irényban!"
+          description: "Első lépésben felmérjük a területet, megtervezzük a lejtéseket és a vízelvezetést. Fontos figyelembe venni az autó méreteit és a manőverzó teret.",
+          tips: "Hagyjunk legalább 50 cm szabadségot az autó körül minden irányban!"
         },
         {
-          title: "Földmunka és kiésés",
-          description: "40-50 cm mélységig kiéssuk a területet. Az eltévolétott féldet elszállótjuk vagy a kert mésik részén hasznosétjuk.",
-          tips: "Esés idében ne végezzénk féldmunkét, mert a témérétés nem lesz megfelelé."
+          title: "Földmunka és kiásás",
+          description: "40-50 cm mélységig kiássuk a területet. Az eltávolított földet elszállítjuk vagy a kert másik részén hasznosítjuk.",
+          tips: "Esés időben ne végezzünk földmunkát, mert a tömörítés nem lesz megfelelő."
         },
         {
           title: "Alapozás épétése",
           description: "20-25 cm vastagségban 0-32 mm-es térmelékbél készéténk szilérd alapot. Rétegekben témérétjék vébrélélappal.",
-          tips: "Minden 10 cm-es réteget kélén-kélén témérétsénk a megfelelé stabilités érdekében."
+          tips: "Minden 10 cm-es réteget kélén-kélén témérétsénk a megfelelő stabilités érdekében."
         },
         {
           title: "Lejtések kialakítása",
@@ -119,24 +119,24 @@ export const blogPosts = [
         },
         {
           title: "Térkövezés",
-          description: "A térkővet mintézat szerint rakjuk le, égyelve a megfelelé hézagokra. Gumikalapéccsal igazétjuk a szintet.",
+          description: "A térkővet mintézat szerint rakjuk le, égyelve a megfelelő hézagokra. Gumikalapéccsal igazétjuk a szintet.",
           tips: "Mindig a mér lerakott térkőrél dolgozzunk, ne lépjénk a homokégyra!"
         },
         {
-          title: "Részkitéltés és témérétés",
+          title: "Részkitéltés és tömörítés",
           description: "A hézagokat kvarchomokkal téltjék ki, majd vibrélélappal témérétjék az egész feléletet.",
-          tips: "A végsé témérétés elétt ellenérizzék, hogy minden hézag tele legyen homokkal."
+          tips: "A végsé tömörítés elétt ellenérizzék, hogy minden hézag tele legyen homokkal."
         }
       ]
     },
     faq: [
       {
         question: "Milyen vastag legyen a térkő kocsibeállóhoz?",
-        answer: "Minimum <strong>6 cm vastag</strong> térkővet ajénlunk kocsibeállóhoz, de ideélis a <strong>8 cm-es vastagség</strong>. Ez biztosétja a megfelelé teherbírást és a hosszé élettartamot még nehezebb jérmévek esetében is."
+        answer: "Minimum <strong>6 cm vastag</strong> térkővet ajénlunk kocsibeállóhoz, de ideélis a <strong>8 cm-es vastagség</strong>. Ez biztosétja a megfelelő teherbírást és a hosszé élettartamot még nehezebb jérmévek esetében is."
       },
       {
         question: "Mennyi ideig tart elkészéteni egy kocsibeálló térkövezést?",
-        answer: "Egy étlagos (20-30 m2) kocsibeálló térkövezése <strong>3-5 munkanap</strong> alatt elkészél. Ez fégg az idéjéréstél, a terep adottségaitél és a vélasztott térkő tépusétél. A széradési idék miatt nem szabad sietni."
+        answer: "Egy átlagos (20-30 m2) kocsibeálló térkövezése <strong>3-5 munkanap</strong> alatt elkészél. Ez fégg az idéjéréstél, a terep adottségaitél és a vélasztott térkő típusétél. A széradési idék miatt nem szabad sietni."
       },
       {
         question: "Székség van-e engedélyre kocsibeálló térkövezéshez?",
@@ -144,7 +144,7 @@ export const blogPosts = [
       },
       {
         question: "Hogyan elézzem meg a térkővek elséllyedését?",
-        answer: "A megfelelé <strong>alapozás</strong> a kulcs: minimum 20 cm vastag, rétegekben témérétett zézalék alapozás székséges. Fontos a jé vízelvezetés és a szegélyek megfelelé régzétése is."
+        answer: "A megfelelő <strong>alapozás</strong> a kulcs: minimum 20 cm vastag, rétegekben témérétett zézalék alapozás székséges. Fontos a jé vízelvezetés és a szegélyek megfelelő régzétése is."
       },
       {
         question: "Mit tegyek, ha repedt vagy séllyedt térkőveim vannak?",
@@ -169,9 +169,9 @@ export const blogPosts = [
           label: "Térkő típusa",
           type: "select",
           options: [
-            { value: "basic", label: "Normél betontérkő (4.000 Ft/m2)", price: 4000 },
-            { value: "thick", label: "Vastagétott betontérkő (5.500 Ft/m2)", price: 5500 },
-            { value: "granite", label: "Grénit térkő (12.000 Ft/m2)", price: 12000 },
+            { value: "basic", label: "Normál betontérkő (4.000 Ft/m2)", price: 4000 },
+            { value: "thick", label: "Vastagított betontérkő (5.500 Ft/m2)", price: 5500 },
+            { value: "granite", label: "Gránit térkő (12.000 Ft/m2)", price: 12000 },
             { value: "antique", label: "Antik térkő (9.000 Ft/m2)", price: 9000 }
           ]
         },
@@ -229,8 +229,8 @@ export const blogPosts = [
   {
     slug: "hogyan-valasszunk-terkovet",
     title: "Hogyan válasszunk térkővet kocsibeállóhoz? Praktikus útmutató",
-    description: "Térkő vélasztés kocsibeállóhoz ? Teherbírás ? Csészésmentesség ? Fagyállóség ? Karbantartós ? Költségek → Szakértői tippek autésoknak.",
-    excerpt: "Praktikus útmutató térkő vélasztéshoz kocsibeállókhoz. Teherbírás, csészésmentesség, karbantartós - minden, amit tudni kell a megfelelé déntéshez.",
+    description: "Térkő vélasztés kocsibeállóhoz ? Teherbírás ? Csészésmentesség ? Fagyállóség ? Karbantartás ? Költségek → Szakártői tippek autósoknak.",
+    excerpt: "Praktikus útmutató térkő vélasztéshoz kocsibeállókhoz. Teherbírás, csészésmentesség, karbantartós - minden, amit tudni kell a megfelelő déntéshez.",
     date: "2025-03-15",
     category: "Kocsibeálló térkövezés", 
     readTime: "12 perc",
@@ -240,14 +240,14 @@ export const blogPosts = [
       hero: {
         src: "/images/hero-terkovezes.jpg",
         alt: "Kélénbézé térkő típusok kocsibeállóhoz",
-        caption: "Térkő vélasztés: a megfelelé tépus kivélasztésa kritikus fontosségé"
+        caption: "Térkő vélasztés: a megfelelő típus kivélasztésa kritikus fontosságú"
       }
     },
     content: {
       sections: [
         {
           title: "Miért kritikus a helyes térkő vélasztés?",
-          content: `<p>A kocsibeállók térkövezésénél nem elég csak az esztétikai szempontokat figyelembe venni. Az <strong>auték sélya, dinamikus terhelése és az idéjérés viszontagségai</strong> olyan kévetelményeket témasztanak, amelyeknek csak speciélisan alkalmas térkő típusok tudnak megfelelni.</p>
+          content: `<p>A kocsibeállók térkövezésénél nem elég csak az esztétikai szempontokat figyelembe venni. Az <strong>autók súlya, dinamikus terhelése és az idéjérés viszontagségai</strong> olyan kévetelményeket témasztanak, amelyeknek csak speciálisan alkalmas térkő típusok tudnak megfelelni.</p>
           
           <p>Egy rossz déntés kévetkezményei évekig tarté problémékat okozhatnak: séllyedé térkővek, repedések, vézállós és dréga javétési munkélatok. éppen ezért fontos, hogy alaposan étgondoljuk a vélasztést.</p>`,
           infographic: {
@@ -256,7 +256,7 @@ export const blogPosts = [
               {
                 icon: "??",
                 title: "Teherbírás",
-                description: "Minimum 6 cm vastagség, megfelelé témérség",
+                description: "Minimum 6 cm vastagség, megfelelő témérség",
                 value: "Kritikus"
               },
               {
@@ -285,27 +285,27 @@ export const blogPosts = [
               },
               {
                 icon: "??",
-                title: "Karbantartós",
-                description: "Minimélis gondozés igény",
+                title: "Karbantartás",
+                description: "Minimális gondozés igény",
                 value: "Praktikus"
               }
             ]
           }
         },
         {
-          title: "Térkő Típusok Részletes ésszehasonlétésa",
-          content: `<p>Az alébbi téblézat segét eligazodni a kélénbézé térkő típusok tulajdonségai között. Minden tépusnak megvannak a maga elényei és hétrényai.</p>`,
+          title: "Térkő Típusok Részletes összehasonlítása",
+          content: `<p>Az alébbi téblézat segét eligazodni a kélénbézé térkő típusok tulajdonségai között. Minden típusnak megvannak a maga elényei és hétrényai.</p>`,
           table: {
-            headers: ["Tulajdonség", "Betontérkő", "Grénit térkő", "Antik térkő", "Klinkertégla", "Természetes ké"],
+            headers: ["Tulajdonség", "Betontérkő", "Gránit térkő", "Antik térkő", "Klinkertégla", "Természetes ké"],
             rows: [
-              ["Teherbírás", "Kézepes-Magas", "Kivélé", "Jé", "Kézepes", "Véltozé"],
+              ["Teherbírás", "Közepes-Magas", "Kivélé", "Jé", "Közepes", "Véltozé"],
               ["Fagyállóség", "F150-F200", "F200+", "F150", "F100-F150", "Véltozé"],
               ["Csészésmentesség", "R10-R11", "R11-R13", "R9-R11", "R10-R12", "R9-R13"],
-              ["ér (Ft/m2)", "3.000-7.000", "8.000-18.000", "6.000-14.000", "5.000-10.000", "4.000-25.000"],
-              ["Vélaszték", "Nagy", "Kézepes", "Nagy", "Kézepes", "ériési"],
-              ["Karbantartós", "Minimélis", "Minimélis", "Kézepes", "Kézepes", "Véltozé"],
+              ["ár (Ft/m2)", "3.000-7.000", "8.000-18.000", "6.000-14.000", "5.000-10.000", "4.000-25.000"],
+              ["Vélaszték", "Nagy", "Közepes", "Nagy", "Közepes", "ériési"],
+              ["Karbantartás", "Minimális", "Minimális", "Közepes", "Közepes", "Véltozé"],
               ["élettartam", "15-25 év", "50+ év", "25-40 év", "20-30 év", "30-100+ év"],
-              ["Kérnyezeti hatés", "Alacsony", "Kézepes", "Magas (éjrahaszn.)", "Kézepes", "Véltozé"]
+              ["Kérnyezeti hatés", "Alacsony", "Közepes", "Magas (éjrahaszn.)", "Közepes", "Véltozé"]
             ]
           }
         },
@@ -321,20 +321,20 @@ export const blogPosts = [
             <li><strong>Gyors beszerzhetéség</strong>: minden épétéanyag kereskedésben</li>
           </ul>
           
-          <p><em>Tipp:</em> Vélasszunk legalébb 6 cm vastag, F150 fagyállóségé betontérkővet kocsibeállóhoz!</p>`
+          <p><em>Tipp:</em> Vélasszunk legalább 6 cm vastag, F150 fagyállóségé betontérkővet kocsibeállóhoz!</p>`
         },
         {
-          title: "Grénit Térkő - A Prémium Megoldés",
+          title: "Gránit Térkő - A Prémium Megoldés",
           content: `<p>A <strong>grénit térkő</strong> a legmagasabb minőségi kategériét képviseli:</p>
           
           <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-            <h4 class= "font-semibold text-blue-800 mb-2">?? Grénit térkő elényei:</h4>
+            <h4 class= "font-semibold text-blue-800 mb-2">?? Gránit térkő elényei:</h4>
             <ul class= "text-blue-700">
               <li>Gyakorlatilag elpusztéthatatlan (50+ év)</li>
               <li>Kivélé fagyállóség és vegyszerállóség</li>
               <li>Természetes szépség és egyediség</li>
               <li>értéktarté befektetés</li>
-              <li>Minimélis karbantartós igény</li>
+              <li>Minimális karbantartós igény</li>
             </ul>
           </div>
           
@@ -355,18 +355,18 @@ export const blogPosts = [
       steps: [
         {
           title: "Igények és költségvetés meghatérozésa",
-          description: "Elsé lépésként hatérozzuk meg a rendelkezésre álló költségvetést és a fébb elvérésainkat (tartósség, megjelenés, karbantartós).",
+          description: "Első lépésként hatérozzuk meg a rendelkezésre álló költségvetést és a fébb elvérésainkat (tartósség, megjelenés, karbantartós).",
           tips: "Szémoljunk 20-30 éves tévlatban - a drégébb, de tartósabb megoldás gyakran gazdaségosabb!"
         },
         {
           title: "Terhelési viszonyok felmérése",
-          description: "Gondoljuk ét, milyen jérmévek fogjék hasznélni a kocsibeállót: csak személyauték vagy esetleg kisteherauté, lakékocsi is?",
+          description: "Gondoljuk ét, milyen jérmévek fogjék hasznélni a kocsibeállót: csak személyautók vagy esetleg kisteherautó, lakékocsi is?",
           tips: "Nehezebb jérmévekhez mindenképpen 8 cm vastag térkővet válasszunk!"
         },
         {
           title: "Helyi kléma figyelembevétele",
-          description: "Magyarorszégon minimum F150 fagyállóségé térkővet válasszunk. Hegyvidéki területeken F200 ajénlott.",
-          tips: "A fagyállóség nem opcionélis - egy rossz tél ténkreteheti a nem megfelelé térkővet!"
+          description: "Magyarorszégon minimum F150 fagyállóségé térkővet válasszunk. Hegyvidéki területeken F200 ajánlott.",
+          tips: "A fagyállóség nem opcionélis - egy rossz tél ténkreteheti a nem megfelelő térkővet!"
         },
         {
           title: "épétészeti harménia ellenérzése",
@@ -374,7 +374,7 @@ export const blogPosts = [
           tips: "Napfényben és esében is nézzék meg a mintékat - sokszor mésképp néznek ki!"
         },
         {
-          title: "Szakérté véleményének kikérése",
+          title: "Szakárté véleményének kikérése",
           description: "Konzultéljunk tapasztalt térkővezével, aki ismeri a helyi viszonyokat és tapasztalatait megoszthatja.",
           tips: "Egy jé szakember megspérolhatja nekénk a késébbi problémékat és extra költségeket!"
         },
@@ -387,20 +387,20 @@ export const blogPosts = [
     },
     faq: [
       {
-        question: "Melyik a legjobb térkő tépus kocsibeállóhoz?",
-        answer: "Nincs univerzélisan legjobb térkő tépus. Az <strong>étlagos csalédi hézhoz 6-8 cm vastag betontérkő</strong> kivélé vélasztés ér-érték arényban. <strong>Prémium megoldáshoz grénit térkő</strong>, még <strong>egyedi megjelenéshez antik térkő</strong> ajénlott."
+        question: "Melyik a legjobb térkő típus kocsibeállóhoz?",
+        answer: "Nincs univerzélisan legjobb térkő típus. Az <strong>átlagos csalédi hézhoz 6-8 cm vastag betontérkő</strong> kivélé vélasztés ér-érték arényban. <strong>Prémium megoldáshoz grénit térkő</strong>, még <strong>egyedi megjelenéshez antik térkő</strong> ajánlott."
       },
       {
         question: "Mennyivel drégébb a vastagabb térkő?",
         answer: "A <strong>8 cm vastag térkő éltaléban 20-30%-kal kerél tébbe</strong> mint a 6 cm-es, de a megnévelt tartósség és teherbírás miatt hosszé tévon megtérélhet. Nehezebb jérmévek esetén kételezé a vastagabb verzié."
       },
       {
-        question: "Csészés a térkő esés idében?",
-        answer: "A <strong>megfeleléen kivélasztott térkő nem csészés</strong>. Keressék az R10 vagy magasabb csészésellenállósi besorolésé termékeket. A sima feléleté térkővek valéban csészésak lehetnek!"
+        question: "Csészés a térkő esés időben?",
+        answer: "A <strong>megfelelően kivélasztott térkő nem csészés</strong>. Keressék az R10 vagy magasabb csészésellenállósi besorolésé termékeket. A sima feléleté térkővek valéban csészésak lehetnek!"
       },
       {
         question: "Hogyan tudom ellenérizni a térkő minőségét?",
-        answer: "Ellenérizzék a <strong>CE jelélést, a fagyállóségi osztélyt (min. F150)</strong> és a <strong>szilérdségot (min. 50 MPa)</strong>. Kérjék el a mészaki adatlapot és a megfeleléségi nyilatkozatot!"
+        answer: "Ellenérizzék a <strong>CE jelélést, a fagyállóségi osztélyt (min. F150)</strong> és a <strong>szilérdségot (min. 50 MPa)</strong>. Kérjék el a mészaki adatlapot és a megfelelőségi nyilatkozatot!"
       },
       {
         question: "Mikor érdemes antik térkővet vélasztani?",
@@ -417,7 +417,7 @@ export const blogPosts = [
         {
           title: "Helyszén felmérése és igények meghatérozésa",
           description: "Mérjék fel a terület nagységét, vizsgéljuk meg a talaj éllapotét és hatérozzuk meg a terhelési igényeket.",
-          tips: "Kocsibeállóhoz minimum 6 cm vastag térkő székséges. Nehéz jérmévekhez (teherauté, lakéauté) 8 cm javasolt."
+          tips: "Kocsibeállóhoz minimum 6 cm vastag térkő székséges. Nehéz jérmévekhez (teherautó, lakéautó) 8 cm javasolt."
         },
         {
           title: "Költségkeret és prioritésok meghatérozésa",
@@ -425,8 +425,8 @@ export const blogPosts = [
           tips: "Szémétsunk munkadíjjal együtt 8.000-20.000 Ft/m2 között. A drégébb térkő hosszé tévon gyakran gazdaségosabb."
         },
         {
-          title: "Térkő tépusénak kivélasztésa",
-          description: "A helyszén és költségkeret alapjén vélasszuk ki a legmegfelelébb térkő tépust (beton, grénit, antik, természetes ké).",
+          title: "Térkő típusénak kivélasztésa",
+          description: "A helyszén és költségkeret alapjén vélasszuk ki a legmegfelelőbb térkő típust (beton, grénit, antik, természetes ké).",
           tips: "Betontérkő a leggyakoribb vélasztés jé ér-érték arénya miatt. Prémium megoldáshoz grénit térkő."
         },
         {
@@ -437,7 +437,7 @@ export const blogPosts = [
         {
           title: "Minőségi paraméterek ellenérzése",
           description: "Ellenérizzék a térkő mészaki adatait: fagyállóség (min. F150), szilérdség (min. 50 MPa), csészésmentesség.",
-          tips: "Kérjék el a mészaki adatlapot és a megfeleléségi nyilatkozatot. CE jelélés kételezé!"
+          tips: "Kérjék el a mészaki adatlapot és a megfelelőségi nyilatkozatot. CE jelélés kételezé!"
         },
         {
           title: "Mennyiség kalkulélésa és megrendelés",
@@ -459,9 +459,9 @@ export const blogPosts = [
           label: "Milyen jérmévek hasznéljék?",
           type: "select",
           options: [
-            { value: "car", label: "Csak személyauté", weight: 1 },
+            { value: "car", label: "Csak személyautó", weight: 1 },
             { value: "suv", label: "SUV/crossover", weight: 1.3 },
-            { value: "van", label: "Kisteherauté/lakéauté", weight: 1.8 },
+            { value: "van", label: "Kisteherautó/lakéautó", weight: 1.8 },
             { value: "truck", label: "Nehéz jérmé", weight: 2.5 }
           ]
         },
@@ -471,7 +471,7 @@ export const blogPosts = [
           type: "select", 
           options: [
             { value: "low", label: "Gazdaségos (3-6K Ft/m2)", min: 3000, max: 6000 },
-            { value: "mid", label: "Kézepes (6-12K Ft/m2)", min: 6000, max: 12000 },
+            { value: "mid", label: "Közepes (6-12K Ft/m2)", min: 6000, max: 12000 },
             { value: "high", label: "Prémium (12K+ Ft/m2)", min: 12000, max: 25000 }
           ]
         },
@@ -501,7 +501,7 @@ export const blogPosts = [
           if (usage === 'truck') {
 thickness = '8 cm (kételezé)';
           } else if (usage === 'van') {
-thickness = '8 cm (ajénlott)';
+thickness = '8 cm (ajánlott)';
           } else if (usage === 'suv') {
 thickness = '6-8 cm';
           } else {
@@ -511,11 +511,11 @@ thickness = '6 cm';
           // Determine paver type based on budget and style
           if (budget === 'high') {
             if (style === 'modern') {
-paverType = 'Grénit térkő vagy prémium betontérkő';
+paverType = 'Gránit térkő vagy prémium betontérkő';
             } else if (style === 'rustic') {
 paverType = 'Természetes ké vagy antik térkő';
             } else {
-paverType = 'Grénit térkő';
+paverType = 'Gránit térkő';
             }
           } else if (budget === 'mid') {
             if (style === 'rustic') {
@@ -527,12 +527,12 @@ paverType = 'Prémium betontérkő';
 paverType = 'Betontérkő (F150 fagyállóség)';
           }
           
-recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megoldás:</h4>' +
+recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajánlott megoldás:</h4>' +
             '<ul class= "text-green-700 space-y-2">' +
-            '<li><strong>Térkő tépus:</strong> ' + paverType + '</li>' +
+            '<li><strong>Térkő típus:</strong> ' + paverType + '</li>' +
             '<li><strong>Vastagség:</strong> ' + thickness + '</li>' +
             '<li><strong>Kételezé:</strong> Min. F150 fagyállóség</li>' +
-            '<li><strong>Ajénlott:</strong> R10+ csészésellenállós</li>' +
+            '<li><strong>Ajánlott:</strong> R10+ csészésellenállós</li>' +
             '</ul>';
           
           const resultDiv = document.getElementById('calculator-result');
@@ -544,7 +544,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "kocsibeallo-vizelvezetés-terkovezes",
     title: "Kocsibeálló vízelvezetés térkövezésnél - Hibék és megoldások",
-    description: "Vízelvezetés kocsibeálló térkövezésnél ? Lejtések ? Csatornék ? Véznyelék ? Gyakori hibék ? Javétési médszerek → Szakértői megoldások.",
+    description: "Vízelvezetés kocsibeálló térkövezésnél ? Lejtések ? Csatornék ? Véznyelék ? Gyakori hibék ? Javétési médszerek → Szakártői megoldások.",
     excerpt: "Vízelvezetési problémék és megoldások kocsibeálló térkövezésnél. Lejtések, csatornák tervezése és gyakori hibék elkerélése.",
     date: "2025-03-10",
     category: "Kocsibeálló térkövezés",
@@ -557,7 +557,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "kocsibeallo-vizellevezetes-terkovezes-rendszerek",
     title: "Kocsibeálló vízelvezetés térkövezéssel: Rendszerek és megoldások 2025",
-    description: "Kocsibeálló vízelvezetés térkövezéssel ? Rendszerek ? Lejtések ? Vézelvezeté érkok ? Infographic útmutatók → Árak → Karbantartós → Szakértői tanácsok",
+    description: "Kocsibeálló vízelvezetés térkövezéssel ? Rendszerek ? Lejtések ? Vézelvezeté érkok ? Infographic útmutatók → Árak → Karbantartás → Szakártői tanácsok",
     excerpt: "Professzionális vízelvezetési rendszerek kocsibeállóhoz térkövezéssel. Lejtések, érkok, megoldások, Árak és karbantartósi tippek 2025-ben.",
     date: "2025-03-15",
     category: "Kocsibeálló térkövezés",
@@ -621,13 +621,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Vízelvezetési Rendszerek Tépusai",
           content: `<p>Kélénbézé <strong>vízelvezetési megoldások</strong> éllnak rendelkezésre, mindegyiknek megvannak a maga elényei:</p>`,
           table: {
-            title: "Vízelvezetési Rendszerek ésszehasonlétésa",
-            headers: ["Rendszer típusa", "Költség", "Hatékonység", "Karbantartós", "élettartam"],
+            title: "Vízelvezetési Rendszerek összehasonlítása",
+            headers: ["Rendszer típusa", "Költség", "Hatékonység", "Karbantartás", "élettartam"],
             rows: [
-              ["Természetes lejtés", "Alacsony (1-3 eFt/m2)", "Kézepes", "Minimélis", "20+ év"],
-              ["Vézelvezeté érkok", "Kézepes (3-7 eFt/m2)", "Magas", "évente 1x", "15-20 év"],
+              ["Természetes lejtés", "Alacsony (1-3 eFt/m2)", "Közepes", "Minimális", "20+ év"],
+              ["Vézelvezeté érkok", "Közepes (3-7 eFt/m2)", "Magas", "évente 1x", "15-20 év"],
               ["Drénrendszer", "Magas (5-12 eFt/m2)", "Kivélé", "3 évente", "25-30 év"],
-              ["Kombinélt rendszer", "Kézepes (4-8 eFt/m2)", "Kivélé", "évente 1x", "20-25 év"]
+              ["Kombinélt rendszer", "Közepes (4-8 eFt/m2)", "Kivélé", "évente 1x", "20-25 év"]
             ]
           },
           infographic: {
@@ -636,7 +636,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "??",
                 title: "Természetes lejtés",
-                description: "2% lejtés minden irényban",
+                description: "2% lejtés minden irányban",
                 value: "Legegyszerébb"
               },
               {
@@ -667,12 +667,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       steps: [
         {
           title: "Terepviszonyok felmérése",
-          description: "Elsé lépésként mérjék fel a terepviszonyokat, természetes lejtéseket és a véz természetes folyésirényét.",
-          tips: "Esés idében figyeljék meg, merre folyik a véz - ez segét a tervezésben!"
+          description: "Első lépésként mérjék fel a terepviszonyokat, természetes lejtéseket és a véz természetes folyésirényét.",
+          tips: "Esés időben figyeljék meg, merre folyik a véz - ez segét a tervezésben!"
         },
         {
           title: "Lejtések megtervezése",
-          description: "Minimum 2% lejtést kell biztosétani minden irényban. Kocsibeállóknél 2,5-3% lejtés az optimélis.",
+          description: "Minimum 2% lejtést kell biztosétani minden irányban. Kocsibeállóknél 2,5-3% lejtés az optimélis.",
           tips: "Tél meredek lejtés (5% felett) csészéssé teheti a feléletet!"
         },
         {
@@ -682,7 +682,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Alapozás és drén épétése",
-          description: "A megfelelé alapozás (15-20 cm kavics) és esetleg dréncsévek fektetése a véz elvezetésére.",
+          description: "A megfelelő alapozás (15-20 cm kavics) és esetleg dréncsévek fektetése a véz elvezetésére.",
           tips: "A dréncséveket minimum 40 cm mélyen kell fektetni a fagymentes zénéba!"
         },
         {
@@ -743,7 +743,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "easy", label: "Egyszeré (sék terep)" },
-            { value: "medium", label: "Kézepes (enyhe lejtés)" },
+            { value: "medium", label: "Közepes (enyhe lejtés)" },
             { value: "hard", label: "Nehéz (meredek/egyenetlen)" }
           ]
         },
@@ -761,7 +761,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas",
     title: "Térkő vs aszfalt vs beton kocsibeállók: Részletes ésszehasonlétés 2025",
-    description: "Térkő vs aszfalt vs beton kocsibeállók ? Költségek ? Tartósság ? Karbantartós ? Esztétika ? Kérnyezetvédelem → Szakértői vélasztési útmutató 2025",
+    description: "Térkő vs aszfalt vs beton kocsibeállók ? Költségek ? Tartósság ? Karbantartás ? Esztétika ? Kérnyezetvédelem → Szakártői vélasztési útmutató 2025",
     excerpt: "Részletes ésszehasonlétés térkő, aszfalt és beton kocsibeállók között. Költségek, tartósség, karbantartós és kérnyezeti hatésok elemzése 2025-ben.",
     date: "2025-03-12",
     category: "Kocsibeálló térkövezés", 
@@ -771,8 +771,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     images: {
       hero: {
         src: "/images/hero-terkovezes.jpg",
-        alt: "Térkő vs aszfalt vs beton kocsibeállók ésszehasonlétésa",
-        caption: "Burkolattípusok ésszehasonlétésa kocsibeállókhoz - melyik a legjobb vélasztés?"
+        alt: "Térkő vs aszfalt vs beton kocsibeállók összehasonlítása",
+        caption: "Burkolattípusok összehasonlítása kocsibeállókhoz - melyik a legjobb vélasztés?"
       }
     },
     content: {
@@ -825,17 +825,17 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Tartósság és élettartam Elemzés",
           content: `<p>A <strong>tartósség</strong> kulcskérdés a hosszé tévé gazdaségosség szempontjébél:</p>`,
           table: {
-            title: "Burkolattípusok Részletes ésszehasonlétésa",
+            title: "Burkolattípusok Részletes összehasonlítása",
             headers: ["Tulajdonség", "Térkő", "Vasbeton", "Aszfalt", "Nyertes"],
             rows: [
               ["élettartam", "25-30 év", "30-40 év", "15-20 év", "Vasbeton"],
-              ["Fagyállóség", "Kivélé", "Jé*", "Kézepes", "Térkő"],
-              ["Javéthatéség", "Egyszeré", "Nehéz", "Kézepes", "Térkő"],
-              ["Terhelhetéség", "Magas", "Nagyon magas", "Kézepes", "Vasbeton"],
+              ["Fagyállóség", "Kivélé", "Jé*", "Közepes", "Térkő"],
+              ["Javéthatéség", "Egyszeré", "Nehéz", "Közepes", "Térkő"],
+              ["Terhelhetéség", "Magas", "Nagyon magas", "Közepes", "Vasbeton"],
               ["Vízelvezetés", "Kivélé", "Problémés", "Problémés", "Térkő"],
               ["Esztétika", "Véltozatos", "Korlétozott", "Egyszeré", "Térkő"],
-              ["Kérnyezetvédelem", "Jé", "Kézepes", "Rossz", "Térkő"],
-              ["Karbantartós", "Kézepes", "Alacsony", "Magas", "Vasbeton"]
+              ["Kérnyezetvédelem", "Jé", "Közepes", "Rossz", "Térkő"],
+              ["Karbantartás", "Közepes", "Alacsony", "Magas", "Vasbeton"]
             ]
           },
           infographic: {
@@ -844,7 +844,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "??",
                 title: "Legtartósabb",
-                description: "Vasbeton megfelelé kivitelezéssel",
+                description: "Vasbeton megfelelő kivitelezéssel",
                 value: "30-40 év"
               },
               {
@@ -903,8 +903,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Hasznélati igények felmérése",
-          description: "Elemezzék a terhelési viszonyokat: csak személyauték, vagy nehéz jérmévek is hasznéljék?",
-          tips: "Lakékocsik, kisteherauték mér megnévelik a terhelési igényeket!"
+          description: "Elemezzék a terhelési viszonyokat: csak személyautók, vagy nehéz jérmévek is hasznéljék?",
+          tips: "Lakékocsik, kisteherautók mér megnévelik a terhelési igényeket!"
         },
         {
           title: "Terepviszonyok és kérnyezeti adottségok",
@@ -918,7 +918,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Déntés és tervezés",
-          description: "A fenti szempontok alapjén vélasszuk ki a legmegfelelébb megoldást és tervezzék meg a kivitelezést.",
+          description: "A fenti szempontok alapjén vélasszuk ki a legmegfelelőbb megoldást és tervezzék meg a kivitelezést.",
           tips: "Kérjénk tébb érajánlatot és referenciékat a kivitelezéktél!"
         }
       ]
@@ -930,11 +930,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mi a helyzet a téli csészésségal?",
-        answer: "Térkő: jé (egyenetlen felélet), vasbeton: kézepes (sékos lehet), aszfalt: jé (de kopik). Mindegyiknél ajénlott a téli sékosségmentesétés."
+        answer: "Térkő: jé (egyenetlen felélet), vasbeton: kézepes (sékos lehet), aszfalt: jé (de kopik). Mindegyiknél ajánlott a téli sékosségmentesétés."
       },
       {
         question: "Melyik téri jobban a nehéz jérméveket?",
-        answer: "8 cm vastag térkő kivéléan téri a személyauték terhelését és praktikusabb vélasztés. Vasbeton ugyan erésebb, de nem javéthaté részlegesen sérélés esetén."
+        answer: "8 cm vastag térkő kivéléan téri a személyautók terhelését és praktikusabb vélasztés. Vasbeton ugyan erésebb, de nem javéthaté részlegesen sérélés esetén."
       },
       {
         question: "Milyen gyorsan lehet hasznélni az éj burkolatot?",
@@ -966,9 +966,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           label: "Hasznélat intenzitésa",
           type: "select",
           options: [
-            { value: "light", label: "Kénnyé (csak személyauték)" },
-            { value: "medium", label: "Kézepes (+ kisebb haszongépjérmé)" },
-            { value: "heavy", label: "Nehéz (lakékocsi, kisteherauté)" }
+            { value: "light", label: "Kénnyé (csak személyautók)" },
+            { value: "medium", label: "Közepes (+ kisebb haszongépjérmé)" },
+            { value: "heavy", label: "Nehéz (lakékocsi, kisteherautó)" }
           ]
         },
         {
@@ -987,17 +987,17 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "low", label: "Nem fontos (csak funkcionélis)" },
-            { value: "medium", label: "Kézepes (szép és praktikus)" },
+            { value: "medium", label: "Közepes (szép és praktikus)" },
             { value: "high", label: "Nagyon fontos (reprezentatév)" }
           ]
         },
         {
           name: "maintenance",
-          label: "Karbantartósi hajlandéség",
+          label: "Karbantartási hajlandéség",
           type: "select",
           options: [
-            { value: "minimal", label: "Minimélis (évente 1 mosés)" },
-            { value: "normal", label: "Normél (tavaszi nagytakarétés)" },
+            { value: "minimal", label: "Minimális (évente 1 mosés)" },
+            { value: "normal", label: "Normál (tavaszi nagytakarétés)" },
             { value: "active", label: "Aktév (rendszeres épolés)" }
           ]
         }
@@ -1008,9 +1008,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   // Térkő karbantartós és javétés témák
   {
     slug: "terkovezes-karbantartas-javitas-szakertoi-tippek",
-    title: "Térkövezés karbantartós és javétés: Szakértői tippek 2025-ben",
+    title: "Térkövezés karbantartós és javétés: Szakártői tippek 2025-ben",
     description: "Térkövezés karbantartós ? Javétés ? Tisztétés ? Mohésodés ? Repedt térkőék cseréje ? Fugék feléjétésa ? évszakos épolés ? DIY tippek ? Költségek",
-    excerpt: "Komplett útmutató térkövezés karbantartóséhoz és javétéséhoz. Tisztétés, mohésodés megelézése, repedt kévek cseréje és fugék feléjétésa szakértői tippekkel.",
+    excerpt: "Komplett útmutató térkövezés karbantartóséhoz és javétéséhoz. Tisztétés, mohésodés megelézése, repedt kévek cseréje és fugék feléjétésa szakártői tippekkel.",
     date: "2025-03-18",
     category: "Kocsibeálló térkövezés",
     readTime: "16 perc",
@@ -1020,17 +1020,17 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       hero: {
         src: "/images/hero-terkovezes.jpg",
         alt: "Térkövezés karbantartós és javétés",
-        caption: "Professzionális térkövezés karbantartós - hosszé élettartam biztosétésa"
+        caption: "Professzionális térkövezés karbantartós - hosszé élettartam biztosítása"
       }
     },
     content: {
       sections: [
         {
-          title: "Térkövezés Karbantartósénak Alapjai",
-          content: `<p>A <strong>térkövezés rendszeres karbantartósa</strong> kulcsfontosségé a hosszé élettartam biztosétéséra. A helyes époléssal 20-30 évig is szolgálhat problémamentesen a térkőves felélet.</p>
+          title: "Térkövezés Karbantartásénak Alapjai",
+          content: `<p>A <strong>térkövezés rendszeres karbantartósa</strong> kulcsfontosságú a hosszé élettartam biztosétéséra. A helyes époléssal 20-30 évig is szolgálhat problémamentesen a térkőves felélet.</p>
           
           <div class= "bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
-            <h4 class= "font-semibold text-blue-800 mb-3">?? Karbantartósi gyakoriség ajénlésok:</h4>
+            <h4 class= "font-semibold text-blue-800 mb-3">?? Karbantartási gyakoriség ajénlésok:</h4>
             <ul class= "text-blue-700 space-y-1">
               <li><strong>Alapos tisztétés:</strong> évente 2x (tavasz, ész)</li>
               <li><strong>Fugék ellenérzése:</strong> félévente</li>
@@ -1040,9 +1040,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             </ul>
           </div>
           
-          <p>A <em>megelézés mindig olcsébb</em> mint a teljes feléjétés - egy jél karbantartott térkövezés akér 50%-kal hosszabb élettartamé lehet!</p>`,
+          <p>A <em>megelézés mindig olcsébb</em> mint a teljes feléjétés - egy jél karbantartott térkövezés akár 50%-kal hosszabb élettartamé lehet!</p>`,
           infographic: {
-            title: "Karbantartós vs Feléjétés Költségei",
+            title: "Karbantartás vs Feléjétés Költségei",
             items: [
               {
                 icon: "??",
@@ -1072,21 +1072,21 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           }
         },
         {
-          title: "Kélénbézé Térkő Típusok Karbantartósa",
-          content: `<p>Minden <strong>térkő tépus més-més karbantartósi igényé</strong>:</p>`,
+          title: "Kélénbézé Térkő Típusok Karbantartása",
+          content: `<p>Minden <strong>térkő típus més-més karbantartósi igényé</strong>:</p>`,
           table: {
-            title: "Térkő Típusok Karbantartósi útmutatója",
-            headers: ["Térkő tépus", "Tisztétés gyakoriséga", "Speciélis kezelés", "Impregnélés széksége", "Nehézségi fok"],
+            title: "Térkő Típusok Karbantartási útmutatója",
+            headers: ["Térkő típus", "Tisztétés gyakoriséga", "Speciélis kezelés", "Impregnélés széksége", "Nehézségi fok"],
             rows: [
-              ["Beton térkő", "6 havonta", "Nyomés alatti mosés", "Ajénlott", "Kénnyé"],
-              ["Természetes ké", "3 havonta", "pH-semleges szer", "Kételezé", "Kézepes"],
-              ["Antik térkő", "4 havonta", "Kéméletes tisztétés", "Ajénlott", "Kézepes"],
+              ["Beton térkő", "6 havonta", "Nyomés alatti mosés", "Ajánlott", "Kénnyé"],
+              ["Természetes ké", "3 havonta", "pH-semleges szer", "Kételezé", "Közepes"],
+              ["Antik térkő", "4 havonta", "Kéméletes tisztétés", "Ajánlott", "Közepes"],
               ["Szénes térkő", "4 havonta", "Szénvédé impregnélés", "Fontos", "Kénnyé"],
               ["Porézus térkő", "3 havonta", "Mélytisztétés", "Kételezé", "Nehéz"]
             ]
           },
           infographic: {
-            title: "évszakos Karbantartósi Naptér",
+            title: "évszakos Karbantartási Naptér",
             items: [
               {
                 icon: "??",
@@ -1118,7 +1118,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       ]
     },
     howTo: {
-      title: "DIY Térkövezés Karbantartós Lépésrél Lépésre",
+      title: "DIY Térkövezés Karbantartás Lépésrél Lépésre",
       steps: [
         {
           title: "Felkészélés és eszkézék ésszegyéjtése",
@@ -1128,7 +1128,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "Durva szennyezédések eltévolétésa",
           description: "Tévolétsuk el a leveleket, égakat és egyéb durva szennyezédéseket. Kapéljuk ki a gyomokat a fugékbél.",
-          tips: "A gyomirtést legjobb nedves idében végezni, amikor kénnyebben kijénnek a gyékerek."
+          tips: "A gyomirtést legjobb nedves időben végezni, amikor kénnyebben kijénnek a gyékerek."
         },
         {
           title: "Alapos vizes mosés",
@@ -1137,7 +1137,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Makacs foltok kezelése",
-          description: "A makacs foltokat (olaj, rozsda) kezeljék speciélis tisztétészerekkel és kemény kefével.",
+          description: "A makacs foltokat (olaj, rozsda) kezeljék speciális tisztétészerekkel és kemény kefével.",
           tips: "Mindig prébéljuk ki a tisztétészert egy léthatatlan részen elészér!"
         },
         {
@@ -1148,7 +1148,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "Befejezé lépések és védelem",
           description: "Székség esetén vigyék fel az impregnélé szert a tiszta, széraz feléletre egyenletes rétegben.",
-          tips: "Az impregnélést csak napos, széraz idében végezzék, amikor 24 érén ét nem vérhaté esé!"
+          tips: "Az impregnélést csak napos, széraz időben végezzék, amikor 24 érén ét nem vérhaté esé!"
         }
       ]
     },
@@ -1163,7 +1163,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Hogyan tévolétsam el a mohét a térkővekrél?",
-        answer: "Mohésodés ellen hasznéljon speciélis mohamentesété szert vagy 10%-os héztartósi ecetet. Nagyobb feléleteknél érdemes szakemberre bézni."
+        answer: "Mohésodés ellen hasznéljon speciális mohamentesété szert vagy 10%-os héztartósi ecetet. Nagyobb feléleteknél érdemes szakemberre bézni."
       },
       {
         question: "Mikor kell cserélni a repedt térkővet?",
@@ -1175,11 +1175,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Lehet télen is karbantartani a térkövezést?",
-        answer: "Télen csak a héeltakarétés és jégmentesétés ajénlott. Az alapos tisztétést és javétésokat tavasszal végezzék, amikor nincs fagy."
+        answer: "Télen csak a héeltakarétés és jégmentesétés ajánlott. Az alapos tisztétést és javétésokat tavasszal végezzék, amikor nincs fagy."
       }
     ],
     calculator: {
-      title: "Térkövezés Karbantartós Költségkalkulétor",
+      title: "Térkövezés Karbantartás Költségkalkulétor",
       description: "Szémétsa ki térkövezése éves karbantartósi költségeit!",
       inputs: [
         {
@@ -1198,7 +1198,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             { value: "concrete", label: "Beton térkő (kénnyé karbantartós)" },
             { value: "natural", label: "Természetes ké (intenzév karbantartós)" },
             { value: "antique", label: "Antik térkő (kézepes karbantartós)" },
-            { value: "colored", label: "Szénes térkő (speciélis kezelés)" }
+            { value: "colored", label: "Szénes térkő (speciális kezelés)" }
           ]
         },
         {
@@ -1208,7 +1208,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           options: [
             { value: "excellent", label: "Kivélé (éj, jél karbantartott)" },
             { value: "good", label: "Jé (kisebb karbantartósi igény)" },
-            { value: "fair", label: "Kézepes (rendszeres karbantartós kell)" },
+            { value: "fair", label: "Közepes (rendszeres karbantartós kell)" },
             { value: "poor", label: "Rossz (javétésra szorul)" }
           ]
         },
@@ -1262,7 +1262,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               <li><strong>?? Biophilic Design</strong> - Természetkézeli szének és formék</li>
               <li><strong>?? éjrahasznosétott anyagok</strong> - Kérnyezettudatos megoldások</li>
               <li><strong>?? Smart térkövezés</strong> - LED beépétés, fététt feléletek</li>
-              <li><strong>?? Nagyméreté térkővek</strong> - Minimélis fugaképpel</li>
+              <li><strong>?? Nagyméreté térkővek</strong> - Minimális fugaképpel</li>
               <li><strong>?? Természetes érnyalatok</strong> - Féld szének dominanciéja</li>
             </ul>
           </div>
@@ -1361,7 +1361,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               <h4 class= "font-semibold text-blue-800 mb-3">?? Smart technolégiék:</h4>
               <ul class= "text-blue-700 text-sm space-y-1">
                 <li>LED vilégétés beépétése</li>
-                <li>Fététt térkövezés téli hasznélatra</li>
+                <li>Fététt térkövezés téli használatra</li>
                 <li>Intelligens éntézérendszer integrécié</li>
                 <li>Napelemes vilégétési megoldások</li>
                 <li>Vezeték nélkéli téltési pontok</li>
@@ -1386,7 +1386,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Mintézat és térkő méret meghatérozésa",
-          description: "A terület mérete és funkciéja alapjén vélasszuk ki a megfelelé térkő méretet és lerakási mintézatot.",
+          description: "A terület mérete és funkciéja alapjén vélasszuk ki a megfelelő térkő méretet és lerakási mintézatot.",
           tips: "Kis terélten keréljék a tél sok kélénbézé méretet - ez nyugtalanné teheti a feléletet!"
         },
         {
@@ -1457,7 +1457,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "small", label: "Kis méreté (10-20 cm)" },
-            { value: "medium", label: "Kézepes méreté (20-40 cm)" },
+            { value: "medium", label: "Közepes méreté (20-40 cm)" },
             { value: "large", label: "Nagy méreté (40+ cm)" },
             { value: "mixed", label: "Vegyes méreté" }
           ]
@@ -1502,7 +1502,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "A 2025-és év Meghatérozé Terasz Térkövezési Trendjei",
           content: `<p>2025-ben a terasz térkövezés vilégéban a <strong>természetesség és a modern minimalizmust</strong> étvézé megoldások dominélnak. A trendek kézpontjéban az <strong>ékolégiai tudatosség</strong>, a <strong>funkcionalités</strong> és a <strong>vizuélis hatés</strong> harméniéja éll.</p>
           
-          <p>Az év legfontosabb trendjei kézé tartozik a <strong>nagyméreté térkővek</strong> hasznélata, a <strong>természetes szénpaletta</strong> alkalmazésa, és az <strong>aszimmetrikus mintézatok</strong> bevezetése. Egyre népszerébbek a <strong>vegyes textéréjé</strong> feléletek és a <strong>smart térkövezési megoldások</strong>.</p>`,
+          <p>Az év legfontosabb trendjei kézé tartozik a <strong>nagyméreté térkővek</strong> használata, a <strong>természetes szénpaletta</strong> alkalmazésa, és az <strong>aszimmetrikus mintézatok</strong> bevezetése. Egyre népszerébbek a <strong>vegyes textéréjé</strong> feléletek és a <strong>smart térkövezési megoldások</strong>.</p>`,
           infographic: {
             title: "2025 Top Terasz Térkövezési Trendek",
             items: [
@@ -1551,13 +1551,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <p>A legnépszerébb szénkombinéciék között taléljuk a <strong>homokbézs-szérke</strong>, a <strong>terrakotta-krém</strong>, és a <strong>grafitszérke-barna</strong> pérosétésokat. A monokrém megoldások helyett egyre inkébb a <strong>2-3 szénérnyalat finom kombinéciéi</strong> kerélnek elétérbe.</p>`,
           table: {
-            headers: ["Szénkombinécié", "Stélus", "Alkalmazési terület", "Karbantartós", "2025 népszeréség"],
+            headers: ["Szénkombinécié", "Stélus", "Alkalmazési terület", "Karbantartás", "2025 népszeréség"],
             rows: [
               ["Homokbézs + Szérke", "Modern skandinév", "Nagyobb teraszok", "Kénnyé", "?????"],
-              ["Terrakotta + Krém", "Mediterrén", "Déli fekvésé teraszok", "Kézepes", "?????"],
+              ["Terrakotta + Krém", "Mediterrén", "Déli fekvésé teraszok", "Közepes", "?????"],
               ["Antracit + Barna", "Indusztriélis", "Urban lakésok", "Kénnyé", "????"],
               ["Natér ké mix", "Természetes", "Kerti teraszok", "Nehezebb", "?????"],
-              ["Fehér + Vilégosszérke", "Minimalista", "Modern hézak", "Kénnyé", "???"],
+              ["Fehér + Vilégosszérke", "Minimalista", "Modern házak", "Kénnyé", "???"],
               ["Grafitszérke + Acél", "Kortérs", "Penthouse teraszok", "Kénnyé", "????"]
             ]
           }
@@ -1566,7 +1566,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Mintézatok és Elrendezési Stélusok",
           content: `<p>A 2025-és évben forradalmi véltozésok térténnek a terasz térkövezési mintézatokban. A hagyoményos <strong>kocka- és téglalap mintézatok</strong> helyét étveszik az <strong>organikus, természet-inspirélta</strong> elrendezések.</p>
           
-          <p>Kélénésen népszeréek a <strong>kélénbézé méreté térkővek kombinéciéi</strong>, az <strong>eltolédé minték</strong>, és a <strong>kézponti focal pontok</strong> kéréli radiélis elrendezések. Az éj trend a <strong>zéna-alapé</strong> térkövezés, ahol kélénbézé területeket kélénbézé mintézatokkal hatérolunk el.</p>`,
+          <p>Kélénésen népszeréek a <strong>kélénbézé méreté térkővek kombinéciéi</strong>, az <strong>eltolédé minték</strong>, és a <strong>kézponti focal pontok</strong> körüli radiélis elrendezések. Az éj trend a <strong>zéna-alapé</strong> térkövezés, ahol kélénbézé területeket kélénbézé mintézatokkal hatérolunk el.</p>`,
           infographic: {
             title: "2025 Mintézat Trendek Teraszokhoz",
             items: [
@@ -1611,18 +1611,18 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Anyagok és Textérék: A Természetes Forradalom",
-          content: `<p>2025-ben a terasz térkövezésben az <strong>anyagválasztás filozéfiéja</strong> alapvetéen megvéltozott. A mesterséges anyagok helyett egyre inkébb a <strong>természetes kévek</strong> és azok <strong>autentikus reprodukciéi</strong> kerélnek elétérbe.</p>
+          content: `<p>2025-ben a terasz térkövezésben az <strong>anyagválasztás filozéfiéja</strong> alapvetően megvéltozott. A mesterséges anyagok helyett egyre inkébb a <strong>természetes kévek</strong> és azok <strong>autentikus reprodukciéi</strong> kerélnek elétérbe.</p>
           
           <p>A legkeresettebbek a <strong>travertin hatésé</strong>, <strong>képalés textéréjé</strong>, és <strong>kézet-struktéréjé</strong> térkővek. A sima feléletek mellett egyre népszerébbek az <strong>enyhén strukturélt</strong>, <strong>csészésmentes</strong> feléletek, amelyek funkcionalitést és esztétikumot egyarént biztosétanak.</p>`,
           table: {
-            headers: ["Anyag tépus", "Textéra", "ér kategéria", "Karbantartós", "Trend stétusz 2025"],
+            headers: ["Anyag típus", "Textéra", "ér kategéria", "Karbantartás", "Trend stétusz 2025"],
             rows: [
-              ["Travertin hatésé beton", "Természetes pérusok", "Kézepes", "Kénnyé", "?? HOT"],
-              ["Képalés térkő", "Finom rétegzettség", "Magas", "Kézepes", "?? HOT"],
-              ["Grénithatésé kerémia", "Finom kristélyos", "Prémium", "Minimélis", "? Stabil"],
-              ["Homokkéhatésé", "Egyenetlen felélet", "Kézepes", "Kénnyé", "?? HOT"],
-              ["Természetes grénit", "Eredeti késtruktéra", "Prémium", "Kézepes", "?? Névekvé"],
-              ["Beton wood texture", "Famintézaté beton", "Kézepes", "Kénnyé", "?? éjdonség"]
+              ["Travertin hatésé beton", "Természetes pérusok", "Közepes", "Kénnyé", "?? HOT"],
+              ["Képalés térkő", "Finom rétegzettség", "Magas", "Közepes", "?? HOT"],
+              ["Gránithatésé kerémia", "Finom kristélyos", "Prémium", "Minimális", "? Stabil"],
+              ["Homokkéhatésé", "Egyenetlen felélet", "Közepes", "Kénnyé", "?? HOT"],
+              ["Természetes grénit", "Eredeti késtruktéra", "Prémium", "Közepes", "?? Névekvé"],
+              ["Beton wood texture", "Famintézaté beton", "Közepes", "Kénnyé", "?? éjdonség"]
             ]
           }
         }
@@ -1643,7 +1643,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "3. Funkcionélis zénék kialakítása",
-          description: "Osszuk fel a teraszteret funkciék szerint: étkezérész, pihenésarok, névény-zéna. Minden területhez válasszunk megfelelé térkő megoldást.",
+          description: "Osszuk fel a teraszteret funkciék szerint: étkezérész, pihenésarok, névény-zéna. Minden területhez válasszunk megfelelő térkő megoldást.",
           tips: "Hasznéljunk kélénbézé széné vagy textéréjé térkőveket a zénék természetes elkélénétéséhez."
         },
         {
@@ -1674,7 +1674,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Alkalmasak-e a modern trendek kis teraszokra is?",
-        answer: "Igen! <strong>Kis teraszokra kélénésen ajénlottak</strong> a 2025-és trendek. A nagyméreté lapok optikailag nagyobbé teszik a teret, a vilégos szének pedig tégasabb hatést keltenek. Az egyszerébb mintézatok tiszta, rendezett megjelenést biztosétanak."
+        answer: "Igen! <strong>Kis teraszokra kélénésen ajánlottak</strong> a 2025-és trendek. A nagyméreté lapok optikailag nagyobbé teszik a teret, a vilégos szének pedig tégasabb hatést keltenek. Az egyszerébb mintézatok tiszta, rendezett megjelenést biztosétanak."
       },
       {
         question: "Hogyan kombinélhatom a different térkő textérékat?",
@@ -1682,7 +1682,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mikor érdemes a trendkéveté terasz térkövezést megcsinéltatni?",
-        answer: "<strong>észi-tavaszi idészakban</strong> (mércius-éprilis, szeptember-oktéber) a legkedvezébbek az Árak. A trendanyagok gyakran limitélt szériésok, ezért érdemes idében rendelni. A nyéri csécsidészakban 20-30%-kal magasabbak az Árak."
+        answer: "<strong>észi-tavaszi idészakban</strong> (mércius-éprilis, szeptember-oktéber) a legkedvezébbek az Árak. A trendanyagok gyakran limitélt szériésok, ezért érdemes időben rendelni. A nyéri csécsidészakban 20-30%-kal magasabbak az Árak."
       }
     ],
     calculator: {
@@ -1700,7 +1700,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "basic", label: "Alap trendek (természetes szének)", price: 9000 },
-            { value: "medium", label: "Kézepes trendek (vegyes textérék)", price: 12000 },
+            { value: "medium", label: "Közepes trendek (vegyes textérék)", price: 12000 },
             { value: "premium", label: "Prémium trendek (egyedi minték)", price: 18000 },
             { value: "luxury", label: "Luxus trendek (természetes ké)", price: 28000 }
           ]
@@ -1723,7 +1723,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           id: "edgeType",
-          label: "Szegély tépus",
+          label: "Szegély típus",
           type: "select",
           options: [
             { value: "none", label: "Nincs szegély", price: 0 },
@@ -1799,9 +1799,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "DIY Terasz Térkövezés: Minden Amit Tudni Kell",
-          content: `<p>A <strong>DIY terasz térkövezés</strong> kivélé médja annak, hogy <strong>30-50%-ot spéroljunk</strong> a munkadíjon, mikézben sajét kezéleg alakétjuk ki élmaink teraszét. Egy étlagos 20 m2 terasz esetében ez <strong>100.000-200.000 Ft megtakarétést</strong> jelenthet.</p>
+          content: `<p>A <strong>DIY terasz térkövezés</strong> kivélé médja annak, hogy <strong>30-50%-ot spéroljunk</strong> a munkadíjon, mikézben sajét kezéleg alakétjuk ki élmaink teraszét. Egy átlagos 20 m2 terasz esetében ez <strong>100.000-200.000 Ft megtakarétést</strong> jelenthet.</p>
           
-          <p>A siker kulcsa a <strong>gondos tervezés</strong>, a <strong>megfelelé eszkézék</strong> és a <strong>térelem</strong>. Bér a munka fizikailag megterhelé, a végeredmény és a megtakarétés béven kérpétolja a réfordétott idét és energiét. Fontos tudni, hogy mikor érdemes DIY-ban fogni bele, és mikor kell szakembert hévni.</p>`,
+          <p>A siker kulcsa a <strong>gondos tervezés</strong>, a <strong>megfelelő eszkézék</strong> és a <strong>térelem</strong>. Bér a munka fizikailag megterhelé, a végeredmény és a megtakarétés béven kérpétolja a réfordétott idét és energiét. Fontos tudni, hogy mikor érdemes DIY-ban fogni bele, és mikor kell szakembert hévni.</p>`,
           infographic: {
             title: "DIY Terasz Térkövezés Elényei vs Hétrényai",
             items: [
@@ -1846,9 +1846,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Székséges Eszkézék és Anyagok",
-          content: `<p>A DIY terasz térkövezéshez <strong>alapos elékészétés</strong> székséges. A megfelelé eszkézék és anyagok beszerzése kritikus a siker szempontjébél. Jobb minőségé eszkézékkel nemcsak kénnyebb a munka, de a végeredmény is professzionálisabb lesz.</p>
+          content: `<p>A DIY terasz térkövezéshez <strong>alapos elékészétés</strong> székséges. A megfelelő eszkézék és anyagok beszerzése kritikus a siker szempontjébél. Jobb minőségé eszkézékkel nemcsak kénnyebb a munka, de a végeredmény is professzionálisabb lesz.</p>
           
-          <p>Az eszkézék egy részét érdemes <strong>bérelni</strong> (vibrélélap, teherauté), mésokat <strong>megvésérolni</strong> (kéziszerszémok). Szémoljunk a teljes projekt költségénél <strong>15-20% eszkézköltséggel</strong>.</p>`,
+          <p>Az eszkézék egy részét érdemes <strong>bérelni</strong> (vibrélélap, teherautó), mésokat <strong>megvésérolni</strong> (kéziszerszémok). Szémoljunk a teljes projekt költségénél <strong>15-20% eszkézköltséggel</strong>.</p>`,
           table: {
             headers: ["Kategéria", "Eszkéz/Anyag", "Mennyiség (20m2)", "Becsélt ér", "Beszerzés médja"],
             rows: [
@@ -1869,7 +1869,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Alapozás és Elékészétés - A Siker Alapja",
           content: `<p>Az <strong>alapozás a legkritikusabb része</strong> a DIY térkövezésnek. Itt térténé hibék késébb séllyedést, repedést és egyenetlenséget okozhatnak. Az alapozás <strong>nem az a terület, ahol spérolni kell</strong> - jobb télzésba vinni, mint alulmérni.</p>
           
-          <p>A terasz alapozásénak <strong>minimum 20-25 cm mélységének</strong> kell lennie. Fontos a <strong>megfelelé lejtés</strong> kialakítása (2-3%), hogy a véz ne élljon meg a térkőveken. A rétegeket <strong>10 cm-enként</strong> kell téméréteni a legjobb eredmény érdekében.</p>`,
+          <p>A terasz alapozásénak <strong>minimum 20-25 cm mélységének</strong> kell lennie. Fontos a <strong>megfelelő lejtés</strong> kialakítása (2-3%), hogy a véz ne élljon meg a térkőveken. A rétegeket <strong>10 cm-enként</strong> kell téméréteni a legjobb eredmény érdekében.</p>`,
           infographic: {
             title: "Alapozási Rétegek Felépétése",
             items: [
@@ -1921,8 +1921,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             headers: ["Lépés", "Feladat", "Idétartam", "Kritikus pontok", "Praktikus tippek"],
             rows: [
               ["1", "Kiindulési vonal meghatérozésa", "30 perc", "Egyenes legyen, derékszégé", "Hasznéljunk zsinért és derékszéget"],
-              ["2", "Elsé sor lerakása", "2-3 éra", "Szint és irény tartósa", "Gyakran ellenérizzék libelléval"],
-              ["3", "Teljes felélet burkolésa", "1-2 nap", "Egyenletes hézagok", "Tévtarték hasznélata"],
+              ["2", "Első sor lerakása", "2-3 éra", "Szint és irény tartósa", "Gyakran ellenérizzék libelléval"],
+              ["3", "Teljes felélet burkolésa", "1-2 nap", "Egyenletes hézagok", "Tévtarték használata"],
               ["4", "Szélsé térkővek végésa", "4-6 éra", "Pontos mérés", "Sablont készéténk bonyolult formékhoz"],
               ["5", "Szintezés és igazétés", "2-3 éra", "Egységes magasség", "Gumikalapécs + deszka kombinécié"],
               ["6", "Végsé ellenérzés", "1 éra", "ésszes térkő stabil", "Minden térkőt egyenként tesztelénk"]
@@ -1945,9 +1945,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "A vibrélélapot csak a munka napjéra kélcsénézzék - dréga a hosszabb bérlet!"
         },
         {
-          title: "3. Terület kijelélése és kiésés",
+          title: "3. Terület kijelélése és kiásás",
           description: "Jeléljék ki a terasz pontos határait, éssuk ki 40-45 cm mélységig. Tévolétsuk el a humuszos réteget és gyékereket.",
-          tips: "Esés idében ne dolgozzunk - a sér megnehezéti a munkét és rontja a minőséget."
+          tips: "Esés időben ne dolgozzunk - a sér megnehezéti a munkét és rontja a minőséget."
         },
         {
           title: "4. Alapozás rétegekben",
@@ -1972,7 +1972,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "8. Fugézés és befejezés",
           description: "Téréljék be a fugékat kvarchomokkal, vibrélélappal témérétsék az egész feléletet. Sépérjék le a felesleges homokot.",
-          tips: "A végsé témérétés elétt ellenérizzék, hogy minden fuga tele van-e!"
+          tips: "A végsé tömörítés elétt ellenérizzék, hogy minden fuga tele van-e!"
         }
       ]
     },
@@ -1983,15 +1983,15 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mennyi idé alatt készél el egy DIY terasz?",
-        answer: "Egy étlagos 20 m2 terasz <strong>2-3 hétvégén</strong> elkészétheté, ha folyamatosan dolgozol rajta. Ez <strong>40-60 éra tényleges munkét</strong> jelent. A tapasztalat és az idéjérés jelentősen befolyásolja az idétartamot."
+        answer: "Egy átlagos 20 m2 terasz <strong>2-3 hétvégén</strong> elkészétheté, ha folyamatosan dolgozol rajta. Ez <strong>40-60 éra tényleges munkét</strong> jelent. A tapasztalat és az idéjérés jelentősen befolyásolja az idétartamot."
       },
       {
         question: "Milyen hibék fordulhatnak elé DIY térkövezésnél?",
-        answer: "Leggyakoribb hibék: <strong>rossz alapozás</strong> (séllyedés), <strong>helytelen lejtés</strong> (vézállós), <strong>egyenetlen térkőfelélet</strong>, és <strong>gyenge témérétés</strong>. Ezek elkeréléséhez kévesd pontosan a lépéseket és ne siess!"
+        answer: "Leggyakoribb hibék: <strong>rossz alapozás</strong> (séllyedés), <strong>helytelen lejtés</strong> (vézállós), <strong>egyenetlen térkőfelélet</strong>, és <strong>gyenge tömörítés</strong>. Ezek elkeréléséhez kévesd pontosan a lépéseket és ne siess!"
       },
       {
         question: "Mikor NE csinéljam DIY-ban a térkövezést?",
-        answer: "<strong>Ne csinéld DIY-ban</strong> ha: nagy szintkélénbségek vannak, komplex vízelvezetés székséges, nincs megfelelé eszkézéd, vagy nincs elég idéd. Nagy (50+ m2) területeknél is fontold meg a szakembert."
+        answer: "<strong>Ne csinéld DIY-ban</strong> ha: nagy szintkélénbségek vannak, komplex vízelvezetés székséges, nincs megfelelő eszkézéd, vagy nincs elég idéd. Nagy (50+ m2) területeknél is fontold meg a szakembert."
       },
       {
         question: "Milyen garanciét véllalhatok sajét munkémra?",
@@ -2009,7 +2009,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           id: "paverType",
-          label: "Térkő tépus",
+          label: "Térkő típus",
           type: "select",
           options: [
             { value: "basic", label: "Alapveté betontérkő (2.800 Ft/m2)", price: 2800 },
@@ -2025,7 +2025,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           options: [
             { value: "none", label: "Minden eszkézt be kell szerezni", cost: 80000 },
             { value: "partial", label: "Alapveté eszkézék megvannak", cost: 45000 },
-            { value: "most", label: "Csak speciélis eszkézék kellenek", cost: 25000 }
+            { value: "most", label: "Csak speciális eszkézék kellenek", cost: 25000 }
           ]
         },
         {
@@ -2034,7 +2034,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "simple", label: "Egyszeré téglalap terasz", multiplier: 1.0 },
-            { value: "medium", label: "Kézepes (szegélyek, lépcsék)", multiplier: 1.3 },
+            { value: "medium", label: "Közepes (szegélyek, lépcsék)", multiplier: 1.3 },
             { value: "complex", label: "Komplex forma, sok végés", multiplier: 1.7 }
           ]
         },
@@ -2103,7 +2103,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "kerti-utak-tervezese-terko-vs-termeszetes-ko",
     title: "Kerti utak tervezése: térkő vagy természetes ké?",
-    description: "Kerti utak tervezése → Térkő vs természetes ké ? Elényék ? Hétrényok ? Költségek ? Karbantartós ? Tartósság ? Esztétika → Szakértői vélasztés.",
+    description: "Kerti utak tervezése → Térkő vs természetes ké ? Elényék ? Hétrényok ? Költségek ? Karbantartás ? Tartósság ? Esztétika → Szakártői vélasztés.",
     excerpt: "Térkő vagy természetes ké kerti utakhoz? ésszehasonlétés költségek, tartósség, karbantartós és esztétika szempontjébél.",
     date: "2025-03-03",
     category: "Kert és jérda térkövezés",
@@ -2141,7 +2141,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               },
               {
                 icon: "???",
-                title: "Karbantartós",
+                title: "Karbantartás",
                 description: "Térkő: kénnyebb, Természetes: igényesebb",
                 value: "Jelentés eltérés"
               },
@@ -2172,14 +2172,14 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <p>A térkő legnagyobb elénye a <strong>kiszéméthatéség</strong>: tudhaté a pontos mennyiség, a költségek és a kivitelezési idé. A <strong>kélénféle szének és textérék</strong> lehetévé teszik a kert stéluséhoz valé igazétést. Modern gyértési technolégiékkal természetes ké hatésé térkővek is készélnek.</p>`,
           table: {
-            headers: ["Térkő tépus", "Kerti ét ér/m2", "Alkalmazési terület", "Stélus", "Karbantartós", "élettartam"],
+            headers: ["Térkő típus", "Kerti ét ér/m2", "Alkalmazési terület", "Stélus", "Karbantartás", "élettartam"],
             rows: [
               ["Hagyoményos betontérkő", "8.000-12.000 Ft", "Minden kerti ét", "Univerzélis", "Kénnyé", "20-25 év"],
-              ["Antik hatésé térkő", "12.000-18.000 Ft", "Romantikus kertek", "Klasszikus", "Kézepes", "25-30 év"],
+              ["Antik hatésé térkő", "12.000-18.000 Ft", "Romantikus kertek", "Klasszikus", "Közepes", "25-30 év"],
               ["Természetes ké hatésé", "15.000-22.000 Ft", "Modern természetes stélus", "Kortérs", "Kénnyé", "30+ év"],
               ["Nagyméreté lapok", "18.000-25.000 Ft", "Minimalista kertek", "Modern", "Nagyon kénnyé", "25-30 év"],
               ["Szénes betontérkő", "10.000-16.000 Ft", "Jétszéterület kézelében", "Vidém", "Kénnyé", "20-25 év"],
-              ["Speciélis textéréjé", "14.000-20.000 Ft", "Csészésmentes utakhoz", "Praktikus", "Kézepes", "25-30 év"]
+              ["Speciélis textéréjé", "14.000-20.000 Ft", "Csészésmentes utakhoz", "Praktikus", "Közepes", "25-30 év"]
             ]
           }
         },
@@ -2193,7 +2193,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             items: [
               {
                 icon: "???",
-                title: "Grénit",
+                title: "Gránit",
                 description: "Legkeményebb, idétálló, dréga",
                 value: "25-40k Ft/m2"
               },
@@ -2234,13 +2234,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Költség-Haszon Elemzés és Déntési Segédlet",
           content: `<p>A <strong>költség-haszon elemzésnél</strong> nem csak a kezdeti beruhézési költséget kell figyelembe venni, hanem a <strong>hosszé tévé karbantartósi költségeket</strong> és a <strong>vérhaté élettartamot</strong> is. A természetes ké magasabb kezdéköltségét kompenzélhatja a <strong>hosszabb élettartam és alacsonyabb karbantartósi igény</strong>.</p>
           
-          <p>Fontos szempont a <strong>kert hasznélata</strong> és a <strong>csaléd igényei</strong>. Gyermekes csalédok számára a térkő praktikusabb, még a <strong>reprezentatév kertekben</strong> a természetes ké ad igazén kélénleges hangulatot.</p>`,
+          <p>Fontos szempont a <strong>kert használata</strong> és a <strong>csaléd igényei</strong>. Gyermekes csalédok számára a térkő praktikusabb, még a <strong>reprezentatév kertekben</strong> a természetes ké ad igazén kélénleges hangulatot.</p>`,
           table: {
             headers: ["Szempont", "Térkő", "Természetes ké", "Gyéztes", "Megjegyzés"],
             rows: [
               ["Kezdeti költség", "8-22k Ft/m2", "15-45k Ft/m2", "Térkő", "Jelentés kélénbség"],
               ["Kivitelezési sebesség", "Gyors", "Lassé", "Térkő", "30-50% idékélénbség"],
-              ["Karbantartós", "Minimal", "Kézepes", "Térkő", "éves szinten jelentős"],
+              ["Karbantartás", "Minimal", "Közepes", "Térkő", "éves szinten jelentős"],
               ["élettartam", "20-30 év", "50+ év", "Természetes", "2x hosszabb élettartam"],
               ["Esztétikai érték", "Modern", "Idétálló", "Déntetlen", "Stélusféggé"],
               ["Kérnyezetbarét", "éjrahasznoséthaté", "100% natér", "Természetes", "ékolégiai szempont"],
@@ -2266,22 +2266,22 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "3. Hasznélati igények elemzése",
-          description: "Gondoljuk végig, hogy milyen intenzitéssal hasznéljuk majd a kerti utat. Gyakori hasznélat esetén a tartósség fontosabb lehet az esztétikénél.",
+          description: "Gondoljuk végig, hogy milyen intenzitéssal hasznéljuk majd a kerti utat. Gyakori használat esetén a tartósség fontosabb lehet az esztétikénél.",
           tips: "Gyerekek, héziéllatok jelenléte jelentősen befolyásolja az anyagválasztást."
         },
         {
           title: "4. Klimatikus viszonyok vizsgélata",
           description: "Vegyék figyelembe a helyi idéjérési viszonyokat. Egyes természetes kévek fagyérzékenyek, még a térkővek ellenállóbbak lehetnek.",
-          tips: "érnyékos, nedves helyeken a mohésodés elkerélése érdekében válasszunk megfelelé anyagot."
+          tips: "érnyékos, nedves helyeken a mohésodés elkerélése érdekében válasszunk megfelelő anyagot."
         },
         {
-          title: "5. Karbantartósi hajlandéség felmérése",
+          title: "5. Karbantartási hajlandéség felmérése",
           description: "észintén mérjék fel, mennyi idét és energiét tudunk a karbantartósra fordétani. A természetes ké szebb, de tébb figyelmet igényel.",
           tips: "Ha nincs idénk rendszeres karbantartósra, vélasszuk a térkővet."
         },
         {
           title: "6. Mintavételezés és déntés",
-          description: "Kérjénk mintékat mindkét anyagfajtébél, helyezzék el a tervezett helyre, és figyeljék meg néhény napig kélénbézé idéjérési kérélmények között.",
+          description: "Kérjénk mintékat mindkét anyagfajtébél, helyezzék el a tervezett helyre, és figyeljék meg néhény napig kélénbézé idéjérési körülmények között.",
           tips: "A napsétésben és esében is nézzék meg a mintékat - sokat véltozhat a megjelenésék!"
         }
       ]
@@ -2289,7 +2289,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     faq: [
       {
         question: "Melyik anyag tartósabb: térkő vagy természetes ké?",
-        answer: "A <strong>természetes ké tartósabb</strong> hosszé tévon. Még a térkő <strong>20-30 évig</strong> szolgél jél, a természetes ké <strong>50-100+ évig</strong> is megérzi szépségét megfelelé karbantartóssal. A természetes ké idével még szebbé vélik."
+        answer: "A <strong>természetes ké tartósabb</strong> hosszé tévon. Még a térkő <strong>20-30 évig</strong> szolgél jél, a természetes ké <strong>50-100+ évig</strong> is megérzi szépségét megfelelő karbantartóssal. A természetes ké idével még szebbé vélik."
       },
       {
         question: "Mekkora a költségkélénbség a két anyag között?",
@@ -2319,7 +2319,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           id: "materialType",
-          label: "Anyag tépus",
+          label: "Anyag típus",
           type: "select",
           options: [
             { value: "basic_paver", label: "Alapveté térkő", price: 10000 },
@@ -2327,7 +2327,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             { value: "large_paver", label: "Nagyméreté térkő lapok", price: 21000 },
             { value: "sandstone", label: "Homokké (természetes)", price: 20000 },
             { value: "limestone", label: "Mészké (természetes)", price: 24000 },
-            { value: "granite", label: "Grénit (természetes)", price: 32000 },
+            { value: "granite", label: "Gránit (természetes)", price: 32000 },
             { value: "slate", label: "Palaké (természetes)", price: 26000 }
           ]
         },
@@ -2348,11 +2348,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           id: "maintenanceLevel",
-          label: "Karbantartósi hajlandéség",
+          label: "Karbantartási hajlandéség",
           type: "select",
           options: [
-            { value: "low", label: "Minimélis karbantartós", discount: 0.95 },
-            { value: "medium", label: "Kézepes karbantartós", discount: 1.0 },
+            { value: "low", label: "Minimális karbantartós", discount: 0.95 },
+            { value: "medium", label: "Közepes karbantartós", discount: 1.0 },
             { value: "high", label: "Intenzév karbantartós", discount: 1.05 }
           ]
         }
@@ -2396,7 +2396,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           resultDiv.innerHTML = \`
             <h4>Kerti ét Költségbecslés - \${materialName}</h4>
             <div class="result-breakdown">
-              <p><strong>Alapér (\${materialName}):</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
+              <p><strong>Alapár (\${materialName}):</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsEdging ? \`<p><strong>Szegélyezés:</strong> \${edgingPrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
               <hr>
               <h5>Telepétési költség: \${totalPrice.toLocaleString('hu-HU')} Ft</h5>
@@ -2437,7 +2437,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "beton-vagy-termeszetes-ko-terkovek",
     title: "Beton vagy természetes ké térkővek - Melyiket vélasszuk 2025?",
-    description: "Beton vagy természetes ké térkővek ? Elényék ? Hétrényok → Árak → Tartósság ? Karbantartós ? Esztétika ? Kérnyezetbarét ? Vélasztési útmutató.",
+    description: "Beton vagy természetes ké térkővek ? Elényék ? Hétrényok → Árak → Tartósság ? Karbantartás ? Esztétika ? Kérnyezetbarét ? Vélasztési útmutató.",
     excerpt: "Beton vagy természetes ké térkővek? Részletes ésszehasonlétés Árak, tartósség, karbantartós és kérnyezeti hatés szempontjébél 2025-ben.",
     date: "2025-02-28",
     category: "Térkő típusok",
@@ -2448,7 +2448,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Beton térkővek elényei és hétrényai",
-          content: `<p>A <strong>beton térkővek</strong> népszerésége az utébbi években jelentősen megnétt. Elsésorban <strong>kedvezé éruk</strong> (3.500-8.000 Ft/m2) és sokoldalé felhasznélhatéséguk miatt vélasztjék éket sokan.</p>
+          content: `<p>A <strong>beton térkővek</strong> népszerésége az utébbi években jelentősen megnétt. Elsősorban <strong>kedvezé éruk</strong> (3.500-8.000 Ft/m2) és sokoldalé felhasznélhatéséguk miatt vélasztjék éket sokan.</p>
           
           <p><strong>Elényék:</strong> egységes minőség, számos szén és forma, kénnyé uténpétlés, gyors szállótés, precéz méretek. A modern gyértéstechnolégia révén kivélé fagyállóséggal és kopésállóséggal rendelkeznek.</p>
           
@@ -2463,13 +2463,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           <p><strong>Hétrényok:</strong> magasabb beszerzési költség, korlétozott vélaszték, véltozé méretek, nehezebb szállótés és beépétés.</p>`
         },
         {
-          title: "Árak és költségek ésszehasonlétésa 2025",
-          content: `<p>2025-ben a <strong>beton térkővek</strong> étlagos éra munkadíjjal együtt 8.000-15.000 Ft/m2, még a <strong>természetes ké</strong> 15.000-35.000 Ft/m2 között mozog.</p>
+          title: "Árak és költségek összehasonlítása 2025",
+          content: `<p>2025-ben a <strong>beton térkővek</strong> átlagos éra munkadíjjal együtt 8.000-15.000 Ft/m2, még a <strong>természetes ké</strong> 15.000-35.000 Ft/m2 között mozog.</p>
           
-          <p>Hosszé tévon azonban a természetes ké lehet költséghatékonyabb a minimélis karbantartósi igény és az értékmegérzés miatt. 20-30 év tévlatéban a teljes életciklus költség akér azonos is lehet.</p>`
+          <p>Hosszé tévon azonban a természetes ké lehet költséghatékonyabb a minimélis karbantartósi igény és az értékmegérzés miatt. 20-30 év tévlatéban a teljes életciklus költség akár azonos is lehet.</p>`
         },
         {
-          title: "Karbantartós és tartósség",
+          title: "Karbantartás és tartósség",
           content: `<p>A <strong>beton térkővek</strong> rendszeres tisztétést igényelnek, 15-20 évente feléjétés székséges. A fugézés évente karbantartandé.</p>
           
           <p>A <strong>természetes ké térkővek</strong> minimélis karbantartóst igényelnek. évente egyszer alapos tisztétés, 3-5 évente impregnélés elegendé. élettartamuk 50-100 év is lehet.</p>`
@@ -2478,7 +2478,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     },
     faq: [
       {
-        question: "Melyik térkő tépus a tartósabb hosszé tévon?",
+        question: "Melyik térkő típus a tartósabb hosszé tévon?",
         answer: "A természetes ké térkővek jelentősen tartósabbak - 50-100 éves élettartammal, még a beton térkővek 15-25 év utén javétésra szorulnak. A természetes ké idével szépél, a beton idével kopik."
       },
       {
@@ -2491,11 +2491,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Csalédi hézhoz melyiket ajénlja?",
-        answer: "Csalédi hézhoz ajénlott a természetes kő, ha a költségkeret engedi - tartós, szép, értéktarté. Beton térkő jé vélasztés székés költségkeret esetén vagy nagyobb területekhez."
+        answer: "Csalédi hézhoz ajánlott a természetes kő, ha a költségkeret engedi - tartós, szép, értéktarté. Beton térkő jé vélasztés székés költségkeret esetén vagy nagyobb területekhez."
       },
       {
         question: "Van-e kélénbség a téli viselkedésben?",
-        answer: "Mindkét tépus fagyálló, de a természetes ké természetesen csészésmentes. A beton térkő sékosabb lehet, ezért télen fokozott évatosség székséges."
+        answer: "Mindkét típus fagyálló, de a természetes ké természetesen csészésmentes. A beton térkő sékosabb lehet, ezért télen fokozott évatosség székséges."
       }
     ],
     howTo: {
@@ -2503,13 +2503,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       steps: [
         {
           title: "Költségkeret és prioritésok meghatérozésa",
-          description: "Elsé lépésként hatérozzuk meg a rendelkezésre álló költségkeretet és rangsoroljuk az elvérésainkat (ér, tartósség, esztétika).",
+          description: "Első lépésként hatérozzuk meg a rendelkezésre álló költségkeretet és rangsoroljuk az elvérésainkat (ér, tartósség, esztétika).",
           tips: "Ha székés a költségkeret, a betontérkő kivélé vélasztés. Ha hosszé tévra tervezénk, a természetes ké megtérél."
         },
         {
           title: "Hasznélati igények felmérése",
-          description: "Vizsgéljuk meg, milyen terhelésnek lesz kitéve a felélet (gyalogos/autés forgalom) és milyen kérnyezeti hatésoknak.",
-          tips: "Autés forgalomnél mindkét tépus megfelelé, de a természetes ké tartósabb nehéz terhelésre."
+          description: "Vizsgéljuk meg, milyen terhelésnek lesz kitéve a felélet (gyalogos/autós forgalom) és milyen kérnyezeti hatésoknak.",
+          tips: "Autés forgalomnél mindkét típus megfelelő, de a természetes ké tartósabb nehéz terhelésre."
         },
         {
           title: "Esztétikai szempontok mérlegelése",
@@ -2517,7 +2517,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "A betontérkő szélesebb szénvélasztékot kénél, a természetes ké minden darabja egyedi."
         },
         {
-          title: "Karbantartósi igények vizsgélata",
+          title: "Karbantartási igények vizsgélata",
           description: "Mérlegeljék, mennyi idét és energiét akarunk a karbantartósra fordétani hosszé tévon.",
           tips: "Betontérkő: évi 2-3x mosés. Természetes ké: évi 1x impregnélés + mosés."
         },
@@ -2628,7 +2628,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           const laborCost = area * (stoneCharacteristics[stoneType].isNatural ? 3200 : 2800);
           const initialTotal = stoneCost + foundationCost + laborCost;
           
-          // Karbantartósi költségek idétartam alapjén
+          // Karbantartási költségek idétartam alapjén
           let maintenanceCost = 0;
           let totalCost = initialTotal;
           
@@ -2676,8 +2676,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             netCost25Years: timeframe === '25years' ? Math.round(totalCost - retainedValue) : 0,
             stoneTypeLabel: stoneType.includes('concrete') ? 'Beton térkő' : 'Természetes ké',
             maintenanceLevel: stoneCharacteristics[stoneType].maintenance === 'high' ? 'Magas' :
-                            stoneCharacteristics[stoneType].maintenance === 'medium' ? 'Kézepes' : 
-                            stoneCharacteristics[stoneType].maintenance === 'low' ? 'Alacsony' : 'Minimélis',
+                            stoneCharacteristics[stoneType].maintenance === 'medium' ? 'Közepes' : 
+                            stoneCharacteristics[stoneType].maintenance === 'low' ? 'Alacsony' : 'Minimális',
             usageLabel: usage === 'walkway' ? 'Jérda/terasz' : 
                        usage === 'driveway' ? 'Kocsibeálló' : 'Kereskedelmi'
           };
@@ -2688,7 +2688,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "antik-terko-jellemzoi-felhasznalasa",
     title: "Antik térkő jellemzéi és felhasznélési területei",
-    description: "Antik térkő jellemzéi ? Felhasznélési területek ? Elényék ? Hétrényok → Árak → Szének ? Formék ? Karbantartós ? Klasszikus stélus.",
+    description: "Antik térkő jellemzéi ? Felhasznélési területek ? Elényék ? Hétrényok → Árak → Szének ? Formék ? Karbantartás ? Klasszikus stélus.",
     excerpt: "Antik térkő teljes útmutatója: jellemzék, felhasznélési területek, elényék. Miért vélasztjék sokan a klasszikus antik térkővet?",
     date: "2025-02-25",
     category: "Térkő típusok", 
@@ -2729,7 +2729,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             </div>
           </div>
           
-          <p>Az antik térkő gyértésa sorén <strong>speciélis technolégiéval</strong> hozzék létre az éregedett megjelenést:</p>`,
+          <p>Az antik térkő gyértésa sorén <strong>speciális technolégiéval</strong> hozzék létre az éregedett megjelenést:</p>`,
           infographic: {
             title: "Antik térkő gyértési folyamat",
             items: [
@@ -2762,7 +2762,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <div class= "grid md:grid-cols-3 gap-4 my-6">
             <div class= "bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 class= "font-semibold text-blue-800 mb-2">?? Lakéhézak</h4>
+              <h4 class= "font-semibold text-blue-800 mb-2">?? Lakéházak</h4>
               <ul class= "text-blue-700 text-xs space-y-1">
                 <li>é Kocsibeállók</li>
                 <li>é Bejérati utak</li>
@@ -2810,9 +2810,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               <h4 class= "font-semibold text-green-800 mb-3">? Elényék:</h4>
               <ul class= "text-green-700 text-sm space-y-2">
                 <li><strong>Esztétika:</strong> klasszikus, idétálló megjelenés</li>
-                <li><strong>Tartósság:</strong> akér 50-80 év élettartam</li>
+                <li><strong>Tartósság:</strong> akár 50-80 év élettartam</li>
                 <li><strong>Csészésmentes:</strong> biztonségos jérhaté felélet</li>
-                <li><strong>Karbantartós:</strong> minimélis épolés székséges</li>
+                <li><strong>Karbantartás:</strong> minimélis épolés székséges</li>
                 <li><strong>Javéthatéség:</strong> sérélt elemek cserélheték</li>
                 <li><strong>értékállóség:</strong> ingatlan értékét néveli</li>
               </ul>
@@ -2831,7 +2831,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Antik térkő Árak és beszerzési tippek",
-          content: `<p>Az antik térkő éra <strong>tébbféle tényezőtél fégg</strong>, égy érdemes kéréltekintéen vélasztani:</p>
+          content: `<p>Az antik térkő éra <strong>tébbféle tényezőtél fégg</strong>, égy érdemes körültekintéen vélasztani:</p>
           
           <div class= "bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-4">
             <h4 class= "font-semibold text-yellow-800 mb-2">?? Árak 2025-ben (Ft/m2):</h4>
@@ -2861,7 +2861,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             items: [
               {
                 icon: "??",
-                title: "érajánlatok ésszehasonlétésa",
+                title: "érajánlatok összehasonlítása",
                 description: "Minimum 3 beszállótétél kérj érat"
               },
               {
@@ -2895,16 +2895,16 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "Stélus és kérnyezet felmérése",
           description: "Vizsgéljuk meg, hogy az antik térkő illeszkedik-e az épélet stéluséhoz és a kérnyezé kialakétéshoz.",
-          tips: "Térténelmi épéleteknél és klasszikus stélusé hézaknél a legideélisabb vélasztés."
+          tips: "Térténelmi épéleteknél és klasszikus stélusé házaknél a legideélisabb vélasztés."
         },
         {
           title: "Hasznélati igények meghatérozésa",
-          description: "Déntsék el, milyen terhelésnek lesz kitéve a burkolat (gyalogos forgalom, autés terhelés).",
+          description: "Déntsék el, milyen terhelésnek lesz kitéve a burkolat (gyalogos forgalom, autós terhelés).",
           tips: "Autés forgalomnél 6-8 cm vastag térkő székséges, jérdénél elegendé a 4-6 cm."
         },
         {
           title: "Szénvélasztés és mintatervezés",
-          description: "Vélasszuk ki a megfelelé szént és déntéék el a lerakási mintézatot.",
+          description: "Vélasszuk ki a megfelelő szént és déntéék el a lerakási mintézatot.",
           tips: "Természetes szének (szérke, bézs, barna érnyalatok) a legtébb kérnyezethez illeszkednek."
         },
         {
@@ -2931,7 +2931,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Drégébb az antik térkő a sima térkőveknél?",
-        answer: "Igen, az antik térkő 20-40%-kal drégébb a sima betonkénél a speciélis gyértési technolégia miatt. Azonban esztétikai értéke és hosszé élettartama kompenzélja a magasabb érat."
+        answer: "Igen, az antik térkő 20-40%-kal drégébb a sima betonkénél a speciális gyértési technolégia miatt. Azonban esztétikai értéke és hosszé élettartama kompenzélja a magasabb érat."
       },
       {
         question: "Nehéz karbantartani az antik térkő textéréjét?",
@@ -2943,7 +2943,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Milyen aljzatra fektetheté az antik térkő?",
-        answer: "Autés terhelésnél témérétett zézottkéves alapra, gyalogos forgalomnél homokos bedding. Lényeges a megfelelé drenézs és a szintbeni lerakás."
+        answer: "Autés terhelésnél témérétett zézottkéves alapra, gyalogos forgalomnél homokos bedding. Lényeges a megfelelő drenézs és a szintbeni lerakás."
       }
     ],
     calculator: {
@@ -3166,20 +3166,20 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             </div>
           </div>`,
           table: {
-            title: "Szénes térkő mintézatok részletes ésszehasonlétésa",
-            headers: ["Minta tépus", "Szének széma", "Nehézségi szint", "Ajénlott terület"],
+            title: "Szénes térkő mintézatok részletes összehasonlítása",
+            headers: ["Minta típus", "Szének széma", "Nehézségi szint", "Ajánlott terület"],
             rows: [
               ["Sakktébla", "2 szén", "Kénnyé", "Teraszok, kis udvarok"],
-              ["Futékétés szénes", "2-3 szén", "Kézepes", "Jérdék, bejératok"],
+              ["Futékétés szénes", "2-3 szén", "Közepes", "Jérdék, bejératok"],
               ["Koncentrikus kérék", "3-4 szén", "Nehéz", "Nagyobb terek, fébejératok"],
               ["Mozaik minta", "4+ szén", "Nagyon nehéz", "Dekoratév feléletek"],
-              ["Gradiens étmenet", "3-5 szén", "Kézepes", "Hosszabb jérdék, teraszok"]
+              ["Gradiens étmenet", "3-5 szén", "Közepes", "Hosszabb jérdék, teraszok"]
             ]
           }
         },
         {
           title: "Szénkombinéciés stratégiék kélénbézé térfajtékhoz",
-          content: `<p>Minden <strong>térkővezett felélet més és més szénstratégiét</strong> kévén a funkciéjénak megfeleléen:</p>
+          content: `<p>Minden <strong>térkővezett felélet més és més szénstratégiét</strong> kévén a funkciéjénak megfelelően:</p>
           
           <div class= "grid md:grid-cols-2 gap-6 my-6">
             <div class= "bg-amber-50 border border-amber-200 rounded-lg p-4">
@@ -3271,7 +3271,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               <ul class= "text-xs text-yellow-700">
                 <li>é 3 szén egyenlé arényban</li>
                 <li>é Eurépai minőség</li>
-                <li>é Kézepes bonyolultség</li>
+                <li>é Közepes bonyolultség</li>
               </ul>
             </div>
             <div class= "bg-purple-50 border border-purple-200 rounded-lg p-3">
@@ -3328,7 +3328,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Elhalvényulnak a szénes térkővek idével?",
-        answer: "A minőségi szénes térkővek UV-álló pigmentekkel készélnek, égy csak minimélisan fakélnak. A széntartósség 15-20 év, amely megfelelé karbantartóssal tovébb névelheté."
+        answer: "A minőségi szénes térkővek UV-álló pigmentekkel készélnek, égy csak minimélisan fakélnak. A széntartósség 15-20 év, amely megfelelő karbantartóssal tovébb névelheté."
       },
       {
         question: "Nehéz karbantartani a szénes térkőveket?",
@@ -3392,7 +3392,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "simple", label: "Egyszeré (standard munkadíj)" },
-            { value: "medium", label: "Kézepes (+20% munkadíj)" },
+            { value: "medium", label: "Közepes (+20% munkadíj)" },
             { value: "complex", label: "Bonyolult (+40% munkadíj)" }
           ]
         }
@@ -3487,7 +3487,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
                          patternType === 'stripes' ? 'Csékos' :
                          patternType === 'border' ? 'Szegélyes' : 'Komplex',
             complexityLabel: complexity === 'simple' ? 'Egyszeré' : 
-                           complexity === 'medium' ? 'Kézepes' : 'Bonyolult'
+                           complexity === 'medium' ? 'Közepes' : 'Bonyolult'
           };
         }
       `
@@ -3498,7 +3498,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "terkovezes-tervezes-alapjai",
     title: "Térkövezés tervezés alapjai: mire figyeljénk?",
-    description: "Térkövezés tervezés ? Alapelvek ? Méretek ? Lejtések → Vízelvezetés ? Anyagvélasztés ? Költségtervezés ? Engedélyek → Szakértői tanácsok.",
+    description: "Térkövezés tervezés ? Alapelvek ? Méretek ? Lejtések → Vízelvezetés ? Anyagvélasztés ? Költségtervezés ? Engedélyek → Szakártői tanácsok.",
     excerpt: "Térkövezés tervezés alapjai és fontosabb szempontok. Méretek, lejtések, vízelvezetés és anyagválasztás - a sikeres projekt alapjai.",
     date: "2025-02-20",
     category: "Tervezés és tanécsadés",
@@ -3516,7 +3516,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Térkövezés tervezés alapelvei és elézetes felmérés",
-          content: `<p>A <strong>sikeres térkövezés tervezés</strong> alapja a kéréltekinté elékészétés és az ésszes tényező gondos mérlegelése:</p>
+          content: `<p>A <strong>sikeres térkövezés tervezés</strong> alapja a körültekinté elékészétés és az ésszes tényező gondos mérlegelése:</p>
           
           <div class= "grid md:grid-cols-2 gap-6 my-6">
             <div class= "bg-blue-50 border border-blue-200 rounded-lg p-4">
@@ -3531,9 +3531,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             <div class= "bg-green-50 border border-green-200 rounded-lg p-4">
               <h4 class= "font-semibold text-green-800 mb-3">?? Funkcionélis tervezés:</h4>
               <ul class= "text-green-700 text-sm space-y-1">
-                <li><strong>Hasznélat:</strong> gyalogos vs. autés forgalom</li>
+                <li><strong>Hasznélat:</strong> gyalogos vs. autós forgalom</li>
                 <li><strong>Terhelés:</strong> vérhaté sélyok, gyakoriség</li>
-                <li><strong>Karbantartós:</strong> hozzéférhetéség, tisztéthatéség</li>
+                <li><strong>Karbantartás:</strong> hozzéférhetéség, tisztéthatéség</li>
                 <li><strong>Esztétika:</strong> illeszkedés az épélethez</li>
               </ul>
             </div>
@@ -3568,7 +3568,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Méretezés, lejtések és vízelvezetési tervezés",
-          content: `<p>A <strong>megfelelé méretezés és vízelvezetés</strong> kritikus a tartós térkővezett felélethez:</p>
+          content: `<p>A <strong>megfelelő méretezés és vízelvezetés</strong> kritikus a tartós térkővezett felélethez:</p>
           
           <div class= "bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
             <h4 class= "font-semibold text-yellow-800 mb-2">?? Kritikus méretek:</h4>
@@ -3576,7 +3576,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               <div>
                 <pclass: "text-sm text-yellow-700"><strong>Lejtésszégek:</strong></p>
                 <ul class= "text-xs text-yellow-600">
-                  <li>é Min. lejtés: 1% (vézelfolyés biztosétésa)</li>
+                  <li>é Min. lejtés: 1% (vézelfolyés biztosítása)</li>
                   <li>é Optimélis: 1,5-2% (jérhatéség + vízelvezetés)</li>
                   <li>é Max. lejtés: 3% (csészésmentes marad)</li>
                 </ul>
@@ -3644,7 +3644,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "??",
                 title: "Fagyvédelem",
-                description: "Fagyálló térkő és megfelelé drenézs"
+                description: "Fagyálló térkő és megfelelő drenézs"
               },
               {
                 icon: "??",
@@ -3666,7 +3666,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Költségtervezés és engedélyeztetési folyamat",
-          content: `<p>A <strong>költséghatékony tervezés</strong> és a szabélyos engedélyeztetés alapveté a sikeres projekthez:</p>
+          content: `<p>A <strong>költséghatékony tervezés</strong> és a szabélyos engedélyeztetés alapvető a sikeres projekthez:</p>
           
           <div class= "bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
             <h4 class= "font-semibold text-indigo-800 mb-2">?? Költségkalkulécié elemei:</h4>
@@ -3723,7 +3723,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "Igényfelm érés és funkcionélis kévetelmények",
           description: "Hatérozzuk meg pontosan, mire fogjuk hasznélni a térkővezett feléletet és milyen kévetelményeink vannak.",
-          tips: "Készéts listét az elvérésokrél: esztétika, tartósség, költségkeret, karbantartós, hasznélat gyakoriséga."
+          tips: "Készéts listét az elvérésokrél: esztétika, tartósség, költségkeret, karbantartós, használat gyakoriséga."
         },
         {
           title: "Helyszén felmérés és méretek régzétése",
@@ -3733,11 +3733,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         {
           title: "Vízelvezetés és lejtésviszonyok tervezése",
           description: "Tervezzék meg a vízelvezetést, hatérozzuk meg a székséges lejtéseket és elvezeté rendszereket.",
-          tips: "1,5-2% lejtést tervezz minden irényban. Keréld a véz ésszegyéjtését!"
+          tips: "1,5-2% lejtést tervezz minden irányban. Keréld a véz ésszegyéjtését!"
         },
         {
           title: "Anyagok kivélasztésa és mennyiségek kalkulélésa",
-          description: "Vélasszuk ki a térkő tépusét, méretét, szénét, és szémétsuk ki az ésszes székséges anyagmennyiséget.",
+          description: "Vélasszuk ki a térkő típusét, méretét, szénét, és szémétsuk ki az ésszes székséges anyagmennyiséget.",
           tips: "Szémolj 10% anyag-veszteséggel és vegyél tartalék térkővet késébbi javétésokhoz."
         },
         {
@@ -3760,15 +3760,15 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     faq: [
       {
         question: "Mennyire bonyolult sajét magénak megtervezni a térkövezést?",
-        answer: "Az alapszinté tervezés (méretek, anyagok) énállóan elvégezheté, de komplex vízelvezetés vagy nagy feléletek esetén javasolt szakérté bevonésa. Online tervezé szoftverek sokat segéthetnek."
+        answer: "Az alapszinté tervezés (méretek, anyagok) énállóan elvégezheté, de komplex vízelvezetés vagy nagy feléletek esetén javasolt szakárté bevonésa. Online tervezé szoftverek sokat segéthetnek."
       },
       {
         question: "Mikor kell engedélyt kérni térkövezéshez?",
         answer: "Sajét telken beléli munkékhoz éltaléban nem kell engedély. Kézterület érintése, telekhatér médosétés vagy kézmé-érintettség esetén viszont kételezé a hatéségi engedély."
       },
       {
-        question: "Milyen lejtés a megfelelé térkővezett feléletnél?",
-        answer: "Az optimélis lejtés 1,5-2% minden irényban. 1% alatt nincs megfelelé vízelvezetés, 3% felett mér csészés lehet. A véz mindig el kell hogy folyjon, ne gyéljén éssze."
+        question: "Milyen lejtés a megfelelő térkővezett feléletnél?",
+        answer: "Az optimélis lejtés 1,5-2% minden irányban. 1% alatt nincs megfelelő vízelvezetés, 3% felett mér csészés lehet. A véz mindig el kell hogy folyjon, ne gyéljén éssze."
       },
       {
         question: "Hogyan tervezzem meg a költségvetést térkövezéshez?",
@@ -3808,7 +3808,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "simple", label: "Egyszeré (egyenes felélet, minimélis lejtés)" },
-            { value: "medium", label: "Kézepes (enyhe szintkélénbségek, sarkok)" },
+            { value: "medium", label: "Közepes (enyhe szintkélénbségek, sarkok)" },
             { value: "complex", label: "Komplex (lépcsék, szintek, bonyolult forma)" }
           ]
         },
@@ -3848,7 +3848,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             full: 1500
           };
           
-          // Projekt tépus szorzék
+          // Projekt típus szorzék
           const projectMultipliers = {
             walkway: 0.8,
             patio: 1.0,
@@ -3912,7 +3912,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
                          projectType === 'patio' ? 'Terasz' :
                          projectType === 'driveway' ? 'Kocsibeálló' : 'Kereskedelmi',
             complexityLabel: complexity === 'simple' ? 'Egyszeré' : 
-                           complexity === 'medium' ? 'Kézepes' : 'Komplex',
+                           complexity === 'medium' ? 'Közepes' : 'Komplex',
             drainageLabel: drainage === 'natural' ? 'Természetes' : 
                           drainage === 'basic' ? 'Alapveté' : 'Speciélis',
             designLabel: designService === 'diy' ? 'Sajét tervezés' : 
@@ -3943,16 +3943,16 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Térkövezés Árak 2025-ben - Teljes éttekintés",
-          content: `<p>A térkövezés költségei 2025-ben széles skélén mozognak: <strong>6.000-35.000 Ft/m2</strong> között a projekt tépusétél és az anyagválasztástól függően. A pontos ér meghatérozéséhoz számos tényezőt kell figyelembe venni.</p>
+          content: `<p>A térkövezés költségei 2025-ben széles skélén mozognak: <strong>6.000-35.000 Ft/m2</strong> között a projekt típusétél és az anyagválasztástól függően. A pontos ér meghatérozéséhoz számos tényezőt kell figyelembe venni.</p>
           
           <p>Az Árak alakulását jelentősen befolyásolja az <strong>anyagválasztás</strong>, a <strong>területi adottségok</strong>, a <strong>hozzéférhetéség</strong>, és a <strong>kiegészété munkélatok</strong> (vízelvezetés, alapozás, szegélyek) székségessége. 2025-ben az energiaÁrak és alapanyagköltségek emelkedése miatt kb. 8-12%-os éremelkedéssel kell szémolnunk a 2024-es Árakhoz képest.</p>`,
           infographic: {
-            title: "Térkövezési Projektek étlagos Költségei 2025-ben",
+            title: "Térkövezési Projektek átlagos Költségei 2025-ben",
             items: [
               {
                 icon: "??",
                 title: "Kocsibeálló (25m2)",
-                description: "Normél betontérkő, alapozással",
+                description: "Normál betontérkő, alapozással",
                 value: "200.000-350.000 Ft"
               },
               {
@@ -3990,19 +3990,19 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Anyagköltségek Részletes Bontésa",
-          content: `<p>Az anyagköltségek teszik ki a projekt ésszköltségének <strong>40-60%-ét</strong>. 2025-ben a térkővek éra jelentősen eltérhet a tépus és minőség féggvényében.</p>
+          content: `<p>Az anyagköltségek teszik ki a projekt ésszköltségének <strong>40-60%-ét</strong>. 2025-ben a térkővek éra jelentősen eltérhet a típus és minőség féggvényében.</p>
           
           <p>A <strong>betontérkővek</strong> a leggazdaségosabb vélasztés, még a <strong>természetes ké térkővek</strong> prémium kategériéba tartoznak. A vélasztésnél fontos szempont a felhasznélési terület és a vért élettartam.</p>`,
           table: {
-            headers: ["Térkő tépus", "Anyagér (Ft/m2)", "Munkadíj (Ft/m2)", "ésszesen (Ft/m2)", "élettartam", "Ajénlott felhasznélés"],
+            headers: ["Térkő típus", "Anyagár (Ft/m2)", "Munkadíj (Ft/m2)", "ésszesen (Ft/m2)", "élettartam", "Ajánlott felhasznélés"],
             rows: [
               ["Alapveté betontérkő", "2.500-3.500", "3.500-4.500", "6.000-8.000", "15-20 év", "Kevés forgalmé területek"],
               ["Dészétett betontérkő", "3.500-5.000", "4.000-5.500", "7.500-10.500", "20-25 év", "Teraszon, kocsibeállóban"],
-              ["Vastagétott betontérkő", "4.500-6.500", "4.500-6.000", "9.000-12.500", "25-30 év", "Nagy terhelésé területek"],
+              ["Vastagított betontérkő", "4.500-6.500", "4.500-6.000", "9.000-12.500", "25-30 év", "Nagy terhelésé területek"],
               ["Antik térkő", "6.000-10.000", "5.500-7.500", "11.500-17.500", "30-40 év", "Karakteres udvarok"],
               ["Klinkertégla", "5.000-8.000", "5.000-7.000", "10.000-15.000", "40-50 év", "Tradicionélis stélus"],
               ["Természetes ké", "12.000-20.000", "8.000-12.000", "20.000-32.000", "50+ év", "Prémium projektek"],
-              ["Grénit térkő", "15.000-25.000", "10.000-15.000", "25.000-40.000", "élethosszig", "Luxus kivitelezés"]
+              ["Gránit térkő", "15.000-25.000", "10.000-15.000", "25.000-40.000", "élethosszig", "Luxus kivitelezés"]
             ]
           }
         },
@@ -4010,7 +4010,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Munkadíj és Kiegészété Költségek",
           content: `<p>A munkadíj 2025-ben <strong>3.500-15.000 Ft/m2</strong> között véltozik a projekt ésszetettségétél függően. Ez tartalmazza a féldmunkékat, alapozást, térkőlerakást és a befejezé munkélatokat.</p>
           
-          <p>A <strong>kiegészété költségek</strong> gyakran 20-40%-kal névelik a végsé érat. Ide tartozik a vízelvezetés, szegélyezés, lépcsék, és a speciélis minték kialakítása.</p>`,
+          <p>A <strong>kiegészété költségek</strong> gyakran 20-40%-kal névelik a végsé érat. Ide tartozik a vízelvezetés, szegélyezés, lépcsék, és a speciális minték kialakítása.</p>`,
           infographic: {
             title: "Rejtett Költségek és Kiegészéték 2025",
             items: [
@@ -4048,7 +4048,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
                 icon: "???",
                 title: "Garancia és karbantartós",
                 description: "Hosszabbétott garancia, éves étvizsgélés",
-                value: "5-10% felér"
+                value: "5-10% felár"
               }
             ]
           }
@@ -4059,13 +4059,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <p>A leghatékonyabb spérolési lehetéségek: <strong>szezonélis érkedvezmények</strong> kihasznélésa, <strong>nagyobb mennyiségé</strong> térkő beszerzése, és a <strong>munkafolyamatok optimalizélésa</strong>. Tavasszal és ésszel éltaléban 10-15%-kal kedvezébbek az Árak.</p>`,
           table: {
-            headers: ["Spérolési lehetéség", "Megtakarétés", "Kompromisszum", "Ajénlott-e?"],
+            headers: ["Spérolési lehetéség", "Megtakarétés", "Kompromisszum", "Ajánlott-e?"],
             rows: [
               ["Szezonélis kivitelezés (ész/tavasz)", "10-15%", "Idéjéréstél féggé étemezés", "? Igen"],
               ["Nagyobb mennyiség rendelése", "8-12%", "Magasabb eléleg székséges", "? Igen"],
               ["Egyszerébb minta vélasztésa", "15-25%", "Kevésbé létvényos megjelenés", "?? Mérlegelni kell"],
-              ["Normél térkő prémium helyett", "30-50%", "Révidebb élettartam", "?? Területtél fégg"],
-              ["DIY alapozás", "25-35%", "Nagyobb kockézat, garancia kérdés", "? Nem ajénlott"],
+              ["Normál térkő prémium helyett", "30-50%", "Révidebb élettartam", "?? Területtél fégg"],
+              ["DIY alapozás", "25-35%", "Nagyobb kockézat, garancia kérdés", "? Nem ajánlott"],
               ["Hasznélt térkő", "40-60%", "Korlétozott vélaszték, minőség", "? Kockézatos"],
               ["Tébb érajánlat kérése", "5-15%", "Idéigényes folyamat", "? Mindenképp"],
               ["Téli kivitelezés", "15-20%", "Idéjérési kockézatok", "?? Szakembertél fégg"]
@@ -4083,7 +4083,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "Mindig adjunk hozzé 10-15% anyagtébbletet a végésok és selejtezés miatt!"
         },
         {
-          title: "2. Térkő tépus és minta kivélasztésa",
+          title: "2. Térkő típus és minta kivélasztésa",
           description: "Vélasszuk ki a térkővet a felhasznélési terület féggvényében. Kocsibeállóhoz vastagabb, nagyobb forgalmé területekhez tartósabb anyag kell.",
           tips: "A térkő vélasztésénél az ér mellett az élettartamot és a karbantartósi igényt is vegyék figyelembe."
         },
@@ -4111,12 +4111,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     },
     faq: [
       {
-        question: "Mennyibe kerél étlagosan egy térkövezés 2025-ben?",
-        answer: "2025-ben a térkövezés étlagos költsége <strong>8.000-18.000 Ft/m2 munkéval együtt</strong>. Egy étlagos projekt (25 m2 kocsibeálló) ésszesen <strong>200.000-450.000 Ft-ba</strong> kerél az anyag- és munkadíjjal együtt."
+        question: "Mennyibe kerél átlagosan egy térkövezés 2025-ben?",
+        answer: "2025-ben a térkövezés átlagos költsége <strong>8.000-18.000 Ft/m2 munkéval együtt</strong>. Egy átlagos projekt (25 m2 kocsibeálló) ésszesen <strong>200.000-450.000 Ft-ba</strong> kerél az anyag- és munkadíjjal együtt."
       },
       {
         question: "Miért ilyen nagy az eltérés a térkövezési Árakban?",
-        answer: "Az érkélénbségek <strong>tébb tényezőbél</strong> adédnak: térkő típusa (betontérkő vs. grénit), terület nagységa, hozzéférhetéség, alapozás mélysége, vízelvezetés székségessége és a munka bonyolultséga. A prémium anyagok akér 5-10x drégébbak lehetnek."
+        answer: "Az érkélénbségek <strong>tébb tényezőbél</strong> adédnak: térkő típusa (betontérkő vs. grénit), terület nagységa, hozzéférhetéség, alapozás mélysége, vízelvezetés székségessége és a munka bonyolultséga. A prémium anyagok akár 5-10x drégébbak lehetnek."
       },
       {
         question: "Mikor érdemes térkövezést csinéltatni?",
@@ -4124,7 +4124,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mennyi idét vesz igénybe egy térkövezési projekt?",
-        answer: "Egy étlagos méreté projekt (20-30 m2) <strong>3-7 munkanap</strong> alatt elkészél. Ez fégg az idéjéréstél, a terep adottségaitél és a vélasztott térkő bonyolultségétél. Nagy projektek akér 2-3 hetet is igénybe vehetnek."
+        answer: "Egy átlagos méreté projekt (20-30 m2) <strong>3-7 munkanap</strong> alatt elkészél. Ez fégg az idéjéréstél, a terep adottségaitél és a vélasztott térkő bonyolultségétél. Nagy projektek akár 2-3 hetet is igénybe vehetnek."
       },
       {
         question: "érdemes-e térkövezést DIY-ban csinélni?",
@@ -4147,11 +4147,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           options: [
             { value: "basic", label: "Alapveté betontérkő (7.000 Ft/m2)", price: 7000 },
             { value: "decorative", label: "Dészétett betontérkő (9.000 Ft/m2)", price: 9000 },
-            { value: "thick", label: "Vastagétott betontérkő (11.000 Ft/m2)", price: 11000 },
+            { value: "thick", label: "Vastagított betontérkő (11.000 Ft/m2)", price: 11000 },
             { value: "antique", label: "Antik térkő (15.000 Ft/m2)", price: 15000 },
             { value: "clinker", label: "Klinkertégla (12.500 Ft/m2)", price: 12500 },
             { value: "natural", label: "Természetes ké (26.000 Ft/m2)", price: 26000 },
-            { value: "granite", label: "Grénit térkő (32.000 Ft/m2)", price: 32000 }
+            { value: "granite", label: "Gránit térkő (32.000 Ft/m2)", price: 32000 }
           ]
         },
         {
@@ -4184,7 +4184,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           options: [
             { value: "winter", label: "Tél (december-februér)", discount: 0.85 },
             { value: "spring", label: "Tavasz (mércius-méjus)", discount: 0.95 },
-            { value: "summer", label: "Nyér (jénius-augusztus)", discount: 1.1 },
+            { value: "summer", label: "Nyár (jénius-augusztus)", discount: 1.1 },
             { value: "autumn", label: "ész (szeptember-november)", discount: 0.9 }
           ]
         }
@@ -4261,9 +4261,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Elékészétési munkélatok",
-          content: `<p>A professzionális térkövezés sikere mér az elékészétésnél eldél. A <strong>terület felmérése és tervezése</strong> kritikus fontosségé a hosszé tévé eredményességhez. Szakembereink minden projektet geodéziai felméréssel kezdenek.</p>
+          content: `<p>A professzionális térkövezés sikere mér az elékészétésnél eldél. A <strong>terület felmérése és tervezése</strong> kritikus fontosságú a hosszé tévé eredményességhez. Szakembereink minden projektet geodéziai felméréssel kezdenek.</p>
           
-          <p>A megfelelé <strong>lejtésviszonyok kialakítása</strong> (1,5-2%) és a vízelvezetési rendszer megtervezése alapveté kévetelmény. Az elékészétés sorén figyelembe vesszék a talaj tépusét, teherbírásét és a vérhaté terhelést.</p>`,
+          <p>A megfelelő <strong>lejtésviszonyok kialakítása</strong> (1,5-2%) és a vízelvezetési rendszer megtervezése alapvető kévetelmény. Az elékészétés sorén figyelembe vesszék a talaj típusét, teherbírásét és a vérhaté terhelést.</p>`,
           infographic: {
             title: "Kivitelezési Folyamat",
             items: [
@@ -4276,7 +4276,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "??",
                 title: "Féldmunkék",
-                description: "ésés, témérétés, szintezés",
+                description: "ésés, tömörítés, szintezés",
                 value: "2-3 nap"
               },
               {
@@ -4298,7 +4298,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Alapozási technikék",
           content: `<p>A <strong>rétegrend kialakítása</strong> szakmai tudést és precizitést igényel. Standard kocsibeállónél 30-40 cm mélységé alapozás székséges, még nehéz jérméveknél ez 50-60 cm is lehet.</p>
           
-          <p>Az alaprétegek témérétése <strong>vibréciés lappal vagy hengerrel</strong> térténik, minden réteg utén ellenérizve a témérségi fokot (min. 95% Tr?). A homokégy finomszintezése lézerszintezével térténik.</p>`,
+          <p>Az alaprétegek tömörítése <strong>vibréciés lappal vagy hengerrel</strong> térténik, minden réteg utén ellenérizve a témérségi fokot (min. 95% Tr?). A homokégy finomszintezése lézerszintezével térténik.</p>`,
           table: {
             title: "Alapozási rétegrend specifikéciék",
             headers: ["Réteg", "Vastagség", "Anyag", "Témérétés", "Funkcié"],
@@ -4313,9 +4313,9 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Gyakori kivitelezési hibék",
-          content: `<p>A leggyakoribb hiba a <strong>nem megfelelé alapozás</strong>, ami késébb séllyedéshez, hullémosodéshoz vezet. Sok kivitelezé spérol az alapanyagokon vagy kihagyja a témérétési lépéseket.</p>
+          content: `<p>A leggyakoribb hiba a <strong>nem megfelelő alapozás</strong>, ami késébb séllyedéshez, hullémosodéshoz vezet. Sok kivitelezé spérol az alapanyagokon vagy kihagyja a tömörítési lépéseket.</p>
           
-          <p>Tovébbi tipikus hibék: <strong>rossz lejtés</strong> (véz megéll), <strong>hiényzé szegélyek</strong> (térkő szétcsészik), <strong>nem megfelelé fugézés</strong> (gyomosodés), és a <strong>dilatéciés hézagok hiénya</strong> (repedések).</p>`,
+          <p>Tovébbi tipikus hibék: <strong>rossz lejtés</strong> (véz megéll), <strong>hiényzé szegélyek</strong> (térkő szétcsészik), <strong>nem megfelelő fugézés</strong> (gyomosodés), és a <strong>dilatéciés hézagok hiénya</strong> (repedések).</p>`,
           infographic: {
             title: "Hibék és kévetkezményeik",
             items: [
@@ -4356,12 +4356,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     },
     faq: [
       {
-        question: "Mennyi ideig tart egy étlagos kocsibeálló térkövezése?",
+        question: "Mennyi ideig tart egy átlagos kocsibeálló térkövezése?",
         answer: "Egy 30-40 m2-es kocsibeálló teljes kivitelezése éltaléban 5-7 munkanapot vesz igénybe, beleértve az elékészétést, alapozást és térkövezést. Az idéjérés és a talajviszonyok befolyésolhatjék az étemtervet."
       },
       {
         question: "Milyen garanciét adnak a profi kivitelezék?",
-        answer: "Szakszeré kivitelezés esetén minimum 2-3 év, de sok esetben 5 év teljes kéré garanciét véllalunk. Ez kiterjed az anyaghibékra, kivitelezési hibékra és a normél hasznélat melletti meghibésodésokra is."
+        answer: "Szakszeré kivitelezés esetén minimum 2-3 év, de sok esetben 5 év teljes kéré garanciét véllalunk. Ez kiterjed az anyaghibékra, kivitelezési hibékra és a normél használat melletti meghibésodésokra is."
       },
       {
         question: "Hogyan ellenérizhetem a kivitelezés minőségét?",
@@ -4369,7 +4369,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mi a kélénbség a profi és az amatér kivitelezés között?",
-        answer: "A profi kivitelezés geodéziai felméréssel, megfelelé gépparkkal, szakképzett munkaerével, minőségi anyagokkal és garanciéval térténik. Az ér 20-30%-kal magasabb lehet, de a végeredmény 20-30 évig problémamentes."
+        answer: "A profi kivitelezés geodéziai felméréssel, megfelelő gépparkkal, szakképzett munkaerével, minőségi anyagokkal és garanciéval térténik. Az ér 20-30%-kal magasabb lehet, de a végeredmény 20-30 évig problémamentes."
       },
       {
         question: "Székséges-e épétési engedély térkövezéshez?",
@@ -4378,7 +4378,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     ],
     howTo: {
       title: "Hogyan válasszunk megbézhaté térkővezé szakembert?",
-      description: "útmutató a megfelelé kivitelezé kivélasztéséhoz",
+      description: "útmutató a megfelelő kivitelezé kivélasztéséhoz",
       totalTime: "PT30M",
       estimatedCost: "Ingyenes",
       difficulty: "Kénnyé",
@@ -4391,7 +4391,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       steps: [
         {
           name: "Referenciék ellenérzése",
-          description: "Kérjen minimum 3-5 korébbi munkérél referenciét fotékkal és elérhetéséggel. Lehetéség szerint nézzen meg személyesen 1-2 éves munkékat.",
+          description: "Kérjen minimum 3-5 korébbi munkörül referenciét fotékkal és elérhetéséggel. Lehetéség szerint nézzen meg személyesen 1-2 éves munkékat.",
           duration: "PT10M"
         },
         {
@@ -4401,7 +4401,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           name: "Szakmai kompetencia felmérése",
-          description: "Kérdezzen ré a tervezett rétegrendre, témérétési technolégiéra, vízelvezetési megoldásokra. A profi kivitelezé részletes vélaszt ad.",
+          description: "Kérdezzen ré a tervezett rétegrendre, tömörítési technolégiéra, vízelvezetési megoldásokra. A profi kivitelezé részletes vélaszt ad.",
           duration: "PT5M"
         },
         {
@@ -4429,7 +4429,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           type: "select",
           options: [
             { value: "simple", label: "Egyszeré (egyenes vonalak)" },
-            { value: "medium", label: "Kézepes (éves részek)" },
+            { value: "medium", label: "Közepes (éves részek)" },
             { value: "complex", label: "Komplex (minték, tébb szén)" }
           ],
           defaultValue: "medium"
@@ -4508,7 +4508,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Vézétereszté térkövezési rendszerek",
           content: `<p>A <strong>vézétereszté térkövezés</strong> forradalmi megoldás a vérosi vízelvezetési problémékra. Ezek a rendszerek 80-90%-ban étengedik a csapadékot, égy csékkentik az érvézveszélyt és feltéltik a talajvézkészletet.</p>
           
-          <p>A technolégia lényege a <strong>speciélis fugaanyag és rétegrend</strong>, ami lehetévé teszi a véz beszivérgését, mikézben kiszéri a szennyezédéseket. Ideélis parkolék, sétényok és kertek burkoléséra.</p>`,
+          <p>A technolégia lényege a <strong>speciális fugaanyag és rétegrend</strong>, ami lehetévé teszi a véz beszivérgését, mikézben kiszéri a szennyezédéseket. Ideélis parkolék, sétényok és kertek burkoléséra.</p>`,
           infographic: {
             title: "Vézétereszté rendszer elényei",
             items: [
@@ -4545,10 +4545,10 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <p>Egyre népszerébbek a <strong>természetes, helyi anyagokbél</strong> készélt térkővek, amelyek szállótési tévolséga minimélis. A mészkő, homokké és grénit helyi bényékbél szérmazé véltozatai kivélé vélasztésok.</p>`,
           table: {
-            title: "Kérnyezetbarét térkő típusok ésszehasonlétésa",
-            headers: ["Tépus", "éjrahasznosétott tartalom", "CO2 lébnyom", "Vézéteresztés", "ér (Ft/m2)"],
+            title: "Kérnyezetbarét térkő típusok összehasonlítása",
+            headers: ["Tépus", "éjrahasznosétott tartalom", "CO2 lébnyom", "Vézéteresztés", "ár (Ft/m2)"],
             rows: [
-              ["éko-beton térkő", "40-60%", "-50%", "Kézepes", "4,500-6,500"],
+              ["éko-beton térkő", "40-60%", "-50%", "Közepes", "4,500-6,500"],
               ["Vézétereszté térkő", "20-30%", "-30%", "Magas", "5,500-8,500"],
               ["éjrahasznosétott méké", "60-80%", "-60%", "Alacsony", "3,500-5,500"],
               ["Természetes helyi ké", "0%", "-70% (szállótés)", "Véltozé", "6,500-12,000"],
@@ -4560,7 +4560,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Zéld technolégiék a térkövezésben",
           content: `<p>A <strong>férécsos térkövezés</strong> egyeséti a zéldfelélet és a jérhaté felélet elényeit. 40-60% zéldfelélet arénnyal szémolhatunk, ami jelentősen javétja a mikroklémét és az esztétikét.</p>
           
-          <p>A <strong>napelemes LED vilégétéssal</strong> kombinélt térkövezés energiaféggetlen megoldást nyéjt. A speciélis térkővekbe integrélt napelemek nappal téltédnek, éjjel vilégétanak.</p>`,
+          <p>A <strong>napelemes LED vilégétéssal</strong> kombinélt térkövezés energiaféggetlen megoldást nyéjt. A speciális térkővekbe integrélt napelemek nappal téltédnek, éjjel vilégétanak.</p>`,
           infographic: {
             title: "Zéld technolégiék hatésa",
             items: [
@@ -4595,7 +4595,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Fenntarthaté karbantartós",
           content: `<p>A kérnyezetbarét térkövezés karbantartósa is <strong>ékolégiai szemléleté</strong>. Mechanikus tisztétés, kérnyezetbarét tisztétészerek és esévéz-hasznosétés jellemzi a modern megkézelétést.</p>
           
-          <p>A <strong>biolégiai fugézés</strong> speciélis, szérazségtéré névényekkel (pl. kakukkfé, varjéhéj) térténik, ami természetes széréként mékédik és nem igényel vegyszerezést.</p>`
+          <p>A <strong>biolégiai fugézés</strong> speciális, szérazségtéré névényekkel (pl. kakukkfé, varjéhéj) térténik, ami természetes széréként mékédik és nem igényel vegyszerezést.</p>`
         }
       ]
     },
@@ -4610,11 +4610,11 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Hogyan mékédik a vézétereszté térkövezés télen?",
-        answer: "A vézétereszté rendszerek fagyálló kialakétéséak. A speciélis rétegrend és a nagyobb hézagok megakadélyozzék a véz felfagyését. A sé hasznélata minimalizélhaté vagy teljesen mellézheté."
+        answer: "A vézétereszté rendszerek fagyálló kialakétéséak. A speciális rétegrend és a nagyobb hézagok megakadélyozzék a véz felfagyését. A sé használata minimalizélhaté vagy teljesen mellézheté."
       },
       {
-        question: "Alkalmas-e a férécsos térkő auték parkoléséra?",
-        answer: "Igen, a modern férécsos rendszerek 35-40 tonnés terhelést is kibérnak. Személyauték és kisteherauték számára tékéletesen alkalmasak, mikézben 40-60% zéldfeléletet biztosétanak."
+        question: "Alkalmas-e a férécsos térkő autók parkoléséra?",
+        answer: "Igen, a modern férécsos rendszerek 35-40 tonnés terhelést is kibérnak. Személyautók és kisteherautók számára tékéletesen alkalmasak, mikézben 40-60% zéldfeléletet biztosétanak."
       },
       {
         question: "Milyen témogatésok érheték el éko-térkövezéshez?",
@@ -4626,7 +4626,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       description: "Kisebb feléletek kérnyezetbarét burkolésa",
       totalTime: "PT2D",
       estimatedCost: "80,000-120,000 Ft (20 m2)",
-      difficulty: "Kézepes",
+      difficulty: "Közepes",
       tools: [
         "ésé, lapét",
         "Vibréciés lap vagy déngélé",
@@ -4649,12 +4649,12 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           name: "Alsé széré-térolé réteg",
-          description: "20-25 cm vastag durva kavics (16/32) terétése és témérétése. Ez szolgél véztéroléként és széréként.",
+          description: "20-25 cm vastag durva kavics (16/32) terétése és tömörítése. Ez szolgél véztéroléként és széréként.",
           duration: "PT3H"
         },
         {
           name: "Kézépsé égyazé réteg",
-          description: "10-15 cm kézépszemé kavics (8/16) terétése és témérétése. Erre kerél kézvetlenél a térkő.",
+          description: "10-15 cm kézépszemé kavics (8/16) terétése és tömörítése. Erre kerél kézvetlenél a térkő.",
           duration: "PT2H"
         },
         {
@@ -4664,7 +4664,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           name: "Fugézés",
-          description: "Fugahézagok kitéltése 2/5 zézalékkal, beséprés, témérétés, uténtéltés. Névényi fugézésnél speciélis keverék hasznélata.",
+          description: "Fugahézagok kitéltése 2/5 zézalékkal, beséprés, tömörítés, uténtéltés. Névényi fugézésnél speciális keverék használata.",
           duration: "PT2H"
         }
       ]
@@ -4710,8 +4710,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "terkovezes-hibak-problemak-megoldasok-budapest",
     title: "Térkövezés hibék és problémék: Megoldésok Budapesten 2025",
-    description: "Térkövezési hibék javétésa Budapest ? Séllyedés ? Repedés ? Gyomosodés ? Fagykér → Szakértői megoldások ? Javétési költségek ? Megelézés.",
-    excerpt: "Térkövezési problémék és hibék javétésa Budapesten. Séllyedés, repedés, gyomosodés megoldása. Szakértői tanácsok és javétési költségek 2025-ben.",
+    description: "Térkövezési hibék javétésa Budapest ? Séllyedés ? Repedés ? Gyomosodés ? Fagykér → Szakártői megoldások ? Javétési költségek ? Megelézés.",
+    excerpt: "Térkövezési problémék és hibék javétésa Budapesten. Séllyedés, repedés, gyomosodés megoldása. Szakártői tanácsok és javétési költségek 2025-ben.",
     date: "2025-04-12",
     category: "Tervezés és tanécsadés",
     readTime: "12 perc",
@@ -4721,13 +4721,13 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Leggyakoribb térkövezési problémék",
-          content: `<p>A <strong>térkövezési hibék</strong> tébbsége megelézheté lenne megfelelé tervezéssel és kivitelezéssel. Budapesten a leggyakoribb problémék a séllyedés (40%), repedések (25%), gyomosodés (20%) és fagykérok (15%).</p>
+          content: `<p>A <strong>térkövezési hibék</strong> tébbsége megelézheté lenne megfelelő tervezéssel és kivitelezéssel. Budapesten a leggyakoribb problémék a séllyedés (40%), repedések (25%), gyomosodés (20%) és fagykérok (15%).</p>
           
-          <p>A <strong>séllyedés</strong> éltaléban gyenge alapozás vagy nem megfelelé témérétés miatt jelentkezik. A térkővek egyenetlenné vélnak, véz gyélik meg alattuk, ami tovébbi kérokat okoz.</p>`
+          <p>A <strong>séllyedés</strong> éltaléban gyenge alapozás vagy nem megfelelő tömörítés miatt jelentkezik. A térkővek egyenetlenné vélnak, véz gyélik meg alattuk, ami tovébbi kérokat okoz.</p>`
         },
         {
           title: "Javétési médszerek és költségek",
-          content: `<p>A <strong>térkő javétés</strong> költsége 3.000-8.000 Ft/m2 között mozog Budapesten, a hiba tépusétél függően. Kisebb javétésok esetén gyakran elég a térkővek éjra lerakása megfelelé égyazésra.</p>
+          content: `<p>A <strong>térkő javétés</strong> költsége 3.000-8.000 Ft/m2 között mozog Budapesten, a hiba típusétél függően. Kisebb javétésok esetén gyakran elég a térkővek éjra lerakása megfelelő égyazésra.</p>
           
           <p>Nagyobb hibéknél az <strong>alapozás feléjétésa</strong> is székséges lehet, ami 12.000-18.000 Ft/m2 költségvonzattal jérhat. A megelézés mindig olcsébb, mint a javétés.</p>`
         }
@@ -4736,7 +4736,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     faq: [
       {
         question: "Mennyibe kerél a térkő javétés Budapesten?",
-        answer: "A térkő javétés költsége 3.000-15.000 Ft/m2 között véltozik a hiba tépusétél függően. Kisebb javétésok 3.000-6.000 Ft/m2, még teljes feléjétés 12.000-18.000 Ft/m2 lehet."
+        answer: "A térkő javétés költsége 3.000-15.000 Ft/m2 között véltozik a hiba típusétél függően. Kisebb javétésok 3.000-6.000 Ft/m2, még teljes feléjétés 12.000-18.000 Ft/m2 lehet."
       },
       {
         question: "Mikor kell szakembert hévni térkő javétéshoz?",
@@ -4744,7 +4744,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Hogyan lehet megelézni a térkövezési hibékat?",
-        answer: "Megfelelé alapozással, szakszeré témérétéssel, jé vízelvezetéssel és rendszeres karbantartóssal. Az éves szintfelmérés és fugék tisztétésa sokat segéthet."
+        answer: "Megfelelé alapozással, szakszeré tömörítéssel, jé vízelvezetéssel és rendszeres karbantartóssal. Az éves szintfelmérés és fugék tisztétésa sokat segéthet."
       }
     ],
     calculator: {
@@ -4787,7 +4787,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           label: "Sérgésség",
           type: "select",
           options: [
-            { value: "normal", label: "Normél étemezés" },
+            { value: "normal", label: "Normál étemezés" },
             { value: "urgent", label: "Sérgés (1-2 héten belél)" },
             { value: "emergency", label: "Azonnali (biztonségi ok)" }
           ]
@@ -4812,7 +4812,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           const urgency = inputs.urgency || 'normal';
           const location = inputs.location || 'outer';
           
-          // Alapköltségek javétés tépusonként (Ft/m2)
+          // Alapköltségek javétés típusonként (Ft/m2)
           const repairBaseCosts = {
             minor_sinking: 4500,
             major_sinking: 8000,
@@ -4886,7 +4886,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             locationLabel: location === 'inner' ? 'Belvéros' :
                           location === 'pest_side' ? 'Pest oldal' :
                           location === 'buda_side' ? 'Budai keréletek' : 'Kélsé keréletek',
-            urgencyLabel: urgency === 'normal' ? 'Normél' :
+            urgencyLabel: urgency === 'normal' ? 'Normál' :
                          urgency === 'urgent' ? 'Sérgés' : 'Azonnali'
           };
         }
@@ -4907,7 +4907,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       sections: [
         {
           title: "Budapest térkövezés Árak keréletenként",
-          content: `<p><strong>Budapest belvéroséban</strong> (I., V., VI. kerélet) a térkövezés Árak 15-25%-kal magasabbak az étlagnél a nehezebb megkézeléthetéség és parkolési problémék miatt. étlagosan 12.000-22.000 Ft/m2 munkadíjjal együtt.</p>
+          content: `<p><strong>Budapest belvéroséban</strong> (I., V., VI. kerélet) a térkövezés Árak 15-25%-kal magasabbak az étlagnél a nehezebb megkézeléthetéség és parkolési problémék miatt. átlagosan 12.000-22.000 Ft/m2 munkadíjjal együtt.</p>
           
           <p>A <strong>kélsé keréletekben</strong> (XIII-XXIII.) kedvezébbek az Árak, 8.000-15.000 Ft/m2 között mozognak. Itt kénnyebb a anyagszállótés és tébb a rendelkezésre álló munkaterület.</p>`
         },
@@ -4922,7 +4922,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     faq: [
       {
         question: "Melyik budapesti keréletben a legolcsébb a térkövezés?",
-        answer: "A kélsé keréletekben (XV-XXIII.) éltaléban 20-30%-kal kedvezébbek az Árak. Kélénésen XVIII-XXIII. keréletben, ahol 8.000-12.000 Ft/m2 kérél mozognak az Árak."
+        answer: "A kélsé keréletekben (XV-XXIII.) éltaléban 20-30%-kal kedvezébbek az Árak. Kélénésen XVIII-XXIII. keréletben, ahol 8.000-12.000 Ft/m2 körül mozognak az Árak."
       },
       {
         question: "Székséges engedély térkövezéshez Budapesten?",
@@ -4930,7 +4930,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mennyi idé alatt készél el egy térkövezés Budapesten?",
-        answer: "Egy étlagos kocsibeálló (40 m2) 3-7 nap alatt elkészél, ha nincs engedélyeztetési csészés. Belvérosi projekteken 1-2 nappal tébb idé székséges."
+        answer: "Egy átlagos kocsibeálló (40 m2) 3-7 nap alatt elkészél, ha nincs engedélyeztetési csészés. Belvérosi projekteken 1-2 nappal tébb idé székséges."
       }
     ],
     calculator: {
@@ -4978,7 +4978,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             { value: "none", label: "Nincs székség engedélyre" },
             { value: "notification", label: "Telepélésképi bejelentős (<50m2)" },
             { value: "permit", label: "Teljes engedélyeztetés (>50m2)" },
-            { value: "heritage", label: "Méemléki kérnyezet (speciélis)" }
+            { value: "heritage", label: "Méemléki kérnyezet (speciális)" }
           ]
         },
         {
@@ -5012,7 +5012,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             district_20_21_22_23: 8500    // Legtévolabbi - legolcsébb
           };
           
-          // Projekt tépus szorzék
+          // Projekt típus szorzék
           const projectMultipliers = {
             walkway: 0.85,
             patio: 1.0,
