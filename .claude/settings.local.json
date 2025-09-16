@@ -18,7 +18,19 @@
       "mcp__playwright__browser_click",
       "mcp__playwright__browser_close",
       "Bash(git checkout:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "mcp__firecrawl__firecrawl_scrape",
+      "mcp__playwright__browser_snapshot",
+      "Bash(timeout:*)",
+      "Bash(npm run:*)",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_evaluate",
+      "Bash(iconv:*)",
+      "Bash(sed:*)",
+      "Bash(gh issue create:*)",
+      "mcp__playwright__browser_press_key",
+      "Bash(del nul)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
