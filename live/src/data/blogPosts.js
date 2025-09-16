@@ -246,7 +246,7 @@ export const blogPosts = [
   {
     slug: "hogyan-valasszunk-terkovet",
     title: "Térkő választás kocsibeállóhoz: útmutató 2025",
-    description: "Térkő választás kocsibeállóhoz: teherbírás, csúszásmentesség, fagyállóság, karbantartás, költségek. Szakértői tippek autósoknak 2025."
+    description: "Térkő választás kocsibeállóhoz: teherbírás, csúszásmentesség, fagyállóság, karbantartás, költségek. Szakértői tippek autósoknak 2025.",
     excerpt: "Praktikus útmutató térkő választáshoz kocsibeállókhoz. Teherbírás, csúszásmentesség, karbantartás - minden, amit tudni kell a megfelelő döntéshez.",
     date: "2025-03-15",
     category: "Kocsibeálló térkövezés", 
