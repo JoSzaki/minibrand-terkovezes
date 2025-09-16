@@ -16,7 +16,9 @@
       "WebSearch",
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_click",
-      "mcp__playwright__browser_close"
+      "mcp__playwright__browser_close",
+      "Bash(git checkout:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
