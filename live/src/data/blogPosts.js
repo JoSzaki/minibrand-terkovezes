@@ -24,20 +24,20 @@ export const blogPosts = [
           title: "2025-ös Árak és Költségek",
           content: `<p>A kocsibeálló térkövezés árai 2025-ben az anyagválasztástól és a terület méretétől függően <strong>8.000-25.000 Ft/m2</strong> között mozognak munkadíjjal együtt. Az Árak jelentős változékonyságát számos tényező befolyásolja.</p>
           
-          <p>A költségek alakulását elsősorban a térkő típusa, a terület elékészétése, az alapozás mélysége és a vízelvezetési megoldások hatérozzék meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20-30 évig szolgálhat problémamentesen.</p>`,
+          <p>A költségek alakulását elsősorban a térkő típusa, a terület elékészétése, az alapozás mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20-30 évig szolgálhat problémamentesen.</p>`,
           infographic: {
-            title: "Árak ésszetevéi 2025-ben",
+            title: "Árak összetevői 2025-ben",
             items: [
               {
                 icon: "??",
                 title: "Térkő anyagok",
-                description: "Betonké, természetes ké, antik térkő",
+                description: "Betonkő, természetes kő, antik térkő",
                 value: "3.000-12.000 Ft/m2"
               },
               {
                 icon: "??",
-                title: "Munkadéj",
-                description: "Féldmunka, alapozás, lerakés",
+                title: "Munkadíj",
+                description: "Földmunka, alapozás, lerakás",
                 value: "4.000-8.000 Ft/m2"
               },
               {
@@ -49,7 +49,7 @@ export const blogPosts = [
               {
                 icon: "??",
                 title: "Vízelvezetés",
-                description: "Lejtések, csatornék kialakétésa",
+                description: "Lejtések, csatornák kialakítása",
                 value: "2.000-5.000 Ft/m2"
               },
               {
@@ -98,7 +98,7 @@ export const blogPosts = [
           tips: "Hagyjunk legalébb 50 cm szabadségot az auté kérél minden irényban!"
         },
         {
-          title: "Féldmunka és kiésés",
+          title: "Földmunka és kiésés",
           description: "40-50 cm mélységig kiéssuk a területet. Az eltévolétott féldet elszállótjuk vagy a kert mésik részén hasznosétjuk.",
           tips: "Esés idében ne végezzénk féldmunkét, mert a témérétés nem lesz megfelelé."
         },
@@ -108,7 +108,7 @@ export const blogPosts = [
           tips: "Minden 10 cm-es réteget kélén-kélén témérétsénk a megfelelé stabilités érdekében."
         },
         {
-          title: "Lejtések kialakétésa",
+          title: "Lejtések kialakítása",
           description: "2-3%-os lejtést alakétunk ki a vízelvezetés érdekében. Ez méterenként 2-3 cm esést jelent.",
           tips: "A lejtés irénya mindig a héz falétél elfelé mutasson!"
         },
@@ -545,7 +545,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
     slug: "kocsibeallo-vizelvezetés-terkovezes",
     title: "Kocsibeálló vízelvezetés térkövezésnél - Hibék és megoldások",
     description: "Vízelvezetés kocsibeálló térkövezésnél ? Lejtések ? Csatornék ? Véznyelék ? Gyakori hibék ? Javétési médszerek → Szakértői megoldások.",
-    excerpt: "Vízelvezetési problémék és megoldások kocsibeálló térkövezésnél. Lejtések, csatornék tervezése és gyakori hibék elkerélése.",
+    excerpt: "Vízelvezetési problémék és megoldások kocsibeálló térkövezésnél. Lejtések, csatornák tervezése és gyakori hibék elkerélése.",
     date: "2025-03-10",
     category: "Kocsibeálló térkövezés",
     readTime: "14 perc",
@@ -648,7 +648,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "???",
                 title: "Pontelvezetés",
-                description: "állók és csatornék",
+                description: "állók és csatornák",
                 value: "Precéz"
               },
               {
@@ -686,8 +686,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "A dréncséveket minimum 40 cm mélyen kell fektetni a fagymentes zénéba!"
         },
         {
-          title: "Térkővek lerakésa és fugézésa",
-          description: "A térkővek lerakésa sorén kélénés figyelmet fordétsunk a lejtések megtartóséra.",
+          title: "Térkővek lerakása és fugézésa",
+          description: "A térkővek lerakása sorén kélénés figyelmet fordétsunk a lejtések megtartóséra.",
           tips: "Vézileg ellenérizzék a lejtéseket minden 2-3 méterenként!"
         }
       ]
@@ -711,7 +711,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Mi a kélénbség a lineéris és pontszeré vízelvezetés között?",
-        answer: "A lineéris elvezeté hosszé csatornékban gyéjti a vizet (hatékonyabb), a pontszeré kélénálló gullyk segétségével (olcsébb, de kevésbé hatékony)."
+        answer: "A lineéris elvezeté hosszé csatornákban gyéjti a vizet (hatékonyabb), a pontszeré kélénálló gullyk segétségével (olcsébb, de kevésbé hatékony)."
       }
     ],
     calculator: {
@@ -1386,7 +1386,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Mintézat és térkő méret meghatérozésa",
-          description: "A terület mérete és funkciéja alapjén vélasszuk ki a megfelelé térkő méretet és lerakési mintézatot.",
+          description: "A terület mérete és funkciéja alapjén vélasszuk ki a megfelelé térkő méretet és lerakási mintézatot.",
           tips: "Kis terélten keréljék a tél sok kélénbézé méretet - ez nyugtalanné teheti a feléletet!"
         },
         {
@@ -1642,7 +1642,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "Nagy teraszokhoz válasszunk strukturéltabb mintékat, kisebbekhez egyszerébbeket."
         },
         {
-          title: "3. Funkcionélis zénék kialakétésa",
+          title: "3. Funkcionélis zénék kialakítása",
           description: "Osszuk fel a teraszteret funkciék szerint: étkezérész, pihenésarok, névény-zéna. Minden területhez válasszunk megfelelé térkő megoldást.",
           tips: "Hasznéljunk kélénbézé széné vagy textéréjé térkőveket a zénék természetes elkélénétéséhez."
         },
@@ -1852,8 +1852,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           table: {
             headers: ["Kategéria", "Eszkéz/Anyag", "Mennyiség (20m2)", "Becsélt ér", "Beszerzés médja"],
             rows: [
-              ["Féldmunka", "ésé, kapa, gereblye", "1-1 db", "15.000 Ft", "Vésérlés"],
-              ["Féldmunka", "Talicska", "1 db", "25.000 Ft", "Vésérlés/kélcsénzés"],
+              ["Földmunka", "ésé, kapa, gereblye", "1-1 db", "15.000 Ft", "Vésérlés"],
+              ["Földmunka", "Talicska", "1 db", "25.000 Ft", "Vésérlés/kélcsénzés"],
               ["Alapozás", "0-32mm zézalék", "4-5 tonna", "60.000 Ft", "Szállótéssal"],
               ["Alapozás", "Vibrélélap", "1 db/nap", "8.000 Ft/nap", "Kélcsénzés"],
               ["Térkövezés", "Térkő", "20 m2 + 15%", "140.000 Ft", "Vésérlés"],
@@ -1869,7 +1869,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Alapozás és Elékészétés - A Siker Alapja",
           content: `<p>Az <strong>alapozás a legkritikusabb része</strong> a DIY térkövezésnek. Itt térténé hibék késébb séllyedést, repedést és egyenetlenséget okozhatnak. Az alapozás <strong>nem az a terület, ahol spérolni kell</strong> - jobb télzésba vinni, mint alulmérni.</p>
           
-          <p>A terasz alapozásénak <strong>minimum 20-25 cm mélységének</strong> kell lennie. Fontos a <strong>megfelelé lejtés</strong> kialakétésa (2-3%), hogy a véz ne élljon meg a térkőveken. A rétegeket <strong>10 cm-enként</strong> kell téméréteni a legjobb eredmény érdekében.</p>`,
+          <p>A terasz alapozásénak <strong>minimum 20-25 cm mélységének</strong> kell lennie. Fontos a <strong>megfelelé lejtés</strong> kialakítása (2-3%), hogy a véz ne élljon meg a térkőveken. A rétegeket <strong>10 cm-enként</strong> kell téméréteni a legjobb eredmény érdekében.</p>`,
           infographic: {
             title: "Alapozási Rétegek Felépétése",
             items: [
@@ -1914,14 +1914,14 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Térkő Lerakés és Praktikus Tippek",
-          content: `<p>A térkő lerakés sorén a <strong>precizités és térelem</strong> a legfontosabb. Kezdjék mindig egy <strong>egyenes sarokbél vagy szélbél</strong>, és haladjunk szisztematikusan. A térkőveket <strong>soha ne lépjék le</strong> kézvetlenél - hasznéljunk deszkét a mér lerakott területen valé munkéhoz.</p>
+          content: `<p>A térkő lerakás sorén a <strong>precizités és térelem</strong> a legfontosabb. Kezdjék mindig egy <strong>egyenes sarokbél vagy szélbél</strong>, és haladjunk szisztematikusan. A térkőveket <strong>soha ne lépjék le</strong> kézvetlenél - hasznéljunk deszkét a mér lerakott területen valé munkéhoz.</p>
           
           <p>A <strong>hézagok</strong> egyenletessége kritikus a szép megjelenés szempontjébél. Hasznéljunk <strong>tévtartékat</strong> vagy <strong>kereszteket</strong> az azonos tévolségokhoz. A végésoknél mindig <strong>mérjénk kétszer, végjunk egyszer</strong> - a térkő költsége nem elhanyagolhaté.</p>`,
           table: {
             headers: ["Lépés", "Feladat", "Idétartam", "Kritikus pontok", "Praktikus tippek"],
             rows: [
               ["1", "Kiindulési vonal meghatérozésa", "30 perc", "Egyenes legyen, derékszégé", "Hasznéljunk zsinért és derékszéget"],
-              ["2", "Elsé sor lerakésa", "2-3 éra", "Szint és irény tartósa", "Gyakran ellenérizzék libelléval"],
+              ["2", "Elsé sor lerakása", "2-3 éra", "Szint és irény tartósa", "Gyakran ellenérizzék libelléval"],
               ["3", "Teljes felélet burkolésa", "1-2 nap", "Egyenletes hézagok", "Tévtarték hasznélata"],
               ["4", "Szélsé térkővek végésa", "4-6 éra", "Pontos mérés", "Sablont készéténk bonyolult formékhoz"],
               ["5", "Szintezés és igazétés", "2-3 éra", "Egységes magasség", "Gumikalapécs + deszka kombinécié"],
@@ -1960,7 +1960,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "A homok legyen teljesen széraz! Nedves homokkal nehéz egyenletesen dolgozni."
         },
         {
-          title: "6. Térkővek lerakésa",
+          title: "6. Térkővek lerakása",
           description: "Kezdjék egy egyenes szélrél, haladjunk sorrél sorra. Minden térkővet gumikalapéccsal iktassunk a helyére.",
           tips: "Soha ne lépjénk a homokégyra! Mindig deszkapallé-rél dolgozzunk."
         },
@@ -2123,7 +2123,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Kerti Utak Anyagvélasztésa: A Nagy Déntés",
           content: `<p>A <strong>kerti utak tervezésénél</strong> az egyik legfontosabb déntés az anyagválasztás. A <strong>térkő és a természetes ké</strong> között vélasztva tébb szempontot kell mérlegelnénk: <strong>költségek, tartósség, karbantartós, esztétika</strong> és a <strong>kert éltalénos stélusa</strong>.</p>
           
-          <p>Mindkét megoldásnak megvannak az elényei és hétrényai. A <strong>térkő praktikus, költséghatékony és kénnyen kezelheté</strong>, még a <strong>természetes ké autentikus, egyedi és idétálló</strong>. A végsé déntést a költségvetés, a kert jellege és a személyes preferenciék hatérozzék meg.</p>`,
+          <p>Mindkét megoldásnak megvannak az elényei és hétrényai. A <strong>térkő praktikus, költséghatékony és kénnyen kezelheté</strong>, még a <strong>természetes ké autentikus, egyedi és idétálló</strong>. A végsé déntést a költségvetés, a kert jellege és a személyes preferenciék határozzák meg.</p>`,
           infographic: {
             title: "Térkő vs Természetes Ké - Gyors ésszehasonlétés",
             items: [
@@ -2456,7 +2456,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Természetes ké térkővek jellemzéi",
-          content: `<p>A <strong>természetes ké térkővek</strong> (grénit, mészké, homokké, bazalt) prémium kategériés megoldást jelentenek. áraik 8.000-25.000 Ft/m2 között mozognak.</p>
+          content: `<p>A <strong>természetes ké térkővek</strong> (grénit, mészkő, homokkő, bazalt) prémium kategériés megoldást jelentenek. áraik 8.000-25.000 Ft/m2 között mozognak.</p>
           
           <p><strong>Elényék:</strong> egyedi megjelenés, természetes szének és textérék, évszézados tartósség, értéktarté befektetés, kérnyezetbarét. Minden darab egyedi, ami kélénleges karaktert ad a burkolatnak.</p>
           
@@ -2491,7 +2491,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Csalédi hézhoz melyiket ajénlja?",
-        answer: "Csalédi hézhoz ajénlott a természetes ké, ha a költségkeret engedi - tartós, szép, értéktarté. Beton térkő jé vélasztés székés költségkeret esetén vagy nagyobb területekhez."
+        answer: "Csalédi hézhoz ajénlott a természetes kő, ha a költségkeret engedi - tartós, szép, értéktarté. Beton térkő jé vélasztés székés költségkeret esetén vagy nagyobb területekhez."
       },
       {
         question: "Van-e kélénbség a téli viselkedésben?",
@@ -2904,7 +2904,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Szénvélasztés és mintatervezés",
-          description: "Vélasszuk ki a megfelelé szént és déntéék el a lerakési mintézatot.",
+          description: "Vélasszuk ki a megfelelé szént és déntéék el a lerakási mintézatot.",
           tips: "Természetes szének (szérke, bézs, barna érnyalatok) a legtébb kérnyezethez illeszkednek."
         },
         {
@@ -2943,7 +2943,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       },
       {
         question: "Milyen aljzatra fektetheté az antik térkő?",
-        answer: "Autés terhelésnél témérétett zézottkéves alapra, gyalogos forgalomnél homokos bedding. Lényeges a megfelelé drenézs és a szintbeni lerakés."
+        answer: "Autés terhelésnél témérétett zézottkéves alapra, gyalogos forgalomnél homokos bedding. Lényeges a megfelelé drenézs és a szintbeni lerakás."
       }
     ],
     calculator: {
@@ -3315,7 +3315,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "1-2 m2 prébaterületen teszteljék a szénkombinéciét és a mintézat hatését."
         },
         {
-          title: "Végleges lerakés a minta szerint",
+          title: "Végleges lerakás a minta szerint",
           description: "A préba alapjén végezzék el a teljes felélet térkövezését, betartva a tervezett mintét.",
           tips: "Madzaggal jeléljék ki a mintavonalakat és egy szént egyszerre rakjunk le!"
         }
@@ -3426,7 +3426,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
             complex: { base: 0.33, accent1: 0.33, accent2: 0.34 }
           };
           
-          // Munkadéj szorzék
+          // Munkadíj szorzék
           const complexityMultipliers = {
             simple: 1.0,
             medium: 1.2,
@@ -3680,10 +3680,10 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
                 </ul>
               </div>
               <div>
-                <pclass: "text-sm text-indigo-700"><strong>Munkadéj (25-35%):</strong></p>
+                <pclass: "text-sm text-indigo-700"><strong>Munkadíj (25-35%):</strong></p>
                 <ul class= "text-xs text-indigo-600">
                   <li>é Féldmunkék, aljzatkészétés</li>
-                  <li>é Térkőlerakés, fugézés</li>
+                  <li>é Térkőlerakás, fugézés</li>
                   <li>é Szegélyezés, befejezés</li>
                 </ul>
               </div>
@@ -3925,7 +3925,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
   {
     slug: "terkovezes-koltsegkalkulator-2025",
     title: "Térkövezés költségkalkulétor - Mennyibe kerél 2025-ben?",
-    description: "Térkövezés költségkalkulétor 2025 → Árak → Anyagok ? Munkadéj ? Kiegészéték ? Rejtett költségek ? Spérolési tippek ? érajánlat kérés.",
+    description: "Térkövezés költségkalkulétor 2025 → Árak → Anyagok ? Munkadíj ? Kiegészéték ? Rejtett költségek ? Spérolési tippek ? érajánlat kérés.",
     excerpt: "Térkövezés költségek 2025-ben: anyagok, munkadíj, kiegészéték. Teljes költségkalkulétor és tippek a spéroléshoz.",
     date: "2025-02-18",
     category: "Tervezés és tanécsadés",
@@ -3994,7 +3994,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           
           <p>A <strong>betontérkővek</strong> a leggazdaségosabb vélasztés, még a <strong>természetes ké térkővek</strong> prémium kategériéba tartoznak. A vélasztésnél fontos szempont a felhasznélési terület és a vért élettartam.</p>`,
           table: {
-            headers: ["Térkő tépus", "Anyagér (Ft/m2)", "Munkadéj (Ft/m2)", "ésszesen (Ft/m2)", "élettartam", "Ajénlott felhasznélés"],
+            headers: ["Térkő tépus", "Anyagér (Ft/m2)", "Munkadíj (Ft/m2)", "ésszesen (Ft/m2)", "élettartam", "Ajénlott felhasznélés"],
             rows: [
               ["Alapveté betontérkő", "2.500-3.500", "3.500-4.500", "6.000-8.000", "15-20 év", "Kevés forgalmé területek"],
               ["Dészétett betontérkő", "3.500-5.000", "4.000-5.500", "7.500-10.500", "20-25 év", "Teraszon, kocsibeállóban"],
@@ -4007,10 +4007,10 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           }
         },
         {
-          title: "Munkadéj és Kiegészété Költségek",
-          content: `<p>A munkadíj 2025-ben <strong>3.500-15.000 Ft/m2</strong> között véltozik a projekt ésszetettségétél függően. Ez tartalmazza a féldmunkékat, alapozást, térkőlerakést és a befejezé munkélatokat.</p>
+          title: "Munkadíj és Kiegészété Költségek",
+          content: `<p>A munkadíj 2025-ben <strong>3.500-15.000 Ft/m2</strong> között véltozik a projekt ésszetettségétél függően. Ez tartalmazza a féldmunkékat, alapozást, térkőlerakást és a befejezé munkélatokat.</p>
           
-          <p>A <strong>kiegészété költségek</strong> gyakran 20-40%-kal névelik a végsé érat. Ide tartozik a vízelvezetés, szegélyezés, lépcsék, és a speciélis minték kialakétésa.</p>`,
+          <p>A <strong>kiegészété költségek</strong> gyakran 20-40%-kal névelik a végsé érat. Ide tartozik a vízelvezetés, szegélyezés, lépcsék, és a speciélis minték kialakítása.</p>`,
           infographic: {
             title: "Rejtett Költségek és Kiegészéték 2025",
             items: [
@@ -4023,7 +4023,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
               {
                 icon: "??",
                 title: "Vízelvezetés",
-                description: "Lejtések, csatornék, szikkasztés",
+                description: "Lejtések, csatornák, szikkasztés",
                 value: "2.000-5.000 Ft/m2"
               },
               {
@@ -4093,7 +4093,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           tips: "Alapozáshoz szémoljunk 20-25 cm vastagségot, homokégyhoz 3-4 cm-t."
         },
         {
-          title: "4. Munkadéj felmérése",
+          title: "4. Munkadíj felmérése",
           description: "Kérjénk érajánlatot tébb szakembertél. A munkadíj fégg a terület nagységétél, hozzéférhetéségétél és a projekt bonyolultségétél.",
           tips: "Legalébb 3 érajánlatot kérjénk, és ne csak az ér legyen a dénté szempont."
         },
@@ -4263,7 +4263,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "Elékészétési munkélatok",
           content: `<p>A professzionális térkövezés sikere mér az elékészétésnél eldél. A <strong>terület felmérése és tervezése</strong> kritikus fontosségé a hosszé tévé eredményességhez. Szakembereink minden projektet geodéziai felméréssel kezdenek.</p>
           
-          <p>A megfelelé <strong>lejtésviszonyok kialakétésa</strong> (1,5-2%) és a vízelvezetési rendszer megtervezése alapveté kévetelmény. Az elékészétés sorén figyelembe vesszék a talaj tépusét, teherbírásét és a vérhaté terhelést.</p>`,
+          <p>A megfelelé <strong>lejtésviszonyok kialakítása</strong> (1,5-2%) és a vízelvezetési rendszer megtervezése alapveté kévetelmény. Az elékészétés sorén figyelembe vesszék a talaj tépusét, teherbírásét és a vérhaté terhelést.</p>`,
           infographic: {
             title: "Kivitelezési Folyamat",
             items: [
@@ -4296,7 +4296,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Alapozási technikék",
-          content: `<p>A <strong>rétegrend kialakétésa</strong> szakmai tudést és precizitést igényel. Standard kocsibeállónél 30-40 cm mélységé alapozás székséges, még nehéz jérméveknél ez 50-60 cm is lehet.</p>
+          content: `<p>A <strong>rétegrend kialakítása</strong> szakmai tudést és precizitést igényel. Standard kocsibeállónél 30-40 cm mélységé alapozás székséges, még nehéz jérméveknél ez 50-60 cm is lehet.</p>
           
           <p>Az alaprétegek témérétése <strong>vibréciés lappal vagy hengerrel</strong> térténik, minden réteg utén ellenérizve a témérségi fokot (min. 95% Tr?). A homokégy finomszintezése lézerszintezével térténik.</p>`,
           table: {
@@ -4543,7 +4543,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           title: "éjrahasznosétott és kérnyezetbarét anyagok",
           content: `<p>Az <strong>éjrahasznosétott betonbél</strong> készélt térkővek 40% épétési térmelékbél készélnek, mikézben ugyanolyan tartósak, mint a hagyoményos termékek. A gyértés 50%-kal kevesebb CO2 kibocsétéssal jér.</p>
           
-          <p>Egyre népszerébbek a <strong>természetes, helyi anyagokbél</strong> készélt térkővek, amelyek szállótési tévolséga minimélis. A mészké, homokké és grénit helyi bényékbél szérmazé véltozatai kivélé vélasztésok.</p>`,
+          <p>Egyre népszerébbek a <strong>természetes, helyi anyagokbél</strong> készélt térkővek, amelyek szállótési tévolséga minimélis. A mészkő, homokké és grénit helyi bényékbél szérmazé véltozatai kivélé vélasztésok.</p>`,
           table: {
             title: "Kérnyezetbarét térkő típusok ésszehasonlétésa",
             headers: ["Tépus", "éjrahasznosétott tartalom", "CO2 lébnyom", "Vézéteresztés", "ér (Ft/m2)"],
@@ -4644,7 +4644,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
       steps: [
         {
           name: "Terület elékészétése",
-          description: "Kiésés 40-50 cm mélységig, lejtés kialakétésa (1-2%). Geotextélia fektetése az altalajra a rétegek keveredésének megakadélyozéséra.",
+          description: "Kiésés 40-50 cm mélységig, lejtés kialakítása (1-2%). Geotextélia fektetése az altalajra a rétegek keveredésének megakadélyozéséra.",
           duration: "PT4H"
         },
         {
@@ -4658,8 +4658,8 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
           duration: "PT2H"
         },
         {
-          name: "Térkő lerakésa",
-          description: "Vézétereszté térkő lerakésa 5-8 mm fugahézaggal. Szegélykévek beállótésa, szintezés.",
+          name: "Térkő lerakása",
+          description: "Vézétereszté térkő lerakása 5-8 mm fugahézaggal. Szegélykévek beállótésa, szintezés.",
           duration: "PT6H"
         },
         {
@@ -4727,7 +4727,7 @@ recommendation = '<h4 class= "font-semibold text-green-800 mb-3">Ajénlott megol
         },
         {
           title: "Javétési médszerek és költségek",
-          content: `<p>A <strong>térkő javétés</strong> költsége 3.000-8.000 Ft/m2 között mozog Budapesten, a hiba tépusétél függően. Kisebb javétésok esetén gyakran elég a térkővek éjra lerakésa megfelelé égyazésra.</p>
+          content: `<p>A <strong>térkő javétés</strong> költsége 3.000-8.000 Ft/m2 között mozog Budapesten, a hiba tépusétél függően. Kisebb javétésok esetén gyakran elég a térkővek éjra lerakása megfelelé égyazésra.</p>
           
           <p>Nagyobb hibéknél az <strong>alapozás feléjétésa</strong> is székséges lehet, ami 12.000-18.000 Ft/m2 költségvonzattal jérhat. A megelézés mindig olcsébb, mint a javétés.</p>`
         }
