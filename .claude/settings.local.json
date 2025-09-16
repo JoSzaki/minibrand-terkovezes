@@ -13,7 +13,8 @@
       "Bash(git commit:*)",
       "Bash(npm run preview:*)",
       "Bash(npm run build:*)",
-      "WebSearch"
+      "WebSearch",
+      "mcp__playwright__browser_navigate"
     ],
     "deny": [],
     "ask": []
