@@ -594,8 +594,18 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             '</ul>';
           
           const resultDiv = document.getElementById('calculator-result');
-          resultDiv.innerHTML = recommendation;
+          resultDiv.innerHTML = recommendation +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=terko-valasztas" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Szakértői tanácsadás kérése' +
+              '</a>' +
+            '</div>';
           resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          setTimeout(() => {
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
         }`
     },
     relatedArticles: [
@@ -845,7 +855,87 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "checkbox",
           description: "Fokozott vízelvezetési igény"
         }
-      ]
+      ],
+      script: `
+        function calculateDrainageCost(inputs) {
+          const area = parseFloat(inputs.area) || 0;
+          const drainageType = inputs.drainageType || 'natural';
+          const terrainDifficulty = inputs.terrainDifficulty || 'easy';
+          const hasBasement = inputs.hasBasement || false;
+
+          // Base drainage costs per type (Ft/m2)
+          const drainageBaseCosts = {
+            natural: 800,     // Természetes lejtés
+            linear: 2500,     // Lineáris elvezetés
+            point: 1800,      // Pontszerű elvezetés
+            drain: 4200       // Drénrendszer
+          };
+
+          // Terrain difficulty multipliers
+          const terrainMultipliers = {
+            easy: 1.0,
+            medium: 1.3,
+            hard: 1.6
+          };
+
+          // Calculate drainage costs
+          const baseCost = drainageBaseCosts[drainageType];
+          const terrainMultiplier = terrainMultipliers[terrainDifficulty];
+          const basementMultiplier = hasBasement ? 1.4 : 1.0;
+
+          const drainageCostPerSqm = baseCost * terrainMultiplier * basementMultiplier;
+          const totalDrainageCost = area * drainageCostPerSqm;
+
+          // Additional costs
+          const excavationCost = area * (drainageType === 'drain' ? 1200 : 600);
+          const pipingCost = drainageType === 'linear' ? area * 800 :
+                           drainageType === 'point' ? area * 400 :
+                           drainageType === 'drain' ? area * 1000 : 0;
+          const materialsCost = area * (drainageType === 'natural' ? 200 : 500);
+          const laborCost = area * 1500 * terrainMultiplier;
+
+          // Maintenance costs (annual)
+          const annualMaintenanceCost = drainageType === 'natural' ? area * 50 :
+                                      drainageType === 'linear' ? area * 120 :
+                                      drainageType === 'point' ? area * 100 : area * 150;
+
+          const totalProjectCost = totalDrainageCost + excavationCost + pipingCost + materialsCost + laborCost;
+
+          // Perimeter calculation for linear drainage
+          const estimatedPerimeter = Math.sqrt(area) * 4;
+          const linearMeters = drainageType === 'linear' ? estimatedPerimeter : 0;
+
+          // Long-term benefits
+          const fiveYearMaintenanceCost = annualMaintenanceCost * 5;
+          const propertyValueIncrease = drainageType !== 'natural' ? area * 3000 : 0;
+
+          return {
+            drainageCost: Math.round(totalDrainageCost),
+            excavationCost: Math.round(excavationCost),
+            pipingCost: Math.round(pipingCost),
+            materialsCost: Math.round(materialsCost),
+            laborCost: Math.round(laborCost),
+            totalProjectCost: Math.round(totalProjectCost),
+            costPerSqm: Math.round(totalProjectCost / area),
+            annualMaintenanceCost: Math.round(annualMaintenanceCost),
+            fiveYearMaintenanceCost: Math.round(fiveYearMaintenanceCost),
+            linearMeters: Math.round(linearMeters),
+            propertyValueIncrease: Math.round(propertyValueIncrease),
+            drainageTypeLabel: drainageType === 'natural' ? 'Természetes lejtés' :
+                              drainageType === 'linear' ? 'Lineáris elvezetés' :
+                              drainageType === 'point' ? 'Pontszerű elvezetés' : 'Drénrendszer',
+            terrainLabel: terrainDifficulty === 'easy' ? 'Egyszerű terep' :
+                         terrainDifficulty === 'medium' ? 'Közepes terep' : 'Nehéz terep',
+            hasBasementLabel: hasBasement ? 'Pincével' : 'Pince nélkül',
+            efficiencyRating: drainageType === 'drain' ? 'Kiváló' :
+                             drainageType === 'linear' ? 'Jó' :
+                             drainageType === 'point' ? 'Közepes' : 'Alapvető',
+            estimatedLifespan: drainageType === 'natural' ? 15 :
+                              drainageType === 'linear' ? 25 :
+                              drainageType === 'point' ? 20 : 30
+          };
+        }
+      `
     },
     relatedArticles: [
       {
