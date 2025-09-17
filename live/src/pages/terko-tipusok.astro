@@ -2,7 +2,10 @@
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import TerkoInteractiveSelector from '../components/ui/terko-interactive-selector.tsx';
+import MaterialSelector from '../components/ui/material-selector.tsx';
+import PatternSelector from '../components/ui/pattern-selector.tsx';
+import ColorSelector from '../components/ui/color-selector.tsx';
+import UsageSelector from '../components/ui/usage-selector.tsx';
 ---
 
 <Layout title="Térkő Típusok Budapest - Útmutató a Megfelelő Választáshoz 2025" description="Komplett térkő típusok útmutató: beton térkövek, természetes kövek, speciális burkolatok. Szakértői tanácsok a választáshoz és használathoz. Ingyenes konzultáció!">
@@ -106,8 +109,17 @@ import TerkoInteractiveSelector from '../components/ui/terko-interactive-selecto
         </div>
     </section>
 
-    <!-- Interaktív Térkő Típus Explorer -->
-    <TerkoInteractiveSelector client:load />
+    <!-- Anyag szerinti választás -->
+    <MaterialSelector client:load />
+
+    <!-- Mintázat és forma választás -->
+    <PatternSelector client:load />
+
+    <!-- Szín választás -->
+    <ColorSelector client:load />
+
+    <!-- Használati cél szerinti választás -->
+    <UsageSelector client:load />
 
 
 
