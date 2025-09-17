@@ -935,6 +935,88 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                               drainageType === 'point' ? 20 : 30
           };
         }
+
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.querySelector('[name="area"]').value) || 0;
+          const drainageType = document.querySelector('[name="drainageType"]').value || 'natural';
+          const terrainDifficulty = document.querySelector('[name="terrainDifficulty"]').value || 'easy';
+          const hasBasement = document.querySelector('[name="hasBasement"]').checked || false;
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a kocsibeálló területét!');
+            return;
+          }
+
+          if (area > 500) {
+            alert('Túl nagy terület! Nagyobb projektek esetén kérjen egyedi árajánlatot.');
+            return;
+          }
+
+          // Prepare inputs object
+          const inputs = {
+            area: area,
+            drainageType: drainageType,
+            terrainDifficulty: terrainDifficulty,
+            hasBasement: hasBasement
+          };
+
+          // Calculate costs using the helper function
+          const results = calculateDrainageCost(inputs);
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'vizelvezes-rendszerek',
+            area: area,
+            drainageType: results.drainageTypeLabel,
+            terrainDifficulty: results.terrainLabel,
+            hasBasement: results.hasBasementLabel,
+            totalCost: results.totalProjectCost,
+            efficiency: results.efficiencyRating,
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate result HTML
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML =
+            '<div class="bg-blue-50 border border-blue-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-blue-800 mb-3">💧 Vízelvezetés Költségbecslés</h4>' +
+              '<div class="space-y-2 text-sm text-blue-700 mb-4">' +
+                '<div><strong>Terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Rendszer típusa:</strong> ' + results.drainageTypeLabel + '</div>' +
+                '<div><strong>Terep:</strong> ' + results.terrainLabel + '</div>' +
+                '<div><strong>Hatékonyság:</strong> ' + results.efficiencyRating + '</div>' +
+                '<div><strong>Várható élettartam:</strong> ' + results.estimatedLifespan + ' év</div>' +
+              '</div>' +
+              '<div class="space-y-2 text-sm text-blue-700 mb-4">' +
+                '<div><strong>Vízelvezetés alapköltség:</strong> ' + results.drainageCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                '<div><strong>Földmunka:</strong> ' + results.excavationCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                (results.pipingCost > 0 ? '<div><strong>Csővezeték:</strong> ' + results.pipingCost.toLocaleString('hu-HU') + ' Ft</div>' : '') +
+                '<div><strong>Anyagok:</strong> ' + results.materialsCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                '<div><strong>Munkadíj:</strong> ' + results.laborCost.toLocaleString('hu-HU') + ' Ft</div>' +
+              '</div>' +
+              '<div class="font-semibold text-blue-800 text-lg mb-2">Teljes projekt költség: ' +
+                results.totalProjectCost.toLocaleString('hu-HU') + ' Ft</div>' +
+              '<div class="text-sm text-blue-600 mb-3">(' + results.costPerSqm.toLocaleString('hu-HU') + ' Ft/m²)</div>' +
+              '<div class="text-sm text-blue-600 mb-3">Éves karbantartás: ' + results.annualMaintenanceCost.toLocaleString('hu-HU') + ' Ft</div>' +
+            '</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '💡 A vízelvezetés beruházás megtérül! A megfelelő rendszer megvédi a térkövezést és növeli az ingatlan értékét.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=vizelvezes-rendszerek" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Szakértői vízelvezetés tervezés' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          setTimeout(() => {
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
+        }
       `
     },
     relatedArticles: [
@@ -1200,7 +1282,173 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             { value: "active", label: "Aktív (rendszeres ápolás)" }
           ]
         }
-      ]
+      ],
+      script: `
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.querySelector('[name="area"]').value) || 0;
+          const usage = document.querySelector('[name="usage"]').value || 'light';
+          const timeFrame = document.querySelector('[name="timeFrame"]').value || 'medium';
+          const aesthetics = document.querySelector('[name="aesthetics"]').value || 'medium';
+          const maintenance = document.querySelector('[name="maintenance"]').value || 'normal';
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a kocsibeálló területét!');
+            return;
+          }
+
+          if (area > 500) {
+            alert('Túl nagy terület! Nagyobb projektek esetén kérjen egyedi árajánlatot.');
+            return;
+          }
+
+          // Base costs per material type (Ft/m2) - 2025 prices
+          const baseCosts = {
+            paver: { min: 12000, max: 25000, avg: 18500 },
+            concrete: { min: 8000, max: 15000, avg: 11500 },
+            asphalt: { min: 6000, max: 12000, avg: 9000 }
+          };
+
+          // Usage multipliers (heavier usage requires stronger foundation)
+          const usageMultipliers = {
+            light: { paver: 1.0, concrete: 1.0, asphalt: 1.0 },
+            medium: { paver: 1.1, concrete: 1.2, asphalt: 1.15 },
+            heavy: { paver: 1.2, concrete: 1.4, asphalt: 1.3 }
+          };
+
+          // Maintenance costs per year (Ft/m2)
+          const annualMaintenance = {
+            minimal: { paver: 200, concrete: 100, asphalt: 300 },
+            normal: { paver: 400, concrete: 150, asphalt: 500 },
+            active: { paver: 600, concrete: 200, asphalt: 700 }
+          };
+
+          // Lifespan in years
+          const lifespan = {
+            light: { paver: 30, concrete: 25, asphalt: 15 },
+            medium: { paver: 25, concrete: 20, asphalt: 12 },
+            heavy: { paver: 20, concrete: 15, asphalt: 10 }
+          };
+
+          // Calculate costs for each material
+          const materials = ['paver', 'concrete', 'asphalt'];
+          const results = {};
+
+          materials.forEach(material => {
+            const usageMultiplier = usageMultipliers[usage][material];
+            const initialCost = baseCosts[material].avg * area * usageMultiplier;
+            const yearlyMaintenance = annualMaintenance[maintenance][material] * area;
+            const materialLifespan = lifespan[usage][material];
+
+            // Calculate costs based on time frame
+            let timeframeYears = timeFrame === 'short' ? 10 : timeFrame === 'medium' ? 15 : 25;
+            let totalMaintenanceCost = yearlyMaintenance * timeframeYears;
+
+            // Calculate replacement cost if needed
+            let replacementCost = 0;
+            if (timeframeYears > materialLifespan) {
+              const replacements = Math.floor(timeframeYears / materialLifespan);
+              replacementCost = replacements * initialCost * 0.8; // 20% discount for replacement
+            }
+
+            const totalCost = initialCost + totalMaintenanceCost + replacementCost;
+
+            results[material] = {
+              initialCost: Math.round(initialCost),
+              yearlyMaintenance: Math.round(yearlyMaintenance),
+              totalMaintenanceCost: Math.round(totalMaintenanceCost),
+              replacementCost: Math.round(replacementCost),
+              totalCost: Math.round(totalCost),
+              costPerYear: Math.round(totalCost / timeframeYears),
+              lifespan: materialLifespan
+            };
+          });
+
+          // Determine labels
+          const materialLabels = {
+            paver: 'Térkő',
+            concrete: 'Beton',
+            asphalt: 'Aszfalt'
+          };
+
+          const usageLabels = {
+            light: 'Könnyű használat',
+            medium: 'Közepes használat',
+            heavy: 'Nehéz használat'
+          };
+
+          const timeFrameLabels = {
+            short: '10 év',
+            medium: '15 év',
+            long: '25 év'
+          };
+
+          // Find best option based on total cost
+          const sortedByTotal = Object.entries(results).sort((a, b) => a[1].totalCost - b[1].totalCost);
+          const bestValue = sortedByTotal[0][0];
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'burkolat-osszehasonlitas',
+            area: area,
+            usage: usageLabels[usage],
+            timeFrame: timeFrameLabels[timeFrame],
+            results: results,
+            recommendation: materialLabels[bestValue],
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate comparison HTML
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML =
+            '<div class="bg-purple-50 border border-purple-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-purple-800 mb-3">⚖️ Burkolat Összehasonlítás Eredménye</h4>' +
+              '<div class="space-y-2 text-sm text-purple-700 mb-4">' +
+                '<div><strong>Terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Használat:</strong> ' + usageLabels[usage] + '</div>' +
+                '<div><strong>Időtáv:</strong> ' + timeFrameLabels[timeFrame] + '</div>' +
+              '</div>' +
+            '</div>' +
+
+            '<div class="mt-4 space-y-4">' +
+              Object.entries(results).map(([material, data]) =>
+                '<div class="border rounded-lg p-4 ' + (material === bestValue ? 'bg-green-50 border-green-300' : 'bg-gray-50') + '">' +
+                  '<h5 class="font-semibold text-lg mb-2">' + materialLabels[material] +
+                  (material === bestValue ? ' 🏆 (Legjobb ár-érték arány)' : '') + '</h5>' +
+                  '<div class="grid md:grid-cols-2 gap-4 text-sm">' +
+                    '<div>' +
+                      '<div><strong>Kezdeti költség:</strong> ' + data.initialCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                      '<div><strong>Éves karbantartás:</strong> ' + data.yearlyMaintenance.toLocaleString('hu-HU') + ' Ft</div>' +
+                      '<div><strong>Várható élettartam:</strong> ' + data.lifespan + ' év</div>' +
+                    '</div>' +
+                    '<div>' +
+                      '<div><strong>Karbantartás (' + timeFrameLabels[timeFrame] + '):</strong> ' + data.totalMaintenanceCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                      (data.replacementCost > 0 ? '<div><strong>Csere költség:</strong> ' + data.replacementCost.toLocaleString('hu-HU') + ' Ft</div>' : '') +
+                      '<div class="font-semibold text-lg"><strong>Összes költség:</strong> ' + data.totalCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>'
+              ).join('') +
+            '</div>' +
+
+            '<div class="text-sm text-yellow-700 mt-4 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '💡 Az összehasonlítás figyelembe veszi a teljes életciklus költségét. A ' + materialLabels[bestValue] + ' a legjobb választás az Ön igényei szerint.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=burkolat-osszehasonlitas" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Részletes ajánlat kérése' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          setTimeout(() => {
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
+        }
+      `
     },
     relatedArticles: [
       {
@@ -1531,6 +1779,103 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             maintenanceFrequency: stoneType === 'natural' ? 'Negyedévente' :
                                  stoneType === 'concrete' ? 'Félévente' : 'Évente 3x'
           };
+        }
+
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.querySelector('[name="area"]').value) || 0;
+          const stoneType = document.querySelector('[name="stoneType"]').value || 'concrete';
+          const condition = document.querySelector('[name="condition"]').value || 'good';
+          const diyLevel = document.querySelector('[name="diyLevel"]').value || 'partial';
+          const hasProblems = document.querySelector('[name="hasProblems"]').checked || false;
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a térkővezett terület méretét!');
+            return;
+          }
+
+          if (area > 1000) {
+            alert('Túl nagy terület! Nagyobb projektek esetén kérjen egyedi árajánlatot.');
+            return;
+          }
+
+          // Prepare inputs object
+          const inputs = {
+            area: area,
+            stoneType: stoneType,
+            condition: condition,
+            diyLevel: diyLevel,
+            hasProblems: hasProblems
+          };
+
+          // Calculate costs using the helper function
+          const results = calculateMaintenanceCost(inputs);
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'terkovezes-karbantartas',
+            area: area,
+            stoneType: results.stoneTypeLabel,
+            condition: results.conditionLabel,
+            diyLevel: results.diyLabel,
+            annualCost: results.annualMaintenanceCost,
+            fiveYearCost: results.fiveYearCost,
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate result HTML
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML =
+            '<div class="bg-green-50 border border-green-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-green-800 mb-3">🛠️ Karbantartási Költségbecslés</h4>' +
+              '<div class="space-y-2 text-sm text-green-700 mb-4">' +
+                '<div><strong>Terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Térkő típus:</strong> ' + results.stoneTypeLabel + '</div>' +
+                '<div><strong>Jelenlegi állapot:</strong> ' + results.conditionLabel + '</div>' +
+                '<div><strong>Munka típusa:</strong> ' + results.diyLabel + '</div>' +
+                '<div><strong>Karbantartási gyakoriság:</strong> ' + results.maintenanceFrequency + '</div>' +
+              '</div>' +
+            '</div>' +
+
+            '<div class="mt-4 space-y-4">' +
+              '<div class="border rounded-lg p-4 bg-blue-50">' +
+                '<h5 class="font-semibold text-lg mb-2">📅 Éves Költségbontás</h5>' +
+                '<div class="space-y-2 text-sm">' +
+                  '<div><strong>Tisztítás:</strong> ' + results.cleaningCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                  '<div><strong>Fugakarbantartás:</strong> ' + results.jointMaintenance.toLocaleString('hu-HU') + ' Ft</div>' +
+                  '<div><strong>Kisebb javítások:</strong> ' + results.minorRepairs.toLocaleString('hu-HU') + ' Ft</div>' +
+                  (results.problemsCost > 0 ? '<div><strong>Speciális problémák kezelése:</strong> ' + results.problemsCost.toLocaleString('hu-HU') + ' Ft</div>' : '') +
+                  '<div class="font-semibold border-t pt-2"><strong>Éves összes:</strong> ' + results.annualMaintenanceCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                  '<div class="text-sm text-gray-600">(' + results.costPerSqm.toLocaleString('hu-HU') + ' Ft/m²/év)</div>' +
+                '</div>' +
+              '</div>' +
+
+              '<div class="border rounded-lg p-4 bg-yellow-50">' +
+                '<h5 class="font-semibold text-lg mb-2">📈 Hosszútávú Tervezés</h5>' +
+                '<div class="space-y-2 text-sm">' +
+                  '<div><strong>5 éves becsült költség:</strong> ' + results.fiveYearCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                  '<div><strong>Impregnálás (3 évente):</strong> ' + results.impregnateCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                  (results.savings > 0 ? '<div class="text-green-600"><strong>Éves megtakarítás DIY-jal:</strong> ' + results.savings.toLocaleString('hu-HU') + ' Ft</div>' : '') +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+
+            '<div class="text-sm text-yellow-700 mt-4 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '💡 A rendszeres karbantartás megtérül! A jól karbantartott térkövezés élettartama jelentősen megnő és megőrzi az esztétikai értékét.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=terkovezes-karbantartas" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Karbantartási terv kérése' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          setTimeout(() => {
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
         }
       `
     },
