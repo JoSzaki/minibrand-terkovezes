@@ -37,7 +37,9 @@
       "mcp__playwright__browser_install",
       "mcp__firecrawl__firecrawl_search",
       "WebFetch(domain:terkovezesbudapest.hu)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(gh issue close:*)",
+      "Read(//c/Users/sznor/Pictures/Screenshots/**)"
     ],
     "deny": [],
     "ask": []
