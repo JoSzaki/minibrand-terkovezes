@@ -28,138 +28,138 @@ const TerkoInteractiveSelector = () => {
   const terkoOptions: TerkoOption[] = [
     {
       id: 'antik',
-      title: "Antik Térkövek",
-      description: "Klasszikus, idõtálló elegancia",
+      title: "Antik TÃ©rkÃ¶vek",
+      description: "Klasszikus, idÅ‘tÃ¡llÃ³ elegancia",
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
       icon: <FaGem size={24} className="text-white" />,
       details: {
         price: "12.000-25.000 Ft/m2",
-        durability: "25-30+ év",
-        maintenance: "Közepes",
-        features: ["Rusztikus felület", "Természetes kopás", "Idõjárásálló", "Patina fejlõdés"],
+        durability: "25-30+ Ã©v",
+        maintenance: "KÃ¶zepes",
+        features: ["Rusztikus felÃ¼let", "TermÃ©szetes kopÃ¡s", "IdÅ‘jÃ¡rÃ¡sÃ¡llÃ³", "Patina fejlÅ‘dÃ©s"],
         pros: [
-          "Egyedi, kézzel készített megjelenés",
-          "Rendkívül tartós és strapabíró", 
-          "Idõvel szebb lesz (patina)",
-          "Magas ingatlan értéknövelés",
-          "Klasszikus stílusokhoz tökéletes"
+          "Egyedi, kÃ©zzel kÃ©szÃ­tett megjelenÃ©s",
+          "RendkÃ­vÃ¼l tartÃ³s Ã©s strapabÃ­rÃ³",
+          "IdÅ‘vel szebb lesz (patina)",
+          "Magas ingatlan Ã©rtÃ©knÃ¶velÃ©s",
+          "Klasszikus stÃ­lusokhoz tÃ¶kÃ©letes"
         ],
         cons: [
-          "Magasabb beszerzési költség",
-          "Egyenetlen felület (nem mindenütt alkalmas)",
-          "Speciális tisztítás szükséges"
+          "Magasabb beszerzÃ©si kÃ¶ltsÃ©g",
+          "Egyenetlen felÃ¼let (nem mindenÃ¼tt alkalmas)",
+          "SpeciÃ¡lis tisztÃ­tÃ¡s szÃ¼ksÃ©ges"
         ],
-        usage: ["Történelmi épületek", "Kocsibeállók", "Kerti utak", "Teraszok", "Udvari burkolatok"],
-        fullDescription: "Az antik térkövek használt, patinás kövek, amelyek különleges hangulatot és autentikus megjelenést kölcsönöznek minden projektnek. Kiváló minõségû, idõtálló burkolóanyag, amely évtizedekig szolgál."
+        usage: ["TÃ¶rtÃ©nelmi Ã©pÃ¼letek", "KocsibellÃ¡llÃ³k", "Kerti utak", "Teraszok", "Udvari burkolatok"],
+        fullDescription: "Az antik tÃ©rkÃ¶vek hasznÃ¡lt, patinÃ¡s kÃ¶vek, amelyek kÃ¼lÃ¶nleges hangulatot Ã©s autentikus megjelenÃ©st kÃ¶lcsÃ¶nÃ¶znek minden projektnek. KivÃ¡lÃ³ minÅ‘sÃ©gÅ±, idÅ‘tÃ¡llÃ³ burkolÃ³anyag, amely Ã©vtizedekig szolgÃ¡l."
       }
     },
     {
       id: 'modern',
-      title: "Modern Térkövek",
+      title: "Modern TÃ©rkÃ¶vek",
       description: "Sima, clean vonalak",
       image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
       icon: <FaHome size={24} className="text-white" />,
       details: {
         price: "10.000-20.000 Ft/m2",
-        durability: "20-25 év",
+        durability: "20-25 Ã©v",
         maintenance: "Alacsony",
-        features: ["Sima felület", "Egységes színek", "Nagy méretek", "Precíz illesztés"],
+        features: ["Sima felÃ¼let", "EgysÃ©ges szÃ­nek", "Nagy mÃ©retek", "PrecÃ­z illesztÃ©s"],
         pros: [
-          "Tiszta, minimál design",
-          "Könnyû tisztítás és karbantartás",
-          "Egységes, hibátlan megjelenés",
-          "Modern építészethez tökéletes",
-          "Jó ár-érték arány"
+          "Tiszta, minimÃ¡l design",
+          "KÃ¶nnyÅ± tisztÃ­tÃ¡s Ã©s karbantartÃ¡s",
+          "EgysÃ©ges, hibÃ¡tlan megjelenÃ©s",
+          "Modern Ã©pÃ­tÃ©szethez tÃ¶kÃ©letes",
+          "JÃ³ Ã¡r-Ã©rtÃ©k arÃ¡ny"
         ],
         cons: [
-          "Kevésbé karakteres",
-          "Foltok jobban látszanak",
-          "Csúszós lehet nedvesen"
+          "KevÃ©sbÃ© karakteres",
+          "Foltok jobban lÃ¡tszanak",
+          "CsÃºszÃ¡s lehet nedvesen"
         ],
-        usage: ["Modern házak", "Minimál kertek", "Medence körüli terület", "Bejárók", "Parkolók"],
-        fullDescription: "A modern térkövek sima felületû, egyenletes színezésû burkolóanyagok. Tökéletesek modern, letisztult környezethez, ahol a funkcionalitás és az esztétikum egyaránt fontos."
+        usage: ["Modern hÃ¡zak", "MinimÃ¡l kertek", "Medence kÃ¶rÃ¼li terÃ¼let", "BejÃ¡rÃ³k", "ParkolÃ³k"],
+        fullDescription: "A modern tÃ©rkÃ¶vek sima felÃ¼letÅ±, egyenletes szÃ­nezÃ©sÅ± burkolÃ³anyagok. TÃ¶kÃ©letesek modern, letisztult kÃ¶rnyezethez, ahol a funkcionalitÃ¡s Ã©s az esztÃ©tikum egyarÃ¡nt fontos."
       }
     },
     {
       id: 'szines',
-      title: "Színes Térkövek",
-      description: "Kreatív színkombinációk",
+      title: "SzÃ­nes TÃ©rkÃ¶vek",
+      description: "KreatÃ­v szÃ­nkombinÃ¡ciÃ³k",
       image: "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=800&q=80",
       icon: <FaPalette size={24} className="text-white" />,
       details: {
         price: "11.000-22.000 Ft/m2",
-        durability: "18-22 év",
-        maintenance: "Közepes",
-        features: ["Változatos színek", "Kreatív mintázatok", "Egyedi design", "Színstabil festék"],
+        durability: "18-22 Ã©v",
+        maintenance: "KÃ¶zepes",
+        features: ["VÃ¡ltozatos szÃ­nek", "KreatÃ­v mintÃ¡zatok", "Egyedi design", "SzÃ­nstabil festÃ©k"],
         pros: [
-          "Egyedi, személyre szabott megjelenés",
-          "Kreatív mintázatok lehetõsége",
-          "Vidám, élénk hangulatú területek",
-          "Gyermekbarát környezetek",
-          "Zónázásra tökéletes"
+          "Egyedi, szemÃ©lyre szabott megjelenÃ©s",
+          "KreatÃ­v mintÃ¡zatok lehetÅ‘sÃ©ge",
+          "VidÃ¡m, Ã©lÃ©nk hangulatÃº terÃ¼letek",
+          "GyermekbarÃ¡t kÃ¶rnyezetek",
+          "ZÃ³nÃ¡zÃ¡sra tÃ¶kÃ©letes"
         ],
         cons: [
-          "Idõvel fakul a színezés",
-          "Drágább a standard térkõnél",
-          "Nem minden stílushoz passzoló"
+          "IdÅ‘vel fakul a szÃ­nezÃ©s",
+          "DrÃ¡gÃ¡bb a standard tÃ©rkÅ‘nÃ©l",
+          "Nem minden stÃ­lushoz passzÃ³lÃ³"
         ],
-        usage: ["Játszóterek", "Kerti díszítések", "Terasz színezése", "Logó/minta kialakítása", "Akcentusként"],
-        fullDescription: "A színes térkövek lehetõvé teszik egyedi, kreatív burkolatok kialakítását. Különbözõ színû térkövek kombinálásával minták, logók vagy egyszerûen színes felületek hozhatók létre."
+        usage: ["JÃ¡tszÃ³terek", "Kerti dÃ­szÃ­tÃ©sek", "Terasz szÃ­nezÃ©se", "LogÃ³/minta kialakÃ­tÃ¡sa", "AkcentuskÃ©nt"],
+        fullDescription: "A szÃ­nes tÃ©rkÃ¶vek lehetÅ‘vÃ© teszik egyedi, kreatÃ­v burkolatok kialakÃ­tÃ¡sÃ¡t. KÃ¼lÃ¶nbÃ¶zÅ‘ szÃ­nÅ± tÃ©rkÃ¶vek kombinÃ¡lÃ¡sÃ¡val mintÃ¡k, logÃ³k vagy egyszerÅ±en szÃ­nes felÃ¼letek hozhatÃ³k lÃ©tre."
       }
     },
     {
       id: 'ipari',
-      title: "Ipari Térkövek",
-      description: "Extra tartós, nagy terhelhetõség",
+      title: "Ipari TÃ©rkÃ¶vek",
+      description: "Extra tartÃ³s, nagy terhelhetÅ‘sÃ©g",
       image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
       icon: <FaIndustry size={24} className="text-white" />,
       details: {
         price: "15.000-30.000 Ft/m2",
-        durability: "30+ év",
+        durability: "30+ Ã©v",
         maintenance: "Alacsony",
-        features: ["Rendkívüli szilárdság", "Vegyszerálló", "Fagyálló", "Nagyterhelés"],
+        features: ["RendkÃ­vÃ¼li szilÃ¡rdsÃ¡g", "VegyszerÃ¡llÃ³", "FagyÃ¡llÃ³", "NagyterhelÃ©s"],
         pros: [
-          "Maximális tartósság",
-          "Teherautó terhelést bír",
-          "Vegyszerek ellen ellenálló",
-          "Minimális karbantartás",
-          "Hosszútávú beruházás"
+          "MaximÃ¡lis tartÃ³ssÃ¡g",
+          "TeherautÃ³ terhelÃ©st bÃ­r",
+          "Vegyszerek ellen ellenÃ¡llÃ³",
+          "MinimÃ¡lis karbantartÃ¡s",
+          "HosszÃºtÃ¡vÃº beruhÃ¡zÃ¡s"
         ],
         cons: [
-          "Magas beszerzési költség",
-          "Kevésbé dekoratív",
-          "Speciális szerelést igényel"
+          "Magas beszerzÃ©si kÃ¶ltsÃ©g",
+          "KevÃ©sbÃ© dekoratÃ­v",
+          "SpeciÃ¡lis szerelÃ©st igÃ©nyel"
         ],
-        usage: ["Ipari udvarok", "Kamionparkolók", "Üzemek", "Raktárak", "Nagy forgalmú területek"],
-        fullDescription: "Az ipari térkövek a legnagyobb igénybevételnek ellenálló burkolóanyagok. Speciálisan ipari környezetek, nagy terhelésû területek számára fejlesztett extra erõs térkövek."
+        usage: ["Ipari udvarok", "KamionparkolÃ³k", "Ãœzemek", "RaktÃ¡rak", "Nagy forgalmÃº terÃ¼letek"],
+        fullDescription: "Az ipari tÃ©rkÃ¶vek a legnagyobb igÃ©nybevÃ©telnek ellenÃ¡llÃ³ burkolÃ³anyagok. SpeciÃ¡lisan ipari kÃ¶rnyezetek, nagy terhelÃ©sÅ± terÃ¼letek szÃ¡mÃ¡ra fejlesztett extra erÅ‘s tÃ©rkÃ¶vek."
       }
     },
     {
       id: 'termeszetes',
-      title: "Természetes Kõ",
-      description: "Prémium természetes anyagok",
+      title: "TermÃ©szetes KÅ‘",
+      description: "PrÃ©mium termÃ©szetes anyagok",
       image: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=800&q=80",
       icon: <FaLeaf size={24} className="text-white" />,
       details: {
         price: "20.000-40.000+ Ft/m2",
-        durability: "50+ év",
-        maintenance: "Közepes-magas",
-        features: ["Egyedi természetes rajzolat", "Prémium megjelenés", "Légzõképes", "Hõtartó"],
+        durability: "50+ Ã©v",
+        maintenance: "KÃ¶zepes-magas",
+        features: ["Egyedi termÃ©szetes rajzolat", "PrÃ©mium megjelenÃ©s", "LÃ©gzÅ‘kÃ©pes", "HÅ‘tartÃ³"],
         pros: [
-          "Luxus, prémium megjelenés",
+          "Luxus, prÃ©mium megjelenÃ©s",
           "Minden darab egyedi",
-          "Környezetbarát természetes anyag",
-          "Évszázados tartósság",
-          "Értéknövelõ beruházás"
+          "KÃ¶rnyezetbarÃ¡t termÃ©szetes anyag",
+          "Ã‰vszÃ¡zados tartÃ³ssÃ¡g",
+          "Ã‰rtÃ©knÃ¶velÅ‘ beruhÃ¡zÃ¡s"
         ],
         cons: [
-          "Nagy beszerzési költség",
-          "Speciális karbantartás szükséges",
-          "Idõigényes szerelés",
-          "Foltokra érzékeny"
+          "Nagy beszerzÃ©si kÃ¶ltsÃ©g",
+          "SpeciÃ¡lis karbantartÃ¡s szÃ¼ksÃ©ges",
+          "IdÅ‘igÃ©nyes szerelÃ©s",
+          "Foltokra Ã©rzÃ©keny"
         ],
-        usage: ["Luxus villák", "Prémium teraszok", "Wellness területek", "Reprezentatív bejárók", "Exkluzív projektek"],
-        fullDescription: "A természetes kõ burkolatok a legmagasabb színvonalú megoldások. Gránit, mészkõ, travertin és márványlapok egyedi szépségû, évszázados tartósságú felületeket biztosítanak."
+        usage: ["Luxus villÃ¡k", "PrÃ©mium teraszok", "Wellness terÃ¼letek", "ReprezentatÃ­v bejÃ¡rÃ³k", "ExkluzÃ­v projektek"],
+        fullDescription: "A termÃ©szetes kÅ‘ burkolatok a legmagasabb szÃ­nvonalÃº megoldÃ¡sok. GrÃ¡nit, mÃ©szkÅ‘, travertin Ã©s mÃ¡rvÃ¡nylapok egyedi szÃ©psÃ©gÅ±, Ã©vszÃ¡zados tartÃ³ssÃ¡gÃº felÃ¼leteket biztosÃ­tanak."
       }
     }
   ];
@@ -201,10 +201,10 @@ const TerkoInteractiveSelector = () => {
         {/* Header Section */}
         <div className="w-full max-w-2xl px-6 mt-8 mb-8 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-concrete-800 mb-4 tracking-tight drop-shadow-sm">
-            ??? Fedezze Fel a Térkõ Típusokat
+            ğŸ—ï¸ Fedezze Fel a TÃ©rkÅ‘ TÃ­pusokat
           </h2>
           <p className="text-lg md:text-xl text-concrete-600 font-medium max-w-xl mx-auto">
-            Válasszon a különbözõ térkõ típusok közül. Kattintson a képre a nagyításhoz, vagy a "Részletek" gombra a teljes információkért.
+            VÃ¡lasszon a kÃ¼lÃ¶nbÃ¶zÅ‘ tÃ©rkÅ‘ tÃ­pusok kÃ¶zÃ¼l. Kattintson a kÃ©pre a nagyÃ­tÃ¡shoz, vagy a "RÃ©szletek" gombra a teljes informÃ¡ciÃ³kÃ©rt.
           </p>
         </div>
 
@@ -297,7 +297,7 @@ const TerkoInteractiveSelector = () => {
                     }}
                     className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                   >
-                    ?? Részletek
+                    ğŸ“‹ RÃ©szletek
                   </button>
                 </div>
               </div>
@@ -325,7 +325,7 @@ const TerkoInteractiveSelector = () => {
                 onClick={closeModal}
                 className="text-gray-400 hover:text-gray-600 text-2xl font-bold w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
               >
-                ×
+                Ã—
               </button>
             </div>
 
@@ -344,43 +344,43 @@ const TerkoInteractiveSelector = () => {
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold text-green-700">{selectedOption.details.price}</div>
-                  <div className="text-sm text-green-600">Ár tartomány</div>
+                  <div className="text-sm text-green-600">Ãr tartomÃ¡ny</div>
                 </div>
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold text-blue-700">{selectedOption.details.durability}</div>
-                  <div className="text-sm text-blue-600">Élettartam</div>
+                  <div className="text-sm text-blue-600">Ã‰lettartam</div>
                 </div>
                 <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold text-purple-700">{selectedOption.details.maintenance}</div>
-                  <div className="text-sm text-purple-600">Karbantartás</div>
+                  <div className="text-sm text-purple-600">KarbantartÃ¡s</div>
                 </div>
               </div>
 
               {/* Description */}
               <div className="bg-concrete-50 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-concrete-800 mb-3">?? Leírás</h4>
+                <h4 className="text-xl font-semibold text-concrete-800 mb-3">ğŸ“ LeÃ­rÃ¡s</h4>
                 <p className="text-concrete-700 leading-relaxed">{selectedOption.details.fullDescription}</p>
               </div>
 
               {/* Features */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-xl font-semibold text-concrete-800 mb-3">? Tulajdonságok</h4>
+                  <h4 className="text-xl font-semibold text-concrete-800 mb-3">âš™ï¸ TulajdonsÃ¡gok</h4>
                   <ul className="space-y-2">
                     {selectedOption.details.features.map((feature, index) => (
                       <li key={index} className="flex items-center gap-2 text-concrete-700">
-                        <span className="text-primary-500">•</span> {feature}
+                        <span className="text-primary-500">â€¢</span> {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-concrete-800 mb-3">??? Felhasználási területek</h4>
+                  <h4 className="text-xl font-semibold text-concrete-800 mb-3">ğŸ  FelhasznÃ¡lÃ¡si terÃ¼letek</h4>
                   <ul className="space-y-2">
                     {selectedOption.details.usage.map((use, index) => (
                       <li key={index} className="flex items-center gap-2 text-concrete-700">
-                        <span className="text-primary-500">•</span> {use}
+                        <span className="text-primary-500">â€¢</span> {use}
                       </li>
                     ))}
                   </ul>
@@ -391,7 +391,7 @@ const TerkoInteractiveSelector = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-green-50 rounded-lg p-4">
                   <h4 className="text-lg font-semibold text-green-800 mb-3 flex items-center gap-2">
-                    ? Elõnyök
+                    âœ… ElÅ‘nyÃ¶k
                   </h4>
                   <ul className="space-y-2">
                     {selectedOption.details.pros.map((pro, index) => (
@@ -402,7 +402,7 @@ const TerkoInteractiveSelector = () => {
 
                 <div className="bg-orange-50 rounded-lg p-4">
                   <h4 className="text-lg font-semibold text-orange-800 mb-3 flex items-center gap-2">
-                    ?? Hátrányok
+                    âš ï¸ HÃ¡trÃ¡nyok
                   </h4>
                   <ul className="space-y-2">
                     {selectedOption.details.cons.map((con, index) => (
@@ -418,7 +418,7 @@ const TerkoInteractiveSelector = () => {
                   onClick={closeModal}
                   className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                 >
-                  Bezárás
+                  BezÃ¡rÃ¡s
                 </button>
               </div>
             </div>
