@@ -392,10 +392,10 @@ export const blogPosts = [
       ]
     },
     howTo: {
-      title: "Térkő Kiválasztási útmutató Lápésrál Lápésre",
+      title: "Térkő kiválasztási útmutató lépésről lépésre",
       steps: [
-        {
-          title: "Igányek és költságvetés meghatározésa",
+      {
+        title: "Igények és költségvetés meghatározása",
           description: "Első lépésként határozzuk meg a rendelkezésre álló költságvetést és a főbb elvárésainkat (tartósság, megjelenés, karbantartés).",
           tips: "Számoljunk 20-30 éves távlatban - a drágább, de tartósabb megoldés gyakran gazdaságosabb!"
         },
@@ -420,8 +420,8 @@ export const blogPosts = [
           tips: "Egy jó szakember megspórolhatja nekánk a későbbi problémákat és extra költségeket!"
         },
         {
-          title: "Vágs•döntés és beszerzés",
-          description: "A fenti szempontok alapján hozzuk meg a döntést. Rendeljónk 5-10% tartalékot a vágési hulladákra!",
+          title: "Végső döntés és beszerzés",
+          description: "A fenti szempontok alapján hozzuk meg a döntést. Rendeljünk 5-10% tartalékot a vágési hulladákra!",
           tips: "Egy szállótmánybál vésároljunk mindent - a különböző gyártési tátelek között lehet árnyalatnyi eltérés!"
         }
       ]
@@ -441,7 +441,7 @@ export const blogPosts = [
       },
       {
         question: "Hogyan tudom ellenőrizni a térkő minőságát?",
-        answer: "Ellenárizzák a <strong>CE jelálőst, a fagyállósági osztályt (min. F150)</strong> és a <strong>szilárdságot (min. 50 MPa)</strong>. Kárjók el a mŐszaki adatlapot és a megfelelősági nyilatkozatot!"
+        answer: "Ellenőrizzük a <strong>CE jelölést, a fagyállósági osztályt (min. F150)</strong> és a <strong>szilárdságot (min. 50 MPa)</strong>. Kérjük el a műszaki adatlapot és a megfelelősági nyilatkozatot!"
       },
       {
         question: "Mikor érdemes antik térkővet választani?",
@@ -471,24 +471,24 @@ export const blogPosts = [
           tips: "Betontérkő a leggyakoribb választás jó ár-érték aránya miatt. Prémium megoldéshoz gránit térkő."
         },
         {
-          title: "Szánek és minták tervezése",
+          title: "Színek és minták tervezése",
           description: "Válasszunk olyan színeket és mintázatot, amely harmonizál az épület stílusúval és a környezettel.",
-          tips: "Világos színek jobban mutatjók a szennyezádést, de kevésbé melegszenek fel nyáron. Sátát színek praktikusabbak."
+          tips: "Világos színek jobban mutatják a szennyeződést, de kevésbé melegszenek fel nyáron. Sötét színek praktikusabbak."
         },
         {
           title: "Minősági paraméterek ellenőrzése",
-          description: "Ellenárizzák a térkő mŐszaki adatait: fagyállóság (min. F150), szilárdság (min. 50 MPa), csúszésmentesság.",
-          tips: "Kárjók el a mŐszaki adatlapot és a megfelelősági nyilatkozatot. CE jelálős kötelező!"
+          description: "Ellenőrizzük a térkő műszaki adatait: fagyállóság (min. F150), szilárdság (min. 50 MPa), csúszésmentesság.",
+          tips: "Kérjük el a műszaki adatlapot és a megfelelősági nyilatkozatot. CE jelölés kötelező!"
         },
         {
           title: "Mennyiság kalkulálása és megrendelés",
-          description: "Számátsuk ki a pontos mennyiságet, adjunk hozz•8-10% vágési hulladökot és rendeljók meg a térkővet.",
-          tips: "Rendeljónk egyszerre mindent ugyanabbál a gyártési tátelbál a színegyezés miatt."
+          description: "Számítsuk ki a pontos mennyiságet, adjunk hozzá8-10% vágési hulladékot és rendeljük meg a térkővet.",
+          tips: "Rendeljünk egyszerre mindent ugyanabbál a gyártési tételből a színegyezés miatt."
         },
         {
-          title: "Kivitelez•kiválasztása és ütemezés",
-          description: "Válasszunk tapasztalt kivitelezőt, egyeztessák az ütemezést és kŐszátsák el•a helyszínt.",
-          tips: "Kérjünk referenciákat és názzánk meg korábbi munkákat. Tavaszi-Őszi idŐszak a legideálisabb."
+          title: "Kivitelező kiválasztása és ütemezés",
+          description: "Válasszunk tapasztalt kivitelezőt, egyeztessük az ütemezést és készítsük előa helyszínt.",
+          tips: "Kérjünk referenciákat és nézzünk meg korábbi munkákat. Tavaszi-Őszi időszak a legideálisabb."
         }
       ]
     },
@@ -1611,7 +1611,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Fugák karbantartésa",
-          description: "Ellenárizzák a fugákat, szükság esetén pátoljuk a hiányzó fugahomokot vagy fugázáanyagot.",
+          description: "Ellenőrizzük a fugákat, szükság esetén pátoljuk a hiányzó fugahomokot vagy fugázáanyagot.",
           tips: "A fugázás után ne használjuk a felületet 24 óráig, amíg nem szilárdul meg!"
         },
         {
@@ -1978,7 +1978,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             rows: [
               ["Skandinév", "Világosszürke", "Fehár", "Teraszok, járdák", "Tiszta, modern"],
               ["Mediterranean", "Meleg bázs", "Terrakotta", "Udvarok, kertek", "Barátságos, otthonos"],
-              ["Urban Industrial", "Sátátszürke", "Antracit", "Kocsibeállók, bejáratok", "Elegáns, maskulin"],
+              ["Urban Industrial", "Sötétszürke", "Antracit", "Kocsibeállók, bejáratok", "Elegáns, maskulin"],
               ["Garden Natural", "Homokszín", "Záld árnyalat", "Kerti utak, pihenák", "Természetes, harmonikus"],
               ["Contemporary Bold", "Fekete", "Fehár kontraszt", "Modern ápátŐszet", "Drámai, letisztult"]
             ]
@@ -2063,17 +2063,17 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Funkcionális elemek tervezése",
           description: "Tervezzák be a vízelvezetést, világítást, néványzeti elemeket és egyáb funkcionális megoldásokat.",
-          tips: "A vízelvezetés tervezésát bízzuk szakemberre - ez a legfontosabb mŐszaki elem!"
+          tips: "A vízelvezetés tervezésát bízzuk szakemberre - ez a legfontosabb műszaki elem!"
         },
         {
           title: "Költságvetés és anyagszükságlet kalkulálása",
-          description: "Számátsuk ki a szükséges anyagmennyiságet 10% tartalákkal és kérjónk árajánlatokat több forrésbál.",
+          description: "Számítsuk ki a szükséges anyagmennyiságet 10% tartalákkal és kérjónk árajánlatokat több forrésbál.",
           tips: "Vegyük figyelembe a kiegŐszát•anyagokat is: kavics, homok, szegálykövek, fugaanyag!"
         },
         {
           title: "Kivitelezés tervezése és koordinálősa",
           description: "átemezzák a munkálatokat az időjárás és egyáb építési munkák figyelembevátelével.",
-          tips: "Tavaszi-nyári idŐszakban tervezzük a kivitelezést, amikor nincs fagy veszálye!"
+          tips: "Tavaszi-nyári időszakban tervezzük a kivitelezést, amikor nincs fagy veszálye!"
         }
       ]
     },
@@ -2392,7 +2392,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "1. Stálus és színpaletta kiválasztása",
           description: "Határozzuk meg a terasz f•funkciájót és a ház stílusúhoz illeszked•színpalettát. Vegyük figyelembe a kárnyez•néványzetet és az épület színeit.",
-          tips: "Kezdjók semleges alapszínekkel, és adjunk hozz•1-2 kiegŐszát•árnyalatot a karakterhez!"
+          tips: "Kezdjók semleges alapszínekkel, és adjunk hozzá1-2 kiegŐszát•árnyalatot a karakterhez!"
         },
         {
           title: "2. Mintázat és layout tervezése",
@@ -2407,11 +2407,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "4. Anyagválasztás és beszerzés",
           description: "Válasszuk ki a konkrét térkő típusokat, kérjónk mintadarabokat. Számoljuk ki a pontos mennyiságet 10-15% tartalákkal.",
-          tips: "Mindig ugyanabbál a gyártési tátelbál vésároljunk, hogy elkerüljók a színkülönbságeket!"
+          tips: "Mindig ugyanabbál a gyártési tételből vésároljunk, hogy elkerüljók a színkülönbságeket!"
         },
         {
           title: "5. Kivitelezés tervezése és előkészítés",
-          description: "Tervezzák meg a munkák ütemezésát, kŐszátsák el•a területet. Modern trendekhez precíz alapozés szükséges.",
+          description: "Tervezzák meg a munkák ütemezésát, készítsük előa területet. Modern trendekhez precíz alapozés szükséges.",
           tips: "Trendek megvalésátésához érdemes tapasztalt szakembert bevonni a precíz munkaárt."
         },
         {
@@ -2440,7 +2440,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mikor érdemes a trendkévet•terasz térkövezést megcsináltatni?",
-        answer: "<strong>Őszi-tavaszi idŐszakban</strong> (március-április, szeptember-oktáber) a legkedvezőbbek az árak. A trendanyagok gyakran limitált száriésok, ezárt érdemes időben rendelni. A nyári csácsidŐszakban 20-30%-kal magasabbak az árak."
+        answer: "<strong>Őszi-tavaszi időszakban</strong> (március-április, szeptember-oktáber) a legkedvezőbbek az árak. A trendanyagok gyakran limitált száriésok, ezárt érdemes időben rendelni. A nyári csácsidőszakban 20-30%-kal magasabbak az árak."
       }
     ],
     calculator: {
@@ -2740,7 +2740,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "A vibrálőlapot csak a munka napjára kálcsánázzák - drága a hosszabb bárlet!"
         },
         {
-          title: "3. Terület kijelálőse és kiásés",
+          title: "3. Terület kijelölése és kiásés",
           description: "Jeláljók ki a terasz pontos határait, éssuk ki 40-45 cm mélységig. Tévolátsuk el a humuszos réteget és gyökereket.",
           tips: "Esős időben ne dolgozzunk - a sár megnehezáti a munkát és rontja a minőságet."
         },
@@ -3039,7 +3039,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Bazalt",
-                description: "Sátát szín, modern, tartós",
+                description: "Sötét szín, modern, tartós",
                 value: "22-35k Ft/m2"
               },
               {
@@ -3076,7 +3076,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               ["Karbantartés", "Minimal", "Közepes", "Térkő", "éves szinten jelentős"],
               ["élettartam", "20-30 év", "50+ év", "Természetes", "2x hosszabb élettartam"],
               ["Esztétikai érték", "Modern", "Idátálló", "Dántetlen", "Stálusfüggá"],
-              ["Környezetbarát", "újrahasznosítható", "100% natúr", "Természetes", "Ökológiai szempont"],
+              ["Környezetbarát", "újrahasznosítható", "100% natúr", "Természetes", "ökológiai szempont"],
               ["Javíthatóság", "Egyszerű", "Specializált", "Térkő", "CserealkatrŐsz könnyű"],
               ["értéknévekedés", "Alacsony", "Magas", "Természetes", "Ingatlan értékáre hatés"]
             ]
@@ -3109,7 +3109,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "5. Karbantartési hajlandéság felmérése",
-          description: "Őszintán mérjük fel, mennyi időt és energiát tudunk a karbantartésra fordátani. A természetes kő szebb, de több figyelmet igényel.",
+          description: "Őszintán mérjük fel, mennyi időt és energiát tudunk a karbantartésra fordítani. A természetes kő szebb, de több figyelmet igényel.",
           tips: "Ha nincs idánk rendszeres karbantartésra, válasszuk a térkővet."
         },
         {
@@ -3393,12 +3393,15 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       }
     ],
     howTo: {
-      title: "Beton vagy természetes kő térkő választási útmutató",
+      title: "Beton vagy természetes kő térkő választási útmutató lépésről lépésre",
+      introduction: "Komprehenzív útmutató a megfelelő térkő típus kiválasztásához. Kövesse ezeket a lépéseket a legjobb döntés meghozatalához.",
+      timeEstimate: "Tervezési idő: 2-3 hét",
+      difficulty: "Közepes - szakértői tanácsadás ajánlott",
       steps: [
         {
           title: "Költságkeret és prioritésok meghatározésa",
           description: "Első lépésként határozzuk meg a rendelkezésre álló költságkeretet és rangsoroljuk az elvárésainkat (ár, tartósság, esztétika).",
-          tips: "Ha szűkös a költságkeret, a betontérkő kiváló választás. Ha hosszú tévra tervezánk, a természetes kő megtérül."
+          tips: "Ha szűkös a költságkeret, a betontérkő kiváló választás. Ha hosszú távra tervezünk, a természetes kő megtérül."
         },
         {
           title: "Használati igények felmérése",
@@ -3406,29 +3409,29 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Autós forgalomnál mindkét típus megfelelő, de a természetes kő tartósabb nehéz terhelésre."
         },
         {
-          title: "Esztétikai szempontok márlegelése",
-          description: "Dántsáák el, milyen megjelenést szeretnánk: egységes modern (beton) vagy egyedi természetes (ká) hatést.",
-          tips: "A betontérkő szálesebb színválasztékot kánál, a természetes kő minden darabja egyedi."
+          title: "Esztétikai szempontok mérlegelése",
+          description: "Döntsük el, milyen megjelenést szeretnánk: egységes modern (beton) vagy egyedi természetes (kő) hatést.",
+          tips: "A betontérkő szélesebb színválasztékot kínál, a természetes kő minden darabja egyedi."
         },
         {
           title: "Karbantartési igények vizsgálata",
-          description: "Márlegeljók, mennyi időt és energiát akarunk a karbantartésra fordátani hosszú távon.",
+          description: "Mérlegeljük, mennyi időt és energiát akarunk a karbantartésra fordítani hosszú távon.",
           tips: "Betontérkő: évi 2-3x mosés. Természetes kő: évi 1x impregnálés + mosés."
         },
         {
-          title: "Kárnyezeti hatások figyelembevétele",
-          description: "Ha fontos a környezetvádelem, vizsgáljuk meg a térkövek Ökológiai lábnyomát és újrahasznosáthatéságát.",
-          tips: "Természetes kő környezetbarátkabb, de a szállítási tévolság is számát. Helyi k•az ideális."
+          title: "Környezeti hatások figyelembevétele",
+          description: "Ha fontos a környezetvédelem, vizsgáljuk meg a térkövek ökológiai lábnyomát és újrahasznosíthatóságát.",
+          tips: "Természetes kő környezetbarátkabb, de a szállítási távolság is számít. Helyi kő az ideális."
         },
         {
           title: "ésszköltság kalkulálása",
-          description: "Számátsuk ki a teljes élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartést 20-25 évre.",
+          description: "Számítsuk ki a teljes élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartést 20-25 évre.",
           tips: "A természetes kő kezdeti magasabb ára hosszú távon megtérülhet az alacsony karbantartési költségek miatt."
         },
         {
-          title: "Vágs•döntés és beszerzés",
-          description: "A fenti szempontok alapján hozzuk meg a döntést és válasszunk ki megbízható beszállótát és kivitelezőt.",
-          tips: "Kérjünk mintákat és názzák meg álőben a választott térkővet napfányben és árnyákban is!"
+          title: "Végső döntés és beszerzés",
+          description: "A fenti szempontok alapján hozzuk meg a döntést és válasszunk ki megbízható beszállítót és kivitelezőt.",
+          tips: "Kérjünk mintákat és nézzük meg élőben a választott térkővet napfényben és árnyákban is!"
         }
       ]
     },
@@ -3548,7 +3551,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             totalCost = initialTotal + maintenanceCost;
           }
           
-          // Kárnyezeti pontszám (1-10)
+          // Környezeti pontszám (1-10)
           const environmentalScore = stoneCharacteristics[stoneType].isNatural ? 
             (stoneType === 'natural_granite' ? 7 : 8) : 4;
           
@@ -3575,6 +3578,108 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             usageLabel: usage === 'walkway' ? 'Járda/terasz' : 
                        usage === 'driveway' ? 'Kocsibeálló' : 'Kereskedelmi'
           };
+        }
+
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.getElementById('area').value) || 0;
+          const stoneType = document.getElementById('stoneType').value || 'concrete_basic';
+          const usage = document.getElementById('usage').value || 'walkway';
+          const timeframe = document.getElementById('timeframe').value || 'initial';
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a térkövezendő terület méretét!');
+            return;
+          }
+
+          if (area > 1000) {
+            alert('1000 m² feletti területekhez kérjen egyedi árajánlatot!');
+            return;
+          }
+
+          const inputs = {
+            area: area,
+            stoneType: stoneType,
+            usage: usage,
+            timeframe: timeframe
+          };
+
+          // Calculate costs using the helper function
+          const results = calculateStoneComparison(inputs);
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'beton-vs-termeszetes-ko',
+            area: area,
+            stoneType: results.stoneTypeLabel,
+            usage: results.usageLabel,
+            timeframe: timeframe,
+            totalCost: results.totalCost,
+            costPerSqm: results.costPerSqm,
+            durabilityYears: results.durabilityYears,
+            environmentalScore: results.environmentalScore,
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate comparison result HTML
+          const resultDiv = document.getElementById('calculator-result');
+          const timeframeLabel = timeframe === 'initial' ? 'Kezdeti befektetés' :
+                                timeframe === '10years' ? '10 éves teljes költség' : '25 éves teljes költség';
+
+          resultDiv.innerHTML =
+            '<div class="bg-purple-50 border border-purple-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-purple-800 mb-3">⚖️ Beton vs Természetes Kő Összehasonlítás</h4>' +
+              '<div class="space-y-2 text-sm text-purple-700 mb-4">' +
+                '<div><strong>Terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Választott típus:</strong> ' + results.stoneTypeLabel + '</div>' +
+                '<div><strong>Felhasználás:</strong> ' + results.usageLabel + '</div>' +
+                '<div><strong>Időtáv:</strong> ' + timeframeLabel + '</div>' +
+              '</div>' +
+              '<div class="bg-white rounded p-3 mb-4">' +
+                '<div class="space-y-1 text-sm">' +
+                  '<div class="flex justify-between"><span>Térkő anyag:</span><span class="font-semibold">' + results.stoneCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>Alapozás:</span><span>' + results.foundationCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>Munkadíj:</span><span>' + results.laborCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  (results.maintenanceCost > 0 ? '<div class="flex justify-between"><span>Karbantartás:</span><span>' + results.maintenanceCost.toLocaleString('hu-HU') + ' Ft</span></div>' : '') +
+                  '<hr class="my-2">' +
+                  '<div class="flex justify-between font-semibold"><span>Összesen:</span><span>' + results.totalCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  (results.retainedValue > 0 ? '<div class="flex justify-between text-green-700"><span>Vissznyerhető érték:</span><span>-' + results.retainedValue.toLocaleString('hu-HU') + ' Ft</span></div>' : '') +
+                  (results.netCost25Years > 0 ? '<div class="flex justify-between text-blue-700 font-semibold"><span>Nettó 25 éves költség:</span><span>' + results.netCost25Years.toLocaleString('hu-HU') + ' Ft</span></div>' : '') +
+                '</div>' +
+              '</div>' +
+              '<div class="text-center py-3 bg-purple-100 rounded font-semibold text-purple-800">' +
+                '<div class="text-lg">' + timeframeLabel + ': ' + results.totalCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                '<div class="text-sm">(' + results.costPerSqm.toLocaleString('hu-HU') + ' Ft/m²)</div>' +
+              '</div>' +
+              '<div class="mt-4 grid grid-cols-3 gap-3 text-sm">' +
+                '<div class="bg-blue-50 p-3 rounded text-center">' +
+                  '<div class="font-semibold text-blue-800">🏗️ Tartósság</div>' +
+                  '<div class="text-blue-700">' + results.durabilityYears + ' év</div>' +
+                '</div>' +
+                '<div class="bg-green-50 p-3 rounded text-center">' +
+                  '<div class="font-semibold text-green-800">🌱 Környezetbarát</div>' +
+                  '<div class="text-green-700">' + results.environmentalScore + '/10</div>' +
+                '</div>' +
+                '<div class="bg-orange-50 p-3 rounded text-center">' +
+                  '<div class="font-semibold text-orange-800">🔧 Karbantartás</div>' +
+                  '<div class="text-orange-700">' + results.maintenanceLevel + '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '💡 Az összehasonlítás figyelembe veszi a teljes életciklus költségét. A természetes kő hosszú távon költséghatékonyabb lehet.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=beton-vs-termeszetes-ko" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Részletes összehasonlítás kérése' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       `
     },
@@ -3830,12 +3935,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Mennyiság kalkulálása",
-          description: "Számátsuk ki a szükséges mennyiságet, figyelembe véve a vágási hulladékot is.",
+          description: "Számítsuk ki a szükséges mennyiságet, figyelembe véve a vágási hulladékot is.",
           tips: "A terület mérete + 8-12% hulladák + szegálykövek mennyiságe."
         },
         {
           title: "Beszállót•és kivitelező kiválasztása",
-          description: "Válasszunk megbízható beszállótát és tapasztalt kivitelezőt.",
+          description: "Válasszunk megbízható beszállítót és tapasztalt kivitelezőt.",
           tips: "Kérjünk referenciákat és názzák meg korábbi munkáikat!"
         }
       ]
@@ -4088,7 +4193,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           </div>`,
           table: {
             title: "Színes térkő mintázatok részletes összehasonlítása",
-            headers: ["Minta típus", "Szánek száma", "Nehézsági szint", "Ajánlott terület"],
+            headers: ["Minta típus", "Színek száma", "Nehézsági szint", "Ajánlott terület"],
             rows: [
               ["Sakktábla", "2 szín", "Könnyű", "Teraszok, kis udvarok"],
               ["Futákátés színes", "2-3 szín", "Közepes", "Jórdák, bejáratok"],
@@ -4130,12 +4235,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Tágátés",
-                description: "Világos színek a kis tereket nagyobbnak mutatjók"
+                description: "Világos színek a kis tereket nagyobbnak mutatják"
               },
               {
                 icon: "🏗️",
                 title: "Keskenyátés",
-                description: "Sátát szegélyek optikailag keskenyátik a járdákat"
+                description: "Sötét szegélyek optikailag keskenyátik a járdákat"
               },
               {
                 icon: "🏗️",
@@ -4218,7 +4323,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Színpaletta kiválasztása",
           description: "Válasszuk ki a 2-4 f•színt, figyelembe véve az épület stílusút és a környezetet.",
-          tips: "Kezdjónk egy alapszínnel, majd adjunk hozz•1-2 harmonizálő vagy kontrasztos színt."
+          tips: "Kezdjónk egy alapszínnel, majd adjunk hozzá1-2 harmonizálő vagy kontrasztos színt."
         },
         {
           title: "Mintázat megtervezése papáron",
@@ -4227,8 +4332,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Mennyiságek kiszámolésa színenkánt",
-          description: "Számátsuk ki, hogy az egyes színekbál mennyi térkőre lesz szükságánk.",
-          tips: "Adjunk hozz•10-15% hulladökot színenkánt, és vegyánk tartalékot a későbbi javításokhoz."
+          description: "Számítsuk ki, hogy az egyes színekbál mennyi térkőre lesz szükságánk.",
+          tips: "Adjunk hozzá10-15% hulladékot színenkánt, és vegyánk tartalékot a későbbi javításokhoz."
         },
         {
           title: "Minta prábarakésa",
@@ -4412,9 +4517,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           };
         }
       `
-    }
+    },
+    relatedPosts: [
+      "/blog/hogyan-valasszunk-terkovet",
+      "/blog/antik-terko-jellemzoi-felhasznalasa",
+      "/blog/modern-terkovezes-trendek-design-otletek-2025"
+    ]
   },
-
   // Tervezés és tanácsadés támák (2 blog)
   {
     slug: "terkovezes-tervezes-alapjai",
@@ -4535,7 +4644,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <li>•NyomŐszilárdság: min. 35 MPa</li>
                 <li>•Fagyállóság: F150-F200</li>
                 <li>•Vázfelszévés: <6%</li>
-                <li>•CE jelálős megláte</li>
+                <li>•CE jelölés megláte</li>
               </ul>
             </div>
             <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
@@ -4558,9 +4667,9 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </div>
           </div>
           
-          <p><strong>Kárnyezeti tényezők</strong> figyelembevétele:</p>`,
+          <p><strong>Környezeti tényezők</strong> figyelembevétele:</p>`,
           infographic: {
-            title: "Kárnyezeti hatások és anyagválasztás",
+            title: "Környezeti hatások és anyagválasztás",
             items: [
               {
                 icon: "🏗️",
@@ -4674,7 +4783,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Idázátés és projekt ütemezés",
           description: "átemezzák a munkálatokat az időjárási viszonyokat és egyáb tényezőket figyelembe véve.",
-          tips: "Tavasztál Őszig ideális az idázátés. Keráld a fagyos idŐszakot!"
+          tips: "Tavasztál Őszig ideális az idázátés. Keráld a fagyos időszakot!"
         }
       ]
     },
@@ -4697,7 +4806,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mely évszakban érdemes térkövezést tervezni és kivitelezni?",
-        answer: "A tervezést télen végezzák, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35°C feletti) idŐszakokat."
+        answer: "A tervezést télen végezzák, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35°C feletti) időszakokat."
       }
     ],
     calculator: {
@@ -4841,7 +4950,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           };
         }
       `
-    }
+    },
+    relatedPosts: [
+      "/blog/terkovezes-koltsegkalkulator-2025",
+      "/blog/hogyan-valasszunk-terkovet",
+      "/blog/kocsibeallo-vizelvezes-terkovezes"
+    ]
   },
   {
     slug: "terkovezes-koltsegkalkulator-2025",
@@ -5001,7 +5115,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "1. Terület pontos felmérése",
           description: "Mérjük fel pontosan a térkövezendő területet m2-ben. Számoljunk bele az esetleges bonyolult formákat, szintkülönbségeket. Készítsünk vízlatot a területről.",
-          tips: "Mindig adjunk hozz•10-15% anyagtöbbletet a vágások és selejtezés miatt!"
+          tips: "Mindig adjunk hozzá10-15% anyagtöbbletet a vágások és selejtezés miatt!"
         },
         {
           title: "2. Térkő típus és minta kiválasztása",
@@ -5020,7 +5134,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "5. Kiegészítő költségek számítása",
-          description: "Adjuk hozz•a vízelvezetés, szegélyek, szállítás és egyáb extra munkák költségeit. Ezek jelentősen befolyásolhatják a végső árat.",
+          description: "Adjuk hozzáa vízelvezetés, szegélyek, szállítás és egyáb extra munkák költségeit. Ezek jelentősen befolyásolhatják a végső árat.",
           tips: "A kiegészítő költségek gyakran a projekt 30-40%-át tehetik ki."
         },
         {
@@ -5327,7 +5441,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "Szerzádéskátés",
-          description: "Késsán részletes vállalkozési szerzádést, ami tartalmazza a mŐszaki tartalmat, időtervet, fizetési feltételeket és garanciális feltételeket.",
+          description: "Késsán részletes vállalkozési szerzádést, ami tartalmazza a műszaki tartalmat, időtervet, fizetési feltételeket és garanciális feltételeket.",
           duration: "PT10M"
         }
       ]
@@ -5895,6 +6009,98 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                          urgency === 'urgent' ? 'Sürgős' : 'Azonnali'
           };
         }
+
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.getElementById('area').value) || 0;
+          const problemType = document.getElementById('problemType').value || 'minor_sinking';
+          const accessibility = document.getElementById('accessibility').value || 'easy';
+          const urgency = document.getElementById('urgency').value || 'normal';
+          const location = document.getElementById('location').value || 'outer';
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a javítandó terület méretét!');
+            return;
+          }
+
+          if (area > 200) {
+            alert('200 m² feletti javítási területekhez kérjen egyedi árajánlatot!');
+            return;
+          }
+
+          const inputs = {
+            area: area,
+            problemType: problemType,
+            accessibility: accessibility,
+            urgency: urgency,
+            location: location
+          };
+
+          // Calculate costs using the helper function
+          const results = calculateRepairCost(inputs);
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'terkovezes-hibak-javitas',
+            area: area,
+            problemType: results.problemLabel,
+            location: results.locationLabel,
+            urgency: results.urgencyLabel,
+            totalCost: results.totalCost,
+            costPerSqm: results.costPerSqm,
+            warrantyYears: results.warrantyYears,
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate result HTML
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML =
+            '<div class="bg-red-50 border border-red-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-red-800 mb-3">🔧 Térkövezési Hibák Javítási Költségbecslés</h4>' +
+              '<div class="space-y-2 text-sm text-red-700 mb-4">' +
+                '<div><strong>Javítandó terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Probléma típusa:</strong> ' + results.problemLabel + '</div>' +
+                '<div><strong>Helyszín:</strong> ' + results.locationLabel + '</div>' +
+                '<div><strong>Sürgősség:</strong> ' + results.urgencyLabel + '</div>' +
+              '</div>' +
+              '<div class="bg-white rounded p-3 mb-4">' +
+                '<div class="space-y-1 text-sm">' +
+                  '<div class="flex justify-between"><span>Javítási munkálatok:</span><span class="font-semibold">' + results.repairCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>Helyszíni felmérés:</span><span>' + results.inspectionFee.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>Anyagszállítás:</span><span>' + results.materialTransport.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>Törmelék elszállítás:</span><span>' + results.wasteRemoval.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="text-center py-3 bg-red-100 rounded font-semibold text-red-800">' +
+                '<div class="text-lg">Becsült javítási költség: ' + results.totalCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                '<div class="text-sm">(' + results.costPerSqm.toLocaleString('hu-HU') + ' Ft/m²)</div>' +
+              '</div>' +
+              '<div class="mt-4 grid grid-cols-2 gap-4 text-sm">' +
+                '<div class="bg-green-50 p-3 rounded">' +
+                  '<div class="font-semibold text-green-800">✅ Garancia</div>' +
+                  '<div class="text-green-700">' + results.warrantyYears + ' év munkára</div>' +
+                '</div>' +
+                '<div class="bg-blue-50 p-3 rounded">' +
+                  '<div class="font-semibold text-blue-800">💡 Megelőzés</div>' +
+                  '<div class="text-blue-700">Évi ' + results.preventionCost.toLocaleString('hu-HU') + ' Ft</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '⚠️ A javítási költségek jelentősen változhatnak a tényleges károk mértékétől függően. Helyszíni felmérés után pontos árajánlatot adunk.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=terkovezes-hibak-javitas" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Javítási szakértő megkeresése' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
       `
     },
     relatedPosts: [
@@ -6109,6 +6315,97 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                                accessibility === 'good' ? 'Jó' :
                                accessibility === 'difficult' ? 'Nehéz' : 'Nagyon nehéz'
           };
+        }
+
+        function calculateCost() {
+          // Collect input values
+          const area = parseFloat(document.getElementById('area').value) || 0;
+          const district = document.getElementById('district').value || 'district_20_21_22_23';
+          const projectType = document.getElementById('projectType').value || 'driveway';
+          const permitRequired = document.getElementById('permitRequired').value || 'none';
+          const accessibility = document.getElementById('accessibility').value || 'good';
+
+          // Input validation
+          if (area <= 0) {
+            alert('Kérem adja meg a térkövezendő terület méretét!');
+            return;
+          }
+
+          if (area > 500) {
+            alert('500 m² feletti területekhez kérjen egyedi árajánlatot!');
+            return;
+          }
+
+          const inputs = {
+            area: area,
+            district: district,
+            projectType: projectType,
+            permitRequired: permitRequired,
+            accessibility: accessibility
+          };
+
+          // Calculate costs using the helper function
+          const results = calculateBudapestPaving(inputs);
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'budapest-keruleti-terkovezes',
+            area: area,
+            district: results.districtLabel,
+            projectType: results.projectLabel,
+            permitType: results.permitLabel,
+            accessibility: results.accessibilityLabel,
+            totalCost: results.total,
+            costPerSqm: results.costPerSqm,
+            workDays: results.workDays,
+            timestamp: new Date().toISOString()
+          };
+
+          // Generate result HTML
+          const resultDiv = document.getElementById('calculator-result');
+          resultDiv.innerHTML =
+            '<div class="bg-blue-50 border border-blue-200 rounded-lg p-4">' +
+              '<h4 class="font-semibold text-blue-800 mb-3">🏙️ Budapest Kerületi Térkövezés Költségbecslés</h4>' +
+              '<div class="space-y-2 text-sm text-blue-700 mb-4">' +
+                '<div><strong>Terület:</strong> ' + area + ' m²</div>' +
+                '<div><strong>Kerület:</strong> ' + results.districtLabel + '</div>' +
+                '<div><strong>Projekt típus:</strong> ' + results.projectLabel + '</div>' +
+                '<div><strong>Engedély:</strong> ' + results.permitLabel + '</div>' +
+                '<div><strong>Megközelíthetőség:</strong> ' + results.accessibilityLabel + '</div>' +
+              '</div>' +
+              '<div class="bg-white rounded p-3 mb-4">' +
+                '<div class="space-y-1 text-sm">' +
+                  '<div class="flex justify-between"><span>Térkövezés:</span><span class="font-semibold">' + results.pavingCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  (results.permitCost > 0 ? '<div class="flex justify-between"><span>Engedély:</span><span>' + results.permitCost.toLocaleString('hu-HU') + ' Ft</span></div>' : '') +
+                  '<div class="flex justify-between"><span>Szállítás:</span><span>' + results.transportCost.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  (results.parkingFee > 0 ? '<div class="flex justify-between"><span>Parkolási díj:</span><span>' + results.parkingFee.toLocaleString('hu-HU') + ' Ft</span></div>' : '') +
+                  '<div class="flex justify-between"><span>Adminisztráció:</span><span>' + results.adminFee.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<hr class="my-2">' +
+                  '<div class="flex justify-between"><span>Nettó:</span><span>' + results.subtotal.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                  '<div class="flex justify-between"><span>ÁFA (27%):</span><span>' + results.vat.toLocaleString('hu-HU') + ' Ft</span></div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="text-center py-3 bg-blue-100 rounded font-semibold text-blue-800">' +
+                '<div class="text-lg">Becsült végösszeg: ' + results.total.toLocaleString('hu-HU') + ' Ft</div>' +
+                '<div class="text-sm">(' + results.costPerSqm.toLocaleString('hu-HU') + ' Ft/m²)</div>' +
+              '</div>' +
+              '<div class="mt-4 text-sm text-gray-600">' +
+                '<div><strong>Várható kivitelezési idő:</strong> ' + results.workDays + ' munkanap</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
+              '⚠️ Ez egy tájékoztató becslés Budapest kerületi sajátosságok figyelembevételével. Pontos árajánlatot csak helyszíni felmérés után adhatunk.' +
+            '</div>' +
+            '<div class="mt-4 text-center">' +
+              '<a href="/kapcsolat?calc=budapest-keruleti-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+                'Kerületi szakértő megkeresése' +
+              '</a>' +
+            '</div>';
+
+          resultDiv.classList.remove('hidden');
+
+          // Scroll to result
+          resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       `
     },
