@@ -30,7 +30,14 @@
       "Bash(gh issue create:*)",
       "mcp__playwright__browser_press_key",
       "Bash(del nul)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git rm:*)",
+      "Bash(grep:*)",
+      "Bash(powershell:*)",
+      "mcp__playwright__browser_install",
+      "mcp__firecrawl__firecrawl_search",
+      "WebFetch(domain:terkovezesbudapest.hu)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

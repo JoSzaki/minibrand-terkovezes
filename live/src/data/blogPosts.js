@@ -186,17 +186,30 @@ export const blogPosts = [
           const area = parseFloat(document.getElementById('area').value) || 0;
           const paverType = document.getElementById('paverType').value || 'basic';
           const needsDrainage = document.getElementById('drainage').checked;
-          
+
           if (area <= 0) {
             alert('Kérem adja meg a terület méretét!');
             return;
           }
+
+          if (area > 500) {
+            alert('Túl nagy terület! Nagyobb projektek esetén kérjen egyedi árajánlatot.');
+            return;
+          }
           
+          // Fixed prices to match the options display prices (material + labor)
           const prices = {
-            basic: 8000,
-            thick: 11000,  
-            granite: 22000,
-            antique: 18000
+            basic: 8000,   // Normal betontérkő total price with labor
+            thick: 11000,  // Vastagított betontérkő total price with labor
+            granite: 22000, // Gránit térkő total price with labor
+            antique: 18000  // Antik térkő total price with labor
+          };
+
+          const paverLabels = {
+            basic: 'Normál betontérkő',
+            thick: 'Vastagított betontérkő',
+            granite: 'Gránit térkő',
+            antique: 'Antik térkő'
           };
           
           let basePrice = prices[paverType] * area;
@@ -205,7 +218,18 @@ export const blogPosts = [
           
           let minPrice = totalPrice * 0.9;
           let maxPrice = totalPrice * 1.1;
-          
+
+          // Send data to contact form
+          if (window.updateContactForm) {
+            window.updateContactForm({
+              project: 'Kocsibeálló térkövezés',
+              area: area,
+              paverType: paverLabels[paverType],
+              estimatedCost: totalPrice,
+              features: needsDrainage ? 'Vízelvezetéssel' : 'Alap kivitelezés'
+            });
+          }
+
           const resultDiv = document.getElementById('calculator-result');
           resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült költság: ' + 
             Math.round(minPrice).toLocaleString('hu-HU') + ' - ' + 
@@ -214,7 +238,7 @@ export const blogPosts = [
             '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
             '⚠️Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
             '<div class="mt-4 text-center">' +
-            '<a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+            '<a href="/kapcsolat?calc=kocsibeallo-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
             'Pontos árajánlat kérése' +
             '</a></div>';
           resultDiv.classList.remove('hidden');
@@ -372,7 +396,7 @@ export const blogPosts = [
       steps: [
         {
           title: "Igányek és költságvetés meghatározésa",
-          description: "Első lépésként határozzuk meg a rendelkezésre álló költságvetést és a fább elvárésainkat (tartósság, megjelenés, karbantartés).",
+          description: "Első lépésként határozzuk meg a rendelkezésre álló költságvetést és a főbb elvárésainkat (tartósság, megjelenés, karbantartés).",
           tips: "Számoljunk 20-30 éves távlatban - a drágább, de tartósabb megoldés gyakran gazdaságosabb!"
         },
         {
@@ -381,13 +405,13 @@ export const blogPosts = [
           tips: "Nehezebb járművekhez mindenkáppen 8 cm vastag térkővet válasszunk!"
         },
         {
-          title: "Helyi klíma figyelembevátele",
+          title: "Helyi klíma figyelembevétele",
           description: "Magyarországon minimum F150 fagyállóságútérkővet válasszunk. Hegyvidáki területeken F200 ajánlott.",
-          tips: "A fagyállóság nem opcionális - egy rossz tál tönkreteheti a nem megfelelő térkővet!"
+          tips: "A fagyállóság nem opcionális - egy rossz tél tönkreteheti a nem megfelelő térkővet!"
         },
         {
-          title: "építészeti harmánia ellenőrzése",
-          description: "A térkő színe és stílusa illeszkedjen a ház és a kert ésszhatésához. Kérjünk mintadarabokat!",
+          title: "építészeti harmónia ellenőrzése",
+          description: "A térkő színe és stílusa illeszkedjen a ház és a kert összhatásához. Kérjünk mintadarabokat!",
           tips: "Napfányben és esetében is názzák meg a mintákat - sokszor méskápp náznek ki!"
         },
         {
@@ -409,7 +433,7 @@ export const blogPosts = [
       },
       {
         question: "Mennyivel drágább a vastagabb térkő?",
-        answer: "A <strong>8 cm vastag térkő általában 20-30%-kal kerül többe</strong> mint a 6 cm-es, de a megnévelt tartósság és teherbírés miatt hosszú távon megtérülhet. Nehezebb járművek esetén kötelező a vastagabb verziá."
+        answer: "A <strong>8 cm vastag térkő általában 20-30%-kal kerül többe</strong> mint a 6 cm-es, de a megnövelt tartósság és teherbírés miatt hosszú távon megtérülhet. Nehezebb járművek esetén kötelező a vastagabb verzió."
       },
       {
         question: "Csúszós a térkő esés időben?",
@@ -509,40 +533,57 @@ export const blogPosts = [
           const usage = document.getElementById('usage').value;
           const budget = document.getElementById('budget').value;
           const style = document.getElementById('style').value;
-          
+
+          // Input validation
+          if (!usage || !budget || !style) {
+            alert('Kérem töltse ki az összes mezőt!');
+            return;
+          }
+
           let recommendation = '';
           let thickness = '6 cm';
           let paverType = '';
           
           // Determine thickness based on usage
           if (usage === 'truck') {
-thickness = '8 cm (kötelező)';
+            thickness = '8 cm (kötelező)';
           } else if (usage === 'van') {
-thickness = '8 cm (ajánlott)';
+            thickness = '8 cm (ajánlott)';
           } else if (usage === 'suv') {
-thickness = '6-8 cm';
+            thickness = '6-8 cm';
           } else {
-thickness = '6 cm';
+            thickness = '6 cm';
           }
           
           // Determine paver type based on budget and style
           if (budget === 'high') {
             if (style === 'modern') {
-paverType = 'Gránit térkő vagy prémium betontérkő';
+              paverType = 'Gránit térkő vagy prémium betontérkő';
             } else if (style === 'rustic') {
-paverType = 'Természetes kő vagy antik térkő';
+              paverType = 'Természetes kő vagy antik térkő';
             } else {
-paverType = 'Gránit térkő';
+              paverType = 'Gránit térkő';
             }
           } else if (budget === 'mid') {
             if (style === 'rustic') {
-paverType = 'Antik térkő vagy klinkertégla';
+              paverType = 'Antik térkő vagy klinkertégla';
             } else {
-paverType = 'Prémium betontérkő';
+              paverType = 'Prémium betontérkő';
             }
           } else {
-paverType = 'Betontérkő (F150 fagyállóság)';
+            paverType = 'Betontérkő (F150 fagyállóság)';
           }
+
+          // Store calculation data for contact form
+          window.lastCalculation = {
+            type: 'terko-valasztas',
+            usage: usage,
+            budget: budget,
+            style: style,
+            recommendation: paverType,
+            thickness: thickness,
+            timestamp: new Date().toISOString()
+          };
           
 recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megoldés:</h4>' +
             '<ul class="text-green-700 space-y-2">' +
@@ -1318,7 +1359,90 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "checkbox",
           description: "Mohásodás, olajfoltok, sérülések"
         }
-      ]
+      ],
+      script: `
+        function calculateMaintenanceCost(inputs) {
+          const area = parseFloat(inputs.area) || 0;
+          const stoneType = inputs.stoneType || 'concrete';
+          const condition = inputs.condition || 'good';
+          const diyLevel = inputs.diyLevel || 'partial';
+          const hasProblems = inputs.hasProblems || false;
+
+          // Alapkarbantartási költségek térkő típusonként (Ft/m2/év)
+          const baseMaintenanceCosts = {
+            concrete: 1200,
+            natural: 2000,
+            antique: 1600,
+            colored: 1800
+          };
+
+          // Állapot-függő szorzók
+          const conditionMultipliers = {
+            excellent: 0.7,
+            good: 1.0,
+            fair: 1.4,
+            poor: 2.2
+          };
+
+          // DIY szint szorzók
+          const diyMultipliers = {
+            full: 0.35,      // Csak anyagköltség
+            partial: 0.65,   // Anyag + részleges munkadíj
+            none: 1.0        // Teljes szakemberi munkadíj
+          };
+
+          const baseCost = baseMaintenanceCosts[stoneType];
+          const conditionMultiplier = conditionMultipliers[condition];
+          const diyMultiplier = diyMultipliers[diyLevel];
+
+          // Alap éves karbantartási költség
+          let annualMaintenanceCost = area * baseCost * conditionMultiplier * diyMultiplier;
+
+          // Speciális problémák kezelési költsége
+          let problemsCost = 0;
+          if (hasProblems) {
+            problemsCost = area * (diyLevel === 'none' ? 1500 : 600);
+          }
+
+          // Karbantartási kategóriák részletezése
+          const cleaningCost = area * (diyLevel === 'none' ? 400 : 150);
+          const jointMaintenance = area * (diyLevel === 'none' ? 300 : 100);
+          const impregnateCost = Math.round(area * (diyLevel === 'none' ? 800 : 300) / 3); // 3 évente
+          const minorRepairs = area * (diyLevel === 'none' ? 500 : 200);
+
+          const totalAnnualCost = annualMaintenanceCost + problemsCost;
+          const fiveYearCost = totalAnnualCost * 5 + impregnateCost * 2; // 5 éves költség 2x impregnálással
+
+          // Takarékosság vs. szakember
+          const diyAnnualCost = area * baseCost * conditionMultiplier * 0.35;
+          const professionalAnnualCost = area * baseCost * conditionMultiplier * 1.0;
+          const savings = professionalAnnualCost - diyAnnualCost;
+
+          return {
+            annualMaintenanceCost: Math.round(totalAnnualCost),
+            costPerSqm: Math.round(totalAnnualCost / area),
+            cleaningCost: Math.round(cleaningCost),
+            jointMaintenance: Math.round(jointMaintenance),
+            impregnateCost: Math.round(impregnateCost),
+            minorRepairs: Math.round(minorRepairs),
+            problemsCost: Math.round(problemsCost),
+            fiveYearCost: Math.round(fiveYearCost),
+            diyAnnualCost: Math.round(diyAnnualCost),
+            professionalAnnualCost: Math.round(professionalAnnualCost),
+            savings: Math.round(savings),
+            stoneTypeLabel: stoneType === 'concrete' ? 'Beton térkő' :
+                           stoneType === 'natural' ? 'Természetes kő' :
+                           stoneType === 'antique' ? 'Antik térkő' : 'Színes térkő',
+            conditionLabel: condition === 'excellent' ? 'Kiváló' :
+                           condition === 'good' ? 'Jó' :
+                           condition === 'fair' ? 'Közepes' : 'Rossz',
+            diyLabel: diyLevel === 'full' ? 'Teljes saját munka' :
+                     diyLevel === 'partial' ? 'Részben saját munka' : 'Szakemberre bízva',
+            maintenanceFrequency: stoneType === 'natural' ? 'Negyedévente' :
+                                 stoneType === 'concrete' ? 'Félévente' : 'Évente 3x'
+          };
+        }
+      `
     },
     relatedArticles: [
       {
@@ -1412,7 +1536,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Színkombinációk és Mintázatok",
-          content: `<p>A <strong>színválasztás</strong> döntő szerepet jótszik a térkövezés sikeráben. 2025-ben a természetes harmánia és a merŐsz kontrasztok egyaránt nápszeráek:</p>`,
+          content: `<p>A <strong>színválasztás</strong> döntő szerepet jótszik a térkövezés sikeráben. 2025-ben a természetes harmónia és a merŐsz kontrasztok egyaránt nápszeráek:</p>`,
           table: {
             title: "2025 Legnápszerább Színkombinációk",
             headers: ["Stálus", "F•szín", "Kiegészítő szín", "Alkalmazési terület", "Hangulat"],
@@ -1586,7 +1710,72 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "checkbox",
           description: "újrahasznosított anyagok, permeable térkövek"
         }
-      ]
+      ],
+      script: `
+        function calculateDesignCost(inputs) {
+          const area = parseFloat(inputs.area) || 0;
+          const style = inputs.style || 'classic';
+          const stoneSize = inputs.stoneSize || 'medium';
+          const smartFeatures = inputs.smartFeatures || false;
+          const sustainability = inputs.sustainability || false;
+
+          // Base prices by style (Ft/m2)
+          const stylePrices = {
+            classic: 8000,
+            natural: 12000,
+            patterned: 12000,
+            minimalist: 16000
+          };
+
+          // Size multipliers
+          const sizeMultipliers = {
+            small: 1.0,
+            medium: 1.1,
+            large: 1.3,
+            mixed: 1.2
+          };
+
+          const basePrice = stylePrices[style] * area * sizeMultipliers[stoneSize];
+          const smartCost = smartFeatures ? area * 8000 : 0;
+          const sustainabilityCost = sustainability ? basePrice * 0.2 : 0;
+          const materialCost = basePrice + smartCost + sustainabilityCost;
+
+          // Professional installation cost
+          const installationCost = area * 4000;
+          const totalCost = materialCost + installationCost;
+
+          // Design complexity factor
+          const designComplexity = style === 'patterned' ? 'Komplex' :
+                                  style === 'minimalist' ? 'Egyszerű, de prémium' :
+                                  style === 'natural' ? 'Közepes' : 'Hagyományos';
+
+          // Estimated timeline
+          const timelineWeeks = area < 30 ? 1 : area < 100 ? 2 : 3;
+          if (smartFeatures) timelineWeeks++;
+
+          return {
+            basePrice: Math.round(basePrice),
+            smartCost: Math.round(smartCost),
+            sustainabilityCost: Math.round(sustainabilityCost),
+            materialCost: Math.round(materialCost),
+            installationCost: Math.round(installationCost),
+            totalCost: Math.round(totalCost),
+            costPerSqm: Math.round(totalCost / area),
+            styleLabel: style === 'classic' ? 'Klasszikus' :
+                       style === 'natural' ? 'Természetes' :
+                       style === 'patterned' ? 'Mintázatos' : 'Minimalista',
+            sizeLabel: stoneSize === 'small' ? 'Kis méretű (10-20 cm)' :
+                      stoneSize === 'medium' ? 'Közepes méretű (20-40 cm)' :
+                      stoneSize === 'large' ? 'Nagy méretű (40+ cm)' : 'Vegyes méretű',
+            designComplexity: designComplexity,
+            timelineWeeks: timelineWeeks,
+            hasSmartFeatures: smartFeatures,
+            hasSustainability: sustainability,
+            maintenanceLevel: style === 'minimalist' ? 'Alacsony' : 'Közepes',
+            trendRating: style === 'minimalist' || style === 'natural' ? 'Nagyon aktuális' : 'Időtálló'
+          };
+        }
+      `
     },
     relatedArticles: [
       {
@@ -1908,6 +2097,21 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </div>
           \`;
           resultDiv.classList.remove('hidden');
+
+          // Send data to contact form
+          if (window.updateContactForm) {
+            window.updateContactForm({
+              project: 'Trendkövető terasz térkövezés',
+              area: area,
+              trendLevel: document.getElementById('trendLevel').options[document.getElementById('trendLevel').selectedIndex].text,
+              pattern: document.getElementById('patternType').options[document.getElementById('patternType').selectedIndex].text,
+              estimatedCost: totalPrice,
+              features: [
+                hasLighting ? 'LED világítás' : null,
+                edgeType !== 'none' ? document.getElementById('edgeType').options[document.getElementById('edgeType').selectedIndex].text : null
+              ].filter(Boolean).join(', ') || 'Alap kivitelezés'
+            });
+          }
         }
       `
     },
@@ -2250,6 +2454,22 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </div>
           \`;
           resultDiv.classList.remove('hidden');
+
+          // Send data to contact form
+          if (window.updateContactForm) {
+            window.updateContactForm({
+              project: 'DIY terasz térkövezés',
+              area: area,
+              paverType: document.getElementById('paverType').options[document.getElementById('paverType').selectedIndex].text,
+              complexity: document.getElementById('complexity').options[document.getElementById('complexity').selectedIndex].text,
+              estimatedCost: totalCost,
+              savings: savings,
+              features: [
+                needsHelp ? 'Segítséggel' : 'Teljes DIY',
+                \`Becsült munkaidő: \${Math.round(area * 2.5)} óra\`
+              ].join(', ')
+            });
+          }
         }
       `
     },
@@ -2595,6 +2815,23 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </div>
           \`;
           resultDiv.classList.remove('hidden');
+
+          // Send data to contact form
+          if (window.updateContactForm) {
+            window.updateContactForm({
+              project: 'Kerti út térkövezés',
+              area: area,
+              materialType: document.getElementById('materialType').options[document.getElementById('materialType').selectedIndex].text,
+              complexity: document.getElementById('pathComplexity').options[document.getElementById('pathComplexity').selectedIndex].text,
+              estimatedCost: totalPrice,
+              lifecycleCost: totalLifecycleCost,
+              features: [
+                needsEdging ? 'Szegályezéssel' : 'Szegélyezés nélkül',
+                materialName,
+                document.getElementById('maintenanceLevel').options[document.getElementById('maintenanceLevel').selectedIndex].text
+              ].join(', ')
+            });
+          }
         }
       `
     },
@@ -2744,7 +2981,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Betontérkő: évi 2-3x mosés. Természetes kő: évi 1x impregnálés + mosés."
         },
         {
-          title: "Kárnyezeti hatások figyelembevátele",
+          title: "Kárnyezeti hatások figyelembevétele",
           description: "Ha fontos a környezetvádelem, vizsgáljuk meg a térkövek Ökológiai lábnyomát és újrahasznosáthatéságát.",
           tips: "Természetes kő környezetbarátkabb, de a szállítási tévolság is számát. Helyi k•az ideális."
         },
@@ -3436,7 +3673,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <ul class="text-amber-700 text-sm space-y-2">
                 <li><strong>Kocsibeálló:</strong> konzervatév színek (szürke + antracit)</li>
                 <li><strong>Terasz:</strong> meleg tánusok (bázs + terrakotta)</li>
-                <li><strong>Kerti út:</strong> természetes harmánia (záld + barna)</li>
+                <li><strong>Kerti út:</strong> természetes harmónia (záld + barna)</li>
                 <li><strong>Bejárat:</strong> reprezentatév (kák + fehár)</li>
               </ul>
             </div>
@@ -3886,7 +4123,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </div>
           </div>
           
-          <p><strong>Kárnyezeti tényezők</strong> figyelembevátele:</p>`,
+          <p><strong>Kárnyezeti tényezők</strong> figyelembevétele:</p>`,
           infographic: {
             title: "Kárnyezeti hatások és anyagválasztás",
             items: [
@@ -4726,7 +4963,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
             '⚠️Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
             '<div class="mt-4 text-center">' +
-            '<a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
+            '<a href="/kapcsolat?calc=kocsibeallo-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
             'Pontos árajánlat kérése' +
             '</a></div>';
           resultDiv.classList.remove('hidden');
@@ -4956,7 +5193,81 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           max: 500
         }
       ],
-      calculate: "calculateEcoPayback"
+      script: `
+        function calculateEcoPayback(inputs) {
+          const area = parseFloat(inputs.area) || 0;
+          const ecoType = inputs.ecoType || 'permeable';
+          const waterSaving = parseFloat(inputs.waterSaving) || 150;
+
+          // Eco solution cost premiums (Ft/m2)
+          const ecoSolutionCosts = {
+            permeable: 2500,     // Vízáteresztő térkő felár
+            recycled: 800,      // Újrahasznosított térkő felár
+            grassGrid: 1800,    // Fűrácsós rendszer felár
+            combined: 3200      // Kombinált megoldás felár
+          };
+
+          // Annual benefits per eco type
+          const annualBenefits = {
+            permeable: {
+              waterSaving: area * 0.8 * waterSaving,  // 80% víztakarékosság
+              maintenanceSaving: area * 200,          // Karbantartás megtakarítás
+              drainageSaving: area * 100              // Csatornázási díj megtakarítás
+            },
+            recycled: {
+              waterSaving: 0,
+              maintenanceSaving: area * 150,
+              drainageSaving: 0,
+              co2Benefit: area * 50                   // CO2 csökkentés értéke
+            },
+            grassGrid: {
+              waterSaving: area * 0.6 * waterSaving,  // 60% víztakarékosság
+              maintenanceSaving: area * 300,          // Magasabb karbantartás megtakarítás
+              drainageSaving: area * 80,
+              airQualityBenefit: area * 40            // Levegőminőség javulás
+            },
+            combined: {
+              waterSaving: area * 0.9 * waterSaving,  // 90% víztakarékosság
+              maintenanceSaving: area * 350,
+              drainageSaving: area * 120,
+              co2Benefit: area * 70,
+              airQualityBenefit: area * 60
+            }
+          };
+
+          const ecoCostPremium = area * ecoSolutionCosts[ecoType];
+          const benefits = annualBenefits[ecoType];
+          const totalAnnualBenefit = Object.values(benefits).reduce((sum, value) => sum + value, 0);
+
+          // Payback calculation
+          const paybackYears = ecoCostPremium / totalAnnualBenefit;
+          const tenYearSavings = (totalAnnualBenefit * 10) - ecoCostPremium;
+          const twentyYearSavings = (totalAnnualBenefit * 20) - ecoCostPremium;
+
+          // Environmental impact
+          const co2ReductionKg = area * (ecoType === 'recycled' || ecoType === 'combined' ? 25 : 15);
+          const waterSavedLiters = area * (ecoType === 'permeable' ? 800 : ecoType === 'grassGrid' ? 600 : ecoType === 'combined' ? 900 : 0);
+
+          return {
+            ecoCostPremium: Math.round(ecoCostPremium),
+            totalAnnualBenefit: Math.round(totalAnnualBenefit),
+            paybackYears: Math.round(paybackYears * 10) / 10,
+            tenYearSavings: Math.round(tenYearSavings),
+            twentyYearSavings: Math.round(twentyYearSavings),
+            co2ReductionKg: Math.round(co2ReductionKg),
+            waterSavedLiters: Math.round(waterSavedLiters),
+            waterSavingAnnual: Math.round(benefits.waterSaving || 0),
+            maintenanceSavingAnnual: Math.round(benefits.maintenanceSaving || 0),
+            drainageSavingAnnual: Math.round(benefits.drainageSaving || 0),
+            ecoTypeLabel: ecoType === 'permeable' ? 'Vízáteresztő térkő' :
+                         ecoType === 'recycled' ? 'Újrahasznosított térkő' :
+                         ecoType === 'grassGrid' ? 'Fűrácsós rendszer' : 'Kombinált öko-megoldás',
+            isEconomicallyViable: paybackYears <= 8,
+            environmentalRating: ecoType === 'combined' ? 'Kiváló' :
+                               ecoType === 'permeable' || ecoType === 'grassGrid' ? 'Jó' : 'Közepes'
+          };
+        }
+      `
     },
     relatedPosts: [
       "/blog/beton-vagy-termeszetes-ko-terkovek",
@@ -5400,7 +5711,7 @@ function hashCode(str) {
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
     hash = ((hash << 5) - hash) + char;
-    hash = hash & hash; // 32-bit integer konverziá
+    hash = hash & hash; // 32-bit integer konverzió
   }
   return hash;
 }

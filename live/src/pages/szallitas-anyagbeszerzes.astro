@@ -192,6 +192,75 @@ const canonicalURL = "https://terkovezesbudapest.hu/szallitas-anyagbeszerzes";
       </div>
     </section>
 
+    <!-- Szállítási Költség Kalkulátor -->
+    <section class="py-12 lg:py-16 bg-white" id="calculator">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 font-heading mb-4">
+                    🚚 Szállítási Költség Kalkulátor
+                </h2>
+                <p class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Számítsa ki térkő szállításának várható költségét néhány egyszerű lépésben
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl shadow-xl p-6 lg:p-8 border border-gray-200">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Térkő mennyisége (m2)</label>
+                            <input type="number" id="deliveryArea" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" placeholder="pl. 50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Térkő típusa</label>
+                            <select id="deliveryPaverType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                                <option value="concrete">Beton térkő</option>
+                                <option value="natural">Természetes kő</option>
+                                <option value="granite">Gránit kockakő</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Szállítási cím</label>
+                        <select id="deliveryLocation" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                            <option value="budapest-inner">Budapest belső kerületei</option>
+                            <option value="budapest-outer">Budapest külső kerületei</option>
+                            <option value="agglomeration">Agglomeráció (30 km-ig)</option>
+                            <option value="pest-county">Pest megye</option>
+                            <option value="other-county">Egyéb megyék</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Szállítási típus</label>
+                        <select id="deliveryType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                            <option value="standard">Standard szállítás (1-3 nap)</option>
+                            <option value="express">Expressz szállítás (24 óra)</option>
+                            <option value="crane">Daruzásos szállítás</option>
+                        </select>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" onclick="calculateDeliveryCost()" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            🚛 Szállítási Költség Kiszámítása
+                        </button>
+                    </div>
+
+                    <div id="deliveryResult" class="hidden bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-6 text-center shadow-lg">
+                        <h3 class="text-xl lg:text-2xl font-semibold text-green-800 mb-3">🎯 Becsült szállítási költség</h3>
+                        <div id="deliveryCostRange" class="text-2xl lg:text-3xl font-bold text-green-600 mb-4"></div>
+                        <p class="text-green-700 text-sm lg:text-base mb-4">Ez egy előzetes becslés. Pontos árajánlatért kérjen ingyenes konzultációt.</p>
+                        <button onclick="requestDeliveryQuoteWithData()" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            📋 Ajánlatkérés Ezekkel az Adatokkal
+                        </button>
+                        <p class="text-green-700 text-sm mt-3">Adataival előre kitöltött ajánlatkérő űrlap</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Szolg�ltat�sok �ttekint�se -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
@@ -651,6 +720,191 @@ const canonicalURL = "https://terkovezesbudapest.hu/szallitas-anyagbeszerzes";
   </main>
 
   <Footer />
+
+  <script is:inline>
+    // Store delivery calculator data globally
+    let deliveryCalculatorData = {};
+
+    function calculateDeliveryCost() {
+        console.log('Calculate delivery cost function called');
+
+        try {
+            const areaInput = document.getElementById('deliveryArea');
+            const paverTypeSelect = document.getElementById('deliveryPaverType');
+            const locationSelect = document.getElementById('deliveryLocation');
+            const deliveryTypeSelect = document.getElementById('deliveryType');
+
+            if (!areaInput || !paverTypeSelect || !locationSelect || !deliveryTypeSelect) {
+                console.error('One or more form elements not found');
+                alert('Hiba történt a form elemek betöltésében!');
+                return;
+            }
+
+        const area = parseFloat(areaInput.value);
+        const paverType = paverTypeSelect.value;
+        const location = locationSelect.value;
+        const deliveryType = deliveryTypeSelect.value;
+
+        console.log('Values:', { area, paverType, location, deliveryType });
+
+        if (!area || area <= 0 || isNaN(area)) {
+            alert('Kérjük adja meg a térkő mennyiségét (pozitív szám)!');
+            return;
+        }
+
+        // Calculate weight based on paver type and area
+        let weightPerM2;
+        let paverTypeName;
+        switch (paverType) {
+            case 'concrete':
+                weightPerM2 = 120; // kg/m2
+                paverTypeName = 'Beton térkő';
+                break;
+            case 'natural':
+                weightPerM2 = 150; // kg/m2
+                paverTypeName = 'Természetes kő';
+                break;
+            case 'granite':
+                weightPerM2 = 180; // kg/m2
+                paverTypeName = 'Gránit kockakő';
+                break;
+            default:
+                weightPerM2 = 120;
+                paverTypeName = 'Beton térkő';
+        }
+
+        const totalWeight = area * weightPerM2; // kg
+        const totalWeightTons = totalWeight / 1000; // tons
+
+        // Base delivery cost based on location
+        let baseCost;
+        let locationName;
+        switch (location) {
+            case 'budapest-inner':
+                baseCost = 15000;
+                locationName = 'Budapest belső kerületei';
+                break;
+            case 'budapest-outer':
+                baseCost = 20000;
+                locationName = 'Budapest külső kerületei';
+                break;
+            case 'agglomeration':
+                baseCost = 25000;
+                locationName = 'Agglomeráció (30 km-ig)';
+                break;
+            case 'pest-county':
+                baseCost = 35000;
+                locationName = 'Pest megye';
+                break;
+            case 'other-county':
+                baseCost = 50000;
+                locationName = 'Egyéb megyék';
+                break;
+            default:
+                baseCost = 15000;
+                locationName = 'Budapest belső kerületei';
+        }
+
+        // Delivery type multiplier
+        let multiplier = 1;
+        let deliveryTypeName;
+        switch (deliveryType) {
+            case 'standard':
+                multiplier = 1.0;
+                deliveryTypeName = 'Standard szállítás';
+                break;
+            case 'express':
+                multiplier = 1.75;
+                deliveryTypeName = 'Expressz szállítás';
+                break;
+            case 'crane':
+                multiplier = 1.5;
+                deliveryTypeName = 'Daruzásos szállítás';
+                break;
+            default:
+                multiplier = 1.0;
+                deliveryTypeName = 'Standard szállítás';
+        }
+
+        let finalCost = baseCost * multiplier;
+
+        // Free delivery for orders over 5 tons (standard delivery only)
+        if (totalWeightTons >= 5 && deliveryType === 'standard') {
+            finalCost = 0;
+        }
+
+        // Store calculator data for quote request
+        deliveryCalculatorData = {
+            area: area,
+            paverType: paverType,
+            paverTypeName: paverTypeName,
+            location: location,
+            locationName: locationName,
+            deliveryType: deliveryType,
+            deliveryTypeName: deliveryTypeName,
+            totalWeight: totalWeight,
+            totalWeightTons: totalWeightTons,
+            estimatedCost: finalCost === 0 ? 'INGYENES' : `${new Intl.NumberFormat('hu-HU').format(finalCost)} Ft`,
+            calculationType: 'Szállítási költség kalkulátor'
+        };
+
+        console.log('Calculated delivery cost:', deliveryCalculatorData);
+
+        const costRangeElement = document.getElementById('deliveryCostRange');
+        const resultElement = document.getElementById('deliveryResult');
+
+        if (!costRangeElement || !resultElement) {
+            console.error('Result elements not found');
+            alert('Hiba történt az eredmény megjelenítésében!');
+            return;
+        }
+
+        if (finalCost === 0) {
+            costRangeElement.innerHTML = '<span class="text-green-600">INGYENES</span><br><small>5 tonna felett ingyenes a szállítás!</small>';
+        } else {
+            costRangeElement.textContent = new Intl.NumberFormat('hu-HU').format(finalCost) + ' Ft';
+        }
+
+        resultElement.classList.remove('hidden');
+
+        console.log('Delivery result displayed');
+
+        // Scroll to result
+        setTimeout(() => {
+            resultElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+
+        } catch (error) {
+            console.error('Error in calculateDeliveryCost:', error);
+            alert('Hiba történt a számítás során. Kérjük próbálja újra, vagy vegye fel velünk a kapcsolatot.');
+        }
+    }
+
+    function requestDeliveryQuoteWithData() {
+        console.log('Delivery quote request with data:', deliveryCalculatorData);
+
+        try {
+            if (!deliveryCalculatorData.area) {
+                alert('Kérjük először számítsa ki a szállítási költségeket!');
+                return;
+            }
+
+            // Store data in sessionStorage for contact form
+            sessionStorage.setItem('calculatorData', JSON.stringify(deliveryCalculatorData));
+
+            // Navigate to contact page with parameters
+            const baseUrl = window.location.origin;
+            const contactUrl = new URL('/kapcsolat', baseUrl);
+            contactUrl.searchParams.set('from', 'calculator');
+            contactUrl.searchParams.set('type', 'szallitas');
+
+            window.location.href = contactUrl.toString();
+        } catch (error) {
+            console.error('Error in requestDeliveryQuoteWithData:', error);
+            alert('Hiba történt az ajánlatkérés során. Kérjük próbálja újra.');
+        }
+    }
+  </script>
 </Layout>
 
 <style>

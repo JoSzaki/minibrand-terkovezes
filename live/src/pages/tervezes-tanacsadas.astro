@@ -129,7 +129,7 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             "name": "Milyen engedélyek szükségesek térkövezéshez?",
             "acceptedAnswer": {
               "@type": "Answer", 
-              "text": "Általában építési engedély nem szükséges, de nagyobb területeknél vagy közterülethez kapcsolódó munkáknál építési hatósági engedély lehet szükséges."
+              "text": "Saját telken belüli térkövezéshez általában nincs szükség építési engedélyre. Nagyobb területeknél (200 m² felett) vagy közterülethez kapcsolódó munkáknál építési hatósági engedély lehet szükséges."
             }
           },
           {
@@ -192,6 +192,83 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
       </div>
     </section>
 
+    <!-- Tervezési Költség Kalkulátor -->
+    <section class="py-12 lg:py-16 bg-white" id="calculator">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 font-heading mb-4">
+                    📐 Tervezési Költség Kalkulátor
+                </h2>
+                <p class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Számítsa ki térkövezés tervezésének várható költségét a projekt összetettségének megfelelően
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl shadow-xl p-6 lg:p-8 border border-slate-200">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Projekt mérete (m2)</label>
+                            <input type="number" id="planningArea" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500" placeholder="pl. 80">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Projekt típusa</label>
+                            <select id="planningProjectType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
+                                <option value="simple">Egyszerű (kocsibeálló, terasz)</option>
+                                <option value="medium">Közepes (kerti utak, többszintű)</option>
+                                <option value="complex">Összetett (design mintázatok)</option>
+                                <option value="premium">Prémium (természetes kő, egyedi)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Tervezési szolgáltatások</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" id="planning3D" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded">
+                                <span class="ml-2 text-sm text-gray-700">3D vizualizáció (+15.000-30.000 Ft)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="planningPermits" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded">
+                                <span class="ml-2 text-sm text-gray-700">Engedélyeztetési segítség (+20.000-35.000 Ft)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="planningCoordination" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded">
+                                <span class="ml-2 text-sm text-gray-700">Kivitelezés koordináció (+15.000 Ft)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Projekt sürgőssége</label>
+                        <select id="planningUrgency" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500">
+                            <option value="normal">Normál (2-3 hét)</option>
+                            <option value="urgent">Sürgős (1 hét, +25%)</option>
+                            <option value="express">Expressz (3-5 nap, +50%)</option>
+                        </select>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" onclick="calculatePlanningCost()" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            📊 Tervezési Költség Kiszámítása
+                        </button>
+                    </div>
+
+                    <div id="planningResult" class="hidden bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 rounded-lg p-6 text-center shadow-lg">
+                        <h3 class="text-xl lg:text-2xl font-semibold text-orange-800 mb-3">🎯 Becsült tervezési költség</h3>
+                        <div id="planningCostRange" class="text-2xl lg:text-3xl font-bold text-orange-600 mb-4"></div>
+                        <p class="text-orange-700 text-sm lg:text-base mb-4">A tervezési díj beszámításra kerül a kivitelezési költségbe!</p>
+                        <button onclick="requestPlanningQuoteWithData()" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            📋 Ajánlatkérés Ezekkel az Adatokkal
+                        </button>
+                        <p class="text-orange-700 text-sm mt-3">Adataival előre kitöltött ajánlatkérő űrlap</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Szolgáltatások áttekintése -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
@@ -209,10 +286,10 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <div class="text-4xl mb-4">📋</div>
             <h3 class="text-xl font-bold mb-4 text-gray-900">Helyszíni Felmérés</h3>
             <ul class="text-gray-600 space-y-2">
-              <li>✓Pontos területmérés</li>
-              <li>✓Talajvizsgálat</li>
-              <li>✓Lejtésviszonyok felmérése</li>
-              <li>✓Környezeti tényezők</li>
+              <li>✓ Pontos területmérés</li>
+              <li>✓ Talajvizsgálat</li>
+              <li>✓ Lejtésviszonyok felmérése</li>
+              <li>✓ Környezeti tényezők</li>
             </ul>
           </div>
           
@@ -220,10 +297,10 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <div class="text-4xl mb-4">📋</div>
             <h3 class="text-xl font-bold mb-4 text-gray-900">3D Tervezés</h3>
             <ul class="text-gray-600 space-y-2">
-              <li>✓Fotorealisztikus vizualizáció</li>
-              <li>✓Különböző variációk</li>
-              <li>✓Anyag és színkombinációk</li>
-              <li>✓Műszaki rajzok</li>
+              <li>✓ Fotorealisztikus vizualizáció</li>
+              <li>✓ Különböző variációk</li>
+              <li>✓ Anyag és színkombinációk</li>
+              <li>✓ Műszaki rajzok</li>
             </ul>
           </div>
           
@@ -231,10 +308,10 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <div class="text-4xl mb-4">📋</div>
             <h3 class="text-xl font-bold mb-4 text-gray-900">Szakértői Tanácsadás</h3>
             <ul class="text-gray-600 space-y-2">
-              <li>✓Anyagválasztási segítség</li>
-              <li>✓Költségoptimalizálás</li>
-              <li>✓Engedélyeztetési információk</li>
-              <li>✓Kivitelezési ütemezés</li>
+              <li>✓ Anyagválasztási segítség</li>
+              <li>✓ Költségoptimalizálás</li>
+              <li>✓ Engedélyeztetési információk</li>
+              <li>✓ Kivitelezési ütemezés</li>
             </ul>
           </div>
         </div>
@@ -359,10 +436,10 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <div class="bg-green-50 border border-green-200 rounded-lg p-6">
               <h3 class="text-xl font-bold mb-4 text-green-800">Engedély NINCS szükséges:</h3>
               <ul class="space-y-2 text-green-700">
-                <li>✓Saját telken belüli kocsibeálló</li>
-                <li>✓Kerti utak és teraszok</li>
-                <li>✓Udvari térkövezés</li>
-                <li>✓Kisebb felületek (50 m2 alatt)</li>
+                <li>✓ Saját telken belüli kocsibeálló</li>
+                <li>✓ Kerti utak és teraszok</li>
+                <li>✓ Udvari térkövezés</li>
+                <li>✓ Kisebb felületek (50 m² alatt)</li>
               </ul>
             </div>
             
@@ -371,7 +448,7 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
               <ul class="space-y-2 text-yellow-700">
                 <li>⚠️ Közterülethez kapcsolódó munkák</li>
                 <li>⚠️ Járda csatlakozások</li>
-                <li>⚠️ Nagyobb felületek (200 m2 felett)</li>
+                <li>⚠️ Nagyobb felületek (200 m² felett)</li>
                 <li>⚠️ Vízelvezetés módosítása</li>
               </ul>
             </div>
@@ -400,10 +477,10 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <h3 class="text-xl font-bold mb-4 text-orange-400">Alapcsomag</h3>
             <div class="text-3xl font-bold mb-4">25.000 Ft</div>
             <ul class="space-y-2 mb-6">
-              <li>✓Helyszíni felmérés</li>
-              <li>✓Alaprajzi terv</li>
-              <li>✓Anyagjavaslat</li>
-              <li>✓Alapvető költségbecslés</li>
+              <li>✓ Helyszíni felmérés</li>
+              <li>✓ Alaprajzi terv</li>
+              <li>✓ Anyagjavaslat</li>
+              <li>✓ Alapvető költségbecslés</li>
             </ul>
             <p class="text-sm text-gray-400">Egyszerű projektekhez</p>
           </div>
@@ -413,11 +490,11 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <h3 class="text-xl font-bold mb-4">Prémium csomag</h3>
             <div class="text-3xl font-bold mb-4">45.000 Ft</div>
             <ul class="space-y-2 mb-6">
-              <li>✓Minden az alapcsomagból</li>
-              <li>✓3D vizualizáció</li>
-              <li>✓3 különböző variáció</li>
-              <li>✓Részletes költségkalkuláció</li>
-              <li>✓Anyagminták biztosítása</li>
+              <li>✓ Minden az alapcsomagból</li>
+              <li>✓ 3D vizualizáció</li>
+              <li>✓ 3 különböző variáció</li>
+              <li>✓ Részletes költségkalkuláció</li>
+              <li>✓ Anyagminták biztosítása</li>
             </ul>
             <p class="text-sm">Átlagos projektekhez</p>
           </div>
@@ -426,11 +503,11 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
             <h3 class="text-xl font-bold mb-4 text-orange-400">Teljes csomag</h3>
             <div class="text-3xl font-bold mb-4">75.000 Ft</div>
             <ul class="space-y-2 mb-6">
-              <li>✓Minden a prémium csomagból</li>
-              <li>✓Műszaki dokumentáció</li>
-              <li>✓Engedélyeztetési segítség</li>
-              <li>✓Kivitelezés koordináció</li>
-              <li>✓1 év garancia a tervre</li>
+              <li>✓ Minden a prémium csomagból</li>
+              <li>✓ Műszaki dokumentáció</li>
+              <li>✓ Engedélyeztetési segítség</li>
+              <li>✓ Kivitelezés koordináció</li>
+              <li>✓ 1 év garancia a tervre</li>
             </ul>
             <p class="text-sm text-gray-400">Komplex projektekhez</p>
           </div>
@@ -480,8 +557,8 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
               Milyen engedélyek szükségesek térkövezéshez?
             </summary>
             <p class="mt-4 text-gray-600">
-              Saját telken belüli térkövezéshez általában nincs szükség engedélyre. Közterülethez kapcsolódó munkáknál,
-              járda csatlakozásoknál vagy nagyobb felületeknél (200 m2 felett) építési hatósági engedély lehet szükséges.
+              Saját telken belüli térkövezéshez általában nincs szükség építési engedélyre. Közterülethez kapcsolódó munkáknál,
+              járda csatlakozásoknál vagy nagyobb felületeknél (200 m² felett) építési hatósági engedély lehet szükséges.
             </p>
           </details>
           
@@ -536,6 +613,186 @@ const canonicalURL = "https://terkovezesbudapest.hu/tervezes-tanacsadas";
   </main>
 
   <Footer />
+
+  <script is:inline>
+    // Store planning calculator data globally
+    let planningCalculatorData = {};
+
+    function calculatePlanningCost() {
+        console.log('Calculate planning cost function called');
+
+        try {
+            const areaInput = document.getElementById('planningArea');
+            const projectTypeSelect = document.getElementById('planningProjectType');
+            const urgencySelect = document.getElementById('planningUrgency');
+            const planning3DCheckbox = document.getElementById('planning3D');
+            const planningPermitsCheckbox = document.getElementById('planningPermits');
+            const planningCoordinationCheckbox = document.getElementById('planningCoordination');
+
+            if (!areaInput || !projectTypeSelect || !urgencySelect || !planning3DCheckbox || !planningPermitsCheckbox || !planningCoordinationCheckbox) {
+                console.error('One or more form elements not found');
+                alert('Hiba történt a form elemek betöltésében!');
+                return;
+            }
+
+        const area = parseFloat(areaInput.value);
+        const projectType = projectTypeSelect.value;
+        const urgency = urgencySelect.value;
+        const has3D = planning3DCheckbox.checked;
+        const hasPermits = planningPermitsCheckbox.checked;
+        const hasCoordination = planningCoordinationCheckbox.checked;
+
+        console.log('Values:', { area, projectType, urgency, has3D, hasPermits, hasCoordination });
+
+        if (!area || area <= 0 || isNaN(area)) {
+            alert('Kérjük adja meg a projekt méretét (pozitív szám)!');
+            return;
+        }
+
+        // Base price based on project type
+        let basePrice;
+        let projectTypeName;
+        switch (projectType) {
+            case 'simple':
+                basePrice = 25000;
+                projectTypeName = 'Egyszerű projekt';
+                break;
+            case 'medium':
+                basePrice = 45000;
+                projectTypeName = 'Közepes projekt';
+                break;
+            case 'complex':
+                basePrice = 65000;
+                projectTypeName = 'Összetett projekt';
+                break;
+            case 'premium':
+                basePrice = 85000;
+                projectTypeName = 'Prémium projekt';
+                break;
+            default:
+                basePrice = 25000;
+                projectTypeName = 'Egyszerű projekt';
+        }
+
+        // Area-based adjustments (for very large or small projects)
+        if (area > 200) {
+            basePrice += 20000; // Large project supplement
+        } else if (area < 30) {
+            basePrice -= 5000; // Small project discount
+        }
+
+        let totalCost = basePrice;
+
+        // Add service costs
+        let additionalServices = [];
+        if (has3D) {
+            const visualizationCost = projectType === 'premium' ? 30000 : (projectType === 'complex' ? 25000 : 20000);
+            totalCost += visualizationCost;
+            additionalServices.push(`3D vizualizáció (+${new Intl.NumberFormat('hu-HU').format(visualizationCost)} Ft)`);
+        }
+
+        if (hasPermits) {
+            const permitsCost = area > 100 ? 35000 : 25000;
+            totalCost += permitsCost;
+            additionalServices.push(`Engedélyeztetési segítség (+${new Intl.NumberFormat('hu-HU').format(permitsCost)} Ft)`);
+        }
+
+        if (hasCoordination) {
+            totalCost += 15000;
+            additionalServices.push('Kivitelezés koordináció (+15.000 Ft)');
+        }
+
+        // Urgency multiplier
+        let urgencyMultiplier = 1;
+        let urgencyName;
+        switch (urgency) {
+            case 'normal':
+                urgencyMultiplier = 1.0;
+                urgencyName = 'Normál időkeret';
+                break;
+            case 'urgent':
+                urgencyMultiplier = 1.25;
+                urgencyName = 'Sürgős (+25%)';
+                break;
+            case 'express':
+                urgencyMultiplier = 1.5;
+                urgencyName = 'Expressz (+50%)';
+                break;
+            default:
+                urgencyMultiplier = 1.0;
+                urgencyName = 'Normál időkeret';
+        }
+
+        totalCost = Math.round(totalCost * urgencyMultiplier);
+
+        // Store calculator data for quote request
+        planningCalculatorData = {
+            area: area,
+            projectType: projectType,
+            projectTypeName: projectTypeName,
+            urgency: urgency,
+            urgencyName: urgencyName,
+            has3D: has3D,
+            hasPermits: hasPermits,
+            hasCoordination: hasCoordination,
+            additionalServices: additionalServices,
+            estimatedCost: `${new Intl.NumberFormat('hu-HU').format(totalCost)} Ft`,
+            calculationType: 'Tervezési költség kalkulátor'
+        };
+
+        console.log('Calculated planning cost:', planningCalculatorData);
+
+        const costRangeElement = document.getElementById('planningCostRange');
+        const resultElement = document.getElementById('planningResult');
+
+        if (!costRangeElement || !resultElement) {
+            console.error('Result elements not found');
+            alert('Hiba történt az eredmény megjelenítésében!');
+            return;
+        }
+
+        costRangeElement.textContent = new Intl.NumberFormat('hu-HU').format(totalCost) + ' Ft';
+
+        resultElement.classList.remove('hidden');
+
+        console.log('Planning result displayed');
+
+        // Scroll to result
+        setTimeout(() => {
+            resultElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+
+        } catch (error) {
+            console.error('Error in calculatePlanningCost:', error);
+            alert('Hiba történt a számítás során. Kérjük próbálja újra, vagy vegye fel velünk a kapcsolatot.');
+        }
+    }
+
+    function requestPlanningQuoteWithData() {
+        console.log('Planning quote request with data:', planningCalculatorData);
+
+        try {
+            if (!planningCalculatorData.area) {
+                alert('Kérjük először számítsa ki a tervezési költségeket!');
+                return;
+            }
+
+            // Store data in sessionStorage for contact form
+            sessionStorage.setItem('calculatorData', JSON.stringify(planningCalculatorData));
+
+            // Navigate to contact page with parameters
+            const baseUrl = window.location.origin;
+            const contactUrl = new URL('/kapcsolat', baseUrl);
+            contactUrl.searchParams.set('from', 'calculator');
+            contactUrl.searchParams.set('type', 'tervezes');
+
+            window.location.href = contactUrl.toString();
+        } catch (error) {
+            console.error('Error in requestPlanningQuoteWithData:', error);
+            alert('Hiba történt az ajánlatkérés során. Kérjük próbálja újra.');
+        }
+    }
+  </script>
 </Layout>
 
 <style>

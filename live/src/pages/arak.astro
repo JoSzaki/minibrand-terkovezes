@@ -44,18 +44,18 @@ import Footer from '../components/Footer.astro';
 
 
     <!-- Cost Calculator Section -->
-    <section class="py-16 lg:py-24 bg-concrete-50">
+    <section class="py-12 lg:py-16 bg-concrete-50" id="calculator">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
-                    Költségkalkulátor
+            <div class="text-center mb-12">
+                <h2 class="text-2xl lg:text-4xl font-bold text-concrete-800 font-heading mb-4">
+                    💰 Költségkalkulátor
                 </h2>
-                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                <p class="text-lg lg:text-xl text-concrete-600 max-w-3xl mx-auto">
                     Becsülje meg projektje várható költségét néhány egyszerű lépésben
                 </p>
             </div>
-            
-            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">
+
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-xl p-6 lg:p-8 border border-concrete-200">
                 <form class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
@@ -83,19 +83,19 @@ import Footer from '../components/Footer.astro';
                     </div>
                     
                     <div class="text-center">
-                        <button type="button" onclick="calculateCost()" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
-                            Költség Kiszámítása
+                        <button type="button" onclick="calculateCost()" class="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 transform hover:scale-105 shadow-lg">
+                            💳 Költség Kiszámítása
                         </button>
                     </div>
                     
-                    <div id="result" class="hidden bg-primary-50 border border-primary-200 rounded-lg p-6 text-center">
-                        <h3 class="text-xl font-semibold text-primary-800 mb-2">Becsült költség</h3>
-                        <div id="costRange" class="text-2xl font-bold text-primary-600 mb-4"></div>
-                        <p class="text-primary-700 text-sm mb-4">Ez egy előzetes becslés. Pontos árajánlatért kérjen ingyenes helyszíni felmérést.</p>
-                        <button onclick="requestQuoteWithData()" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">
-                            Ajánlatkérés Ezekkel az Adatokkal
+                    <div id="result" class="hidden bg-gradient-to-br from-primary-50 to-primary-100 border border-primary-200 rounded-lg p-6 text-center shadow-lg">
+                        <h3 class="text-xl lg:text-2xl font-semibold text-primary-800 mb-3">🎯 Becsült költség</h3>
+                        <div id="costRange" class="text-2xl lg:text-3xl font-bold text-primary-600 mb-4"></div>
+                        <p class="text-primary-700 text-sm lg:text-base mb-4">Ez egy előzetes becslés. Pontos árajánlatért kérjen ingyenes helyszíni felmérést.</p>
+                        <button onclick="requestQuoteWithData()" class="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            📋 Ajánlatkérés Ezekkel az Adatokkal
                         </button>
-                        <p class="text-primary-700 text-sm mt-2">Adataival előre kitöltött ajánlatkérő űrlap</p>
+                        <p class="text-primary-700 text-sm mt-3">Adataival előre kitöltött ajánlatkérő űrlap</p>
                     </div>
                 </form>
             </div>
@@ -1189,94 +1189,150 @@ import Footer from '../components/Footer.astro';
     <Footer />
     
     <script is:inline>
-        function calculateCost() {         // Enhanced function with better error handling {
+        // Store calculator data globally for form passing
+        let calculatorData = {};
+
+        function calculateCost() {
             console.log('Calculate cost function called');
-            
-            const areaInput = document.getElementById('area');
-            const paverTypeSelect = document.getElementById('paverType');
-            const projectTypeSelect = document.getElementById('projectType');
-            
-            console.log('Area input:', areaInput);
-            console.log('Area value:', areaInput ? areaInput.value : 'not found');
-            
-            if (!areaInput || !paverTypeSelect || !projectTypeSelect) {
-                console.error('One or more form elements not found');
-                alert('Hiba történt a form elemek betöltésében!');
-                return;
-            }
-            
+
+            try {
+                const areaInput = document.getElementById('area');
+                const paverTypeSelect = document.getElementById('paverType');
+                const projectTypeSelect = document.getElementById('projectType');
+
+                console.log('Area input:', areaInput);
+                console.log('Area value:', areaInput ? areaInput.value : 'not found');
+
+                if (!areaInput || !paverTypeSelect || !projectTypeSelect) {
+                    console.error('One or more form elements not found');
+                    alert('Hiba történt a form elemek betöltésében!');
+                    return;
+                }
+
             const area = parseFloat(areaInput.value);
             const paverType = paverTypeSelect.value;
             const projectType = projectTypeSelect.value;
-            
+
             console.log('Values:', { area, paverType, projectType });
-            
+
             if (!area || area <= 0 || isNaN(area)) {
-                alert('Kárják adja meg a terálet méretét (pozitív szám)!');
+                alert('Kérjük adja meg a terület méretét (pozitív szám)!');
                 return;
             }
-            
+
             let basePrice;
+            let paverTypeName;
             switch (paverType) {
                 case 'basic':
                     basePrice = 12500; // Average of 10000-15000
+                    paverTypeName = 'Standard beton térkő';
                     break;
                 case 'premium':
                     basePrice = 19000; // Average of 16000-22000
+                    paverTypeName = 'Antik/színes térkő';
                     break;
                 case 'exclusive':
                     basePrice = 32500; // Average of 25000-40000
+                    paverTypeName = 'Természetes kő';
                     break;
                 default:
                     basePrice = 12500;
+                    paverTypeName = 'Standard beton térkő';
             }
-            
+
             // Project type multiplier
             let multiplier = 1;
+            let projectTypeName;
             switch (projectType) {
                 case 'driveway':
                     multiplier = 1.1; // Higher load bearing requirements
+                    projectTypeName = 'Kocsibeálló';
                     break;
                 case 'terrace':
                     multiplier = 1.0;
+                    projectTypeName = 'Terasz';
                     break;
                 case 'walkway':
                     multiplier = 0.9; // Simpler installation
+                    projectTypeName = 'Kerti út/járda';
                     break;
                 case 'patio':
                     multiplier = 1.05;
+                    projectTypeName = 'Udvar';
                     break;
                 default:
                     multiplier = 1.0;
+                    projectTypeName = 'Terasz';
             }
-            
+
             const totalCost = Math.round(area * basePrice * multiplier);
             const minCost = Math.round(totalCost * 0.9);
             const maxCost = Math.round(totalCost * 1.1);
-            
+
+            // Store calculator data for quote request
+            calculatorData = {
+                area: area,
+                paverType: paverType,
+                paverTypeName: paverTypeName,
+                projectType: projectType,
+                projectTypeName: projectTypeName,
+                estimatedCost: `${new Intl.NumberFormat('hu-HU').format(minCost)} - ${new Intl.NumberFormat('hu-HU').format(maxCost)} Ft`,
+                calculationType: 'Árak oldal költségkalkulátor'
+            };
+
             console.log('Calculated costs:', { totalCost, minCost, maxCost });
-            
+
             const costRangeElement = document.getElementById('costRange');
             const resultElement = document.getElementById('result');
-            
+
             if (!costRangeElement || !resultElement) {
                 console.error('Result elements not found');
                 alert('Hiba történt az eredmény megjelenítésében!');
                 return;
             }
-            
-            costRangeElement.textContent = 
-                new Intl.NumberFormat('hu-HU').format(minCost) + ' - ' + 
+
+            costRangeElement.textContent =
+                new Intl.NumberFormat('hu-HU').format(minCost) + ' - ' +
                 new Intl.NumberFormat('hu-HU').format(maxCost) + ' Ft';
-            
+
             resultElement.classList.remove('hidden');
-            
+
             console.log('Result displayed');
-            
+
             // Scroll to result
             setTimeout(() => {
                 resultElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 100);
+
+            } catch (error) {
+                console.error('Error in calculateCost:', error);
+                alert('Hiba történt a számítás során. Kérjük próbálja újra, vagy vegye fel velünk a kapcsolatot.');
+            }
+        }
+
+        function requestQuoteWithData() {
+            console.log('Quote request with data:', calculatorData);
+
+            try {
+                if (!calculatorData.area) {
+                    alert('Kérjük először számítsa ki a költségeket!');
+                    return;
+                }
+
+                // Store data in sessionStorage for contact form
+                sessionStorage.setItem('calculatorData', JSON.stringify(calculatorData));
+
+                // Navigate to contact page with parameters
+                const baseUrl = window.location.origin;
+                const contactUrl = new URL('/kapcsolat', baseUrl);
+                contactUrl.searchParams.set('from', 'calculator');
+                contactUrl.searchParams.set('type', 'arak');
+
+                window.location.href = contactUrl.toString();
+            } catch (error) {
+                console.error('Error in requestQuoteWithData:', error);
+                alert('Hiba történt az ajánlatkérés során. Kérjük próbálja újra.');
+            }
         }
     </script>
 </Layout>
