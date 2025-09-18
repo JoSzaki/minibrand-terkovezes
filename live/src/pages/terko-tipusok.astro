@@ -3,9 +3,9 @@ import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { MaterialCarousel } from '../components/ui/material-carousel.tsx';
-import PatternSelector from '../components/ui/pattern-selector.tsx';
-import ColorSelector from '../components/ui/color-selector.tsx';
-import UsageSelector from '../components/ui/usage-selector.tsx';
+import { PatternCarousel } from '../components/ui/pattern-carousel.tsx';
+import { ColorCarousel } from '../components/ui/color-carousel.tsx';
+import { UsageCarousel } from '../components/ui/usage-carousel.tsx';
 ---
 
 <Layout title="Térkő Típusok Budapest - Útmutató a Megfelelő Választáshoz 2025" description="Komplett térkő típusok útmutató: beton térkövek, természetes kövek, speciális burkolatok. Szakértői tanácsok a választáshoz és használathoz. Ingyenes konzultáció!">
@@ -113,13 +113,13 @@ import UsageSelector from '../components/ui/usage-selector.tsx';
     <MaterialCarousel client:load />
 
     <!-- Mintázat és forma választás -->
-    <PatternSelector client:load />
+    <PatternCarousel client:load />
 
     <!-- Szín választás -->
-    <ColorSelector client:load />
+    <ColorCarousel client:load />
 
     <!-- Használati cél szerinti választás -->
-    <UsageSelector client:load />
+    <UsageCarousel client:load />
 
 
 
