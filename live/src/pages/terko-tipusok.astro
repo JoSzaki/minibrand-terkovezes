@@ -1166,6 +1166,184 @@ import UsageSelector from '../components/ui/usage-selector.tsx';
     border-color: #2563eb !important;
     background-color: #eff6ff;
   }
+
+  /* Mobile view fixes for sliders and modals */
+  @media (max-width: 768px) {
+    /* Fix horizontal scrolling for all sliders */
+    .overflow-x-auto {
+      scroll-snap-type: x mandatory !important;
+      -webkit-overflow-scrolling: touch !important;
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+    }
+
+    .overflow-x-auto > div {
+      scroll-snap-align: start !important;
+    }
+
+    /* Ensure cards are properly sized on mobile */
+    .overflow-x-auto .w-72 {
+      min-width: 280px !important;
+      max-width: 90vw !important;
+    }
+
+    /* Fix modal positioning on mobile */
+    .fixed.inset-0 {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      z-index: 9999 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    /* Fix modal content on mobile */
+    .fixed.inset-0 > div:last-child {
+      position: relative !important;
+      max-width: 95vw !important;
+      max-height: 90vh !important;
+      overflow-y: auto !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+
+    /* Ensure modal is scrollable */
+    .fixed.inset-0 .overflow-y-auto {
+      max-height: 85vh !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+
+    /* Fix modal backdrop */
+    .fixed.inset-0.bg-black {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    /* Ensure images in cards are responsive */
+    .overflow-x-auto img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 200px !important;
+      object-fit: cover !important;
+    }
+
+    /* Fix card content layout */
+    .overflow-x-auto .flex.flex-col {
+      height: 100% !important;
+    }
+
+    /* Fix card spacing in sliders */
+    .overflow-x-auto .gap-4 {
+      gap: 1rem !important;
+    }
+
+    /* Ensure proper padding for mobile sliders */
+    .overflow-x-auto {
+      padding: 0 1rem !important;
+      margin: 0 -1rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+    /* Fix button positioning in cards */
+    .overflow-x-auto button {
+      width: 100% !important;
+      margin-top: auto !important;
+    }
+
+    /* Add visible scrollbar for better UX */
+    .overflow-x-auto::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Ensure cards have minimum height */
+    .overflow-x-auto .bg-white {
+      min-height: 350px !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    /* Fix text overflow in cards */
+    .overflow-x-auto .text-sm,
+    .overflow-x-auto .text-xs {
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    /* Improve touch target size for buttons */
+    .overflow-x-auto button {
+      min-height: 44px !important;
+      padding: 12px 16px !important;
+    }
+
+    /* Fix modal close button position */
+    .fixed.inset-0 button:first-child {
+      position: absolute !important;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 10 !important;
+      background: white !important;
+      border-radius: 50% !important;
+      width: 40px !important;
+      height: 40px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    }
+  }
+
+  /* Additional fixes for very small screens */
+  @media (max-width: 375px) {
+    .overflow-x-auto .w-72 {
+      min-width: 260px !important;
+    }
+
+    .fixed.inset-0 > div:last-child {
+      max-width: 98vw !important;
+      max-height: 95vh !important;
+    }
+
+    .overflow-x-auto img {
+      max-height: 150px !important;
+    }
+
+    .overflow-x-auto .bg-white {
+      min-height: 300px !important;
+    }
+  }
+
+  /* Ensure smooth scrolling */
+  .overflow-x-auto {
+    scroll-behavior: smooth !important;
+  }
+
+  /* Fix for iOS Safari */
+  @supports (-webkit-touch-callout: none) {
+    .overflow-x-auto {
+      -webkit-overflow-scrolling: touch !important;
+    }
+
+    .fixed.inset-0 .overflow-y-auto {
+      -webkit-overflow-scrolling: touch !important;
+    }
+  }
 </style>
 
 <script is:inline>
