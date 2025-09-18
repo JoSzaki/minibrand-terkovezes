@@ -2,7 +2,7 @@
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import MaterialSelector from '../components/ui/material-selector.tsx';
+import { MaterialCarousel } from '../components/ui/material-carousel.tsx';
 import PatternSelector from '../components/ui/pattern-selector.tsx';
 import ColorSelector from '../components/ui/color-selector.tsx';
 import UsageSelector from '../components/ui/usage-selector.tsx';
@@ -110,7 +110,7 @@ import UsageSelector from '../components/ui/usage-selector.tsx';
     </section>
 
     <!-- Anyag szerinti választás -->
-    <MaterialSelector client:load />
+    <MaterialCarousel client:load />
 
     <!-- Mintázat és forma választás -->
     <PatternSelector client:load />
