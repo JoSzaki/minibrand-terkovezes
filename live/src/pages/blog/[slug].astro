@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import CTA from '../../components/CTA.astro';
 import { generateSchemasForPage } from '../../schema-config.js';
 import { blogPosts } from '../../data/blogPosts.js';
+import { getRelatedArticles } from '../../data/relatedArticles.js';
 
 // Generate static paths for all blog posts
 export async function getStaticPaths() {
@@ -16,6 +17,9 @@ export async function getStaticPaths() {
 
 const { title, description, date, category, author, readTime, excerpt, slug, content, images, faq, tables, howTo, infographics, calculator } = Astro.props;
 const metaDescription = description;
+
+// Get related articles for this blog post
+const relatedArticles = getRelatedArticles(slug, blogPosts);
 
 // Generate schemas for blog post with FAQ and HowTo data
 const schemaData = {
@@ -350,31 +354,24 @@ const blogSchemas = generateSchemasForPage('blog', schemaData);
     </article>
 
     <!-- Related Articles -->
-    <section class="py-16 bg-concrete-50">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-concrete-800 font-heading text-center mb-12">
-                Kapcsolódó cikkek
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Related article cards would go here -->
-                <div class="bg-white border border-concrete-200 rounded-xl p-6">
-                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Hogyan válasszunk térkövet</h3>
-                    <p class="text-concrete-600 mb-4">Budapest útmutató a megfelelő térkő kiválasztásához...</p>
-                    <a href="/blog/hogyan-valasszunk-terkovet" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
-                </div>
-                <div class="bg-white border border-concrete-200 rounded-xl p-6">
-                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Térkő árak Budapest 2024</h3>
-                    <p class="text-concrete-600 mb-4">Aktuális térkövezési árak és költségkalkuláció...</p>
-                    <a href="/blog/terko-arak-budapest-2024" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
-                </div>
-                <div class="bg-white border border-concrete-200 rounded-xl p-6">
-                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Térkő karbantartása és tisztítása</h3>
-                    <p class="text-concrete-600 mb-4">Hogyan tartsd karban és tisztítsd a térköveket...</p>
-                    <a href="/blog/terko-karbantartasa-tisztitasa" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
+    {relatedArticles && relatedArticles.length > 0 && (
+        <section class="py-16 bg-concrete-50">
+            <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-concrete-800 font-heading text-center mb-12">
+                    Kapcsolódó cikkek
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    {relatedArticles.map(article => (
+                        <div class="bg-white border border-concrete-200 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold text-concrete-800 mb-3">{article.title}</h3>
+                            <p class="text-concrete-600 mb-4">{article.excerpt}</p>
+                            <a href={`${import.meta.env.BASE_URL}blog/${article.slug}`} class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    )}
 
     <!-- Call to Action -->
     <CTA
