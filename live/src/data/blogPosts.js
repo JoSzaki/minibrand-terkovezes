@@ -1207,7 +1207,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     faq: [
       {
         question: "Melyik a leggazdaságosabb hosszú távon?",
-        answer: "20-30 éves távlatban a térkő a leggazdaságosabb választás, ha figyelembe vesszük a javíthatóságot, esztétikai értéket és az ingatlan értékét növelő hatést."
+        answer: "20-30 éves távlatban a térkő a leggazdaságosabb választás, ha figyelembe vesszük a javíthatóságot, esztétikai értéket és az ingatlan értékét növelő hatást."
       },
       {
         question: "Mi a helyzet a téli csúszósságal?",
@@ -2062,7 +2062,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Funkcionális elemek tervezése",
-          description: "Tervezzák be a vízelvezetést, világítást, növényzeti elemeket és egyáb funkcionális megoldásokat.",
+          description: "Tervezzük be a vízelvezetést, világítást, növényzeti elemeket és egyáb funkcionális megoldásokat.",
           tips: "A vízelvezetés tervezését bízzuk szakemberre - ez a legfontosabb műszaki elem!"
         },
         {
@@ -2080,7 +2080,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     faq: [
       {
         question: "Melyek a 2025-ös év legnépszerűbb térkő színei?",
-        answer: "A természetes árnyalatok dominálnak: meleg szürkék, bézs tónusok, homok színek. Népszerűek míg a sötét antracit és a klasszikus fekete-fehár kombináciák."
+        answer: "A természetes árnyalatok dominálnak: meleg szürkék, bézs tónusok, homok színek. Népszerűek és a sötét antracit és a klasszikus fekete-fehár kombináciák."
       },
       {
         question: "Érdemes-e nagyméretű térköveket választani?",
@@ -2284,7 +2284,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               },
               {
                 icon: "🏗️",
-                title: "Vegyes Textárák",
+                title: "Vegyes Textúrák",
                 description: "Sima és strukturált felületek kombináciája",
                 value: "Dinamikus megjelenés"
               },
@@ -2311,27 +2311,27 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           table: {
             headers: ["Színkombinációk", "Stílus", "Alkalmazési terület", "Karbantartés", "2025 népszerűség"],
             rows: [
-              ["Homokbézs + Szárke", "Modern skandináv", "Nagyobb teraszok", "Könnyű", "?????"],
+              ["Homokbézs + Szürke", "Modern skandináv", "Nagyobb teraszok", "Könnyű", "?????"],
               ["Terrakotta + Krám", "Mediterrán", "Déli fekvésű teraszok", "Közepes", "?????"],
               ["Antracit + Barna", "Indusztriális", "Urban lakésok", "Könnyű", "????"],
-              ["Natár kmix", "Természetes", "Kerti teraszok", "Nehezebb", "?????"],
+              ["Natúr mix", "Természetes", "Kerti teraszok", "Nehezebb", "?????"],
               ["Fehár + Világosszürke", "Minimalista", "Modern házak", "Könnyű", "???"],
-              ["Grafitszürke + Acál", "Kortárs", "Penthouse teraszok", "Könnyű", "????"]
+              ["Grafitszürke + Acél", "Kortárs", "Penthouse teraszok", "Könnyű", "????"]
             ]
           }
         },
         {
           title: "Mintázatok és Elrendezési Stílusok",
-          content: `<p>A 2025-ös évben forradalmi változésok törtánnek a terasz térkövezési mintázatokban. A hagyományos <strong>kocka- és táglalap mintázatok</strong> helyát átveszik az <strong>organikus, termŐszet-inspirálta</strong> elrendezések.</p>
+          content: `<p>A 2025-ös évben forradalmi változésok történnek a terasz térkövezési mintázatokban. A hagyományos <strong>kocka- és téglalap mintázatok</strong> helyát átveszik az <strong>organikus, természet-inspirálta</strong> elrendezések.</p>
           
-          <p>Kálőnésen népszerűek a <strong>különböző méretű térkövek kombináciái</strong>, az <strong>eltoládminták</strong>, és a <strong>kázponti focal pontok</strong> körüli radiális elrendezések. Az áj trend a <strong>zána-alapá</strong> térkövezés, ahol különböző területeket különböző mintázatokkal határolunk el.</p>`,
+          <p>Különösen népszerűek a <strong>különböző méretű térkövek kombináciái</strong>, az <strong>eltolódó minták</strong>, és a <strong>központi focal pontok</strong> körüli radiális elrendezések. Az áj trend a <strong>zóna-alapú</strong> térkövezés, ahol különböző területeket különböző mintázatokkal határolunk el.</p>`,
           infographic: {
             title: "2025 Mintázat Trendek Teraszokhoz",
             items: [
               {
                 icon: "🏗️",
                 title: "Random Bond",
-                description: "Természetes kő hatésváletlenszerelrendezés",
+                description: "Természetes kő hatású, véletlenszerű elrendezés",
                 value: "Organikus megjelenés"
               },
               {
@@ -2343,42 +2343,42 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Radiális Mintázat",
-                description: "Kázponti pontbál sugárzelrendezés",
-                value: "Dinamikus hatés"
+                description: "Központi pontból sugárzó elrendezés",
+                value: "Dinamikus hatás"
               },
               {
                 icon: "🏗️",
                 title: "Zána Térkövezés",
-                description: "Funkciók szerint elkülönátett területek",
+                description: "Funkciók szerint elkülönített területek",
                 value: "Gyakorlati design"
               },
               {
                 icon: "?",
                 title: "Chevron/Halszálka",
-                description: "V-alakmodern elrendezés",
+                description: "V-alakú modern elrendezés",
                 value: "Energikus megjelenés"
               },
               {
                 icon: "🏗️",
                 title: "Basket Weave",
-                description: "Szévátt hatésklasszikus minta",
+                description: "Szévátt hatásklasszikus minta",
                 value: "Időtálló elegancia"
               }
             ]
           }
         },
         {
-          title: "Anyagok és Textárák: A Természetes Forradalom",
+          title: "Anyagok és Textúrák: A Természetes Forradalom",
           content: `<p>2025-ben a terasz térkövezésben az <strong>anyagválasztás filozáfiája</strong> alapvetően megváltozott. A mesterságes anyagok helyett egyre inkább a <strong>természetes kövek</strong> és azok <strong>autentikus reprodukciái</strong> kerülnek előtérbe.</p>
           
-          <p>A legkeresettebbek a <strong>travertin hatésá</strong>, <strong>kápalés textúrájú</strong>, és <strong>kázet-struktárájó</strong> térkövek. A sima felületek mellett egyre népszerűbbek az <strong>enyhán strukturált</strong>, <strong>csúszósmentes</strong> felületek, amelyek funkcionalitést és esztátikumot egyaránt biztosítanak.</p>`,
+          <p>A legkeresettebbek a <strong>travertin hatásá</strong>, <strong>kápalés textúrájú</strong>, és <strong>kázet-struktárájó</strong> térkövek. A sima felületek mellett egyre népszerűbbek az <strong>enyhán strukturált</strong>, <strong>csúszósmentes</strong> felületek, amelyek funkcionalitést és esztátikumot egyaránt biztosítanak.</p>`,
           table: {
             headers: ["Anyag típus", "Textúra", "ár kategória", "Karbantartés", "Trend státusz 2025"],
             rows: [
-              ["Travertin hatésbeton", "Természetes párusok", "Közepes", "Könnyű", "⚠️HOT"],
+              ["Travertin hatásbeton", "Természetes párusok", "Közepes", "Könnyű", "⚠️HOT"],
               ["Kápalés térkő", "Finom rétegzettság", "Magas", "Közepes", "⚠️HOT"],
-              ["Gránithatéskerámia", "Finom kristályos", "Prémium", "Minimális", "? Stabil"],
-              ["Homokkáhatésá", "Egyenetlen felület", "Közepes", "Könnyű", "⚠️HOT"],
+              ["Gránithatáskerámia", "Finom kristályos", "Prémium", "Minimális", "? Stabil"],
+              ["Homokkáhatásá", "Egyenetlen felület", "Közepes", "Könnyű", "⚠️HOT"],
               ["Természetes gránit", "Eredeti késtruktára", "Prémium", "Közepes", "⚠️Névekvá"],
               ["Beton wood texture", "Famintázatú beton", "Közepes", "Könnyű", "⚠️ájdonság"]
             ]
@@ -2392,7 +2392,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "1. Stílus és színpaletta kiválasztása",
           description: "Határozzuk meg a terasz ffunkciájót és a ház stílusúhoz illeszkedszínpalettát. Vegyük figyelembe a környező növényzetet és az épület színeit.",
-          tips: "Kezdjók semleges alapszínekkel, és adjunk hozzá1-2 kiegészítő árnyalatot a karakterhez!"
+          tips: "Kezdjük semleges alapszínekkel, és adjunk hozzá1-2 kiegészítő árnyalatot a karakterhez!"
         },
         {
           title: "2. Mintázat és layout tervezése",
@@ -2411,7 +2411,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "5. Kivitelezés tervezése és előkészítés",
-          description: "Tervezzák meg a munkák ütemezésát, készítsük elő a területet. Modern trendekhez precíz alapozés szükséges.",
+          description: "Tervezzük meg a munkák ütemezésát, készítsük elő a területet. Modern trendekhez precíz alapozés szükséges.",
           tips: "Trendek megvalésátésához érdemes tapasztalt szakembert bevonni a precíz munkaárt."
         },
         {
@@ -2432,7 +2432,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Alkalmasak-e a modern trendek kis teraszokra is?",
-        answer: "Igen! <strong>Kis teraszokra különösen ajánlottak</strong> a 2025-ös trendek. A nagyméretű lapok optikailag nagyobbteszik a teret, a világos színek pedig tágasabb hatést keltenek. Az egyszerűbb mintázatok tiszta, rendezett megjelenést biztosítanak."
+        answer: "Igen! <strong>Kis teraszokra különösen ajánlottak</strong> a 2025-ös trendek. A nagyméretű lapok optikailag nagyobbteszik a teret, a világos színek pedig tágasabb hatást keltenek. Az egyszerűbb mintázatok tiszta, rendezett megjelenést biztosítanak."
       },
       {
         question: "Hogyan kombinálhatom a különböző térkő textúrákat?",
@@ -2709,7 +2709,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Térkő Lerakés és Praktikus Tippek",
-          content: `<p>A térkő lerakés során a <strong>precizités és türelem</strong> a legfontosabb. Kezdjók mindig egy <strong>egyenes sarokbál vagy szálbál</strong>, és haladjunk szisztematikusan. A térköveket <strong>soha ne lépjók le</strong> kázvetlenál - használjunk deszkát a márlerakott területen valmunkához.</p>
+          content: `<p>A térkő lerakés során a <strong>precizités és türelem</strong> a legfontosabb. Kezdjük mindig egy <strong>egyenes sarokbál vagy szálbál</strong>, és haladjunk szisztematikusan. A térköveket <strong>soha ne lépjók le</strong> kázvetlenál - használjunk deszkát a márlerakott területen valmunkához.</p>
           
           <p>A <strong>hézagok</strong> egyenletesságe kritikus a száp megjelenés szempontjából. Használjunk <strong>tévtartókat</strong> vagy <strong>kereszteket</strong> az azonos tévolságokhoz. A vágásoknál mindig <strong>márjónk kátszer, vágjunk egyszer</strong> - a térkő költsége nem elhanyagolhatá.</p>`,
           table: {
@@ -2756,7 +2756,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "6. Térkővek lerakása",
-          description: "Kezdjók egy egyenes szálrál, haladjunk sorrál sorra. Minden térkővet gumikalapáccsal iktassunk a helyáre.",
+          description: "Kezdjük egy egyenes szálrál, haladjunk sorrál sorra. Minden térkővet gumikalapáccsal iktassunk a helyáre.",
           tips: "Soha ne lépjónk a homokágyra! Mindig deszkapallá-rál dolgozzunk."
         },
         {
@@ -2828,7 +2828,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Projekt bonyolultság",
           type: "select",
           options: [
-            { value: "simple", label: "Egyszerű táglalap terasz", multiplier: 1.0 },
+            { value: "simple", label: "Egyszerű téglalap terasz", multiplier: 1.0 },
             { value: "medium", label: "Közepes (szegélyek, lépcsők)", multiplier: 1.3 },
             { value: "complex", label: "Komplex forma, sok vágés", multiplier: 1.7 }
           ]
@@ -3003,13 +3003,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Térkő Kerti Utakhoz: Előnyök és Alkalmazés",
           content: `<p>A <strong>térkő kerti utakhoz</strong> kiváló választás modern kertekben és akkor, ha <strong>egységes, rendezett megjelenést</strong> szeretnánk. Az egyenletes forma és méret miatt <strong>könnyen tervezhető és kivitelezhető</strong> különböző mintázatokban.</p>
           
-          <p>A térkő legnagyobb előnye a <strong>kiszámáthatéság</strong>: tudhata pontos mennyiság, a költségek és a kivitelezési idá. A <strong>különfále színek és textúrák</strong> lehetővé teszik a kert stílusúhoz valigazátést. Modern gyártési technológiákkal természetes kő hatéstérkövek is kŐszálnek.</p>`,
+          <p>A térkő legnagyobb előnye a <strong>kiszámáthatáság</strong>: tudhata pontos mennyiság, a költségek és a kivitelezési idá. A <strong>különfále színek és textúrák</strong> lehetővé teszik a kert stílusúhoz valigazátést. Modern gyártési technológiákkal természetes kő hatástérkövek is kŐszálnek.</p>`,
           table: {
             headers: ["Térkő típus", "Kerti út ár/m2", "Alkalmazési terület", "Stílus", "Karbantartés", "Élettartam"],
             rows: [
               ["Hagyományos betontérkő", "8.000-12.000 Ft", "Minden kerti út", "Univerzális", "Könnyű", "20-25 év"],
               ["Antik hatástérkő", "12.000-18.000 Ft", "Romantikus kertek", "Klasszikus", "Közepes", "25-30 év"],
-              ["Természetes kő hatésá", "15.000-22.000 Ft", "Modern természetes stílus", "Kortárs", "Könnyű", "30+ év"],
+              ["Természetes kő hatásá", "15.000-22.000 Ft", "Modern természetes stílus", "Kortárs", "Könnyű", "30+ év"],
               ["Nagyméretű lapok", "18.000-25.000 Ft", "Minimalista kertek", "Modern", "Nagyon könnyű", "25-30 év"],
               ["Színes betontérkő", "10.000-16.000 Ft", "Jótszáterület kázeláben", "Vidám", "Könnyű", "20-25 év"],
               ["Speciális textúrájú", "14.000-20.000 Ft", "Csúszósmentes utakhoz", "Praktikus", "Közepes", "25-30 év"]
@@ -3078,7 +3078,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               ["Esztétikai érték", "Modern", "Időtálló", "Önálló", "Stílusfüggő"],
               ["Környezetbarát", "újrahasznosítható", "100% natúr", "Természetes", "ökológiai szempont"],
               ["Javíthatóság", "Egyszerű", "Specializált", "Térkő", "CserealkatrŐsz könnyű"],
-              ["értéknévekedés", "Alacsony", "Magas", "Természetes", "Ingatlan értékáre hatés"]
+              ["értéknévekedés", "Alacsony", "Magas", "Természetes", "Ingatlan értékáre hatás"]
             ]
           }
         }
@@ -3095,7 +3095,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "2. Kert stílusának felmérése",
           description: "Vizsgáljuk meg a kert jelenlegi stílusát, a ház építészeti jellegát, és a környező elemeket. A kerti út illeszkedjen a teljes kompozáciába.",
-          tips: "Készítsünk fotákat a kertről különböző szögekből a jobb átláthatéság érdekében."
+          tips: "Készítsünk fotákat a kertről különböző szögekből a jobb átláthatáság érdekében."
         },
         {
           title: "3. Használati igények elemzése",
@@ -3156,7 +3156,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "select",
           options: [
             { value: "basic_paver", label: "Alapvető térkő", price: 10000 },
-            { value: "premium_paver", label: "Prémium térkő (antik hatésá)", price: 15000 },
+            { value: "premium_paver", label: "Prémium térkő (antik hatásá)", price: 15000 },
             { value: "large_paver", label: "Nagyméretű térkő lapok", price: 21000 },
             { value: "sandstone", label: "Homokk(természetes)", price: 20000 },
             { value: "limestone", label: "MŐszk(természetes)", price: 24000 },
@@ -3410,7 +3410,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Esztétikai szempontok mérlegelése",
-          description: "Döntsük el, milyen megjelenést szeretnánk: egységes modern (beton) vagy egyedi természetes (kő) hatést.",
+          description: "Döntsük el, milyen megjelenést szeretnánk: egységes modern (beton) vagy egyedi természetes (kő) hatást.",
           tips: "A betontérkő szélesebb színválasztékot kínál, a természetes kő minden darabja egyedi."
         },
         {
@@ -4337,8 +4337,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Minta prábarakésa",
-          description: "Rakjuk le a minta egy kis rŐszletát prábakáppen, ellenőrizzük a hatést.",
-          tips: "1-2 m2 prábaterületen teszteljük a színkombináciát és a mintázat hatésát."
+          description: "Rakjuk le a minta egy kis rŐszletát prábakáppen, ellenőrizzük a hatást.",
+          tips: "1-2 m2 prábaterületen teszteljük a színkombináciát és a mintázat hatását."
         },
         {
           title: "Vágleges lerakés a minta szerint",
@@ -4397,7 +4397,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Alapszín típusa",
           type: "select",
           options: [
-            { value: "standard", label: "Szárke alapszín (2.800 Ft/m2)" },
+            { value: "standard", label: "Szürke alapszín (2.800 Ft/m2)" },
             { value: "colored", label: "Színes alapszín (3.500 Ft/m2)" },
             { value: "premium", label: "Prémium színes (4.200 Ft/m2)" }
           ]
@@ -4607,7 +4607,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <p class= "text-sm text-yellow-700"><strong>Lejtésszögek:</strong></p>
                 <ul class="text-xs text-yellow-600">
                   <li>Min. lejtés: 1% (vízelfolyés biztosítésa)</li>
-                  <li>Optimális: 1,5-2% (járhatéság + vízelvezetés)</li>
+                  <li>Optimális: 1,5-2% (járhatáság + vízelvezetés)</li>
                   <li>Max. lejtés: 3% (csúszósmentes marad)</li>
                 </ul>
               </div>
@@ -4762,7 +4762,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Vízelvezetés és lejtésviszonyok tervezése",
-          description: "Tervezzák meg a vízelvezetést, határozzuk meg a szükséges lejtéseket és elvezetrendszereket.",
+          description: "Tervezzük meg a vízelvezetést, határozzuk meg a szükséges lejtéseket és elvezetrendszereket.",
           tips: "1,5-2% lejtést tervezz minden irányban. Keráld a víz ésszegyájtésát!"
         },
         {
@@ -4794,7 +4794,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mikor kell engedályt kárni térkövezéshez?",
-        answer: "Sajót telken beláli munkákhoz általában nem kell engedály. Kázterület árintése, telekhatár módosítás vagy kázmá-árintettság esetén viszont kötelező a hatésági engedály."
+        answer: "Sajót telken beláli munkákhoz általában nem kell engedály. Kázterület árintése, telekhatár módosítás vagy kázmá-árintettság esetén viszont kötelező a hatásági engedály."
       },
       {
         question: "Milyen lejtés a megfelelő térkővezett felületnál?",
