@@ -1,6 +1,6 @@
 // Térkövezési blog posts data
 export const blogPosts = [
-  // Kocsibeálló térkövezés támák (3 blog)
+  // Kocsibeálló térkövezés témák (3 blog)
   {
     slug: "kocsibeallo-terkovezes-arak-tipusok-kivitelezes",
     title: "Kocsibeálló térkövezés 2025: Árak, típusok, kivitelezés",
@@ -85,7 +85,7 @@ export const blogPosts = [
           title: "Teherbírési Követelmányek",
           content: `<p>A kocsibeálló térkövezésánál kritikus fontosságú a megfelelő teherbírés biztosítésa. Az átlagos személyautó keréknyomésa <strong>4-6 kg/cm2</strong>, míg egy teli SUV esetében ez akár <strong>8-10 kg/cm2</strong> is lehet.</p>
           
-          <p>A térkövek vastagságának minimum <strong>6 cm-nek</strong> kell lennie kocsibeállóhoz, de ajánlott a <strong>8 cm-es</strong> vastagság a hosszabb élettartam érdekében.</p>`
+          <p>A térkövek vastagságának minimum <strong>6 cm-nek</strong> kell lennie kocsibeállóhoz, de ajánlott a <strong>8 cm-es</strong> vastagság a hosszabb Élettartam érdekében.</p>`
         }
       ]
     },
@@ -132,11 +132,11 @@ export const blogPosts = [
     faq: [
       {
         question: "Milyen vastag legyen a térkő kocsibeállóhoz?",
-        answer: "Minimum <strong>6 cm vastag</strong> térkővet ajánlunk kocsibeállóhoz, de ideális a <strong>8 cm-es vastagság</strong>. Ez biztosítja a megfelelő teherbírést és a hosszú élettartamot még nehezebb járművek esetében is."
+        answer: "Minimum <strong>6 cm vastag</strong> térkővet ajánlunk kocsibeállóhoz, de ideális a <strong>8 cm-es vastagság</strong>. Ez biztosítja a megfelelő teherbírést és a hosszú Élettartamot még nehezebb járművek esetében is."
       },
       {
         question: "Mennyi ideig tart elkészíteni egy kocsibeálló térkövezést?",
-        answer: "Egy átlagos (20-30 m2) kocsibeálló térkövezése <strong>3-5 munkanap</strong> alatt elkészül. Ez függ az időjárástól, a terep adottságaitól és a választott térkő típusától. A száradési időkmiatt nem szabad sietni."
+        answer: "Egy átlagos (20-30 m2) kocsibeálló térkövezése <strong>3-5 munkanap</strong> alatt elkészül. Ez függ az időjárástól, a terep adottságaitól és a választott térkő típusától. A száradési idők miatt nem szabad sietni."
       },
       {
         question: "Szükság van-e engedélyre kocsibeálló térkövezéshez?",
@@ -345,7 +345,7 @@ export const blogPosts = [
               ["Ár (Ft/m2)", "3.000-7.000", "8.000-18.000", "6.000-14.000", "5.000-10.000", "4.000-25.000"],
               ["Választék", "Nagy", "Közepes", "Nagy", "Közepes", "Hatalmas"],
               ["Karbantartés", "Minimális", "Minimális", "Közepes", "Közepes", "Változó"],
-              ["élettartam", "15-25 év", "50+ év", "25-40 év", "20-30 év", "30-100+ év"],
+              ["Élettartam", "15-25 év", "50+ év", "25-40 év", "20-30 év", "30-100+ év"],
               ["Környezeti hatás", "Alacsony", "Közepes", "Magas (újrahaszn.)", "Közepes", "Változó"]
             ]
           }
@@ -396,13 +396,13 @@ export const blogPosts = [
       steps: [
       {
         title: "Igények és költségvetés meghatározása",
-          description: "Első lépésként határozzuk meg a rendelkezésre álló költságvetést és a főbb elvörösainkat (tartósság, megjelenés, karbantartés).",
+          description: "Első lépésként határozzuk meg a rendelkezésre álló költságvetést és a főbb elvárásainkat (tartósság, megjelenés, karbantartés).",
           tips: "Számoljunk 20-30 éves távlatban - a drágább, de tartósabb megoldés gyakran gazdaságosabb!"
         },
         {
           title: "Terhelési viszonyok felmérése",
-          description: "Gondoljuk át, milyen járművek fogjók használni a kocsibeállót: csak személyautók vagy esetleg kisteherautó, lakókocsi is?",
-          tips: "Nehezebb járművekhez mindenkáppen 8 cm vastag térkővet válasszunk!"
+          description: "Gondoljuk át, milyen járművek fogjuk használni a kocsibeállót: csak személyautók vagy esetleg kisteherautó, lakókocsi is?",
+          tips: "Nehezebb járművekhez mindenképpen 8 cm vastag térkővet válasszunk!"
         },
         {
           title: "Helyi klíma figyelembevétele",
@@ -410,12 +410,12 @@ export const blogPosts = [
           tips: "A fagyállóság nem opcionális - egy rossz tél tönkreteheti a nem megfelelő térkővet!"
         },
         {
-          title: "építészeti harmónia ellenőrzése",
+          title: "Építészeti harmónia ellenőrzése",
           description: "A térkő színe és stílusa illeszkedjen a ház és a kert összhatásához. Kérjünk mintadarabokat!",
           tips: "Napfényben és árnyékban is nézzük meg a mintákat - sokszor másképp néznek ki!"
         },
         {
-          title: "Szakértői véleményének kikérése",
+          title: "Szakértői véleményét kikérése",
           description: "Konzultáljunk tapasztalt térkövezővel, aki ismeri a helyi viszonyokat és tapasztalatait megoszthatja.",
           tips: "Egy jó szakember megspórolhatja nekánk a későbbi problémákat és extra költségeket!"
         },
@@ -482,12 +482,12 @@ export const blogPosts = [
         },
         {
           title: "Mennyiság kalkulálása és megrendelés",
-          description: "Számítsuk ki a pontos mennyiságet, adjunk hozzá8-10% vágési hulladékot és rendeljük meg a térkővet.",
+          description: "Számítsuk ki a pontos mennyiságet, adjunk hozzá 8-10% vágési hulladékot és rendeljük meg a térkővet.",
           tips: "Rendeljünk egyszerre mindent ugyanabbál a gyártési tételből a színegyezés miatt."
         },
         {
           title: "Kivitelező kiválasztása és ütemezés",
-          description: "Válasszunk tapasztalt kivitelezőt, egyeztessük az ütemezést és készítsük előa helyszínt.",
+          description: "Válasszunk tapasztalt kivitelezőt, egyeztessük az ütemezést és készítsük elő a helyszínt.",
           tips: "Kérjünk referenciákat és nézzünk meg korábbi munkákat. Tavaszi-Őszi időszak a legideálisabb."
         }
       ]
@@ -497,13 +497,13 @@ export const blogPosts = [
       inputs: [
         {
           id: "usage",
-          label: "Milyen járművek használjók?",
+          label: "Milyen járművek használják?",
           type: "select",
           options: [
             { value: "car", label: "Csak személyautó", weight: 1 },
             { value: "suv", label: "SUV/crossover", weight: 1.3 },
             { value: "van", label: "Kisteherautó/lakóautó", weight: 1.8 },
-            { value: "truck", label: "Nehéz jármá", weight: 2.5 }
+            { value: "truck", label: "Nehéz jármű", weight: 2.5 }
           ]
         },
         {
@@ -724,7 +724,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           content: `<p>Különböző <strong>vízelvezetési megoldások</strong> állnak rendelkezésre, mindegyiknek megvannak a maga előnyei:</p>`,
           table: {
             title: "Vízelvezetési rendszerek összehasonlítása",
-            headers: ["Rendszer típusa", "Költság", "Hatékonyság", "Karbantartés", "élettartam"],
+            headers: ["Rendszer típusa", "Költság", "Hatékonyság", "Karbantartés", "Élettartam"],
             rows: [
               ["Természetes lejtés", "Alacsony (1-3 eFt/m2)", "Közepes", "Minimális", "20+ év"],
               ["Vízelvezetési árkok", "Közepes (3-7 eFt/m2)", "Magas", "évente 1x", "15-20 év"],
@@ -809,7 +809,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Milyen gyakran kell karbantartani a vízelvezetést?",
-        answer: "évente egyszer ellenőrizzük a lefolyákat, eltévolátjuk a leveleket és tármelőket. Drénrendszert 3-5 évente érdemes átmosni."
+        answer: "évente egyszer ellenőrizzük a lefolyákat, eltávolítjuk a leveleket és törmelékeket. Drénrendszert 3-5 évente érdemes átmosni."
       },
       {
         question: "Mi a különbság a lineáris és pontszerű vízelvezetés között?",
@@ -844,7 +844,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Terep nehézságe",
           type: "select",
           options: [
-            { value: "easy", label: "Egyszerű (sák terep)" },
+            { value: "easy", label: "Egyszerű (sík terep)" },
             { value: "medium", label: "Közepes (enyhe lejtés)" },
             { value: "hard", label: "Nehéz (meredek/egyenetlen)" }
           ]
@@ -987,7 +987,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 '<div><strong>Rendszer típusa:</strong> ' + results.drainageTypeLabel + '</div>' +
                 '<div><strong>Terep:</strong> ' + results.terrainLabel + '</div>' +
                 '<div><strong>Hatékonyság:</strong> ' + results.efficiencyRating + '</div>' +
-                '<div><strong>Várható élettartam:</strong> ' + results.estimatedLifespan + ' év</div>' +
+                '<div><strong>Várható Élettartam:</strong> ' + results.estimatedLifespan + ' év</div>' +
               '</div>' +
               '<div class="space-y-2 text-sm text-blue-700 mb-4">' +
                 '<div><strong>Vízelvezetés alapköltség:</strong> ' + results.drainageCost.toLocaleString('hu-HU') + ' Ft</div>' +
@@ -1103,13 +1103,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           }
         },
         {
-          title: "Tartósság és élettartam elemzés",
+          title: "Tartósság és Élettartam elemzés",
           content: `<p>A <strong>tartósság</strong> kulcskérdés a hosszú távú gazdaságosság szempontjából:</p>`,
           table: {
             title: "Burkolattípusok Részletes összehasonlítása",
             headers: ["Tulajdonság", "Térkő", "Vasbeton", "Aszfalt", "Nyertes"],
             rows: [
-              ["élettartam", "25-30 év", "30-40 év", "15-20 év", "Vasbeton"],
+              ["Élettartam", "25-30 év", "30-40 év", "15-20 év", "Vasbeton"],
               ["Fagyállóság", "Kiváló", "Jó*", "Közepes", "Térkő"],
               ["Javíthatóság", "Egyszerű", "Nehéz", "Közepes", "Térkő"],
               ["Terhelhetéság", "Magas", "Nagyon magas", "Közepes", "Vasbeton"],
@@ -1136,7 +1136,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               },
               {
                 icon: "🏗️",
-                title: "Legjavíthatóbb", 
+                title: "Legjobban javítható", 
                 description: "Térkő cserélhető elemekkel",
                 value: "Egyszerű javítés"
               },
@@ -1155,15 +1155,15 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           
           <div class="grid md:grid-cols-2 gap-6 my-6">
             <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 class="font-semibold text-green-800 mb-3">⚠️Környezetbarát megoldások:</h4>
+              <h4 class="font-semibold text-green-800 mb-3">⚠️ Környezetbarát megoldások:</h4>
               <ul class="text-green-700 text-sm space-y-1">
                 <li><strong>Térkő:</strong> újrahasznosítható, szikkasztó</li>
-                <li><strong>Beton:</strong> hosszú élettartam</li>
+                <li><strong>Beton:</strong> hosszú Élettartam</li>
                 <li><strong>Geopolimer beton:</strong> alacsony CO2</li>
               </ul>
             </div>
             <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
-              <h4 class="font-semibold text-orange-800 mb-3">⚠️Környezeti terhelés:</h4>
+              <h4 class="font-semibold text-orange-800 mb-3">⚠️ Környezeti terhelés:</h4>
               <ul class="text-orange-700 text-sm space-y-1">
                 <li><strong>Aszfalt:</strong> kőolajszármazékok, káros anyagok</li>
                 <li><strong>Régi beton:</strong> magas CO2 lábnyom</li>
@@ -1179,7 +1179,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       steps: [
         {
           title: "Költságvetés és prioritésok meghatározésa",
-          description: "Határozzuk meg a rendelkezésre álló költságvetést és a legfontosabb elvörösainkat (ár, esztétika, tartósság).",
+          description: "Határozzuk meg a rendelkezésre álló költságvetést és a legfontosabb elvárásainkat (ár, esztétika, tartósság).",
           tips: "20-30 éves távlatban gondolkodjunk - a drágább megoldés gyakran gazdaságosabb!"
         },
         {
@@ -1420,7 +1420,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                     '<div>' +
                       '<div><strong>Kezdeti költség:</strong> ' + data.initialCost.toLocaleString('hu-HU') + ' Ft</div>' +
                       '<div><strong>Éves karbantartás:</strong> ' + data.yearlyMaintenance.toLocaleString('hu-HU') + ' Ft</div>' +
-                      '<div><strong>Várható élettartam:</strong> ' + data.lifespan + ' év</div>' +
+                      '<div><strong>Várható Élettartam:</strong> ' + data.lifespan + ' év</div>' +
                     '</div>' +
                     '<div>' +
                       '<div><strong>Karbantartás (' + timeFrameLabels[timeFrame] + '):</strong> ' + data.totalMaintenanceCost.toLocaleString('hu-HU') + ' Ft</div>' +
@@ -1474,7 +1474,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     ]
   },
 
-  // Térkő karbantartés és javítés támák
+  // Térkő karbantartés és javítés témák
   {
     slug: "terkovezes-karbantartas-javitas-szakertoi-tippek",
     title: "Térkövezés karbantartés és javítés: Szakértői tippek 2025-ben",
@@ -1489,17 +1489,17 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       hero: {
         src: "/images/hero-terkovezes.jpg",
         alt: "Térkövezés karbantartés és javítés",
-        caption: "Professzionális térkövezés karbantartés - hosszú élettartam biztosítésa"
+        caption: "Professzionális térkövezés karbantartés - hosszú Élettartam biztosítésa"
       }
     },
     content: {
       sections: [
         {
           title: "Térkövezés Karbantartésának Alapjai",
-          content: `<p>A <strong>térkövezés rendszeres karbantartésa</strong> kulcsfontosságú a hosszú élettartam biztosítésára. A helyes ápoléssal 20-30 évig is szolgálhat problémamentesen a térkőves felület.</p>
+          content: `<p>A <strong>térkövezés rendszeres karbantartésa</strong> kulcsfontosságú a hosszú Élettartam biztosítésára. A helyes ápoléssal 20-30 évig is szolgálhat problémamentesen a térkőves felület.</p>
           
           <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
-            <h4 class="font-semibold text-blue-800 mb-3">⚠️Karbantartési gyakoriság ajánlások:</h4>
+            <h4 class="font-semibold text-blue-800 mb-3">⚠️Karbantartési gyakorisági ajánlások:</h4>
             <ul class="text-blue-700 space-y-1">
               <li><strong>Alapos tisztítés:</strong> évente 2x (tavasz, ősz)</li>
               <li><strong>Fugák ellenőrzése:</strong> félévente</li>
@@ -1509,7 +1509,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             </ul>
           </div>
           
-          <p>A <em>megelőzés mindig olcsóbb</em> mint a teljes felújítés - egy jól karbantartott térkövezés akár 50%-kal hosszabb élettartamú lehet!</p>`,
+          <p>A <em>megelőzés mindig olcsóbb</em> mint a teljes felújítés - egy jól karbantartott térkövezés akár 50%-kal hosszabb Élettartamú lehet!</p>`,
           infographic: {
             title: "Karbantartés vs Felújítás Költságei",
             items: [
@@ -1578,7 +1578,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Tél",
-                description: "Sökosságmentesátés, háeltakarátés",
+                description: "Síkosságmentesítés, hóeltakarítás",
                 value: "December-február"
               }
             ]
@@ -1590,41 +1590,41 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       title: "DIY Térkövezés Karbantartés Lépésről Lépésre",
       steps: [
         {
-          title: "Felkészülős és eszközök ésszegyájtése",
+          title: "Felkészülés és eszközök összegyűjtése",
           description: "Gyűjtsük össze a szükséges eszközöket: magasnyomású mosó, kemány kefe, semleges pH-jú tisztítészer, fugakapa.",
-          tips: "Ne használjunk agresszév vegyszereket, mert károsáthatjók a térköveket!"
+          tips: "Ne használjunk agresszív vegyszereket, mert károsíthatják a térköveket!"
         },
         {
           title: "Durva szennyezádések eltávolítása",
-          description: "Tévolátsuk el a leveleket, ágakat és egyáb durva szennyeződéseket. Kapáljuk ki a gyomokat a fugákbál.",
+          description: "Távolítsuk el a leveleket, ágakat és egyáb durva szennyeződéseket. Kapáljuk ki a gyomokat a fugákból.",
           tips: "A gyomirtést legjobb nedves időben végezni, amikor könnyebben kijönnek a gyökerek."
         },
         {
           title: "Alapos vizes mosés",
           description: "Mossuk le a térköveket magasnyomású mosóval vagy kerti csappal. Kezdjük felülről lefelé.",
-          tips: "A magasnyomású mosónál ágyeljónk arra, hogy ne legyen tál kázel, mert megsártheti a fugákat!"
+          tips: "A magasnyomású mosónál ügyeljünk arra, hogy ne legyen túl közel, mert megsértheti a fugákat!"
         },
         {
           title: "Makacs foltok kezelése",
-          description: "A makacs foltokat (olaj, rozsda) kezeljók speciális tisztítószerekkel és kemány kefével.",
-          tips: "Mindig prábáljuk ki a tisztítészert egy láthatatlan rŐszen elŐszár!"
+          description: "A makacs foltokat (olaj, rozsda) kezeljük speciális tisztítószerekkel és kemány kefével.",
+          tips: "Mindig próbáljuk ki a tisztítószert egy láthatatlan részen először!"
         },
         {
           title: "Fugák karbantartésa",
-          description: "Ellenőrizzük a fugákat, szükság esetén pátoljuk a hiányzó fugahomokot vagy fugázáanyagot.",
+          description: "Ellenőrizzük a fugákat, szükság esetén pótoljuk a hiányzó fugahomokot vagy fugázóanyagot.",
           tips: "A fugázás után ne használjuk a felületet 24 óráig, amíg nem szilárdul meg!"
         },
         {
           title: "Befejező lépések és védelem",
-          description: "Szákság esetén vigyák fel az impregnálő szert a tiszta, száraz felületre egyenletes rétegben.",
-          tips: "Az impregnálést csak napos, száraz időben végezzák, amikor 24 árán át nem várható esá!"
+          description: "Szükség esetén vigyük fel az impregnálő szert a tiszta, száraz felületre egyenletes rétegben.",
+          tips: "Az impregnálést csak napos, száraz időben végezzük, amikor 24 órán át nem várható eső!"
         }
       ]
     },
     faq: [
       {
         question: "Milyen gyakran kell tisztítani a térkövezést?",
-        answer: "Alapos tisztítésra évente 2x van szükság (tavasz és Ősz), de kisebb tisztítést (söprés, leváleltévolítés) heti rendszeressággel érdemes végezni."
+        answer: "Alapos tisztítésra évente 2x van szükság (tavasz és ősz), de kisebb tisztítést (söprés, leváleltévolítés) heti rendszeressággel érdemes végezni."
       },
       {
         question: "Milyen tisztítószert használjak?",
@@ -1640,11 +1640,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mennyibe kerül a térkövezés karbantartésa?",
-        answer: "Sajót munka esetén 1.000-3.000 Ft/m2/év, szakember bevonéséval 3.000-8.000 Ft/m2/év a rendszeres karbantartés költsége."
+        answer: "Saját munka esetén 1.000-3.000 Ft/m2/év, szakember bevonéséval 3.000-8.000 Ft/m2/év a rendszeres karbantartés költsége."
       },
       {
         question: "Lehet télen is karbantartani a térkövezést?",
-        answer: "Télen csak a háeltakarátés és jógmentesátés ajánlott. Az alapos tisztítést és javításokat tavasszal végezzák, amikor nincs fagy."
+        answer: "Télen csak a hóeltakarítás és jégmentesítés ajánlott. Az alapos tisztítést és javításokat tavasszal végezzék, amikor nincs fagy."
       }
     ],
     calculator: {
@@ -1665,7 +1665,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "select",
           options: [
             { value: "concrete", label: "Beton térkő (könnyű karbantartés)" },
-            { value: "natural", label: "Természetes kő (intenzév karbantartés)" },
+            { value: "natural", label: "Természetes kő (intenzív karbantartés)" },
             { value: "antique", label: "Antik térkő (közepes karbantartés)" },
             { value: "colored", label: "Színes térkő (speciális kezelés)" }
           ]
@@ -1675,7 +1675,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Jelenlegi állapot",
           type: "select",
           options: [
-            { value: "excellent", label: "Kiváló (áj, jól karbantartott)" },
+            { value: "excellent", label: "Kiváló (új, jól karbantartott)" },
             { value: "good", label: "Jó (kisebb karbantartési igény)" },
             { value: "fair", label: "Közepes (rendszeres karbantartés kell)" },
             { value: "poor", label: "Rossz (javítésra szorul)" }
@@ -1683,12 +1683,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "diyLevel",
-          label: "Sajót munka mértéke",
+          label: "Saját munka mértéke",
           type: "select",
           options: [
             { value: "full", label: "Teljes saját munka" },
-            { value: "partial", label: "RŐszben saját, rŐszben szakember" },
-            { value: "none", label: "Teljes szakemberre bázés" }
+            { value: "partial", label: "Részben saját, részben szakember" },
+            { value: "none", label: "Teljes szakemberre bízás" }
           ]
         },
         {
@@ -1862,7 +1862,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             '</div>' +
 
             '<div class="text-sm text-yellow-700 mt-4 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
-              '💡 A rendszeres karbantartás megtérül! A jól karbantartott térkövezés élettartama jelentősen megnő és megőrzi az esztétikai értékét.' +
+              '💡 A rendszeres karbantartás megtérül! A jól karbantartott térkövezés Élettartama jelentősen megnő és megőrzi az esztétikai értékét.' +
             '</div>' +
             '<div class="mt-4 text-center">' +
               '<a href="/kapcsolat?calc=terkovezes-karbantartas" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
@@ -1903,7 +1903,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     ]
   },
 
-  // Térkő trendek és design támák
+  // Térkő trendek és design témák
   {
     slug: "modern-terkovezes-trendek-design-otletek-2025",
     title: "Modern térkövezés trendek és design ötletek 2025-ben",
@@ -2025,14 +2025,14 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <li>Permeable (vízáteresztő) térkövezés</li>
                 <li>Helyi kőbányákból származó anyagok</li>
                 <li>Alacsony CO2 kibocsátású gyártás</li>
-                <li>Hosszú élettartamú, újrahasznosítható termékek</li>
+                <li>Hosszú Élettartamú, újrahasznosítható termékek</li>
               </ul>
             </div>
             <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <h4 class="font-semibold text-blue-800 mb-3">⚠️Smart technológiák:</h4>
               <ul class="text-blue-700 text-sm space-y-1">
                 <li>LED világítás beépítése</li>
-                <li>Fátátt térkövezés téli használatra</li>
+                <li>Fűtött térkövezés téli használatra</li>
                 <li>Intelligens öntözőrendszer integráció</li>
                 <li>Napelemes világítási megoldások</li>
                 <li>Vezeték nélküli töltési pontok</li>
@@ -2058,12 +2058,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Mintázat és térkő méret meghatározésa",
           description: "A terület mérete és funkciája alapján válasszuk ki a megfelelő térkő méretet és lerakési mintázatot.",
-          tips: "Kis területen kerüljók a tál sok különböző méretet - ez nyugtalanná teheti a felületet!"
+          tips: "Kis területen kerüljük a túl sok különböző méretet - ez nyugtalanná teheti a felületet!"
         },
         {
           title: "Funkcionális elemek tervezése",
           description: "Tervezzák be a vízelvezetést, világítást, növényzeti elemeket és egyáb funkcionális megoldásokat.",
-          tips: "A vízelvezetés tervezésát bízzuk szakemberre - ez a legfontosabb műszaki elem!"
+          tips: "A vízelvezetés tervezését bízzuk szakemberre - ez a legfontosabb műszaki elem!"
         },
         {
           title: "Költságvetés és anyagszükságlet kalkulálása",
@@ -2079,11 +2079,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     },
     faq: [
       {
-        question: "Melyek a 2025-ös év legnápszerább térkő színei?",
+        question: "Melyek a 2025-ös év legnépszerűbb térkő színei?",
         answer: "A természetes árnyalatok dominálnak: meleg szürkék, bézs tónusok, homok színek. Népszerűek míg a sötét antracit és a klasszikus fekete-fehár kombináciák."
       },
       {
-        question: "érdemes-e nagyméretű térköveket választani?",
+        question: "Érdemes-e nagyméretű térköveket választani?",
         answer: "Igen, a nagyméretű térkövek modern megjelenést biztosítanak, kevesebb fugával könnyebb a karbantartés, és vizuálisan nagyobbnak tűnik a terület."
       },
       {
@@ -2095,7 +2095,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         answer: "10-30%-kal magasabb lehet a kezdeti beruházés, de hosszú távon megtérül a jobb tartósság, alacsonyabb karbantartési költság és környezeti előnyök miatt."
       },
       {
-        question: "Hogyan kombinálhaták a modern trendek a klasszikus épületekkel?",
+        question: "Hogyan kombinálhatjuk a modern trendek a klasszikus épületekkel?",
         answer: "Válasszunk időtálló színeket és mintázatokat, kerüljük a túl merész kontrasztokat. A természetes anyagok és földszínek mindig harmonizálnak a klasszikus stílussal."
       }
     ],
@@ -2137,7 +2137,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           name: "smartFeatures",
           label: "Smart funkciák",
           type: "checkbox", 
-          description: "LED világítás, fátés, stb."
+          description: "LED világítás, fűtés, stb."
         },
         {
           name: "sustainability",
@@ -2236,7 +2236,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     ]
   },
 
-  // Terasz térkövezés támák (2 blog)
+  // Terasz térkövezés témák (2 blog)
   {
     slug: "terasz-terkovezes-trendek-2025",
     title: "Terasz térkövezés trendek 2025: Modern minták és színkombinációk",
@@ -2290,13 +2290,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               },
               {
                 icon: "🏗️",
-                title: "Váztartó Fugák",
-                description: "Permeable fugázás és záld fugák",
+                title: "Víztartó Fugák",
+                description: "Permeable fugázás és zöld fugák",
                 value: "öko megoldés"
               },
               {
                 icon: "🏗️",
-                title: "Beápátett LED-ek",
+                title: "Beépített LED-ek",
                 description: "Smart világítással integrált térkövek",
                 value: "Jövő technológia"
               }
@@ -2304,15 +2304,15 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           }
         },
         {
-          title: "Szántrendek és Palettakombináciák",
-          content: `<p>2025-ben a terasz térkövezésben a <strong>természetes és melegebb színárnyalatok</strong> kerültek elátárbe. A fehár és hideg szürke korszaka után most a <strong>fáld színei</strong> és a <strong>természetes kő árnyalatai</strong> dominálnak.</p>
+          title: "Színtrendek és Palettakombináciák",
+          content: `<p>2025-ben a terasz térkövezésben a <strong>természetes és melegebb színárnyalatok</strong> kerültek előtérbe. A fehár és hideg szürke korszaka után most a <strong>föld színei</strong> és a <strong>természetes kő árnyalatai</strong> dominálnak.</p>
           
-          <p>A legnápszerább színkombinációk között találjuk a <strong>homokbézs-szürke</strong>, a <strong>terrakotta-krám</strong>, és a <strong>grafitszürke-barna</strong> párosátésokat. A monokrám megoldások helyett egyre inkább a <strong>2-3 színárnyalat finom kombináciái</strong> kerülnek elátárbe.</p>`,
+          <p>A legnépszerűbb színkombinációk között találjuk a <strong>homokbézs-szürke</strong>, a <strong>terrakotta-krám</strong>, és a <strong>grafitszürke-barna</strong> párosításokat. A monokróm megoldások helyett egyre inkább a <strong>2-3 színárnyalat finom kombináciái</strong> kerülnek előtérbe.</p>`,
           table: {
-            headers: ["Szánkombináciá", "Stílus", "Alkalmazési terület", "Karbantartés", "2025 népszerűség"],
+            headers: ["Színkombinációk", "Stílus", "Alkalmazési terület", "Karbantartés", "2025 népszerűség"],
             rows: [
-              ["Homokbézs + Szárke", "Modern skandinév", "Nagyobb teraszok", "Könnyű", "?????"],
-              ["Terrakotta + Krám", "Mediterrán", "Dáli fekvésteraszok", "Közepes", "?????"],
+              ["Homokbézs + Szárke", "Modern skandináv", "Nagyobb teraszok", "Könnyű", "?????"],
+              ["Terrakotta + Krám", "Mediterrán", "Déli fekvésű teraszok", "Közepes", "?????"],
               ["Antracit + Barna", "Indusztriális", "Urban lakésok", "Könnyű", "????"],
               ["Natár kmix", "Természetes", "Kerti teraszok", "Nehezebb", "?????"],
               ["Fehár + Világosszürke", "Minimalista", "Modern házak", "Könnyű", "???"],
@@ -2362,14 +2362,14 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 icon: "🏗️",
                 title: "Basket Weave",
                 description: "Szévátt hatésklasszikus minta",
-                value: "Idátálló elegancia"
+                value: "Időtálló elegancia"
               }
             ]
           }
         },
         {
           title: "Anyagok és Textárák: A Természetes Forradalom",
-          content: `<p>2025-ben a terasz térkövezésben az <strong>anyagválasztás filozáfiája</strong> alapvetően megváltozott. A mesterságes anyagok helyett egyre inkább a <strong>természetes kövek</strong> és azok <strong>autentikus reprodukciái</strong> kerülnek elátárbe.</p>
+          content: `<p>2025-ben a terasz térkövezésben az <strong>anyagválasztás filozáfiája</strong> alapvetően megváltozott. A mesterságes anyagok helyett egyre inkább a <strong>természetes kövek</strong> és azok <strong>autentikus reprodukciái</strong> kerülnek előtérbe.</p>
           
           <p>A legkeresettebbek a <strong>travertin hatésá</strong>, <strong>kápalés textúrájú</strong>, és <strong>kázet-struktárájó</strong> térkövek. A sima felületek mellett egyre népszerűbbek az <strong>enyhán strukturált</strong>, <strong>csúszósmentes</strong> felületek, amelyek funkcionalitést és esztátikumot egyaránt biztosítanak.</p>`,
           table: {
@@ -2400,18 +2400,18 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Nagy teraszokhoz válasszunk strukturáltabb mintákat, kisebbekhez egyszerűbbeket."
         },
         {
-          title: "3. Funkcionális zánák kialakítésa",
+          title: "3. Funkcionális zónák kialakítésa",
           description: "Osszuk fel a teraszteret funkciák szerint: étkezős, pihenésarok, növényzóna. Minden területhez válasszunk megfelelő térkő megoldést.",
-          tips: "Használjunk különböző színvagy textúrájú térköveket a zánák természetes elkülönátésáhez."
+          tips: "Használjunk különböző színvagy textúrájú térköveket a zónák természetes elkülönátésáhez."
         },
         {
           title: "4. Anyagválasztás és beszerzés",
           description: "Válasszuk ki a konkrét térkő típusokat, kérjünk mintadarabokat. Számoljuk ki a pontos mennyiságet 10-15% tartalékkal.",
-          tips: "Mindig ugyanabbál a gyártési tételből vásároljunk, hogy elkerüljók a színkülönbságeket!"
+          tips: "Mindig ugyanabbál a gyártési tételből vásároljunk, hogy elkerüljük a színkülönbságeket!"
         },
         {
           title: "5. Kivitelezés tervezése és előkészítés",
-          description: "Tervezzák meg a munkák ütemezésát, készítsük előa területet. Modern trendekhez precíz alapozés szükséges.",
+          description: "Tervezzák meg a munkák ütemezésát, készítsük elő a területet. Modern trendekhez precíz alapozés szükséges.",
           tips: "Trendek megvalésátésához érdemes tapasztalt szakembert bevonni a precíz munkaárt."
         },
         {
@@ -2435,7 +2435,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         answer: "Igen! <strong>Kis teraszokra különösen ajánlottak</strong> a 2025-ös trendek. A nagyméretű lapok optikailag nagyobbteszik a teret, a világos színek pedig tágasabb hatést keltenek. Az egyszerűbb mintázatok tiszta, rendezett megjelenést biztosítanak."
       },
       {
-        question: "Hogyan kombinálhatom a different térkő textúrákat?",
+        question: "Hogyan kombinálhatom a különböző térkő textúrákat?",
         answer: "A textúrák kombinálősánál tartsuk be a <strong>60-30-10 szabályt</strong>: 60% domináns textára, 30% kiegŐszátá, 10% accent elem. Például: 60% sima felület, 30% enyhán strukturált, 10% markáns textúrájú szegélyként."
       },
       {
@@ -2476,7 +2476,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           id: "lighting",
-          label: "Beápátett LED világítás?",
+          label: "Beépített LED világítás?",
           type: "checkbox"
         },
         {
@@ -2664,7 +2664,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Alapozés és ElákŐszátés - A Siker Alapja",
           content: `<p>Az <strong>alapozés a legkritikusabb rŐsze</strong> a DIY térkövezésnek. Itt törtánhibák később süllyedést, repedést és egyenetlenságet okozhatnak. Az alapozés <strong>nem az a terület, ahol spórolni kell</strong> - jobb tálzésba vinni, mint alulmárni.</p>
           
-          <p>A terasz alapozésának <strong>minimum 20-25 cm mélyságánek</strong> kell lennie. Fontos a <strong>megfelelő lejtés</strong> kialakítésa (2-3%), hogy a víz ne álljon meg a térköveken. A rétegeket <strong>10 cm-enkánt</strong> kell támáráteni a legjobb eredmány érdekében.</p>`,
+          <p>A terasz alapozésának <strong>minimum 20-25 cm mélyságának</strong> kell lennie. Fontos a <strong>megfelelő lejtés</strong> kialakítésa (2-3%), hogy a víz ne álljon meg a térköveken. A rétegeket <strong>10 cm-enként</strong> kell tömöríteni a legjobb eredmány érdekében.</p>`,
           infographic: {
             title: "Alapozési Rétegek Felépítése",
             items: [
@@ -2741,7 +2741,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "3. Terület kijelölése és kiásés",
-          description: "Jeláljók ki a terasz pontos határait, éssuk ki 40-45 cm mélységig. Tévolátsuk el a humuszos réteget és gyökereket.",
+          description: "Jeláljók ki a terasz pontos határait, éssuk ki 40-45 cm mélységig. Távolítsuk el a humuszos réteget és gyökereket.",
           tips: "Esős időben ne dolgozzunk - a sár megnehezáti a munkát és rontja a minőságet."
         },
         {
@@ -2815,7 +2815,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           id: "toolOwnership",
-          label: "Eszkáz tulajdonlés",
+          label: "Eszköz tulajdonlás",
           type: "select",
           options: [
             { value: "none", label: "Minden eszkázt be kell szerezni", cost: 80000 },
@@ -2932,7 +2932,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     ]
   },
 
-  // Kert és járda térkövezés támák (2 blog)
+  // Kert és járda térkövezés témák (2 blog)
   {
     slug: "kerti-utak-tervezese-terko-vs-termeszetes-ko",
     title: "Kerti utak tervezése: térkő vagy természetes kő?",
@@ -2982,7 +2982,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 icon: "🏗️",
                 title: "Esztétika",
                 description: "Térkő: modern, Természetes: organikus",
-                value: "Stílusfüggá"
+                value: "Stílusfüggő"
               },
               {
                 icon: "📦",
@@ -3005,7 +3005,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           
           <p>A térkő legnagyobb előnye a <strong>kiszámáthatéság</strong>: tudhata pontos mennyiság, a költségek és a kivitelezési idá. A <strong>különfále színek és textúrák</strong> lehetővé teszik a kert stílusúhoz valigazátést. Modern gyártési technológiákkal természetes kő hatéstérkövek is kŐszálnek.</p>`,
           table: {
-            headers: ["Térkő típus", "Kerti út ár/m2", "Alkalmazési terület", "Stílus", "Karbantartés", "élettartam"],
+            headers: ["Térkő típus", "Kerti út ár/m2", "Alkalmazési terület", "Stílus", "Karbantartés", "Élettartam"],
             rows: [
               ["Hagyományos betontérkő", "8.000-12.000 Ft", "Minden kerti út", "Univerzális", "Könnyű", "20-25 év"],
               ["Antik hatástérkő", "12.000-18.000 Ft", "Romantikus kertek", "Klasszikus", "Közepes", "25-30 év"],
@@ -3065,7 +3065,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Költság-Haszon Elemzés és Döntési Segádlet",
-          content: `<p>A <strong>költság-haszon elemzésnál</strong> nem csak a kezdeti beruházési költséget kell figyelembe venni, hanem a <strong>hosszú távú karbantartési költségeket</strong> és a <strong>várható élettartamot</strong> is. A természetes kő magasabb kezdáköltságát kompenzálhatja a <strong>hosszabb élettartam és alacsonyabb karbantartési igény</strong>.</p>
+          content: `<p>A <strong>költság-haszon elemzésnál</strong> nem csak a kezdeti beruházési költséget kell figyelembe venni, hanem a <strong>hosszú távú karbantartési költségeket</strong> és a <strong>várható Élettartamot</strong> is. A természetes kő magasabb kezdáköltságát kompenzálhatja a <strong>hosszabb Élettartam és alacsonyabb karbantartési igény</strong>.</p>
           
           <p>Fontos szempont a <strong>kert használata</strong> és a <strong>család igényei</strong>. Gyermekes családok számára a térkő praktikusabb, míg a <strong>reprezentatév kertekben</strong> a természetes kő ad igazán különleges hangulatot.</p>`,
           table: {
@@ -3074,8 +3074,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               ["Kezdeti költság", "8-22k Ft/m2", "15-45k Ft/m2", "Térkő", "Jelentés különbság"],
               ["Kivitelezési sebesság", "Gyors", "Lassá", "Térkő", "30-50% időkülönbség"],
               ["Karbantartés", "Minimal", "Közepes", "Térkő", "éves szinten jelentős"],
-              ["élettartam", "20-30 év", "50+ év", "Természetes", "2x hosszabb élettartam"],
-              ["Esztétikai érték", "Modern", "Idátálló", "Dántetlen", "Stílusfüggá"],
+              ["Élettartam", "20-30 év", "50+ év", "Természetes", "2x hosszabb Élettartam"],
+              ["Esztétikai érték", "Modern", "Időtálló", "Önálló", "Stílusfüggő"],
               ["Környezetbarát", "újrahasznosítható", "100% natúr", "Természetes", "ökológiai szempont"],
               ["Javíthatóság", "Egyszerű", "Specializált", "Térkő", "CserealkatrŐsz könnyű"],
               ["értéknévekedés", "Alacsony", "Magas", "Természetes", "Ingatlan értékáre hatés"]
@@ -3126,7 +3126,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mekkora a költságkülönbság a két anyag között?",
-        answer: "A természetes kő általában <strong>2-3x drágább</strong> a térköveknál. Térkő: <strong>8-22.000 Ft/m2</strong>, természetes kő: <strong>15-45.000 Ft/m2</strong> munkadíjjal együtt. Azonban a hosszabb élettartam miatt a természetes kő hosszú távon költséghatékonyabb lehet."
+        answer: "A természetes kő általában <strong>2-3x drágább</strong> a térköveknál. Térkő: <strong>8-22.000 Ft/m2</strong>, természetes kő: <strong>15-45.000 Ft/m2</strong> munkadíjjal együtt. Azonban a hosszabb Élettartam miatt a természetes kő hosszú távon költséghatékonyabb lehet."
       },
       {
         question: "Melyiket könnyebb karbantartani?",
@@ -3242,8 +3242,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <small>
                   <strong>\${materialName} jellemzák:</strong><br>
                   \${isNaturalStone ? 
-                    '?⚠️élettartam: 50+ év | ⚠️100% természetes | ⚠️Egyedi megjelenés' : 
-                    '?⚠️élettartam: 25 év | ⚠️Könnyű karbantartés | ? Gyors telepátés'
+                    '?⚠️Élettartam: 50+ év | ⚠️100% természetes | ⚠️Egyedi megjelenés' : 
+                    '?⚠️Élettartam: 25 év | ⚠️Könnyű karbantartés | ? Gyors telepátés'
                   }
                 </small>
               </div>
@@ -3327,7 +3327,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     ]
   },
 
-  // Térkő típusok támák (3 blog)
+  // Térkő típusok témák (3 blog)
   {
     slug: "beton-vagy-termeszetes-ko-terkovek",
     title: "Beton vagy természetes kő térkövek - Melyiket válasszuk 2025?",
@@ -3373,11 +3373,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     faq: [
       {
         question: "Melyik térkő típus a tartósabb hosszú távon?",
-        answer: "A természetes kő térkövek jelentősen tartósabbak - 50-100 éves élettartammal, míg a beton térkövek 15-25 év után javítésra szorulnak. A természetes kő idővel szépül, a beton idővel kopik."
+        answer: "A természetes kő térkövek jelentősen tartósabbak - 50-100 éves Élettartammal, míg a beton térkövek 15-25 év után javítésra szorulnak. A természetes kő idővel szépül, a beton idővel kopik."
       },
       {
         question: "Mennyivel drágább a természetes kő térkő?",
-        answer: "A kezdeti beruházés 1,5-3x drágabb lehet, de az alacsony karbantartési költság és hosszú élettartam miatt 20-30 év alatt hasonló összköltségű. Értéktartó befektetés ingatlanoknál."
+        answer: "A kezdeti beruházés 1,5-3x drágabb lehet, de az alacsony karbantartési költság és hosszú Élettartam miatt 20-30 év alatt hasonló összköltségű. Értéktartó befektetés ingatlanoknál."
       },
       {
         question: "Melyik környezetbarátkább választás?",
@@ -3400,7 +3400,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       steps: [
         {
           title: "Költságkeret és prioritésok meghatározésa",
-          description: "Első lépésként határozzuk meg a rendelkezésre álló költságkeretet és rangsoroljuk az elvörösainkat (ár, tartósság, esztétika).",
+          description: "Első lépésként határozzuk meg a rendelkezésre álló költságkeretet és rangsoroljuk az elvárásainkat (ár, tartósság, esztétika).",
           tips: "Ha szűkös a költságkeret, a betontérkő kiváló választás. Ha hosszú távra tervezünk, a természetes kő megtérül."
         },
         {
@@ -3425,7 +3425,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "ésszköltság kalkulálása",
-          description: "Számítsuk ki a teljes élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartést 20-25 évre.",
+          description: "Számítsuk ki a teljes Élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartést 20-25 évre.",
           tips: "A természetes kő kezdeti magasabb ára hosszú távon megtérülhet az alacsony karbantartési költségek miatt."
         },
         {
@@ -3831,7 +3831,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <h4 class="font-semibold text-green-800 mb-3">✅ Előnyök:</h4>
               <ul class="text-green-700 text-sm space-y-2">
                 <li><strong>Esztétika:</strong> klasszikus, időtálló megjelenés</li>
-                <li><strong>Tartósság:</strong> akár 50-80 év élettartam</li>
+                <li><strong>Tartósság:</strong> akár 50-80 év Élettartam</li>
                 <li><strong>Csúszósmentes:</strong> biztonságos járható felület</li>
                 <li><strong>Karbantartés:</strong> minimális ápolés szükséges</li>
                 <li><strong>Javíthatóság:</strong> sérült elemek cserélhetők</li>
@@ -3952,7 +3952,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Drágább az antik térkő a sima térköveknál?",
-        answer: "Igen, az antik térkő 20-40%-kal drágább a sima betonnál a speciális gyártési technológia miatt. Azonban esztétikai értéke és hosszú élettartama kompenzálja a magasabb árat."
+        answer: "Igen, az antik térkő 20-40%-kal drágább a sima betonnál a speciális gyártési technológia miatt. Azonban esztétikai értéke és hosszú Élettartama kompenzálja a magasabb árat."
       },
       {
         question: "Nehéz karbantartani az antik térkő textúráját?",
@@ -4223,7 +4223,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <li><strong>Főtér:</strong> hagyományos (szürke + vörös)</li>
                 <li><strong>Sátálőutca:</strong> álőnk akcentusok (színes csökok)</li>
                 <li><strong>Park:</strong> termŐszetkázel? (záld árnyalatok)</li>
-                <li><strong>Intázmány:</strong> professzionális (monokrám)</li>
+                <li><strong>Intázmány:</strong> professzionális (monokróm)</li>
               </ul>
             </div>
           </div>
@@ -4317,7 +4317,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       steps: [
         {
           title: "Inspirácigyájtése és stílusválasztás",
-          description: "Gyűjtsünk inspirálő kápeket, vizsgáljuk meg hasonlprojekteket, és dántsák el a stílusirányt.",
+          description: "Gyűjtsünk inspirálő képeket, vizsgáljuk meg hasonló projekteket, és döntsék el a stílusirányt.",
           tips: "Pinterest, Instagram és építészeti magazinok remek forrésok. Készíts hangulattáblát!"
         },
         {
@@ -4342,7 +4342,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Vágleges lerakés a minta szerint",
-          description: "A prába alapján végezzák el a teljes felület térkövezésát, betartva a tervezett mintát.",
+          description: "A prába alapján végezzék el a teljes felület térkövezésát, betartva a tervezett mintát.",
           tips: "Madzaggal jeláljók ki a mintavonalakat és egy színt egyszerre rakjunk le!"
         }
       ]
@@ -4362,7 +4362,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Milyen színkombinációk a legnépszerűbbek?",
-        answer: "A legnápszerább kombináciák: szürke+antracit (modern), bézs+terrakotta (meleg), fehár+szürke (klasszikus). A természetes színárnyalatok mindig időtállóak."
+        answer: "A legnépszerűbb kombináciák: szürke+antracit (modern), bézs+terrakotta (meleg), fehár+szürke (klasszikus). A természetes színárnyalatok mindig időtállóak."
       },
       {
         question: "Bonyolult a színes mintázat kivitelezése?",
@@ -4524,7 +4524,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       "/blog/modern-terkovezes-trendek-design-otletek-2025"
     ]
   },
-  // Tervezés és tanácsadés támák (2 blog)
+  // Tervezés és tanácsadés témák (2 blog)
   {
     slug: "terkovezes-tervezes-alapjai",
     title: "Térkövezés tervezés alapjai: mire figyeljünk?",
@@ -4635,7 +4635,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Anyagválasztás és minősági követelmányek",
-          content: `<p>A <strong>helyes anyagválasztás</strong> döntő befolyásolja a térkövezés élettartamát és megjelenésát:</p>
+          content: `<p>A <strong>helyes anyagválasztás</strong> döntő befolyásolja a térkövezés Élettartamát és megjelenésát:</p>
           
           <div class="grid md:grid-cols-3 gap-4 my-6">
             <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
@@ -4806,7 +4806,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mely évszakban érdemes térkövezést tervezni és kivitelezni?",
-        answer: "A tervezést télen végezzák, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35°C feletti) időszakokat."
+        answer: "A tervezést télen végezzék, a kivitelezést tavasszal kezdjók. április-oktáber között ideális az időjárás. Keráljók a fagyos és tál meleg (35°C feletti) időszakokat."
       }
     ],
     calculator: {
@@ -5027,7 +5027,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Anyagköltségek Részletes Bontésa",
           content: `<p>Az anyagköltségek teszik ki a projekt összköltségének <strong>40-60%-át</strong>. 2025-ben a térkövek ára jelentősen eltérhet a típus és minőság függvényében.</p>
           
-          <p>A <strong>betontérkövek</strong> a leggazdaságosabb választás, míg a <strong>természetes kő térkövek</strong> prémium kategóriába tartoznak. A választásnál fontos szempont a felhasználási terület és a várt élettartam.</p>`,
+          <p>A <strong>betontérkövek</strong> a leggazdaságosabb választás, míg a <strong>természetes kő térkövek</strong> prémium kategóriába tartoznak. A választásnál fontos szempont a felhasználási terület és a várt Élettartam.</p>`,
           table: {
             headers: ["Térkő típus", "Anyagár (Ft/m2)", "Munkadíj (Ft/m2)", "Összesen (Ft/m2)", "Élettartam", "Ajánlott felhasználás"],
             rows: [
@@ -5045,7 +5045,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Munkadíj és Kiegészítő Költségek",
           content: `<p>A munkadíj 2025-ben <strong>3.500-15.000 Ft/m2</strong> között változik a projekt összetetségétől függően. Ez tartalmazza a földmunkákat, alapozést, térkőlerakést és a befejező munkálatokat.</p>
           
-          <p>A <strong>kiegészítő költségek</strong> gyakran 20-40%-kal növelik a végső árat. Ide tartozik a vízelvezetés, szegályezés, lépcsők, és a speciális minták kialakítésa.</p>`,
+          <p>A <strong>kiegészítő költségek</strong> gyakran 20-40%-kal növelik a végső árat. Ide tartozik a vízelvezetés, szegélyezés, lépcsők, és a speciális minták kialakítésa.</p>`,
           infographic: {
             title: "Rejtett Költségek és Kiegészítők 2025",
             items: [
@@ -5099,7 +5099,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               ["Szezonális kivitelezés (Ősz/tavasz)", "10-15%", "Időjárástól függő ütemezés", "✓ Igen"],
               ["Nagyobb mennyiság rendelése", "8-12%", "Magasabb előleg szükséges", "✓ Igen"],
               ["Egyszerűbb minta választása", "15-25%", "Kevésbé látványos megjelenés", "⚠️ Mérlegelni kell"],
-              ["Normál térkő prémium helyett", "30-50%", "Rövidebb élettartam", "⚠️ Területtől függ"],
+              ["Normál térkő prémium helyett", "30-50%", "Rövidebb Élettartam", "⚠️ Területtől függ"],
               ["DIY alapozés", "25-35%", "Nagyobb kockázat, garancia kérdés", "❌ Nem ajánlott"],
               ["Használt térkő", "40-60%", "Korlátozott választék, minőság", "⚠️ Kockázatos"],
               ["Több árajánlat kérése", "5-15%", "Időigényes folyamat", "✓ Mindenképp"],
@@ -5120,7 +5120,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "2. Térkő típus és minta kiválasztása",
           description: "Válasszuk ki a térkővet a felhasználási terület függvényében. Kocsibeállóhoz vastagabb, nagyobb forgalmú területekhez tartósabb anyag kell.",
-          tips: "A térkő választásánál az ár mellett az élettartamot és a karbantartési igényt is vegyük figyelembe."
+          tips: "A térkő választásánál az ár mellett az Élettartamot és a karbantartési igényt is vegyük figyelembe."
         },
         {
           title: "3. Alapanyagok mennyiségének meghatározésa",
@@ -5385,7 +5385,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Minőságbiztosítés és garancia",
           content: `<p>Professzionális kivitelezőkánt <strong>5 év garanciát</strong> vállalunk munkáinkra. Ez magában foglalja az anyaghibákat, kivitelezési hibákat és a természetes kopést meghaladelváltozésokat.</p>
           
-          <p>Minden projekt után <strong>átadési jegyzőkönyvet</strong> készítünk fotódokumentáciéval, műszaki paraméterekkel és karbantartési útmutatóval. évente ingyenes állapotfelmérést biztosítunk.</p>`
+          <p>Minden projekt után <strong>átadési jegyzőkönyvet</strong> készítünk fotódokumentációval, műszaki paraméterekkel és karbantartési útmutatóval. évente ingyenes állapotfelmérést biztosítunk.</p>`
         }
       ]
     },
@@ -5431,7 +5431,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "árajánlatok bekérése",
-          description: "Kérjen részletes, tételes árajánlatot minimum 3 kivitelezőtál. Az árajánlat tartalmazza az anyagokat, munkadíjat, garanciát és időtervet.",
+          description: "Kérjen részletes, tételes árajánlatot minimum 3 kivitelezőtől. Az árajánlat tartalmazza az anyagokat, munkadíjat, garanciát és időtervet.",
           duration: "PT5M"
         },
         {
@@ -5441,7 +5441,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "Szerzádéskátés",
-          description: "Késsán részletes vállalkozési szerzádést, ami tartalmazza a műszaki tartalmat, időtervet, fizetési feltételeket és garanciális feltételeket.",
+          description: "Kössön részletes vállalkozési szerződést, ami tartalmazza a műszaki tartalmat, időtervet, fizetési feltételeket és garanciális feltételeket.",
           duration: "PT10M"
         }
       ]
@@ -5646,7 +5646,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Milyen tartós az újrahasznosított térkő?",
-        answer: "Az újrahasznosított anyagokból készült térkövek ugyanolyan tartósak, mint a hagyományosak. A modern gyártéstechnológia garantálja a 25-30 éves élettartamot és a fagyállóságot."
+        answer: "Az újrahasznosított anyagokból készült térkövek ugyanolyan tartósak, mint a hagyományosak. A modern gyártéstechnológia garantálja a 25-30 éves Élettartamot és a fagyállóságot."
       },
       {
         question: "Hogyan működik a vízáteresztő térkövezés télen?",
