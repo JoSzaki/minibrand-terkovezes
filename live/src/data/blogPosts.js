@@ -22,9 +22,8 @@ export const blogPosts = [
       sections: [
         {
           title: "2025-ös árak és költségek",
-          content: "<p>A kocsibeálló térkövezés árai 2025-ben az anyagválasztástól és a terület méretétől függően <strong>8 000–25 000 Ft/m²</strong> között mozognak munkadíjjal együtt. Az árak változékonyságát számos tényező befolyásolja.</p>\n          <p>A költségek alakulását elsősorban a térkő típusa, a terület előkészítése, az alapozás mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20–30 évig szolgálhat problémamentesen.</p>",
+          content: `<p>A kocsibeálló térkövezés árai 2025-ben az anyagválasztástól és a terület méretétől függően <strong>8 000–25 000 Ft/m²</strong> között mozognak munkadíjjal együtt. Az árak változékonyságát számos tényező befolyásolja.</p>\n          <p>A költségek alakulását elsősorban a térkő típusa, a terület előkészítése, az alapozás mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20–30 évig szolgálhat problémamentesen.</p>`,
           
-          <p>A költségek alakulésát elsősorban a térkő típusa, a terület előkészítése, az alapozés mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20-30 évig szolgálhat problémamentesen.</p>`,
           infographic: {
             title: "Árak összetevői 2025-ben",
             items: [
