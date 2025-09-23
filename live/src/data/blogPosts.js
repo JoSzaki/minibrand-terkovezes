@@ -3,9 +3,9 @@ export const blogPosts = [
   // Kocsibeálló térkövezés témák (3 blog)
   {
     slug: "kocsibeallo-terkovezes-arak-tipusok-kivitelezes",
-    title: "Kocsibeálló térkövezés 2025: Árak, típusok, kivitelezés",
-    description: "Kocsibeálló térkövezés 2025: árak, térkő típusok, kivitelezési lépések, alapozés, vízelvezetés. Szakértői tanácsok és ingyenes ajánlat.",
-    excerpt: "Teljes útmutató kocsibeálló térkövezéshez 2025-ben. Árak, térkőtípusok, kivitelezés lépésről lépésre. Milyen térkővet válasszunk autónk számára?",
+    title: "Kocsibeálló térkövezés 2025: árak, típusok, kivitelezés",
+    description: "Kocsibeálló térkövezés 2025: árak, térkő típusok, kivitelezési lépések, alapozás, vízelvezetés. Szakértői tanácsok és ingyenes ajánlat.",
+    excerpt: "Teljes útmutató kocsibeálló térkövezéshez 2025-ben. Árak, térkőtípusok, kivitelezés lépésről lépésre. Milyen térkövet válasszunk autónk számára?",
     date: "2025-03-20",
     category: "Kocsibeálló térkövezés",
     readTime: "16 perc",
@@ -15,54 +15,54 @@ export const blogPosts = [
       hero: {
         src: "/images/hero-terkovezes.jpg",
         alt: "Modern kocsibeálló térkövezés",
-        caption: "Professzionális kocsibeálló térkövezés - tartós és esztétikus megoldés"
+        caption: "Professzionális kocsibeálló térkövezés - tartós és esztétikus megoldás"
       }
     },
     content: {
       sections: [
         {
-          title: "2025-ös Árak és Költségek",
-          content: `<p>A kocsibeálló térkövezés árai 2025-ben az anyagválasztástól és a terület méretétől függően <strong>8.000-25.000 Ft/m2</strong> között mozognak munkadíjjal együtt. Az árak jelentős változékonyságát számos tényező befolyásolja.</p>
+          title: "2025-ös árak és költségek",
+          content: "<p>A kocsibeálló térkövezés árai 2025-ben az anyagválasztástól és a terület méretétől függően <strong>8 000–25 000 Ft/m²</strong> között mozognak munkadíjjal együtt. Az árak változékonyságát számos tényező befolyásolja.</p>\n          <p>A költségek alakulását elsősorban a térkő típusa, a terület előkészítése, az alapozás mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20–30 évig szolgálhat problémamentesen.</p>",
           
           <p>A költségek alakulésát elsősorban a térkő típusa, a terület előkészítése, az alapozés mélysége és a vízelvezetési megoldások határozzák meg. Fontos tudni, hogy egy jól kivitelezett kocsibeálló 20-30 évig szolgálhat problémamentesen.</p>`,
           infographic: {
             title: "Árak összetevői 2025-ben",
             items: [
               {
-                icon: "🏗️",
+                icon: "materials",
                 title: "Térkő anyagok",
                 description: "Betonkő, természetes kő, antik térkő",
                 value: "3.000-12.000 Ft/m2"
               },
               {
-                icon: "🏗️",
+                icon: "labor",
                 title: "Munkadíj",
-                description: "Földmunka, alapozés, lerakés",
+                description: "Földmunka, alapozás, lerakás",
                 value: "4.000-8.000 Ft/m2"
               },
               {
-                icon: "📦",
+                icon: "base",
                 title: "Alapanyagok",
                 description: "Kavics, homok, cement",
                 value: "1.000-3.000 Ft/m2"
               },
               {
-                icon: "🏗️",
+                icon: "drainage",
                 title: "Vízelvezetés",
-                description: "Lejtések, csatornák kialakítésa",
+                description: "Lejtések, csatornák kialakítása",
                 value: "2.000-5.000 Ft/m2"
               },
               {
-                icon: "📦",
+                icon: "edging",
                 title: "Szegélyek",
-                description: "Betonszegály, kőszegély",
+                description: "Betonszegély, kőszegély",
                 value: "1.500-3.000 Ft/fm"
               },
               {
-                icon: "🏗️",
+                icon: "extra",
                 title: "Extra költségek",
                 description: "Engedélyek, tervezés, garancia",
-                value: "5-15% felárak"
+                value: "5–15% felár"
               }
             ]
           }
@@ -156,7 +156,7 @@ export const blogPosts = [
       }
     ],
     calculator: {
-      title: "Kocsibeálló Térkövezés Költságkalkulátor",
+      title: "Kocsibeálló térkövezés költségkalkulátor",
       inputs: [
         {
           id: "area",
@@ -169,10 +169,10 @@ export const blogPosts = [
           label: "Térkő típusa",
           type: "select",
           options: [
-            { value: "basic", label: "Normál betontérkő (4.000 Ft/m2)", price: 4000 },
-            { value: "thick", label: "Vastagított betontérkő (5.500 Ft/m2)", price: 5500 },
-            { value: "granite", label: "Gránit térkő (12.000 Ft/m2)", price: 12000 },
-            { value: "antique", label: "Antik térkő (9.000 Ft/m2)", price: 9000 }
+            { value: "basic", label: "Normál betontérkő (4 000 Ft/m²)", price: 4000 },
+            { value: "thick", label: "Vastagított betontérkő (5 500 Ft/m²)", price: 5500 },
+            { value: "granite", label: "Gránit térkő (12 000 Ft/m²)", price: 12000 },
+            { value: "antique", label: "Antik térkő (9 000 Ft/m²)", price: 9000 }
           ]
         },
         {
@@ -188,7 +188,7 @@ export const blogPosts = [
           const needsDrainage = document.getElementById('drainage').checked;
 
           if (area <= 0) {
-            alert('Kérem adja meg a terület méretét!');
+            alert('Kérem, adja meg a terület méretét!');
             return;
           }
 
@@ -231,12 +231,12 @@ export const blogPosts = [
           }
 
           const resultDiv = document.getElementById('calculator-result');
-          resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült költság: ' + 
+          resultDiv.innerHTML = '<div class="font-semibold text-green-800">Becsült költség: ' + 
             Math.round(minPrice).toLocaleString('hu-HU') + ' - ' + 
             Math.round(maxPrice).toLocaleString('hu-HU') + ' Ft</div>' +
             '<div class="text-sm text-green-600 mt-2">*Az ár tartalmazza az anyagot és a munkadíjat</div>' +
             '<div class="text-sm text-yellow-700 mt-3 p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">' +
-            '⚠️Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
+            'Ez csak egy tájékoztató becslés! Teljesen pontos árajánlatot csak helyszíni felmérés után adhatunk.</div>' +
             '<div class="mt-4 text-center">' +
             '<a href="/kapcsolat?calc=kocsibeallo-terkovezes" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">' +
             'Pontos árajánlat kérése' +
