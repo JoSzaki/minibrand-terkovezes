@@ -1,0 +1,11 @@
+# Térkő fajták képek mappája
+# Itt lesznek a különböző térkő típusok képei WebP és JPG formátumban
+
+Szükséges képek:
+- beton-terko.webp / beton-terko.jpg
+- keramia-terko.webp / keramia-terko.jpg
+- marvany-terko.webp / marvany-terko.jpg
+- bazalt-terko.webp / bazalt-terko.jpg
+
+Ajánlott méretek: 800x600px
+Optimalizált fájlméret: WebP < 100KB, JPG < 150KB

@@ -17,11 +17,15 @@ const ColorModal = ({ color, isOpen, onClose }: any) => {
           >
             ×
           </button>
-          <img
-            src={color.src}
-            alt={color.title}
-            className="w-full h-64 object-cover rounded-t-xl"
-          />
+          <picture>
+            <source srcSet={color.webp} type="image/webp" />
+            <img
+              src={color.src}
+              alt={color.title}
+              className="w-full h-64 object-cover rounded-t-xl"
+              loading="lazy"
+            />
+          </picture>
           <div className="p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">{color.title}</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -90,7 +94,8 @@ export function ColorCarousel() {
     {
       title: "Szürke Árnyalatok",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/beton térkő.webp",
+      webp: "/images/terko-fajtak/beton térkő.webp",
       details: {
         price: '8.000-30.000 Ft/m²',
         durability: '20-50 év',
@@ -105,7 +110,8 @@ export function ColorCarousel() {
     {
       title: "Barna Tónusok",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/kerámia térkő.png",
+      webp: "/images/terko-fajtak/kerámia térkő.webp",
       details: {
         price: '9.000-32.000 Ft/m²',
         durability: '20-45 év',
@@ -120,7 +126,8 @@ export function ColorCarousel() {
     {
       title: "Bézs és Krém",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/márvány térkő.png",
+      webp: "/images/terko-fajtak/márvány térkő.webp",
       details: {
         price: '10.000-35.000 Ft/m²',
         durability: '25-50 év',
@@ -135,7 +142,8 @@ export function ColorCarousel() {
     {
       title: "Antracit és Fekete",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600298882974-6be191ceeda0?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/gránit térkő.webp",
+      webp: "/images/terko-fajtak/gránit térkő.webp",
       details: {
         price: '12.000-40.000 Ft/m²',
         durability: '25-50 év',

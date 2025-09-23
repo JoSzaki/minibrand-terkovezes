@@ -39,7 +39,9 @@
       "WebFetch(domain:terkovezesbudapest.hu)",
       "Bash(cat:*)",
       "Bash(gh issue close:*)",
-      "Read(//c/Users/sznor/Pictures/Screenshots/**)"
+      "Read(//c/Users/sznor/Pictures/Screenshots/**)",
+      "Bash(find:*)",
+      "WebFetch(domain:joszaki.hu)"
     ],
     "deny": [],
     "ask": []

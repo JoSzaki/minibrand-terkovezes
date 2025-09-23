@@ -17,11 +17,15 @@ const PatternModal = ({ pattern, isOpen, onClose }: any) => {
           >
             ×
           </button>
-          <img
-            src={pattern.src}
-            alt={pattern.title}
-            className="w-full h-64 object-cover rounded-t-xl"
-          />
+          <picture>
+            <source srcSet={pattern.webp} type="image/webp" />
+            <img
+              src={pattern.src}
+              alt={pattern.title}
+              className="w-full h-64 object-cover rounded-t-xl"
+              loading="lazy"
+            />
+          </picture>
           <div className="p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">{pattern.title}</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -90,7 +94,8 @@ export function PatternCarousel() {
     {
       title: "Egyenes Szélű",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/egyenes szélű beton térkő.png",
+      webp: "/images/terko-fajtak/egyenes szélű beton térkő.webp",
       details: {
         price: '8.000-25.000 Ft/m²',
         durability: '20-50 év',
@@ -105,7 +110,8 @@ export function PatternCarousel() {
     {
       title: "Hullámos Szegélyű",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/hullámos szegélyű beton térkő.png",
+      webp: "/images/terko-fajtak/hullámos szegélyű beton térkő.png",
       details: {
         price: '9.000-27.000 Ft/m²',
         durability: '20-45 év',
@@ -120,7 +126,8 @@ export function PatternCarousel() {
     {
       title: "H-alakú",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600298882974-6be191ceeda0?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/h alakú térkő.png",
+      webp: "/images/terko-fajtak/h alakú térkő.webp",
       details: {
         price: '15.000-40.000 Ft/m²',
         durability: '30-60 év',
@@ -135,7 +142,8 @@ export function PatternCarousel() {
     {
       title: "Gyephézagos",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/gyephézagos térkő.png",
+      webp: "/images/terko-fajtak/gyephézagos térkő.webp",
       details: {
         price: '10.000-30.000 Ft/m²',
         durability: '25-40 év',

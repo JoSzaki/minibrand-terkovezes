@@ -17,11 +17,15 @@ const MaterialModal = ({ material, isOpen, onClose }: any) => {
           >
             ×
           </button>
-          <img
-            src={material.src}
-            alt={material.title}
-            className="w-full h-64 object-cover rounded-t-xl"
-          />
+          <picture>
+            <source srcSet={material.webp} type="image/webp" />
+            <img
+              src={material.src}
+              alt={material.title}
+              className="w-full h-64 object-cover rounded-t-xl"
+              loading="lazy"
+            />
+          </picture>
           <div className="p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">{material.title}</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -90,7 +94,8 @@ export function MaterialCarousel() {
     {
       title: "Beton Térkövek",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/beton térkő.webp",
+      webp: "/images/terko-fajtak/beton térkő.webp",
       details: {
         price: '8.000-18.000 Ft/m²',
         durability: '20-30 év',
@@ -105,7 +110,8 @@ export function MaterialCarousel() {
     {
       title: "Kerámia Térkövek",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/kerámia térkő.png",
+      webp: "/images/terko-fajtak/kerámia térkő.webp",
       details: {
         price: '15.000-35.000 Ft/m²',
         durability: '30-40 év',
@@ -120,7 +126,8 @@ export function MaterialCarousel() {
     {
       title: "Márvány",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/márvány térkő.png",
+      webp: "/images/terko-fajtak/márvány térkő.webp",
       details: {
         price: '25.000-60.000 Ft/m²',
         durability: '50-100+ év',
@@ -135,7 +142,8 @@ export function MaterialCarousel() {
     {
       title: "Bazalt",
       button: "Részletek",
-      src: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=800&q=80",
+      src: "/images/terko-fajtak/bazalt térkő.png",
+      webp: "/images/terko-fajtak/bazalt térkő.webp",
       details: {
         price: '18.000-40.000 Ft/m²',
         durability: '80-100+ év',
