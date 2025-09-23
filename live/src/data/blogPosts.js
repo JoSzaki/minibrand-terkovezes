@@ -2401,7 +2401,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "3. Funkcionális zánák kialakítésa",
-          description: "Osszuk fel a teraszteret funkciák szerint: átkezárŐsz, pihenésarok, névány-zána. Minden területhez válasszunk megfelelő térkő megoldést.",
+          description: "Osszuk fel a teraszteret funkciák szerint: étkezős, pihenésarok, növényzóna. Minden területhez válasszunk megfelelő térkő megoldést.",
           tips: "Használjunk különböző színvagy textúrájú térköveket a zánák természetes elkülönátésáhez."
         },
         {
@@ -6420,14 +6420,14 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
 // Csak a mákádJóSzaki térkövezés kápek - pontosan ugyanazok mint a referenciak oldalon
 const joszakiImages = [
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4", alt: "Elegáns térkővezett kocsibeálló kovácsoltvas kapuval - MiniBrand Térkövezés referencia" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8", alt: "Térkővezett kocsibeálló kovácsoltvas kapu elátt - strapabártérkő burkolat" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q", alt: "Természetes hatéstérkővezett kerti járda harmonikus néványzettel" },
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8", alt: "Térkővezett kocsibeálló kovácsoltvas kapu előtt - strapabíró térkő burkolat" },
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-ui145itd1q", alt: "Természetes hatású térkővezett kerti járda harmonikus növényzettel" },
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/oszko-gyorgy-terkovezes-qhld8u75js", alt: "Műfű és térkőves járda kombináciája - gondozésmentes kert megoldés" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb", alt: "Nagy felülettérkőburkolat természetes árnyalatokkal pihenáterülethez" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/general-kivitelezes-felujitas-epuletbontas-terkovezes-4km426cyqk", alt: "Letisztult térkőburkolat udvarokhoz és kerti utakhoz természetes árnyalatokkal" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-6fssowa8pu", alt: "Káltűri lápcstérkő burkolattal és éves korlúttal - időjárásálló megoldés" },
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/horvath-ervin-terkovezes-bpxryuh3gb", alt: "Nagy felületi térkő burkolat természetes árnyalatokkal pihenő területhez" },
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/general-kivitelezes-felujitas-epuletbontas-terkovezes-4km426cyqk", alt: "Letisztult térkő burkolat udvarokhoz és kerti utakhoz természetes árnyalatokkal" },
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-6fssowa8pu", alt: "Kultúrált lépcsős térkő burkolattal és ívelt korláttal - időjárásálló megoldés" },
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-nxozuex45t", alt: "Színes térkő burkolat fedett teraszon - vörös, barna és sárga árnyalatok" },
-  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m", alt: "Természetes hatésteraszburkolat éves kialakátéssal világos káhatéssal" }
+  { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m", alt: "Természetes hatású terasz burkolat íves kialakítással világos kőhatással" }
 ];
 
 // Térkő támához kapcsoládimage mapping
