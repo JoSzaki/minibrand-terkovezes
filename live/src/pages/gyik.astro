@@ -2,25 +2,12 @@
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { generateSchemasForPage } from '../schema-config.js';
-
 const title = "Gyakori Kérdések - Térkövezés Budapest | GYIK";
 const description = "Gyakori kérdések térkövezésről: árak, kivitelezés, tartósság, karbantartás. Minden amit tudni kell a térkövezési projektekről.";
 const canonicalURL = "https://terkovezesbudapest.hu/gyik";
-
-// Generate FAQ schema
-const faqSchemas = generateSchemasForPage('faq', {
-    title: title,
-    description: description
-});
 ---
 
 <Layout title={title} description={description} canonicalURL={canonicalURL}>
-    <!-- FAQ Schema -->
-    {faqSchemas.map(schema => (
-        <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-    ))}
-
     <!-- Comprehensive FAQ Page Schema -->
     <script type="application/ld+json">
     {
