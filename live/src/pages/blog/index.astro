@@ -8,8 +8,10 @@ import { blogPosts, getCategories, getLatestPosts } from '../../data/blogPosts.j
 // Import getBlogPostImage from blogPosts.js
 import { getBlogPostImage } from '../../data/blogPosts.js';
 
+const canonicalURL = "https://terkovezesbudapest.hu/blog";
+
 // Get all blog posts for display
-const latestBlogPosts = getLatestPosts(25);
+const latestBlogPosts = getLatestPosts(64); // Show all blog posts
 const categories = getCategories();
 
 // Function to get appropriate alt text for blog post images - now using JáSzaki images
@@ -47,7 +49,7 @@ function getBlogPostImageAlt(category, title) {
 }
 ---
 
-<Layout title="Blog - Térkövezés Budapest" description="Hasznos cikkek, tippek és útmutatók térkövezésről. Szakértői tanácsok és praktikus információk térkövezési projektjeidhez.">
+<Layout title="Blog - Térkövezés Budapest" description="Hasznos cikkek, tippek és útmutatók térkövezésről. Szakértői tanácsok és praktikus információk térkövezési projektjeidhez." canonicalURL={canonicalURL}>
     <Header />
     
     <!-- Blog Header -->

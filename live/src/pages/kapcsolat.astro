@@ -4,6 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { generateSchemasForPage } from '../schema-config.js';
 
+const canonicalURL = "https://terkovezesbudapest.hu/kapcsolat";
+
 // Generate local business schema for contact page
 const contactSchemas = generateSchemasForPage('contact', {
     name: "Betonozás Budapest",
@@ -19,7 +21,7 @@ const contactSchemas = generateSchemasForPage('contact', {
 });
 ---
 
-<Layout title="Kapcsolat - Betonozás Budapest" description="Vedd fel velünk a kapcsolatot ingyenes ajánlatkérésért. Tapasztalt betonozási szakembereink készséggel állnak rendelkezésedre.">
+<Layout title="Kapcsolat - Betonozás Budapest" description="Vedd fel velünk a kapcsolatot ingyenes ajánlatkérésért. Tapasztalt betonozási szakembereink készséggel állnak rendelkezésedre." canonicalURL={canonicalURL}>
     <!-- Local Business Schema -->
     {contactSchemas.map(schema => (
         <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>

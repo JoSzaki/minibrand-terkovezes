@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 
 const { title, description, date, category, author, readTime, excerpt, slug, content, images, faq, tables, howTo, infographics, calculator } = Astro.props;
 const metaDescription = description;
+const canonicalURL = `https://terkovezesbudapest.hu/blog/${slug}`;
 
 // Get related articles for this blog post
 const relatedArticles = getRelatedArticles(slug, blogPosts);
@@ -78,7 +79,7 @@ if (howTo && howTo.steps && howTo.steps.length > 0) {
 const blogSchemas = generateSchemasForPage('blog', schemaData);
 ---
 
-<Layout title={title + " - Térkövezés Budapest"} description={metaDescription}>
+<Layout title={title + " - Térkövezés Budapest"} description={metaDescription} canonicalURL={canonicalURL}>
     <!-- Schema Markup -->
     {blogSchemas.map(schema => (
         <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>

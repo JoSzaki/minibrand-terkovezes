@@ -5,9 +5,10 @@ import Footer from '../components/Footer.astro';
 
 const title = "Adatvédelmi Tájékoztató - Térkövezés Budapest";
 const description = "Adatvédelmi tájékoztató: személyes adatok kezelése, cookies használata, felhasználói jogok. GDPR megfelelőség.";
+const canonicalURL = "https://terkovezesbudapest.hu/adatvedelmi-tajekoztato";
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalURL={canonicalURL}>
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {

@@ -5,9 +5,10 @@ import CookieConsent from './CookieConsent.astro';
 export interface Props {
   title: string;
   description?: string;
+  canonicalURL?: string;
 }
 
-const { title, description = "Professzionális térkövezési szolgáltatások Budapesten" } = Astro.props;
+const { title, description = "Professzionális térkövezési szolgáltatások Budapesten", canonicalURL } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -20,6 +21,9 @@ const { title, description = "Professzionális térkövezési szolgáltatások B
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
+    <!-- Canonical URL -->
+    {canonicalURL && <link rel="canonical" href={canonicalURL} />}
     
     <!-- Inline Critical CSS for immediate rendering -->
     <style set:html={criticalCSS}></style>
