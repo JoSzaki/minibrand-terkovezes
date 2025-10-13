@@ -101,17 +101,7 @@ export const relatedArticlesMap = {
     "profi-terkovezes-kivitelezes-lepesek-hibak"
   ],
 
-  // Új blogcikkek - további kapcsolódó cikkek a GitHub Issues alapján
-  "terko-vs-beton-burkolat-osszehasonlitas": [
-    "terko-vs-asszfalt-beton-kocsibeallok-osszehasonlitas",
-    "beton-vagy-termeszetes-ko-terkovek",
-    "kocsibeallo-terkovezes-arak-tipusok-kivitelezes"
-  ],
-  "terko-karbantartasa-tisztitasa": [
-    "terkovezes-karbantartas-javitas-szakertoi-tippek",
-    "terkozott-jardak-karbantartasa-evszakonkent",
-    "profi-terkovezes-kivitelezes-lepesek-hibak"
-  ]
+  // Kapcsolódó cikkek - csak létező blog postokra
 };
 
 // Kapcsolódó cikkek lekérése funkcióval fallback-kel

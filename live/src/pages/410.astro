@@ -1,0 +1,128 @@
+---
+// 410 Gone page for removed content
+export const prerender = true;
+
+// HTTP 410 Gone response
+Astro.response.status = 410;
+Astro.response.statusText = 'Gone';
+Astro.response.headers.set('Cache-Control', 'public, max-age=86400');
+Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+
+import Layout from '../components/Layout.astro';
+---
+
+<Layout 
+  title="Tartalom már nem elérhető - Térkövezés Budapest"
+  description="A keresett tartalom már nem elérhető. Fedezze fel friss cikkeinket térkövezésről."
+  canonicalURL="https://terkovezesbudapest.hu/410"
+  ogImage="https://terkovezesbudapest.hu/images/hero-terkovezes.jpg"
+>
+  <div class="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <!-- 410 Icon -->
+      <div class="mb-8">
+        <div class="mx-auto w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center">
+          <svg class="w-12 h-12 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 410 Message -->
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Tartalom már nem elérhető
+      </h1>
+      
+      <p class="text-xl text-gray-600 mb-8">
+        A keresett tartalom véglegesen eltávolításra került (HTTP 410). 
+        Fedezze fel friss, naprakész cikkeinket térkövezésről!
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+        <a href="/blog" 
+           class="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
+          📖 Blog cikkek böngészése
+        </a>
+        
+        <a href="/" 
+           class="inline-block bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold border-2 border-primary-600 hover:bg-primary-50 transition-colors duration-200">
+          🏠 Főoldal
+        </a>
+        
+        <a href="/kapcsolat" 
+           class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200">
+          📞 Kapcsolat
+        </a>
+      </div>
+
+      <!-- Recent Articles Section -->
+      <div class="mt-12 text-left">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+          🔥 Friss cikkek térkövezésről
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 class="font-semibold text-lg mb-2">
+              <a href="/blog/kocsibeallo-terkovezes-arak-tipusok-kivitelezes" 
+                 class="text-primary-600 hover:text-primary-800">
+                Kocsibeálló térkövezés 2025: árak, típusok
+              </a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Teljes útmutató kocsibeálló térkövezéshez. Árak, térkőtípusok, kivitelezési lépések.
+            </p>
+            <a href="/blog/kocsibeallo-terkovezes-arak-tipusok-kivitelezes" 
+               class="text-primary-600 font-medium text-sm hover:underline">
+              Tovább olvasom →
+            </a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 class="font-semibold text-lg mb-2">
+              <a href="/blog/hogyan-valasszunk-terkovet" 
+                 class="text-primary-600 hover:text-primary-800">
+                Térkő választási útmutató
+              </a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Praktikus tanácsok térkő kiválasztásához. Teherbírás, csúszásmentesség, árak.
+            </p>
+            <a href="/blog/hogyan-valasszunk-terkovet" 
+               class="text-primary-600 font-medium text-sm hover:underline">
+              Tovább olvasom →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO Help Text -->
+      <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+        <p class="text-sm text-blue-800">
+          <strong>Keresőmotornak:</strong> Ez a tartalom véglegesen el lett távolítva (410 Gone). 
+          Kérjük, távolítsa el az indexből és tekintse át friss tartalmainkat.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Track 410 visits for analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view_410', {
+      'event_category': 'HTTP Status',
+      'event_label': window.location.pathname,
+      'value': 410
+    });
+  }
+  
+  // Auto redirect after 10 seconds (optional)
+  setTimeout(() => {
+    if (confirm('Szeretné, ha átirányítanánk a főoldalra?')) {
+      window.location.href = '/';
+    }
+  }, 10000);
+</script>

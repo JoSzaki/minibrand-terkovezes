@@ -1,0 +1,72 @@
+# .htaccess for terkovezesbudapest.hu
+# Handle 410 Gone responses for removed blog posts
+
+# Enable mod_rewrite
+RewriteEngine On
+
+# Security headers
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# 410 Gone responses for removed blog posts
+# These URLs existed before but have been permanently removed
+
+# Redirect removed blog posts to 410 page with proper HTTP status
+RewriteRule ^blog/terasz-terkovezes-tervezese/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-hibakjavitasok/?$ /410 [R=410,L]  
+RewriteRule ^blog/antik-terko-megujitasa/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-vs-beton-burkolat-osszehasonlitas/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-karbantartas-tisztitasa/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-novenyezet-kombinialasa/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-lerakas-diy-utmutato/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-alapozas-szakszeruen/?$ /410 [R=410,L]
+RewriteRule ^blog/terko-telepites-koltsegei/?$ /410 [R=410,L]
+RewriteRule ^blog/kornyezetbarat-terko-opciok/?$ /410 [R=410,L]
+
+# Alternative method: Direct 410 response without redirect
+# (Uncomment these and comment above if you prefer direct 410 responses)
+
+# RewriteRule ^blog/terasz-terkovezes-tervezese/?$ - [R=410,L]
+# RewriteRule ^blog/terko-hibakjavitasok/?$ - [R=410,L]
+# RewriteRule ^blog/antik-terko-megujitasa/?$ - [R=410,L]
+# RewriteRule ^blog/terko-vs-beton-burkolat-osszehasonlitas/?$ - [R=410,L]
+# RewriteRule ^blog/terko-karbantartas-tisztitasa/?$ - [R=410,L]
+# RewriteRule ^blog/terko-novenyezet-kombinialasa/?$ - [R=410,L]
+# RewriteRule ^blog/terko-lerakas-diy-utmutato/?$ - [R=410,L]
+# RewriteRule ^blog/terko-alapozas-szakszeruen/?$ - [R=410,L]
+# RewriteRule ^blog/terko-telepites-koltsegei/?$ - [R=410,L]
+# RewriteRule ^blog/kornyezetbarat-terko-opciok/?$ - [R=410,L]
+
+# Set cache headers for 410 responses
+<LocationMatch "^/(blog/(terasz-terkovezes-tervezese|terko-hibakjavitasok|antik-terko-megujitasa|terko-vs-beton-burkolat-osszehasonlitas|terko-karbantartas-tisztitasa|terko-novenyezet-kombinialasa|terko-lerakas-diy-utmutato|terko-alapozas-szakszeruen|terko-telepites-koltsegei|kornyezetbarat-terko-opciok)|410)">
+    Header set Cache-Control "public, max-age=86400"
+    Header set X-Robots-Tag "noindex, nofollow"
+</LocationMatch>
+
+# Compress static files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Set expires headers for static assets
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
