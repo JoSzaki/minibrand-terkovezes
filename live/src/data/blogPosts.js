@@ -1111,7 +1111,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               ["Élettartam", "25-30 év", "30-40 év", "15-20 év", "Vasbeton"],
               ["Fagyállóság", "Kiváló", "Jó*", "Közepes", "Térkő"],
               ["Javíthatóság", "Egyszerű", "Nehéz", "Közepes", "Térkő"],
-              ["Terhelhetéság", "Magas", "Nagyon magas", "Közepes", "Vasbeton"],
+              ["Terhelhetőség", "Magas", "Nagyon magas", "Közepes", "Vasbeton"],
               ["Vízelvezetés", "Kiváló", "Problémás", "Problémás", "Térkő"],
               ["Esztétika", "Változatos", "Korlátozott", "Egyszerű", "Térkő"],
               ["Környezetvédelem", "Jó", "Közepes", "Rossz", "Térkő"],
@@ -6191,7 +6191,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           type: "select",
           options: [
             { value: "none", label: "Nincs szükság engedélyre" },
-            { value: "notification", label: "Telepengedélyezési bejelentés (<50m2)" },
+            { value: "notification", label: "Telephelyengedélyezési bejelentés (<50m2)" },
             { value: "permit", label: "Teljes engedélyeztetés (>50m2)" },
             { value: "heritage", label: "Műemléki környezet (speciális)" }
           ]
@@ -6262,13 +6262,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           const permitCost = permitCosts[permitRequired];
           const transportCost = area * (district.includes('1_5_6') ? 800 : 400);
           const parkingFee = district.includes('1_5_6') || district.includes('2_3_12') ? 
-                           (area * 150) : 0; // Parkolési dáj belvárosban
+                           (area * 150) : 0; // Parkolási díj belvárosban
           
-          // Kerületi adminisztráciá
+          // Kerületi adminisztráció
           const adminFee = permitRequired === 'heritage' ? 25000 : 
                           permitRequired === 'permit' ? 15000 : 8000;
           
-          // Idátényező - belváros lassabb
+          // Időtényező - belváros lassabb
           const workDays = Math.ceil(area / (district.includes('1_5_6') ? 8 : 12));
           const rushJobMultiplier = workDays > 7 ? 1.1 : 1.0;
           
@@ -6277,7 +6277,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           const vat = subtotal * 0.27;
           const total = subtotal + vat;
           
-          // Kerületi jellemzák
+          // Kerületi jellemzők
           const districtCharacteristics = {
             avgCompletionDays: workDays,
             trafficRestrictions: district.includes('1_5_6') || district.includes('2_3_12'),
@@ -6416,7 +6416,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
   }
 ];
 
-// Csak a mákádJóSzaki térkövezés kápek - pontosan ugyanazok mint a referenciak oldalon
+// Csak a makádó JóSzaki térkövezés képek - pontosan ugyanazok mint a referenciak oldalon
 const joszakiImages = [
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sulak-robert-bela-terkovezes-burkolo-jjxbdv0kv4", alt: "Elegáns térkővezett kocsibeálló kovácsoltvas kapuval - MiniBrand Térkövezés referencia" },
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/sandor-lakatos-terkovezes-awg1ql30f8", alt: "Térkővezett kocsibeálló kovácsoltvas kapu előtt - strapabíró térkő burkolat" },
@@ -6429,14 +6429,14 @@ const joszakiImages = [
   { src: "https://storage.googleapis.com/joszaki-reference-photos/normal/taki-group-kft-komuves-yoflindw7m", alt: "Természetes hatású terasz burkolat íves kialakítással világos kőhatással" }
 ];
 
-// Térkő támához kapcsoládimage mapping
+// Térkő témához kapcsolódó image mapping
 export function getBlogPostImage(category, slug) {
-  // Váletlenszerkáp választás a JóSzaki kápek kázál minden blog posthoz
+  // Véletlenszerű kép választás a JóSzaki képek közül minden blog posthoz
   const randomIndex = Math.abs(hashCode(slug)) % joszakiImages.length;
   return joszakiImages[randomIndex];
 }
 
-// Hash függvány konzisztens váletlenszerésághez
+// Hash függvény konzisztens véletlenszerűséghez
 function hashCode(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
