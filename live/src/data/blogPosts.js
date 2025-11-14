@@ -68,7 +68,7 @@ export const blogPosts = [
         },
         {
           title: "Térkő Típusok összehasonlítása",
-          content: `<p>A kocsibeállók térkövezésánál alapvető szempont a <strong>teherbírés</strong> és a <strong>tartósság</strong>. Az autók súlya és a keréknyomés miatt speciális követelmányeknek kell megfelelni.</p>`,
+          content: `<p>A kocsibeállók térkövezésénél alapvető szempont a <strong>teherbírés</strong> és a <strong>tartósság</strong>. Az autók súlya és a keréknyomás miatt speciális követelményeknek kell megfelelni.</p>`,
           table: {
             headers: ["Térkő típus", "Ár (Ft/m²)", "Teherbírés", "Tartósság", "Karbantartés", "Ajánlott használat"],
             rows: [
@@ -76,13 +76,13 @@ export const blogPosts = [
               ["Vastagított betontérkő", "4.000-7.000", "Magas", "20-25 év", "Minimális", "Minden autótípus"],
               ["Gránit térkő", "8.000-15.000", "Nagyon magas", "50+ év", "Alacsony", "Luxus kocsibeállók"],
               ["Antik térkő", "6.000-12.000", "Magas", "30-40 év", "Közepes", "Karakteres megjelenés"],
-              ["Klinkertégla", "5.000-9.000", "Közepes", "25-30 év", "Közepes", "Vidáki házak"]
+              ["Klinkertégla", "5.000-9.000", "Közepes", "25-30 év", "Közepes", "Vidéki házak"]
             ]
           }
         },
         {
-          title: "Teherbírési Követelmányek",
-          content: `<p>A kocsibeálló térkövezésánál kritikus fontosságú a megfelelő teherbírés biztosítása. Az átlagos személyautó keréknyomása <strong>4-6 kg/cm2</strong>, míg egy teli SUV esetében ez akár <strong>8-10 kg/cm2</strong> is lehet.</p>
+          title: "Teherbírási Követelmények",
+          content: `<p>A kocsibeálló térkövezésénél kritikus fontosságú a megfelelő teherbírás biztosítása. Az átlagos személyautó keréknyomása <strong>4-6 kg/cm²</strong>, míg egy teli SUV esetében ez akár <strong>8-10 kg/cm²</strong> is lehet.</p>
           
           <p>A térkövek vastagságának minimum <strong>6 cm-nek</strong> kell lennie kocsibeállóhoz, de ajánlott a <strong>8 cm-es</strong> vastagság a hosszabb élettartam érdekében.</p>`
         }
@@ -680,13 +680,13 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           
           <ul>
             <li>⚠️<strong>Fagykárok</strong>: télen a felszín alatt rekedt víz megfagyva szétrepeszti a térköveket</li>
-            <li>⚠️<strong>Vízelvezetés hiánya</strong>: a térkövek alatt gyűlő víz kimossa az aljzatot</li>
+            <li>⚠️ <strong>Vízelvezetés hiánya</strong>: a térkövek alatt gyűlő víz kimossa az aljzatot</li>
             <li>⚠️<strong>Épületkárok</strong>: rossz lejtés esetén víz folyhat az épület felé</li>
             <li>⚠️<strong>Egészságügyi problémák</strong>: álló víz szúnyogokat és baktériumokat vonz</li>
           </ul>
           
           <div class="bg-red-50 border-l-4 border-red-400 p-4 my-6">
-            <p class= "text-red-700"><strong>⚠️Fontos:</strong> Egy rosszul megoldott vízelvezetés 3-5 év alatt teljesen tönkreteheti a térkövezést!</p>
+            <p class="text-red-700"><strong>⚠️ Fontos:</strong> Egy rosszul megoldott vízelvezetés 3-5 év alatt teljesen tönkreteheti a térkövezést!</p>
           </div>`,
           infographic: {
             title: "Vízelvezetési problémák és költségek",
@@ -777,19 +777,19 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Túl meredek lejtés (5% felett) csúszóssá teheti a felületet!"
         },
         {
-          title: "Vízelvezetési pontok meghatározás",
+          title: "Vízelvezetési pontok meghatározása",
           description: "Határozzuk meg, hová vezessük el a vizet: közcsatorna, esővíz-elvezető vagy szikkasztó árok.",
           tips: "Győződjünk meg róla, hogy a szomszédos telkekre nem vezetjük a vizet!"
         },
         {
-          title: "Alapozés és drén építése",
-          description: "A megfelelő alapozés (15-20 cm kavics) és esetleg dréncsőek fektetése a víz elvezetésére.",
+          title: "Alapozás és drén építése",
+          description: "A megfelelő alapozás (15-20 cm kavics) és esetleg dréncsövek fektetése a víz elvezetésére.",
           tips: "A dréncsőeket minimum 40 cm mélyen kell fektetni a fagymentes zónába!"
         },
         {
           title: "Térkővek lerakása és fugázása",
           description: "A térkövek lerakása során különös figyelmet fordítsunk a lejtések megtartására.",
-          tips: "Vízlegesen ellenőrizzük a lejtéseket minden 2-3 méterenként!"
+          tips: "Vízszintesen ellenőrizzük a lejtéseket minden 2-3 méterenként!"
         }
       ]
     },
@@ -808,16 +808,16 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Milyen gyakran kell karbantartani a vízelvezetést?",
-        answer: "évente egyszer ellenőrizzük a lefolyákat, eltávolítjuk a leveleket és törmelékeket. Drénrendszert 3-5 évente érdemes átmosni."
+        answer: "Évente egyszer ellenőrizzük a lefolyókat, eltávolítjuk a leveleket és törmelékeket. Drénrendszert 3-5 évente érdemes átmosni."
       },
       {
         question: "Mi a különbság a lineáris és pontszerű vízelvezetés között?",
-        answer: "A lineáris elvezető hosszú csatornákban gyűjti a vizet (hatékonyabb), a pontszerű különálló gullyk segítságével (olcsóbb, de kevésbé hatékony)."
+        answer: "A lineáris elvezető hosszú csatornákban gyűjti a vizet (hatékonyabb), a pontszerű különálló gullykók segítségével (olcsóbb, de kevésbé hatékony)."
       }
     ],
     calculator: {
       title: "Vízelvezetés Költságkalkulátor",
-      description: "Számítsa ki térkővezett kocsibeálló vízelvezetésánek költságát!",
+      description: "Számítsa ki térkövezett kocsibeálló vízelvezetésének költségét!",
       inputs: [
         {
           name: "area",
@@ -840,7 +840,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "terrainDifficulty",
-          label: "Terep nehézságe",
+          label: "Terep nehézsége",
           type: "select",
           options: [
             { value: "easy", label: "Egyszerű (sík terep)" },
@@ -1276,7 +1276,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Karbantartési hajlandéság",
           type: "select",
           options: [
-            { value: "minimal", label: "Minimális (évente 1 mosés)" },
+            { value: "minimal", label: "Minimális (évente 1 mosás)" },
             { value: "normal", label: "Normál (tavaszi nagytakarítás)" },
             { value: "active", label: "Aktív (rendszeres ápolás)" }
           ]
@@ -1495,7 +1495,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       sections: [
         {
           title: "Térkövezés Karbantartésának Alapjai",
-          content: `<p>A <strong>térkövezés rendszeres karbantartésa</strong> kulcsfontosságú a hosszú élettartam biztosítésára. A helyes ápoléssal 20-30 évig is szolgálhat problémamentesen a térkőves felület.</p>
+          content: `<p>A <strong>térkövezés rendszeres karbantartásása</strong> kulcsfontosságú a hosszú élettartam biztosítására. A helyes ápolással 20-30 évig is szolgálhat problémamentesen a térköves felület.</p>
           
           <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
             <h4 class="font-semibold text-blue-800 mb-3">⚠️Karbantartési gyakorisági ajánlások:</h4>
@@ -1594,12 +1594,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Ne használjunk agresszív vegyszereket, mert károsíthatják a térköveket!"
         },
         {
-          title: "Durva szennyezádések eltávolítása",
-          description: "Távolítsuk el a leveleket, ágakat és egyáb durva szennyeződéseket. Kapáljuk ki a gyomokat a fugákból.",
+          title: "Durva szennyeződések eltávolítása",
+          description: "Távolítsuk el a leveleket, ágakat és egyéb durva szennyeződéseket. Kapáljuk ki a gyomokat a fugákból.",
           tips: "A gyomirtést legjobb nedves időben végezni, amikor könnyebben kijönnek a gyökerek."
         },
         {
-          title: "Alapos vizes mosés",
+          title: "Alapos vizes mosás",
           description: "Mossuk le a térköveket magasnyomású mosóval vagy kerti csappal. Kezdjük felülről lefelé.",
           tips: "A magasnyomású mosónál ügyeljünk arra, hogy ne legyen túl közel, mert megsértheti a fugákat!"
         },
@@ -1623,7 +1623,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     faq: [
       {
         question: "Milyen gyakran kell tisztítani a térkövezést?",
-        answer: "Alapos tisztítésra évente 2x van szükság (tavasz és ősz), de kisebb tisztítést (söprés, leváleltévolítés) heti rendszeressággel érdemes végezni."
+        answer: "Alapos tisztításra évente 2x van szükség (tavasz és ősz), de kisebb tisztítást (söprés, levéleltávolítás) heti rendszerességgel érdemes végezni."
       },
       {
         question: "Milyen tisztítószert használjak?",
@@ -1639,7 +1639,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Mennyibe kerül a térkövezés karbantartésa?",
-        answer: "Saját munka esetén 1.000-3.000 Ft/m²/év, szakember bevonéséval 3.000-8.000 Ft/m²/év a rendszeres karbantartés költsége."
+        answer: "Saját munka esetén 1.000-3.000 Ft/m²/év, szakember bevonásával 3.000-8.000 Ft/m²/év a rendszeres karbantartés költsége."
       },
       {
         question: "Lehet télen is karbantartani a térkövezést?",
@@ -2602,8 +2602,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "30-50% Költságmegtakarítés",
-                description: "Csak anyagköltság, nincs munkadíj",
-                value: "100-200k Ft spórolés"
+                description: "Csak anyagköltség, nincs munkadíj",
+                value: "100-200k Ft spórolás"
               },
               {
                 icon: "🏗️",
@@ -2632,7 +2632,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Kockázatok",
-                description: "Hibés munka = drága javítés",
+                description: "Hibás munka = drága javítás",
                 value: "Óvatosság kell"
               }
             ]
@@ -2715,7 +2715,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             headers: ["Lépés", "Feladat", "Időtartam", "Kritikus pontok", "Praktikus tippek"],
             rows: [
               ["1", "Kiindulási vonal meghatározás", "30 perc", "Egyenes legyen, derékszögű", "Használjunk zsinórt és derékszöget"],
-              ["2", "Első sor lerakása", "2-3 óra", "Szint és irány tartása", "Gyakran ellenőrizzük libellével"],
+              ["2", "Első sor lerakása", "2-3 óra", "Szint és irány tartása", "Gyakran ellenőrizzük libellával"],
               ["3", "Teljes felület burkolása", "1-2 nap", "Egyenletes hézagok", "Távtartók használata"],
               ["4", "Szélső térkövek vágás", "4-6 óra", "Pontos mérés", "Sablont készítünk bonyolult formákhoz"],
               ["5", "Szintezés és igazítás", "2-3 óra", "Egységes magasság", "Gumikalapács + deszka kombináció"],
@@ -3388,7 +3388,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Van-e különbság a téli viselkedésben?",
-        answer: "Mindkét típus fagyálló, de a természetes kő természetesen csúszósmentes. A beton térkő síkosabb lehet, ezárt télen fokozott évatosság szükséges."
+        answer: "Mindkét típus fagyálló, de a természetes kő természetesen csúszásmentes. A beton térkő síkosabb lehet, ezért télen fokozott óvatosság szükséges."
       }
     ],
     howTo: {
@@ -3415,7 +3415,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Karbantartési igények vizsgálata",
           description: "Mérlegeljük, mennyi időt és energiát akarunk a karbantartésra fordítani hosszú távon.",
-          tips: "Betontérkő: évi 2-3x mosés. Természetes kő: évi 1x impregnálés + mosés."
+          tips: "Betontérkő: évi 2-3x mosás. Természetes kő: évi 1x impregnálás + mosás."
         },
         {
           title: "Környezeti hatások figyelembevétele",
@@ -3423,8 +3423,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           tips: "Természetes kő környezetbarátkabb, de a szállítási távolság is számít. Helyi kő az ideális."
         },
         {
-          title: "ésszköltság kalkulálása",
-          description: "Számítsuk ki a teljes Élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartést 20-25 évre.",
+          title: "Összköltség kalkulálása",
+          description: "Számítsuk ki a teljes élettartam-költséget, beleértve a beszerzést, kivitelezést és karbantartást 20-25 évre.",
           tips: "A természetes kő kezdeti magasabb ára hosszú távon megtérülhet az alacsony karbantartési költségek miatt."
         },
         {
@@ -3471,7 +3471,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           id: "timeframe",
-          label: "Kalkuláciés időtév",
+          label: "Kalkulációs időtáv",
           type: "select",
           options: [
             { value: "initial", label: "Csak kezdeti költségek" },
@@ -4158,7 +4158,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           }
         },
         {
-          title: "Kreatév mintázatok és layout technikák",
+          title: "Kreatív mintázatok és layout technikák",
           content: `<p>A <strong>mintázatok tervezése</strong> során kombinálhatjuk a különböző színeket és formákat:</p>
           
           <div class="grid md:grid-cols-3 gap-4 my-6">
@@ -4167,16 +4167,16 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <ul class="text-red-700 text-xs space-y-1">
                 <li>Cikk-cakk vonalak</li>
                 <li>Spirálok</li>
-                <li>Hullámos sévok</li>
-                <li>Sugárirányelrendezés</li>
+                <li>Hullámos sávok</li>
+                <li>Sugárirányú elrendezés</li>
               </ul>
             </div>
             <div class="bg-green-50 border border-green-200 rounded-lg p-4">
               <h4 class="font-semibold text-green-800 mb-2">⚠️Természetes formák</h4>
               <ul class="text-green-700 text-xs space-y-1">
-                <li>Levál mintázatok</li>
-                <li>Virágmotévumok</li>
-                <li>KŐszemcsés elrendezés</li>
+                <li>Levél mintázatok</li>
+                <li>Virágmotívumok</li>
+                <li>Kőszemcsés elrendezés</li>
                 <li>Organikus átmenetek</li>
               </ul>
             </div>
@@ -4185,7 +4185,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <ul class="text-blue-700 text-xs space-y-1">
                 <li>Sakktábla minta</li>
                 <li>Rombusz rácsos</li>
-                <li>Koncentrikus kárák</li>
+                <li>Koncentrikus körök</li>
                 <li>Fraktál minták</li>
               </ul>
             </div>
@@ -4195,68 +4195,68 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             headers: ["Minta típus", "Színek száma", "Nehézsági szint", "Ajánlott terület"],
             rows: [
               ["Sakktábla", "2 szín", "Könnyű", "Teraszok, kis udvarok"],
-              ["Futókötés színes", "2-3 szín", "Közepes", "Jórdák, bejáratok"],
-              ["Koncentrikus kárák", "3-4 szín", "Nehéz", "Nagyobb terek, fábejáratok"],
-              ["Mozaik minta", "4+ szín", "Nagyon nehéz", "Dekoratév felületek"],
+              ["Futókötés színes", "2-3 szín", "Közepes", "Járdák, bejáratok"],
+              ["Koncentrikus körök", "3-4 szín", "Nehéz", "Nagyobb terek, főbejáratok"],
+              ["Mozaik minta", "4+ szín", "Nagyon nehéz", "Dekoratív felületek"],
               ["Gradiens átmenet", "3-5 szín", "Közepes", "Hosszabb járdák, teraszok"]
             ]
           }
         },
         {
-          title: "Szánkombináciés stratágiák különböző tárfajtákhoz",
-          content: `<p>Minden <strong>térkővezett felület més és més színstratágiát</strong> kéván a funkciájónak megfelelően:</p>
+          title: "Színkombinaciós stratégiák különböző területtípusokhoz",
+          content: `<p>Minden <strong>térkövezett felület más és más színstratégiát</strong> igényel a funkciójának megfelelően:</p>
           
           <div class="grid md:grid-cols-2 gap-6 my-6">
             <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
-              <h4 class="font-semibold text-amber-800 mb-3">⚠️Lakáterületek:</h4>
+              <h4 class="font-semibold text-amber-800 mb-3">⚠️Lakóterületek:</h4>
               <ul class="text-amber-700 text-sm space-y-2">
-                <li><strong>Kocsibeálló:</strong> konzervatév színek (szürke + antracit)</li>
+                <li><strong>Kocsibeálló:</strong> konzervatív színek (szürke + antracit)</li>
                 <li><strong>Terasz:</strong> meleg tónusok (bézs + terrakotta)</li>
-                <li><strong>Kerti út:</strong> természetes harmónia (záld + barna)</li>
-                <li><strong>Bejárat:</strong> reprezentatév (kák + fehár)</li>
+                <li><strong>Kerti út:</strong> természetes harmónia (zöld + barna)</li>
+                <li><strong>Bejárat:</strong> reprezent atív (kék + fehér)</li>
               </ul>
             </div>
             <div class="bg-teal-50 border border-teal-200 rounded-lg p-4">
-              <h4 class="font-semibold text-teal-800 mb-3">⚠️Kázterületek:</h4>
+              <h4 class="font-semibold text-teal-800 mb-3">⚠️Közterületek:</h4>
               <ul class="text-teal-700 text-sm space-y-2">
                 <li><strong>Főtér:</strong> hagyományos (szürke + vörös)</li>
-                <li><strong>Sátálőutca:</strong> álőnk akcentusok (színes csökok)</li>
-                <li><strong>Park:</strong> termŐszetkázel? (záld árnyalatok)</li>
-                <li><strong>Intázmány:</strong> professzionális (monokróm)</li>
+                <li><strong>Sétálóutca:</strong> élénk akcentusok (színes csíkok)</li>
+                <li><strong>Park:</strong> természetközeli (zöld árnyalatok)</li>
+                <li><strong>Intézmény:</strong> professzionális (monokróm)</li>
               </ul>
             </div>
           </div>
           
           <p><strong>Speciális hatások</strong> színes térkővetekkel:</p>`,
           infographic: {
-            title: "Tárbeli illáziák színes térkövekkel",
+            title: "Térbeli illúziók színes térkövekkel",
             items: [
               {
                 icon: "🏗️",
-                title: "Tágátés",
+                title: "Tágítás",
                 description: "Világos színek a kis tereket nagyobbnak mutatják"
               },
               {
                 icon: "🏗️",
-                title: "Keskenyátés",
-                description: "Sötét szegélyek optikailag keskenyátik a járdákat"
+                title: "Keskenyítés",
+                description: "Sötét szegélyek optikailag keskenyítik a járdákat"
               },
               {
                 icon: "🏗️",
-                title: "Irányátés",
-                description: "Színes sévokkal vezetheta tekintát és a mozgés"
+                title: "Irányítás",
+                description: "Színes sávokkal vezethető a tekintet és a mozgás"
               },
               {
                 icon: "🏗️",
                 title: "Kiemelés",
-                description: "Kontrasztos színekkel hangsályozhaták a fontos pontok"
+                description: "Kontrasztos színekkel hangsúlyozhatók a fontos pontok"
               }
             ]
           }
         },
         {
           title: "Praktikus tippek a színes térkő projekthez",
-          content: `<p>A <strong>sikeres színes térkövezés</strong> tervezésáhez és kivitelezésáhez:</p>
+          content: `<p>A <strong>sikeres színes térkövezés</strong> tervezéséhez és kivitelezéséhez:</p>
           
           <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4 my-4">
             <h4 class="font-semibold text-indigo-800 mb-2">⚠️Tervezési tippek:</h4>
@@ -4348,12 +4348,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     },
     faq: [
       {
-        question: "Drágább a színes térkő a szárkánál?",
+        question: "Drágább a színes térkő a szürkénél?",
         answer: "A színes térkövek általában 15-30%-kal drágábbak a szürke változatoknál. A különböző színek eltérőek lehetnek, de a többletköltság megéri az egyedi megjelenésért."
       },
       {
-        question: "Elhalványulnak a színes térkövek idével?",
-        answer: "A minősági színes térkövek UV-álló pigmentekkel kŐszálnek, ágy csak minimálisan fakálnak. A színtartósság 15-20 év, amely megfelelő karbantartéssal tovább névelhetá."
+        question: "Elhalványulnak a színes térkövek idővel?",
+        answer: "A minőségi színes térkövek UV-álló pigmentekkel készülnek, így csak minimálisan fakul nak. A színtartósság 15-20 év, amely megfelelő karbantartással tovább növelhető."
       },
       {
         question: "Nehéz karbantartani a színes térköveket?",
@@ -4365,7 +4365,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Bonyolult a színes mintázat kivitelezése?",
-        answer: "Az egyszerűbb minták (sakktábla, csíkos) könnyen kivitelezheták. A komplex geometriai vagy mozaik minták profi kivitelezőt igényelnek a pontos eredmányhez."
+        answer: "Az egyszerűbb minták (sakktábla, csíkos) könnyen kivitelezhetők. A komplex geometriai vagy mozaik minták profi kivitelezőt igényelnek a pontos eredményhez."
       }
     ],
     calculator: {
@@ -4387,8 +4387,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           options: [
             { value: "checkerboard", label: "Sakktábla (2 szín, 50-50%)" },
             { value: "stripes", label: "Csíkos (2 szín, 60-40%)" },
-            { value: "border", label: "Szegályes (80% alap + 20% szegály)" },
-            { value: "complex", label: "Komplex minta (3 szín egyenlarányban)" }
+            { value: "border", label: "Szegélyes (80% alap + 20% szegély)" },
+            { value: "complex", label: "Komplex minta (3 szín egyenlő arányban)" }
           ]
         },
         {
@@ -4408,7 +4408,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           options: [
             { value: "standard", label: "Standard színes (3.800 Ft/m²)" },
             { value: "premium", label: "Prémium színes (4.500 Ft/m²)" },
-            { value: "special", label: "Kálőnleges színek (5.200 Ft/m²)" }
+            { value: "special", label: "Különleges színek (5.200 Ft/m²)" }
           ]
         },
         {
@@ -4443,7 +4443,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             special: 5200
           };
           
-          // Szánarányok mintázat szerint
+          // Színarányok mintázat szerint
           const colorRatios = {
             checkerboard: { base: 0.50, accent1: 0.50, accent2: 0 },
             stripes: { base: 0.60, accent1: 0.40, accent2: 0 },
@@ -4487,7 +4487,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           const vat = subtotal * 0.27;
           const total = subtotal + vat;
           
-          // Szánenkánti mennyiságek
+          // Színenkénti mennyiségek
           const baseAmount = Math.round(area * ratio.base);
           const accent1Amount = Math.round(area * ratio.accent1);
           const accent2Amount = patternType === 'complex' ? Math.round(area * ratio.accent2) : 0;
@@ -5253,7 +5253,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           
           const resultDiv = document.getElementById('calculator-result');
           resultDiv.innerHTML = \`
-            <h4>Költságkalkuláció Eredmánye</h4>
+            <h4>Költségkalkuláció Eredménye</h4>
             <div class="result-breakdown">
               <p><strong>Térkövezés alapár:</strong> \${basePrice.toLocaleString('hu-HU')} Ft</p>
               \${needsDrainage ? \`<p><strong>Vízelvezetés:</strong> \${drainagePrice.toLocaleString('hu-HU')} Ft</p>\` : ''}
@@ -5304,25 +5304,25 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               {
                 icon: "🏗️",
                 title: "Felmérés & Tervezés",
-                description: "Geodáziai márés, CAD tervezés",
+                description: "Geodéziai mérés, CAD tervezés",
                 value: "1-2 nap"
               },
               {
                 icon: "🏗️",
                 title: "Földmunkák",
-                description: "Ásés, tömörítés, szintezés",
+                description: "Ásás, tömörítés, szintezés",
                 value: "2-3 nap"
               },
               {
                 icon: "📦",
-                title: "Alapozés",
-                description: "Kavicságy, homokágy kŐszítése",
+                title: "Alapozás",
+                description: "Kavicságy, homokágy készítése",
                 value: "1-2 nap"
               },
               {
                 icon: "🏗️",
                 title: "Térkövezés",
-                description: "Lerakés, vágés, illesztés",
+                description: "Lerakás, vágás, illesztés",
                 value: "3-5 nap"
               }
             ]
@@ -5367,8 +5367,8 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               },
               {
                 icon: "🏗️",
-                title: "Hibés fugázás",
-                description: "Gyomosodés, térkő elmozdulés",
+                title: "Hibás fugázás",
+                description: "Gyomosodás, térkő elmozdulás",
                 value: "15% esetek"
               },
               {
@@ -5382,7 +5382,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "Minőságbiztosítés és garancia",
-          content: `<p>Professzionális kivitelezőkánt <strong>5 év garanciát</strong> vállalunk munkáinkra. Ez magában foglalja az anyaghibákat, kivitelezési hibákat és a természetes kopést meghaladelváltozésokat.</p>
+          content: `<p>Professzionális kivitelezőként <strong>5 év garanciát</strong> vállalunk munkáinkra. Ez magában foglalja az anyaghibákat, kivitelezési hibákat és a természetes kopást meghaladjuváltozásokat.</p>
           
           <p>Minden projekt után <strong>átadési jegyzőkönyvet</strong> készítünk fotódokumentációval, műszaki paraméterekkel és karbantartési útmutatóval. évente ingyenes állapotfelmérést biztosítunk.</p>`
         }
@@ -5407,7 +5407,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       },
       {
         question: "Szükséges-e építési engedály térkövezéshez?",
-        answer: "általában nem, de 20 m² felett telephelyengedélyeési bejelentés szükséges lehet. Vádett területeken, műemléki környezetben vagy közterület határán minden esetben egyeztetni kell az önkormányzattal."
+        answer: "Általában nem, de 20 m² felett telepengedélyezési bejelentés szükséges lehet. Védett területeken, műemléki környezetben vagy közterület határán minden esetben egyeztetni kell az önkormányzattal."
       }
     ],
     howTo: {
@@ -5420,12 +5420,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
       materials: [
         "Referencia lista",
         "árajánlatok",
-        "Szerzádés tervezet"
+        "Szerződés tervezet"
       ],
       steps: [
         {
           name: "Referenciák ellenőrzése",
-          description: "Kérjen minimum 3-5 korábbi munkörül referenciát fotókkal és elérhetőséggel. Lehetéság szerint nézzen meg személyesen 1-2 éves munkákat.",
+          description: "Kérjen minimum 3-5 korábbi munkáról referenciát fotókkal és elérhetőséggel. Lehetőség szerint nézzen meg személyesen 1-2 éves munkákat.",
           duration: "PT10M"
         },
         {
@@ -5435,11 +5435,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "Szakmai kompetencia felmérése",
-          description: "Kárdezzen ra tervezett rétegrendre, tömörítési technolágiára, vízelvezetési megoldásokra. A profi kivitelező részletes választ ad.",
+          description: "Kérdezzen rá a tervezett rétegrendre, tömörítési technológiára, vízelvezetési megoldásokra. A profi kivitelező részletes választ ad.",
           duration: "PT5M"
         },
         {
-          name: "Szerzádéskátés",
+          name: "Szerződéskötés",
           description: "Kössön részletes vállalkozési szerződést, ami tartalmazza a műszaki tartalmat, időtervet, fizetési feltételeket és garanciális feltételeket.",
           duration: "PT10M"
         }
@@ -5459,7 +5459,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "complexity",
-          label: "Komplexités",
+          label: "Komplexitás",
           type: "select",
           options: [
             { value: "simple", label: "Egyszerű (egyenes vonalak)" },
@@ -5470,11 +5470,11 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           name: "foundation",
-          label: "Alapozés mélysége",
+          label: "Alapozás mélysége",
           type: "select",
           options: [
             { value: "standard", label: "Standard (30-40 cm)" },
-            { value: "reinforced", label: "Megerésátett (40-50 cm)" },
+            { value: "reinforced", label: "Megerősített (40-50 cm)" },
             { value: "heavy", label: "Nehéz teher (50-60 cm)" }
           ],
           defaultValue: "standard"
