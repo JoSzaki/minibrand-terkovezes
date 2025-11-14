@@ -2259,7 +2259,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "A 2025-ös év Meghatározó Terasz Térkövezési Trendjei",
           content: `<p>2025-ben a terasz térkövezés világában a <strong>természetesság és a modern minimalizmust</strong> ötvöző megoldások dominálnak. A trendek középpontjában az <strong>ökológiai tudatosság</strong>, a <strong>funkcionalitás</strong> és a <strong>vizuális hatás</strong> harmániája áll.</p>
           
-          <p>Az év legfontosabb trendjei közé tartozik a <strong>nagyméretű térkövek</strong> használata, a <strong>természetes színpaletta</strong> alkalmazás, és az <strong>aszimmetrikus mintázatok</strong> bevezetése. Egyre népszerűbbek a <strong>vegyes textúrájú</strong> felületek és a <strong>smart térkövezési megoldások</strong>.</p>`,
+          <p>Az év legfontosabb trendjei közé tartozik a <strong>nagyméretű térkövek</strong> használata, a <strong>természetes színpaletta</strong> alkalmazása, és az <strong>aszimmetrikus mintázatok</strong> bevezetése. Egyre népszerűbbek a <strong>vegyes textúrájú</strong> felületek és a <strong>smart térkövezési megoldások</strong>.</p>`,
           infographic: {
             title: "2025 Top Terasz Térkövezési Trendek",
             items: [
@@ -2710,7 +2710,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           title: "Térkő Lerakés és Praktikus Tippek",
           content: `<p>A térkő lerakás során a <strong>precizitás és türelelem</strong> a legfontosabb. Kezdjük mindig egy <strong>egyenes sarokból vagy élből</strong>, és haladjunk szisztematikusan. A térköveket <strong>soha ne lépjük le</strong> közvetlenül - használjunk deszkát a már lerakott területen való munkához.</p>
           
-          <p>A <strong>hézagok</strong> egyenletessége kritikus a szép megjelenés szempont jából. Használjunk <strong>távtartókat</strong> vagy <strong>kereszteket</strong> az azonos távolságokhoz. A vágásoknál mindig <strong>mérjünk kétszer, vágjunk egyszer</strong> - a térkő költsége nem elhanyagolható.</p>`,
+          <p>A <strong>hézagok</strong> egyenletessége kritikus a szép megjelenés szempontjából. Használjunk <strong>távtartókat</strong> vagy <strong>kereszteket</strong> az azonos távolságokhoz. A vágásoknál mindig <strong>mérjünk kétszer, vágjunk egyszer</strong> - a térkő költsége nem elhanyagolható.</p>`,
           table: {
             headers: ["Lépés", "Feladat", "Időtartam", "Kritikus pontok", "Praktikus tippek"],
             rows: [
@@ -2735,7 +2735,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "2. Eszközök beszérzése/kölcsönzése",
-          description: "Szerezzük be vagy kölcsönözzük a szükséges eszközöket. A vibrálólapot és térkővágót érdemes bérelni, a kéziszerszomokat megvenni.",
+          description: "Szerezzük be vagy kölcsönözzük a szükséges eszközöket. A vibrálólapot és térkővágót érdemes bérelni, a kéziszerszámokat megvenni.",
           tips: "A vibrálólapot csak a munka napjára kölcsönözzük - drága a hosszabb bérlet!"
         },
         {
@@ -2819,7 +2819,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           options: [
             { value: "none", label: "Minden eszközt be kell szerezni", cost: 80000 },
             { value: "partial", label: "Alapvető eszközök megvannak", cost: 45000 },
-            { value: "most", label: "Csak speciális eszközök kellenek", cost: 25000 }
+            { value: "most", label: "Csak speciális eszközök kellnek", cost: 25000 }
           ]
         },
         {
@@ -3260,7 +3260,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               estimatedCost: totalPrice,
               lifecycleCost: totalLifecycleCost,
               features: [
-                needsEdging ? 'Szegályezéssel' : 'Szegélyezés nélkül',
+                needsEdging ? 'Szegélyezéssel' : 'Szegélyezés nélkül',
                 materialName,
                 document.getElementById('maintenanceLevel').options[document.getElementById('maintenanceLevel').selectedIndex].text
               ].join(', ')
@@ -3372,7 +3372,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
     faq: [
       {
         question: "Melyik térkő típus a tartósabb hosszú távon?",
-        answer: "A természetes kő térkövek jelentősen tartósabbak - 50-100 éves Élettartammal, míg a beton térkövek 15-25 év után javítésra szorulnak. A természetes kő idővel szépül, a beton idővel kopik."
+        answer: "A természetes kő térkövek jelentősen tartósabbak - 50-100 éves élettartammal, míg a beton térkövek 15-25 év után javítésra szorulnak. A természetes kő idővel szépül, a beton idővel kopik."
       },
       {
         question: "Mennyivel drágább a természetes kő térkő?",
@@ -4213,7 +4213,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <li><strong>Kocsibeálló:</strong> konzervatív színek (szürke + antracit)</li>
                 <li><strong>Terasz:</strong> meleg tónusok (bézs + terrakotta)</li>
                 <li><strong>Kerti út:</strong> természetes harmónia (zöld + barna)</li>
-                <li><strong>Bejárat:</strong> reprezent atív (kék + fehér)</li>
+                <li><strong>Bejárat:</strong> reprezentatív (kék + fehér)</li>
               </ul>
             </div>
             <div class="bg-teal-50 border border-teal-200 rounded-lg p-4">
@@ -4510,7 +4510,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
             accent2Amount: accent2Amount,
             patternLabel: patternType === 'checkerboard' ? 'Sakktábla' : 
                          patternType === 'stripes' ? 'Csíkos' :
-                         patternType === 'border' ? 'Szegályes' : 'Komplex',
+                         patternType === 'border' ? 'Szegélyes' : 'Komplex',
             complexityLabel: complexity === 'simple' ? 'Egyszerű' : 
                            complexity === 'medium' ? 'Közepes' : 'Bonyolult'
           };
@@ -4682,12 +4682,12 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               },
               {
                 icon: "📦",
-                title: "Vízellenallós",
+                title: "Vízellenálló",
                 description: "Alacsony vízfelszívás, gyors száradás"
               },
               {
                 icon: "🏗️",
-                title: "Kémiai ellenallós",
+                title: "Kémiai ellenálló",
                 description: "Sóállóság, olaj- és kémiai anyag állóság"
               }
             ]
@@ -4713,7 +4713,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
                 <ul class="text-xs text-indigo-600">
                   <li>Földmunkák, aljzatkészítés</li>
                   <li>Térkőlerakás, fugázás</li>
-                  <li>Szegályezés, befejezés</li>
+                  <li>Szegélyezés, befejezés</li>
                 </ul>
               </div>
             </div>
@@ -4735,7 +4735,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
               <h4 class="font-semibold text-green-800 mb-3">✅ Engedély nem szükséges:</h4>
               <ul class="text-green-700 text-sm space-y-1">
                 <li>Saját telken belüli munkák</li>
-                <li>Kocsibealló térkövezés</li>
+                <li>Kocsibeálló térkövezés</li>
                 <li>Terasz- és járdaburkolat</li>
                 <li>Kerti út kialakítás</li>
               </ul>
@@ -4767,7 +4767,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "Anyagok kiválasztása és mennyiségek kalkulálása",
           description: "Válasszuk ki a térkő típusát, méretét, színét, és számítsuk ki az összes szükséges anyagmennyiséget.",
-          tips: "Számolj 10% anyag-veszt eséggel és vegyél tartalék térkővet későbbi javításokhoz."
+          tips: "Számolj 10% anyagveszteséggel és vegyél tartalék térkővet későbbi javításokhoz."
         },
         {
           title: "Részletes tervrajzok készítése",
@@ -4846,7 +4846,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
           label: "Vízelvezetés igénye",
           type: "select",
           options: [
-            { value: "natural", label: "Természetes lejtés elegen dő" },
+            { value: "natural", label: "Természetes lejtés elegendő" },
             { value: "basic", label: "Alapvető csapadákvíz-elvezetés" },
             { value: "advanced", label: "Speciális drénrendszer szükséges" }
           ]
@@ -5114,7 +5114,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         {
           title: "1. Terület pontos felmérése",
           description: "Mérjük fel pontosan a térkövezendő területet m²-ben. Számoljunk bele az esetleges bonyolult formákat, szintkülönbségeket. Készítsünk vízlatot a területről.",
-          tips: "Mindig adjunk hozzá10-15% anyagtöbbletet a vágások és selejtezés miatt!"
+          tips: "Mindig adjunk hozzá 10-15% anyagtöbbletet a vágások és selejt ezés miatt!"
         },
         {
           title: "2. Térkő típus és minta kiválasztása",
@@ -5133,7 +5133,7 @@ recommendation = '<h4 class="font-semibold text-green-800 mb-3">Ajánlott megold
         },
         {
           title: "5. Kiegészítő költségek számítása",
-          description: "Adjuk hozzáa vízelvezetés, szegélyek, szállítás és egyáb extra munkák költségeit. Ezek jelentősen befolyásolhatják a végső árat.",
+          description: "Adjuk hozzá a vízelvezetés, szegélyek, szállítás és egyéb extra munkák költségeit. Ezek jelentősen befolyásolhatják a végső árat.",
           tips: "A kiegészítő költségek gyakran a projekt 30-40%-át tehetik ki."
         },
         {
