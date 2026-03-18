@@ -111,7 +111,10 @@
 </section>
 
 <script>
-// Google Sheets form submission for ContactForm component
+// LeadToWork form submission for ContactForm component
+const LEADTOWORK_API_URL = 'https://zkwuykhchkdhsuinzarf.supabase.co/functions/v1/submit-lead';
+const LEADTOWORK_API_KEY = 'ltw_pk_9a571e995b174429a60f3d6848376983';
+
 document.getElementById('contactFormComponent')?.addEventListener('submit', async function(e) {
     e.preventDefault();
 
@@ -123,46 +126,55 @@ document.getElementById('contactFormComponent')?.addEventListener('submit', asyn
     submitButton.textContent = 'Küldés...';
 
     try {
-        // Collect form data
-        const formData = {
-            name: this.querySelector('[name="name"]').value.trim(),
-            email: this.querySelector('[name="email"]').value.trim(),
-            phone: this.querySelector('[name="phone"]').value.trim(),
-            service: this.querySelector('[name="service"]').value,
-            message: this.querySelector('[name="message"]').value.trim(),
-            privacy: this.querySelector('[name="privacy"]').checked,
-            source: 'component-form'
-        };
+        const name = this.querySelector('[name="name"]').value.trim();
+        const email = this.querySelector('[name="email"]').value.trim();
+        const phone = this.querySelector('[name="phone"]').value.trim();
+        const service = this.querySelector('[name="service"]').value;
+        const message = this.querySelector('[name="message"]').value.trim();
+        const privacy = this.querySelector('[name="privacy"]').checked;
 
         // Basic validation
-        if (!formData.name || !formData.phone || !formData.email || !formData.privacy) {
+        if (!name || !phone || !email || !privacy) {
             throw new Error('Kérjük töltsd ki az összes kötelező mezőt és fogadd el az adatvédelmi tájékoztatót!');
         }
 
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
+        if (!emailRegex.test(email)) {
             throw new Error('Kérjük adj meg egy érvényes email címet!');
         }
 
-        // TODO: Replace with your actual Google Apps Script Web App URL
-        const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+        const urlParams = new URLSearchParams(window.location.search);
 
-        // Send to Google Sheets
-        const response = await fetch(GOOGLE_SCRIPT_URL, {
+        const payload = {
+            name,
+            email: email || undefined,
+            phone: phone || undefined,
+            message: message || undefined,
+            metadata: {
+                source: window.location.hostname,
+                page_url: window.location.href,
+                service: service || undefined,
+                utm_source: urlParams.get('utm_source') || '',
+                utm_medium: urlParams.get('utm_medium') || '',
+                utm_campaign: urlParams.get('utm_campaign') || '',
+                timestamp: new Date().toISOString(),
+            },
+        };
+
+        const response = await fetch(LEADTOWORK_API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-API-Key': LEADTOWORK_API_KEY,
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(payload),
         });
 
         const result = await response.json();
 
         if (result.success) {
-            // Success message
             showContactMessage('Köszönjük megkeresésed! Hamarosan felvesszük veled a kapcsolatot.', 'success');
-            // Reset form
             this.reset();
         } else {
             throw new Error(result.error || 'Hiba történt az űrlap küldése során.');
@@ -172,7 +184,6 @@ document.getElementById('contactFormComponent')?.addEventListener('submit', asyn
         console.error('ContactForm submission error:', error);
         showContactMessage(error.message || 'Hiba történt. Kérjük próbáld újra vagy hívj minket a +36 70 578 6296 telefonszámon.', 'error');
     } finally {
-        // Re-enable button
         submitButton.disabled = false;
         submitButton.textContent = originalText;
     }

@@ -285,7 +285,10 @@ const contactSchemas = generateSchemasForPage('contact', {
 </Layout>
 
 <script>
-// Google Sheets form submission
+// LeadToWork form submission
+const LEADTOWORK_API_URL = 'https://zkwuykhchkdhsuinzarf.supabase.co/functions/v1/submit-lead';
+const LEADTOWORK_API_KEY = 'ltw_pk_9a571e995b174429a60f3d6848376983';
+
 document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
 
@@ -297,48 +300,62 @@ document.getElementById('contactForm')?.addEventListener('submit', async functio
     submitButton.textContent = 'Küldés...';
 
     try {
-        // Collect form data
-        const formData = {
-            name: document.getElementById('name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            service: document.getElementById('service').value,
-            area: document.getElementById('area').value,
-            timeline: document.getElementById('timeline').value,
-            message: document.getElementById('message').value.trim(),
-            privacy: document.getElementById('privacy').checked,
-            source: 'kapcsolat-oldal'
-        };
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const service = document.getElementById('service').value;
+        const area = document.getElementById('area').value;
+        const timeline = document.getElementById('timeline').value;
+        const message = document.getElementById('message').value.trim();
+        const privacy = document.getElementById('privacy').checked;
 
         // Basic validation
-        if (!formData.name || !formData.phone || !formData.email || !formData.privacy) {
+        if (!name || !phone || !email || !privacy) {
             throw new Error('Kérjük töltsd ki az összes kötelező mezőt és fogadd el az adatvédelmi tájékoztatót!');
         }
 
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
+        if (!emailRegex.test(email)) {
             throw new Error('Kérjük adj meg egy érvényes email címet!');
         }
 
-        // TODO: Replace with your actual Google Apps Script Web App URL
-        const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+        // UTM params from URL
+        const urlParams = new URLSearchParams(window.location.search);
 
-        // Send to Google Sheets
-        const response = await fetch(GOOGLE_SCRIPT_URL, {
+        const payload = {
+            name,
+            email: email || undefined,
+            phone: phone || undefined,
+            message: message || undefined,
+            square_meters: area ? Number(area) : undefined,
+            metadata: {
+                source: window.location.hostname,
+                page_url: window.location.href,
+                service: service || undefined,
+                timeline: timeline || undefined,
+                utm_source: urlParams.get('utm_source') || '',
+                utm_medium: urlParams.get('utm_medium') || '',
+                utm_campaign: urlParams.get('utm_campaign') || '',
+                utm_term: urlParams.get('utm_term') || '',
+                utm_content: urlParams.get('utm_content') || '',
+                timestamp: new Date().toISOString(),
+            },
+        };
+
+        const response = await fetch(LEADTOWORK_API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-API-Key': LEADTOWORK_API_KEY,
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(payload),
         });
 
         const result = await response.json();
 
         if (result.success) {
-            // Success message
             showMessage('Köszönjük megkeresésed! Hamarosan felvesszük veled a kapcsolatot.', 'success');
-            // Reset form
             this.reset();
         } else {
             throw new Error(result.error || 'Hiba történt az űrlap küldése során.');
@@ -348,7 +365,6 @@ document.getElementById('contactForm')?.addEventListener('submit', async functio
         console.error('Form submission error:', error);
         showMessage(error.message || 'Hiba történt. Kérjük próbáld újra vagy hívj minket a +36 70 578 6296 telefonszámon.', 'error');
     } finally {
-        // Re-enable button
         submitButton.disabled = false;
         submitButton.textContent = originalText;
     }
